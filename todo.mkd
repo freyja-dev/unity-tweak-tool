@@ -1,0 +1,79 @@
+###Main window
+- Search button is not functional
+- Clear button should only appear when text is entered
+- Clicking clear button should clear the entry box
+- Replace filler icons with actual icons
+
+###Start page
+- Replace printer icons with actual icons
+- All buttons should be evenly sized
+- Clicking on the buttons should load the relevant notebook page in the box
+
+###Unity settings
+#### Launcher
+ - Reveal location radios should only activate if the auto-hide switcher is on
+ - Likewise for Reveal sensitivity scale
+ - Fill the dropdown for icon colouring 
+
+#### Dash
+ - Blur type radio only activate if dash blur is on
+ - Empty labels aren't empty
+ 
+#### Panel
+ - Menu visible for only activate if autohide menu switch is on
+ - Panel transparency options only activate if transparent panel switch is on
+ - More options for the dropdown under indicator label
+ 
+#### Switcher
+ - Add keyboard widgets
+
+#### Additional
+ - Add keyboard widgets
+
+###Compiz settings
+#### General
+- Add keyboard widget
+- Zoom switch is monstrous ##DONE
+- Fix the messed up Gtk design state (Probably redo)
+
+#### Workspace
+- Configure hot corner button should lead to the right notebook page
+- Fix the pixels and alignment
+
+#### Windows spread
+- Add keyboard widget
+- Fix the pixels and alignment
+- Configure hot corner button not linked yet  
+
+#### Windows snapping
+- Still empty.
+- Add the widgets.
+
+#### Hotcorners
+- Same as Windows snapping
+
+###Theme settings
+#### System theme
+- Boxes need to be filled
+- The +/- should not be a bar but standalone
+- Restore button should be resized
+
+#### Icon theme
+- Same as system theme
+
+#### Cursor theme
+- Same as System theme
+
+#### Fonts
+- Antialising dropdown needs content
+- Hinting dropdown needs content
+ 
+###Desktop settings
+- Fix the alignment
+
+###Others
+- Fix the messed up widget naming when possible
+- Fill in all the tooltips
+- Make the window not resizable
+- Hide the main notebook's tabs
+
