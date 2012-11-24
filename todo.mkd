@@ -17,7 +17,7 @@
 
 #### Dash
  - Blur type radio only activate if dash blur is on
- - Empty labels aren't empty
+ - Empty labels aren't empty ##DONE
  
 #### Panel
  - Menu visible for only activate if autohide menu switch is on
