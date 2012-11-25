@@ -37,13 +37,13 @@
 - Fix the messed up Gtk design state (Probably redo)
 
 #### Workspace
-- Configure hot corner button should lead to the right notebook page
+- Configure hot corner button should lead to the right notebook page ##DONE
 - Fix the pixels and alignment
 
 #### Windows spread
 - Add keyboard widget
 - Fix the pixels and alignment
-- Configure hot corner button not linked yet  
+- Configure hot corner button not linked yet ##DONE
 
 #### Windows snapping
 - Still empty.

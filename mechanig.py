@@ -71,6 +71,15 @@ class Handler ():
         
     def on_tool_desktop_clicked(self,box_settings):
         builder.get_object('tool_desktopsettings').set_active(True)
+        
+    # compiz hotcorner linked button
+    
+    def on_lb_configure_hot_corner_activate_link(self,nb_compizsettings):
+        nb_compizsettings.set_current_page(4)
+    
+    def on_lb_configure_hot_corner_windows_spread_activate_link(self,nb_compizsettings):
+        nb_compizsettings.set_current_page(4)    
+        
 # Basic builder setting up
         
 builder = Gtk.Builder()

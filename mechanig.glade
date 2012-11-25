@@ -3742,7 +3742,7 @@
                             <property name="receives_default">True</property>
                             <property name="has_tooltip">True</property>
                             <property name="relief">none</property>
-                            <property name="uri">dsfadsf</property>
+                            <signal name="activate-link" handler="on_lb_configure_hot_corner_activate_link" object="nb_compizsettings" swapped="no"/>
                           </object>
                           <packing>
                             <property name="left_attach">0</property>
@@ -3983,7 +3983,7 @@
                         <property name="halign">start</property>
                         <property name="margin_left">17</property>
                         <property name="relief">none</property>
-                        <property name="uri">dsfadsf</property>
+                        <signal name="activate-link" handler="on_lb_configure_hot_corner_windows_spread_activate_link" object="nb_compizsettings" swapped="no"/>
                       </object>
                       <packing>
                         <property name="expand">False</property>
