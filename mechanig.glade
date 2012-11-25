@@ -2893,76 +2893,6 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkLabel" id="l_invoke_hud">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="xalign">0</property>
-                            <property name="label" translatable="yes">Invoke HUD</property>
-                          </object>
-                          <packing>
-                            <property name="left_attach">0</property>
-                            <property name="top_attach">1</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkLabel" id="l_show_launcher">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="xalign">0</property>
-                            <property name="label" translatable="yes">Show the launcher</property>
-                          </object>
-                          <packing>
-                            <property name="left_attach">0</property>
-                            <property name="top_attach">2</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkLabel" id="l_execute_command">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="xalign">0</property>
-                            <property name="label" translatable="yes">Execute command</property>
-                          </object>
-                          <packing>
-                            <property name="left_attach">0</property>
-                            <property name="top_attach">3</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkLabel" id="l_keyboardfocus_launcher">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="xalign">0</property>
-                            <property name="label" translatable="yes">Put keyboard focus on the launcher</property>
-                          </object>
-                          <packing>
-                            <property name="left_attach">0</property>
-                            <property name="top_attach">4</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkLabel" id="l_open_panel_menu">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="xalign">0</property>
-                            <property name="label" translatable="yes">Open the first panel menu</property>
-                          </object>
-                          <packing>
-                            <property name="left_attach">0</property>
-                            <property name="top_attach">5</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
-                        </child>
-                        <child>
                           <object class="GtkSwitch" id="sw_shortcuts_hints_overlay">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
@@ -2976,74 +2906,41 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkAccelLabel" id="accellabel1">
+                          <object class="GtkTreeView" id="treeview_unity_additional">
                             <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="halign">end</property>
-                            <property name="xalign">1</property>
-                            <property name="yalign">1</property>
-                            <property name="label" translatable="yes">label</property>
+                            <property name="can_focus">True</property>
+                            <property name="model">unity_additional_accelerators</property>
+                            <property name="headers_visible">False</property>
+                            <property name="headers_clickable">False</property>
+                            <child internal-child="selection">
+                              <object class="GtkTreeSelection" id="treeview-selection9"/>
+                            </child>
+                            <child>
+                              <object class="GtkTreeViewColumn" id="treeview_unity_additional_column_title">
+                                <property name="title" translatable="yes">Title</property>
+                                <property name="expand">True</property>
+                                <child>
+                                  <object class="GtkCellRendererText" id="cellrenderertext3"/>
+                                  <attributes>
+                                    <attribute name="text">0</attribute>
+                                  </attributes>
+                                </child>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkTreeViewColumn" id="treeview_unity_additional_column_accelerator">
+                                <property name="sizing">autosize</property>
+                                <property name="title" translatable="yes">Accelerator</property>
+                                <child>
+                                  <object class="GtkCellRendererAccel" id="cellrendereraccel1"/>
+                                </child>
+                              </object>
+                            </child>
                           </object>
                           <packing>
-                            <property name="left_attach">1</property>
+                            <property name="left_attach">0</property>
                             <property name="top_attach">1</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkAccelLabel" id="accellabel11">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="halign">end</property>
-                            <property name="label" translatable="yes">label</property>
-                          </object>
-                          <packing>
-                            <property name="left_attach">1</property>
-                            <property name="top_attach">2</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkAccelLabel" id="accellabel14">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="halign">end</property>
-                            <property name="label" translatable="yes">label</property>
-                          </object>
-                          <packing>
-                            <property name="left_attach">1</property>
-                            <property name="top_attach">3</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkAccelLabel" id="accellabel15">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="halign">end</property>
-                            <property name="label" translatable="yes">label</property>
-                          </object>
-                          <packing>
-                            <property name="left_attach">1</property>
-                            <property name="top_attach">4</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkAccelLabel" id="accellabel16">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="halign">end</property>
-                            <property name="label" translatable="yes">label</property>
-                          </object>
-                          <packing>
-                            <property name="left_attach">1</property>
-                            <property name="top_attach">5</property>
-                            <property name="width">1</property>
+                            <property name="width">2</property>
                             <property name="height">1</property>
                           </packing>
                         </child>
@@ -4324,6 +4221,9 @@
                         <property name="can_focus">False</property>
                         <property name="toolbar_style">icons</property>
                         <property name="icon_size">1</property>
+                        <style>
+                          <class name="inline-toolbar"/>
+                        </style>
                         <child>
                           <object class="GtkToolButton" id="add-toolbutton1">
                             <property name="visible">True</property>
@@ -4432,6 +4332,9 @@
                         <property name="can_focus">False</property>
                         <property name="toolbar_style">icons</property>
                         <property name="icon_size">1</property>
+                        <style>
+                          <class name="inline-toolbar"/>
+                        </style>
                         <child>
                           <object class="GtkToolButton" id="add-toolbutton">
                             <property name="visible">True</property>
@@ -4527,6 +4430,9 @@
                         <property name="can_focus">False</property>
                         <property name="toolbar_style">icons</property>
                         <property name="icon_size">1</property>
+                        <style>
+                          <class name="inline-toolbar"/>
+                        </style>
                         <child>
                           <object class="GtkToolButton" id="add-toolbutton2">
                             <property name="visible">True</property>
@@ -5186,5 +5092,35 @@
         </child>
       </object>
     </child>
+  </object>
+  <object class="GtkListStore" id="unity_additional_accelerators">
+    <columns>
+      <!-- column-name Title -->
+      <column type="gchararray"/>
+      <!-- column-name Accelerator -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">Invoke HUD</col>
+        <col id="1" translatable="yes">Super+H</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Show the launcher</col>
+        <col id="1" translatable="yes">Super+E</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Execute command</col>
+        <col id="1" translatable="yes">Super+M</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Put keyboard focus on the launcher</col>
+        <col id="1" translatable="yes">Super+A</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Open the first panel menu</col>
+        <col id="1" translatable="yes">Super+N</col>
+      </row>
+    </data>
   </object>
 </interface>
