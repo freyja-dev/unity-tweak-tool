@@ -16,11 +16,61 @@ class Handler ():
         
     '''Clicking on the icons in the start page'''
      
+    # unity settings on start page 
     def on_tool_launcher_clicked(self,nb_unitysettings):
-        #destroy()
+        builder.get_object('tool_unitysettings').set_active(True)
         nb_unitysettings.set_current_page(0)
-                        
+    def on_tool_dash_clicked(self,nb_unitysettings):
+        builder.get_object('tool_unitysettings').set_active(True)
+        nb_unitysettings.set_current_page(1)
+    def on_tool_panel_clicked(self,nb_unitysettings):
+        builder.get_object('tool_unitysettings').set_active(True)
+        nb_unitysettings.set_current_page(2)
+    def on_tool_unity_switcher_clicked(self,nb_unitysettings):
+        builder.get_object('tool_unitysettings').set_active(True)
+        nb_unitysettings.set_current_page(3)    
+    def on_tool_additional_clicked(self,nb_unitysettings):
+        builder.get_object('tool_unitysettings').set_active(True)
+        nb_unitysettings.set_current_page(4)    
+    def on_tool_launcher_clicked(self,nb_unitysettings):
+        builder.get_object('tool_unitysettings').set_active(True)
+        nb_unitysettings.set_current_page(0)
         
+    # Compiz settings buttons on start page        
+    def on_tool_general_clicked(self,nb_compizsettings):
+        builder.get_object('tool_compizsettings').set_active(True)
+        nb_compizsettings.set_current_page(0)                        
+    def on_tool_compiz_switcher_clicked(self,nb_compizsettings):
+        builder.get_object('tool_compizsettings').set_active(True)
+        nb_compizsettings.set_current_page(1)
+    def on_tool_windows_spread_clicked(self,nb_compizsettings):
+        builder.get_object('tool_compizsettings').set_active(True)
+        nb_compizsettings.set_current_page(2)
+    def on_tool_windows_snapping_clicked(self,nb_compizsettings):
+        builder.get_object('tool_compizsettings').set_active(True)
+        nb_compizsettings.set_current_page(3)
+    def on_tool_hotcorners_clicked(self,nb_compizsettings):
+        builder.get_object('tool_compizsettings').set_active(True)
+        nb_compizsettings.set_current_page(4)
+        
+    # Theme settings on Start page    
+    def on_tool_system_clicked(self,nb_themesettings):
+        builder.get_object('tool_themesettings').set_active(True)
+        nb_themesettings.set_current_page(0)  
+    def on_tool_icons_clicked(self,nb_themesettings):
+        builder.get_object('tool_themesettings').set_active(True)
+        nb_themesettings.set_current_page(1) 
+    def on_tool_cursors_clicked(self,nb_themesettings):
+        builder.get_object('tool_themesettings').set_active(True)
+        nb_themesettings.set_current_page(2)     
+    def on_tool_fonts_clicked(self,nb_themesettings):
+        builder.get_object('tool_themesettings').set_active(True)
+        nb_themesettings.set_current_page(3)     
+        
+    # desktop settings on start page    
+        
+    def on_tool_desktop_clicked(self,box_settings):
+        builder.get_object('tool_desktopsettings').set_active(True)
 # Basic builder setting up
         
 builder = Gtk.Builder()
