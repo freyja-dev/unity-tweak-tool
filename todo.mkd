@@ -7,7 +7,7 @@
 ###Start page
 - Replace printer icons with actual icons
 - All buttons should be evenly sized
-- Clicking on the buttons should load the relevant notebook page in the box
+- Clicking on the buttons should load the relevant notebook page in the box ##DONE
 
 ###Unity settings
 #### Launcher
