@@ -2946,8 +2946,10 @@
                                 <property name="sizing">autosize</property>
                                 <property name="title" translatable="yes">Accelerator</property>
                                 <child>
-                                  <object class="GtkCellRendererAccel" id="cellrendereraccel1">
+                                  <object class="GtkCellRendererAccel" id="craccel">
                                     <property name="editable">True</property>
+                                    <signal name="accel-cleared" handler="on_craccel_accel_cleared" object="unity_additional_accelerators" swapped="yes"/>
+                                    <signal name="accel-edited" handler="on_craccel_accel_edited" object="unity_additional_accelerators" swapped="yes"/>
                                   </object>
                                   <attributes>
                                     <attribute name="text">1</attribute>

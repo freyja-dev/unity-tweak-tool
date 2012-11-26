@@ -79,7 +79,19 @@ class Handler ():
     
     def on_lb_configure_hot_corner_windows_spread_activate_link(self,nb_compizsettings):
         nb_compizsettings.set_current_page(4)    
-        
+ 
+    def on_craccel_accel_edited(self,craccel, path, key, mods, hwcode,model=None):
+        craccel,model=model,craccel
+# This sorcery is required to compensate for glade's stupidity of passing the arguments always swapped. and thats not a bug, its a feature.
+        accel = Gtk.accelerator_name(key, mods)
+        iter = model.get_iter(path)
+        model.set_value(iter, 1, accel)
+
+    def on_craccel_accel_cleared(self, craccel, path, model=None):
+        craccel,model=model,craccel
+        iter = model.get_iter(path)
+        model.set_value(iter, 1, None)
+       
 # Basic builder setting up
         
 builder = Gtk.Builder()
