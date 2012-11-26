@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
   <!-- interface-requires gtk+ 3.0 -->
-  <object class="GtkAccelGroup" id="accelgroup1">
-    <signal name="accel-activate" handler="on_accelgroup1_accel_activate" object="al_start_switcher" swapped="no"/>
-  </object>
-  <object class="GtkAccelGroup" id="accelgroup2"/>
   <object class="GtkAdjustment" id="adj_compiz_spacing">
     <property name="upper">100</property>
     <property name="value">48</property>
@@ -68,8 +64,179 @@
     <property name="step_increment">1</property>
     <property name="page_increment">1</property>
   </object>
-  <object class="GtkEntryCompletion" id="entrycompletion1">
-    <property name="minimum_key_length">3</property>
+  <object class="GtkListStore" id="list_compiz_general_keys_accelerators">
+    <columns>
+      <!-- column-name Title -->
+      <column type="gchararray"/>
+      <!-- column-name Accelerator -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">Close window</col>
+        <col id="1" translatable="yes">Alt+F4</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Move window</col>
+        <col id="1" translatable="yes">Alt+mouse button 1</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Show desktop</col>
+        <col id="1" translatable="yes">Super+D</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkListStore" id="list_compiz_general_zoom_accelerators">
+    <columns>
+      <!-- column-name Title -->
+      <column type="gchararray"/>
+      <!-- column-name Accelerator -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">Zoom in</col>
+        <col id="1" translatable="yes">Super++</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Zoom out</col>
+        <col id="1" translatable="yes">Super+-</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Restore default level</col>
+        <col id="1" translatable="yes">Super+~</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkListStore" id="list_compiz_windows_spread_accelerators">
+    <columns>
+      <!-- column-name Title -->
+      <column type="gchararray"/>
+      <!-- column-name Accelerator -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">Start workspace spread</col>
+        <col id="1" translatable="yes">Super+W</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Start windows spread for all windows</col>
+        <col id="1" translatable="yes">Disabled</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkListStore" id="list_compiz_workspace_accelerators">
+    <columns>
+      <!-- column-name Title -->
+      <column type="gchararray"/>
+      <!-- column-name Accelerator -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">Start workspace switcher</col>
+        <col id="1" translatable="yes">Super+S</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkListStore" id="list_unity_additional_accelerators">
+    <columns>
+      <!-- column-name Title -->
+      <column type="gchararray"/>
+      <!-- column-name Accelerator -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">Invoke HUD</col>
+        <col id="1" translatable="yes">Super+H</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Show the launcher</col>
+        <col id="1" translatable="yes">Super+E</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Execute command</col>
+        <col id="1" translatable="yes">Super+M</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Put keyboard focus on the launcher</col>
+        <col id="1" translatable="yes">Super+A</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Open the first panel menu</col>
+        <col id="1" translatable="yes">Super+N</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkListStore" id="list_unity_switcher_launcher_accelerators">
+    <columns>
+      <!-- column-name Title -->
+      <column type="gchararray"/>
+      <!-- column-name Accelerator -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">Start switcher</col>
+        <col id="1" translatable="yes">Super+Tab</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Start switcher in reverse</col>
+        <col id="1" translatable="yes">Shift+Super+Tab</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkListStore" id="list_unity_switcher_windows_accelerators">
+    <columns>
+      <!-- column-name Title -->
+      <column type="gchararray"/>
+      <!-- column-name Accelerator -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">Start switcher</col>
+        <col id="1" translatable="yes">Alt+Tab</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Start switcher in reverse</col>
+        <col id="1" translatable="yes">Shift+Alt+Tab</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Start switcher for all workspaces</col>
+        <col id="1" translatable="yes">Ctrl+Super+Alt+Tab</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Start switcher for all workspaces in reverse</col>
+        <col id="1" translatable="yes">Shift+Ctrl+Super+Alt+Tab</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Go right in the switcher</col>
+        <col id="1" translatable="yes">Alt+Right</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Go left in the switcher</col>
+        <col id="1" translatable="yes">Alt+Left</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Expose windows in the switcher</col>
+        <col id="1" translatable="yes">Alt+Down</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Collapse windows in the switcher</col>
+        <col id="1" translatable="yes">Alt+Up</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Flip through windows in the switcher</col>
+        <col id="1" translatable="yes"/>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Flip through windows in the switcher backwards</col>
+        <col id="1" translatable="yes"/>
+      </row>
+    </data>
   </object>
   <object class="GtkWindow" id="mechanig_main">
     <property name="can_focus">False</property>
@@ -2334,6 +2501,7 @@
                               <object class="GtkLabel" id="l_box_unity_switcher_windows">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
+                                <property name="xalign">0</property>
                                 <property name="label" translatable="yes">Windows switcher:</property>
                               </object>
                               <packing>
@@ -2386,279 +2554,6 @@
                                   <packing>
                                     <property name="left_attach">0</property>
                                     <property name="top_attach">3</property>
-                                    <property name="width">1</property>
-                                    <property name="height">1</property>
-                                  </packing>
-                                </child>
-                                <child>
-                                  <object class="GtkLabel" id="l_start_switcher_key">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="xalign">0</property>
-                                    <property name="label" translatable="yes">Start switcher</property>
-                                  </object>
-                                  <packing>
-                                    <property name="left_attach">0</property>
-                                    <property name="top_attach">4</property>
-                                    <property name="width">1</property>
-                                    <property name="height">1</property>
-                                  </packing>
-                                </child>
-                                <child>
-                                  <object class="GtkLabel" id="l_start_switcher_key_reverse">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="xalign">0</property>
-                                    <property name="label" translatable="yes">Start switcher in reverse</property>
-                                  </object>
-                                  <packing>
-                                    <property name="left_attach">0</property>
-                                    <property name="top_attach">5</property>
-                                    <property name="width">1</property>
-                                    <property name="height">1</property>
-                                  </packing>
-                                </child>
-                                <child>
-                                  <object class="GtkLabel" id="l_start_switcher_key_all_workspace">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="xalign">0</property>
-                                    <property name="label" translatable="yes">Start switcher for all workspaces</property>
-                                  </object>
-                                  <packing>
-                                    <property name="left_attach">0</property>
-                                    <property name="top_attach">6</property>
-                                    <property name="width">1</property>
-                                    <property name="height">1</property>
-                                  </packing>
-                                </child>
-                                <child>
-                                  <object class="GtkLabel" id="l_start_switcher_key_all_workspace_reverse">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="xalign">0</property>
-                                    <property name="label" translatable="yes">Start switcher for all workspaces in reverse</property>
-                                  </object>
-                                  <packing>
-                                    <property name="left_attach">0</property>
-                                    <property name="top_attach">7</property>
-                                    <property name="width">1</property>
-                                    <property name="height">1</property>
-                                  </packing>
-                                </child>
-                                <child>
-                                  <object class="GtkLabel" id="l_switcher_goright">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="xalign">0</property>
-                                    <property name="label" translatable="yes">Go right in the switcher</property>
-                                    <property name="justify">right</property>
-                                  </object>
-                                  <packing>
-                                    <property name="left_attach">0</property>
-                                    <property name="top_attach">8</property>
-                                    <property name="width">1</property>
-                                    <property name="height">1</property>
-                                  </packing>
-                                </child>
-                                <child>
-                                  <object class="GtkLabel" id="l_switcher_goleft">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="xalign">0</property>
-                                    <property name="label" translatable="yes">Go left in the switcher</property>
-                                  </object>
-                                  <packing>
-                                    <property name="left_attach">0</property>
-                                    <property name="top_attach">9</property>
-                                    <property name="width">1</property>
-                                    <property name="height">1</property>
-                                  </packing>
-                                </child>
-                                <child>
-                                  <object class="GtkLabel" id="l_exposewindows_switcher_key">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="xalign">0</property>
-                                    <property name="label" translatable="yes">Expose windows in the switcher</property>
-                                  </object>
-                                  <packing>
-                                    <property name="left_attach">0</property>
-                                    <property name="top_attach">10</property>
-                                    <property name="width">1</property>
-                                    <property name="height">1</property>
-                                  </packing>
-                                </child>
-                                <child>
-                                  <object class="GtkLabel" id="l_collapsewindows_switcher_key">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="xalign">0</property>
-                                    <property name="label" translatable="yes">Collapse windows in the switcher</property>
-                                  </object>
-                                  <packing>
-                                    <property name="left_attach">0</property>
-                                    <property name="top_attach">11</property>
-                                    <property name="width">1</property>
-                                    <property name="height">1</property>
-                                  </packing>
-                                </child>
-                                <child>
-                                  <object class="GtkLabel" id="l_flipwindows_switcher_key">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="xalign">0</property>
-                                    <property name="label" translatable="yes">Flip through windows in the switcher</property>
-                                  </object>
-                                  <packing>
-                                    <property name="left_attach">0</property>
-                                    <property name="top_attach">12</property>
-                                    <property name="width">1</property>
-                                    <property name="height">1</property>
-                                  </packing>
-                                </child>
-                                <child>
-                                  <object class="GtkLabel" id="l_flipwindows_switcher_key_back">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="xalign">0</property>
-                                    <property name="label" translatable="yes">Flip through the windows in the swithcer backwards</property>
-                                  </object>
-                                  <packing>
-                                    <property name="left_attach">0</property>
-                                    <property name="top_attach">13</property>
-                                    <property name="width">1</property>
-                                    <property name="height">1</property>
-                                  </packing>
-                                </child>
-                                <child>
-                                  <object class="GtkAccelLabel" id="al_start_switcher">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="label" translatable="yes">Ctrl + S</property>
-                                    <property name="selectable">True</property>
-                                    <property name="accel_widget">l_start_switcher_key</property>
-                                  </object>
-                                  <packing>
-                                    <property name="left_attach">1</property>
-                                    <property name="top_attach">4</property>
-                                    <property name="width">1</property>
-                                    <property name="height">1</property>
-                                  </packing>
-                                </child>
-                                <child>
-                                  <object class="GtkAccelLabel" id="accellabel2">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="label" translatable="yes">Ctrl + S</property>
-                                  </object>
-                                  <packing>
-                                    <property name="left_attach">1</property>
-                                    <property name="top_attach">5</property>
-                                    <property name="width">1</property>
-                                    <property name="height">1</property>
-                                  </packing>
-                                </child>
-                                <child>
-                                  <object class="GtkAccelLabel" id="accellabel3">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="label" translatable="yes">Ctrl + S</property>
-                                  </object>
-                                  <packing>
-                                    <property name="left_attach">1</property>
-                                    <property name="top_attach">6</property>
-                                    <property name="width">1</property>
-                                    <property name="height">1</property>
-                                  </packing>
-                                </child>
-                                <child>
-                                  <object class="GtkAccelLabel" id="accellabel4">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="label" translatable="yes">Ctrl + S</property>
-                                  </object>
-                                  <packing>
-                                    <property name="left_attach">1</property>
-                                    <property name="top_attach">7</property>
-                                    <property name="width">1</property>
-                                    <property name="height">1</property>
-                                  </packing>
-                                </child>
-                                <child>
-                                  <object class="GtkAccelLabel" id="accellabel5">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="label" translatable="yes">Ctrl + S</property>
-                                  </object>
-                                  <packing>
-                                    <property name="left_attach">1</property>
-                                    <property name="top_attach">8</property>
-                                    <property name="width">1</property>
-                                    <property name="height">1</property>
-                                  </packing>
-                                </child>
-                                <child>
-                                  <object class="GtkAccelLabel" id="accellabel6">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="label" translatable="yes">Ctrl + S</property>
-                                  </object>
-                                  <packing>
-                                    <property name="left_attach">1</property>
-                                    <property name="top_attach">9</property>
-                                    <property name="width">1</property>
-                                    <property name="height">1</property>
-                                  </packing>
-                                </child>
-                                <child>
-                                  <object class="GtkAccelLabel" id="accellabel7">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="label" translatable="yes">Ctrl + S</property>
-                                  </object>
-                                  <packing>
-                                    <property name="left_attach">1</property>
-                                    <property name="top_attach">10</property>
-                                    <property name="width">1</property>
-                                    <property name="height">1</property>
-                                  </packing>
-                                </child>
-                                <child>
-                                  <object class="GtkAccelLabel" id="accellabel8">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="label" translatable="yes">Ctrl + S</property>
-                                  </object>
-                                  <packing>
-                                    <property name="left_attach">1</property>
-                                    <property name="top_attach">11</property>
-                                    <property name="width">1</property>
-                                    <property name="height">1</property>
-                                  </packing>
-                                </child>
-                                <child>
-                                  <object class="GtkAccelLabel" id="accellabel9">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="label" translatable="yes">Ctrl + S</property>
-                                  </object>
-                                  <packing>
-                                    <property name="left_attach">1</property>
-                                    <property name="top_attach">12</property>
-                                    <property name="width">1</property>
-                                    <property name="height">1</property>
-                                  </packing>
-                                </child>
-                                <child>
-                                  <object class="GtkAccelLabel" id="accellabel10">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="label" translatable="yes">Ctrl + S</property>
-                                  </object>
-                                  <packing>
-                                    <property name="left_attach">1</property>
-                                    <property name="top_attach">13</property>
                                     <property name="width">1</property>
                                     <property name="height">1</property>
                                   </packing>
@@ -2744,6 +2639,52 @@
                                 <property name="position">1</property>
                               </packing>
                             </child>
+                            <child>
+                              <object class="GtkTreeView" id="treeview_unity_switcher_windows">
+                                <property name="visible">True</property>
+                                <property name="can_focus">True</property>
+                                <property name="model">list_unity_switcher_windows_accelerators</property>
+                                <property name="headers_visible">False</property>
+                                <property name="headers_clickable">False</property>
+                                <property name="search_column">0</property>
+                                <child internal-child="selection">
+                                  <object class="GtkTreeSelection" id="treesel_unity_switcher_windows"/>
+                                </child>
+                                <child>
+                                  <object class="GtkTreeViewColumn" id="treeview_unity_switcher_windows_column_title">
+                                    <property name="title" translatable="yes">Title</property>
+                                    <property name="expand">True</property>
+                                    <child>
+                                      <object class="GtkCellRendererText" id="crtext_unity_switcher_windows"/>
+                                      <attributes>
+                                        <attribute name="text">0</attribute>
+                                      </attributes>
+                                    </child>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="GtkTreeViewColumn" id="treeview_unity_switcher_windows_column_accelerator">
+                                    <property name="sizing">autosize</property>
+                                    <property name="title" translatable="yes">Accelerator</property>
+                                    <child>
+                                      <object class="GtkCellRendererAccel" id="craccel_unity_switcher_windows">
+                                        <property name="editable">True</property>
+                                        <signal name="accel-cleared" handler="on_craccel_unity_switcher_windows_accel_cleared" object="list_unity_switcher_windows_accelerators" swapped="yes"/>
+                                        <signal name="accel-edited" handler="on_craccel_unity_switcher_windows_accel_edited" object="list_unity_switcher_windows_accelerators" swapped="yes"/>
+                                      </object>
+                                      <attributes>
+                                        <attribute name="text">1</attribute>
+                                      </attributes>
+                                    </child>
+                                  </object>
+                                </child>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">2</property>
+                              </packing>
+                            </child>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -2760,6 +2701,7 @@
                               <object class="GtkLabel" id="l_box_unity_switcher_launcher">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
+                                <property name="xalign">0</property>
                                 <property name="label" translatable="yes">Launcher switcher:</property>
                               </object>
                               <packing>
@@ -2769,68 +2711,47 @@
                               </packing>
                             </child>
                             <child>
-                              <object class="GtkGrid" id="grid_box_unity_switcher_launcher">
+                              <object class="GtkTreeView" id="treeview_unity_switcher_launcher">
                                 <property name="visible">True</property>
-                                <property name="can_focus">False</property>
-                                <property name="hexpand">True</property>
-                                <property name="border_width">10</property>
-                                <child>
-                                  <object class="GtkLabel" id="l_switcher_start_launcher">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="xalign">0</property>
-                                    <property name="label" translatable="yes">Start switcher</property>
-                                  </object>
-                                  <packing>
-                                    <property name="left_attach">0</property>
-                                    <property name="top_attach">0</property>
-                                    <property name="width">1</property>
-                                    <property name="height">1</property>
-                                  </packing>
+                                <property name="can_focus">True</property>
+                                <property name="model">list_unity_switcher_launcher_accelerators</property>
+                                <property name="headers_visible">False</property>
+                                <property name="headers_clickable">False</property>
+                                <property name="search_column">0</property>
+                                <child internal-child="selection">
+                                  <object class="GtkTreeSelection" id="treesel_unity_switcher_launcher"/>
                                 </child>
                                 <child>
-                                  <object class="GtkLabel" id="l_switcher_start_launcher_reverse">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="xalign">0</property>
-                                    <property name="label" translatable="yes">Start switcher in reverse</property>
+                                  <object class="GtkTreeViewColumn" id="treeview_unity_switcher_launcher_column_title">
+                                    <property name="title" translatable="yes">Title</property>
+                                    <property name="expand">True</property>
+                                    <child>
+                                      <object class="GtkCellRendererText" id="crtext_unity_switcher_launcher"/>
+                                      <attributes>
+                                        <attribute name="text">0</attribute>
+                                      </attributes>
+                                    </child>
                                   </object>
-                                  <packing>
-                                    <property name="left_attach">0</property>
-                                    <property name="top_attach">1</property>
-                                    <property name="width">1</property>
-                                    <property name="height">1</property>
-                                  </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkAccelLabel" id="accellabel12">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="label" translatable="yes">Super + Tab</property>
+                                  <object class="GtkTreeViewColumn" id="treeview_unity_switcher_launcher_column_accelerator">
+                                    <property name="sizing">autosize</property>
+                                    <property name="title" translatable="yes">Accelerator</property>
+                                    <child>
+                                      <object class="GtkCellRendererAccel" id="craccel_unity_switcher_launcher">
+                                        <property name="editable">True</property>
+                                        <signal name="accel-cleared" handler="on_craccel_unity_switcher_launcher_accel_cleared" object="list_unity_switcher_launcher_accelerators" swapped="yes"/>
+                                        <signal name="accel-edited" handler="on_craccel_unity_switcher_launcher_accel_edited" object="list_unity_switcher_launcher_accelerators" swapped="yes"/>
+                                      </object>
+                                      <attributes>
+                                        <attribute name="text">1</attribute>
+                                      </attributes>
+                                    </child>
                                   </object>
-                                  <packing>
-                                    <property name="left_attach">1</property>
-                                    <property name="top_attach">0</property>
-                                    <property name="width">1</property>
-                                    <property name="height">1</property>
-                                  </packing>
-                                </child>
-                                <child>
-                                  <object class="GtkAccelLabel" id="accellabel13">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="label" translatable="yes">Shift + Super + Tab</property>
-                                  </object>
-                                  <packing>
-                                    <property name="left_attach">1</property>
-                                    <property name="top_attach">1</property>
-                                    <property name="width">1</property>
-                                    <property name="height">1</property>
-                                  </packing>
                                 </child>
                               </object>
                               <packing>
-                                <property name="expand">True</property>
+                                <property name="expand">False</property>
                                 <property name="fill">True</property>
                                 <property name="position">1</property>
                               </packing>
@@ -2923,18 +2844,18 @@
                           <object class="GtkTreeView" id="treeview_unity_additional">
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
-                            <property name="model">unity_additional_accelerators</property>
+                            <property name="model">list_unity_additional_accelerators</property>
                             <property name="headers_visible">False</property>
                             <property name="headers_clickable">False</property>
                             <child internal-child="selection">
-                              <object class="GtkTreeSelection" id="treeview-selection9"/>
+                              <object class="GtkTreeSelection" id="treesel_unity_additional"/>
                             </child>
                             <child>
                               <object class="GtkTreeViewColumn" id="treeview_unity_additional_column_title">
                                 <property name="title" translatable="yes">Title</property>
                                 <property name="expand">True</property>
                                 <child>
-                                  <object class="GtkCellRendererText" id="cellrenderertext3"/>
+                                  <object class="GtkCellRendererText" id="crtext_unity_additional"/>
                                   <attributes>
                                     <attribute name="text">0</attribute>
                                   </attributes>
@@ -2946,10 +2867,10 @@
                                 <property name="sizing">autosize</property>
                                 <property name="title" translatable="yes">Accelerator</property>
                                 <child>
-                                  <object class="GtkCellRendererAccel" id="craccel">
+                                  <object class="GtkCellRendererAccel" id="craccel_unity_additional">
                                     <property name="editable">True</property>
-                                    <signal name="accel-cleared" handler="on_craccel_accel_cleared" object="unity_additional_accelerators" swapped="yes"/>
-                                    <signal name="accel-edited" handler="on_craccel_accel_edited" object="unity_additional_accelerators" swapped="yes"/>
+                                    <signal name="accel-cleared" handler="on_craccel_unity_additional_accel_cleared" object="list_unity_additional_accelerators" swapped="yes"/>
+                                    <signal name="accel-edited" handler="on_craccel_unity_additional_accel_edited" object="list_unity_additional_accelerators" swapped="yes"/>
                                   </object>
                                   <attributes>
                                     <attribute name="text">1</attribute>
@@ -3130,89 +3051,43 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkGrid" id="grid_compiz_zoom_keys">
+                      <object class="GtkTreeView" id="treeview_compiz_general_zoom">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <child>
-                          <object class="GtkLabel" id="l_compiz_zoom_in">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="xalign">0</property>
-                            <property name="label" translatable="yes">Zoom in</property>
-                          </object>
-                          <packing>
-                            <property name="left_attach">0</property>
-                            <property name="top_attach">0</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
+                        <property name="can_focus">True</property>
+                        <property name="model">list_compiz_general_zoom_accelerators</property>
+                        <property name="headers_visible">False</property>
+                        <property name="headers_clickable">False</property>
+                        <property name="search_column">0</property>
+                        <child internal-child="selection">
+                          <object class="GtkTreeSelection" id="treesel_compiz_general_zoom"/>
                         </child>
                         <child>
-                          <object class="GtkLabel" id="l_compiz_zoom_out">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="xalign">0</property>
-                            <property name="label" translatable="yes">Zoom out</property>
+                          <object class="GtkTreeViewColumn" id="treeview_compiz_general_zoom_column_title">
+                            <property name="title" translatable="yes">Title</property>
+                            <property name="expand">True</property>
+                            <child>
+                              <object class="GtkCellRendererText" id="crtext_compiz_general_zoom"/>
+                              <attributes>
+                                <attribute name="text">0</attribute>
+                              </attributes>
+                            </child>
                           </object>
-                          <packing>
-                            <property name="left_attach">0</property>
-                            <property name="top_attach">1</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
                         </child>
                         <child>
-                          <object class="GtkLabel" id="l_compiz_zoom_restore">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="xalign">0</property>
-                            <property name="label" translatable="yes">Restore default level</property>
+                          <object class="GtkTreeViewColumn" id="treeview_compiz_general_zoom_column_accelerator">
+                            <property name="sizing">autosize</property>
+                            <property name="title" translatable="yes">Accelerator</property>
+                            <child>
+                              <object class="GtkCellRendererAccel" id="craccel_compiz_general_zoom">
+                                <property name="editable">True</property>
+                                <signal name="accel-cleared" handler="on_craccel_compiz_general_zoom_accel_cleared" object="list_compiz_general_zoom_accelerators" swapped="yes"/>
+                                <signal name="accel-edited" handler="on_craccel_compiz_general_zoom_accel_edited" object="list_compiz_general_zoom_accelerators" swapped="yes"/>
+                              </object>
+                              <attributes>
+                                <attribute name="text">1</attribute>
+                              </attributes>
+                            </child>
                           </object>
-                          <packing>
-                            <property name="left_attach">0</property>
-                            <property name="top_attach">2</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkAccelLabel" id="accellabel19">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Super++</property>
-                          </object>
-                          <packing>
-                            <property name="left_attach">1</property>
-                            <property name="top_attach">0</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkAccelLabel" id="accellabel20">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Super+-</property>
-                          </object>
-                          <packing>
-                            <property name="left_attach">1</property>
-                            <property name="top_attach">1</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkAccelLabel" id="accellabel21">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Super+~</property>
-                          </object>
-                          <packing>
-                            <property name="left_attach">1</property>
-                            <property name="top_attach">2</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
                         </child>
                       </object>
                       <packing>
@@ -3293,6 +3168,9 @@
                             <property name="can_focus">False</property>
                             <property name="entry_text_column">0</property>
                             <property name="id_column">1</property>
+                            <items>
+                              <item translatable="yes">Good</item>
+                            </items>
                           </object>
                           <packing>
                             <property name="left_attach">2</property>
@@ -3361,86 +3239,43 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkGrid" id="grid_compiz_general_keyboardshortcuts">
+                      <object class="GtkTreeView" id="treeview_compiz_general_keys">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <child>
-                          <object class="GtkLabel" id="l_close_window">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Close window</property>
-                          </object>
-                          <packing>
-                            <property name="left_attach">0</property>
-                            <property name="top_attach">0</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
+                        <property name="can_focus">True</property>
+                        <property name="model">list_compiz_general_keys_accelerators</property>
+                        <property name="headers_visible">False</property>
+                        <property name="headers_clickable">False</property>
+                        <property name="search_column">0</property>
+                        <child internal-child="selection">
+                          <object class="GtkTreeSelection" id="treesel_compiz_general_keys"/>
                         </child>
                         <child>
-                          <object class="GtkLabel" id="l_move_window">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Move window</property>
+                          <object class="GtkTreeViewColumn" id="treeview_compiz_general_keys_column_title">
+                            <property name="title" translatable="yes">Title</property>
+                            <property name="expand">True</property>
+                            <child>
+                              <object class="GtkCellRendererText" id="crtext_compiz_general_keys"/>
+                              <attributes>
+                                <attribute name="text">0</attribute>
+                              </attributes>
+                            </child>
                           </object>
-                          <packing>
-                            <property name="left_attach">0</property>
-                            <property name="top_attach">1</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
                         </child>
                         <child>
-                          <object class="GtkLabel" id="l_show_desktop">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Show desktop</property>
+                          <object class="GtkTreeViewColumn" id="treeview_compiz_general_column_accelerator">
+                            <property name="sizing">autosize</property>
+                            <property name="title" translatable="yes">Accelerator</property>
+                            <child>
+                              <object class="GtkCellRendererAccel" id="craccel_compiz_general_keys">
+                                <property name="editable">True</property>
+                                <signal name="accel-cleared" handler="on_craccel_compiz_general_keys_accel_cleared" object="list_compiz_general_keys_accelerators" swapped="yes"/>
+                                <signal name="accel-edited" handler="on_craccel_compiz_general_keys_accel_edited" object="list_compiz_general_keys_accelerators" swapped="yes"/>
+                              </object>
+                              <attributes>
+                                <attribute name="text">1</attribute>
+                              </attributes>
+                            </child>
                           </object>
-                          <packing>
-                            <property name="left_attach">0</property>
-                            <property name="top_attach">2</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkAccelLabel" id="accellabel22">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Alt+F4</property>
-                          </object>
-                          <packing>
-                            <property name="left_attach">1</property>
-                            <property name="top_attach">0</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkAccelLabel" id="accellabel23">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Alt+mouse button 1</property>
-                          </object>
-                          <packing>
-                            <property name="left_attach">1</property>
-                            <property name="top_attach">1</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkAccelLabel" id="accellabel24">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Super+D</property>
-                          </object>
-                          <packing>
-                            <property name="left_attach">1</property>
-                            <property name="top_attach">2</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
                         </child>
                       </object>
                       <packing>
@@ -3671,40 +3506,6 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkLabel" id="l_switcher_workspace">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="has_tooltip">True</property>
-                            <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
-                            <property name="tooltip_text" translatable="yes">Should the launcher show a "Show Desktop" symbol?</property>
-                            <property name="margin_right">6</property>
-                            <property name="margin_top">6</property>
-                            <property name="xalign">1</property>
-                            <property name="label" translatable="yes">Start workspace switcher:</property>
-                          </object>
-                          <packing>
-                            <property name="left_attach">0</property>
-                            <property name="top_attach">6</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkTreeView" id="treeview4">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <child internal-child="selection">
-                              <object class="GtkTreeSelection" id="treeview-selection4"/>
-                            </child>
-                          </object>
-                          <packing>
-                            <property name="left_attach">1</property>
-                            <property name="top_attach">6</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
-                        </child>
-                        <child>
                           <object class="GtkLabel" id="l_desktop_number_empty">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
@@ -3721,6 +3522,52 @@
                         <property name="expand">False</property>
                         <property name="fill">True</property>
                         <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkTreeView" id="treeview_compiz_workspace">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="model">list_compiz_workspace_accelerators</property>
+                        <property name="headers_visible">False</property>
+                        <property name="headers_clickable">False</property>
+                        <property name="search_column">0</property>
+                        <child internal-child="selection">
+                          <object class="GtkTreeSelection" id="treesel_compiz_workspace"/>
+                        </child>
+                        <child>
+                          <object class="GtkTreeViewColumn" id="treeview_compiz_workspace_column_title">
+                            <property name="title" translatable="yes">Title</property>
+                            <property name="expand">True</property>
+                            <child>
+                              <object class="GtkCellRendererText" id="crtext_compiz_workspace"/>
+                              <attributes>
+                                <attribute name="text">0</attribute>
+                              </attributes>
+                            </child>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkTreeViewColumn" id="treeview_compiz_workspace_column_accelerator">
+                            <property name="sizing">autosize</property>
+                            <property name="title" translatable="yes">Accelerator</property>
+                            <child>
+                              <object class="GtkCellRendererAccel" id="craccel_compiz_workspace">
+                                <property name="editable">True</property>
+                                <signal name="accel-cleared" handler="on_craccel_compiz_workspace_accel_cleared" object="list_compiz_workspace_accelerators" swapped="yes"/>
+                                <signal name="accel-edited" handler="on_craccel_compiz_workspace_accel_edited" object="list_compiz_workspace_accelerators" swapped="yes"/>
+                              </object>
+                              <attributes>
+                                <attribute name="text">1</attribute>
+                              </attributes>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
                       </packing>
                     </child>
                     <child>
@@ -3762,7 +3609,7 @@
                       <packing>
                         <property name="expand">False</property>
                         <property name="fill">True</property>
-                        <property name="position">1</property>
+                        <property name="position">2</property>
                       </packing>
                     </child>
                   </object>
@@ -3912,70 +3759,47 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkGrid" id="grid_compiz_windows_spread_keyboard">
+                      <object class="GtkTreeView" id="treeview_compiz_windows_spread">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="hexpand">True</property>
-                        <property name="column_homogeneous">True</property>
-                        <child>
-                          <object class="GtkLabel" id="l_windows_spread_start">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="xalign">0</property>
-                            <property name="label" translatable="yes">Start windows spread</property>
-                          </object>
-                          <packing>
-                            <property name="left_attach">0</property>
-                            <property name="top_attach">0</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
+                        <property name="model">list_compiz_windows_spread_accelerators</property>
+                        <property name="headers_visible">False</property>
+                        <property name="headers_clickable">False</property>
+                        <property name="search_column">0</property>
+                        <child internal-child="selection">
+                          <object class="GtkTreeSelection" id="treesel_compiz_windows_spread"/>
                         </child>
                         <child>
-                          <object class="GtkLabel" id="l_windows_spread_start_all">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="xalign">0</property>
-                            <property name="label" translatable="yes">Start windows spread for all windows</property>
+                          <object class="GtkTreeViewColumn" id="treeview_compiz_windows_spread_column_title">
+                            <property name="title" translatable="yes">Title</property>
+                            <property name="expand">True</property>
+                            <child>
+                              <object class="GtkCellRendererText" id="crtext_compiz_windows_spread"/>
+                              <attributes>
+                                <attribute name="text">0</attribute>
+                              </attributes>
+                            </child>
                           </object>
-                          <packing>
-                            <property name="left_attach">0</property>
-                            <property name="top_attach">1</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
                         </child>
                         <child>
-                          <object class="GtkAccelLabel" id="accellabel17">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="xalign">1</property>
-                            <property name="label" translatable="yes">Super+W</property>
+                          <object class="GtkTreeViewColumn" id="treeview_compiz_windows_spread_column_accelerator">
+                            <property name="sizing">autosize</property>
+                            <property name="title" translatable="yes">Accelerator</property>
+                            <child>
+                              <object class="GtkCellRendererAccel" id="craccel_compiz_windows_spread">
+                                <property name="editable">True</property>
+                                <signal name="accel-cleared" handler="on_craccel_compiz_windows_spread_accel_cleared" object="list_compiz_windows_spread_accelerators" swapped="yes"/>
+                                <signal name="accel-edited" handler="on_craccel_compiz_windows_spread_accel_edited" object="list_compiz_windows_spread_accelerators" swapped="yes"/>
+                              </object>
+                              <attributes>
+                                <attribute name="text">1</attribute>
+                              </attributes>
+                            </child>
                           </object>
-                          <packing>
-                            <property name="left_attach">1</property>
-                            <property name="top_attach">0</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkAccelLabel" id="accellabel18">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="xalign">1</property>
-                            <property name="label" translatable="yes">label</property>
-                          </object>
-                          <packing>
-                            <property name="left_attach">1</property>
-                            <property name="top_attach">1</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
                         </child>
                       </object>
                       <packing>
-                        <property name="expand">True</property>
+                        <property name="expand">False</property>
                         <property name="fill">True</property>
                         <property name="position">1</property>
                       </packing>
@@ -4031,36 +3855,10 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkGrid" id="grid_compiz_windows_snapping">
+                  <object class="GtkLabel" id="l_sam_joke_1">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <child>
-                      <placeholder/>
-                    </child>
-                    <child>
-                      <placeholder/>
-                    </child>
-                    <child>
-                      <placeholder/>
-                    </child>
-                    <child>
-                      <placeholder/>
-                    </child>
-                    <child>
-                      <placeholder/>
-                    </child>
-                    <child>
-                      <placeholder/>
-                    </child>
-                    <child>
-                      <placeholder/>
-                    </child>
-                    <child>
-                      <placeholder/>
-                    </child>
-                    <child>
-                      <placeholder/>
-                    </child>
+                    <property name="label" translatable="yes">Mr Sam, where is the Cairo bit?</property>
                   </object>
                   <packing>
                     <property name="position">3</property>
@@ -4078,36 +3876,10 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkGrid" id="grid_compiz_hotcorners">
+                  <object class="GtkLabel" id="l_sam_joke_2">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <child>
-                      <placeholder/>
-                    </child>
-                    <child>
-                      <placeholder/>
-                    </child>
-                    <child>
-                      <placeholder/>
-                    </child>
-                    <child>
-                      <placeholder/>
-                    </child>
-                    <child>
-                      <placeholder/>
-                    </child>
-                    <child>
-                      <placeholder/>
-                    </child>
-                    <child>
-                      <placeholder/>
-                    </child>
-                    <child>
-                      <placeholder/>
-                    </child>
-                    <child>
-                      <placeholder/>
-                    </child>
+                    <property name="label" translatable="yes">Mr Sam, where is the Cairo bit?</property>
                   </object>
                   <packing>
                     <property name="position">4</property>
@@ -5113,35 +4885,5 @@
         </child>
       </object>
     </child>
-  </object>
-  <object class="GtkListStore" id="unity_additional_accelerators">
-    <columns>
-      <!-- column-name Title -->
-      <column type="gchararray"/>
-      <!-- column-name Accelerator -->
-      <column type="gchararray"/>
-    </columns>
-    <data>
-      <row>
-        <col id="0" translatable="yes">Invoke HUD</col>
-        <col id="1" translatable="yes">Super+H</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">Show the launcher</col>
-        <col id="1" translatable="yes">Super+E</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">Execute command</col>
-        <col id="1" translatable="yes">Super+M</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">Put keyboard focus on the launcher</col>
-        <col id="1" translatable="yes">Super+A</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">Open the first panel menu</col>
-        <col id="1" translatable="yes">Super+N</col>
-      </row>
-    </data>
   </object>
 </interface>

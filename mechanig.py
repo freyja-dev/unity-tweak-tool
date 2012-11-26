@@ -79,19 +79,139 @@ class Handler ():
     
     def on_lb_configure_hot_corner_windows_spread_activate_link(self,nb_compizsettings):
         nb_compizsettings.set_current_page(4)    
- 
-    def on_craccel_accel_edited(self,craccel, path, key, mods, hwcode,model=None):
+    
+    # keyboard widgets in unity-additional
+    
+    def on_craccel_unity_additional_accel_edited(self,craccel, path, key, mods, hwcode,model=None):
         craccel,model=model,craccel
 # This sorcery is required to compensate for glade's stupidity of passing the arguments always swapped. and thats not a bug, its a feature.
         accel = Gtk.accelerator_name(key, mods)
         iter = model.get_iter(path)
         model.set_value(iter, 1, accel)
 
-    def on_craccel_accel_cleared(self, craccel, path, model=None):
+    def on_craccel_unity_additional_accel_cleared(self, craccel, path, model=None):
         craccel,model=model,craccel
         iter = model.get_iter(path)
         model.set_value(iter, 1, None)
-       
+
+    # keyboard widgets in unity-panel-windows-switcher
+     
+    def on_craccel_unity_switcher_windows_accel_edited(self,craccel, path, key, mods, hwcode,model=None):
+        craccel,model=model,craccel
+# This sorcery is required to compensate for glade's stupidity of passing the arguments always swapped. and thats not a bug, its a feature.
+        accel = Gtk.accelerator_name(key, mods)
+        iter = model.get_iter(path)
+        model.set_value(iter, 1, accel)
+
+    def on_craccel_unity_switcher_windows_accel_cleared(self, craccel, path, model=None):
+    
+        #FIXME: TypeError: Argument 3 does not allow None as a value
+        craccel,model=model,craccel
+        iter = model.get_iter(path)
+        model.set_value(iter, 1, None)
+ 
+    # keyboard widgets in unity-panel-launcher-switcher
+     
+    def on_craccel_unity_switcher_launcher_accel_edited(self,craccel, path, key, mods, hwcode,model=None):
+        craccel,model=model,craccel
+# This sorcery is required to compensate for glade's stupidity of passing the arguments always swapped. and thats not a bug, its a feature.
+        accel = Gtk.accelerator_name(key, mods)
+        iter = model.get_iter(path)
+        model.set_value(iter, 1, accel)
+
+    def on_craccel_unity_switcher_launcher_accel_cleared(self, craccel, path, model=None):
+    
+        #FIXME: TypeError: Argument 3 does not allow None as a value
+        craccel,model=model,craccel
+        iter = model.get_iter(path)
+        model.set_value(iter, 1, None) 
+ 
+    # keyboard widgets in unity-panel-launcher-switcher
+     
+    def on_craccel_unity_switcher_launcher_accel_edited(self,craccel, path, key, mods, hwcode,model=None):
+        craccel,model=model,craccel
+# This sorcery is required to compensate for glade's stupidity of passing the arguments always swapped. and thats not a bug, its a feature.
+        accel = Gtk.accelerator_name(key, mods)
+        iter = model.get_iter(path)
+        model.set_value(iter, 1, accel)
+
+    def on_craccel_unity_switcher_launcher_accel_cleared(self, craccel, path, model=None):
+    
+        #FIXME: TypeError: Argument 3 does not allow None as a value
+        craccel,model=model,craccel
+        iter = model.get_iter(path)
+        model.set_value(iter, 1, None)  
+
+
+    # keyboard widgets in compiz-general-zoom
+     
+    def on_craccel_compiz_general_zoom_accel_edited(self,craccel, path, key, mods, hwcode,model=None):
+        craccel,model=model,craccel
+# This sorcery is required to compensate for glade's stupidity of passing the arguments always swapped. and thats not a bug, its a feature.
+        accel = Gtk.accelerator_name(key, mods)
+        iter = model.get_iter(path)
+        model.set_value(iter, 1, accel)
+
+    def on_craccel_compiz_general_zoom_accel_cleared(self, craccel, path, model=None):
+    
+        #FIXME: TypeError: Argument 3 does not allow None as a value
+        craccel,model=model,craccel
+        iter = model.get_iter(path)
+        model.set_value(iter, 1, None) 
+        
+    # keyboard widgets in compiz-general-keys
+     
+    def on_craccel_compiz_general_keys_accel_edited(self,craccel, path, key, mods, hwcode,model=None):
+        craccel,model=model,craccel
+# This sorcery is required to compensate for glade's stupidity of passing the arguments always swapped. and thats not a bug, its a feature.
+        accel = Gtk.accelerator_name(key, mods)
+        iter = model.get_iter(path)
+        model.set_value(iter, 1, accel)
+
+    def on_craccel_compiz_general_keys_accel_cleared(self, craccel, path, model=None):
+    
+        #FIXME: TypeError: Argument 3 does not allow None as a value
+        craccel,model=model,craccel
+        iter = model.get_iter(path)
+        model.set_value(iter, 1, None) 
+        
+        
+    # keyboard widgets in compiz-workspace
+     #FIXME: Doesn't work in compiz-workspace.
+     
+    def on_craccel_compiz_workspace_accel_edited(self,craccel, path, key, mods, hwcode,model=None):
+        craccel,model=model,craccel
+# This sorcery is required to compensate for glade's stupidity of passing the arguments always swapped. and thats not a bug, its a feature.
+        accel = Gtk.accelerator_name(key, mods)
+        iter = model.get_iter(path)
+        model.set_value(iter, 1, accel)
+
+    def on_craccel_compiz_workspace_accel_cleared(self, craccel, path, model=None):
+    
+        #FIXME: TypeError: Argument 3 does not allow None as a value
+        craccel,model=model,craccel
+        iter = model.get_iter(path)
+        model.set_value(iter, 1, None) 
+
+    # keyboard widgets in compiz-windows-spread
+     
+    #FIXME: Doesn't work in compiz-windows-spread 
+     
+    def on_craccel_compiz_windows_spread_accel_edited(self,craccel, path, key, mods, hwcode,model=None):
+        craccel,model=model,craccel
+# This sorcery is required to compensate for glade's stupidity of passing the arguments always swapped. and thats not a bug, its a feature.
+        accel = Gtk.accelerator_name(key, mods)
+        iter = model.get_iter(path)
+        model.set_value(iter, 1, accel)
+
+    def on_craccel_compiz_windows_spread_accel_cleared(self, craccel, path, model=None):
+    
+        #FIXME: TypeError: Argument 3 does not allow None as a value
+        craccel,model=model,craccel
+        iter = model.get_iter(path)
+        model.set_value(iter, 1, None)            
+        
+        
 # Basic builder setting up
         
 builder = Gtk.Builder()
