@@ -922,6 +922,7 @@
                             <property name="halign">start</property>
                             <property name="margin_left">1</property>
                             <property name="margin_top">7</property>
+                            <signal name="notify::active" handler="on_sw_launcher_hidemode_active_notify" swapped="no"/>
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
@@ -952,6 +953,7 @@
                         <child>
                           <object class="GtkLabel" id="l_launcher_reveal_sensitivity">
                             <property name="visible">True</property>
+                            <property name="sensitive">False</property>
                             <property name="can_focus">False</property>
                             <property name="has_tooltip">True</property>
                             <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
@@ -991,6 +993,7 @@
                         <child>
                           <object class="GtkLabel" id="l_launcher_transparency_scale">
                             <property name="visible">True</property>
+                            <property name="sensitive">False</property>
                             <property name="can_focus">False</property>
                             <property name="has_tooltip">True</property>
                             <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
@@ -1036,6 +1039,7 @@
                             <property name="halign">start</property>
                             <property name="margin_left">1</property>
                             <property name="margin_top">8</property>
+                            <signal name="notify::active" handler="on_sw_launcher_transparent_active_notify" swapped="no"/>
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
@@ -1047,6 +1051,7 @@
                         <child>
                           <object class="GtkScale" id="sc_launcher_transparency">
                             <property name="visible">True</property>
+                            <property name="sensitive">False</property>
                             <property name="can_focus">True</property>
                             <property name="has_tooltip">True</property>
                             <property name="tooltip_markup" translatable="yes">The transparency of the launcher. </property>
@@ -1067,6 +1072,7 @@
                         <child>
                           <object class="GtkScale" id="sc_reveal_sensitivity">
                             <property name="visible">True</property>
+                            <property name="sensitive">False</property>
                             <property name="can_focus">True</property>
                             <property name="has_tooltip">True</property>
                             <property name="tooltip_markup" translatable="yes">The opacity of the Launcher background. </property>
@@ -1124,6 +1130,7 @@
                           <object class="GtkRadioButton" id="radio_reveal_topleft">
                             <property name="label" translatable="yes">Top left corner</property>
                             <property name="visible">True</property>
+                            <property name="sensitive">False</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
                             <property name="xalign">0</property>
@@ -1141,6 +1148,7 @@
                           <object class="GtkRadioButton" id="radio_reveal_left">
                             <property name="label" translatable="yes">Left side</property>
                             <property name="visible">True</property>
+                            <property name="sensitive">False</property>
                             <property name="can_focus">False</property>
                             <property name="has_default">True</property>
                             <property name="receives_default">True</property>
@@ -1159,6 +1167,7 @@
                         <child>
                           <object class="GtkLabel" id="l_launcher_reveal">
                             <property name="visible">True</property>
+                            <property name="sensitive">False</property>
                             <property name="can_focus">False</property>
                             <property name="has_tooltip">True</property>
                             <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
@@ -1241,6 +1250,7 @@
                             <property name="xalign">0</property>
                             <property name="draw_indicator">True</property>
                             <property name="group">radio_launcher_color_cham</property>
+                            <signal name="notify::active" handler="on_radio_launcher_color_cus_active_notify" swapped="no"/>
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
@@ -1252,6 +1262,7 @@
                         <child>
                           <object class="GtkColorButton" id="color_launcher_color_cus">
                             <property name="visible">True</property>
+                            <property name="sensitive">False</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">True</property>
                             <property name="halign">start</property>
@@ -1340,8 +1351,10 @@
                           <object class="GtkComboBoxText" id="cbox_launcher_icon_colouring">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
+                            <property name="has_default">True</property>
                             <property name="margin_left">6</property>
                             <property name="margin_top">7</property>
+                            <property name="active">1</property>
                             <property name="entry_text_column">0</property>
                             <property name="id_column">1</property>
                             <items>
@@ -1480,6 +1493,7 @@
                             <property name="halign">start</property>
                             <property name="margin_right">1</property>
                             <property name="margin_top">7</property>
+                            <signal name="notify::active" handler="on_sw_dash_blur_active_notify" swapped="no"/>
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
@@ -1492,6 +1506,7 @@
                           <object class="GtkRadioButton" id="radio_dash_blur_smart">
                             <property name="label" translatable="yes">Smart</property>
                             <property name="visible">True</property>
+                            <property name="sensitive">False</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
                             <property name="margin_right">1</property>
@@ -1511,6 +1526,7 @@
                           <object class="GtkRadioButton" id="radio_dash_blur_static">
                             <property name="label" translatable="yes">Static</property>
                             <property name="visible">True</property>
+                            <property name="sensitive">False</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
                             <property name="margin_right">1</property>
@@ -1614,6 +1630,7 @@
                             <property name="xalign">0</property>
                             <property name="draw_indicator">True</property>
                             <property name="group">radio_dash_color_cham</property>
+                            <signal name="notify::active" handler="on_radio_dash_color_cus_active_notify" swapped="no"/>
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
@@ -1625,6 +1642,7 @@
                         <child>
                           <object class="GtkColorButton" id="color_dash_color_cus">
                             <property name="visible">True</property>
+                            <property name="sensitive">False</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">True</property>
                           </object>
@@ -2097,6 +2115,7 @@
                         <child>
                           <object class="GtkLabel" id="l_transparent_panel">
                             <property name="visible">True</property>
+                            <property name="sensitive">False</property>
                             <property name="can_focus">False</property>
                             <property name="has_tooltip">True</property>
                             <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
@@ -2173,6 +2192,7 @@
                             <property name="halign">start</property>
                             <property name="margin_left">1</property>
                             <property name="margin_top">8</property>
+                            <signal name="notify::active" handler="on_sw_transparent_panel_active_notify" swapped="no"/>
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
@@ -2185,6 +2205,7 @@
                           <object class="GtkCheckButton" id="check_panel_opaque">
                             <property name="label" translatable="yes">Opaque menu for maximized windows</property>
                             <property name="visible">True</property>
+                            <property name="sensitive">False</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
                             <property name="margin_top">2</property>
@@ -2235,6 +2256,7 @@
                         <child>
                           <object class="GtkScale" id="sc_panel_transparency">
                             <property name="visible">True</property>
+                            <property name="sensitive">False</property>
                             <property name="can_focus">False</property>
                             <property name="margin_left">1</property>
                             <property name="margin_top">9</property>
@@ -2972,6 +2994,7 @@
                         <child>
                           <object class="GtkLabel" id="l_compiz_zoom_type">
                             <property name="visible">True</property>
+                            <property name="sensitive">False</property>
                             <property name="can_focus">False</property>
                             <property name="xalign">1</property>
                             <property name="label" translatable="yes">Zoom type:</property>
@@ -3000,6 +3023,7 @@
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="halign">start</property>
+                            <signal name="notify::active" handler="on_sw_compiz_zoom_active_notify" swapped="no"/>
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
@@ -3012,6 +3036,7 @@
                           <object class="GtkRadioButton" id="radio_zoom_type_standard">
                             <property name="label" translatable="yes">Standard</property>
                             <property name="visible">True</property>
+                            <property name="sensitive">False</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
                             <property name="xalign">0</property>
@@ -3029,6 +3054,7 @@
                           <object class="GtkRadioButton" id="radio_zoom_type_lg">
                             <property name="label" translatable="yes">Looking glass</property>
                             <property name="visible">True</property>
+                            <property name="sensitive">False</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
                             <property name="xalign">0</property>
@@ -3654,6 +3680,7 @@
                         <child>
                           <object class="GtkLabel" id="l_compiz_spacing">
                             <property name="visible">True</property>
+                            <property name="sensitive">False</property>
                             <property name="can_focus">False</property>
                             <property name="xalign">1</property>
                             <property name="label" translatable="yes">Spacing:</property>
@@ -3668,6 +3695,7 @@
                         <child>
                           <object class="GtkLabel" id="l_additional">
                             <property name="visible">True</property>
+                            <property name="sensitive">False</property>
                             <property name="can_focus">False</property>
                             <property name="xalign">1</property>
                             <property name="label" translatable="yes">Additional:</property>
@@ -3696,6 +3724,7 @@
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="halign">start</property>
+                            <signal name="notify::active" handler="on_sw_windows_spread_active_notify" swapped="no"/>
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
@@ -3707,6 +3736,7 @@
                         <child>
                           <object class="GtkSpinButton" id="spin_compiz_spacing">
                             <property name="visible">True</property>
+                            <property name="sensitive">False</property>
                             <property name="can_focus">False</property>
                             <property name="halign">start</property>
                             <property name="invisible_char">•</property>
@@ -3723,6 +3753,7 @@
                           <object class="GtkCheckButton" id="check_overlay_emblem">
                             <property name="label" translatable="yes">Overlay emblem</property>
                             <property name="visible">True</property>
+                            <property name="sensitive">False</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
                             <property name="xalign">0</property>
@@ -3739,6 +3770,7 @@
                           <object class="GtkCheckButton" id="check_click_desktop">
                             <property name="label" translatable="yes">Click on the desktop to switch to it</property>
                             <property name="visible">True</property>
+                            <property name="sensitive">False</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
                             <property name="xalign">0</property>
@@ -4643,6 +4675,7 @@
                         <property name="margin_left">1</property>
                         <property name="margin_top">6</property>
                         <property name="active">True</property>
+                        <signal name="notify::active" handler="on_sw_desktop_icon_active_notify" swapped="no"/>
                       </object>
                       <packing>
                         <property name="left_attach">1</property>

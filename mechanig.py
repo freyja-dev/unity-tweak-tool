@@ -209,14 +209,43 @@ class Handler ():
         #FIXME: TypeError: Argument 3 does not allow None as a value
         craccel,model=model,craccel
         iter = model.get_iter(path)
-        model.set_value(iter, 1, None)            
+        model.set_value(iter, 1, None)
         
+    
+    # selective selection in unity-launcher - part 1
+                
+    def on_sw_launcher_hidemode_active_notify(self,widget,udata=None):
+        radio_reveal_left = builder.get_object('radio_reveal_left')   
+        radio_reveal_topleft = builder.get_object('radio_reveal_topleft')
+        sc_reveal_sensitivity = builder.get_object('sc_reveal_sensitivity')
+        l_launcher_reveal = builder.get_object('l_launcher_reveal')
+        l_launcher_reveal_sensitivity = builder.get_object('l_launcher_reveal_sensitivity')
         
+        if sw_launcher_hidemode.get_active() == True:
+            radio_reveal_left.set_sensitive(True)
+            radio_reveal_topleft.set_sensitive(True)
+            sc_reveal_sensitivity.set_sensitive(True)
+            l_launcher_reveal.set_sensitive(True)
+            l_launcher_reveal_sensitivity.set_sensitive(True)
+        else:
+            radio_reveal_left.set_sensitive(False)
+            radio_reveal_topleft.set_sensitive(False)
+            sc_reveal_sensitivity.set_sensitive(False)
+            l_launcher_reveal.set_sensitive(False)
+            l_launcher_reveal_sensitivity.set_sensitive(False)
 # Basic builder setting up
         
 builder = Gtk.Builder()
 builder.add_from_file("mechanig.glade")
 builder.connect_signals(Handler())
+
+
+# setting up switches that sensitivize things
+
+sw_launcher_hidemode = builder.get_object('sw_launcher_hidemode')
+
+
+
 
 
 # The main Mechanig window that needs to be shown
