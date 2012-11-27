@@ -105,7 +105,7 @@ class Handler ():
 
     def on_craccel_unity_switcher_windows_accel_cleared(self, craccel, path, model=None):
     
-        #FIXME: TypeError: Argument 3 does not allow None as a value
+    
         craccel,model=model,craccel
         iter = model.get_iter(path)
         model.set_value(iter, 1, None)
@@ -121,7 +121,7 @@ class Handler ():
 
     def on_craccel_unity_switcher_launcher_accel_cleared(self, craccel, path, model=None):
     
-        #FIXME: TypeError: Argument 3 does not allow None as a value
+        
         craccel,model=model,craccel
         iter = model.get_iter(path)
         model.set_value(iter, 1, None) 
@@ -137,7 +137,7 @@ class Handler ():
 
     def on_craccel_unity_switcher_launcher_accel_cleared(self, craccel, path, model=None):
     
-        #FIXME: TypeError: Argument 3 does not allow None as a value
+        
         craccel,model=model,craccel
         iter = model.get_iter(path)
         model.set_value(iter, 1, None)  
@@ -154,7 +154,7 @@ class Handler ():
 
     def on_craccel_compiz_general_zoom_accel_cleared(self, craccel, path, model=None):
     
-        #FIXME: TypeError: Argument 3 does not allow None as a value
+        
         craccel,model=model,craccel
         iter = model.get_iter(path)
         model.set_value(iter, 1, None) 
@@ -170,7 +170,7 @@ class Handler ():
 
     def on_craccel_compiz_general_keys_accel_cleared(self, craccel, path, model=None):
     
-        #FIXME: TypeError: Argument 3 does not allow None as a value
+        
         craccel,model=model,craccel
         iter = model.get_iter(path)
         model.set_value(iter, 1, None) 
@@ -188,7 +188,7 @@ class Handler ():
 
     def on_craccel_compiz_workspace_accel_cleared(self, craccel, path, model=None):
     
-        #FIXME: TypeError: Argument 3 does not allow None as a value
+        
         craccel,model=model,craccel
         iter = model.get_iter(path)
         model.set_value(iter, 1, None) 
@@ -206,7 +206,7 @@ class Handler ():
 
     def on_craccel_compiz_windows_spread_accel_cleared(self, craccel, path, model=None):
     
-        #FIXME: TypeError: Argument 3 does not allow None as a value
+        
         craccel,model=model,craccel
         iter = model.get_iter(path)
         model.set_value(iter, 1, None)
