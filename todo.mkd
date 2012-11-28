@@ -11,17 +11,17 @@
 
 ###Unity settings
 #### Launcher
- - Reveal location radios should only activate if the auto-hide switcher is on
- - Likewise for Reveal sensitivity scale
+ - Reveal location radios should only activate if the auto-hide switcher is on ##DONE
+ - Likewise for Reveal sensitivity scale ##DONE
  - Fill the dropdown for icon colouring 
 
 #### Dash
- - Blur type radio only activate if dash blur is on
+ - Blur type radio only activate if dash blur is on ##DONE
  - Empty labels aren't empty ##DONE
  
 #### Panel
- - Menu visible for only activate if autohide menu switch is on
- - Panel transparency options only activate if transparent panel switch is on
+ - Menu visible for only activate if autohide menu switch is on ##DONE
+ - Panel transparency options only activate if transparent panel switch is on ##DONE
  - More options for the dropdown under indicator label
  
 #### Switcher
@@ -74,6 +74,6 @@
 ###Others
 - Fix the messed up widget naming when possible
 - Fill in all the tooltips
-- Make the window not resizable
-- Hide the main notebook's tabs
+- Make the window not resizable ##DONE
+- Hide the main notebook's tabs ##DONE
 

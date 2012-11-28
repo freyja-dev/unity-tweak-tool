@@ -2159,6 +2159,7 @@
                             <property name="margin_left">1</property>
                             <property name="margin_top">8</property>
                             <property name="active">True</property>
+                            <signal name="notify::active" handler="on_sw_appmenu_autohide_active_notify" swapped="no"/>
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
