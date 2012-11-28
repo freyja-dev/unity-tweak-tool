@@ -233,6 +233,8 @@ class Handler ():
             sc_reveal_sensitivity.set_sensitive(False)
             l_launcher_reveal.set_sensitive(False)
             l_launcher_reveal_sensitivity.set_sensitive(False)
+            
+            
 # Basic builder setting up
         
 builder = Gtk.Builder()
@@ -247,9 +249,17 @@ sw_launcher_hidemode = builder.get_object('sw_launcher_hidemode')
 
 
 
+# hide tabs of the notebook
+
+builder.get_object('nb_mechanig').set_show_tabs(False)
+
+
 
 # The main Mechanig window that needs to be shown
 mechanig_main = builder.get_object('mechanig_main')
+
+# Prevent resizing of the window
+mechanig_main.set_resizable(False)
 
 # This signal is emitted when you close the window,
 # which triggers Gtk.main_quit, which tells the main Gtk loop to quit
