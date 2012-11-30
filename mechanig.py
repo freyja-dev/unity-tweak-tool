@@ -419,6 +419,7 @@ class Handler ():
         
         if icon == Gtk.EntryIconPosition.SECONDARY:
             tool_entry_search.set_text("")
+            tool_entry_search.set_icon_from_stock(Gtk.EntryIconPosition.SECONDARY, None)
             
     # upon pasting from clipboard        
      
