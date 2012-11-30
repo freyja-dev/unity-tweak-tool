@@ -115,7 +115,7 @@ class SearchEntry(Gtk.Entry):
         """
         Show the clear icon whenever the field is not empty
         """
-        if self.get_text() != "":
+        if self.get_text():
             self.set_icon_from_stock(Gtk.EntryIconPosition.SECONDARY,
                 Gtk.STOCK_CLEAR)
             # reverse the icon if we are in an rtl environment

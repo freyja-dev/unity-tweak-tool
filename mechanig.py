@@ -400,12 +400,11 @@ class Handler ():
     def on_tool_entry_search_insert_text(self,text,length,position,udata):
     
         tool_entry_search = builder.get_object('tool_entry_search')
-        if tool_entry_search.get_text() != "":
-            tool_entry_search.set_icon_from_stock(Gtk.EntryIconPosition.SECONDARY,
-                Gtk.STOCK_CLEAR)
-            
-        else:
-            tool_entry_search.set_icon_from_stock(Gtk.EntryIconPosition.SECONDARY, None) 
+        searchboxhastext=tool_entry_search.get_text_length()+1
+        if searchboxhastext:
+			tool_entry_search.set_icon_from_stock(Gtk.EntryIconPosition.SECONDARY,Gtk.STOCK_CLEAR)            
+        else:			
+			tool_entry_search.set_icon_from_stock(Gtk.EntryIconPosition.SECONDARY, None)
 
     
     def on_tool_entry_search_delete_text(self,start_pos,end_pos,udata):
