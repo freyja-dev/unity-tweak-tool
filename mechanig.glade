@@ -1406,7 +1406,6 @@
                           <object class="GtkComboBoxText" id="cbox_launcher_icon_colouring">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="has_default">True</property>
                             <property name="margin_left">6</property>
                             <property name="margin_top">7</property>
                             <property name="active">1</property>
@@ -3686,7 +3685,7 @@
                     <child>
                       <object class="GtkTreeView" id="treeview_compiz_workspace">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can_focus">True</property>
                         <property name="model">list_compiz_workspace_accelerators</property>
                         <property name="headers_visible">False</property>
                         <property name="headers_clickable">False</property>
@@ -3935,7 +3934,7 @@
                     <child>
                       <object class="GtkTreeView" id="treeview_compiz_windows_spread">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can_focus">True</property>
                         <property name="model">list_compiz_windows_spread_accelerators</property>
                         <property name="headers_visible">False</property>
                         <property name="headers_clickable">False</property>

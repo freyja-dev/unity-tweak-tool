@@ -7,10 +7,13 @@ class Handler ():
         nb_mechanig.set_current_page(0)
     def on_tool_unitysettings_toggled(self,nb_mechanig):
         nb_mechanig.set_current_page(1)
+        builder.get_object('nb_unitysettings').set_current_page(0)
     def on_tool_compizsettings_toggled(self,nb_mechanig):
         nb_mechanig.set_current_page(2)
+        builder.get_object('nb_compizsettings').set_current_page(0)
     def on_tool_themesettings_toggled(self,nb_mechanig):
         nb_mechanig.set_current_page(3)
+        builder.get_object('nb_themesettings').set_current_page(0)
     def on_tool_desktopsettings_toggled(self,nb_mechanig):
         nb_mechanig.set_current_page(4)
         
@@ -105,7 +108,6 @@ class Handler ():
 
     def on_craccel_unity_switcher_windows_accel_cleared(self, craccel, path, model=None):
     
-    
         craccel,model=model,craccel
         iter = model.get_iter(path)
         model.set_value(iter, 1, None)
@@ -121,7 +123,6 @@ class Handler ():
 
     def on_craccel_unity_switcher_launcher_accel_cleared(self, craccel, path, model=None):
     
-        
         craccel,model=model,craccel
         iter = model.get_iter(path)
         model.set_value(iter, 1, None) 
@@ -137,11 +138,9 @@ class Handler ():
 
     def on_craccel_unity_switcher_launcher_accel_cleared(self, craccel, path, model=None):
     
-        
         craccel,model=model,craccel
         iter = model.get_iter(path)
         model.set_value(iter, 1, None)  
-
 
     # keyboard widgets in compiz-general-zoom
      
@@ -154,7 +153,6 @@ class Handler ():
 
     def on_craccel_compiz_general_zoom_accel_cleared(self, craccel, path, model=None):
     
-        
         craccel,model=model,craccel
         iter = model.get_iter(path)
         model.set_value(iter, 1, None) 
@@ -170,14 +168,11 @@ class Handler ():
 
     def on_craccel_compiz_general_keys_accel_cleared(self, craccel, path, model=None):
     
-        
         craccel,model=model,craccel
         iter = model.get_iter(path)
         model.set_value(iter, 1, None) 
         
-        
     # keyboard widgets in compiz-workspace
-     #FIXME: Doesn't work in compiz-workspace.
      
     def on_craccel_compiz_workspace_accel_edited(self,craccel, path, key, mods, hwcode,model=None):
         craccel,model=model,craccel
@@ -188,14 +183,11 @@ class Handler ():
 
     def on_craccel_compiz_workspace_accel_cleared(self, craccel, path, model=None):
     
-        
         craccel,model=model,craccel
         iter = model.get_iter(path)
         model.set_value(iter, 1, None) 
 
     # keyboard widgets in compiz-windows-spread
-     
-    #FIXME: Doesn't work in compiz-windows-spread 
      
     def on_craccel_compiz_windows_spread_accel_edited(self,craccel, path, key, mods, hwcode,model=None):
         craccel,model=model,craccel
@@ -206,12 +198,10 @@ class Handler ():
 
     def on_craccel_compiz_windows_spread_accel_cleared(self, craccel, path, model=None):
     
-        
         craccel,model=model,craccel
         iter = model.get_iter(path)
         model.set_value(iter, 1, None)
         
-    
     # selective selection in unity-launcher - part 1
                 
     def on_sw_launcher_hidemode_active_notify(self,widget,udata=None):
@@ -240,8 +230,6 @@ class Handler ():
     def on_sw_launcher_transparent_active_notify(self,widget,udata=None):
         l_launcher_transparency_scale = builder.get_object('l_launcher_transparency_scale')
         sc_launcher_transparency = builder.get_object('sc_launcher_transparency')
-
-
         if sw_launcher_transparent.get_active() == True:
             l_launcher_transparency_scale.set_sensitive(True)
             sc_launcher_transparency.set_sensitive(True)
@@ -250,12 +238,10 @@ class Handler ():
             l_launcher_transparency_scale.set_sensitive(False)
             sc_launcher_transparency.set_sensitive(False)
             
-    
     # selective selection in unity-launcher - part 3
     
     def on_radio_launcher_color_cus_active_notify(self,widget,udata=None):
         color_launcher_color_cus  = builder.get_object('color_launcher_color_cus')
-      
         if radio_launcher_color_cus.get_active() == True:
             color_launcher_color_cus.set_sensitive(True)
             
@@ -284,11 +270,9 @@ class Handler ():
     def on_radio_dash_color_cus_active_notify(self,widget,udata=None):
         color_dash_color_cus = builder.get_object('color_dash_color_cus')
         
-        
         if radio_dash_color_cus.get_active() == True:
             color_dash_color_cus.set_sensitive(True)
             
- 
         else:
             color_dash_color_cus.set_sensitive(False)
             
@@ -306,9 +290,6 @@ class Handler ():
             spin_menu_visible.set_sensitive(False)
             l_menu_visible.set_sensitive(False)
             
-            
-            
-  
     # selective selection in unity-panel  part 2
   
     def on_sw_transparent_panel_active_notify(self,widget,udata=None):
@@ -324,7 +305,6 @@ class Handler ():
             sc_panel_transparency.set_sensitive(False)
             l_transparent_panel.set_sensitive(False)
             check_panel_opaque.set_sensitive(False)
-            
             
      # selective sensitivity in compiz - general
             
@@ -381,7 +361,6 @@ class Handler ():
             check_desktop_trash.set_sensitive(True)
             checK_desktop_devices.set_sensitive(True)
         
-        
         else:
             check_desktop_home.set_sensitive(False)
             check_desktop_networkserver.set_sensitive(False)   
@@ -409,7 +388,6 @@ class Handler ():
         tool_entry_search = builder.get_object('tool_entry_search')
         
         tool_entry_search.set_icon_from_stock(Gtk.EntryIconPosition.SECONDARY, None)
-            
             
     # clicking on secondary icon clearing text
      
@@ -452,7 +430,6 @@ sw_desktop_icon = builder.get_object('sw_desktop_icon')
 # hide tabs of the notebook
 
 builder.get_object('nb_mechanig').set_show_tabs(False)
-
 
 
 # The main Mechanig window that needs to be shown
