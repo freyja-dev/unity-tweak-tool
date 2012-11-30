@@ -390,10 +390,8 @@ class Handler ():
             
     # gtk search box
     
-    # inserting text shows the secondary icon (stock-clear)
+    # inserting text shows the secondary icon (stock-clear)    
     
-    #FIXME: When one letter is entered, no clear icon appears
-    #FIXME: When pasted from clipboard, no clear icon appears
     #FIXME: When entered text is deleted but not fully, no clear icon appears
     
     
