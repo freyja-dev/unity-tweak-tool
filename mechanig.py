@@ -371,26 +371,25 @@ class Handler ():
     
     # inserting text shows the secondary icon (stock-clear)
     
-    #FIXME: When one letter is entered, no clear icon appears
-    #FIXME: When pasted from clipboard, no clear icon appears
-    #FIXME: When entered text is deleted but not fully, no clear icon appears
-    
-    
     def on_tool_entry_search_insert_text(self,text,length,position,udata):
     
         tool_entry_search = builder.get_object('tool_entry_search')
-        if tool_entry_search.get_text() != "":
+        
+        # getting the text length to workaround some Gtk bug
+        if tool_entry_search.get_text_length()+1:
             tool_entry_search.set_icon_from_stock(Gtk.EntryIconPosition.SECONDARY,
                 Gtk.STOCK_CLEAR)
             
         else:
             tool_entry_search.set_icon_from_stock(Gtk.EntryIconPosition.SECONDARY, None) 
 
-    
     def on_tool_entry_search_delete_text(self,start_pos,end_pos,udata):
         tool_entry_search = builder.get_object('tool_entry_search')
         
-        tool_entry_search.set_icon_from_stock(Gtk.EntryIconPosition.SECONDARY, None)
+        # getting the text length to workaround some Gtk bug        
+        
+        if (tool_entry_search.get_text_length()-1) == 0:
+            tool_entry_search.set_icon_from_stock(Gtk.EntryIconPosition.SECONDARY, None)
             
     # clicking on secondary icon clearing text
      
@@ -400,14 +399,7 @@ class Handler ():
         
         if icon == Gtk.EntryIconPosition.SECONDARY:
             tool_entry_search.set_text("")
-            
-    # upon pasting from clipboard        
-     
-#    def on_tool_entry_search_paste_clipboard(self,pos):     
-#        tool_entry_search = builder.get_object('tool_entry_search')
-#        
-#        tool_entry_search.set_icon_from_stock(Gtk.EntryIconPosition.SECONDARY,
-#                Gtk.STOCK_CLEAR)  
+            tool_entry_search.set_icon_from_stock(Gtk.EntryIconPosition.SECONDARY, None)
             
 # Basic builder setting up
         
