@@ -7,10 +7,13 @@ class Handler ():
         nb_mechanig.set_current_page(0)
     def on_tool_unitysettings_toggled(self,nb_mechanig):
         nb_mechanig.set_current_page(1)
+        builder.get_object('nb_unitysettings').set_current_page(0)
     def on_tool_compizsettings_toggled(self,nb_mechanig):
         nb_mechanig.set_current_page(2)
+        builder.get_object('nb_compizsettings').set_current_page(0)
     def on_tool_themesettings_toggled(self,nb_mechanig):
         nb_mechanig.set_current_page(3)
+        builder.get_object('nb_themesettings').set_current_page(0)
     def on_tool_desktopsettings_toggled(self,nb_mechanig):
         nb_mechanig.set_current_page(4)
         
