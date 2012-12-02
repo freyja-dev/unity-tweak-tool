@@ -1,1 +1,5 @@
 designs
+__pycache__
+*~
+*.bak
+jpm.stash

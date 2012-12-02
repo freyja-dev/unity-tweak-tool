@@ -15,33 +15,21 @@
 #
 # Legal Stuff:
 #
-# This program is free software; you can redistribute it and/or modify it under
+# Mechanig is free software; you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
 # Foundation; version 3.
 #
-# This program is distributed in the hope that it will be useful, but WITHOUTa
+# Mechanig is distributed in the hope that it will be useful, but WITHOUT
 # ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
 # FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
 # details.
 #
 # You should have received a copy of the GNU General Public License along with
-# this program; if not, write to the Free Software Foundation, Inc.,
-# 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
+# this program; if not, see <https://www.gnu.org/licenses/gpl-3.0.txt>
 
 from gi.repository import Gtk,Gio
 import os
-
-class ui():
-    def __init__(self,builder):
-        self.builder=builder
-    def __getitem__(self,obj):
-        return self.builder.get_object(obj)
-    def sensitize(self,list):
-        for item in list:
-            self.__getitem__(item).set_sensitive(True)
-    def unsensitize(self,list):
-        for item in list:
-            self.__getitem__(item).set_sensitive(False)
+import ui
 
 class Mechanig ():
     def __init__(self):
@@ -420,7 +408,7 @@ class Mechanig ():
 
 
 
-if __name__='__main__':
+if __name__=='__main__':
 # Fire up the Engines
     Mechanig()
 
