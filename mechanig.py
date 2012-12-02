@@ -29,7 +29,7 @@
 
 from gi.repository import Gtk,Gio
 import os
-import ui
+from ui import ui
 
 class Mechanig ():
     def __init__(self):
