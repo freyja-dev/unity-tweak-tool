@@ -379,7 +379,8 @@ class Handler ():
         tool_entry_search = builder.get_object('tool_entry_search')
         searchboxhastext=tool_entry_search.get_text_length()+1
         if searchboxhastext:
-			tool_entry_search.set_icon_from_stock(Gtk.EntryIconPosition.SECONDARY,Gtk.STOCK_CLEAR)            
+			tool_entry_search.set_icon_from_stock(Gtk.EntryIconPosition.SECONDARY,Gtk.STOCK_CLEAR)  
+			print(tool_entry_search.get_text_length())          
         else:			
 			tool_entry_search.set_icon_from_stock(Gtk.EntryIconPosition.SECONDARY, None)
 
