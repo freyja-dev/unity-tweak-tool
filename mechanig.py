@@ -369,26 +369,27 @@ class Handler ():
             
     # gtk search box
     
-    # inserting text shows the secondary icon (stock-clear)    
-    
-    #FIXME: When entered text is deleted but not fully, no clear icon appears
-    
+    # inserting text shows the secondary icon (stock-clear)
     
     def on_tool_entry_search_insert_text(self,text,length,position,udata):
     
         tool_entry_search = builder.get_object('tool_entry_search')
-        searchboxhastext=tool_entry_search.get_text_length()+1
-        if searchboxhastext:
-			tool_entry_search.set_icon_from_stock(Gtk.EntryIconPosition.SECONDARY,Gtk.STOCK_CLEAR)  
-			print(tool_entry_search.get_text_length())          
-        else:			
-			tool_entry_search.set_icon_from_stock(Gtk.EntryIconPosition.SECONDARY, None)
+        
+        # getting the text length to workaround some Gtk bug
+        if tool_entry_search.get_text_length()+1:
+            tool_entry_search.set_icon_from_stock(Gtk.EntryIconPosition.SECONDARY,
+                Gtk.STOCK_CLEAR)
+            
+        else:
+            tool_entry_search.set_icon_from_stock(Gtk.EntryIconPosition.SECONDARY, None) 
 
-    
     def on_tool_entry_search_delete_text(self,start_pos,end_pos,udata):
         tool_entry_search = builder.get_object('tool_entry_search')
         
-        tool_entry_search.set_icon_from_stock(Gtk.EntryIconPosition.SECONDARY, None)
+        # getting the text length to workaround some Gtk bug        
+        
+        if (tool_entry_search.get_text_length()-1) == 0:
+            tool_entry_search.set_icon_from_stock(Gtk.EntryIconPosition.SECONDARY, None)
             
     # clicking on secondary icon clearing text
      
@@ -399,14 +400,6 @@ class Handler ():
         if icon == Gtk.EntryIconPosition.SECONDARY:
             tool_entry_search.set_text("")
             tool_entry_search.set_icon_from_stock(Gtk.EntryIconPosition.SECONDARY, None)
-            
-    # upon pasting from clipboard        
-     
-#    def on_tool_entry_search_paste_clipboard(self,pos):     
-#        tool_entry_search = builder.get_object('tool_entry_search')
-#        
-#        tool_entry_search.set_icon_from_stock(Gtk.EntryIconPosition.SECONDARY,
-#                Gtk.STOCK_CLEAR)  
             
 # Basic builder setting up
         
