@@ -178,7 +178,7 @@ class Mechanig ():
     def on_craccel_unity_additional_accel_cleared(self, craccel, path, model=None):
         model=self.ui['list_unity_additional_accelerators']
         iter = model.get_iter(path)
-        model.set_value(iter, 1, None)
+        model.set_value(iter, 1, "Disabled")
 
     # keyboard widgets in unity-panel-windows-switcher
 
@@ -191,8 +191,8 @@ class Mechanig ():
     def on_craccel_unity_switcher_windows_accel_cleared(self, craccel, path, model=None):
         model=self.ui['list_unity_switcher_windows_accelerators']
         iter = model.get_iter(path)
-        model.set_value(iter, 1, None)
- 
+        model.set_value(iter, 1, "Disabled")
+
     # keyboard widgets in unity-panel-launcher-switcher
 
     def on_craccel_unity_switcher_launcher_accel_edited(self,craccel, path, key, mods, hwcode,model=None):
@@ -204,7 +204,8 @@ class Mechanig ():
     def on_craccel_unity_switcher_launcher_accel_cleared(self, craccel, path, model=None):
         model=self.ui['list_unity_switcher_launcher_accelerators']
         iter = model.get_iter(path)
-        model.set_value(iter, 1, None)
+        model.set_value(iter, 1, "Disabled")
+
     # keyboard widgets in compiz-general-zoom
 
     def on_craccel_compiz_general_zoom_accel_edited(self,craccel, path, key, mods, hwcode,model=None):
@@ -215,7 +216,7 @@ class Mechanig ():
     def on_craccel_compiz_general_zoom_accel_cleared(self, craccel, path, model=None):
         model=self.ui['list_compiz_general_zoom_accelerators']
         iter = model.get_iter(path)
-        model.set_value(iter, 1, None)
+        model.set_value(iter, 1, "Disabled")
 
     # keyboard widgets in compiz-general-keys
 
@@ -228,7 +229,7 @@ class Mechanig ():
     def on_craccel_compiz_general_keys_accel_cleared(self, craccel, path, model=None):
         model=self.ui['list_compiz_general_keys_accelerators']
         iter = model.get_iter(path)
-        model.set_value(iter, 1, None)
+        model.set_value(iter, 1, "Disabled")
 
     # keyboard widgets in compiz-workspace
 
@@ -241,7 +242,7 @@ class Mechanig ():
     def on_craccel_compiz_workspace_accel_cleared(self, craccel, path, model=None):
         model=self.ui['list_compiz_workspace_accelerators']
         iter = model.get_iter(path)
-        model.set_value(iter, 1, None)
+        model.set_value(iter, 1, "Disabled")
 
     # keyboard widgets in compiz-windows-spread
 
@@ -254,7 +255,7 @@ class Mechanig ():
     def on_craccel_compiz_windows_spread_accel_cleared(self, craccel, path, model=None):
         model=self.ui['list_compiz_windows_spread_accelerators']
         iter = model.get_iter(path)
-        model.set_value(iter, 1, None)
+        model.set_value(iter, 1, "Disabled")
 
 #=====BEGIN: Unity settings=====
 #-----BEGIN: Launcher ----------
