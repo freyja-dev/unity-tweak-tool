@@ -5,10 +5,8 @@
 #   J Phani Mahesh <phanimahesh@gmail.com> 
 #   Barneedhar (jokerdino) <barneedhar@ubuntu.com> 
 #   Amith KK <amithkumaran@gmail.com>
-#   Georgi
-#   Sam
-#
-#  TODO : ask George and Sam their preferred display names and mail ids
+#   Georgi Karavasilev <motorslav@gmail.com>
+#   Sam Tran <samvtran@gmail.com>
 #
 # Description:
 #   A One-stop configuration tool for Unity.
