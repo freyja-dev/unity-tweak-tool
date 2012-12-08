@@ -64,6 +64,38 @@
     <property name="step_increment">1</property>
     <property name="page_increment">1</property>
   </object>
+  <object class="GtkImage" id="image1">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="yalign">0.49000000953674316</property>
+    <property name="stock">gtk-missing-image</property>
+  </object>
+  <object class="GtkImage" id="image2">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="stock">gtk-missing-image</property>
+  </object>
+  <object class="GtkImage" id="image3">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="stock">gtk-missing-image</property>
+  </object>
+  <object class="GtkImage" id="image4">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="xalign">0.49000000953674316</property>
+    <property name="stock">gtk-missing-image</property>
+  </object>
+  <object class="GtkImage" id="image6">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="stock">gtk-missing-image</property>
+  </object>
+  <object class="GtkImage" id="image5">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="stock">gtk-missing-image</property>
+  </object>
   <object class="GtkListStore" id="list_compiz_general_keys_accelerators">
     <columns>
       <!-- column-name Title -->
@@ -230,11 +262,11 @@
       </row>
       <row>
         <col id="0" translatable="yes">Flip through windows in the switcher</col>
-        <col id="1" translatable="yes"/>
+        <col id="1" translatable="yes"></col>
       </row>
       <row>
         <col id="0" translatable="yes">Flip through windows in the switcher backwards</col>
-        <col id="1" translatable="yes"/>
+        <col id="1" translatable="yes"></col>
       </row>
     </data>
   </object>
@@ -247,6 +279,278 @@
         <property name="can_focus">False</property>
         <property name="orientation">vertical</property>
         <child>
+          <object class="GtkMenuBar" id="menubar1">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkMenuItem" id="menuitem1">
+                <property name="use_action_appearance">False</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">_File</property>
+                <property name="use_underline">True</property>
+                <child type="submenu">
+                  <object class="GtkMenu" id="menu1">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImageMenuItem" id="Start Page">
+                        <property name="label" translatable="yes">Start Page</property>
+                        <property name="use_action_appearance">False</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="image">image1</property>
+                        <property name="use_stock">False</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkImageMenuItem" id="Unity Settings">
+                        <property name="label" translatable="yes">Unity Settings</property>
+                        <property name="use_action_appearance">False</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="image">image2</property>
+                        <property name="use_stock">False</property>
+                        <child type="submenu">
+                          <object class="GtkMenu" id="menu2">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <child>
+                              <object class="GtkMenuItem" id="Launcher">
+                                <property name="use_action_appearance">False</property>
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="label" translatable="yes">Launcher</property>
+                                <property name="use_underline">True</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkMenuItem" id="Dash">
+                                <property name="use_action_appearance">False</property>
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="label" translatable="yes">Dash</property>
+                                <property name="use_underline">True</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkMenuItem" id="Panel">
+                                <property name="use_action_appearance">False</property>
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="label" translatable="yes">Panel</property>
+                                <property name="use_underline">True</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkMenuItem" id="Switcher">
+                                <property name="use_action_appearance">False</property>
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="label" translatable="yes">Switcher</property>
+                                <property name="use_underline">True</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkMenuItem" id="Additional">
+                                <property name="use_action_appearance">False</property>
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="label" translatable="yes">Additional</property>
+                                <property name="use_underline">True</property>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkImageMenuItem" id="Compiz Settings">
+                        <property name="label" translatable="yes">Compiz Settings</property>
+                        <property name="use_action_appearance">False</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="image">image3</property>
+                        <property name="use_stock">False</property>
+                        <child type="submenu">
+                          <object class="GtkMenu" id="menu4">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <child>
+                              <object class="GtkMenuItem" id="General">
+                                <property name="use_action_appearance">False</property>
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="label" translatable="yes">General</property>
+                                <property name="use_underline">True</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkMenuItem" id="Workspace">
+                                <property name="use_action_appearance">False</property>
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="label" translatable="yes">Workspace</property>
+                                <property name="use_underline">True</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkMenuItem" id="Windows Spread">
+                                <property name="use_action_appearance">False</property>
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="label" translatable="yes">Windows Spread</property>
+                                <property name="use_underline">True</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkMenuItem" id="Windows Snapping">
+                                <property name="use_action_appearance">False</property>
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="label" translatable="yes">Windows Snapping</property>
+                                <property name="use_underline">True</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkMenuItem" id="Hotcorners">
+                                <property name="use_action_appearance">False</property>
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="label" translatable="yes">Hotcorners</property>
+                                <property name="use_underline">True</property>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkImageMenuItem" id="Theme Settings">
+                        <property name="label" translatable="yes">Theme Settings</property>
+                        <property name="use_action_appearance">False</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="image">image4</property>
+                        <property name="use_stock">False</property>
+                        <child type="submenu">
+                          <object class="GtkMenu" id="menu5">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <child>
+                              <object class="GtkMenuItem" id="System Theme">
+                                <property name="use_action_appearance">False</property>
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="label" translatable="yes">System Theme</property>
+                                <property name="use_underline">True</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkMenuItem" id="Icon Theme">
+                                <property name="use_action_appearance">False</property>
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="label" translatable="yes">Icon Theme</property>
+                                <property name="use_underline">True</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkMenuItem" id="Cursor Theme">
+                                <property name="use_action_appearance">False</property>
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="label" translatable="yes">Cursor Theme</property>
+                                <property name="use_underline">True</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkMenuItem" id="Fonts">
+                                <property name="use_action_appearance">False</property>
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="label" translatable="yes">Fonts</property>
+                                <property name="use_underline">True</property>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkImageMenuItem" id="Desktop Settings">
+                        <property name="label" translatable="yes">Desktop Settings</property>
+                        <property name="use_action_appearance">False</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="image">image5</property>
+                        <property name="use_stock">False</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkSeparatorMenuItem" id="separatormenuitem1">
+                        <property name="use_action_appearance">False</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkImageMenuItem" id="Quit">
+                        <property name="label">gtk-quit</property>
+                        <property name="use_action_appearance">False</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="use_underline">True</property>
+                        <property name="use_stock">True</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkMenuItem" id="menuitem4">
+                <property name="use_action_appearance">False</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">_Help</property>
+                <property name="use_underline">True</property>
+                <child type="submenu">
+                  <object class="GtkMenu" id="menu3">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImageMenuItem" id="Mechanig Help">
+                        <property name="label" translatable="yes">Mechanig Help</property>
+                        <property name="use_action_appearance">False</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="image">image6</property>
+                        <property name="use_stock">False</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkImageMenuItem" id="About">
+                        <property name="label">gtk-about</property>
+                        <property name="use_action_appearance">False</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="use_underline">True</property>
+                        <property name="use_stock">True</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
           <object class="GtkToolbar" id="toolbar_main">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
@@ -257,6 +561,7 @@
             </style>
             <child>
               <object class="GtkRadioToolButton" id="tool_startpage">
+                <property name="use_action_appearance">False</property>
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes">Start page</property>
@@ -274,6 +579,7 @@
             </child>
             <child>
               <object class="GtkRadioToolButton" id="tool_unitysettings">
+                <property name="use_action_appearance">False</property>
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes">Unity settings</property>
@@ -289,6 +595,7 @@
             </child>
             <child>
               <object class="GtkRadioToolButton" id="tool_compizsettings">
+                <property name="use_action_appearance">False</property>
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes">Compiz settings</property>
@@ -304,6 +611,7 @@
             </child>
             <child>
               <object class="GtkRadioToolButton" id="tool_themesettings">
+                <property name="use_action_appearance">False</property>
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes">Theme settings</property>
@@ -319,6 +627,7 @@
             </child>
             <child>
               <object class="GtkRadioToolButton" id="tool_desktopsettings">
+                <property name="use_action_appearance">False</property>
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes">Desktop settings</property>
@@ -345,6 +654,7 @@
             </child>
             <child>
               <object class="GtkToolItem" id="tool_searchbox">
+                <property name="use_action_appearance">False</property>
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <child>
@@ -357,6 +667,7 @@
                     <property name="activates_default">True</property>
                     <property name="caps_lock_warning">False</property>
                     <property name="primary_icon_name">edit-find-symbolic</property>
+                    <property name="placeholder_text">Search</property>
                     <signal name="insert-text" handler="on_tool_entry_search_insert_text" swapped="no"/>
                     <signal name="delete-text" handler="on_tool_entry_search_delete_text" swapped="no"/>
                     <signal name="icon-press" handler="on_tool_entry_search_icon_press" swapped="no"/>
@@ -373,7 +684,7 @@
           <packing>
             <property name="expand">False</property>
             <property name="fill">True</property>
-            <property name="position">0</property>
+            <property name="position">1</property>
           </packing>
         </child>
         <child>
@@ -436,6 +747,7 @@
                         <property name="show_arrow">False</property>
                         <child>
                           <object class="GtkToolButton" id="tool_launcher">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="label" translatable="yes">Launcher</property>
@@ -450,6 +762,7 @@
                         </child>
                         <child>
                           <object class="GtkToolButton" id="tool_dash">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="label" translatable="yes">Dash</property>
@@ -464,6 +777,7 @@
                         </child>
                         <child>
                           <object class="GtkToolButton" id="tool_panel">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="label" translatable="yes">Panel</property>
@@ -478,6 +792,7 @@
                         </child>
                         <child>
                           <object class="GtkToolButton" id="tool_unity_switcher">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="label" translatable="yes">Switcher</property>
@@ -492,6 +807,7 @@
                         </child>
                         <child>
                           <object class="GtkToolButton" id="tool_additional">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="label" translatable="yes">Additional</property>
@@ -579,6 +895,7 @@
                         <property name="show_arrow">False</property>
                         <child>
                           <object class="GtkToolButton" id="tool_general">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="label" translatable="yes">General</property>
@@ -593,6 +910,7 @@
                         </child>
                         <child>
                           <object class="GtkToolButton" id="tool_compiz_switcher">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="label" translatable="yes">Switcher</property>
@@ -607,6 +925,7 @@
                         </child>
                         <child>
                           <object class="GtkToolButton" id="tool_windows_spread">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="label" translatable="yes">Windows spread</property>
@@ -621,6 +940,7 @@
                         </child>
                         <child>
                           <object class="GtkToolButton" id="tool_windows_snapping">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="label" translatable="yes">Windows snapping</property>
@@ -635,6 +955,7 @@
                         </child>
                         <child>
                           <object class="GtkToolButton" id="tool_hotcorners">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="label" translatable="yes">Hotcorners</property>
@@ -722,6 +1043,7 @@
                         <property name="show_arrow">False</property>
                         <child>
                           <object class="GtkToolButton" id="tool_system">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="label" translatable="yes">System</property>
@@ -736,6 +1058,7 @@
                         </child>
                         <child>
                           <object class="GtkToolButton" id="tool_icons">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="label" translatable="yes">Icons</property>
@@ -750,6 +1073,7 @@
                         </child>
                         <child>
                           <object class="GtkToolButton" id="tool_cursors">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="label" translatable="yes">Cursor</property>
@@ -764,6 +1088,7 @@
                         </child>
                         <child>
                           <object class="GtkToolButton" id="tool_fonts">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="label" translatable="yes">Fonts</property>
@@ -851,6 +1176,7 @@
                         <property name="show_arrow">False</property>
                         <child>
                           <object class="GtkToolButton" id="tool_desktop">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="label" translatable="yes">Icons</property>
@@ -917,6 +1243,7 @@
                         <property name="margin_left">20</property>
                         <child>
                           <object class="GtkSwitch" id="sw_launcher_hidemode">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
                             <property name="has_tooltip">True</property>
@@ -925,6 +1252,7 @@
                             <property name="halign">start</property>
                             <property name="margin_left">1</property>
                             <property name="margin_top">7</property>
+                            <property name="use_action_appearance">False</property>
                             <signal name="notify::active" handler="on_sw_launcher_hidemode_active_notify" swapped="no"/>
                           </object>
                           <packing>
@@ -1034,6 +1362,7 @@
                         </child>
                         <child>
                           <object class="GtkSwitch" id="sw_launcher_transparent">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
                             <property name="has_tooltip">True</property>
@@ -1096,6 +1425,7 @@
                         <child>
                           <object class="GtkRadioButton" id="radio_launcher_visibility_all">
                             <property name="label" translatable="yes">All desktops</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="has_default">True</property>
@@ -1115,6 +1445,7 @@
                         <child>
                           <object class="GtkRadioButton" id="radio_launcher_visibility_primary">
                             <property name="label" translatable="yes">Primary desktop</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
@@ -1132,6 +1463,7 @@
                         <child>
                           <object class="GtkRadioButton" id="radio_reveal_topleft">
                             <property name="label" translatable="yes">Top left corner</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="sensitive">False</property>
                             <property name="can_focus">False</property>
@@ -1150,6 +1482,7 @@
                         <child>
                           <object class="GtkRadioButton" id="radio_reveal_left">
                             <property name="label" translatable="yes">Left side</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="sensitive">False</property>
                             <property name="can_focus">False</property>
@@ -1227,6 +1560,7 @@
                         <child>
                           <object class="GtkRadioButton" id="radio_launcher_color_cham">
                             <property name="label" translatable="yes">Chameleonic</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
@@ -1246,6 +1580,7 @@
                         <child>
                           <object class="GtkRadioButton" id="radio_launcher_color_cus">
                             <property name="label" translatable="yes">Custom:</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
@@ -1264,6 +1599,7 @@
                         </child>
                         <child>
                           <object class="GtkColorButton" id="color_launcher_color_cus">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="sensitive">False</property>
                             <property name="can_focus">False</property>
@@ -1372,6 +1708,7 @@
                         </child>
                         <child>
                           <object class="GtkSwitch" id="sw_launcher_show_desktop">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="halign">start</property>
@@ -1453,6 +1790,7 @@
                     <child>
                       <object class="GtkButton" id="b_unity_launcher_reset">
                         <property name="label" translatable="yes">Restore default configurations</property>
+                        <property name="use_action_appearance">False</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="receives_default">True</property>
@@ -1490,6 +1828,7 @@
                         <property name="margin_left">141</property>
                         <child>
                           <object class="GtkSwitch" id="sw_dash_blur">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="halign">start</property>
@@ -1507,6 +1846,7 @@
                         <child>
                           <object class="GtkRadioButton" id="radio_dash_blur_smart">
                             <property name="label" translatable="yes">Smart</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="sensitive">False</property>
                             <property name="can_focus">False</property>
@@ -1527,6 +1867,7 @@
                         <child>
                           <object class="GtkRadioButton" id="radio_dash_blur_static">
                             <property name="label" translatable="yes">Static</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="sensitive">False</property>
                             <property name="can_focus">False</property>
@@ -1608,6 +1949,7 @@
                         <child>
                           <object class="GtkRadioButton" id="radio_dash_color_cham">
                             <property name="label" translatable="yes">Chameleonic</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
@@ -1626,6 +1968,7 @@
                         <child>
                           <object class="GtkRadioButton" id="radio_dash_color_cus">
                             <property name="label" translatable="yes">Custom:</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
@@ -1643,6 +1986,7 @@
                         </child>
                         <child>
                           <object class="GtkColorButton" id="color_dash_color_cus">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="sensitive">False</property>
                             <property name="can_focus">False</property>
@@ -1734,6 +2078,7 @@
                         <child>
                           <object class="GtkCheckButton" id="check_homelens">
                             <property name="label" translatable="yes">Home lens</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
@@ -1751,6 +2096,7 @@
                         <child>
                           <object class="GtkCheckButton" id="check_applens">
                             <property name="label" translatable="yes">Application lens</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
@@ -1767,6 +2113,7 @@
                         <child>
                           <object class="GtkCheckButton" id="check_musiclens">
                             <property name="label" translatable="yes">Music lens</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
@@ -1783,6 +2130,7 @@
                         <child>
                           <object class="GtkCheckButton" id="check_photolens">
                             <property name="label" translatable="yes">Photo lens</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
@@ -1799,6 +2147,7 @@
                         <child>
                           <object class="GtkCheckButton" id="check_videolens">
                             <property name="label" translatable="yes">Video lens</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
@@ -1815,6 +2164,7 @@
                         <child>
                           <object class="GtkButton" id="b_install_lens">
                             <property name="label" translatable="yes">Install additional lenses</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">True</property>
@@ -1850,6 +2200,7 @@
                         <child>
                           <object class="GtkCheckButton" id="check_suggestions_home">
                             <property name="label" translatable="yes">Home lens</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
@@ -1867,6 +2218,7 @@
                         <child>
                           <object class="GtkCheckButton" id="check_suggestions_app">
                             <property name="label" translatable="yes">Application lens</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
@@ -1883,6 +2235,7 @@
                         <child>
                           <object class="GtkCheckButton" id="check_suggestions_video">
                             <property name="label" translatable="yes">Video lens</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
@@ -1899,6 +2252,7 @@
                         <child>
                           <object class="GtkCheckButton" id="check_suggestions_music">
                             <property name="label" translatable="yes">Music lens</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
@@ -2018,6 +2372,7 @@
                     <child>
                       <object class="GtkButton" id="b_unity_dash_reset">
                         <property name="label" translatable="yes">Restore default configurations</property>
+                        <property name="use_action_appearance">False</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="receives_default">True</property>
@@ -2155,6 +2510,7 @@
                         </child>
                         <child>
                           <object class="GtkSwitch" id="sw_appmenu_autohide">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="halign">start</property>
@@ -2190,6 +2546,7 @@
                         </child>
                         <child>
                           <object class="GtkSwitch" id="sw_transparent_panel">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="halign">start</property>
@@ -2207,6 +2564,7 @@
                         <child>
                           <object class="GtkCheckButton" id="check_panel_opaque">
                             <property name="label" translatable="yes">Opaque menu for maximized windows</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="sensitive">False</property>
                             <property name="can_focus">False</property>
@@ -2225,6 +2583,7 @@
                         <child>
                           <object class="GtkCheckButton" id="check_indicator_username">
                             <property name="label" translatable="yes">Show username</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
@@ -2242,6 +2601,7 @@
                         <child>
                           <object class="GtkCheckButton" id="check_indicator_batterytime">
                             <property name="label" translatable="yes">Show remaining battery time</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
@@ -2479,6 +2839,7 @@
                     <child>
                       <object class="GtkButton" id="b_unity_panel_reset">
                         <property name="label" translatable="yes">Restore default configurations</property>
+                        <property name="use_action_appearance">False</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="receives_default">True</property>
@@ -2599,6 +2960,7 @@
                                 </child>
                                 <child>
                                   <object class="GtkCheckButton" id="check_switchwindows_all_workspaces">
+                                    <property name="use_action_appearance">False</property>
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="receives_default">False</property>
@@ -2614,6 +2976,7 @@
                                 </child>
                                 <child>
                                   <object class="GtkCheckButton" id="check_switcher_showdesktop">
+                                    <property name="use_action_appearance">False</property>
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="receives_default">False</property>
@@ -2629,6 +2992,7 @@
                                 </child>
                                 <child>
                                   <object class="GtkCheckButton" id="check_minimizedwindows_switch">
+                                    <property name="use_action_appearance">False</property>
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="receives_default">False</property>
@@ -2644,6 +3008,7 @@
                                 </child>
                                 <child>
                                   <object class="GtkCheckButton" id="check_autoexposewindows">
+                                    <property name="use_action_appearance">False</property>
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="receives_default">False</property>
@@ -2798,6 +3163,7 @@
                     <child>
                       <object class="GtkButton" id="b_unity_switcher_reset">
                         <property name="label" translatable="yes">Restore default configurations</property>
+                        <property name="use_action_appearance">False</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="receives_default">True</property>
@@ -2854,6 +3220,7 @@
                         </child>
                         <child>
                           <object class="GtkSwitch" id="sw_shortcuts_hints_overlay">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="halign">end</property>
@@ -2921,6 +3288,7 @@
                     <child>
                       <object class="GtkButton" id="b_unity_additional_reset">
                         <property name="label" translatable="yes">Restore default configurations</property>
+                        <property name="use_action_appearance">False</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="receives_default">True</property>
@@ -3023,6 +3391,7 @@
                         </child>
                         <child>
                           <object class="GtkSwitch" id="sw_compiz_zoom">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="halign">start</property>
@@ -3038,6 +3407,7 @@
                         <child>
                           <object class="GtkRadioButton" id="radio_zoom_type_standard">
                             <property name="label" translatable="yes">Standard</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="sensitive">False</property>
                             <property name="can_focus">False</property>
@@ -3056,6 +3426,7 @@
                         <child>
                           <object class="GtkRadioButton" id="radio_zoom_type_lg">
                             <property name="label" translatable="yes">Looking glass</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="sensitive">False</property>
                             <property name="can_focus">False</property>
@@ -3144,6 +3515,7 @@
                         </child>
                         <child>
                           <object class="GtkSwitch" id="sw_compiz_invert_colours">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                           </object>
@@ -3234,6 +3606,7 @@
                         <child>
                           <object class="GtkCheckButton" id="check_synctovblank">
                             <property name="label" translatable="yes">Sync to VBlank</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
@@ -3316,6 +3689,7 @@
                     <child>
                       <object class="GtkButton" id="b_compiz_general_reset">
                         <property name="label" translatable="yes">Restore default configurations</property>
+                        <property name="use_action_appearance">False</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="receives_default">True</property>
@@ -3445,6 +3819,7 @@
                         </child>
                         <child>
                           <object class="GtkColorButton" id="color_desk_outline">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">True</property>
@@ -3459,6 +3834,7 @@
                         </child>
                         <child>
                           <object class="GtkSwitch" id="sw_workspace_switcher">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="halign">start</property>
@@ -3505,6 +3881,7 @@
                         <child>
                           <object class="GtkCheckButton" id="check_desktop_advanced">
                             <property name="label" translatable="yes">Advanced</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
@@ -3606,6 +3983,7 @@
                         <child>
                           <object class="GtkButton" id="b_compiz_workspace_reset">
                             <property name="label" translatable="yes">Restore default configurations</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">True</property>
@@ -3620,6 +3998,7 @@
                         <child>
                           <object class="GtkLinkButton" id="lb_configure_hot_corner">
                             <property name="label" translatable="yes">Configure hot corner</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">True</property>
@@ -3724,6 +4103,7 @@
                         </child>
                         <child>
                           <object class="GtkSwitch" id="sw_windows_spread">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="halign">start</property>
@@ -3755,6 +4135,7 @@
                         <child>
                           <object class="GtkCheckButton" id="check_overlay_emblem">
                             <property name="label" translatable="yes">Overlay emblem</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="sensitive">False</property>
                             <property name="can_focus">False</property>
@@ -3772,6 +4153,7 @@
                         <child>
                           <object class="GtkCheckButton" id="check_click_desktop">
                             <property name="label" translatable="yes">Click on the desktop to switch to it</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="sensitive">False</property>
                             <property name="can_focus">False</property>
@@ -3842,6 +4224,7 @@
                     <child>
                       <object class="GtkLinkButton" id="lb_configure_hot_corner_windows_spread">
                         <property name="label" translatable="yes">Configure hot corner</property>
+                        <property name="use_action_appearance">False</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="receives_default">True</property>
@@ -3860,6 +4243,7 @@
                     <child>
                       <object class="GtkButton" id="b_compiz_windows_spread_reset">
                         <property name="label" translatable="yes">Restore default configurations</property>
+                        <property name="use_action_appearance">False</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="receives_default">True</property>
@@ -4054,6 +4438,7 @@
                         </style>
                         <child>
                           <object class="GtkToolButton" id="add-toolbutton1">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="label" translatable="yes">Add Theme</property>
@@ -4067,6 +4452,7 @@
                         </child>
                         <child>
                           <object class="GtkToolButton" id="remove-toolbutton1">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="label" translatable="yes">Remove Theme</property>
@@ -4088,6 +4474,7 @@
                     <child>
                       <object class="GtkCheckButton" id="check_simultaneous">
                         <property name="label" translatable="yes">Simultaneous changing</property>
+                        <property name="use_action_appearance">False</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">False</property>
@@ -4105,6 +4492,7 @@
                     <child>
                       <object class="GtkButton" id="b_theme_system_reset">
                         <property name="label" translatable="yes">Restore default configuration</property>
+                        <property name="use_action_appearance">False</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
@@ -4165,6 +4553,7 @@
                         </style>
                         <child>
                           <object class="GtkToolButton" id="add-toolbutton">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="label" translatable="yes">Add Theme</property>
@@ -4178,6 +4567,7 @@
                         </child>
                         <child>
                           <object class="GtkToolButton" id="remove-toolbutton">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="label" translatable="yes">Remove Theme</property>
@@ -4199,6 +4589,7 @@
                     <child>
                       <object class="GtkButton" id="b_theme_icon_rset">
                         <property name="label" translatable="yes">Restore default configuration</property>
+                        <property name="use_action_appearance">False</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
@@ -4263,6 +4654,7 @@
                         </style>
                         <child>
                           <object class="GtkToolButton" id="add-toolbutton2">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="label" translatable="yes">Add Theme</property>
@@ -4276,6 +4668,7 @@
                         </child>
                         <child>
                           <object class="GtkToolButton" id="remove-toolbutton2">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="label" translatable="yes">Remove Theme</property>
@@ -4297,6 +4690,7 @@
                     <child>
                       <object class="GtkButton" id="b_theme_cursor_reset">
                         <property name="label" translatable="yes">Restore default configuration</property>
+                        <property name="use_action_appearance">False</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
@@ -4519,11 +4913,12 @@
                         </child>
                         <child>
                           <object class="GtkFontButton" id="font_default">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">True</property>
                             <property name="font">Sans 12</property>
-                            <property name="preview_text"/>
+                            <property name="preview_text"></property>
                             <property name="show_preview_entry">False</property>
                           </object>
                           <packing>
@@ -4535,11 +4930,12 @@
                         </child>
                         <child>
                           <object class="GtkFontButton" id="font_document">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">True</property>
                             <property name="font">Sans 12</property>
-                            <property name="preview_text"/>
+                            <property name="preview_text"></property>
                             <property name="show_preview_entry">False</property>
                           </object>
                           <packing>
@@ -4551,11 +4947,12 @@
                         </child>
                         <child>
                           <object class="GtkFontButton" id="font_monospace">
+                            <property name="use_action_appearance">False</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">True</property>
                             <property name="font">Sans 12</property>
-                            <property name="preview_text"/>
+                            <property name="preview_text"></property>
                             <property name="show_preview_entry">False</property>
                           </object>
                           <packing>
@@ -4570,8 +4967,9 @@
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">True</property>
+                            <property name="use_action_appearance">False</property>
                             <property name="font">Sans 12</property>
-                            <property name="preview_text"/>
+                            <property name="preview_text"></property>
                             <property name="show_preview_entry">False</property>
                           </object>
                           <packing>
@@ -4592,6 +4990,7 @@
                     <child>
                       <object class="GtkButton" id="b_theme_font_reset">
                         <property name="label" translatable="yes">Restore default configurations</property>
+                        <property name="use_action_appearance">False</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="receives_default">True</property>
@@ -4669,6 +5068,7 @@
                     </child>
                     <child>
                       <object class="GtkSwitch" id="sw_desktop_icon">
+                        <property name="use_action_appearance">False</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="has_tooltip">True</property>
@@ -4690,6 +5090,7 @@
                     <child>
                       <object class="GtkCheckButton" id="check_desktop_home">
                         <property name="label" translatable="yes">Home folder</property>
+                        <property name="use_action_appearance">False</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="receives_default">False</property>
@@ -4706,6 +5107,7 @@
                     <child>
                       <object class="GtkCheckButton" id="check_desktop_networkserver">
                         <property name="label" translatable="yes">Network servers</property>
+                        <property name="use_action_appearance">False</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="receives_default">False</property>
@@ -4722,6 +5124,7 @@
                     <child>
                       <object class="GtkCheckButton" id="check_desktop_trash">
                         <property name="label" translatable="yes">Trash</property>
+                        <property name="use_action_appearance">False</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="receives_default">False</property>
@@ -4738,6 +5141,7 @@
                     <child>
                       <object class="GtkCheckButton" id="check_desktop_devices">
                         <property name="label" translatable="yes">Devices</property>
+                        <property name="use_action_appearance">False</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="receives_default">False</property>
@@ -4792,6 +5196,7 @@
                     <child>
                       <object class="GtkCheckButton" id="check_alignment">
                         <property name="label" translatable="yes">Align icons  to grid</property>
+                        <property name="use_action_appearance">False</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="receives_default">False</property>
@@ -4883,6 +5288,7 @@
                 <child>
                   <object class="GtkButton" id="b_desktop_settings_reset">
                     <property name="label" translatable="yes">Restore default configurations</property>
+                    <property name="use_action_appearance">False</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="receives_default">True</property>
@@ -4916,7 +5322,7 @@
           <packing>
             <property name="expand">False</property>
             <property name="fill">True</property>
-            <property name="position">1</property>
+            <property name="position">2</property>
           </packing>
         </child>
       </object>
