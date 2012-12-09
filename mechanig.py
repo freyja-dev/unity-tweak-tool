@@ -50,11 +50,11 @@ class Mechanig ():
         self.ui['mechanig_main'].connect("delete-event", Gtk.main_quit)
         self.ui['mechanig_main'].show_all()
         Gtk.main()
-# TODO : Change all references below to use the above  ones
 
 #=====================================================================#
 #                                Helpers                              #
 #=====================================================================#
+# TODO : Find better names.
     @staticmethod
     def resetAllKeys(schema,path=None):
         """Reset all keys in given Schema."""
@@ -81,12 +81,15 @@ class Mechanig ():
 
     def refresh(self):
         '''Reads the current config and refreshes the displayed values'''
-# will push once complete.
+        pass
+# TODO : Find a clever way or set each one manually.
 
-##########################################################
-# TODO : Dont trust glade to pass the objects properly.
-# Always add required references to init and use them.
-# That way, mechanig can resist glade stupidity
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\
+# Dont trust glade to pass the objects properly.            |
+# Always add required references to init and use them.      |
+# That way, mechanig can resist glade stupidity.            |
+# Apologies Gnome devs, but Glade is not our favorite.      |
+#___________________________________________________________/
 
 # ===== Top Navigation bar =====
     def on_tool_startpage_toggled(self,udata):
@@ -153,11 +156,12 @@ class Mechanig ():
         self.ui['nb_themesettings'].set_current_page(3)     
         
     # desktop settings on start page    
-        
     def on_tool_desktop_clicked(self,udata): 
         self.ui['tool_desktopsettings'].set_active(True)
+
+#===================END OF START PAGE===================#
+
     # compiz hotcorner linked button
-    
     def on_lb_configure_hot_corner_activate_link(self,udata):
         self.ui['nb_compizsettings'].set_current_page(4)
     
@@ -257,7 +261,11 @@ class Mechanig ():
 #=====BEGIN: Unity settings=====
 #-----BEGIN: Launcher ----------
     def on_sw_launcher_hidemode_active_notify(self,widget,udata=None):
-        dependants=['radio_reveal_left','radio_reveal_topleft','sc_reveal_sensitivity','l_launcher_reveal','l_launcher_reveal_sensitivity']
+        dependants=['radio_reveal_left',
+                    'radio_reveal_topleft',
+                    'sc_reveal_sensitivity',
+                    'l_launcher_reveal',
+                    'l_launcher_reveal_sensitivity']
         if self.ui['sw_launcher_hidemode'].get_active():
             self.unityshell.set_int("launcher-hide-mode",1)
             self.ui.sensitize(dependants)
@@ -266,119 +274,105 @@ class Mechanig ():
             self.ui.unsensitize(dependants)
 
     def on_radio_reveal_left_toggled(self,button,udata=None):
-        mode=0 if button.get_active() else 1
+        radio=self.ui['radio_reveal_left']
+        mode=0 if radio.get_active() else 1
         self.unityshell.set_int('reveal-trigger',mode)
-#--- SNIP: buggy code not committed ---
 
+    def on_radio_reveal_topleft_toggled(self,button,udata=None):
+        radio=self.ui['radio_reveal_topleft']
+        mode=0 if not radio.get_active() else 1
+        self.unityshell.set_int('reveal-trigger',mode)
 
+    def on_sc_reveal_sensitivity_value_changed(self,widget,udata=None):
+        slider=self.ui['sc_reveal_sensitivity']
+        val=slider.get_value()
+# TODO : Set the sensitivity
+# Two settings possible: reveal-pressure and edge-responsiveness
+# Discuss and decide which to use.
 
-
-
-# selective selection in unity-launcher - part 2
-    
     def on_sw_launcher_transparent_active_notify(self,widget,udata=None):
-        l_launcher_transparency_scale = builder.get_object('l_launcher_transparency_scale')
-        sc_launcher_transparency = builder.get_object('sc_launcher_transparency')
-        if sw_launcher_transparent.get_active() == True:
-            l_launcher_transparency_scale.set_sensitive(True)
-            sc_launcher_transparency.set_sensitive(True)
-            
+        dependants=['l_launcher_transparency_scale',
+                    'sc_launcher_transparency']
+        if self.ui['sw_launcher_transparent'].get_active():
+            self.ui.sensitize(dependants)
+            self.unityshell.set_double('launcher-opacity',1)
         else:
-            l_launcher_transparency_scale.set_sensitive(False)
-            sc_launcher_transparency.set_sensitive(False)
-            
-    # selective selection in unity-launcher - part 3
-    
+            self.ui.unsensitize(dependants)
+            opacity=self.ui['sc_launcher_transparency'].get_value()
+            self.unityshell.set_double('launcher-opacity',opacity)
+# Check adj_launcher_transparency if this misbehaves
+
+    def on_sc_launcher_transparency_value_changed(self,widget,udata=None):
+        opacity=self.ui['sc_launcher_transparency'].get_value()
+        self.unityshell.set_double('launcher-opacity',opacity)
+# Check adj_launcher_transparency if this misbehaves
+        
     def on_radio_launcher_color_cus_active_notify(self,widget,udata=None):
-        color_launcher_color_cus  = builder.get_object('color_launcher_color_cus')
-        if radio_launcher_color_cus.get_active() == True:
-            color_launcher_color_cus.set_sensitive(True)
-            
+        dependants=['color_launcher_color_cus']
+        if self.ui['radio_launcher_color_cus'].get_active():
+            self.ui.sensitize(dependants)
         else:
-            color_launcher_color_cus.set_sensitive(False)   
-   
-    # selective selection in unity-dash - part 1
-   
+            self.ui.unsensitize(dependants)
+   # TODO : Get the color and set it.
+
+    def on_spin_launcher_icon_size_value_changed(self,udata=None):
+        size=self.ui['spin_launcher_icon_size'].get_value()
+        self.unityshell.set_int('icon-size',size)
+
+# TODO : Icon colouring handler
+    
+    def on_sw_launcher_show_desktop_active_notify(self,widget,udata=None):
+        launcher=Gio.Settings("com.canonical.Unity.Launcher")
+        fav=launcher.get_strv('favorites')
+        desktop="unity://desktop-icon"
+        if self.ui['sw_launcher_show_desktop'].get_active():
+            if desktop not in fav:
+                fav.append(desktop)
+                launcher.set_strv('favorites',fav)
+        else:
+            if desktop in fav:
+                fav.remove(desktop)
+                launcher.set_strv('favorites',fav)
+
+# TODO : RESET handler
+# ---------- END Launcher -------
+
+# ---------- BEGIN DASH
+
     def on_sw_dash_blur_active_notify(self,widget,udata=None):
-        radio_dash_blur_smart = builder.get_object('radio_dash_blur_smart')
-        radio_dash_blur_static = builder.get_object('radio_dash_blur_static')
-        l_dash_blur = builder.get_object('l_dash_blur')
+        dependants=['radio_dash_blur_smart',
+                    'radio_dash_blur_static',
+                    'l_dash_blur']
         
-        if sw_dash_blur.get_active() == True:
-            radio_dash_blur_smart.set_sensitive(True)
-            radio_dash_blur_static.set_sensitive(True)
-            l_dash_blur.set_sensitive(True)
-        
+        if self.ui['sw_dash_blur'].get_active():
+            self.ui.sensitize(dependants)
         else:
-            radio_dash_blur_smart.set_sensitive(False)
-            radio_dash_blur_static.set_sensitive(False) 
-            l_dash_blur.set_sensitive(False)
-      
+            self.ui.unsensitize(dependants)
       # selective selection in unity-dash - part 2
       
     def on_radio_dash_color_cus_active_notify(self,widget,udata=None):
-        color_dash_color_cus = builder.get_object('color_dash_color_cus')
+        dependants=['color_dash_color_cus']
         
-        if radio_dash_color_cus.get_active() == True:
-            color_dash_color_cus.set_sensitive(True)
-            
+        if self.ui['radio_dash_color_cus'].get_active():
+            self.ui.sensitize(dependants)
         else:
-            color_dash_color_cus.set_sensitive(False)   # selective selection in unity-launcher - part 2
-    
-    def on_sw_launcher_transparent_active_notify(self,widget,udata=None):
-        l_launcher_transparency_scale = builder.get_object('l_launcher_transparency_scale')
-        sc_launcher_transparency = builder.get_object('sc_launcher_transparency')
-        if sw_launcher_transparent.get_active() == True:
-            l_launcher_transparency_scale.set_sensitive(True)
-            sc_launcher_transparency.set_sensitive(True)
+            self.ui.unsensitize(dependants)
             
-        else:
-            l_launcher_transparency_scale.set_sensitive(False)
-            sc_launcher_transparency.set_sensitive(False)
             
-    # selective selection in unity-launcher - part 3
-    
-    def on_radio_launcher_color_cus_active_notify(self,widget,udata=None):
-        color_launcher_color_cus  = builder.get_object('color_launcher_color_cus')
-        if radio_launcher_color_cus.get_active() == True:
-            color_launcher_color_cus.set_sensitive(True)
-            
-        else:
-            color_launcher_color_cus.set_sensitive(False)   
-   
-    # selective selection in unity-dash - part 1
-   
-    def on_sw_dash_blur_active_notify(self,widget,udata=None):
-        radio_dash_blur_smart = builder.get_object('radio_dash_blur_smart')
-        radio_dash_blur_static = builder.get_object('radio_dash_blur_static')
-        l_dash_blur = builder.get_object('l_dash_blur')
-        
-        if sw_dash_blur.get_active() == True:
-            radio_dash_blur_smart.set_sensitive(True)
-            radio_dash_blur_static.set_sensitive(True)
-            l_dash_blur.set_sensitive(True)
-        
-        else:
-            radio_dash_blur_smart.set_sensitive(False)
-            radio_dash_blur_static.set_sensitive(False) 
-            l_dash_blur.set_sensitive(False)
-      
-      # selective selection in unity-dash - part 2
-      
-    def on_radio_dash_color_cus_active_notify(self,widget,udata=None):
-        color_dash_color_cus = builder.get_object('color_dash_color_cus')
-        
-        if radio_dash_color_cus.get_active() == True:
-            color_dash_color_cus.set_sensitive(True)
-            
-        else:
-            color_dash_color_cus.set_sensitive(False)
+             
+#========= Begin Desktop Settings
+    def on_sw_desktop_icon_active_notify(self,widget,udata=None):
+        if self.ui['sw_desktop_icon'].get_active():
+            pass
+# TODO : Find where this setting is.
 
-
-
+    def on_spin_iconsize_value_changed(self,udata=None):
+        size=self.ui['spin_iconsize'].get_value()
+# TODO : Find where this setting is.
 
 
 if __name__=='__main__':
 # Fire up the Engines
     Mechanig()
-
+else:
+    print("WARNING: This module is not tailored to be imported. Proceed at your own risk.")
