@@ -6,7 +6,8 @@
 #   Barneedhar (jokerdino) <barneedhar@ubuntu.com> 
 #   Amith KK <amithkumaran@gmail.com>
 #   Georgi Karavasilev <motorslav@gmail.com>
-#   Sam Tran <samvtran@gmail.com>
+#   Sam Tran <samvtran@gmail.com
+#   Sam Hewitt <hewittsamuel@gmail.com>
 #
 # Description:
 #   A One-stop configuration tool for Unity.
@@ -351,10 +352,21 @@ class Mechanig ():
         else:
             self.ui.unsensitize(dependants)
            
+    # selective sensitivity in compiz - workspaces
+    
+    def on_sw_workspace_switcher_active_notify(self,widget,udata=None):
+        dependants=['l_horizontal_desktop','l_vertical_desktop','spin_horizontal_desktop','spin_vertical_desktop']
+
+        if self.ui['sw_workspace_switcher'].get_active():
+            self.ui.sensitize(dependants)
+           
+        else:
+            self.ui.unsensitize(dependants)
+
     # selective sensitivity in compiz - windows spread
     
     def on_sw_windows_spread_active_notify(self,widget,udata=None):
-        dependants=['l_compiz_spacing','l_additional','spin_compiz_spacing','check_overlay_emblem','check_click_desktop']
+        dependants=['l_compiz_spacing','l_additional','check_overlay_emblem','check_click_desktop']
 
         if self.ui['sw_windows_spread'].get_active():
             self.ui.sensitize(dependants)
