@@ -4988,6 +4988,7 @@
                         <property name="receives_default">False</property>
                         <property name="xalign">0</property>
                         <property name="draw_indicator">True</property>
+                        <signal name="toggled" handler="on_check_desktop_home_toggled" swapped="no"/>
                       </object>
                       <packing>
                         <property name="left_attach">1</property>
@@ -5004,6 +5005,7 @@
                         <property name="receives_default">False</property>
                         <property name="xalign">0</property>
                         <property name="draw_indicator">True</property>
+                        <signal name="toggled" handler="on_check_desktop_networkserver_toggled" swapped="no"/>
                       </object>
                       <packing>
                         <property name="left_attach">1</property>
@@ -5020,6 +5022,7 @@
                         <property name="receives_default">False</property>
                         <property name="xalign">0</property>
                         <property name="draw_indicator">True</property>
+                        <signal name="toggled" handler="on_check_desktop_trash_toggled" swapped="no"/>
                       </object>
                       <packing>
                         <property name="left_attach">1</property>
@@ -5036,6 +5039,7 @@
                         <property name="receives_default">False</property>
                         <property name="xalign">0</property>
                         <property name="draw_indicator">True</property>
+                        <signal name="toggled" handler="on_check_desktop_devices_toggled" swapped="no"/>
                       </object>
                       <packing>
                         <property name="left_attach">1</property>
@@ -5091,6 +5095,7 @@
                         <property name="xalign">0</property>
                         <property name="active">True</property>
                         <property name="draw_indicator">True</property>
+                        <signal name="toggled" handler="on_check_alignment_toggled" swapped="no"/>
                       </object>
                       <packing>
                         <property name="left_attach">1</property>
@@ -5110,6 +5115,7 @@
                         <property name="input_purpose">number</property>
                         <property name="adjustment">adj_desktop_icon_size</property>
                         <property name="climb_rate">1</property>
+                        <signal name="value-changed" handler="on_spin_iconsize_value_changed" swapped="no"/>
                       </object>
                       <packing>
                         <property name="left_attach">1</property>

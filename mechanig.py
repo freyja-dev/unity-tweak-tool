@@ -41,6 +41,7 @@ class Mechanig ():
 
 # GSettings objects go here
         self.unityshell=self.plugin('unityshell')
+        self.desktop=Gio.Settings('org.gnome.nautilus.desktop')
 
 # Fire the engines
         self.builder.connect_signals(self)
@@ -365,10 +366,32 @@ class Mechanig ():
         if self.ui['sw_desktop_icon'].get_active():
             pass
 # TODO : Find where this setting is.
+# org.gnome.nautilus.desktop has some keys that help. But no idea what the switch should do.
+
+    def on_check_desktop_home_toggled(self,widget,udata=None):
+        self.desktop.set_boolean('home-icon-visible',
+                                 self.ui['check_desktop_home'].get_active())
+
+    def on_check_desktop_networkserver_toggled(self,widget,udata=None):
+        self.desktop.set_boolean('network-icon-visible',
+                            self.ui['check_desktop_networkserver'].get_active())
+
+    def on_check_desktop_trash_toggled(self,widget,udata=None):
+        self.desktop.set_boolean('trash-icon-visible',
+                            self.ui['check_desktop_trash'].get_active())
+
+    def on_check_desktop_devices_toggled(self,widget,udata=None):
+        self.desktop.set_boolean('volumes-visible',
+                            self.ui['check_desktop_devices'].get_active())
 
     def on_spin_iconsize_value_changed(self,udata=None):
         size=self.ui['spin_iconsize'].get_value()
 # TODO : Find where this setting is.
+
+    def on_check_alignment_toggled(self,widget,udata=None):
+        pass
+# TODO : Find where this setting is.
+
 
 
 if __name__=='__main__':
