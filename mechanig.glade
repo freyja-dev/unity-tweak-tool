@@ -13,15 +13,10 @@
     <property name="step_increment">1</property>
     <property name="page_increment">10</property>
   </object>
-  <object class="GtkAdjustment" id="adj_desktop_number">
-    <property name="lower">1</property>
-    <property name="upper">10</property>
-    <property name="step_increment">1</property>
-    <property name="page_increment">1</property>
-  </object>
   <object class="GtkAdjustment" id="adj_horizontal_desktop">
     <property name="lower">1</property>
     <property name="upper">25</property>
+    <property name="value">1</property>
     <property name="step_increment">1</property>
     <property name="page_increment">1</property>
   </object>
@@ -61,6 +56,7 @@
   <object class="GtkAdjustment" id="adj_vertical_desktop">
     <property name="lower">1</property>
     <property name="upper">25</property>
+    <property name="value">1</property>
     <property name="step_increment">1</property>
     <property name="page_increment">1</property>
   </object>
@@ -1496,7 +1492,7 @@
                       <object class="GtkGrid" id="grid_launcher_color">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="margin_left">58</property>
+                        <property name="margin_left">64</property>
                         <child>
                           <object class="GtkRadioButton" id="radio_launcher_color_cham">
                             <property name="label" translatable="yes">Chameleonic</property>
@@ -1605,7 +1601,7 @@
                       <object class="GtkGrid" id="grid_launcher_icons">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="margin_left">43</property>
+                        <property name="margin_left">46</property>
                         <child>
                           <object class="GtkSpinButton" id="spin_launcher_icon_size">
                             <property name="visible">True</property>
@@ -1719,7 +1715,6 @@
                       <packing>
                         <property name="expand">False</property>
                         <property name="fill">True</property>
-                        <property name="padding">2</property>
                         <property name="position">2</property>
                       </packing>
                     </child>
@@ -1761,7 +1756,7 @@
                       <object class="GtkGrid" id="grid_dash_blur">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="margin_left">128</property>
+                        <property name="margin_left">138</property>
                         <child>
                           <object class="GtkSwitch" id="sw_dash_blur">
                             <property name="visible">True</property>
@@ -1879,7 +1874,7 @@
                       <object class="GtkGrid" id="grid_dash_color">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="margin_left">121</property>
+                        <property name="margin_left">129</property>
                         <child>
                           <object class="GtkRadioButton" id="radio_dash_color_cham">
                             <property name="label" translatable="yes">Chameleonic</property>
@@ -2613,7 +2608,7 @@
                       <object class="GtkGrid" id="grid_panel_showdate">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="margin_left">195</property>
+                        <property name="margin_left">214</property>
                         <child>
                           <object class="GtkComboBoxText" id="cbox_timeformat">
                             <property name="visible">True</property>
@@ -2705,7 +2700,7 @@
                       <object class="GtkGrid" id="grid_panel_timeformat">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="margin_left">195</property>
+                        <property name="margin_left">214</property>
                         <property name="margin_top">5</property>
                         <child>
                           <object class="GtkComboBoxText" id="cbox_formattime">
@@ -3432,6 +3427,7 @@
                                 <property name="halign">start</property>
                                 <property name="margin_left">12</property>
                                 <property name="margin_top">6</property>
+                                <signal name="notify::active" handler="on_sw_compiz_zoom_active_notify" swapped="no"/>
                               </object>
                               <packing>
                                 <property name="left_attach">0</property>
@@ -3441,7 +3437,16 @@
                               </packing>
                             </child>
                             <child>
-                              <placeholder/>
+                              <object class="GtkLabel" id="l_compiz_zoom_empty">
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                              </object>
+                              <packing>
+                                <property name="left_attach">1</property>
+                                <property name="top_attach">0</property>
+                                <property name="width">1</property>
+                                <property name="height">1</property>
+                              </packing>
                             </child>
                           </object>
                           <packing>
@@ -3803,6 +3808,7 @@
                         <property name="halign">start</property>
                         <property name="margin_left">12</property>
                         <property name="active">True</property>
+                        <signal name="notify::active" handler="on_sw_workspace_switcher_active_notify" swapped="no"/>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -3989,20 +3995,6 @@
                         <property name="margin_left">12</property>
                         <property name="margin_bottom">10</property>
                         <child>
-                          <object class="GtkButton" id="b_compiz_workspace_reset">
-                            <property name="label" translatable="yes">Restore defaults</property>
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="receives_default">True</property>
-                          </object>
-                          <packing>
-                            <property name="left_attach">0</property>
-                            <property name="top_attach">1</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
-                        </child>
-                        <child>
                           <object class="GtkLinkButton" id="lb_configure_hot_corner">
                             <property name="label" translatable="yes">Configure hot corner</property>
                             <property name="visible">True</property>
@@ -4017,6 +4009,21 @@
                           <packing>
                             <property name="left_attach">0</property>
                             <property name="top_attach">0</property>
+                            <property name="width">1</property>
+                            <property name="height">1</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkButton" id="b_compiz_workspace_reset">
+                            <property name="label" translatable="yes">Restore defaults</property>
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="receives_default">True</property>
+                            <property name="halign">start</property>
+                          </object>
+                          <packing>
+                            <property name="left_attach">0</property>
+                            <property name="top_attach">1</property>
                             <property name="width">1</property>
                             <property name="height">1</property>
                           </packing>
@@ -5014,7 +5021,7 @@
                     </child>
                     <child>
                       <object class="GtkButton" id="b_theme_font_reset">
-                        <property name="label" translatable="yes">Restore default configurations</property>
+                        <property name="label" translatable="yes">Restore defaults</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="receives_default">True</property>
@@ -5200,7 +5207,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="label1">
+                  <object class="GtkLabel" id="l_desktop_advanced">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="halign">start</property>
@@ -5218,7 +5225,7 @@
                 </child>
                 <child>
                   <object class="GtkCheckButton" id="check_alignment">
-                    <property name="label" translatable="yes">Align icons  to grid</property>
+                    <property name="label" translatable="yes">Align icons to grid</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="receives_default">False</property>

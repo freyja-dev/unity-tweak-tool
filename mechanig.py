@@ -6,7 +6,7 @@
 #   Barneedhar (jokerdino) <barneedhar@ubuntu.com> 
 #   Amith KK <amithkumaran@gmail.com>
 #   Georgi Karavasilev <motorslav@gmail.com>
-#   Sam Tran <samvtran@gmail.com
+#   Sam Tran <samvtran@gmail.com>
 #   Sam Hewitt <hewittsamuel@gmail.com>
 #
 # Description:
@@ -94,10 +94,13 @@ class Mechanig ():
         self.ui['nb_mechanig'].set_current_page(0)
     def on_tool_unitysettings_toggled(self,udata):
         self.ui['nb_mechanig'].set_current_page(1)
+        self.ui['nb_unitysettings'].set_current_page(0)
     def on_tool_compizsettings_toggled(self,udata):
         self.ui['nb_mechanig'].set_current_page(2)
+        self.ui['nb_compizsettings'].set_current_page(0)
     def on_tool_themesettings_toggled(self,udata):
         self.ui['nb_mechanig'].set_current_page(3)
+        self.ui['nb_themesettings'].set_current_page(0)
     def on_tool_desktopsettings_toggled(self,udata):
         self.ui['nb_mechanig'].set_current_page(4)
         
@@ -366,7 +369,7 @@ class Mechanig ():
     # selective sensitivity in compiz - windows spread
     
     def on_sw_windows_spread_active_notify(self,widget,udata=None):
-        dependants=['l_compiz_spacing','l_additional','check_overlay_emblem','check_click_desktop']
+        dependants=['l_compiz_spacing','spin_compiz_spacing','check_overlay_emblem','check_click_desktop']
 
         if self.ui['sw_windows_spread'].get_active():
             self.ui.sensitize(dependants)
@@ -378,7 +381,7 @@ class Mechanig ():
    # selective sensitivity in desktop settings
                 
     def on_sw_desktop_icon_active_notify(self,widget,udata=None):
-        dependants=['check_desktop_home','check_desktop_networkserver','check_desktop_trash','check_desktop_devices']
+        dependants=['l_desktop_icons_display','check_desktop_home','check_desktop_networkserver','check_desktop_trash','check_desktop_devices']
         
         if self.ui['sw_desktop_icon'].get_active():
             self.ui.sensitize(dependants)
