@@ -66,34 +66,28 @@
     <property name="step_increment">1</property>
     <property name="page_increment">1</property>
   </object>
-  <object class="GtkImage" id="image1">
-    <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="yalign">0.49000000953674316</property>
-    <property name="stock">gtk-missing-image</property>
-  </object>
-  <object class="GtkImage" id="image2">
+  <object class="GtkImage" id="image_menu_compiz_settings">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="stock">gtk-missing-image</property>
   </object>
-  <object class="GtkImage" id="image3">
+  <object class="GtkImage" id="image_menu_desktop_settings">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="stock">gtk-missing-image</property>
   </object>
-  <object class="GtkImage" id="image4">
+  <object class="GtkImage" id="image_menu_mechanig_help">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="stock">gtk-missing-image</property>
+  </object>
+  <object class="GtkImage" id="image_menu_theme_settings">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="xalign">0.49000000953674316</property>
     <property name="stock">gtk-missing-image</property>
   </object>
-  <object class="GtkImage" id="image5">
-    <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="stock">gtk-missing-image</property>
-  </object>
-  <object class="GtkImage" id="image6">
+  <object class="GtkImage" id="image_menu_unity_settings">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="stock">gtk-missing-image</property>
@@ -281,41 +275,32 @@
         <property name="can_focus">False</property>
         <property name="orientation">vertical</property>
         <child>
-          <object class="GtkMenuBar" id="menubar1">
+          <object class="GtkMenuBar" id="menubar_main">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <child>
-              <object class="GtkMenuItem" id="menuitem1">
+              <object class="GtkMenuItem" id="menuitem_file">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes">_File</property>
                 <property name="use_underline">True</property>
                 <child type="submenu">
-                  <object class="GtkMenu" id="menu1">
+                  <object class="GtkMenu" id="menu_file">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <child>
-                      <object class="GtkImageMenuItem" id="Start Page">
-                        <property name="label" translatable="yes">Start Page</property>
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="image">image1</property>
-                        <property name="use_stock">False</property>
-                      </object>
-                    </child>
-                    <child>
-                      <object class="GtkImageMenuItem" id="Unity Settings">
+                      <object class="GtkImageMenuItem" id="menuimage_unity_settings">
                         <property name="label" translatable="yes">Unity Settings</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="image">image2</property>
+                        <property name="image">image_menu_unity_settings</property>
                         <property name="use_stock">False</property>
                         <child type="submenu">
-                          <object class="GtkMenu" id="menu2">
+                          <object class="GtkMenu" id="submenu_file_unity">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <child>
-                              <object class="GtkMenuItem" id="Launcher">
+                              <object class="GtkMenuItem" id="menuitem_unity_launcher">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="label" translatable="yes">Launcher</property>
@@ -323,7 +308,7 @@
                               </object>
                             </child>
                             <child>
-                              <object class="GtkMenuItem" id="Dash">
+                              <object class="GtkMenuItem" id="menuitem_unity_dash">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="label" translatable="yes">Dash</property>
@@ -331,7 +316,7 @@
                               </object>
                             </child>
                             <child>
-                              <object class="GtkMenuItem" id="Panel">
+                              <object class="GtkMenuItem" id="menuitem_unity_panel">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="label" translatable="yes">Panel</property>
@@ -339,7 +324,7 @@
                               </object>
                             </child>
                             <child>
-                              <object class="GtkMenuItem" id="Switcher">
+                              <object class="GtkMenuItem" id="menuitem_unity_switcher">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="label" translatable="yes">Switcher</property>
@@ -347,7 +332,7 @@
                               </object>
                             </child>
                             <child>
-                              <object class="GtkMenuItem" id="Additional">
+                              <object class="GtkMenuItem" id="menuitem_unity_additional">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="label" translatable="yes">Additional</property>
@@ -359,18 +344,18 @@
                       </object>
                     </child>
                     <child>
-                      <object class="GtkImageMenuItem" id="Compiz Settings">
+                      <object class="GtkImageMenuItem" id="menuimage_compiz_settings">
                         <property name="label" translatable="yes">Compiz Settings</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="image">image3</property>
+                        <property name="image">image_menu_compiz_settings</property>
                         <property name="use_stock">False</property>
                         <child type="submenu">
-                          <object class="GtkMenu" id="menu4">
+                          <object class="GtkMenu" id="submenu_file_compiz">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <child>
-                              <object class="GtkMenuItem" id="General">
+                              <object class="GtkMenuItem" id="menuitem_compiz_general">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="label" translatable="yes">General</property>
@@ -378,7 +363,7 @@
                               </object>
                             </child>
                             <child>
-                              <object class="GtkMenuItem" id="Workspace">
+                              <object class="GtkMenuItem" id="menuitem_compiz_workspace">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="label" translatable="yes">Workspace</property>
@@ -386,7 +371,7 @@
                               </object>
                             </child>
                             <child>
-                              <object class="GtkMenuItem" id="Windows Spread">
+                              <object class="GtkMenuItem" id="menuitem_compiz_windows_spread">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="label" translatable="yes">Windows Spread</property>
@@ -394,7 +379,7 @@
                               </object>
                             </child>
                             <child>
-                              <object class="GtkMenuItem" id="Windows Snapping">
+                              <object class="GtkMenuItem" id="menuitem_compiz_windows_snapping">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="label" translatable="yes">Windows Snapping</property>
@@ -402,7 +387,7 @@
                               </object>
                             </child>
                             <child>
-                              <object class="GtkMenuItem" id="Hotcorners">
+                              <object class="GtkMenuItem" id="menuitem_compiz_hotcorners">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="label" translatable="yes">Hotcorners</property>
@@ -414,18 +399,18 @@
                       </object>
                     </child>
                     <child>
-                      <object class="GtkImageMenuItem" id="Theme Settings">
+                      <object class="GtkImageMenuItem" id="menuimage_theme_settings">
                         <property name="label" translatable="yes">Theme Settings</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="image">image4</property>
+                        <property name="image">image_menu_theme_settings</property>
                         <property name="use_stock">False</property>
                         <child type="submenu">
-                          <object class="GtkMenu" id="menu5">
+                          <object class="GtkMenu" id="submenu_file_theme">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <child>
-                              <object class="GtkMenuItem" id="System Theme">
+                              <object class="GtkMenuItem" id="menuitem_theme_system">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="label" translatable="yes">System Theme</property>
@@ -433,7 +418,7 @@
                               </object>
                             </child>
                             <child>
-                              <object class="GtkMenuItem" id="Icon Theme">
+                              <object class="GtkMenuItem" id="menuitem_theme_icon">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="label" translatable="yes">Icon Theme</property>
@@ -441,7 +426,7 @@
                               </object>
                             </child>
                             <child>
-                              <object class="GtkMenuItem" id="Cursor Theme">
+                              <object class="GtkMenuItem" id="menuitem_theme_cursor">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="label" translatable="yes">Cursor Theme</property>
@@ -449,7 +434,7 @@
                               </object>
                             </child>
                             <child>
-                              <object class="GtkMenuItem" id="Fonts">
+                              <object class="GtkMenuItem" id="menuitem_theme_fonts">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="label" translatable="yes">Fonts</property>
@@ -461,22 +446,22 @@
                       </object>
                     </child>
                     <child>
-                      <object class="GtkImageMenuItem" id="Desktop Settings">
+                      <object class="GtkImageMenuItem" id="menuimage_desktop_settings">
                         <property name="label" translatable="yes">Desktop Settings</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="image">image5</property>
+                        <property name="image">image_menu_desktop_settings</property>
                         <property name="use_stock">False</property>
                       </object>
                     </child>
                     <child>
-                      <object class="GtkSeparatorMenuItem" id="separatormenuitem1">
+                      <object class="GtkSeparatorMenuItem" id="menu_file_seperator">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                       </object>
                     </child>
                     <child>
-                      <object class="GtkImageMenuItem" id="Quit">
+                      <object class="GtkImageMenuItem" id="menuimage_quit">
                         <property name="label">gtk-quit</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
@@ -489,26 +474,26 @@
               </object>
             </child>
             <child>
-              <object class="GtkMenuItem" id="menuitem4">
+              <object class="GtkMenuItem" id="menuitem_help">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes">_Help</property>
                 <property name="use_underline">True</property>
                 <child type="submenu">
-                  <object class="GtkMenu" id="menu3">
+                  <object class="GtkMenu" id="menu_help">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <child>
-                      <object class="GtkImageMenuItem" id="Mechanig Help">
+                      <object class="GtkImageMenuItem" id="menuimage_help">
                         <property name="label" translatable="yes">Mechanig Help</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="image">image6</property>
+                        <property name="image">image_menu_mechanig_help</property>
                         <property name="use_stock">False</property>
                       </object>
                     </child>
                     <child>
-                      <object class="GtkImageMenuItem" id="About">
+                      <object class="GtkImageMenuItem" id="menuimage_about">
                         <property name="label">gtk-about</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
@@ -632,10 +617,12 @@
                   <object class="GtkEntry" id="tool_entry_search">
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
+                    <property name="margin_right">10</property>
                     <property name="hexpand">True</property>
                     <property name="max_length">20</property>
                     <property name="invisible_char">•</property>
                     <property name="activates_default">True</property>
+                    <property name="width_chars">25</property>
                     <property name="caps_lock_warning">False</property>
                     <property name="primary_icon_name">edit-find-symbolic</property>
                     <property name="placeholder_text">Search</property>
@@ -668,6 +655,7 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="orientation">vertical</property>
+                <property name="homogeneous">True</property>
                 <child>
                   <object class="GtkBox" id="box_start_unity">
                     <property name="visible">True</property>
@@ -1009,7 +997,7 @@
                             <property name="label" translatable="yes">System</property>
                             <property name="use_underline">True</property>
                             <property name="icon_name">stock_print</property>
-                            <signal name="clicked" handler="on_tool_system_clicked" object="nb_theme_settings" swapped="no"/>
+                            <signal name="clicked" handler="on_tool_system_clicked" object="nb_themesettings" swapped="no"/>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -1023,7 +1011,7 @@
                             <property name="label" translatable="yes">Icons</property>
                             <property name="use_underline">True</property>
                             <property name="icon_name">stock_print</property>
-                            <signal name="clicked" handler="on_tool_icons_clicked" object="nb_theme_settings" swapped="no"/>
+                            <signal name="clicked" handler="on_tool_icons_clicked" object="nb_themesettings" swapped="no"/>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -1037,7 +1025,7 @@
                             <property name="label" translatable="yes">Cursor</property>
                             <property name="use_underline">True</property>
                             <property name="icon_name">stock_print</property>
-                            <signal name="clicked" handler="on_tool_cursors_clicked" object="nb_theme_settings" swapped="no"/>
+                            <signal name="clicked" handler="on_tool_cursors_clicked" object="nb_themesettings" swapped="no"/>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -1051,7 +1039,7 @@
                             <property name="label" translatable="yes">Fonts</property>
                             <property name="use_underline">True</property>
                             <property name="icon_name">stock_print</property>
-                            <signal name="clicked" handler="on_tool_fonts_clicked" object="nb_theme_settings" swapped="no"/>
+                            <signal name="clicked" handler="on_tool_fonts_clicked" object="nb_themesettings" swapped="no"/>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -1150,17 +1138,6 @@
                         <property name="expand">False</property>
                         <property name="fill">True</property>
                         <property name="position">1</property>
-                      </packing>
-                    </child>
-                    <child>
-                      <object class="GtkSeparator" id="sep_start_desktop">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                      </object>
-                      <packing>
-                        <property name="expand">False</property>
-                        <property name="fill">True</property>
-                        <property name="position">2</property>
                       </packing>
                     </child>
                   </object>
@@ -2814,6 +2791,7 @@
                       <object class="GtkBox" id="box_unity_switcher_all">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
+                        <property name="spacing">5</property>
                         <child>
                           <object class="GtkBox" id="box_unity_switcher_windows">
                             <property name="visible">True</property>
@@ -2846,7 +2824,7 @@
                                     <property name="label" translatable="yes">"Show the desktop" icon</property>
                                   </object>
                                   <packing>
-                                    <property name="left_attach">0</property>
+                                    <property name="left_attach">1</property>
                                     <property name="top_attach">1</property>
                                     <property name="width">1</property>
                                     <property name="height">1</property>
@@ -2860,7 +2838,7 @@
                                     <property name="label" translatable="yes">Switch between minimized windows</property>
                                   </object>
                                   <packing>
-                                    <property name="left_attach">0</property>
+                                    <property name="left_attach">1</property>
                                     <property name="top_attach">2</property>
                                     <property name="width">1</property>
                                     <property name="height">1</property>
@@ -2874,7 +2852,7 @@
                                     <property name="label" translatable="yes">Automatically expose windows</property>
                                   </object>
                                   <packing>
-                                    <property name="left_attach">0</property>
+                                    <property name="left_attach">1</property>
                                     <property name="top_attach">3</property>
                                     <property name="width">1</property>
                                     <property name="height">1</property>
@@ -2888,7 +2866,7 @@
                                     <property name="label" translatable="yes">Switch between windows on all workspaces</property>
                                   </object>
                                   <packing>
-                                    <property name="left_attach">0</property>
+                                    <property name="left_attach">1</property>
                                     <property name="top_attach">0</property>
                                     <property name="width">1</property>
                                     <property name="height">1</property>
@@ -2903,7 +2881,7 @@
                                     <property name="draw_indicator">True</property>
                                   </object>
                                   <packing>
-                                    <property name="left_attach">1</property>
+                                    <property name="left_attach">0</property>
                                     <property name="top_attach">0</property>
                                     <property name="width">1</property>
                                     <property name="height">1</property>
@@ -2918,7 +2896,7 @@
                                     <property name="draw_indicator">True</property>
                                   </object>
                                   <packing>
-                                    <property name="left_attach">1</property>
+                                    <property name="left_attach">0</property>
                                     <property name="top_attach">1</property>
                                     <property name="width">1</property>
                                     <property name="height">1</property>
@@ -2933,7 +2911,7 @@
                                     <property name="draw_indicator">True</property>
                                   </object>
                                   <packing>
-                                    <property name="left_attach">1</property>
+                                    <property name="left_attach">0</property>
                                     <property name="top_attach">2</property>
                                     <property name="width">1</property>
                                     <property name="height">1</property>
@@ -2948,7 +2926,7 @@
                                     <property name="draw_indicator">True</property>
                                   </object>
                                   <packing>
-                                    <property name="left_attach">1</property>
+                                    <property name="left_attach">0</property>
                                     <property name="top_attach">3</property>
                                     <property name="width">1</property>
                                     <property name="height">1</property>
@@ -2956,7 +2934,7 @@
                                 </child>
                               </object>
                               <packing>
-                                <property name="expand">True</property>
+                                <property name="expand">False</property>
                                 <property name="fill">True</property>
                                 <property name="position">1</property>
                               </packing>
@@ -3002,7 +2980,7 @@
                                 </child>
                               </object>
                               <packing>
-                                <property name="expand">False</property>
+                                <property name="expand">True</property>
                                 <property name="fill">True</property>
                                 <property name="position">2</property>
                               </packing>
@@ -3036,6 +3014,7 @@
                               <object class="GtkTreeView" id="treeview_unity_switcher_launcher">
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
+                                <property name="margin_top">5</property>
                                 <property name="model">list_unity_switcher_launcher_accelerators</property>
                                 <property name="headers_visible">False</property>
                                 <property name="headers_clickable">False</property>
@@ -3073,7 +3052,7 @@
                                 </child>
                               </object>
                               <packing>
-                                <property name="expand">False</property>
+                                <property name="expand">True</property>
                                 <property name="fill">True</property>
                                 <property name="position">1</property>
                               </packing>
@@ -3143,7 +3122,7 @@
                             <property name="label" translatable="yes">Shortcuts hint overlay on holding Super</property>
                           </object>
                           <packing>
-                            <property name="left_attach">0</property>
+                            <property name="left_attach">1</property>
                             <property name="top_attach">0</property>
                             <property name="width">1</property>
                             <property name="height">1</property>
@@ -3156,63 +3135,63 @@
                             <property name="halign">end</property>
                           </object>
                           <packing>
-                            <property name="left_attach">1</property>
+                            <property name="left_attach">0</property>
                             <property name="top_attach">0</property>
                             <property name="width">1</property>
                             <property name="height">1</property>
                           </packing>
                         </child>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkTreeView" id="treeview_unity_additional">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="model">list_unity_additional_accelerators</property>
+                        <property name="headers_visible">False</property>
+                        <property name="headers_clickable">False</property>
+                        <property name="search_column">0</property>
+                        <child internal-child="selection">
+                          <object class="GtkTreeSelection" id="treeview-selection"/>
+                        </child>
                         <child>
-                          <object class="GtkTreeView" id="treeview_unity_additional">
-                            <property name="visible">True</property>
-                            <property name="can_focus">True</property>
-                            <property name="model">list_unity_additional_accelerators</property>
-                            <property name="headers_visible">False</property>
-                            <property name="headers_clickable">False</property>
-                            <child internal-child="selection">
-                              <object class="GtkTreeSelection" id="treesel_unity_additional"/>
-                            </child>
+                          <object class="GtkTreeViewColumn" id="treeview_unity_additional_column_title">
+                            <property name="title" translatable="yes">Title</property>
+                            <property name="expand">True</property>
                             <child>
-                              <object class="GtkTreeViewColumn" id="treeview_unity_additional_column_title">
-                                <property name="title" translatable="yes">Title</property>
-                                <property name="expand">True</property>
-                                <child>
-                                  <object class="GtkCellRendererText" id="crtext_unity_additional"/>
-                                  <attributes>
-                                    <attribute name="text">0</attribute>
-                                  </attributes>
-                                </child>
-                              </object>
-                            </child>
-                            <child>
-                              <object class="GtkTreeViewColumn" id="treeview_unity_additional_column_accelerator">
-                                <property name="sizing">autosize</property>
-                                <property name="title" translatable="yes">Accelerator</property>
-                                <child>
-                                  <object class="GtkCellRendererAccel" id="craccel_unity_additional">
-                                    <property name="editable">True</property>
-                                    <signal name="accel-cleared" handler="on_craccel_unity_additional_accel_cleared" object="list_unity_additional_accelerators" swapped="yes"/>
-                                    <signal name="accel-edited" handler="on_craccel_unity_additional_accel_edited" object="list_unity_additional_accelerators" swapped="yes"/>
-                                  </object>
-                                  <attributes>
-                                    <attribute name="text">1</attribute>
-                                  </attributes>
-                                </child>
-                              </object>
+                              <object class="GtkCellRendererText" id="crtext_unity_additional"/>
+                              <attributes>
+                                <attribute name="text">0</attribute>
+                              </attributes>
                             </child>
                           </object>
-                          <packing>
-                            <property name="left_attach">0</property>
-                            <property name="top_attach">1</property>
-                            <property name="width">2</property>
-                            <property name="height">1</property>
-                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkTreeViewColumn" id="treeview_unity_additional_column_accelerator">
+                            <property name="sizing">autosize</property>
+                            <property name="title" translatable="yes">Accelerator</property>
+                            <child>
+                              <object class="GtkCellRendererAccel" id="craccel_unity_additional">
+                                <property name="editable">True</property>
+                                <signal name="accel-cleared" handler="on_craccel_unity_additional_accel_cleared" object="list_unity_additional_accelerators" swapped="yes"/>
+                                <signal name="accel-edited" handler="on_craccel_unity_additional_accel_edited" object="list_unity_additional_accelerators" swapped="yes"/>
+                              </object>
+                              <attributes>
+                                <attribute name="text">1</attribute>
+                              </attributes>
+                            </child>
+                          </object>
                         </child>
                       </object>
                       <packing>
-                        <property name="expand">True</property>
+                        <property name="expand">False</property>
                         <property name="fill">True</property>
-                        <property name="position">0</property>
+                        <property name="position">1</property>
                       </packing>
                     </child>
                     <child>
@@ -3228,7 +3207,7 @@
                       <packing>
                         <property name="expand">False</property>
                         <property name="fill">True</property>
-                        <property name="position">1</property>
+                        <property name="position">2</property>
                       </packing>
                     </child>
                   </object>
@@ -3466,7 +3445,7 @@
                           <object class="GtkLabel" id="l_opengl">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">OpenGL:</property>
+                            <property name="label" translatable="yes">OpenGL: </property>
                           </object>
                           <packing>
                             <property name="left_attach">0</property>
@@ -3479,7 +3458,7 @@
                           <object class="GtkLabel" id="l_texture_quality">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="label" translatable="yes">Texture quality:</property>
+                            <property name="label" translatable="yes">Texture quality: </property>
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
@@ -3534,6 +3513,7 @@
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
+                            <property name="margin_left">58</property>
                             <property name="xalign">0</property>
                             <property name="draw_indicator">True</property>
                           </object>
@@ -3617,6 +3597,7 @@
                         <property name="can_focus">False</property>
                         <property name="receives_default">True</property>
                         <property name="halign">start</property>
+                        <property name="margin_top">10</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -3646,25 +3627,6 @@
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <child>
-                          <object class="GtkLabel" id="l_desktop_number">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="has_tooltip">True</property>
-                            <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
-                            <property name="tooltip_text" translatable="yes">Should the launcher show a "Show Desktop" symbol?</property>
-                            <property name="margin_right">6</property>
-                            <property name="margin_top">6</property>
-                            <property name="xalign">1</property>
-                            <property name="label" translatable="yes">Desktops number:</property>
-                          </object>
-                          <packing>
-                            <property name="left_attach">0</property>
-                            <property name="top_attach">0</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
-                        </child>
-                        <child>
                           <object class="GtkLabel" id="l_horizontal_desktop">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
@@ -3678,7 +3640,7 @@
                           </object>
                           <packing>
                             <property name="left_attach">0</property>
-                            <property name="top_attach">2</property>
+                            <property name="top_attach">0</property>
                             <property name="width">1</property>
                             <property name="height">1</property>
                           </packing>
@@ -3697,7 +3659,7 @@
                           </object>
                           <packing>
                             <property name="left_attach">0</property>
-                            <property name="top_attach">3</property>
+                            <property name="top_attach">1</property>
                             <property name="width">1</property>
                             <property name="height">1</property>
                           </packing>
@@ -3716,7 +3678,7 @@
                           </object>
                           <packing>
                             <property name="left_attach">0</property>
-                            <property name="top_attach">4</property>
+                            <property name="top_attach">2</property>
                             <property name="width">1</property>
                             <property name="height">1</property>
                           </packing>
@@ -3735,7 +3697,7 @@
                           </object>
                           <packing>
                             <property name="left_attach">0</property>
-                            <property name="top_attach">5</property>
+                            <property name="top_attach">3</property>
                             <property name="width">1</property>
                             <property name="height">1</property>
                           </packing>
@@ -3749,7 +3711,7 @@
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
-                            <property name="top_attach">5</property>
+                            <property name="top_attach">3</property>
                             <property name="width">1</property>
                             <property name="height">1</property>
                           </packing>
@@ -3762,7 +3724,7 @@
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
-                            <property name="top_attach">4</property>
+                            <property name="top_attach">2</property>
                             <property name="width">1</property>
                             <property name="height">1</property>
                           </packing>
@@ -3778,7 +3740,7 @@
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
-                            <property name="top_attach">3</property>
+                            <property name="top_attach">1</property>
                             <property name="width">1</property>
                             <property name="height">1</property>
                           </packing>
@@ -3794,51 +3756,7 @@
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
-                            <property name="top_attach">2</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkCheckButton" id="check_desktop_advanced">
-                            <property name="label" translatable="yes">Advanced</property>
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="receives_default">False</property>
-                            <property name="xalign">0</property>
-                            <property name="draw_indicator">True</property>
-                          </object>
-                          <packing>
-                            <property name="left_attach">1</property>
-                            <property name="top_attach">1</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkSpinButton" id="check_desktop_number">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="halign">start</property>
-                            <property name="invisible_char">•</property>
-                            <property name="invisible_char_set">True</property>
-                            <property name="adjustment">adj_desktop_number</property>
-                          </object>
-                          <packing>
-                            <property name="left_attach">1</property>
                             <property name="top_attach">0</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkLabel" id="l_desktop_number_empty">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                          </object>
-                          <packing>
-                            <property name="left_attach">0</property>
-                            <property name="top_attach">1</property>
                             <property name="width">1</property>
                             <property name="height">1</property>
                           </packing>
@@ -4245,7 +4163,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkNotebook" id="nb_theme_settings">
+              <object class="GtkNotebook" id="nb_themesettings">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="margin_top">4</property>
@@ -4405,6 +4323,7 @@
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
+                        <property name="halign">start</property>
                         <property name="use_underline">True</property>
                       </object>
                       <packing>
@@ -4499,6 +4418,7 @@
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
+                        <property name="halign">start</property>
                         <property name="use_underline">True</property>
                       </object>
                       <packing>
@@ -4597,6 +4517,7 @@
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
+                        <property name="halign">start</property>
                         <property name="use_underline">True</property>
                       </object>
                       <packing>
