@@ -49,9 +49,10 @@
     <property name="page_increment">10</property>
   </object>
   <object class="GtkAdjustment" id="adj_reveal_sensitivity">
-    <property name="upper">100</property>
-    <property name="step_increment">1</property>
-    <property name="page_increment">10</property>
+    <property name="lower">0.20000000000000001</property>
+    <property name="upper">8</property>
+    <property name="step_increment">0.10000000000000001</property>
+    <property name="page_increment">1</property>
   </object>
   <object class="GtkAdjustment" id="adj_textscaling">
     <property name="lower">1</property>
@@ -1388,6 +1389,7 @@
                             <property name="xalign">0</property>
                             <property name="active">True</property>
                             <property name="draw_indicator">True</property>
+                            <signal name="toggled" handler="on_radio_launcher_visibility_all_toggled" swapped="no"/>
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
@@ -1539,7 +1541,7 @@
                             <property name="xalign">0</property>
                             <property name="draw_indicator">True</property>
                             <property name="group">radio_launcher_color_cham</property>
-                            <signal name="notify::active" handler="on_radio_launcher_color_cus_active_notify" swapped="no"/>
+                            <signal name="toggled" handler="on_radio_launcher_color_cus_toggled" swapped="no"/>
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
@@ -1555,6 +1557,7 @@
                             <property name="can_focus">False</property>
                             <property name="receives_default">True</property>
                             <property name="halign">start</property>
+                            <signal name="color-set" handler="on_color_launcher_color_cus_color_set" swapped="no"/>
                           </object>
                           <packing>
                             <property name="left_attach">2</property>
@@ -1654,6 +1657,7 @@
                               <item translatable="yes">Edge Illumination Toggles</item>
                               <item translatable="yes">Backlight and Edge illumination Toggles</item>
                             </items>
+                            <signal name="changed" handler="on_cbox_launcher_icon_colouring_changed" swapped="no"/>
                           </object>
                           <packing>
                             <property name="left_attach">1</property>

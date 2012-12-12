@@ -25,7 +25,7 @@
 # You should have received a copy of the GNU General Public License along with
 # this program; if not, see <https://www.gnu.org/licenses/gpl-3.0.txt>
 
-from gi.repository import Gtk,Gio
+from gi.repository import Gtk,Gio,Gdk
 import os
 from ui import ui
 
@@ -40,14 +40,18 @@ class Mechanig ():
         self.ui=ui(self.builder)
 
 # GSettings objects go here
-        self.unityshell=self.plugin('unityshell')
+        self.launcher=Gio.Settings("com.canonical.Unity.Launcher")
+        self.unityshell=Gio.Settings(schema='org.compiz.unityshell',
+                        path='/org/compiz/profiles/unity/plugins/unityshell/')
         self.desktop=Gio.Settings('org.gnome.nautilus.desktop')
 
 # Fire the engines
+# The UI must be refreshed before connecting signals.
+# Else all handlers get called when setting initial values and may cause a mess.
+        self.refresh()
         self.builder.connect_signals(self)
         self.ui['mechanig_main'].set_resizable(False)
         self.ui['nb_mechanig'].set_show_tabs(False)
-        self.refresh()
         self.ui['mechanig_main'].connect("delete-event", Gtk.main_quit)
         self.ui['mechanig_main'].show_all()
         Gtk.main()
@@ -62,28 +66,75 @@ class Mechanig ():
         gsettings=Gio.Settings(schema=schema,path=path)
         for key in gsettings.list_keys():
             gsettings.reset(key)
-    
+       
     @staticmethod
-    def plugin(plugin):
-        schema='org.compiz.'+plugin
-        path='/org/compiz/profiles/unity/plugins/'+plugin+'/'
-        return Gio.Settings(schema=schema,path=path)
-
-    @staticmethod
-    def unity(child=None):
-        schema='com.canonical.Unity'
-        schema=schema+'.'+child if child else schema
-        return Gio.Settings(schema)
-
-    @staticmethod
-    def compiz(child):
-        schema='org.compiz.'+child
-        return Gio.Settings(schema)
+    def color_to_hash(c):
+        """Convert a Gdk.Color or Gdk.RGBA object to hex representation"""
+        if isinstance(c,Gdk.Color):
+            return "#{:02x}{:02x}{:02x}ff".format(*map(lambda x: round(x*255),[c.red_float,c.green_float,c.blue_float]))
+        if isinstance(x,Gdk.RGBA):
+            return "#{:02x}{:02x}{:02x}{:02x}".format(*map(lambda x: round(x*255),[c.red,c.green,c.blue,c.alpha]))
+        # If it is neither a Gdk.Color object nor a Gdk.RGBA objcect,
+        raise NotImplementedError
 
     def refresh(self):
         '''Reads the current config and refreshes the displayed values'''
-        pass
+    # Launcher
+        dependants=['radio_reveal_left',
+                    'radio_reveal_topleft',
+                    'sc_reveal_sensitivity',
+                    'l_launcher_reveal',
+                    'l_launcher_reveal_sensitivity']
+        if self.unityshell.get_int('launcher-hide-mode'):
+            self.ui['sw_launcher_hidemode'].set_active(True)
+            self.ui.sensitize(dependants)
+        else:
+            self.ui['sw_launcher_hidemode'].set_active(False)
+            self.ui.unsensitize(dependants)
+        del dependants
+# Preferring readability over optimisations.
+# I am aware of the redundancy and the better "[not] bool(value)"
+        self.ui['radio_reveal_left'].set_active(True if self.unityshell.get_int('reveal-trigger') is 0 else False)
+        self.ui['radio_reveal_topleft'].set_active(True if self.unityshell.get_int('reveal-trigger') is 1 else False)
+        self.ui['sc_reveal_sensitivity'].set_value(self.unityshell.get_double('edge-responsiveness'))
+
+        dependants=['l_launcher_transparency_scale',
+                    'sc_launcher_transparency']
+        opacity=self.unityshell.get_double('launcher-opacity')
+        if opacity==1:
+            self.ui['sw_launcher_transparent'].set_active(False)
+            self.ui.unsensitize(dependants)
+        else:
+            self.ui['sw_launcher_transparent'].set_active(True)
+            self.ui.sensitize(dependants)
+        self.ui['sc_launcher_transparency'].set_value(opacity)
+        del dependants
+        del opacity
+
+        mode = self.unityshell.get_int('num-launchers')
+        self.ui['radio_launcher_visibility_all'].set_active(True if mode is 0 else False)
+        self.ui['radio_launcher_visibility_primary'].set_active(True if mode is 1 else False)
+        del mode
+
+        color = self.unityshell.get_string('background-color')
+        if color.endswith('00'):
+            self.ui['radio_launcher_color_cham'].set_active(True)
+            self.ui.unsensitize(['color_launcher_color_cus'])
+        else:
+            self.ui['radio_launcher_color_cus'].set_active(True)
+            self.ui.sensitize(['color_launcher_color_cus'])
+        valid,gdkcolor=Gdk.Color.parse(color[:-2])
+        if valid:
+            self.ui['color_launcher_color_cus'].set_color(gdkcolor)
+        del color,valid,gdkcolor
+
+        self.ui['spin_launcher_icon_size'].set_value(self.unityshell.get_int('icon-size'))
+
+        self.ui['cbox_launcher_icon_colouring'].set_active(self.unityshell.get_int('backlight-mode'))
+
+        self.ui['sw_launcher_show_desktop'].set_active(True if 'unity://desktop-icon' in self.launcher.get_strv('favorites') else False)
 # TODO : Find a clever way or set each one manually.
+# Do it the dumb way now. BIIIG refactoring needed later.
 
 #^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\
 # Dont trust glade to pass the objects properly.            |
@@ -279,6 +330,7 @@ class Mechanig ():
         mode=0 if radio.get_active() else 1
         self.unityshell.set_int('reveal-trigger',mode)
 
+# XXX :Strictly speaking, only one of these two will suffice.
     def on_radio_reveal_topleft_toggled(self,button,udata=None):
         radio=self.ui['radio_reveal_topleft']
         mode=0 if not radio.get_active() else 1
@@ -287,20 +339,22 @@ class Mechanig ():
     def on_sc_reveal_sensitivity_value_changed(self,widget,udata=None):
         slider=self.ui['sc_reveal_sensitivity']
         val=slider.get_value()
-# TODO : Set the sensitivity
-# Two settings possible: reveal-pressure and edge-responsiveness
-# Discuss and decide which to use.
+        self.unityshell.set_double('edge-responsiveness',val)
+# Two settings possible:
+#        reveal-pressure (int,(1,1000))
+#        edge-responsiveness (double,(0.2,8.0))
+# XXX : To be discussed and changed if necessary.
 
     def on_sw_launcher_transparent_active_notify(self,widget,udata=None):
         dependants=['l_launcher_transparency_scale',
                     'sc_launcher_transparency']
         if self.ui['sw_launcher_transparent'].get_active():
             self.ui.sensitize(dependants)
-            self.unityshell.set_double('launcher-opacity',1)
-        else:
-            self.ui.unsensitize(dependants)
             opacity=self.ui['sc_launcher_transparency'].get_value()
             self.unityshell.set_double('launcher-opacity',opacity)
+        else:
+            self.ui.unsensitize(dependants)
+            self.unityshell.set_double('launcher-opacity',1)
 # Check adj_launcher_transparency if this misbehaves
 
     def on_sc_launcher_transparency_value_changed(self,widget,udata=None):
@@ -308,32 +362,47 @@ class Mechanig ():
         self.unityshell.set_double('launcher-opacity',opacity)
 # Check adj_launcher_transparency if this misbehaves
         
-    def on_radio_launcher_color_cus_active_notify(self,widget,udata=None):
+    def on_radio_launcher_visibility_all_toggled(self,widget,udata=None):
+        if self.ui['radio_launcher_visibility_all'].get_active():
+            self.unityshell.set_int('num-launchers',0)
+        else:
+            self.unityshell.set_int('num-launchers',1)
+
+    def on_radio_launcher_color_cus_toggled(self,widget,udata=None):
         dependants=['color_launcher_color_cus']
+        color=self.ui['color_launcher_color_cus'].get_color()
+        colorhash=self.color_to_hash(color)
         if self.ui['radio_launcher_color_cus'].get_active():
             self.ui.sensitize(dependants)
+            self.unityshell.set_string('background-color',colorhash)
         else:
             self.ui.unsensitize(dependants)
-   # TODO : Get the color and set it.
+            self.unityshell.set_string('background-color',colorhash[:-2]+'00')
 
-    def on_spin_launcher_icon_size_value_changed(self,udata=None):
+    def on_color_launcher_color_cus_color_set(self,widget,udata=None):
+        color=self.ui['color_launcher_color_cus'].get_color()
+        colorhash=self.color_to_hash(color)
+        self.unityshell.set_string('background-color',colorhash)
+
+    def on_spin_launcher_icon_size_value_changed(self,widget,udata=None):
         size=self.ui['spin_launcher_icon_size'].get_value()
         self.unityshell.set_int('icon-size',size)
 
-# TODO : Icon colouring handler
+    def on_cbox_launcher_icon_colouring_changed(self,widget,udata=None):
+        mode=self.ui['cbox_launcher_icon_colouring'].get_active()
+        self.unityshell.set_int('backlight-mode',mode)
     
     def on_sw_launcher_show_desktop_active_notify(self,widget,udata=None):
-        launcher=Gio.Settings("com.canonical.Unity.Launcher")
-        fav=launcher.get_strv('favorites')
+        fav=self.launcher.get_strv('favorites')
         desktop="unity://desktop-icon"
         if self.ui['sw_launcher_show_desktop'].get_active():
             if desktop not in fav:
                 fav.append(desktop)
-                launcher.set_strv('favorites',fav)
+                self.launcher.set_strv('favorites',fav)
         else:
             if desktop in fav:
                 fav.remove(desktop)
-                launcher.set_strv('favorites',fav)
+                self.launcher.set_strv('favorites',fav)
 
 # TODO : RESET handler
 # ---------- END Launcher -------
