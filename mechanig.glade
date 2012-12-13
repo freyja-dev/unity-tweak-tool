@@ -28,9 +28,9 @@
     <property name="page_increment">10</property>
   </object>
   <object class="GtkAdjustment" id="adj_launcher_transparency">
-    <property name="upper">100</property>
+    <property name="upper">1</property>
     <property name="step_increment">1</property>
-    <property name="page_increment">10</property>
+    <property name="page_increment">1</property>
   </object>
   <object class="GtkAdjustment" id="adj_menu_visible">
     <property name="upper">100</property>
@@ -38,12 +38,14 @@
     <property name="page_increment">10</property>
   </object>
   <object class="GtkAdjustment" id="adj_panel_transparency">
-    <property name="upper">100</property>
+    <property name="upper">1</property>
+    <property name="value">1</property>
     <property name="step_increment">1</property>
-    <property name="page_increment">10</property>
+    <property name="page_increment">1</property>
   </object>
   <object class="GtkAdjustment" id="adj_reveal_sensitivity">
-    <property name="upper">100</property>
+    <property name="lower">1</property>
+    <property name="upper">1000</property>
     <property name="step_increment">1</property>
     <property name="page_increment">10</property>
   </object>
@@ -538,7 +540,7 @@
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes">Unity settings</property>
                 <property name="use_underline">True</property>
-                <property name="icon_name">stock_redo</property>
+                <property name="icon_name">gtk-about</property>
                 <property name="group">tool_startpage</property>
                 <signal name="toggled" handler="on_tool_unitysettings_toggled" object="nb_mechanig" swapped="no"/>
               </object>
@@ -553,7 +555,7 @@
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes">Compiz settings</property>
                 <property name="use_underline">True</property>
-                <property name="icon_name">stock_refresh</property>
+                <property name="icon_name">gtk-fullscreen</property>
                 <property name="group">tool_startpage</property>
                 <signal name="toggled" handler="on_tool_compizsettings_toggled" object="nb_mechanig" swapped="no"/>
               </object>
@@ -568,7 +570,7 @@
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes">Theme settings</property>
                 <property name="use_underline">True</property>
-                <property name="icon_name">stock_open</property>
+                <property name="icon_name">gtk-select-color</property>
                 <property name="group">tool_startpage</property>
                 <signal name="toggled" handler="on_tool_themesettings_toggled" object="nb_mechanig" swapped="no"/>
               </object>
@@ -583,7 +585,7 @@
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes">Desktop settings</property>
                 <property name="use_underline">True</property>
-                <property name="icon_name">stock_print</property>
+                <property name="icon_name">gtk-preferences</property>
                 <property name="group">tool_startpage</property>
                 <signal name="toggled" handler="on_tool_desktopsettings_toggled" object="nb_mechanig" swapped="no"/>
               </object>
@@ -1333,6 +1335,7 @@
                             <property name="adjustment">adj_launcher_transparency</property>
                             <property name="digits">2</property>
                             <property name="draw_value">False</property>
+                            <signal name="value-changed" handler="on_sc_launcher_transparency_value_changed" swapped="no"/>
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
@@ -1354,6 +1357,7 @@
                             <property name="adjustment">adj_reveal_sensitivity</property>
                             <property name="digits">2</property>
                             <property name="draw_value">False</property>
+                            <signal name="value-changed" handler="on_sc_reveal_sensitivity_value_changed" swapped="no"/>
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
@@ -1428,6 +1432,7 @@
                             <property name="xalign">0</property>
                             <property name="active">True</property>
                             <property name="draw_indicator">True</property>
+                            <signal name="toggled" handler="on_radio_reveal_left_toggled" swapped="no"/>
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
@@ -1606,11 +1611,13 @@
                           <object class="GtkSpinButton" id="spin_launcher_icon_size">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
+                            <property name="halign">start</property>
                             <property name="margin_left">6</property>
                             <property name="margin_top">7</property>
                             <property name="invisible_char">•</property>
                             <property name="invisible_char_set">True</property>
                             <property name="adjustment">adj_launcher_icon_size</property>
+                            <signal name="value-changed" handler="on_spin_launcher_icon_size_value_changed" swapped="no"/>
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
@@ -1629,27 +1636,16 @@
                             <property name="entry_text_column">0</property>
                             <property name="id_column">1</property>
                             <items>
-                              <item translatable="yes">Toggles</item>
+                              <item translatable="yes">Backlight Always On</item>
+                              <item translatable="yes">Backlight Toggles</item>
+                              <item translatable="yes">Backlight Always Off</item>
+                              <item translatable="yes">Edge Illumination Toggles</item>
+                              <item translatable="yes">Backlight and Edge Illumination Toggles</item>
                             </items>
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
                             <property name="top_attach">1</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkSwitch" id="sw_launcher_show_desktop">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="halign">start</property>
-                            <property name="margin_left">5</property>
-                            <property name="margin_top">7</property>
-                          </object>
-                          <packing>
-                            <property name="left_attach">1</property>
-                            <property name="top_attach">2</property>
                             <property name="width">1</property>
                             <property name="height">1</property>
                           </packing>
@@ -1706,6 +1702,22 @@
                           </object>
                           <packing>
                             <property name="left_attach">0</property>
+                            <property name="top_attach">2</property>
+                            <property name="width">1</property>
+                            <property name="height">1</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkSwitch" id="sw_launcher_show_desktop">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="halign">start</property>
+                            <property name="margin_left">5</property>
+                            <property name="margin_top">7</property>
+                            <signal name="notify::active" handler="on_sw_launcher_show_desktop_active_notify" swapped="no"/>
+                          </object>
+                          <packing>
+                            <property name="left_attach">1</property>
                             <property name="top_attach">2</property>
                             <property name="width">1</property>
                             <property name="height">1</property>
@@ -2469,6 +2481,7 @@
                             <property name="margin_top">2</property>
                             <property name="xalign">0</property>
                             <property name="draw_indicator">True</property>
+                            <signal name="toggled" handler="on_check_panel_opaque_toggled" swapped="no"/>
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
@@ -2486,6 +2499,7 @@
                             <property name="margin_top">9</property>
                             <property name="xalign">0</property>
                             <property name="draw_indicator">True</property>
+                            <signal name="toggled" handler="on_check_indicator_username_toggled" swapped="no"/>
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
@@ -2503,6 +2517,7 @@
                             <property name="margin_top">4</property>
                             <property name="xalign">0</property>
                             <property name="draw_indicator">True</property>
+                            <signal name="toggled" handler="on_check_indicator_batterytime_toggled" swapped="no"/>
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
@@ -2520,6 +2535,7 @@
                             <property name="margin_top">9</property>
                             <property name="adjustment">adj_panel_transparency</property>
                             <property name="draw_value">False</property>
+                            <signal name="value-changed" handler="on_sc_panel_transparency_value_changed" swapped="no"/>
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
@@ -2849,72 +2865,14 @@
                                 <property name="hexpand">True</property>
                                 <property name="border_width">10</property>
                                 <child>
-                                  <object class="GtkLabel" id="l_switcher_showdesktop">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="margin_left">3</property>
-                                    <property name="xalign">0</property>
-                                    <property name="label" translatable="yes">Display "Show Desktop" icon</property>
-                                  </object>
-                                  <packing>
-                                    <property name="left_attach">1</property>
-                                    <property name="top_attach">1</property>
-                                    <property name="width">1</property>
-                                    <property name="height">1</property>
-                                  </packing>
-                                </child>
-                                <child>
-                                  <object class="GtkLabel" id="l_minimizedwindows_switch">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="margin_left">3</property>
-                                    <property name="xalign">0</property>
-                                    <property name="label" translatable="yes">Switch between minimized windows</property>
-                                  </object>
-                                  <packing>
-                                    <property name="left_attach">1</property>
-                                    <property name="top_attach">2</property>
-                                    <property name="width">1</property>
-                                    <property name="height">1</property>
-                                  </packing>
-                                </child>
-                                <child>
-                                  <object class="GtkLabel" id="l_autoexposewindows">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="margin_left">3</property>
-                                    <property name="xalign">0</property>
-                                    <property name="label" translatable="yes">Automatically expose windows</property>
-                                  </object>
-                                  <packing>
-                                    <property name="left_attach">1</property>
-                                    <property name="top_attach">3</property>
-                                    <property name="width">1</property>
-                                    <property name="height">1</property>
-                                  </packing>
-                                </child>
-                                <child>
-                                  <object class="GtkLabel" id="l_switchwindows_all_workspaces">
-                                    <property name="visible">True</property>
-                                    <property name="can_focus">False</property>
-                                    <property name="margin_left">3</property>
-                                    <property name="xalign">0</property>
-                                    <property name="label" translatable="yes">Switch between windows on all workspaces</property>
-                                  </object>
-                                  <packing>
-                                    <property name="left_attach">1</property>
-                                    <property name="top_attach">0</property>
-                                    <property name="width">1</property>
-                                    <property name="height">1</property>
-                                  </packing>
-                                </child>
-                                <child>
                                   <object class="GtkCheckButton" id="check_switchwindows_all_workspaces">
+                                    <property name="label" translatable="yes">Switch between windows on all workspaces</property>
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="receives_default">False</property>
                                     <property name="xalign">0</property>
                                     <property name="draw_indicator">True</property>
+                                    <signal name="toggled" handler="on_check_switchwindows_all_workspaces_toggled" swapped="no"/>
                                   </object>
                                   <packing>
                                     <property name="left_attach">0</property>
@@ -2925,11 +2883,13 @@
                                 </child>
                                 <child>
                                   <object class="GtkCheckButton" id="check_switcher_showdesktop">
+                                    <property name="label" translatable="yes">Display "Show Desktop" icon</property>
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="receives_default">False</property>
                                     <property name="xalign">0</property>
                                     <property name="draw_indicator">True</property>
+                                    <signal name="toggled" handler="on_check_switcher_showdesktop_toggled" swapped="no"/>
                                   </object>
                                   <packing>
                                     <property name="left_attach">0</property>
@@ -2940,11 +2900,13 @@
                                 </child>
                                 <child>
                                   <object class="GtkCheckButton" id="check_minimizedwindows_switch">
+                                    <property name="label" translatable="yes">Switch between minimized windows</property>
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="receives_default">False</property>
                                     <property name="xalign">0</property>
                                     <property name="draw_indicator">True</property>
+                                    <signal name="toggled" handler="on_check_minimizedwindows_switch_toggled" swapped="no"/>
                                   </object>
                                   <packing>
                                     <property name="left_attach">0</property>
@@ -2955,11 +2917,13 @@
                                 </child>
                                 <child>
                                   <object class="GtkCheckButton" id="check_autoexposewindows">
+                                    <property name="label" translatable="yes">Automatically expose windows</property>
                                     <property name="visible">True</property>
                                     <property name="can_focus">False</property>
                                     <property name="receives_default">False</property>
                                     <property name="xalign">0</property>
                                     <property name="draw_indicator">True</property>
+                                    <signal name="toggled" handler="on_check_autoexposewindows_toggled" swapped="no"/>
                                   </object>
                                   <packing>
                                     <property name="left_attach">0</property>
@@ -3176,26 +3140,14 @@
                         <property name="margin_top">6</property>
                         <property name="hexpand">True</property>
                         <child>
-                          <object class="GtkLabel" id="l_shortcuts_hints_overlay">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="xalign">0</property>
-                            <property name="label" translatable="yes">Hold Super for keyboard shortcuts</property>
-                          </object>
-                          <packing>
-                            <property name="left_attach">1</property>
-                            <property name="top_attach">0</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
-                        </child>
-                        <child>
                           <object class="GtkCheckButton" id="check_shortcuts_hints_overlay">
+                            <property name="label" translatable="yes">Hold Super for keyboard shortcuts</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
                             <property name="xalign">0</property>
                             <property name="draw_indicator">True</property>
+                            <signal name="toggled" handler="on_check_shortcuts_hints_overlay_toggled" swapped="no"/>
                           </object>
                           <packing>
                             <property name="left_attach">0</property>
@@ -5144,6 +5096,7 @@
                         <property name="margin_left">18</property>
                         <property name="xalign">0</property>
                         <property name="draw_indicator">True</property>
+                        <signal name="toggled" handler="on_check_desktop_home_toggled" swapped="no"/>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -5160,6 +5113,7 @@
                         <property name="margin_left">18</property>
                         <property name="xalign">0</property>
                         <property name="draw_indicator">True</property>
+                        <signal name="toggled" handler="on_check_desktop_networkserver_toggled" swapped="no"/>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -5176,6 +5130,7 @@
                         <property name="margin_left">18</property>
                         <property name="xalign">0</property>
                         <property name="draw_indicator">True</property>
+                        <signal name="toggled" handler="on_check_desktop_trash_toggled" swapped="no"/>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -5192,6 +5147,7 @@
                         <property name="margin_left">18</property>
                         <property name="xalign">0</property>
                         <property name="draw_indicator">True</property>
+                        <signal name="toggled" handler="on_check_desktop_devices_toggled" swapped="no"/>
                       </object>
                       <packing>
                         <property name="expand">False</property>

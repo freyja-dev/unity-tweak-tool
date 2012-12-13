@@ -42,6 +42,10 @@ class Mechanig ():
 
 # GSettings objects go here
         self.unityshell=self.plugin('unityshell')
+        self.desktop=self.gnome('nautilus.desktop')
+        self.background=self.gnome('desktop.background')
+        self.launcher=self.unity('Launcher')
+        self.power=self.canonical('indicator.power')
 
 # Fire the engines
         self.builder.connect_signals(self)
@@ -76,8 +80,18 @@ class Mechanig ():
         return Gio.Settings(schema)
 
     @staticmethod
+    def canonical(child):
+        schema='com.canonical.'+child
+        return Gio.Settings(schema)
+
+    @staticmethod
     def compiz(child):
         schema='org.compiz.'+child
+        return Gio.Settings(schema)
+
+    @staticmethod
+    def gnome(child):
+        schema='org.gnome.'+child
         return Gio.Settings(schema)
 
     def refresh(self):
@@ -161,14 +175,234 @@ class Mechanig ():
     def on_tool_desktop_clicked(self,udata): 
         self.ui['tool_desktopsettings'].set_active(True)
         
-    # compiz hotcorner linked button
-    
-    def on_lb_configure_hot_corner_activate_link(self,udata):
-        self.ui['nb_compizsettings'].set_current_page(4)
-    
-    def on_lb_configure_hot_corner_windows_spread_activate_link(self,udata):
-        self.ui['nb_compizsettings'].set_current_page(4)
+#=====BEGIN: Unity settings=====
+#-----BEGIN: Launcher -----
+    def on_sw_launcher_hidemode_active_notify(self,widget,udata=None):
+        dependants=['radio_reveal_left','radio_reveal_topleft','sc_reveal_sensitivity','l_launcher_reveal','l_launcher_reveal_sensitivity']
+        if widget.get_active():
+            self.unityshell.set_int("launcher-hide-mode",1)
+            self.ui.sensitize(dependants)
+        else:
+            self.unityshell.set_int("launcher-hide-mode",0)
+            self.ui.unsensitize(dependants)
+            
+        revealmode=self.unityshell.get_int('reveal-trigger')
+        if revealmode==0:
+            self.ui['radio_reveal_left'].set_active(True)
+        else:
+            self.ui['radio_reveal_topleft'].set_active(True)
 
+    def on_radio_reveal_left_toggled(self,button,udata=None):
+        mode=0 if button.get_active() else 1
+        self.unityshell.set_int('reveal-trigger',mode)
+        revealsensitivity=self.unityshell.get_int('reveal-pressure')
+        self.ui['sc_reveal_sensitivity'].set_value(revealsensitivity)
+        
+    def on_sc_reveal_sensitivity_value_changed(self,button,udata=None):
+        revealsensitivity=button.get_value()
+        self.unityshell.set_int('reveal-pressure',revealsensitivity)
+ 
+    def on_sw_launcher_transparent_active_notify(self,widget,udata=None):
+    
+        dependants=['l_launcher_transparency_scale','sc_launcher_transparency']
+         
+        if widget.get_active():
+            self.ui.sensitize(dependants)
+            self.unityshell.reset('launcher-opacity')
+            reset_launcher_opacity=self.unityshell.get_double('launcher-opacity')
+            self.ui['sc_launcher_transparency'].set_value(reset_launcher_opacity)
+            
+        else:
+            self.ui.unsensitize(dependants)
+            self.unityshell.set_double('launcher-opacity',1.00)
+            self.ui['sc_launcher_transparency'].set_value(1.00) 
+            
+    def on_sc_launcher_transparency_value_changed(self,widget,udata=None):
+        launcher_transparency=widget.get_value()
+        self.unityshell.set_double('launcher-opacity',launcher_transparency)
+    
+    def on_radio_launcher_color_cus_active_notify(self,widget,udata=None):
+        dependants=['color_launcher_color_cus']
+        if widget.get_active():
+            self.ui.sensitize(dependants)
+            
+        else:
+            self.ui.unsensitize(dependants)            
+
+    def on_spin_launcher_icon_size_value_changed(self,widget,udata=None):
+        launcher_icon_size=widget.get_value()
+        self.unityshell.set_int('icon-size',launcher_icon_size)
+
+    def on_sw_launcher_show_desktop_active_notify(self,button,udata=None):
+        
+        launcherfav=self.launcher.get_strv('favorites')
+        showdesktop="unity://desktop-icon"
+    
+        if button.get_active():
+        
+            launcherfav.append(showdesktop)
+            self.launcher.set_strv('favorites',launcherfav)
+        else:
+        
+            launcherfav.remove(showdesktop)
+            self.launcher.set_strv('favorites',launcherfav)
+        
+#--- SNIP: buggy code not committed ---
+
+
+
+
+#-----BEGIN: Dash -----
+   
+    def on_sw_dash_blur_active_notify(self,widget,udata=None):
+        dependants=['radio_dash_blur_smart','radio_dash_blur_static','l_dash_blur']
+       
+        if widget.get_active():
+            self.ui.sensitize(dependants)
+            self.unityshell.set_int('dash-blur-experimental',1)
+            
+        else:
+            self.ui.unsensitize(dependants)
+            self.unityshell.set_int('dash-blur-experimental',0)
+    
+    def on_radio_dash_blur_smart_toggled(self,button,udata=None):
+        mode=1 if button.get_active() else 2
+        self.unityshell.set_int('dash-blur-experimental',mode)
+     
+      # selective selection in unity-dash - part 2
+      
+    def on_radio_dash_color_cus_active_notify(self,widget,udata=None):
+        dependants=['color_dash_color_cus']
+        
+        if widget.get_active():
+            self.ui.sensitize(dependants)
+            
+        else:
+            self.ui.unsensitize(dependants)
+    
+#-----BEGIN: Panel -----            
+  
+    def on_sw_appmenu_autohide_active_notify(self,widget,udata=None):
+        dependants=['spin_menu_visible','l_menu_visible']
+        
+        if widget.get_active():
+            self.ui.sensitize(dependants)
+                    
+        else:
+            self.ui.unsensitize(dependants)
+            
+    # selective selection in unity-panel  part 2
+  
+    def on_sw_transparent_panel_active_notify(self,widget,udata=None):
+        dependants=['sc_panel_transparency','l_transparent_panel','check_panel_opaque']
+
+        if widget.get_active():
+            self.ui.sensitize(dependants)
+           
+        else:
+            self.ui.unsensitize(dependants)
+            self.unityshell.set_double('panel-opacity',1.00)
+            self.ui['sc_panel_transparency'].set_value(1.00)
+
+    def on_sc_panel_transparency_value_changed(self,widget,udata=None):
+        panel_transparency=widget.get_value()
+        self.unityshell.set_double('panel-opacity',panel_transparency)        
+
+    def on_check_panel_opaque_toggled(self,widget,udata=None):
+
+        if widget.get_active():
+            self.unityshell.set_boolean('panel-opacity-maximized-toggle',True)
+        else:
+            self.unityshell.set_boolean('panel-opacity-maximized-toggle',False)
+
+
+    def on_check_indicator_username_toggled(self,widget,udata=None):
+    
+        if widget.get_active():
+            self.unityshell.set_boolean('',)
+
+
+    def on_check_indicator_batterytime_toggled(self,widget,udata=None):
+    
+        if widget.get_active():
+            self.power.set_boolean('show-time',True)
+        else:
+            self.power.set_boolean('show-time',False)
+            
+
+#-----BEGIN: Switcher-----
+
+    def on_check_switchwindows_all_workspaces_toggled(self,widget,udata=None):
+    
+        if widget.get_active():
+            self.unityshell.set_boolean()
+    
+        else:
+            self.unityshell.set_boolean()    
+    
+    
+    def on_check_switcher_showdesktop_toggled(self,widget,udata=None):
+    
+        if widget.get_active():
+            self.unityshell.set_boolean("disable-show-desktop",False)
+        
+        else:
+            self.unityshell.set_boolean("disable-show-desktop",True)        
+        
+    def on_check_minimizedwindows_switch_toggled(self,widget,udata=None):
+    
+        if widget.get_active():
+            self.unityshell.set_boolean("show-minimized-windows",True)
+            
+        else:
+            self.unityshell.set_boolean("show-minimized-windows",False)
+    
+    def on_check_autoexposewindows_toggled(self,widget,udata=None):
+    
+        if widget.get_active():
+            self.unityshell.set_boolean()
+            
+        else:
+            self.unityshell.set_boolean()
+            
+    # keyboard widgets in unity-windows-switcher
+
+    def on_craccel_unity_switcher_windows_accel_edited(self,craccel, path, key, mods, hwcode,model=None):
+        model=self.ui['list_unity_switcher_windows_accelerators']
+        accel = Gtk.accelerator_name(key, mods)
+        iter = model.get_iter(path)
+        model.set_value(iter, 1, accel)
+
+    def on_craccel_unity_switcher_windows_accel_cleared(self, craccel, path, model=None):
+        model=self.ui['list_unity_switcher_windows_accelerators']
+        iter = model.get_iter(path)
+        model.set_value(iter, 1, "Disabled")
+
+    # keyboard widgets in unity-launcher-switcher
+
+    def on_craccel_unity_switcher_launcher_accel_edited(self,craccel, path, key, mods, hwcode,model=None):
+        model=self.ui['list_unity_switcher_launcher_accelerators']
+        accel = Gtk.accelerator_name(key, mods)
+        iter = model.get_iter(path)
+        model.set_value(iter, 1, accel)
+
+    def on_craccel_unity_switcher_launcher_accel_cleared(self, craccel, path, model=None):
+        model=self.ui['list_unity_switcher_launcher_accelerators']
+        iter = model.get_iter(path)
+        model.set_value(iter, 1, "Disabled")
+
+  
+#-----BEGIN: Additional -----
+
+    def on_check_shortcuts_hints_overlay_toggled(self,widget,udata=None):
+        
+        if widget.get_active():
+            self.unityshell.set_boolean('shortcut-overlay',True)
+        
+        else:
+            self.unityshell.set_boolean('shortcut-overlay',False)
+            
+            
     # keyboard widgets in unity-additional
 
     def on_craccel_unity_additional_accel_edited(self,craccel, path, key, mods, hwcode,model=None):
@@ -182,32 +416,22 @@ class Mechanig ():
         model=self.ui['list_unity_additional_accelerators']
         iter = model.get_iter(path)
         model.set_value(iter, 1, "Disabled")
+            
+#=====BEGIN: Compiz settings=====
+#-----BEGIN: General -----
+            
+     # selective sensitivity in compiz - general
+            
+    def on_sw_compiz_zoom_active_notify(self,widget,udata=None):
+        dependants=['radio_zoom_type_standard','radio_zoom_type_lg','l_compiz_zoom_type']
+        
+        if widget.get_active():
+            self.ui.sensitize(dependants)
+           
+        else:
+            self.ui.unsensitize(dependants)
+            
 
-    # keyboard widgets in unity-panel-windows-switcher
-
-    def on_craccel_unity_switcher_windows_accel_edited(self,craccel, path, key, mods, hwcode,model=None):
-        model=self.ui['list_unity_switcher_windows_accelerators']
-        accel = Gtk.accelerator_name(key, mods)
-        iter = model.get_iter(path)
-        model.set_value(iter, 1, accel)
-
-    def on_craccel_unity_switcher_windows_accel_cleared(self, craccel, path, model=None):
-        model=self.ui['list_unity_switcher_windows_accelerators']
-        iter = model.get_iter(path)
-        model.set_value(iter, 1, "Disabled")
-
-    # keyboard widgets in unity-panel-launcher-switcher
-
-    def on_craccel_unity_switcher_launcher_accel_edited(self,craccel, path, key, mods, hwcode,model=None):
-        model=self.ui['list_unity_switcher_launcher_accelerators']
-        accel = Gtk.accelerator_name(key, mods)
-        iter = model.get_iter(path)
-        model.set_value(iter, 1, accel)
-
-    def on_craccel_unity_switcher_launcher_accel_cleared(self, craccel, path, model=None):
-        model=self.ui['list_unity_switcher_launcher_accelerators']
-        iter = model.get_iter(path)
-        model.set_value(iter, 1, "Disabled")
 
     # keyboard widgets in compiz-general-zoom
 
@@ -232,7 +456,22 @@ class Mechanig ():
     def on_craccel_compiz_general_keys_accel_cleared(self, craccel, path, model=None):
         model=self.ui['list_compiz_general_keys_accelerators']
         iter = model.get_iter(path)
-        model.set_value(iter, 1, "Disabled")
+        model.set_value(iter, 1, "Disabled")            
+            
+            
+#-----BEGIN: Workspaces -----
+           
+    # selective sensitivity in compiz - workspaces
+    
+    def on_sw_workspace_switcher_active_notify(self,widget,udata=None):
+        dependants=['l_horizontal_desktop','l_vertical_desktop','spin_horizontal_desktop','spin_vertical_desktop']
+
+        if widget.get_active():
+            self.ui.sensitize(dependants)
+           
+        else:
+            self.ui.unsensitize(dependants)
+            
 
     # keyboard widgets in compiz-workspace
 
@@ -246,6 +485,30 @@ class Mechanig ():
         model=self.ui['list_compiz_workspace_accelerators']
         iter = model.get_iter(path)
         model.set_value(iter, 1, "Disabled")
+        
+        
+    # compiz hotcorner linked button
+    
+    def on_lb_configure_hot_corner_activate_link(self,udata):
+        self.ui['nb_compizsettings'].set_current_page(4)
+    
+
+        
+
+
+#-----BEGIN: Windows Spread -----
+
+    # selective sensitivity in compiz - windows spread
+    
+    def on_sw_windows_spread_active_notify(self,widget,udata=None):
+        dependants=['l_compiz_spacing','spin_compiz_spacing','check_overlay_emblem','check_click_desktop']
+
+        if widget.get_active():
+            self.ui.sensitize(dependants)
+           
+        else:
+            self.ui.unsensitize(dependants)
+ 
 
     # keyboard widgets in compiz-windows-spread
 
@@ -258,136 +521,63 @@ class Mechanig ():
     def on_craccel_compiz_windows_spread_accel_cleared(self, craccel, path, model=None):
         model=self.ui['list_compiz_windows_spread_accelerators']
         iter = model.get_iter(path)
-        model.set_value(iter, 1, "Disabled")
-        
-#=====BEGIN: Unity settings=====
-#-----BEGIN: Launcher ----------
-    def on_sw_launcher_hidemode_active_notify(self,widget,udata=None):
-        dependants=['radio_reveal_left','radio_reveal_topleft','sc_reveal_sensitivity','l_launcher_reveal','l_launcher_reveal_sensitivity']
-        if self.ui['sw_launcher_hidemode'].get_active():
-            self.unityshell.set_int("launcher-hide-mode",1)
-            self.ui.sensitize(dependants)
-        else:
-            self.unityshell.set_int("launcher-hide-mode",0)
-            self.ui.unsensitize(dependants)
-
-    def on_radio_reveal_left_toggled(self,button,udata=None):
-        mode=0 if button.get_active() else 1
-        self.unityshell.set_int('reveal-trigger',mode)
-#--- SNIP: buggy code not committed ---
-
-
-
-
-
-    # selective selection in unity-launcher - part 2
-    
-    def on_sw_launcher_transparent_active_notify(self,widget,udata=None):
-        dependants=['l_launcher_transparency_scale','sc_launcher_transparency']
-        if self.ui['sw_launcher_transparent'].get_active():
-            self.ui.sensitize(dependants)
+        model.set_value(iter, 1, "Disabled")            
             
-        else:
-            self.ui.unsensitize(dependants)
-            
-    # selective selection in unity-launcher - part 3
-    
-    def on_radio_launcher_color_cus_active_notify(self,widget,udata=None):
-        dependants=['color_launcher_color_cus']
-        if self.ui['radio_launcher_color_cus'].get_active():
-            self.ui.sensitize(dependants)
-            
-        else:
-            self.ui.unsensitize(dependants)
-   
-    # selective selection in unity-dash - part 1
-   
-    def on_sw_dash_blur_active_notify(self,widget,udata=None):
-        dependants=['radio_dash_blur_smart','radio_dash_blur_static','l_dash_blur']
-       
-        if self.ui['sw_dash_blur'].get_active():
-            self.ui.sensitize(dependants)
-            
-        else:
-            self.ui.unsensitize(dependants)
-      
-      # selective selection in unity-dash - part 2
-      
-    def on_radio_dash_color_cus_active_notify(self,widget,udata=None):
-        dependants=['color_dash_color_cus']
-        
-        if self.ui['radio_dash_color_cus'].get_active():
-            self.ui.sensitize(dependants)
-            
-        else:
-            self.ui.unsensitize(dependants)
-            
-    # selective selection in unity-panel part 1
-  
-    def on_sw_appmenu_autohide_active_notify(self,widget,udata=None):
-        dependants=['spin_menu_visible','l_menu_visible']
-        
-        if self.ui['sw_appmenu_autohide'].get_active():
-            self.ui.sensitize(dependants)
-                    
-        else:
-            self.ui.unsensitize(dependants)
-            
-    # selective selection in unity-panel  part 2
-  
-    def on_sw_transparent_panel_active_notify(self,widget,udata=None):
-        dependants=['sc_panel_transparency','l_transparent_panel','check_panel_opaque']
-
-        if self.ui['sw_transparent_panel'].get_active():
-            self.ui.sensitize(dependants)
-           
-        else:
-            self.ui.unsensitize(dependants)
-            
-     # selective sensitivity in compiz - general
-            
-    def on_sw_compiz_zoom_active_notify(self,widget,udata=None):
-        dependants=['radio_zoom_type_standard','radio_zoom_type_lg','l_compiz_zoom_type']
-        
-        if self.ui['sw_compiz_zoom'].get_active():
-            self.ui.sensitize(dependants)
-           
-        else:
-            self.ui.unsensitize(dependants)
-           
-    # selective sensitivity in compiz - workspaces
-    
-    def on_sw_workspace_switcher_active_notify(self,widget,udata=None):
-        dependants=['l_horizontal_desktop','l_vertical_desktop','spin_horizontal_desktop','spin_vertical_desktop']
-
-        if self.ui['sw_workspace_switcher'].get_active():
-            self.ui.sensitize(dependants)
-           
-        else:
-            self.ui.unsensitize(dependants)
-
-    # selective sensitivity in compiz - windows spread
-    
-    def on_sw_windows_spread_active_notify(self,widget,udata=None):
-        dependants=['l_compiz_spacing','spin_compiz_spacing','check_overlay_emblem','check_click_desktop']
-
-        if self.ui['sw_windows_spread'].get_active():
-            self.ui.sensitize(dependants)
-           
-        else:
-            self.ui.unsensitize(dependants)
  
+    # compiz hotcorner linked button
+    
+    def on_lb_configure_hot_corner_windows_spread_activate_link(self,udata):
+        self.ui['nb_compizsettings'].set_current_page(4)
 
-   # selective sensitivity in desktop settings
-                
+ 
+#=====BEGIN: Desktop settings=====
+
     def on_sw_desktop_icon_active_notify(self,widget,udata=None):
         dependants=['l_desktop_icons_display','check_desktop_home','check_desktop_networkserver','check_desktop_trash','check_desktop_devices']
         
-        if self.ui['sw_desktop_icon'].get_active():
+        if widget.get_active():
+            self.background.set_boolean("show-desktop-icons",True)
             self.ui.sensitize(dependants)
            
         else:
             self.ui.unsensitize(dependants)
+            self.background.set_boolean("show-desktop-icons",False)
+    
+    def on_check_desktop_home_toggled(self,widget,udata=None):
+    
+        if widget.get_active():
+            self.desktop.set_boolean("home-icon-visible",True)
+            
+        else:
+            self.desktop.set_boolean("home-icon-visible",False)
+            
+    def on_check_desktop_networkserver_toggled(self,widget,udata=None):
+        
+        if widget.get_active():
+            self.desktop.set_boolean("network-icon-visible",True)
+        
+        else:
+            self.desktop.set_boolean("network-icon-visible",False)
+            
+    def on_check_desktop_trash_toggled(self,widget,udata=None):
+    
+        if widget.get_active():
+            self.desktop.set_boolean("trash-icon-visible",True)
+            
+        else:
+            self.desktop.set_boolean("trash-icon-visible",False)
+            
+    def on_check_desktop_devices_toggled(self,widget,udata=None):
+        
+        if widget.get_active():
+            self.desktop.set_boolean("volumes-visible",True)
+            
+        else:
+            self.desktop.set_boolean("volumes-visible",False)
+            
+            
+            
+#-----END OF CONFIGURATIONS-----
              
     # gtk search box
     
@@ -415,10 +605,11 @@ class Mechanig ():
     def on_tool_entry_search_icon_press(self, widget, icon, mouse_button):
          
         if icon == Gtk.EntryIconPosition.SECONDARY:
-            self.ui['tool_entry_search'].set_text("")
-            self.ui['tool_entry_search'].set_icon_from_stock(Gtk.EntryIconPosition.SECONDARY, None)
+            widget.set_text("")
+            widget.set_icon_from_stock(Gtk.EntryIconPosition.SECONDARY, None)
             
-
+        if icon == Gtk.EntryIconPosition.PRIMARY:
+            print("Searching")
 
 if __name__=='__main__':
 # Fire up the Engines
