@@ -9,7 +9,7 @@
   </object>
   <object class="GtkAdjustment" id="adj_desktop_icon_size">
     <property name="lower">32</property>
-    <property name="upper">60</property>
+    <property name="upper">64</property>
     <property name="step_increment">1</property>
     <property name="page_increment">10</property>
   </object>
@@ -22,15 +22,16 @@
   </object>
   <object class="GtkAdjustment" id="adj_launcher_icon_size">
     <property name="lower">32</property>
-    <property name="upper">60</property>
+    <property name="upper">64</property>
     <property name="value">48</property>
     <property name="step_increment">1</property>
     <property name="page_increment">10</property>
   </object>
   <object class="GtkAdjustment" id="adj_launcher_transparency">
     <property name="upper">1</property>
-    <property name="step_increment">1</property>
-    <property name="page_increment">1</property>
+    <property name="value">0.67000000000000004</property>
+    <property name="step_increment">0.01</property>
+    <property name="page_increment">10</property>
   </object>
   <object class="GtkAdjustment" id="adj_menu_visible">
     <property name="upper">100</property>
@@ -44,10 +45,10 @@
     <property name="page_increment">1</property>
   </object>
   <object class="GtkAdjustment" id="adj_reveal_sensitivity">
-    <property name="lower">1</property>
-    <property name="upper">1000</property>
-    <property name="step_increment">1</property>
-    <property name="page_increment">10</property>
+    <property name="lower">0.20000000000000001</property>
+    <property name="upper">8</property>
+    <property name="step_increment">0.10000000000000001</property>
+    <property name="page_increment">1</property>
   </object>
   <object class="GtkAdjustment" id="adj_textscaling">
     <property name="lower">1</property>
@@ -621,9 +622,11 @@
                     <property name="width_chars">25</property>
                     <property name="caps_lock_warning">False</property>
                     <property name="primary_icon_name">edit-find-symbolic</property>
+                    <property name="placeholder_text">Search</property>
                     <signal name="insert-text" handler="on_tool_entry_search_insert_text" swapped="no"/>
                     <signal name="delete-text" handler="on_tool_entry_search_delete_text" swapped="no"/>
                     <signal name="icon-press" handler="on_tool_entry_search_icon_press" swapped="no"/>
+                    <signal name="paste-clipboard" handler="on_tool_entry_search_paste_clipboard" swapped="no"/>
                   </object>
                 </child>
               </object>
@@ -643,6 +646,7 @@
           <object class="GtkNotebook" id="nb_mechanig">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="show_tabs">False</property>
             <child>
               <object class="GtkBox" id="box_startpage">
                 <property name="visible">True</property>
@@ -1333,6 +1337,7 @@
                             <property name="margin_left">3</property>
                             <property name="margin_top">7</property>
                             <property name="adjustment">adj_launcher_transparency</property>
+                            <property name="round_digits">2</property>
                             <property name="digits">2</property>
                             <property name="draw_value">False</property>
                             <signal name="value-changed" handler="on_sc_launcher_transparency_value_changed" swapped="no"/>
@@ -1377,6 +1382,7 @@
                             <property name="xalign">0</property>
                             <property name="active">True</property>
                             <property name="draw_indicator">True</property>
+                            <signal name="toggled" handler="on_radio_launcher_visibility_all_toggled" swapped="no"/>
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
@@ -1412,6 +1418,7 @@
                             <property name="xalign">0</property>
                             <property name="draw_indicator">True</property>
                             <property name="group">radio_reveal_left</property>
+                            <signal name="toggled" handler="on_radio_reveal_topleft_toggled" swapped="no"/>
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
@@ -1527,7 +1534,7 @@
                             <property name="xalign">0</property>
                             <property name="draw_indicator">True</property>
                             <property name="group">radio_launcher_color_cham</property>
-                            <signal name="notify::active" handler="on_radio_launcher_color_cus_active_notify" swapped="no"/>
+                            <signal name="toggled" handler="on_radio_launcher_color_cus_toggled" swapped="no"/>
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
@@ -1543,6 +1550,7 @@
                             <property name="can_focus">False</property>
                             <property name="receives_default">True</property>
                             <property name="halign">start</property>
+                            <signal name="color-set" handler="on_color_launcher_color_cus_color_set" swapped="no"/>
                           </object>
                           <packing>
                             <property name="left_attach">2</property>
@@ -1642,6 +1650,7 @@
                               <item translatable="yes">Edge Illumination Toggles</item>
                               <item translatable="yes">Backlight and Edge Illumination Toggles</item>
                             </items>
+                            <signal name="changed" handler="on_cbox_launcher_icon_colouring_changed" swapped="no"/>
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
@@ -5190,6 +5199,7 @@
                     <property name="xalign">0</property>
                     <property name="active">True</property>
                     <property name="draw_indicator">True</property>
+                        <signal name="toggled" handler="on_check_alignment_toggled" swapped="no"/>
                   </object>
                   <packing>
                     <property name="expand">False</property>

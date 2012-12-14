@@ -1,0 +1,16 @@
+# Author : J Phani Mahesh<phanimahesh@gmail.com>
+
+Issue: The launcher background colour is currently superimposed on the chamelonic launcher. The result is an awkward unpredictable mixture. This is a result of implementation in unity. Absolutely nothing can be done about it, unless the unity devs change their mind.
+
+Details:
+ Imagine two sheets. One above other. Lower one is chamelonic. Its color is decided by the background. Upper one can be set by you separately. Upper layer can be made transparent by using rgba instead of rgb. Now, you see a resultant color, looking from the top. The launcher transparency setting affects the transparency of the overall color thus formed.
+
+Solution:
+ - Do not expose the opacity setting at all. (In the custom Color chooser dialog)
+ - Chamelonic => top-opacity=0. Then no matter what the choosen color is, the top layer remains transparent and the result is chamelonic launcher.
+ - Custom => top-opacity=1. Now the top layer is opaque, so the result is the choosen color.
+
+AdditionalNotes:
+ Color chooser gives a Gdk.Color object. This has rgb values from 0 to 65535. Gsettings understands 0 to 255. Hence use color.red_float and sister attributes to get value in range 0 to 1, *255, round, convert to hex and use the resultant '#rrggbbaa' string to set gsettings.
+
+ Docs mark get_color() as deprecated. However, get_rgba() needs a RGBA object made beforehand, and hence isn't pythonic. Lets change when color goes unsupported. Added necessary code to accomodate both to the color_to_hex function just in case.
