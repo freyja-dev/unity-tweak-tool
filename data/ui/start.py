@@ -11,16 +11,15 @@ class Startpage ():
         '''Handler Initialisations.
         Obtain all references here.'''
         self.builder = Gtk.Builder()
-        self.glade="startpage.ui"
+        self.glade = "startpage.ui"
 # TODO : Use os module to resolve to the full path.
-        self.builder.add_from_file(self.glade)
-        self.ui=ui(self.builder)
-        
-        
+        self.builder.add_objects_from_file(self.glade, ['box_startpage'])
+        self.ui = ui(self.builder)
+
         self.builder.connect_signals(self)
-        self.ui['startpage_window'].set_resizable(False)
+        #self.ui['startpage_window'].set_resizable(False)
         #self.ui['nb_mechanig'].set_show_tabs(False)
-        self.ui['startpage_window'].connect("delete-event", Gtk.main_quit)
+        #self.ui['startpage_window'].connect("delete-event", Gtk.main_quit)
         #self.ui['startpage_window'].show_all()
         #Gtk.main()
 
