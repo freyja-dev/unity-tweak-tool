@@ -71,7 +71,7 @@
                     <property name="label" translatable="yes">Launcher</property>
                     <property name="use_underline">True</property>
                     <property name="icon_name">stock_print</property>
-                    <signal name="clicked" handler="on_tool_launcher_clicked" object="nb_unitysettings" swapped="no"/>
+                    <signal name="clicked" handler="on_tool_launcher_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -85,7 +85,7 @@
                     <property name="label" translatable="yes">Dash</property>
                     <property name="use_underline">True</property>
                     <property name="icon_name">stock_print</property>
-                    <signal name="clicked" handler="on_tool_dash_clicked" object="nb_unitysettings" swapped="no"/>
+                    <signal name="clicked" handler="on_tool_dash_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -99,7 +99,7 @@
                     <property name="label" translatable="yes">Panel</property>
                     <property name="use_underline">True</property>
                     <property name="icon_name">stock_print</property>
-                    <signal name="clicked" handler="on_tool_panel_clicked" object="nb_unitysettings" swapped="no"/>
+                    <signal name="clicked" handler="on_tool_panel_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -113,7 +113,7 @@
                     <property name="label" translatable="yes">Switcher</property>
                     <property name="use_underline">True</property>
                     <property name="icon_name">stock_print</property>
-                    <signal name="clicked" handler="on_tool_unity_switcher_clicked" object="nb_unitysettings" swapped="no"/>
+                    <signal name="clicked" handler="on_tool_unity_switcher_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -127,7 +127,7 @@
                     <property name="label" translatable="yes">Additional</property>
                     <property name="use_underline">True</property>
                     <property name="icon_name">stock_print</property>
-                    <signal name="clicked" handler="on_tool_additional_clicked" object="nb_unitysettings" swapped="no"/>
+                    <signal name="clicked" handler="on_tool_additional_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -218,7 +218,7 @@
                     <property name="label" translatable="yes">General</property>
                     <property name="use_underline">True</property>
                     <property name="icon_name">stock_print</property>
-                    <signal name="clicked" handler="on_tool_general_clicked" object="nb_compizsettings" swapped="no"/>
+                    <signal name="clicked" handler="on_tool_general_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -232,7 +232,7 @@
                     <property name="label" translatable="yes">Switcher</property>
                     <property name="use_underline">True</property>
                     <property name="icon_name">stock_print</property>
-                    <signal name="clicked" handler="on_tool_compiz_switcher_clicked" object="nb_compizsettings" swapped="no"/>
+                    <signal name="clicked" handler="on_tool_compiz_switcher_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -246,7 +246,7 @@
                     <property name="label" translatable="yes">Windows spread</property>
                     <property name="use_underline">True</property>
                     <property name="icon_name">stock_print</property>
-                    <signal name="clicked" handler="on_tool_windows_spread_clicked" object="nb_compizsettings" swapped="no"/>
+                    <signal name="clicked" handler="on_tool_windows_spread_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -260,7 +260,7 @@
                     <property name="label" translatable="yes">Windows snapping</property>
                     <property name="use_underline">True</property>
                     <property name="icon_name">stock_print</property>
-                    <signal name="clicked" handler="on_tool_windows_snapping_clicked" object="nb_compizsettings" swapped="no"/>
+                    <signal name="clicked" handler="on_tool_windows_snapping_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -274,7 +274,7 @@
                     <property name="label" translatable="yes">Hotcorners</property>
                     <property name="use_underline">True</property>
                     <property name="icon_name">stock_print</property>
-                    <signal name="clicked" handler="on_tool_hotcorners_clicked" object="nb_compizsettings" swapped="no"/>
+                    <signal name="clicked" handler="on_tool_hotcorners_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -365,7 +365,7 @@
                     <property name="label" translatable="yes">System</property>
                     <property name="use_underline">True</property>
                     <property name="icon_name">stock_print</property>
-                    <signal name="clicked" handler="on_tool_system_clicked" object="nb_themesettings" swapped="no"/>
+                    <signal name="clicked" handler="on_tool_system_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -379,7 +379,7 @@
                     <property name="label" translatable="yes">Icons</property>
                     <property name="use_underline">True</property>
                     <property name="icon_name">stock_print</property>
-                    <signal name="clicked" handler="on_tool_icons_clicked" object="nb_themesettings" swapped="no"/>
+                    <signal name="clicked" handler="on_tool_icons_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -393,7 +393,7 @@
                     <property name="label" translatable="yes">Cursor</property>
                     <property name="use_underline">True</property>
                     <property name="icon_name">stock_print</property>
-                    <signal name="clicked" handler="on_tool_cursors_clicked" object="nb_themesettings" swapped="no"/>
+                    <signal name="clicked" handler="on_tool_cursors_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -407,7 +407,7 @@
                     <property name="label" translatable="yes">Fonts</property>
                     <property name="use_underline">True</property>
                     <property name="icon_name">stock_print</property>
-                    <signal name="clicked" handler="on_tool_fonts_clicked" object="nb_themesettings" swapped="no"/>
+                    <signal name="clicked" handler="on_tool_fonts_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -498,7 +498,7 @@
                     <property name="label" translatable="yes">Icons</property>
                     <property name="use_underline">True</property>
                     <property name="icon_name">stock_print</property>
-                    <signal name="clicked" handler="on_tool_desktop_clicked" object="box_desktop_settings" swapped="no"/>
+                    <signal name="clicked" handler="on_tool_desktop_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="expand">False</property>

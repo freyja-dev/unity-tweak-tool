@@ -2,14 +2,22 @@
 #-*- coding:utf-8 -*-
 
 from gi.repository import Gtk,Gio
+from ui import ui
 
-builder = Gtk.Builder()
+class Themesettings ():
+    def __init__(self, container):
+        '''Handler Initialisations.
+        Obtain all references here.'''
+        self.builder = Gtk.Builder()
+        self.glade = 'theme.ui'
+        self.container = container
+# TODO : Use os module to resolve to the full path.
+        self.builder.add_from_file(self.glade)
+        self.ui = ui(self.builder)
+        self.page = self.ui['nb_themesettings']
+        self.page.unparent()
+        self.builder.connect_signals(self)
 
-builder.add_from_file("theme.ui")
-
-theme = builder.get_object("theme_window")
-
-theme.connect("delete-event", Gtk.main_quit)
-theme.show_all()
-
-Gtk.main()
+if __name__=='__main__':
+# Fire up the Engines
+    Themesettings()
