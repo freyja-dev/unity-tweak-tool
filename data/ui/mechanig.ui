@@ -386,11 +386,9 @@
                     <property name="width_chars">25</property>
                     <property name="caps_lock_warning">False</property>
                     <property name="primary_icon_name">edit-find-symbolic</property>
-                    <property name="placeholder_text">Search</property>
                     <signal name="insert-text" handler="on_tool_entry_search_insert_text" swapped="no"/>
                     <signal name="delete-text" handler="on_tool_entry_search_delete_text" swapped="no"/>
                     <signal name="icon-press" handler="on_tool_entry_search_icon_press" swapped="no"/>
-                    <signal name="paste-clipboard" handler="on_tool_entry_search_paste_clipboard" swapped="no"/>
                   </object>
                 </child>
               </object>
