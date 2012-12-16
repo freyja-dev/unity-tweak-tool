@@ -585,6 +585,7 @@
                     <property name="can_focus">False</property>
                     <property name="invisible_char">•</property>
                     <property name="invisible_char_set">True</property>
+                    <property name="adjustment">adj_textscaling</property>
                   </object>
                   <packing>
                     <property name="left_attach">1</property>

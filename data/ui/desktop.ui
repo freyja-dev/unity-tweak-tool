@@ -223,6 +223,7 @@
                 <property name="invisible_char">•</property>
                 <property name="invisible_char_set">True</property>
                 <property name="input_purpose">number</property>
+                <property name="adjustment">adj_desktop_icon_size</property>
                 <property name="climb_rate">1</property>
               </object>
               <packing>

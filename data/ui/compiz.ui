@@ -568,6 +568,7 @@
                     <property name="halign">start</property>
                     <property name="invisible_char">•</property>
                     <property name="invisible_char_set">True</property>
+                    <property name="adjustment">adj_vertical_desktop</property>
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
@@ -583,6 +584,7 @@
                     <property name="halign">start</property>
                     <property name="invisible_char">•</property>
                     <property name="invisible_char_set">True</property>
+                    <property name="adjustment">adj_horizontal_desktop</property>
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
@@ -823,6 +825,7 @@
                         <property name="halign">start</property>
                         <property name="invisible_char">•</property>
                         <property name="invisible_char_set">True</property>
+                        <property name="adjustment">adj_compiz_spacing</property>
                       </object>
                       <packing>
                         <property name="left_attach">1</property>
