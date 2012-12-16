@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 #
 # Team:
-#   J Phani Mahesh <phanimahesh@gmail.com> 
-#   Barneedhar (jokerdino) <barneedhar@ubuntu.com> 
+#   J Phani Mahesh <phanimahesh@gmail.com>
+#   Barneedhar (jokerdino) <barneedhar@ubuntu.com>
 #   Amith KK <amithkumaran@gmail.com>
 #   Georgi Karavasilev <motorslav@gmail.com>
 #   Sam Tran <samvtran@gmail.com>
@@ -45,6 +45,13 @@ class Unitysettings ():
         self.page.unparent()
         self.builder.connect_signals(self)
 
+# TODO : Set these marks to the defaults
+        revealScale = self.ui['sc_reveal_sensitivity']
+        revealScale.add_mark(2, Gtk.PositionType.BOTTOM, None)
+
+        transparencyScale = self.ui['sc_launcher_transparency']
+        transparencyScale.add_mark(.25, Gtk.PositionType.BOTTOM, None)
+
 
 # GSettings objects go here
         self.unityshell=self.plugin('unityshell')
@@ -52,7 +59,7 @@ class Unitysettings ():
         self.background=self.gnome('desktop.background')
         self.launcher=self.unity('Launcher')
         self.power=self.canonical('indicator.power')
-        
+
         self.refresh()
 
 #=====================================================================#
@@ -65,8 +72,8 @@ class Unitysettings ():
         gsettings=Gio.Settings(schema=schema,path=path)
         for key in gsettings.list_keys():
             gsettings.reset(key)
-    
-        
+
+
     @staticmethod
     def color_to_hash(c):
         """Convert a Gdk.Color or Gdk.RGBA object to hex representation"""
