@@ -50,8 +50,10 @@ class Compizsettings ():
         self.desktop=self.gnome('nautilus.desktop')
         self.background=self.gnome('desktop.background')
         self.launcher=self.unity('Launcher')
-        self.power=self.canonical('indicator.power')
-
+        self.opengl=self.plugin('opengl')
+        self.core=self.plugin('core')
+        self.scale=self.plugin('scale')
+        
         self.builder.connect_signals(self)
         
         self.refresh()
@@ -78,8 +80,22 @@ class Compizsettings ():
         raise NotImplementedError
 
     def refresh(self):
-        return True 
+        self.ui['cbox_opengl'].set_active(self.opengl.get_int('texture-filter'))
+        self.ui['check_synctovblank'].set_active(self.opengl.get_boolean('sync-to-vblank'))    
 
+
+        hsize=self.core.get_int('hsize')
+        vsize=self.core.get_int('vsize')
+        
+        if hsize >= 1 or vsize >= 1:
+            self.ui['sw_workspace_switcher'].set_active(True)
+        else:
+            self.ui['sw_workspace_switcher'].set_active(False)
+
+        self.ui['spin_horizontal_desktop'].set_value(hsize)
+        self.ui['spin_vertical_desktop'].set_value(vsize)
+        
+        
 # TODO : Find a clever way or set each one manually.
 # Do it the dumb way now. BIIIG refactoring needed later.
 
@@ -145,6 +161,16 @@ class Compizsettings ():
         iter = model.get_iter(path)
         model.set_value(iter, 1, "Disabled")
 
+
+    #-----General: OpenGL
+
+    def on_cbox_opengl_changed(self,widget,udata=None):
+        mode=self.ui['cbox_opengl'].get_active()
+        self.opengl.set_int('texture-filter',mode)    
+
+    def on_check_synctovblank_toggled(self,widget,udata=None):
+        self.opengl.set_boolean('sync-to-vblank',self.ui['check_synctovblank'].get_active())
+
     # keyboard widgets in compiz-general-keys
 
     def on_craccel_compiz_general_keys_accel_edited(self,craccel, path, key, mods, hwcode,model=None):
@@ -163,15 +189,31 @@ class Compizsettings ():
     # selective sensitivity in compiz - workspaces
 
     def on_sw_workspace_switcher_active_notify(self,widget,udata=None):
-        dependants=['l_horizontal_desktop','l_vertical_desktop','spin_horizontal_desktop','spin_vertical_desktop']
+        dependants=['l_horizontal_desktop',
+                    'l_vertical_desktop',
+                    'spin_horizontal_desktop',
+                    'spin_vertical_desktop']
 
         if widget.get_active():
             self.ui.sensitize(dependants)
 
         else:
             self.ui.unsensitize(dependants)
-
-
+            self.core.set_int('hsize',1)
+            self.core.set_int('vsize',1)
+            self.ui['spin_horizontal_desktop'].set_value(1)
+            self.ui['spin_vertical_desktop'].set_value(1)
+            #self.refresh()
+            
+            
+    def on_spin_horizontal_desktop_value_changed(self,widget,udata=None):
+        hsize=self.ui['spin_horizontal_desktop'].get_value()
+        self.core.set_int('hsize',hsize)
+    
+    def on_spin_vertical_desktop_value_changed(self,widget,udata=None):
+        vsize=self.ui['spin_vertical_desktop'].get_value()
+        self.core.set_int('vsize',vsize)
+        
     # keyboard widgets in compiz-workspace
 
     def on_craccel_compiz_workspace_accel_edited(self,craccel, path, key, mods, hwcode,model=None):
@@ -199,14 +241,34 @@ class Compizsettings ():
     # selective sensitivity in compiz - windows spread
 
     def on_sw_windows_spread_active_notify(self,widget,udata=None):
-        dependants=['l_compiz_spacing','spin_compiz_spacing','check_overlay_emblem','check_click_desktop']
+        dependants=['l_compiz_spacing',
+                    'spin_compiz_spacing',
+                    'check_overlay_emblem',
+                    'check_click_desktop',
+                    'scrolledwindow_compiz_window_spread']
 
         if widget.get_active():
             self.ui.sensitize(dependants)
+            self.scale.set_string('initiate-key','<Super>W')
 
         else:
             self.ui.unsensitize(dependants)
+            self.scale.set_string('initiate-key','Disabled')
 
+    def on_spin_compiz_spacing_value_changed(self,widget):
+        self.scale.set_int('spacing',self.ui['spin_compiz_spacing'].get_value())
+
+    def on_check_overlay_emblem_toggled(self,widget):
+        if self.ui['check_overlay_emblem'].get_active():
+            self.scale.set_int('overlay-icon',1)
+        else:
+            self.scale.set_int('overlay-icon',0)
+    def on_check_click_desktop_toggled(self,widget):
+    
+        if self.ui['check_click_desktop'].get_active():
+            self.scale.set_boolean('show-desktop',True)
+        else:
+            self.scale.set_boolean('show-desktop',False)
 
     # keyboard widgets in compiz-windows-spread
 
