@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 #
 # Team:
-#   J Phani Mahesh <phanimahesh@gmail.com> 
-#   Barneedhar (jokerdino) <barneedhar@ubuntu.com> 
+#   J Phani Mahesh <phanimahesh@gmail.com>
+#   Barneedhar (jokerdino) <barneedhar@ubuntu.com>
 #   Amith KK <amithkumaran@gmail.com>
 #   Georgi Karavasilev <motorslav@gmail.com>
 #   Sam Tran <samvtran@gmail.com>
@@ -30,6 +30,7 @@
 
 from gi.repository import Gtk,Gio
 from ui import ui
+import cairo
 
 class Compizsettings ():
     def __init__(self, container):
@@ -44,6 +45,25 @@ class Compizsettings ():
         self.page = self.ui['nb_compizsettings']
         self.page.unparent()
 
+# Initialise Cairo bits
+        self.window_snapping_drawable = self.ui['draw_window_snapping']
+        background = "monitor.png"
+        self._base_surface = cairo.ImageSurface.create_from_png (background)
+
+        self._active_corner = ""
+        self.window_snapping_cboxes = [
+            'top',
+            'topleft',
+            'left',
+            'bottomleft',
+            'bottom',
+            'topright',
+            'right',
+            'bottomright'
+        ]
+
+        for box in self.window_snapping_cboxes:
+            self.ui['cbox_window_snapping_' + box].connect("changed", self.on_cbox_window_snapping_changed, box)
 
 # GSettings objects go here
         self.unityshell=self.plugin('unityshell')
@@ -53,9 +73,44 @@ class Compizsettings ():
         self.power=self.canonical('indicator.power')
 
         self.builder.connect_signals(self)
-        
+
         self.refresh()
-        
+
+    def on_draw_window_snapping_draw (self, window, cr):
+        cr.set_source_surface(self._base_surface)
+        cr.paint()
+
+        # Drawing onto surface
+        #
+        # Top left
+        cr.set_line_width(1.0)
+        cr.new_path()
+        cr.move_to (16, 24 + 20)
+        cr.line_to (16, 24)
+        cr.line_to (16 + 20, 24)
+        cr.arc (16, 24, 20, 0, 3.14 / 2)
+        cr.close_path ()
+
+        if self._active_corner is "topleft":
+            cr.set_source_rgb(0.31, 0.60, 0.02)
+        else:
+            cr.set_source_rgb (0.9, 0.9, 0.9)
+        cr.fill_preserve()
+
+        cr.set_source_rgb (0.45, 0.45, 0.45)
+        cr.stroke()
+
+    def on_cbox_window_snapping_changed (self, combobox, value):
+        # If value is 0, no value is set
+        # otherwise, one is set
+        print (combobox.get_active())
+        print (value)
+        self.draw_active_corner(value)
+
+    def draw_active_corner (self, corner):
+        self._active_corner = corner
+        self.window_snapping_drawable.queue_draw()
+
 #=====================================================================#
 #                                Helpers                              #
 #=====================================================================#
@@ -66,7 +121,7 @@ class Compizsettings ():
         gsettings=Gio.Settings(schema=schema,path=path)
         for key in gsettings.list_keys():
             gsettings.reset(key)
-    
+
     @staticmethod
     def color_to_hash(c):
         """Convert a Gdk.Color or Gdk.RGBA object to hex representation"""
@@ -78,7 +133,7 @@ class Compizsettings ():
         raise NotImplementedError
 
     def refresh(self):
-        return True 
+        return True
 
 # TODO : Find a clever way or set each one manually.
 # Do it the dumb way now. BIIIG refactoring needed later.
