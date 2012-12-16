@@ -31,6 +31,7 @@
 from gi.repository import Gtk,Gio
 from ui import ui
 import cairo
+from math import pi, sqrt
 
 class Compizsettings ():
     def __init__(self, container):
@@ -51,19 +52,22 @@ class Compizsettings ():
         self._base_surface = cairo.ImageSurface.create_from_png (background)
 
         self._active_corner = ""
-        self.window_snapping_cboxes = [
-            'top',
-            'topleft',
-            'left',
-            'bottomleft',
-            'bottom',
-            'topright',
-            'right',
-            'bottomright'
-        ]
+        self.window_snapping_cboxes = {
+            'cbox_window_snapping_top': 0,
+            'cbox_window_snapping_topleft': 0,
+            'cbox_window_snapping_left': 0,
+            'cbox_window_snapping_bottomleft': 0,
+            'cbox_window_snapping_bottom': 0,
+            'cbox_window_snapping_topright': 0,
+            'cbox_window_snapping_right': 0,
+            'cbox_window_snapping_bottomright': 0
+        }
 
         for box in self.window_snapping_cboxes:
-            self.ui['cbox_window_snapping_' + box].connect("changed", self.on_cbox_window_snapping_changed, box)
+            # TODO grab active corner and set it on the dictionary
+            self.ui[box].set_active(self.window_snapping_cboxes[box])
+            self.ui[box].connect("changed", self.on_cbox_window_snapping_changed, box)
+
 
 # GSettings objects go here
         self.unityshell=self.plugin('unityshell')
@@ -77,38 +81,103 @@ class Compizsettings ():
         self.refresh()
 
     def on_draw_window_snapping_draw (self, window, cr):
+# TODO : Since this gets retrigged completely on queue_draw,
+# need to have it query for active hot corners
+
+        x1 = 16
+        y1 = 16
+        x2 = 284
+        y2 = 200
+        x3 = 116 # Top/bottom side left-corner
+        y3 = 73  # Left/right side top-corner
+
+        corner_width = 36
+        side_height = 16
+        left_right_width = 70
+        top_bottom_width = 68
+
         cr.set_source_surface(self._base_surface)
         cr.paint()
+        cr.set_source_rgba(221/255, 72/255, 20/255);
 
-        # Drawing onto surface
-        #
-        # Top left
-        cr.set_line_width(1.0)
-        cr.new_path()
-        cr.move_to (16, 24 + 20)
-        cr.line_to (16, 24)
-        cr.line_to (16 + 20, 24)
-        cr.arc (16, 24, 20, 0, 3.14 / 2)
-        cr.close_path ()
+        if self.window_snapping_cboxes['cbox_window_snapping_top'] != 0:
+            cr.new_path()
+            cr.move_to(x3, y1)
+            cr.line_to (x3 + top_bottom_width, y1)
+            values = self.arc_values(top_bottom_width, side_height)
+            cr.arc(x3 + (top_bottom_width / 2), y1 - values['offset'], values['radius'], pi/4 , (3 * pi)/4)
+            cr.fill_preserve()
 
-        if self._active_corner is "topleft":
-            cr.set_source_rgb(0.31, 0.60, 0.02)
-        else:
-            cr.set_source_rgb (0.9, 0.9, 0.9)
-        cr.fill_preserve()
+        if self.window_snapping_cboxes['cbox_window_snapping_topleft'] != 0:
+            cr.new_path()
+            cr.move_to(x1, y1)
+            cr.line_to(x1 + corner_width, y1)
+            cr.arc(x1, y1, corner_width, 0, pi/2)
+            cr.line_to(x1, y1)
+            cr.fill_preserve()
 
-        cr.set_source_rgb (0.45, 0.45, 0.45)
-        cr.stroke()
+        if self.window_snapping_cboxes['cbox_window_snapping_left'] != 0:
+            cr.new_path()
+            cr.move_to(x1, y3 + left_right_width)
+            cr.line_to(x1, y3)
+            values = self.arc_values(left_right_width, side_height)
+            cr.arc(x1 - values['offset'], y3 + (left_right_width / 2), values['radius'], -pi/4, pi/4)
+            cr.fill_preserve()
 
-    def on_cbox_window_snapping_changed (self, combobox, value):
+        if self.window_snapping_cboxes['cbox_window_snapping_bottomleft'] != 0:
+            cr.new_path()
+            cr.move_to(x1, y2 - corner_width)
+            cr.line_to(x1, y2)
+            cr.line_to(x1 + corner_width, y2)
+            cr.arc(x1, y2, corner_width, - pi / 2, 0)
+            cr.fill_preserve()
+
+        if self.window_snapping_cboxes['cbox_window_snapping_bottom'] != 0:
+            cr.new_path()
+            cr.move_to(x3 + top_bottom_width, y2)
+            cr.line_to(x3, y2)
+            values = self.arc_values(top_bottom_width, side_height)
+            cr.arc(x3 + (top_bottom_width / 2), y2 + values['offset'], values['radius'], (5 * pi) / 4, (7 * pi) / 4)
+            cr.fill_preserve()
+
+        if self.window_snapping_cboxes['cbox_window_snapping_topright'] != 0:
+            cr.new_path()
+            cr.move_to(x2, y1)
+            cr.line_to(x2, y1 + corner_width)
+            cr.arc(x2, y1, corner_width, pi / 2, pi)
+            cr.line_to(x2, y1)
+            cr.fill_preserve()
+
+        if self.window_snapping_cboxes['cbox_window_snapping_right'] != 0:
+            # TODO : DRAW
+            cr.new_path()
+            cr.move_to(x2, y3)
+            cr.line_to(x2, y3 + left_right_width)
+            values = self.arc_values(left_right_width, side_height)
+            cr.arc(x2 + values['offset'], y3 + (left_right_width / 2), values['radius'], (3 * pi) / 4, (5 * pi) / 4)
+            cr.fill_preserve()
+
+        if self.window_snapping_cboxes['cbox_window_snapping_bottomright'] != 0:
+            # TODO : DRAW
+            cr.new_path()
+            cr.move_to(x2, y2)
+            cr.line_to(x2 - corner_width, y2)
+            cr.arc(x2, y2, corner_width, pi, (3 * pi ) / 2)
+            cr.line_to(x2, y2)
+            cr.fill_preserve()
+
+    def arc_values (self, length, height):
+        # radius = (h^2 + 1/4 length^2)/2h
+        radius = ((height**2) + (.25 * (length**2))) / (2 * height)
+        return {
+            'radius': radius,
+            'offset': sqrt((radius**2) - ((length / 2)**2))
+        }
+
+    def on_cbox_window_snapping_changed (self, combobox, cbox_id):
         # If value is 0, no value is set
         # otherwise, one is set
-        print (combobox.get_active())
-        print (value)
-        self.draw_active_corner(value)
-
-    def draw_active_corner (self, corner):
-        self._active_corner = corner
+        self.window_snapping_cboxes[cbox_id] = combobox.get_active()
         self.window_snapping_drawable.queue_draw()
 
 #=====================================================================#
