@@ -47,14 +47,11 @@ class Themesettings ():
 
 
 # GSettings objects go here
-        self.unityshell=self.plugin('unityshell')
-        self.desktop=self.gnome('nautilus.desktop')
-        self.background=self.gnome('desktop.background')
-        self.launcher=self.unity('Launcher')
-        self.power=self.canonical('indicator.power')
-
-        self.builder.connect_signals(self)
+        self.font=self.gnome('desktop.interface')
+        self.titlefont=self.gnome('desktop.wm.preferences')       
+        self.antialiasing=self.gnome('settings-daemon.plugins.xsettings')
         
+        self.builder.connect_signals(self)        
         self.refresh()
         
 #=====================================================================#
@@ -79,8 +76,31 @@ class Themesettings ():
         raise NotImplementedError
 
     def refresh(self):
-        return True   
-
+        self.ui['font_default'].set_font_name(self.font.get_string('font-name'))
+        self.ui['font_document'].set_font_name(self.font.get_string('document-font-name'))
+        self.ui['font_monospace'].set_font_name(self.font.get_string('monospace-font-name'))
+        self.ui['font_window_title'].set_font_name(self.titlefont.get_string('titlebar-font'))
+        
+        antialiasing=self.antialiasing.get_string('antialiasing')
+        if antialiasing=='none':
+            self.ui['cbox_antialiasing'].set_active(0)
+        elif antialiasing=='grayscale':
+            self.ui['cbox_antialiasing'].set_active(1)
+        elif antialiasing=='rgba':
+            self.ui['cbox_antialiasing'].set_active(2)
+            
+        hinting=self.antialiasing.get_string('hinting')
+        if hinting=='none':
+            self.ui['cbox_hinting'].set_active(0)
+        elif hinting=='slight':
+            self.ui['cbox_hinting'].set_active(1)
+        elif hinting=='medium':
+            self.ui['cbox_hinting'].set_active(2)
+        elif hinting=='full':
+            self.ui['cbox_hinting'].set_active(3)
+        
+        self.ui['spin_textscaling'].set_value(self.font.get_double('text-scaling-factor'))
+      
 # TODO : Find a clever way or set each one manually.
 # Do it the dumb way now. BIIIG refactoring needed later.
 
@@ -118,6 +138,58 @@ class Themesettings ():
 # Apologies Gnome devs, but Glade is not our favorite.      |
 #___________________________________________________________/
 
+
+#-----BEGIN: Theme settings------
+
+
+#-----Font settings--------
+
+    def on_font_default_font_set(self,widget):
+        self.font.set_string('font-name',self.ui['font_default'].get_font_name())
+    
+    def on_font_document_font_set(self,widget):
+        self.font.set_string('document-font-name',self.ui['font_document'].get_font_name())
+    
+    def on_font_monospace_font_set(self,widget):
+        self.font.set_string('monospace-font-name',self.ui['font_monospace'].get_font_name())
+        
+    def on_font_window_title_font_set(self,widget):    
+        self.titlefont.set_string('titlebar-font',self.ui['font_window_title'].get_font_name())
+        
+    def on_cbox_antialiasing_changed(self,widget):
+        mode=self.ui['cbox_antialiasing'].get_active()
+        if mode==0:
+            self.antialiasing.set_string('antialiasing',"none")
+        elif mode==1:
+            self.antialiasing.set_string('antialiasing',"grayscale")
+        elif mode==2:
+            self.antialiasing.set_string('antialiasing',"rgba")
+
+    def on_cbox_hinting_changed(self,widget):
+        mode=self.ui['cbox_hinting'].get_active()
+        if mode==0:
+            self.antialiasing.set_string('hinting',"none")
+        elif mode==1:
+            self.antialiasing.set_string('hinting',"slight")
+        elif mode==2:
+            self.antialiasing.set_string('hinting',"medium")
+        elif mode==3:
+            self.antialiasing.set_string('hinting',"full")
+            
+    def on_spin_textscaling_value_changed(self,widget):
+        self.font.set_double('text-scaling-factor',self.ui['spin_textscaling'].get_value())       
+
+    def on_b_theme_font_reset_clicked(self,widget):
+        #print("test")
+        self.font.reset('font-name')
+        self.font.reset('document-font-name')
+        self.font.reset('monospace-font-name')
+        self.titlefont.reset('titlebar-font')
+        self.antialiasing.reset('antialiasing')
+        self.antialiasing.reset('hinting')
+        self.font.reset('text-scaling-factor')
+        self.refresh()
+        
 if __name__=='__main__':
 # Fire up the Engines
     Themesettings()

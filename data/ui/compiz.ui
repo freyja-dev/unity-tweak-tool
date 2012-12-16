@@ -178,6 +178,7 @@
                   <object class="GtkTreeView" id="treeview_compiz_general_zoom">
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
+                    <property name="model">list_compiz_general_zoom_accelerators</property>
                     <property name="headers_visible">False</property>
                     <property name="headers_clickable">False</property>
                     <property name="search_column">0</property>
@@ -407,6 +408,7 @@
                   <object class="GtkTreeView" id="treeview_compiz_general_keys">
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
+                    <property name="model">list_compiz_general_keys_accelerators</property>
                     <property name="headers_visible">False</property>
                     <property name="headers_clickable">False</property>
                     <property name="search_column">0</property>
@@ -646,6 +648,7 @@
                   <object class="GtkTreeView" id="treeview_compiz_workspace">
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
+                    <property name="model">list_compiz_workspace_accelerators</property>
                     <property name="headers_visible">False</property>
                     <property name="headers_clickable">False</property>
                     <property name="search_column">0</property>
@@ -893,6 +896,7 @@
                   <object class="GtkTreeView" id="treeview_compiz_windows_spread">
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
+                    <property name="model">list_compiz_windows_spread_accelerators</property>
                     <property name="headers_visible">False</property>
                     <property name="headers_clickable">False</property>
                     <property name="search_column">0</property>

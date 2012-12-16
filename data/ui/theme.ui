@@ -2,9 +2,10 @@
 <interface>
   <!-- interface-requires gtk+ 3.0 -->
   <object class="GtkAdjustment" id="adj_textscaling">
-    <property name="lower">1</property>
-    <property name="upper">100</property>
-    <property name="step_increment">1</property>
+    <property name="lower">0.5</property>
+    <property name="upper">3</property>
+    <property name="value">1</property>
+    <property name="step_increment">0.050000000000000003</property>
     <property name="page_increment">10</property>
   </object>
   <object class="GtkWindow" id="theme_window">
@@ -569,8 +570,12 @@
                     <property name="entry_text_column">0</property>
                     <property name="id_column">1</property>
                     <items>
+                      <item translatable="yes">None</item>
                       <item translatable="yes">Slight</item>
+                      <item translatable="yes">Medium</item>
+                      <item translatable="yes">Full</item>
                     </items>
+                    <signal name="changed" handler="on_cbox_hinting_changed" swapped="no"/>
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
@@ -586,6 +591,8 @@
                     <property name="invisible_char">•</property>
                     <property name="invisible_char_set">True</property>
                     <property name="adjustment">adj_textscaling</property>
+                    <property name="digits">2</property>
+                    <signal name="value-changed" handler="on_spin_textscaling_value_changed" swapped="no"/>
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
@@ -601,8 +608,11 @@
                     <property name="entry_text_column">0</property>
                     <property name="id_column">1</property>
                     <items>
+                      <item translatable="yes">None</item>
+                      <item translatable="yes">Grayscale</item>
                       <item translatable="yes">RGBA</item>
                     </items>
+                    <signal name="changed" handler="on_cbox_antialiasing_changed" swapped="no"/>
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
@@ -619,6 +629,7 @@
                     <property name="font">Sans 12</property>
                     <property name="preview_text"/>
                     <property name="show_preview_entry">False</property>
+                    <signal name="font-set" handler="on_font_default_font_set" swapped="no"/>
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
@@ -635,6 +646,7 @@
                     <property name="font">Sans 12</property>
                     <property name="preview_text"/>
                     <property name="show_preview_entry">False</property>
+                    <signal name="font-set" handler="on_font_document_font_set" swapped="no"/>
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
@@ -651,6 +663,7 @@
                     <property name="font">Sans 12</property>
                     <property name="preview_text"/>
                     <property name="show_preview_entry">False</property>
+                    <signal name="font-set" handler="on_font_monospace_font_set" swapped="no"/>
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
@@ -667,6 +680,7 @@
                     <property name="font">Sans 12</property>
                     <property name="preview_text"/>
                     <property name="show_preview_entry">False</property>
+                    <signal name="font-set" handler="on_font_window_title_font_set" swapped="no"/>
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
@@ -692,6 +706,7 @@
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
                 <property name="margin_top">12</property>
+                <signal name="clicked" handler="on_b_theme_font_reset_clicked" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">False</property>

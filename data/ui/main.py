@@ -47,7 +47,7 @@ class Mechanig ():
         self.ui = ui(self.builder)
 
         self.builder.connect_signals(self)
-        #self.ui['mechanig_main'].set_resizable(False)
+        self.ui['mechanig_main'].set_resizable(False)
         #self.ui['nb_mechanig'].set_show_tabs(False)
 
         self.notebook = self.ui['nb_mechanig']
