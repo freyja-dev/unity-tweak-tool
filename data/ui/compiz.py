@@ -48,10 +48,8 @@ class Compizsettings ():
 
 # Initialise Cairo bits
         self.window_snapping_drawable = self.ui['draw_window_snapping']
-        background = "monitor.png"
-        self._base_surface = cairo.ImageSurface.create_from_png (background)
+        self._base_window_snapping_surface = cairo.ImageSurface.create_from_png('monitor-window-snapping.png')
 
-        self._active_corner = ""
         self.window_snapping_cboxes = {
             'cbox_window_snapping_top': 0,
             'cbox_window_snapping_topleft': 0,
@@ -63,8 +61,9 @@ class Compizsettings ():
             'cbox_window_snapping_bottomright': 0
         }
 
+# TODO grab active corners from the backend and set the values in
+# self.window_snapping_cboxes appropriately
         for box in self.window_snapping_cboxes:
-            # TODO grab active corner and set it on the dictionary
             self.ui[box].set_active(self.window_snapping_cboxes[box])
             self.ui[box].connect("changed", self.on_cbox_window_snapping_changed, box)
 
@@ -96,7 +95,7 @@ class Compizsettings ():
         left_right_width = 70
         top_bottom_width = 68
 
-        cr.set_source_surface(self._base_surface)
+        cr.set_source_surface(self._base_window_snapping_surface)
         cr.paint()
         cr.set_source_rgba(221/255, 72/255, 20/255);
 
@@ -158,7 +157,6 @@ class Compizsettings ():
             cr.fill_preserve()
 
         if self.window_snapping_cboxes['cbox_window_snapping_bottomright'] != 0:
-            # TODO : DRAW
             cr.new_path()
             cr.move_to(x2, y2)
             cr.line_to(x2 - corner_width, y2)
@@ -175,8 +173,6 @@ class Compizsettings ():
         }
 
     def on_cbox_window_snapping_changed (self, combobox, cbox_id):
-        # If value is 0, no value is set
-        # otherwise, one is set
         self.window_snapping_cboxes[cbox_id] = combobox.get_active()
         self.window_snapping_drawable.queue_draw()
 
