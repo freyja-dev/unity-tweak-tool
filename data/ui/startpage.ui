@@ -215,6 +215,7 @@
                   <object class="GtkToolButton" id="tool_general">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="valign">start</property>
                     <property name="label" translatable="yes">General</property>
                     <property name="use_underline">True</property>
                     <property name="icon_name">stock_print</property>
@@ -229,6 +230,7 @@
                   <object class="GtkToolButton" id="tool_compiz_switcher">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="valign">start</property>
                     <property name="label" translatable="yes">Switcher</property>
                     <property name="use_underline">True</property>
                     <property name="icon_name">stock_print</property>
@@ -243,6 +245,7 @@
                   <object class="GtkToolButton" id="tool_windows_spread">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="valign">start</property>
                     <property name="label" translatable="yes">Windows spread</property>
                     <property name="use_underline">True</property>
                     <property name="icon_name">stock_print</property>
@@ -257,6 +260,7 @@
                   <object class="GtkToolButton" id="tool_windows_snapping">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="valign">start</property>
                     <property name="label" translatable="yes">Windows snapping</property>
                     <property name="use_underline">True</property>
                     <property name="icon_name">stock_print</property>
@@ -271,6 +275,7 @@
                   <object class="GtkToolButton" id="tool_hotcorners">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="valign">start</property>
                     <property name="label" translatable="yes">Hotcorners</property>
                     <property name="use_underline">True</property>
                     <property name="icon_name">stock_print</property>
