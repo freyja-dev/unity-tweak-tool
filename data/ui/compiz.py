@@ -28,7 +28,7 @@
 # You should have received a copy of the GNU General Public License along with
 # this program; if not, see <https://www.gnu.org/licenses/gpl-3.0.txt>
 
-from gi.repository import Gtk,Gio
+from gi.repository import Gtk,Gio,Gdk
 from ui import ui
 
 class Compizsettings ():
@@ -53,11 +53,12 @@ class Compizsettings ():
         self.opengl=self.plugin('opengl')
         self.core=self.plugin('core')
         self.scale=self.plugin('scale')
-        
+        self.expo=self.plugin('expo')
+
         self.builder.connect_signals(self)
-        
+
         self.refresh()
-        
+
 #=====================================================================#
 #                                Helpers                              #
 #=====================================================================#
@@ -68,7 +69,7 @@ class Compizsettings ():
         gsettings=Gio.Settings(schema=schema,path=path)
         for key in gsettings.list_keys():
             gsettings.reset(key)
-    
+
     @staticmethod
     def color_to_hash(c):
         """Convert a Gdk.Color or Gdk.RGBA object to hex representation"""
@@ -95,6 +96,11 @@ class Compizsettings ():
         self.ui['spin_horizontal_desktop'].set_value(hsize)
         self.ui['spin_vertical_desktop'].set_value(vsize)
         
+        color = self.expo.get_string('selected-color')
+        valid,gdkcolor=Gdk.Color.parse(color[:-2])
+        if valid:
+            self.ui['color_desk_outline'].set_color(gdkcolor)
+        del color,valid,gdkcolor
         
 # TODO : Find a clever way or set each one manually.
 # Do it the dumb way now. BIIIG refactoring needed later.
@@ -203,17 +209,20 @@ class Compizsettings ():
             self.core.set_int('vsize',1)
             self.ui['spin_horizontal_desktop'].set_value(1)
             self.ui['spin_vertical_desktop'].set_value(1)
-            #self.refresh()
-            
-            
+
     def on_spin_horizontal_desktop_value_changed(self,widget,udata=None):
         hsize=self.ui['spin_horizontal_desktop'].get_value()
         self.core.set_int('hsize',hsize)
-    
+
     def on_spin_vertical_desktop_value_changed(self,widget,udata=None):
         vsize=self.ui['spin_vertical_desktop'].get_value()
         self.core.set_int('vsize',vsize)
-        
+
+    def on_color_desk_outline_color_set(self,widget,udata=None):
+        color=self.ui['color_desk_outline'].get_color()
+        colorhash=self.color_to_hash(color)
+        self.expo.set_string('selected-color',colorhash)
+
     # keyboard widgets in compiz-workspace
 
     def on_craccel_compiz_workspace_accel_edited(self,craccel, path, key, mods, hwcode,model=None):
@@ -247,13 +256,19 @@ class Compizsettings ():
                     'check_click_desktop',
                     'scrolledwindow_compiz_window_spread']
 
+        plugins = self.core.get_strv('active-plugins')
+
+        # XXX: Playing with this switch can crash Unity and/or Compiz
         if widget.get_active():
             self.ui.sensitize(dependants)
-            self.scale.set_string('initiate-key','<Super>W')
+            if 'scale' not in plugins:
+                plugins.append('scale')
+                self.core.set_strv('active-plugins', plugins)
 
         else:
             self.ui.unsensitize(dependants)
-            self.scale.set_string('initiate-key','Disabled')
+            plugins.remove('scale')
+            self.core.set_strv('active-plugins', plugins)
 
     def on_spin_compiz_spacing_value_changed(self,widget):
         self.scale.set_int('spacing',self.ui['spin_compiz_spacing'].get_value())

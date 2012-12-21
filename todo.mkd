@@ -29,10 +29,8 @@
     - kbd
 - kbd
 ####Workspace
-- Color
 - kbd
 ####Windows spread
-- Switch
 - kbd
 ####Hotcorners
 - Cairo bits from Sam Tran
