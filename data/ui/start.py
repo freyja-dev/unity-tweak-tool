@@ -47,15 +47,6 @@ class Startpage ():
         self.page.unparent()
         self.builder.connect_signals(self)
 
-    # Word wrapping in labels in Start page buttons
-        label_tool_windows_spread = Gtk.Label("Windows spread")
-        label_tool_windows_spread.set_line_wrap(True)
-        self.ui['tool_windows_spread'].set_label_widget(label_tool_windows_spread)
-
-        label_tool_windows_snapping = Gtk.Label("Windows snapping")
-        label_tool_windows_snapping.set_line_wrap(True)
-        self.ui['tool_windows_snapping'].set_label_widget(label_tool_windows_snapping)
-
     # Unity settings buttons on start page
     def on_tool_launcher_clicked(self,udata):
         self.container['tool_unitysettings'].set_active(True)

@@ -573,7 +573,7 @@
                 <child>
                   <object class="GtkSpinButton" id="spin_vertical_desktop">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can_focus">True</property>
                     <property name="halign">start</property>
                     <property name="invisible_char">•</property>
                     <property name="invisible_char_set">True</property>
@@ -590,7 +590,7 @@
                 <child>
                   <object class="GtkSpinButton" id="spin_horizontal_desktop">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can_focus">True</property>
                     <property name="halign">start</property>
                     <property name="invisible_char">•</property>
                     <property name="invisible_char_set">True</property>
@@ -834,7 +834,7 @@
                     <child>
                       <object class="GtkSpinButton" id="spin_compiz_spacing">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can_focus">True</property>
                         <property name="halign">start</property>
                         <property name="invisible_char">•</property>
                         <property name="invisible_char_set">True</property>

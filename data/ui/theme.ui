@@ -284,7 +284,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="b_theme_icon_rset">
+              <object class="GtkButton" id="b_theme_icon_reset">
                 <property name="label" translatable="yes">Restore defaults</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -587,7 +587,7 @@
                 <child>
                   <object class="GtkSpinButton" id="spin_textscaling">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can_focus">True</property>
                     <property name="invisible_char">•</property>
                     <property name="invisible_char_set">True</property>
                     <property name="adjustment">adj_textscaling</property>
