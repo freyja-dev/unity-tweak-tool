@@ -604,7 +604,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkGrid" id="grid1">
+                  <object class="GtkGrid" id="grid_launcher_color">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <child>
@@ -642,9 +642,6 @@
                       </packing>
                     </child>
                     <child>
-                      <placeholder/>
-                    </child>
-                    <child>
                       <object class="GtkRadioButton" id="radio_launcher_color_cham">
                         <property name="label" translatable="yes">Chameleonic</property>
                         <property name="visible">True</property>
@@ -657,6 +654,18 @@
                       </object>
                       <packing>
                         <property name="left_attach">0</property>
+                        <property name="top_attach">0</property>
+                        <property name="width">1</property>
+                        <property name="height">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="l_launcher_color_empty">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                      </object>
+                      <packing>
+                        <property name="left_attach">1</property>
                         <property name="top_attach">0</property>
                         <property name="width">1</property>
                         <property name="height">1</property>
@@ -1512,7 +1521,7 @@
                     <child>
                       <object class="GtkSpinButton" id="spin_menu_visible">
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
+                        <property name="can_focus">True</property>
                         <property name="halign">start</property>
                         <property name="margin_left">2</property>
                         <property name="margin_top">8</property>

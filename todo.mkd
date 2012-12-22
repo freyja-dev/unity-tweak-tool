@@ -1,0 +1,59 @@
+#### Start page
+- Icons in start page
+- Icons in toolbar
+###Unity
+####Launcher
+- Restore button
+####Dash
+- Radio
+- Lenses checkbuttons (5)
+- Install button
+- Lenses checkbuttons (4)
+####Panel
+- Switch
+- Spin
+- Check
+- Date grid (4)
+####Switcher
+- Switch
+- Switch
+- kbd
+- kbd
+####Additional
+- kbd
+###Compiz
+####General
+- Zoom
+    - Switch
+    - Radio
+    - kbd
+- kbd
+####Workspace
+- kbd
+####Windows spread
+- kbd
+####Hotcorners
+- Cairo bits from Sam Tran
+####Windows snapping
+- Cairo bits from Sam Tran
+###Theme
+####System
+- Nothing done here
+####Cursor
+- Still empty
+####Icon
+- Empty
+####Fonts
+  - All done
+#### Desktop settings
+  - Restore button
+  - Two settings
+
+---------
+
+#### Search
+ - Actual implementation of search
+#### Appmenu
+#### Quicklist
+#### Tooltips
+#### Packaging

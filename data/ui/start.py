@@ -47,6 +47,7 @@ class Startpage ():
         self.page.unparent()
         self.builder.connect_signals(self)
 
+    # Unity settings buttons on start page
     def on_tool_launcher_clicked(self,udata):
         self.container['tool_unitysettings'].set_active(True)
         self.notebook.get_nth_page(1).set_current_page(0)

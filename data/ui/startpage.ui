@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
   <!-- interface-requires gtk+ 3.0 -->
+  <object class="GtkLabel" id="l_tool_windows_snapping">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="label" translatable="yes">Windows snapping</property>
+    <property name="justify">center</property>
+    <property name="wrap">True</property>
+  </object>
+  <object class="GtkLabel" id="l_tool_windows_spread">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="label" translatable="yes">Windows spread</property>
+    <property name="justify">center</property>
+    <property name="wrap">True</property>
+  </object>
   <object class="GtkWindow" id="startpage_window">
     <property name="can_focus">False</property>
     <child>
@@ -40,7 +54,7 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="margin_left">6</property>
-                    <property name="label" translatable="yes">Unity Settings</property>
+                    <property name="label" translatable="yes">Unity</property>
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
@@ -187,7 +201,7 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="margin_left">6</property>
-                    <property name="label" translatable="yes">Window Manager Settings</property>
+                    <property name="label" translatable="yes">Window Manager</property>
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
@@ -215,6 +229,7 @@
                   <object class="GtkToolButton" id="tool_general">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="valign">start</property>
                     <property name="label" translatable="yes">General</property>
                     <property name="use_underline">True</property>
                     <property name="icon_name">stock_print</property>
@@ -229,6 +244,7 @@
                   <object class="GtkToolButton" id="tool_compiz_switcher">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="valign">start</property>
                     <property name="label" translatable="yes">Switcher</property>
                     <property name="use_underline">True</property>
                     <property name="icon_name">stock_print</property>
@@ -243,9 +259,10 @@
                   <object class="GtkToolButton" id="tool_windows_spread">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="label" translatable="yes">Windows spread</property>
+                    <property name="valign">start</property>
                     <property name="use_underline">True</property>
-                    <property name="icon_name">stock_print</property>
+                    <property name="label_widget">l_tool_windows_spread</property>
+                    <property name="stock_id">gtk-print-preview</property>
                     <signal name="clicked" handler="on_tool_windows_spread_clicked" swapped="no"/>
                   </object>
                   <packing>
@@ -257,9 +274,10 @@
                   <object class="GtkToolButton" id="tool_windows_snapping">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="label" translatable="yes">Windows snapping</property>
+                    <property name="valign">start</property>
                     <property name="use_underline">True</property>
-                    <property name="icon_name">stock_print</property>
+                    <property name="label_widget">l_tool_windows_snapping</property>
+                    <property name="stock_id">gtk-justify-right</property>
                     <signal name="clicked" handler="on_tool_windows_snapping_clicked" swapped="no"/>
                   </object>
                   <packing>
@@ -271,6 +289,7 @@
                   <object class="GtkToolButton" id="tool_hotcorners">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="valign">start</property>
                     <property name="label" translatable="yes">Hotcorners</property>
                     <property name="use_underline">True</property>
                     <property name="icon_name">stock_print</property>
@@ -334,7 +353,7 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="margin_left">6</property>
-                    <property name="label" translatable="yes">Appearance Settings</property>
+                    <property name="label" translatable="yes">Appearance</property>
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
@@ -467,7 +486,7 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="margin_left">6</property>
-                    <property name="label" translatable="yes">Desktop Settings</property>
+                    <property name="label" translatable="yes">Desktop</property>
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
