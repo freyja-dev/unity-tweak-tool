@@ -15,6 +15,12 @@
     <property name="justify">center</property>
     <property name="wrap">True</property>
   </object>
+  <object class="GtkLabel" id="l_tool_workspace_switcher">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="label" translatable="yes">Workspace switcher</property>
+    <property name="wrap">True</property>
+  </object>
   <object class="GtkWindow" id="startpage_window">
     <property name="can_focus">False</property>
     <child>
@@ -245,9 +251,9 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="valign">start</property>
-                    <property name="label" translatable="yes">Switcher</property>
                     <property name="use_underline">True</property>
-                    <property name="icon_name">stock_print</property>
+                    <property name="label_widget">l_tool_workspace_switcher</property>
+                    <property name="stock_id">gtk-cdrom</property>
                     <signal name="clicked" handler="on_tool_compiz_switcher_clicked" swapped="no"/>
                   </object>
                   <packing>

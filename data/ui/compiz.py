@@ -54,6 +54,8 @@ class Compizsettings ():
         self.core=self.plugin('core')
         self.scale=self.plugin('scale')
         self.expo=self.plugin('expo')
+        self.move=self.plugin('move')
+        self.zoom=self.plugin('ezoom')
 
         self.builder.connect_signals(self)
 
@@ -81,27 +83,99 @@ class Compizsettings ():
         raise NotImplementedError
 
     def refresh(self):
-        self.ui['cbox_opengl'].set_active(self.opengl.get_int('texture-filter'))
-        self.ui['check_synctovblank'].set_active(self.opengl.get_boolean('sync-to-vblank'))    
 
+        plugins = self.core.get_strv('active-plugins')
+        if 'ezoom' in plugins:
+            self.ui['sw_compiz_zoom'].set_active(True)
+        else:
+            self.ui['sw_compiz_zoom'].set_active(False)
+        del plugins
+
+        model = self.ui['list_compiz_general_zoom_accelerators']
+
+        zoom_in_key = self.zoom.get_string('zoom-in-key')
+        iter_zoom_in_key = model.get_iter_first()
+        model.set_value(iter_zoom_in_key, 1, zoom_in_key)
+
+        zoom_out_key = self.zoom.get_string('zoom-out-key')
+        iter_zoom_out_key = model.iter_next(iter_zoom_in_key)
+        model.set_value(iter_zoom_out_key, 1, zoom_out_key)
+
+        del model, zoom_in_key, iter_zoom_in_key, zoom_out_key, iter_zoom_out_key
+
+        self.ui['cbox_opengl'].set_active(self.opengl.get_int('texture-filter'))
+        self.ui['check_synctovblank'].set_active(self.opengl.get_boolean('sync-to-vblank'))
+
+        model = self.ui['list_compiz_general_keys_accelerators']
+
+        close_window_key = self.core.get_string('close-window-key')
+        iter_close_window_key = model.get_iter_first()
+        model.set_value(iter_close_window_key, 1, close_window_key)
+
+        initiate_key = self.move.get_string('initiate-key')
+        iter_initiate_key = model.iter_next(iter_close_window_key)
+        model.set_value(iter_initiate_key, 1, initiate_key)
+
+        show_desktop_key = self.core.get_string('show-desktop-key')
+        iter_show_desktop_key = model.iter_next(iter_initiate_key)
+        model.set_value(iter_show_desktop_key, 1, show_desktop_key)
+
+        del model, close_window_key, iter_close_window_key, initiate_key, iter_initiate_key, show_desktop_key, iter_show_desktop_key
 
         hsize=self.core.get_int('hsize')
         vsize=self.core.get_int('vsize')
-        
-        if hsize >= 1 or vsize >= 1:
+
+        if hsize > 1 or vsize > 1:
             self.ui['sw_workspace_switcher'].set_active(True)
         else:
             self.ui['sw_workspace_switcher'].set_active(False)
 
         self.ui['spin_horizontal_desktop'].set_value(hsize)
         self.ui['spin_vertical_desktop'].set_value(vsize)
-        
+        del hsize, vsize
+
         color = self.expo.get_string('selected-color')
         valid,gdkcolor=Gdk.Color.parse(color[:-2])
         if valid:
             self.ui['color_desk_outline'].set_color(gdkcolor)
         del color,valid,gdkcolor
-        
+
+        model = self.ui['list_compiz_workspace_accelerators']
+
+        expo_key = self.expo.get_string('expo-key')
+        iter_expo_key = model.get_iter_first()
+        model.set_value(iter_expo_key, 1, expo_key)
+
+        del model, expo_key, iter_expo_key
+
+        plugins = self.core.get_strv('active-plugins')
+        if 'scale' in plugins:
+            self.ui['sw_windows_spread'].set_active(True)
+        else:
+            self.ui['sw_windows_spread'].set_active(False)
+        del plugins
+
+        self.ui['spin_compiz_spacing'].set_value(self.scale.get_int('spacing'))
+
+        if self.scale.get_int('overlay-icon') >= 1:
+            self.ui['check_overlay_emblem'].set_active(True)
+        else:
+            self.ui['check_overlay_emblem'].set_active(False)
+
+        self.ui['check_click_desktop'].set_active(self.scale.get_boolean('show-desktop'))
+
+        model = self.ui['list_compiz_windows_spread_accelerators']
+
+        initiate_key = self.scale.get_string('initiate-key')
+        iter_initiate_key = model.get_iter_first()
+        model.set_value(iter_initiate_key, 1, initiate_key)
+
+        initiate_all_key = self.scale.get_string('initiate-all-key')
+        iter_initiate_all_key = model.iter_next(iter_initiate_key)
+        model.set_value(iter_initiate_all_key, 1, initiate_all_key)
+
+        del model, initiate_key, iter_initiate_key, initiate_all_key, iter_initiate_all_key
+
 # TODO : Find a clever way or set each one manually.
 # Do it the dumb way now. BIIIG refactoring needed later.
 
@@ -145,15 +219,21 @@ class Compizsettings ():
      # selective sensitivity in compiz - general
 
     def on_sw_compiz_zoom_active_notify(self,widget,udata=None):
-        dependants=['radio_zoom_type_standard','radio_zoom_type_lg','l_compiz_zoom_type']
+        dependants=['scrolledwindow_compiz_general_zoom']
+
+        plugins = self.core.get_strv('active-plugins')
 
         if widget.get_active():
             self.ui.sensitize(dependants)
+            if 'ezoom' not in plugins:
+                plugins.append('ezoom')
+                self.core.set_strv('active-plugins', plugins)
 
         else:
             self.ui.unsensitize(dependants)
-
-
+            if 'ezoom' in plugins:
+                plugins.remove('ezoom')
+                self.core.set_strv('active-plugins', plugins)
 
     # keyboard widgets in compiz-general-zoom
 
@@ -162,17 +242,25 @@ class Compizsettings ():
         accel = Gtk.accelerator_name(key, mods)
         iter = model.get_iter(path)
         model.set_value(iter, 1, accel)
+        if path == '0':
+            self.zoom.set_string('zoom-in-key',accel)
+        elif path == '1':
+            self.zoom.set_string('zoom-out-key',accel)
+
     def on_craccel_compiz_general_zoom_accel_cleared(self, craccel, path, model=None):
         model=self.ui['list_compiz_general_zoom_accelerators']
         iter = model.get_iter(path)
         model.set_value(iter, 1, "Disabled")
-
+        if path == '0':
+            self.zoom.set_string('zoom-in-key',"Disabled")
+        elif path == '1':
+            self.zoom.set_string('zoom-out-key',"Disabled")
 
     #-----General: OpenGL
 
     def on_cbox_opengl_changed(self,widget,udata=None):
         mode=self.ui['cbox_opengl'].get_active()
-        self.opengl.set_int('texture-filter',mode)    
+        self.opengl.set_int('texture-filter',mode)
 
     def on_check_synctovblank_toggled(self,widget,udata=None):
         self.opengl.set_boolean('sync-to-vblank',self.ui['check_synctovblank'].get_active())
@@ -184,11 +272,34 @@ class Compizsettings ():
         accel = Gtk.accelerator_name(key, mods)
         iter = model.get_iter(path)
         model.set_value(iter, 1, accel)
+        if path == '0':
+            self.core.set_string('close-window-key',accel)
+        elif path == '1':
+            self.move.set_string('initiate-key',accel)
+        else:
+            self.core.set_string('show-desktop-key',accel)
 
     def on_craccel_compiz_general_keys_accel_cleared(self, craccel, path, model=None):
         model=self.ui['list_compiz_general_keys_accelerators']
         iter = model.get_iter(path)
         model.set_value(iter, 1, "Disabled")
+        if path == '0':
+            self.core.set_string('close-window-key',"Disabled")
+        elif path == '1':
+            self.move.set_string('initiate-key',"Disabled")
+        else:
+            self.core.set_string('show-desktop-key',"Disabled")
+
+    def on_b_compiz_general_reset_clicked(self, widget):
+        self.core.reset('active-plugins')
+        self.zoom.reset('zoom-in-key')
+        self.zoom.reset('zoom-out-key')
+        self.opengl.reset('texture-filter')
+        self.opengl.reset('sync-to-vblank')
+        self.core.reset('close-window-key')
+        self.move.reset('initiate-key')
+        self.core.reset('show-desktop-key')
+        self.refresh()
 
 #-----BEGIN: Workspaces -----
 
@@ -230,18 +341,25 @@ class Compizsettings ():
         accel = Gtk.accelerator_name(key, mods)
         iter = model.get_iter(path)
         model.set_value(iter, 1, accel)
+        self.expo.set_string('expo-key',accel)
 
     def on_craccel_compiz_workspace_accel_cleared(self, craccel, path, model=None):
         model=self.ui['list_compiz_workspace_accelerators']
         iter = model.get_iter(path)
         model.set_value(iter, 1, "Disabled")
+        self.expo.set_string('expo-key',"Disabled")
 
 
     # compiz hotcorner linked button
     def on_lb_configure_hot_corner_activate_link(self,udata):
         self.ui['nb_compizsettings'].set_current_page(4)
 
-
+    def on_b_compiz_workspace_reset_clicked(self, widget):
+        self.core.reset('hsize')
+        self.core.reset('vsize')
+        self.expo.reset('selected-color')
+        self.expo.reset('expo-key')
+        self.refresh()
 
 
 
@@ -267,8 +385,9 @@ class Compizsettings ():
 
         else:
             self.ui.unsensitize(dependants)
-            plugins.remove('scale')
-            self.core.set_strv('active-plugins', plugins)
+            if 'scale' in plugins:
+                plugins.remove('scale')
+                self.core.set_strv('active-plugins', plugins)
 
     def on_spin_compiz_spacing_value_changed(self,widget):
         self.scale.set_int('spacing',self.ui['spin_compiz_spacing'].get_value())
@@ -278,6 +397,7 @@ class Compizsettings ():
             self.scale.set_int('overlay-icon',1)
         else:
             self.scale.set_int('overlay-icon',0)
+
     def on_check_click_desktop_toggled(self,widget):
     
         if self.ui['check_click_desktop'].get_active():
@@ -286,24 +406,38 @@ class Compizsettings ():
             self.scale.set_boolean('show-desktop',False)
 
     # keyboard widgets in compiz-windows-spread
-
     def on_craccel_compiz_windows_spread_accel_edited(self,craccel, path, key, mods, hwcode,model=None):
         model=self.ui['list_compiz_windows_spread_accelerators']
         accel = Gtk.accelerator_name(key, mods)
-        iter = model.get_iter(path)
-        model.set_value(iter, 1, accel)
+        titer = model.get_iter(path)
+        model.set_value(titer, 1, accel)
+        if path == '0':
+            self.scale.set_string("initiate-key",accel)
+        else:
+            self.scale.set_string("initiate-all-key", accel)
 
     def on_craccel_compiz_windows_spread_accel_cleared(self, craccel, path, model=None):
         model=self.ui['list_compiz_windows_spread_accelerators']
         iter = model.get_iter(path)
         model.set_value(iter, 1, "Disabled")
-
+        if path == '0':
+            self.scale.set_string("initiate-key","Disabled")
+        else:
+            self.scale.set_string("initiate-all-key", "Disabled")
 
     # compiz hotcorner linked button
 
     def on_lb_configure_hot_corner_windows_spread_activate_link(self,udata):
         self.ui['nb_compizsettings'].set_current_page(4)
 
+    def on_b_compiz_windows_spread_reset_clicked(self,widget):
+        self.core.reset('active-plugins')
+        self.scale.reset('spacing')
+        self.scale.reset('overlay-icon')
+        self.scale.reset('show-desktop')
+        self.scale.reset('initiate-key')
+        self.scale.reset('initiate-all-key')
+        self.refresh()
 
 if __name__=='__main__':
 # Fire up the Engines

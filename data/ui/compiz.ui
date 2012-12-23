@@ -61,73 +61,6 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <child>
-                      <object class="GtkLabel" id="l_compiz_zoom_type">
-                        <property name="visible">True</property>
-                        <property name="sensitive">False</property>
-                        <property name="can_focus">False</property>
-                        <property name="margin_left">12</property>
-                        <property name="margin_right">6</property>
-                        <property name="margin_top">6</property>
-                        <property name="xalign">1</property>
-                        <property name="label" translatable="yes">Zoom type:</property>
-                      </object>
-                      <packing>
-                        <property name="left_attach">0</property>
-                        <property name="top_attach">1</property>
-                        <property name="width">1</property>
-                        <property name="height">1</property>
-                      </packing>
-                    </child>
-                    <child>
-                      <object class="GtkLabel" id="l_zoom_type_empty">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                      </object>
-                      <packing>
-                        <property name="left_attach">0</property>
-                        <property name="top_attach">2</property>
-                        <property name="width">1</property>
-                        <property name="height">1</property>
-                      </packing>
-                    </child>
-                    <child>
-                      <object class="GtkRadioButton" id="radio_zoom_type_standard">
-                        <property name="label" translatable="yes">Standard</property>
-                        <property name="visible">True</property>
-                        <property name="sensitive">False</property>
-                        <property name="can_focus">False</property>
-                        <property name="receives_default">False</property>
-                        <property name="margin_top">6</property>
-                        <property name="xalign">0</property>
-                        <property name="active">True</property>
-                        <property name="draw_indicator">True</property>
-                      </object>
-                      <packing>
-                        <property name="left_attach">1</property>
-                        <property name="top_attach">1</property>
-                        <property name="width">1</property>
-                        <property name="height">1</property>
-                      </packing>
-                    </child>
-                    <child>
-                      <object class="GtkRadioButton" id="radio_zoom_type_lg">
-                        <property name="label" translatable="yes">Looking glass</property>
-                        <property name="visible">True</property>
-                        <property name="sensitive">False</property>
-                        <property name="can_focus">False</property>
-                        <property name="receives_default">False</property>
-                        <property name="xalign">0</property>
-                        <property name="draw_indicator">True</property>
-                        <property name="group">radio_zoom_type_standard</property>
-                      </object>
-                      <packing>
-                        <property name="left_attach">1</property>
-                        <property name="top_attach">2</property>
-                        <property name="width">1</property>
-                        <property name="height">1</property>
-                      </packing>
-                    </child>
-                    <child>
                       <object class="GtkSwitch" id="sw_compiz_zoom">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
@@ -226,47 +159,6 @@
               </packing>
             </child>
             <child>
-              <object class="GtkGrid" id="grid_compiz_invert_colours">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="margin_left">6</property>
-                <property name="margin_top">6</property>
-                <property name="margin_bottom">6</property>
-                <child>
-                  <object class="GtkLabel" id="l_compiz_invert_colours">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="margin_left">6</property>
-                    <property name="margin_right">6</property>
-                    <property name="label" translatable="yes">Inverted colours:</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">0</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkSwitch" id="sw_compiz_invert_colours">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">0</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">2</property>
-              </packing>
-            </child>
-            <child>
               <object class="GtkLabel" id="l_opengl">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
@@ -280,7 +172,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">3</property>
+                <property name="position">2</property>
               </packing>
             </child>
             <child>
@@ -469,6 +361,7 @@
                 <property name="margin_left">12</property>
                 <property name="margin_top">10</property>
                 <property name="margin_bottom">10</property>
+                <signal name="clicked" handler="on_b_compiz_general_reset_clicked" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -734,6 +627,7 @@
                     <property name="can_focus">False</property>
                     <property name="receives_default">True</property>
                     <property name="halign">start</property>
+                    <signal name="clicked" handler="on_b_compiz_workspace_reset_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
@@ -758,7 +652,7 @@
           <object class="GtkLabel" id="l_page_compiz_workspace">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="label" translatable="yes">Workspaces</property>
+            <property name="label" translatable="yes">Workspace switcher</property>
           </object>
           <packing>
             <property name="position">1</property>
@@ -981,6 +875,7 @@
                 <property name="margin_left">12</property>
                 <property name="margin_top">6</property>
                 <property name="margin_bottom">10</property>
+                <signal name="clicked" handler="on_b_compiz_windows_spread_reset_clicked" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -1087,10 +982,6 @@
         <col id="0" translatable="yes">Zoom out</col>
         <col id="1" translatable="yes">Super+-</col>
       </row>
-      <row>
-        <col id="0" translatable="yes">Restore default level</col>
-        <col id="1" translatable="yes">Super+~</col>
-      </row>
     </data>
   </object>
   <object class="GtkListStore" id="list_compiz_windows_spread_accelerators">
@@ -1102,7 +993,7 @@
     </columns>
     <data>
       <row>
-        <col id="0" translatable="yes">Start workspace spread</col>
+        <col id="0" translatable="yes">Start windows spread</col>
         <col id="1" translatable="yes">Super+W</col>
       </row>
       <row>

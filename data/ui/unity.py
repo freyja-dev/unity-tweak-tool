@@ -59,6 +59,7 @@ class Unitysettings ():
         self.background=self.gnome('desktop.background')
         self.launcher=self.unity('Launcher')
         self.power=self.canonical('indicator.power')
+        self.session=self.canonical('indicator.session')
 
         self.refresh()
 
@@ -140,6 +141,101 @@ class Unitysettings ():
         self.ui['cbox_launcher_icon_colouring'].set_active(self.unityshell.get_int('backlight-mode'))
 
         self.ui['sw_launcher_show_desktop'].set_active(True if 'unity://desktop-icon' in self.launcher.get_strv('favorites') else False)
+
+        # Refreshing Unity switcher settings
+
+        self.ui['check_switchwindows_all_workspaces'].set_active(self.unityshell.get_boolean('alt-tab-bias-viewport'))
+        self.ui['check_switcher_showdesktop'].set_active(True if self.unityshell.get_boolean('disable-show-desktop')is False else False)
+        self.ui['check_minimizedwindows_switch'].set_active(self.unityshell.get_boolean('show-minimized-windows'))
+        self.ui['check_autoexposewindows'].set_active(self.unityshell.get_boolean('alt-tab-timeout'))
+
+
+        model = self.ui['list_unity_switcher_windows_accelerators']
+
+        alt_tab_forward = self.unityshell.get_string('alt-tab-forward')
+        iter_alt_tab_forward = model.get_iter_first()
+        model.set_value(iter_alt_tab_forward, 1, alt_tab_forward)
+
+        alt_tab_prev = self.unityshell.get_string('alt-tab-prev')
+        iter_alt_tab_prev = model.iter_next(iter_alt_tab_forward)
+        model.set_value(iter_alt_tab_prev, 1, alt_tab_prev)
+
+        alt_tab_forward_all = self.unityshell.get_string('alt-tab-forward-all')
+        iter_alt_tab_forward_all = model.iter_next(iter_alt_tab_prev)
+        model.set_value(iter_alt_tab_forward_all, 1, alt_tab_forward_all)
+
+        alt_tab_prev_all = self.unityshell.get_string('alt-tab-prev-all')
+        iter_alt_tab_prev_all = model.iter_next(iter_alt_tab_forward_all)
+        model.set_value(iter_alt_tab_prev_all, 1, alt_tab_prev_all)
+
+        alt_tab_right = self.unityshell.get_string('alt-tab-right')
+        iter_alt_tab_right = model.iter_next(iter_alt_tab_prev_all)
+        model.set_value(iter_alt_tab_right, 1, alt_tab_right)
+
+        alt_tab_left = self.unityshell.get_string('alt-tab-left')
+        iter_alt_tab_left = model.iter_next(iter_alt_tab_right)
+        model.set_value(iter_alt_tab_left, 1, alt_tab_left)
+
+        alt_tab_detail_start = self.unityshell.get_string('alt-tab-detail-start')
+        iter_alt_tab_detail_start = model.iter_next(iter_alt_tab_left)
+        model.set_value(iter_alt_tab_detail_start, 1, alt_tab_detail_start)
+
+        alt_tab_detail_stop = self.unityshell.get_string('alt-tab-detail-stop')
+        iter_alt_tab_detail_stop = model.iter_next(iter_alt_tab_detail_start)
+        model.set_value(iter_alt_tab_detail_stop, 1, alt_tab_detail_stop)
+
+        alt_tab_next_window = self.unityshell.get_string('alt-tab-next-window')
+        iter_alt_tab_next_window = model.iter_next(iter_alt_tab_detail_stop)
+        model.set_value(iter_alt_tab_next_window, 1, alt_tab_next_window)
+
+        alt_tab_prev_window = self.unityshell.get_string('alt-tab-prev-window')
+        iter_alt_tab_prev_window = model.iter_next(iter_alt_tab_next_window)
+        model.set_value(iter_alt_tab_prev_window, 1, alt_tab_next_window)
+
+        del model
+
+        model = self.ui['list_unity_switcher_launcher_accelerators']
+
+        launcher_switcher_forward = self.unityshell.get_string('launcher-switcher-forward')
+        iter_launcher_switcher_forward = model.get_iter_first()
+        model.set_value(iter_launcher_switcher_forward, 1, launcher_switcher_forward)
+
+        launcher_switcher_prev = self.unityshell.get_string('launcher-switcher-prev')
+        iter_launcher_switcher_prev = model.iter_next(iter_launcher_switcher_forward)
+        model.set_value(iter_launcher_switcher_prev, 1, launcher_switcher_prev)
+
+        del model, launcher_switcher_forward, iter_launcher_switcher_forward, launcher_switcher_prev, iter_launcher_switcher_prev
+
+
+        # Refreshing Unity additional settings
+
+        self.ui['check_shortcuts_hints_overlay'].set_active(self.unityshell.get_boolean('shortcut-overlay'))
+
+        model = self.ui['list_unity_additional_accelerators']
+
+        show_hud = self.unityshell.get_string('show-hud')
+        iter_show_hud = model.get_iter_first()
+        model.set_value(iter_show_hud, 1, show_hud)
+
+        show_launcher = self.unityshell.get_string('show-launcher')
+        iter_show_launcher = model.iter_next(iter_show_hud)
+        model.set_value(iter_show_launcher, 1, show_launcher)
+
+        execute_command = self.unityshell.get_string('execute-command')
+        iter_execute_command = model.iter_next(iter_show_launcher)
+        model.set_value(iter_execute_command, 1, execute_command)
+
+        keyboard_focus = self.unityshell.get_string('keyboard-focus')
+        iter_keyboard_focus = model.iter_next(iter_execute_command)
+        model.set_value(iter_keyboard_focus, 1, keyboard_focus)
+
+        panel_first_menu = self.unityshell.get_string('panel-first-menu')
+        iter_panel_first_menu = model.iter_next(iter_keyboard_focus)
+        model.set_value(iter_panel_first_menu, 1, panel_first_menu)
+
+        del model, show_hud, iter_show_hud, show_launcher, iter_show_launcher, execute_command, iter_execute_command, keyboard_focus, iter_keyboard_focus, panel_first_menu, iter_panel_first_menu
+
+
 # TODO : Find a clever way or set each one manually.
 # Do it the dumb way now. BIIIG refactoring needed later.
 
@@ -290,13 +386,21 @@ class Unitysettings ():
 
       # selective selection in unity-dash - part 2
 
-    def on_radio_dash_color_cus_active_notify(self,widget,udata=None):
+    def on_radio_dash_color_cus_toggled(self,widget,udata=None):
         dependants=['color_dash_color_cus']
-
+        color=self.ui['color_dash_color_cus'].get_color()
+        colorhash=self.color_to_hash(color)
         if self.ui['radio_dash_color_cus'].get_active():
             self.ui.sensitize(dependants)
+            self.unityshell.set_string('background-color',colorhash)
         else:
             self.ui.unsensitize(dependants)
+            self.unityshell.set_string('background-color',colorhash[:-2]+'00')
+
+    def on_color_dash_color_cus_color_set(self,widget,udata=None):
+        color=self.ui['color_launcher_color_cus'].get_color()
+        colorhash=self.color_to_hash(color)
+        self.unityshell.set_string('background-color',colorhash)
 
 
 #-----BEGIN: Panel -----
@@ -338,7 +442,9 @@ class Unitysettings ():
     def on_check_indicator_username_toggled(self,widget,udata=None):
 
         if widget.get_active():
-            self.unityshell.set_boolean('',)
+            self.session.set_boolean('show-real-name-on-panel',True)
+        else:
+            self.session.set_boolean('show-real-name-on-panel',False)
 
 
     def on_check_indicator_batterytime_toggled(self,widget,udata=None):
@@ -354,10 +460,10 @@ class Unitysettings ():
     def on_check_switchwindows_all_workspaces_toggled(self,widget,udata=None):
 
         if widget.get_active():
-            self.unityshell.set_boolean()
+            self.unityshell.set_boolean('alt-tab-bias-viewport',True)
 
         else:
-            self.unityshell.set_boolean()
+            self.unityshell.set_boolean('alt-tab-bias-viewport',False)
 
 
     def on_check_switcher_showdesktop_toggled(self,widget,udata=None):
@@ -379,10 +485,10 @@ class Unitysettings ():
     def on_check_autoexposewindows_toggled(self,widget,udata=None):
 
         if widget.get_active():
-            self.unityshell.set_boolean()
+            self.unityshell.set_boolean('alt-tab-timeout',True)
 
         else:
-            self.unityshell.set_boolean()
+            self.unityshell.set_boolean('alt-tab-timeout',False)
 
     # keyboard widgets in unity-windows-switcher
 
@@ -391,11 +497,53 @@ class Unitysettings ():
         accel = Gtk.accelerator_name(key, mods)
         iter = model.get_iter(path)
         model.set_value(iter, 1, accel)
+        # Python has no switch statement, right?
+
+        if path == '0':
+            self.unityshell.set_string('alt-tab-forward', accel)
+        elif path == '1':
+            self.unityshell.set_string('alt-tab-prev', accel)
+        elif path == '2':
+            self.unityshell.set_string('alt-tab-forward-all', accel)
+        elif path == '3':
+            self.unityshell.set_string('alt-tab-prev-all', accel)
+        elif path == '4':
+            self.unityshell.set_string('alt-tab-right', accel)
+        elif path == '5':
+            self.unityshell.set_string('alt-tab-left', accel)
+        elif path == '6':
+            self.unityshell.set_string('alt-tab-detail-start', accel)
+        elif path == '7':
+            self.unityshell.set_string('alt-tab-detail-stop', accel)
+        elif path == '8':
+            self.unityshell.set_string('alt-tab-next-window', accel)
+        elif path == '9':
+            self.unityshell.set_string('alt-tab-prev-window', accel)
 
     def on_craccel_unity_switcher_windows_accel_cleared(self, craccel, path, model=None):
         model=self.ui['list_unity_switcher_windows_accelerators']
         iter = model.get_iter(path)
         model.set_value(iter, 1, "Disabled")
+        if path == '0':
+            self.unityshell.set_string('alt-tab-forward', "Disabled")
+        elif path == '1':
+            self.unityshell.set_string('alt-tab-prev', "Disabled")
+        elif path == '2':
+            self.unityshell.set_string('alt-tab-forward-all', "Disabled")
+        elif path == '3':
+            self.unityshell.set_string('alt-tab-prev-all', "Disabled")
+        elif path == '4':
+            self.unityshell.set_string('alt-tab-right', "Disabled")
+        elif path == '5':
+            self.unityshell.set_string('alt-tab-left', "Disabled")
+        elif path == '6':
+            self.unityshell.set_string('alt-tab-detail-start', "Disabled")
+        elif path == '7':
+            self.unityshell.set_string('alt-tab-detail-stop', "Disabled")
+        elif path == '8':
+            self.unityshell.set_string('alt-tab-next-window', "Disabled")
+        elif path == '9':
+            self.unityshell.set_string('alt-tab-prev-window', "Disabled")
 
     # keyboard widgets in unity-launcher-switcher
 
@@ -404,11 +552,41 @@ class Unitysettings ():
         accel = Gtk.accelerator_name(key, mods)
         iter = model.get_iter(path)
         model.set_value(iter, 1, accel)
+        # Python has no switch statement, right?
+
+        if path == '0':
+            self.unityshell.set_string('launcher-switcher-forward', accel)
+        else:
+            self.unityshell.set_string('launcher-switcher-prev', accel)
 
     def on_craccel_unity_switcher_launcher_accel_cleared(self, craccel, path, model=None):
         model=self.ui['list_unity_switcher_launcher_accelerators']
         iter = model.get_iter(path)
         model.set_value(iter, 1, "Disabled")
+        if path == '0':
+            self.unityshell.set_string('launcher-switcher-forward', "Disabled")
+        else:
+            self.unityshell.set_string('launcher-switcher-prev', "Disabled")
+
+    def on_b_unity_switcher_reset_clicked(self, widget):
+        self.unityshell.reset('alt-tab-bias-viewport')
+        self.unityshell.reset('disable-show-desktop')
+        self.unityshell.reset('show-minimized-windows')
+        self.unityshell.reset('alt-tab-timeout')
+        self.unityshell.reset('alt-tab-forward')
+        self.unityshell.reset('alt-tab-prev')
+        self.unityshell.reset('alt-tab-forward-all')
+        self.unityshell.reset('alt-tab-prev-all')
+        self.unityshell.reset('alt-tab-right')
+        self.unityshell.reset('alt-tab-left')
+        self.unityshell.reset('alt-tab-detail-start')
+        self.unityshell.reset('alt-tab-detail-stop')
+        self.unityshell.reset('alt-tab-next-window')
+        self.unityshell.reset('alt-tab-prev-window')
+        self.unityshell.reset('launcher-switcher-forward')
+        self.unityshell.reset('launcher-switcher-prev')
+        self.refresh()
+
 
 
 #-----BEGIN: Additional -----
@@ -431,11 +609,42 @@ class Unitysettings ():
         iter = model.get_iter(path)
         model.set_value(iter, 1, accel)
 
+        # Python has no switch statement, right?
+
+        if path == '0':
+            self.unityshell.set_string('show-hud', accel)
+        elif path == '1':
+            self.unityshell.set_string('show-launcher', accel)
+        elif path == '2':
+            self.unityshell.set_string('execute-command', accel)
+        elif path == '3':
+            self.unityshell.set_string('keyboard-focus', accel)
+        else:
+            self.unityshell.set_string('panel-first-menu', accel)
+
     def on_craccel_unity_additional_accel_cleared(self, craccel, path, model=None):
         model=self.ui['list_unity_additional_accelerators']
         iter = model.get_iter(path)
         model.set_value(iter, 1, "Disabled")
+        if path == '0':
+            self.unityshell.set_string('show-hud', "Disabled")
+        elif path == '1':
+            self.unityshell.set_string('show-launcher', "Disabled")
+        elif path == '2':
+            self.unityshell.set_string('execute-command', "Disabled")
+        elif path == '3':
+            self.unityshell.set_string('keyboard-focus', "Disabled")
+        else:
+            self.unityshell.set_string('panel-first-menu', "Disabled")
 
+    def on_b_unity_additional_reset_clicked(self, widget):
+        self.unityshell.reset('shortcut-overlay')
+        self.unityshell.reset('show-hud')
+        self.unityshell.reset('show-launcher')
+        self.unityshell.reset('execute-command')
+        self.unityshell.reset('keyboard-focus')
+        self.unityshell.reset('panel-first-menu')
+        self.refresh()
 
 if __name__=='__main__':
 # Fire up the Engines
