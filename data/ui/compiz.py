@@ -219,7 +219,9 @@ class Compizsettings ():
      # selective sensitivity in compiz - general
 
     def on_sw_compiz_zoom_active_notify(self,widget,udata=None):
-        dependants=['scrolledwindow_compiz_general_zoom']
+        dependants=['l_default_zoom_level',
+                    'sc_zoom_level',
+                    'scrolledwindow_compiz_general_zoom']
 
         plugins = self.core.get_strv('active-plugins')
 
@@ -234,6 +236,9 @@ class Compizsettings ():
             if 'ezoom' in plugins:
                 plugins.remove('ezoom')
                 self.core.set_strv('active-plugins', plugins)
+
+    def on_sc_zoom_level_value_changed(self, widget, udata=None):
+        return True
 
     # keyboard widgets in compiz-general-zoom
 

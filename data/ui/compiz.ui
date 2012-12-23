@@ -21,6 +21,11 @@
     <property name="step_increment">1</property>
     <property name="page_increment">1</property>
   </object>
+  <object class="GtkAdjustment" id="adj_zoom_level">
+    <property name="upper">100</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
   <object class="GtkWindow" id="compiz_window">
     <property name="can_focus">False</property>
     <child>
@@ -57,17 +62,33 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkGrid" id="grid_compiz_general_zoom">
+                  <object class="GtkSwitch" id="sw_compiz_zoom">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="halign">start</property>
+                    <property name="margin_left">12</property>
+                    <property name="margin_top">6</property>
+                    <signal name="notify::active" handler="on_sw_compiz_zoom_active_notify" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkGrid" id="grid_compiz_zoom">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="margin_left">14</property>
                     <child>
-                      <object class="GtkSwitch" id="sw_compiz_zoom">
+                      <object class="GtkLabel" id="l_default_zoom_level">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="margin_left">12</property>
+                        <property name="margin_right">7</property>
                         <property name="margin_top">6</property>
-                        <signal name="notify::active" handler="on_sw_compiz_zoom_active_notify" swapped="no"/>
+                        <property name="xalign">1</property>
+                        <property name="label" translatable="yes">Default zoom level:</property>
                       </object>
                       <packing>
                         <property name="left_attach">0</property>
@@ -77,9 +98,15 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkLabel" id="l_compiz_zoom_empty">
+                      <object class="GtkScale" id="sc_zoom_level">
+                        <property name="width_request">180</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
+                        <property name="margin_top">7</property>
+                        <property name="adjustment">adj_zoom_level</property>
+                        <property name="round_digits">1</property>
+                        <property name="draw_value">False</property>
+                        <signal name="value-changed" handler="on_sc_zoom_level_value_changed" swapped="no"/>
                       </object>
                       <packing>
                         <property name="left_attach">1</property>
@@ -92,7 +119,7 @@
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">True</property>
-                    <property name="position">1</property>
+                    <property name="position">2</property>
                   </packing>
                 </child>
               </object>

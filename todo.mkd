@@ -15,6 +15,9 @@ Refresh and restore everywhere
 - Spin
 - Date grid (4)
 ###Compiz
+####General
+#####Zoom
+- Scale
 ####Hotcorners
 - Cairo bits from Sam Tran
 ####Windows snapping
