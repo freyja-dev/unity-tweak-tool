@@ -28,10 +28,12 @@
 # You should have received a copy of the GNU General Public License along with
 # this program; if not, see <https://www.gnu.org/licenses/gpl-3.0.txt>
 
-from gi.repository import Gtk,Gio
-from ui import ui
 import os, os.path
-import settings
+
+from gi.repository import Gtk,Gio
+
+from .ui import ui
+from . import settings
 
 class Startpage ():
     def __init__(self, container, notebook):
