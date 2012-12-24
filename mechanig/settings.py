@@ -28,13 +28,8 @@
 # You should have received a copy of the GNU General Public License along with
 # this program; if not, see <https://www.gnu.org/licenses/gpl-3.0.txt>
 
-import os, os.path, subprocess
+from os import path
 #import xdg, xdg.BaseDirectory
 
-if os.path.isfile('.is-devel-dir'):
-    DATA_DIR = '../data'
-else: 
-    DATA_DIR = '/usr/share/mechanig'
-
-
-UI_DIR = os.path.join(DATA_DIR, 'ui')
+UI_DIR = path.join(path.dirname(path.abspath(__file__)), 'data')
+assert path.isdir(UI_DIR)

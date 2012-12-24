@@ -32,7 +32,7 @@ import os, os.path
 
 from gi.repository import Gtk, Gio
 
-from mechanig import ui
+from mechanig.ui import ui
 from mechanig.start import Startpage
 from mechanig.unity import Unitysettings
 from mechanig.compiz import Compizsettings
