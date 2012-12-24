@@ -28,8 +28,12 @@
 # You should have received a copy of the GNU General Public License along with
 # this program; if not, see <https://www.gnu.org/licenses/gpl-3.0.txt>
 
+import os, os.path
+
 from gi.repository import Gtk,Gio
-from ui import ui
+
+from .ui import ui
+from . import settings
 
 class Startpage ():
     def __init__(self, container, notebook):
@@ -41,7 +45,9 @@ class Startpage ():
         #self.page = 'box_startpage'
 # TODO : Use os module to resolve to the full path.
         #self.builder.add_objects_from_file('startpage.ui', [self.page])
-        self.builder.add_from_file('startpage.ui')
+        self.glade = (os.path.join(settings.UI_DIR,
+                                   'startpage.ui'))
+        self.builder.add_from_file(self.glade)
         self.ui = ui(self.builder)
         self.page = self.ui['box_startpage']
         self.page.unparent()

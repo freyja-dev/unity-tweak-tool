@@ -28,15 +28,20 @@
 # You should have received a copy of the GNU General Public License along with
 # this program; if not, see <https://www.gnu.org/licenses/gpl-3.0.txt>
 
+import os, os.path
+
 from gi.repository import Gtk,Gio,Gdk
-from ui import ui
+
+from .ui import ui
+from . import settings
 
 class Compizsettings ():
     def __init__(self, container):
         '''Handler Initialisations.
         Obtain all references here.'''
         self.builder = Gtk.Builder()
-        self.glade = 'compiz.ui'
+        self.glade = (os.path.join(settings.UI_DIR,
+                                    'compiz.ui'))
         self.container = container
 # TODO : Use os module to resolve to the full path.
         self.builder.add_from_file(self.glade)
