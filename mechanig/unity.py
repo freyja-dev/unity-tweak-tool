@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 #
 # Team:
-#   J Phani Mahesh <phanimahesh@gmail.com> 
-#   Barneedhar (jokerdino) <barneedhar@ubuntu.com> 
+#   J Phani Mahesh <phanimahesh@gmail.com>
+#   Barneedhar (jokerdino) <barneedhar@ubuntu.com>
 #   Amith KK <amithkumaran@gmail.com>
 #   Georgi Karavasilev <motorslav@gmail.com>
 #   Sam Tran <samvtran@gmail.com>
@@ -13,6 +13,8 @@
 #   A One-stop configuration tool for Unity.
 #
 # Legal Stuff:
+#
+# This file is a part of Mechanig
 #
 # Mechanig is free software; you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -27,18 +29,32 @@
 # this program; if not, see <https://www.gnu.org/licenses/gpl-3.0.txt>
 
 from gi.repository import Gtk,Gio,Gdk
-import os
 from ui import ui
+import os, os.path
+import settings
 
-class Mechanig ():
-    def __init__(self):
+class Unitysettings ():
+    def __init__(self, container):
         '''Handler Initialisations.
         Obtain all references here.'''
         self.builder = Gtk.Builder()
-        self.glade="mechanig.glade"
+        self.glade = (os.path.join(settings.UI_DIR,
+                                    'unity.ui'))
+        self.container = container
 # TODO : Use os module to resolve to the full path.
         self.builder.add_from_file(self.glade)
-        self.ui=ui(self.builder)
+        self.ui = ui(self.builder)
+        self.page = self.ui['nb_unitysettings']
+        self.page.unparent()
+        self.builder.connect_signals(self)
+
+# TODO : Set these marks to the proper "sticky" location
+        revealScale = self.ui['sc_reveal_sensitivity']
+        revealScale.add_mark(5.333, Gtk.PositionType.BOTTOM, None)
+
+        transparencyScale = self.ui['sc_launcher_transparency']
+        transparencyScale.add_mark(.666, Gtk.PositionType.BOTTOM, None)
+
 
 # GSettings objects go here
         self.unityshell=self.plugin('unityshell')
@@ -46,17 +62,9 @@ class Mechanig ():
         self.background=self.gnome('desktop.background')
         self.launcher=self.unity('Launcher')
         self.power=self.canonical('indicator.power')
+        self.session=self.canonical('indicator.session')
 
-# Fire the engines
-# The UI must be refreshed before connecting signals.
-# Else all handlers get called when setting initial values and may cause a mess.
         self.refresh()
-        self.builder.connect_signals(self)
-        self.ui['mechanig_main'].set_resizable(False)
-        self.ui['nb_mechanig'].set_show_tabs(False)
-        self.ui['mechanig_main'].connect("delete-event", Gtk.main_quit)
-        self.ui['mechanig_main'].show_all()
-        Gtk.main()
 
 #=====================================================================#
 #                                Helpers                              #
@@ -68,7 +76,8 @@ class Mechanig ():
         gsettings=Gio.Settings(schema=schema,path=path)
         for key in gsettings.list_keys():
             gsettings.reset(key)
-    
+
+
     @staticmethod
     def color_to_hash(c):
         """Convert a Gdk.Color or Gdk.RGBA object to hex representation"""
@@ -135,8 +144,104 @@ class Mechanig ():
         self.ui['cbox_launcher_icon_colouring'].set_active(self.unityshell.get_int('backlight-mode'))
 
         self.ui['sw_launcher_show_desktop'].set_active(True if 'unity://desktop-icon' in self.launcher.get_strv('favorites') else False)
+
+        # Refreshing Unity switcher settings
+
+        self.ui['check_switchwindows_all_workspaces'].set_active(self.unityshell.get_boolean('alt-tab-bias-viewport'))
+        self.ui['check_switcher_showdesktop'].set_active(True if self.unityshell.get_boolean('disable-show-desktop')is False else False)
+        self.ui['check_minimizedwindows_switch'].set_active(self.unityshell.get_boolean('show-minimized-windows'))
+        self.ui['check_autoexposewindows'].set_active(self.unityshell.get_boolean('alt-tab-timeout'))
+
+
+        model = self.ui['list_unity_switcher_windows_accelerators']
+
+        alt_tab_forward = self.unityshell.get_string('alt-tab-forward')
+        iter_alt_tab_forward = model.get_iter_first()
+        model.set_value(iter_alt_tab_forward, 1, alt_tab_forward)
+
+        alt_tab_prev = self.unityshell.get_string('alt-tab-prev')
+        iter_alt_tab_prev = model.iter_next(iter_alt_tab_forward)
+        model.set_value(iter_alt_tab_prev, 1, alt_tab_prev)
+
+        alt_tab_forward_all = self.unityshell.get_string('alt-tab-forward-all')
+        iter_alt_tab_forward_all = model.iter_next(iter_alt_tab_prev)
+        model.set_value(iter_alt_tab_forward_all, 1, alt_tab_forward_all)
+
+        alt_tab_prev_all = self.unityshell.get_string('alt-tab-prev-all')
+        iter_alt_tab_prev_all = model.iter_next(iter_alt_tab_forward_all)
+        model.set_value(iter_alt_tab_prev_all, 1, alt_tab_prev_all)
+
+        alt_tab_right = self.unityshell.get_string('alt-tab-right')
+        iter_alt_tab_right = model.iter_next(iter_alt_tab_prev_all)
+        model.set_value(iter_alt_tab_right, 1, alt_tab_right)
+
+        alt_tab_left = self.unityshell.get_string('alt-tab-left')
+        iter_alt_tab_left = model.iter_next(iter_alt_tab_right)
+        model.set_value(iter_alt_tab_left, 1, alt_tab_left)
+
+        alt_tab_detail_start = self.unityshell.get_string('alt-tab-detail-start')
+        iter_alt_tab_detail_start = model.iter_next(iter_alt_tab_left)
+        model.set_value(iter_alt_tab_detail_start, 1, alt_tab_detail_start)
+
+        alt_tab_detail_stop = self.unityshell.get_string('alt-tab-detail-stop')
+        iter_alt_tab_detail_stop = model.iter_next(iter_alt_tab_detail_start)
+        model.set_value(iter_alt_tab_detail_stop, 1, alt_tab_detail_stop)
+
+        alt_tab_next_window = self.unityshell.get_string('alt-tab-next-window')
+        iter_alt_tab_next_window = model.iter_next(iter_alt_tab_detail_stop)
+        model.set_value(iter_alt_tab_next_window, 1, alt_tab_next_window)
+
+        alt_tab_prev_window = self.unityshell.get_string('alt-tab-prev-window')
+        iter_alt_tab_prev_window = model.iter_next(iter_alt_tab_next_window)
+        model.set_value(iter_alt_tab_prev_window, 1, alt_tab_next_window)
+
+        del model
+
+        model = self.ui['list_unity_switcher_launcher_accelerators']
+
+        launcher_switcher_forward = self.unityshell.get_string('launcher-switcher-forward')
+        iter_launcher_switcher_forward = model.get_iter_first()
+        model.set_value(iter_launcher_switcher_forward, 1, launcher_switcher_forward)
+
+        launcher_switcher_prev = self.unityshell.get_string('launcher-switcher-prev')
+        iter_launcher_switcher_prev = model.iter_next(iter_launcher_switcher_forward)
+        model.set_value(iter_launcher_switcher_prev, 1, launcher_switcher_prev)
+
+        del model, launcher_switcher_forward, iter_launcher_switcher_forward, launcher_switcher_prev, iter_launcher_switcher_prev
+
+
+        # Refreshing Unity additional settings
+
+        self.ui['check_shortcuts_hints_overlay'].set_active(self.unityshell.get_boolean('shortcut-overlay'))
+
+        model = self.ui['list_unity_additional_accelerators']
+
+        show_hud = self.unityshell.get_string('show-hud')
+        iter_show_hud = model.get_iter_first()
+        model.set_value(iter_show_hud, 1, show_hud)
+
+        show_launcher = self.unityshell.get_string('show-launcher')
+        iter_show_launcher = model.iter_next(iter_show_hud)
+        model.set_value(iter_show_launcher, 1, show_launcher)
+
+        execute_command = self.unityshell.get_string('execute-command')
+        iter_execute_command = model.iter_next(iter_show_launcher)
+        model.set_value(iter_execute_command, 1, execute_command)
+
+        keyboard_focus = self.unityshell.get_string('keyboard-focus')
+        iter_keyboard_focus = model.iter_next(iter_execute_command)
+        model.set_value(iter_keyboard_focus, 1, keyboard_focus)
+
+        panel_first_menu = self.unityshell.get_string('panel-first-menu')
+        iter_panel_first_menu = model.iter_next(iter_keyboard_focus)
+        model.set_value(iter_panel_first_menu, 1, panel_first_menu)
+
+        del model, show_hud, iter_show_hud, show_launcher, iter_show_launcher, execute_command, iter_execute_command, keyboard_focus, iter_keyboard_focus, panel_first_menu, iter_panel_first_menu
+
+
 # TODO : Find a clever way or set each one manually.
 # Do it the dumb way now. BIIIG refactoring needed later.
+
 
     @staticmethod
     def plugin(plugin):
@@ -165,85 +270,6 @@ class Mechanig ():
         schema='org.gnome.'+child
         return Gio.Settings(schema)
 
-#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\
-# Dont trust glade to pass the objects properly.            |
-# Always add required references to init and use them.      |
-# That way, mechanig can resist glade stupidity.            |
-# Apologies Gnome devs, but Glade is not our favorite.      |
-#___________________________________________________________/
-
-# ===== Top Navigation bar =====
-    def on_tool_startpage_toggled(self,udata):
-        self.ui['nb_mechanig'].set_current_page(0)
-    def on_tool_unitysettings_toggled(self,udata):
-        self.ui['nb_mechanig'].set_current_page(1)
-        self.ui['nb_unitysettings'].set_current_page(0)
-    def on_tool_compizsettings_toggled(self,udata):
-        self.ui['nb_mechanig'].set_current_page(2)
-        self.ui['nb_compizsettings'].set_current_page(0)
-    def on_tool_themesettings_toggled(self,udata):
-        self.ui['nb_mechanig'].set_current_page(3)
-        self.ui['nb_themesettings'].set_current_page(0)
-    def on_tool_desktopsettings_toggled(self,udata):
-        self.ui['nb_mechanig'].set_current_page(4)
-        
-# ===== Start page =====
-    # unity settings on start page 
-    def on_tool_launcher_clicked(self,udata):
-        self.ui['tool_unitysettings'].set_active(True)
-        self.ui['nb_unitysettings'].set_current_page(0)
-    def on_tool_dash_clicked(self,udata):
-        self.ui['tool_unitysettings'].set_active(True)
-        self.ui['nb_unitysettings'].set_current_page(1)
-    def on_tool_panel_clicked(self,udata):
-        self.ui['tool_unitysettings'].set_active(True)
-        self.ui['nb_unitysettings'].set_current_page(2)
-    def on_tool_unity_switcher_clicked(self,udata):
-        self.ui['tool_unitysettings'].set_active(True)
-        self.ui['nb_unitysettings'].set_current_page(3)    
-    def on_tool_additional_clicked(self,udata):
-        self.ui['tool_unitysettings'].set_active(True)
-        self.ui['nb_unitysettings'].set_current_page(4)    
-    def on_tool_launcher_clicked(self,udata):
-        self.ui['tool_unitysettings'].set_active(True)
-        self.ui['nb_unitysettings'].set_current_page(0)
-        
-    # Compiz settings buttons on start page        
-    def on_tool_general_clicked(self,udata):
-        self.ui['tool_compizsettings'].set_active(True)
-        self.ui['nb_compizsettings'].set_current_page(0)
-    def on_tool_compiz_switcher_clicked(self,udata):
-        self.ui['tool_compizsettings'].set_active(True)
-        self.ui['nb_compizsettings'].set_current_page(1)
-    def on_tool_windows_spread_clicked(self,udata):
-        self.ui['tool_compizsettings'].set_active(True)
-        self.ui['nb_compizsettings'].set_current_page(2)
-    def on_tool_windows_snapping_clicked(self,udata):
-        self.ui['tool_compizsettings'].set_active(True)
-        self.ui['nb_compizsettings'].set_current_page(3)
-    def on_tool_hotcorners_clicked(self,udata):
-        self.ui['tool_compizsettings'].set_active(True)
-        self.ui['nb_compizsettings'].set_current_page(4)
-        
-    # Theme settings on Start page    
-    def on_tool_system_clicked(self,udata):
-        self.ui['tool_themesettings'].set_active(True)
-        self.ui['nb_themesettings'].set_current_page(0)  
-    def on_tool_icons_clicked(self,udata):
-        self.ui['tool_themesettings'].set_active(True)
-        self.ui['nb_themesettings'].set_current_page(1) 
-    def on_tool_cursors_clicked(self,udata):
-        self.ui['tool_themesettings'].set_active(True)
-        self.ui['nb_themesettings'].set_current_page(2)     
-    def on_tool_fonts_clicked(self,udata):
-        self.ui['tool_themesettings'].set_active(True)
-        self.ui['nb_themesettings'].set_current_page(3)     
-        
-    # desktop settings on start page    
-    def on_tool_desktop_clicked(self,udata): 
-        self.ui['tool_desktopsettings'].set_active(True)
-
-#===================END OF START PAGE===================#
 
 #=====BEGIN: Unity settings=====
 #-----BEGIN: Launcher ----------
@@ -296,7 +322,7 @@ class Mechanig ():
         opacity=self.ui['sc_launcher_transparency'].get_value()
         self.unityshell.set_double('launcher-opacity',opacity)
 # Check adj_launcher_transparency if this misbehaves
-        
+
     def on_radio_launcher_visibility_all_toggled(self,widget,udata=None):
         if self.ui['radio_launcher_visibility_all'].get_active():
             self.unityshell.set_int('num-launchers',0)
@@ -326,7 +352,7 @@ class Mechanig ():
     def on_cbox_launcher_icon_colouring_changed(self,widget,udata=None):
         mode=self.ui['cbox_launcher_icon_colouring'].get_active()
         self.unityshell.set_int('backlight-mode',mode)
-    
+
     def on_sw_launcher_show_desktop_active_notify(self,widget,udata=None):
         fav=self.launcher.get_strv('favorites')
         desktop="unity://desktop-icon"
@@ -348,49 +374,57 @@ class Mechanig ():
         dependants=['radio_dash_blur_smart',
                     'radio_dash_blur_static',
                     'l_dash_blur']
-        
+
         if self.ui['sw_dash_blur'].get_active():
             self.ui.sensitize(dependants)
             self.unityshell.set_int('dash-blur-experimental',1)
-            
+
         else:
             self.ui.unsensitize(dependants)
             self.unityshell.set_int('dash-blur-experimental',0)
-    
+
     def on_radio_dash_blur_smart_toggled(self,button,udata=None):
         mode=1 if button.get_active() else 2
         self.unityshell.set_int('dash-blur-experimental',mode)
-     
+
       # selective selection in unity-dash - part 2
-      
-    def on_radio_dash_color_cus_active_notify(self,widget,udata=None):
+
+    def on_radio_dash_color_cus_toggled(self,widget,udata=None):
         dependants=['color_dash_color_cus']
-        
+        color=self.ui['color_dash_color_cus'].get_color()
+        colorhash=self.color_to_hash(color)
         if self.ui['radio_dash_color_cus'].get_active():
             self.ui.sensitize(dependants)
+            self.unityshell.set_string('background-color',colorhash)
+        else:
+            self.ui.unsensitize(dependants)
+            self.unityshell.set_string('background-color',colorhash[:-2]+'00')
+
+    def on_color_dash_color_cus_color_set(self,widget,udata=None):
+        color=self.ui['color_launcher_color_cus'].get_color()
+        colorhash=self.color_to_hash(color)
+        self.unityshell.set_string('background-color',colorhash)
+
+
+#-----BEGIN: Panel -----
+
+    def on_sw_appmenu_autohide_active_notify(self,widget,udata=None):
+        dependants=['spin_menu_visible','l_menu_visible']
+
+        if widget.get_active():
+            self.ui.sensitize(dependants)
+
         else:
             self.ui.unsensitize(dependants)
 
-    
-#-----BEGIN: Panel -----            
-  
-    def on_sw_appmenu_autohide_active_notify(self,widget,udata=None):
-        dependants=['spin_menu_visible','l_menu_visible']
-        
-        if widget.get_active():
-            self.ui.sensitize(dependants)
-                    
-        else:
-            self.ui.unsensitize(dependants)
-            
     # selective selection in unity-panel  part 2
-  
+
     def on_sw_transparent_panel_active_notify(self,widget,udata=None):
         dependants=['sc_panel_transparency','l_transparent_panel','check_panel_opaque']
 
         if widget.get_active():
             self.ui.sensitize(dependants)
-           
+
         else:
             self.ui.unsensitize(dependants)
             self.unityshell.set_double('panel-opacity',1.00)
@@ -398,7 +432,7 @@ class Mechanig ():
 
     def on_sc_panel_transparency_value_changed(self,widget,udata=None):
         panel_transparency=widget.get_value()
-        self.unityshell.set_double('panel-opacity',panel_transparency)        
+        self.unityshell.set_double('panel-opacity',panel_transparency)
 
     def on_check_panel_opaque_toggled(self,widget,udata=None):
 
@@ -409,54 +443,56 @@ class Mechanig ():
 
 
     def on_check_indicator_username_toggled(self,widget,udata=None):
-    
+
         if widget.get_active():
-            self.unityshell.set_boolean('',)
+            self.session.set_boolean('show-real-name-on-panel',True)
+        else:
+            self.session.set_boolean('show-real-name-on-panel',False)
 
 
     def on_check_indicator_batterytime_toggled(self,widget,udata=None):
-    
+
         if widget.get_active():
             self.power.set_boolean('show-time',True)
         else:
             self.power.set_boolean('show-time',False)
-            
+
 
 #-----BEGIN: Switcher-----
 
     def on_check_switchwindows_all_workspaces_toggled(self,widget,udata=None):
-    
+
         if widget.get_active():
-            self.unityshell.set_boolean()
-    
+            self.unityshell.set_boolean('alt-tab-bias-viewport',True)
+
         else:
-            self.unityshell.set_boolean()    
-    
-    
+            self.unityshell.set_boolean('alt-tab-bias-viewport',False)
+
+
     def on_check_switcher_showdesktop_toggled(self,widget,udata=None):
-    
+
         if widget.get_active():
             self.unityshell.set_boolean("disable-show-desktop",False)
-        
+
         else:
-            self.unityshell.set_boolean("disable-show-desktop",True)        
-        
+            self.unityshell.set_boolean("disable-show-desktop",True)
+
     def on_check_minimizedwindows_switch_toggled(self,widget,udata=None):
-    
+
         if widget.get_active():
             self.unityshell.set_boolean("show-minimized-windows",True)
-            
+
         else:
             self.unityshell.set_boolean("show-minimized-windows",False)
-    
+
     def on_check_autoexposewindows_toggled(self,widget,udata=None):
-    
+
         if widget.get_active():
-            self.unityshell.set_boolean()
-            
+            self.unityshell.set_boolean('alt-tab-timeout',True)
+
         else:
-            self.unityshell.set_boolean()
-            
+            self.unityshell.set_boolean('alt-tab-timeout',False)
+
     # keyboard widgets in unity-windows-switcher
 
     def on_craccel_unity_switcher_windows_accel_edited(self,craccel, path, key, mods, hwcode,model=None):
@@ -464,11 +500,53 @@ class Mechanig ():
         accel = Gtk.accelerator_name(key, mods)
         iter = model.get_iter(path)
         model.set_value(iter, 1, accel)
+        # Python has no switch statement, right?
+
+        if path == '0':
+            self.unityshell.set_string('alt-tab-forward', accel)
+        elif path == '1':
+            self.unityshell.set_string('alt-tab-prev', accel)
+        elif path == '2':
+            self.unityshell.set_string('alt-tab-forward-all', accel)
+        elif path == '3':
+            self.unityshell.set_string('alt-tab-prev-all', accel)
+        elif path == '4':
+            self.unityshell.set_string('alt-tab-right', accel)
+        elif path == '5':
+            self.unityshell.set_string('alt-tab-left', accel)
+        elif path == '6':
+            self.unityshell.set_string('alt-tab-detail-start', accel)
+        elif path == '7':
+            self.unityshell.set_string('alt-tab-detail-stop', accel)
+        elif path == '8':
+            self.unityshell.set_string('alt-tab-next-window', accel)
+        elif path == '9':
+            self.unityshell.set_string('alt-tab-prev-window', accel)
 
     def on_craccel_unity_switcher_windows_accel_cleared(self, craccel, path, model=None):
         model=self.ui['list_unity_switcher_windows_accelerators']
         iter = model.get_iter(path)
         model.set_value(iter, 1, "Disabled")
+        if path == '0':
+            self.unityshell.set_string('alt-tab-forward', "Disabled")
+        elif path == '1':
+            self.unityshell.set_string('alt-tab-prev', "Disabled")
+        elif path == '2':
+            self.unityshell.set_string('alt-tab-forward-all', "Disabled")
+        elif path == '3':
+            self.unityshell.set_string('alt-tab-prev-all', "Disabled")
+        elif path == '4':
+            self.unityshell.set_string('alt-tab-right', "Disabled")
+        elif path == '5':
+            self.unityshell.set_string('alt-tab-left', "Disabled")
+        elif path == '6':
+            self.unityshell.set_string('alt-tab-detail-start', "Disabled")
+        elif path == '7':
+            self.unityshell.set_string('alt-tab-detail-stop', "Disabled")
+        elif path == '8':
+            self.unityshell.set_string('alt-tab-next-window', "Disabled")
+        elif path == '9':
+            self.unityshell.set_string('alt-tab-prev-window', "Disabled")
 
     # keyboard widgets in unity-launcher-switcher
 
@@ -477,24 +555,54 @@ class Mechanig ():
         accel = Gtk.accelerator_name(key, mods)
         iter = model.get_iter(path)
         model.set_value(iter, 1, accel)
+        # Python has no switch statement, right?
+
+        if path == '0':
+            self.unityshell.set_string('launcher-switcher-forward', accel)
+        else:
+            self.unityshell.set_string('launcher-switcher-prev', accel)
 
     def on_craccel_unity_switcher_launcher_accel_cleared(self, craccel, path, model=None):
         model=self.ui['list_unity_switcher_launcher_accelerators']
         iter = model.get_iter(path)
         model.set_value(iter, 1, "Disabled")
+        if path == '0':
+            self.unityshell.set_string('launcher-switcher-forward', "Disabled")
+        else:
+            self.unityshell.set_string('launcher-switcher-prev', "Disabled")
 
-  
+    def on_b_unity_switcher_reset_clicked(self, widget):
+        self.unityshell.reset('alt-tab-bias-viewport')
+        self.unityshell.reset('disable-show-desktop')
+        self.unityshell.reset('show-minimized-windows')
+        self.unityshell.reset('alt-tab-timeout')
+        self.unityshell.reset('alt-tab-forward')
+        self.unityshell.reset('alt-tab-prev')
+        self.unityshell.reset('alt-tab-forward-all')
+        self.unityshell.reset('alt-tab-prev-all')
+        self.unityshell.reset('alt-tab-right')
+        self.unityshell.reset('alt-tab-left')
+        self.unityshell.reset('alt-tab-detail-start')
+        self.unityshell.reset('alt-tab-detail-stop')
+        self.unityshell.reset('alt-tab-next-window')
+        self.unityshell.reset('alt-tab-prev-window')
+        self.unityshell.reset('launcher-switcher-forward')
+        self.unityshell.reset('launcher-switcher-prev')
+        self.refresh()
+
+
+
 #-----BEGIN: Additional -----
 
     def on_check_shortcuts_hints_overlay_toggled(self,widget,udata=None):
-        
+
         if widget.get_active():
             self.unityshell.set_boolean('shortcut-overlay',True)
-        
+
         else:
             self.unityshell.set_boolean('shortcut-overlay',False)
-            
-            
+
+
     # keyboard widgets in unity-additional
 
     def on_craccel_unity_additional_accel_edited(self,craccel, path, key, mods, hwcode,model=None):
@@ -504,197 +612,43 @@ class Mechanig ():
         iter = model.get_iter(path)
         model.set_value(iter, 1, accel)
 
+        # Python has no switch statement, right?
+
+        if path == '0':
+            self.unityshell.set_string('show-hud', accel)
+        elif path == '1':
+            self.unityshell.set_string('show-launcher', accel)
+        elif path == '2':
+            self.unityshell.set_string('execute-command', accel)
+        elif path == '3':
+            self.unityshell.set_string('keyboard-focus', accel)
+        else:
+            self.unityshell.set_string('panel-first-menu', accel)
+
     def on_craccel_unity_additional_accel_cleared(self, craccel, path, model=None):
         model=self.ui['list_unity_additional_accelerators']
         iter = model.get_iter(path)
         model.set_value(iter, 1, "Disabled")
-            
-#=====BEGIN: Compiz settings=====
-#-----BEGIN: General -----
-            
-     # selective sensitivity in compiz - general
-            
-    def on_sw_compiz_zoom_active_notify(self,widget,udata=None):
-        dependants=['radio_zoom_type_standard','radio_zoom_type_lg','l_compiz_zoom_type']
-        
-        if widget.get_active():
-            self.ui.sensitize(dependants)
-           
+        if path == '0':
+            self.unityshell.set_string('show-hud', "Disabled")
+        elif path == '1':
+            self.unityshell.set_string('show-launcher', "Disabled")
+        elif path == '2':
+            self.unityshell.set_string('execute-command', "Disabled")
+        elif path == '3':
+            self.unityshell.set_string('keyboard-focus', "Disabled")
         else:
-            self.ui.unsensitize(dependants)
-            
+            self.unityshell.set_string('panel-first-menu', "Disabled")
 
-
-    # keyboard widgets in compiz-general-zoom
-
-    def on_craccel_compiz_general_zoom_accel_edited(self,craccel, path, key, mods, hwcode,model=None):
-        model=self.ui['list_compiz_general_zoom_accelerators']
-        accel = Gtk.accelerator_name(key, mods)
-        iter = model.get_iter(path)
-        model.set_value(iter, 1, accel)
-    def on_craccel_compiz_general_zoom_accel_cleared(self, craccel, path, model=None):
-        model=self.ui['list_compiz_general_zoom_accelerators']
-        iter = model.get_iter(path)
-        model.set_value(iter, 1, "Disabled")
-
-    # keyboard widgets in compiz-general-keys
-
-    def on_craccel_compiz_general_keys_accel_edited(self,craccel, path, key, mods, hwcode,model=None):
-        model=self.ui['list_compiz_general_keys_accelerators']
-        accel = Gtk.accelerator_name(key, mods)
-        iter = model.get_iter(path)
-        model.set_value(iter, 1, accel)
-
-    def on_craccel_compiz_general_keys_accel_cleared(self, craccel, path, model=None):
-        model=self.ui['list_compiz_general_keys_accelerators']
-        iter = model.get_iter(path)
-        model.set_value(iter, 1, "Disabled")
-            
-#-----BEGIN: Workspaces -----
-           
-    # selective sensitivity in compiz - workspaces
-    
-    def on_sw_workspace_switcher_active_notify(self,widget,udata=None):
-        dependants=['l_horizontal_desktop','l_vertical_desktop','spin_horizontal_desktop','spin_vertical_desktop']
-
-        if widget.get_active():
-            self.ui.sensitize(dependants)
-           
-        else:
-            self.ui.unsensitize(dependants)
-            
-
-    # keyboard widgets in compiz-workspace
-
-    def on_craccel_compiz_workspace_accel_edited(self,craccel, path, key, mods, hwcode,model=None):
-        model=self.ui['list_compiz_workspace_accelerators']
-        accel = Gtk.accelerator_name(key, mods)
-        iter = model.get_iter(path)
-        model.set_value(iter, 1, accel)
-
-    def on_craccel_compiz_workspace_accel_cleared(self, craccel, path, model=None):
-        model=self.ui['list_compiz_workspace_accelerators']
-        iter = model.get_iter(path)
-        model.set_value(iter, 1, "Disabled")
-        
-        
-    # compiz hotcorner linked button 
-    def on_lb_configure_hot_corner_activate_link(self,udata):
-        self.ui['nb_compizsettings'].set_current_page(4)
-    
-
-        
-
-
-#-----BEGIN: Windows Spread -----
-
-    # selective sensitivity in compiz - windows spread
-    
-    def on_sw_windows_spread_active_notify(self,widget,udata=None):
-        dependants=['l_compiz_spacing','spin_compiz_spacing','check_overlay_emblem','check_click_desktop']
-
-        if widget.get_active():
-            self.ui.sensitize(dependants)
-           
-        else:
-            self.ui.unsensitize(dependants)
- 
-
-    # keyboard widgets in compiz-windows-spread
-
-    def on_craccel_compiz_windows_spread_accel_edited(self,craccel, path, key, mods, hwcode,model=None):
-        model=self.ui['list_compiz_windows_spread_accelerators']
-        accel = Gtk.accelerator_name(key, mods)
-        iter = model.get_iter(path)
-        model.set_value(iter, 1, accel)
-
-    def on_craccel_compiz_windows_spread_accel_cleared(self, craccel, path, model=None):
-        model=self.ui['list_compiz_windows_spread_accelerators']
-        iter = model.get_iter(path)
-        model.set_value(iter, 1, "Disabled")
-            
- 
-    # compiz hotcorner linked button
-    
-    def on_lb_configure_hot_corner_windows_spread_activate_link(self,udata):
-        self.ui['nb_compizsettings'].set_current_page(4)
-
-            
-             
-#========= Begin Desktop Settings
-    def on_sw_desktop_icon_active_notify(self,widget,udata=None):
-        dependants=['l_desktop_icons_display','check_desktop_home','check_desktop_networkserver','check_desktop_trash','check_desktop_devices']
-        
-        if widget.get_active():
-            self.background.set_boolean("show-desktop-icons",True)
-            self.ui.sensitize(dependants)
-           
-        else:
-            self.ui.unsensitize(dependants)
-            self.background.set_boolean("show-desktop-icons",False)
-    
-    def on_check_desktop_home_toggled(self,widget,udata=None):
-        self.desktop.set_boolean('home-icon-visible',
-                                 self.ui['check_desktop_home'].get_active())
-
-    def on_check_desktop_networkserver_toggled(self,widget,udata=None):
-        self.desktop.set_boolean('network-icon-visible',
-                            self.ui['check_desktop_networkserver'].get_active())
-
-    def on_check_desktop_trash_toggled(self,widget,udata=None):
-        self.desktop.set_boolean('trash-icon-visible',
-                            self.ui['check_desktop_trash'].get_active())
-
-    def on_check_desktop_devices_toggled(self,widget,udata=None):
-        self.desktop.set_boolean('volumes-visible',
-                            self.ui['check_desktop_devices'].get_active())
-
-    def on_spin_iconsize_value_changed(self,udata=None):
-        size=self.ui['spin_iconsize'].get_value()
-# TODO : Find where this setting is.
-
-    def on_check_alignment_toggled(self,widget,udata=None):
-        pass
-# TODO : Find where this setting is.
-
-
-#-----END OF CONFIGURATIONS-----
-             
-    # gtk search box
-    
-    # inserting text shows the secondary icon (stock-clear)
-    
-    def on_tool_entry_search_insert_text(self,text,length,position,udata):
-    
-        # getting the text length to workaround some Gtk bug
-        if self.ui['tool_entry_search'].get_text_length()+1:
-            self.ui['tool_entry_search'].set_icon_from_stock(Gtk.EntryIconPosition.SECONDARY,
-                Gtk.STOCK_CLEAR)
-            
-        else:
-            self.ui['tool_entry_search'].set_icon_from_stock(Gtk.EntryIconPosition.SECONDARY, None) 
-
-    def on_tool_entry_search_delete_text(self,start_pos,end_pos,udata):
-       
-        # getting the text length to workaround some Gtk bug        
-        
-        if (self.ui['tool_entry_search'].get_text_length()-1) == 0:
-            self.ui['tool_entry_search'].set_icon_from_stock(Gtk.EntryIconPosition.SECONDARY, None)
-            
-    # clicking on secondary icon clearing text
-     
-    def on_tool_entry_search_icon_press(self, widget, icon, mouse_button):
-         
-        if icon == Gtk.EntryIconPosition.SECONDARY:
-            widget.set_text("")
-            widget.set_icon_from_stock(Gtk.EntryIconPosition.SECONDARY, None)
-            
-        if icon == Gtk.EntryIconPosition.PRIMARY:
-            print("Searching")
-
+    def on_b_unity_additional_reset_clicked(self, widget):
+        self.unityshell.reset('shortcut-overlay')
+        self.unityshell.reset('show-hud')
+        self.unityshell.reset('show-launcher')
+        self.unityshell.reset('execute-command')
+        self.unityshell.reset('keyboard-focus')
+        self.unityshell.reset('panel-first-menu')
+        self.refresh()
 
 if __name__=='__main__':
 # Fire up the Engines
-    Mechanig()
-else:
-    print("WARNING: This module is not tailored to be imported. Proceed at your own risk.")
+    Unitysettings()

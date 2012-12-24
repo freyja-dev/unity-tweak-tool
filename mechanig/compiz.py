@@ -30,13 +30,16 @@
 
 from gi.repository import Gtk,Gio,Gdk
 from ui import ui
+import os, os.path
+import settings
 
 class Compizsettings ():
     def __init__(self, container):
         '''Handler Initialisations.
         Obtain all references here.'''
         self.builder = Gtk.Builder()
-        self.glade = 'compiz.ui'
+        self.glade = (os.path.join(settings.UI_DIR,
+                                    'compiz.ui'))
         self.container = container
 # TODO : Use os module to resolve to the full path.
         self.builder.add_from_file(self.glade)
