@@ -1,7 +1,7 @@
 [Desktop Entry]
 Categories=Utility;Settings;X-GNOME-Settings-Panel;X-GNOME-PersonalSettings;
 Comment=Configuration frontend for the Unity desktop environment
-Exec=mechanig %f
+Exec=mechanig-gtk %f
 Icon=gconf-editor
 GenericName=Mechanig
 Name=Mechanig
@@ -11,6 +11,8 @@ Terminal=false
 Type=Application
 X-GNOME-Settings-Panel=Mechanig
 Actions=Restart;
+
+Name[en_SG]=mechanig
 
 [Restart Action Window]
 Name=Restart Unity

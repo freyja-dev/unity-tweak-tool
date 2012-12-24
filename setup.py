@@ -13,7 +13,7 @@ setup(
     package_data={'mechanig': ['data/*.ui']},
     data_files=[
         ('share/applications',
-            ['Mechanig.desktop']
+            ['mechanig.desktop']
         ),
     ]
 )
