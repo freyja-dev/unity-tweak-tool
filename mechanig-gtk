@@ -28,15 +28,17 @@
 # You should have received a copy of the GNU General Public License along with
 # this program; if not, see <https://www.gnu.org/licenses/gpl-3.0.txt>
 
-from gi.repository import Gtk,Gio
-from ui import ui
-from start import Startpage
-from unity import Unitysettings
-from compiz import Compizsettings
-from theme import Themesettings
-from desktop import Desktopsettings
 import os, os.path
-import settings
+
+from gi.repository import Gtk, Gio
+
+from mechanig import ui
+from mechanig.start import Startpage
+from mechanig.unity import Unitysettings
+from mechanig.compiz import Compizsettings
+from mechanig.theme import Themesettings
+from mechanig.desktop import Desktopsettings
+from mechanig import settings
 
 class Mechanig ():
     def __init__(self):
