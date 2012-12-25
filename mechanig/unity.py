@@ -65,6 +65,7 @@ class Unitysettings ():
         self.launcher=self.unity('Launcher')
         self.power=self.canonical('indicator.power')
         self.session=self.canonical('indicator.session')
+        self.datetime=self.canonical('indicator.datetime')
 
         self.refresh()
 
@@ -146,6 +147,37 @@ class Unitysettings ():
         self.ui['cbox_launcher_icon_colouring'].set_active(self.unityshell.get_int('backlight-mode'))
 
         self.ui['sw_launcher_show_desktop'].set_active(True if 'unity://desktop-icon' in self.launcher.get_strv('favorites') else False)
+
+        # Refreshing Unity panel settings
+
+        dependants=['l_transparent_panel',
+                    'sc_panel_transparency',
+                    'check_panel_opaque']
+        opacity=self.unityshell.get_double('panel-opacity')
+        if opacity==1:
+            self.ui['sw_transparent_panel'].set_active(False)
+            self.ui.unsensitize(dependants)
+        else:
+            self.ui['sw_transparent_panel'].set_active(True)
+            self.ui.sensitize(dependants)
+        self.ui['sc_panel_transparency'].set_value(opacity)
+        del dependants
+        del opacity
+
+        time_format = self.datetime.get_string('time-format')
+
+        if time_format == '12-hour':
+            self.ui['cbox_formattime'].set_active(0)
+        elif time_format == '24-hour':
+            self.ui['cbox_formattime'].set_active(1)
+        else:
+            self.ui['cbox_formattime'].set_active(2)
+        del time_format
+
+        if self.datetime.get_boolean('show-seconds') is True:
+            self.ui['cbox_time_seconds'].set_active(0)
+        else:
+            self.ui['cbox_time_seconds'].set_active(1)
 
         # Refreshing Unity switcher settings
 
@@ -318,6 +350,7 @@ class Unitysettings ():
         else:
             self.ui.unsensitize(dependants)
             self.unityshell.set_double('launcher-opacity',1)
+            self.ui['sc_launcher_transparency'].set_value(1)
 # Check adj_launcher_transparency if this misbehaves
 
     def on_sc_launcher_transparency_value_changed(self,widget,udata=None):
@@ -389,24 +422,6 @@ class Unitysettings ():
         mode=1 if button.get_active() else 2
         self.unityshell.set_int('dash-blur-experimental',mode)
 
-      # selective selection in unity-dash - part 2
-
-    def on_radio_dash_color_cus_toggled(self,widget,udata=None):
-        dependants=['color_dash_color_cus']
-        color=self.ui['color_dash_color_cus'].get_color()
-        colorhash=self.color_to_hash(color)
-        if self.ui['radio_dash_color_cus'].get_active():
-            self.ui.sensitize(dependants)
-            self.unityshell.set_string('background-color',colorhash)
-        else:
-            self.ui.unsensitize(dependants)
-            self.unityshell.set_string('background-color',colorhash[:-2]+'00')
-
-    def on_color_dash_color_cus_color_set(self,widget,udata=None):
-        color=self.ui['color_launcher_color_cus'].get_color()
-        colorhash=self.color_to_hash(color)
-        self.unityshell.set_string('background-color',colorhash)
-
 
 #-----BEGIN: Panel -----
 
@@ -458,6 +473,24 @@ class Unitysettings ():
             self.power.set_boolean('show-time',True)
         else:
             self.power.set_boolean('show-time',False)
+
+    def on_cbox_formattime_changed(self, widget, udata=None):
+
+        mode = self.ui['cbox_formattime'].get_active()
+
+        if mode == 0:
+            self.datetime.set_string('time-format', '12-hour')
+        elif mode == 1:
+            self.datetime.set_string('time-format', '24-hour')
+
+    def on_cbox_time_seconds_changed(self, widget, udata=None):
+
+        mode = self.ui['cbox_time_seconds'].get_active()
+
+        if mode == 0:
+            self.datetime.set_boolean('show-seconds', True)
+        else:
+            self.datetime.set_boolean('show-seconds', False)
 
 
 #-----BEGIN: Switcher-----

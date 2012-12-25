@@ -3,32 +3,46 @@ Refresh and restore everywhere
 ### Home
 - Icons in start page
 - Icons in toolbar
+
 ###Unity
+
 ####Launcher
 - Restore button
+
 ####Dash
 - Lenses check buttons (5)
 - Install button
 - Lenses check buttons (4)
+
 ####Panel
 - Switch
 - Spin
 - Date grid (4)
+
 ###Compiz
+
 ####General
+
 #####Zoom
 - Scale
+
 ####Hotcorners
 - Cairo bits from Sam Tran
+
 ####Windows snapping
 - Cairo bits from Sam Tran
+
 ###Theme
+
 ####System
 - Nothing done here
+
 ####Cursor
 - Still empty
+
 ####Icon
 - Empty
+
 ### Desktop settings
   - Restore button
   - Two settings
@@ -37,7 +51,11 @@ Refresh and restore everywhere
 
 #### Search
  - Actual implementation of search
+
 #### Appmenu
+
 #### Quicklist
+
 #### Tooltips
+
 #### Packaging
