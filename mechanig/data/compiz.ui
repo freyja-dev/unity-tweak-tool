@@ -76,52 +76,6 @@
                     <property name="position">1</property>
                   </packing>
                 </child>
-                <child>
-                  <object class="GtkGrid" id="grid_compiz_zoom">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="margin_left">14</property>
-                    <child>
-                      <object class="GtkLabel" id="l_default_zoom_level">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="margin_right">7</property>
-                        <property name="margin_top">6</property>
-                        <property name="xalign">1</property>
-                        <property name="label" translatable="yes">Default zoom level:</property>
-                      </object>
-                      <packing>
-                        <property name="left_attach">0</property>
-                        <property name="top_attach">0</property>
-                        <property name="width">1</property>
-                        <property name="height">1</property>
-                      </packing>
-                    </child>
-                    <child>
-                      <object class="GtkScale" id="sc_zoom_level">
-                        <property name="width_request">180</property>
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="margin_top">7</property>
-                        <property name="adjustment">adj_zoom_level</property>
-                        <property name="round_digits">1</property>
-                        <property name="draw_value">False</property>
-                        <signal name="value-changed" handler="on_sc_zoom_level_value_changed" swapped="no"/>
-                      </object>
-                      <packing>
-                        <property name="left_attach">1</property>
-                        <property name="top_attach">0</property>
-                        <property name="width">1</property>
-                        <property name="height">1</property>
-                      </packing>
-                    </child>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">2</property>
-                  </packing>
-                </child>
               </object>
               <packing>
                 <property name="expand">False</property>

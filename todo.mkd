@@ -15,16 +15,9 @@ Refresh and restore everywhere
 - Lenses check buttons (4)
 
 ####Panel
-- Switch
-- Spin
 - Date grid (4)
 
 ###Compiz
-
-####General
-
-#####Zoom
-- Scale
 
 ####Hotcorners
 - Cairo bits from Sam Tran
@@ -50,7 +43,6 @@ Refresh and restore everywhere
 ---------
 
 #### Search
- - Actual implementation of search
 
 #### Appmenu
 

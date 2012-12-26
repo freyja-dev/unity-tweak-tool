@@ -148,7 +148,34 @@ class Unitysettings ():
 
         self.ui['sw_launcher_show_desktop'].set_active(True if 'unity://desktop-icon' in self.launcher.get_strv('favorites') else False)
 
+
+        # Unity dash settings
+
+        dash_blur = self.unityshell.get_int('dash-blur-experimental')
+
+        dependants=['radio_dash_blur_smart',
+                    'radio_dash_blur_static',
+                    'l_dash_blur_type']
+
+        if dash_blur == 0:
+            self.ui['sw_dash_blur'].set_active(False)
+            self.ui.unsensitize(dependants)
+
+        elif dash_blur == 1:
+            self.ui['sw_dash_blur'].set_active(True)
+            self.ui.sensitize(dependants)
+            self.ui['radio_dash_blur_static'].set_active(True)
+
+        else:
+            self.ui['sw_dash_blur'].set_active(True)
+            self.ui.sensitize(dependants)
+            self.ui['radio_dash_blur_smart'].set_active(True)
+
+        del dependants
+
         # Refreshing Unity panel settings
+
+        self.ui['spin_menu_visible'].set_value(self.unityshell.get_int('menus-discovery-duration'))
 
         dependants=['l_transparent_panel',
                     'sc_panel_transparency',
@@ -163,6 +190,11 @@ class Unitysettings ():
         self.ui['sc_panel_transparency'].set_value(opacity)
         del dependants
         del opacity
+
+        self.ui['check_indicator_username'].set_active(self.session.get_boolean('show-real-name-on-panel'))
+        self.ui['check_indicator_batterytime'].set_active(self.power.get_boolean('show-time'))
+
+        self.ui['check_panel_opaque'].set_active(self.unityshell.get_boolean('panel-opacity-maximized-toggle'))
 
         time_format = self.datetime.get_string('time-format')
 
@@ -408,39 +440,47 @@ class Unitysettings ():
     def on_sw_dash_blur_active_notify(self,widget,udata=None):
         dependants=['radio_dash_blur_smart',
                     'radio_dash_blur_static',
-                    'l_dash_blur']
+                    'l_dash_blur_type']
 
         if self.ui['sw_dash_blur'].get_active():
             self.ui.sensitize(dependants)
-            self.unityshell.set_int('dash-blur-experimental',1)
+            self.unityshell.set_int('dash-blur-experimental',2)
+            self.ui['radio_dash_blur_smart'].set_active(True)
 
         else:
             self.ui.unsensitize(dependants)
             self.unityshell.set_int('dash-blur-experimental',0)
 
     def on_radio_dash_blur_smart_toggled(self,button,udata=None):
-        mode=1 if button.get_active() else 2
+
+        mode=2 if button.get_active() else 1
         self.unityshell.set_int('dash-blur-experimental',mode)
 
 
 #-----BEGIN: Panel -----
 
-    def on_sw_appmenu_autohide_active_notify(self,widget,udata=None):
-        dependants=['spin_menu_visible','l_menu_visible']
+    def on_spin_menu_visible_value_changed(self, widget, udata=None):
 
-        if widget.get_active():
-            self.ui.sensitize(dependants)
+        seconds=self.ui['spin_menu_visible'].get_value()
+        self.unityshell.set_int('menus-discovery-duration',seconds)
 
-        else:
-            self.ui.unsensitize(dependants)
 
-    # selective selection in unity-panel  part 2
+    # selective selection in unity-panel  part 1
 
     def on_sw_transparent_panel_active_notify(self,widget,udata=None):
-        dependants=['sc_panel_transparency','l_transparent_panel','check_panel_opaque']
+        dependants=['sc_panel_transparency',
+                    'l_transparent_panel',
+                    'check_panel_opaque']
 
         if widget.get_active():
             self.ui.sensitize(dependants)
+
+            # Design call from me4oslav to do the following if the switch is turned on
+
+            if self.unityshell.get_double('panel-opacity') == 1.0:
+                self.ui['sc_panel_transparency'].set_value(0.67)
+                self.unityshell.set_double('panel-opacity',0.33)
+            self.ui['check_panel_opaque'].set_active(True)
 
         else:
             self.ui.unsensitize(dependants)
