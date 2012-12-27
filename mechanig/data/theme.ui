@@ -46,6 +46,8 @@
                               <object class="GtkTreeView" id="tree_gtk">
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
+                                <property name="tooltip_markup" translatable="yes">List of GTK Themes</property>
+                                <property name="tooltip_text" translatable="yes">List of GTK Themes</property>
                                 <property name="headers_clickable">False</property>
                                 <property name="search_column">0</property>
                                 <property name="show_expanders">False</property>
@@ -87,6 +89,8 @@
                               <object class="GtkTreeView" id="tree_windows">
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
+                                <property name="tooltip_markup" translatable="yes">List of Window decoration themes</property>
+                                <property name="tooltip_text" translatable="yes">List of Window decoration themes</property>
                                 <property name="headers_clickable">False</property>
                                 <property name="search_column">0</property>
                                 <child internal-child="selection">
@@ -136,6 +140,8 @@
                   <object class="GtkToolButton" id="add-toolbutton1">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="tooltip_markup" translatable="yes">Install theme(s)</property>
+                    <property name="tooltip_text" translatable="yes">Install theme(s)</property>
                     <property name="label" translatable="yes">Add Theme</property>
                     <property name="use_underline">True</property>
                     <property name="icon_name">list-add-symbolic</property>
@@ -149,6 +155,8 @@
                   <object class="GtkToolButton" id="remove-toolbutton1">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="tooltip_markup" translatable="yes">Remove theme(s)</property>
+                    <property name="tooltip_text" translatable="yes">Remove theme(s)</property>
                     <property name="label" translatable="yes">Remove Theme</property>
                     <property name="use_underline">True</property>
                     <property name="icon_name">list-remove-symbolic</property>
@@ -167,10 +175,12 @@
             </child>
             <child>
               <object class="GtkCheckButton" id="check_simultaneous">
-                <property name="label" translatable="yes">Change simultaneously</property>
+                <property name="label" translatable="yes">Match themes</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">False</property>
+                <property name="tooltip_markup" translatable="yes">When enabled, the GTK Theme is matched to its default Window decorations.</property>
+                <property name="tooltip_text" translatable="yes">When enabled, the GTK Theme is matched to its default Window decorations.</property>
                 <property name="margin_top">6</property>
                 <property name="relief">half</property>
                 <property name="use_underline">True</property>
@@ -189,6 +199,8 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="tooltip_markup" translatable="yes">Restore system's default theme configurations</property>
+                <property name="tooltip_text" translatable="yes">Restore system's default theme configurations</property>
                 <property name="halign">start</property>
                 <property name="margin_top">6</property>
                 <property name="use_underline">True</property>
@@ -229,6 +241,8 @@
                   <object class="GtkTreeView" id="treeview2">
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
+                    <property name="tooltip_markup" translatable="yes">List of icon themes</property>
+                    <property name="tooltip_text" translatable="yes">List of icon themes</property>
                     <child internal-child="selection">
                       <object class="GtkTreeSelection" id="treeview-selection2"/>
                     </child>
@@ -254,6 +268,8 @@
                   <object class="GtkToolButton" id="add-toolbutton">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="tooltip_markup" translatable="yes">Install icon theme(s)</property>
+                    <property name="tooltip_text" translatable="yes">Install icon theme(s)</property>
                     <property name="label" translatable="yes">Add Theme</property>
                     <property name="use_underline">True</property>
                     <property name="icon_name">list-add-symbolic</property>
@@ -267,6 +283,8 @@
                   <object class="GtkToolButton" id="remove-toolbutton">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="tooltip_markup" translatable="yes">Remove icon theme(s)</property>
+                    <property name="tooltip_text" translatable="yes">Remove icon theme(s)</property>
                     <property name="label" translatable="yes">Remove Theme</property>
                     <property name="use_underline">True</property>
                     <property name="icon_name">list-remove-symbolic</property>
@@ -289,6 +307,8 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="tooltip_markup" translatable="yes">Restore system's default icon theme configurations</property>
+                <property name="tooltip_text" translatable="yes">Restore system's default icon theme configurations</property>
                 <property name="halign">start</property>
                 <property name="margin_top">6</property>
                 <property name="use_underline">True</property>
@@ -333,6 +353,8 @@
                   <object class="GtkTreeView" id="treeview5">
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
+                    <property name="tooltip_markup" translatable="yes">List of cursor themes</property>
+                    <property name="tooltip_text" translatable="yes">List of cursor themes</property>
                     <child internal-child="selection">
                       <object class="GtkTreeSelection" id="treeview-selection3"/>
                     </child>
@@ -358,6 +380,8 @@
                   <object class="GtkToolButton" id="add-toolbutton2">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="tooltip_markup" translatable="yes">Install cursor theme(s)</property>
+                    <property name="tooltip_text" translatable="yes">Install cursor theme(s)</property>
                     <property name="label" translatable="yes">Add Theme</property>
                     <property name="use_underline">True</property>
                     <property name="icon_name">list-add-symbolic</property>
@@ -371,6 +395,8 @@
                   <object class="GtkToolButton" id="remove-toolbutton2">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="tooltip_markup" translatable="yes">Remove cursor theme(s)</property>
+                    <property name="tooltip_text" translatable="yes">Remove cursor theme(s)</property>
                     <property name="label" translatable="yes">Remove Theme</property>
                     <property name="use_underline">True</property>
                     <property name="icon_name">list-remove-symbolic</property>
@@ -393,6 +419,8 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="tooltip_markup" translatable="yes">Restore system's default cursor theme configurations</property>
+                <property name="tooltip_text" translatable="yes">Restore system's default cursor theme configurations</property>
                 <property name="halign">start</property>
                 <property name="margin_top">6</property>
                 <property name="use_underline">True</property>
@@ -435,8 +463,8 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
-                    <property name="tooltip_text" translatable="yes">Should the launcher show a "Show Desktop" symbol?</property>
+                    <property name="tooltip_markup" translatable="yes">Select the default font for all applications.</property>
+                    <property name="tooltip_text" translatable="yes">Select the default font for all applications.</property>
                     <property name="margin_right">6</property>
                     <property name="margin_top">6</property>
                     <property name="xalign">1</property>
@@ -454,8 +482,8 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
-                    <property name="tooltip_text" translatable="yes">Should the launcher show a "Show Desktop" symbol?</property>
+                    <property name="tooltip_markup" translatable="yes">Select the factor used to enlarge or reduce text display, without changing font size.</property>
+                    <property name="tooltip_text" translatable="yes">Select the factor used to enlarge or reduce text display, without changing font size.</property>
                     <property name="margin_right">6</property>
                     <property name="margin_top">6</property>
                     <property name="xalign">1</property>
@@ -473,8 +501,8 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
-                    <property name="tooltip_text" translatable="yes">Should the launcher show a "Show Desktop" symbol?</property>
+                    <property name="tooltip_markup" translatable="yes">Select the default font used for reading documents.</property>
+                    <property name="tooltip_text" translatable="yes">Select the default font used for reading documents.</property>
                     <property name="margin_right">6</property>
                     <property name="margin_top">6</property>
                     <property name="xalign">1</property>
@@ -492,8 +520,8 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
-                    <property name="tooltip_text" translatable="yes">Should the launcher show a "Show Desktop" symbol?</property>
+                    <property name="tooltip_markup" translatable="yes">Select the default monospace font.</property>
+                    <property name="tooltip_text" translatable="yes">Select the default monospace font.</property>
                     <property name="margin_right">6</property>
                     <property name="margin_top">6</property>
                     <property name="xalign">1</property>
@@ -511,8 +539,8 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
-                    <property name="tooltip_text" translatable="yes">Should the launcher show a "Show Desktop" symbol?</property>
+                    <property name="tooltip_markup" translatable="yes">Select the default font for the window titlebar.</property>
+                    <property name="tooltip_text" translatable="yes">Select the default font for the window titlebar.</property>
                     <property name="margin_right">6</property>
                     <property name="margin_top">6</property>
                     <property name="xalign">1</property>
@@ -530,8 +558,8 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
-                    <property name="tooltip_text" translatable="yes">Should the launcher show a "Show Desktop" symbol?</property>
+                    <property name="tooltip_markup" translatable="yes">Select tSelect the type of hinting to use when rendering fonts</property>
+                    <property name="tooltip_text" translatable="yes">Select tSelect the type of hinting to use when rendering fonts</property>
                     <property name="margin_right">6</property>
                     <property name="margin_top">6</property>
                     <property name="xalign">1</property>
@@ -549,8 +577,8 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
-                    <property name="tooltip_text" translatable="yes">Should the launcher show a "Show Desktop" symbol?</property>
+                    <property name="tooltip_markup" translatable="yes">Select the type of hinting to use when rendering fonts</property>
+                    <property name="tooltip_text" translatable="yes">Select the type of hinting to use when rendering fonts</property>
                     <property name="margin_right">6</property>
                     <property name="margin_top">6</property>
                     <property name="xalign">1</property>
@@ -723,6 +751,8 @@
           <object class="GtkLabel" id="l_page_theme_font">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="tooltip_markup" translatable="yes">Restore system's default font configurations</property>
+            <property name="tooltip_text" translatable="yes">Restore system's default font configurations</property>
             <property name="label" translatable="yes">Fonts</property>
           </object>
           <packing>

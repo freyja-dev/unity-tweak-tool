@@ -42,8 +42,8 @@
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="has_tooltip">True</property>
-            <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
-            <property name="tooltip_text" translatable="yes">Should the launcher show a "Show Desktop" symbol?</property>
+            <property name="tooltip_markup" translatable="yes">When enabled, the file manager will draw the desktop icons.</property>
+            <property name="tooltip_text" translatable="yes">When enabled, the file manager will draw the desktop icons.</property>
             <property name="halign">start</property>
             <property name="margin_left">10</property>
             <property name="margin_top">6</property>
@@ -65,6 +65,8 @@
               <object class="GtkLabel" id="l_desktop_icons_display">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
+                <property name="tooltip_markup" translatable="yes">A list of icons to display on the desktop</property>
+                <property name="tooltip_text" translatable="yes">A list of icons to display on the desktop</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
                 <property name="margin_top">6</property>
@@ -83,6 +85,8 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="receives_default">False</property>
+                <property name="tooltip_markup" translatable="yes">Show a shortcut to "Home Folder" on the desktop</property>
+                <property name="tooltip_text" translatable="yes">Show a shortcut to "Home Folder" on the desktop</property>
                 <property name="margin_left">18</property>
                 <property name="xalign">0</property>
                 <property name="draw_indicator">True</property>
@@ -96,10 +100,12 @@
             </child>
             <child>
               <object class="GtkCheckButton" id="check_desktop_networkserver">
-                <property name="label" translatable="yes">Network servers</property>
+                <property name="label" translatable="yes">Network</property>
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="receives_default">False</property>
+                <property name="tooltip_markup" translatable="yes">Show a shortcut to "Network" on the desktop</property>
+                <property name="tooltip_text" translatable="yes">Show a shortcut to "Network" on the desktop</property>
                 <property name="margin_left">18</property>
                 <property name="xalign">0</property>
                 <property name="draw_indicator">True</property>
@@ -117,6 +123,8 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="receives_default">False</property>
+                <property name="tooltip_markup" translatable="yes">Show a shortcut to "Trash" on the desktop</property>
+                <property name="tooltip_text" translatable="yes">Show a shortcut to "Trash" on the desktop</property>
                 <property name="margin_left">18</property>
                 <property name="xalign">0</property>
                 <property name="draw_indicator">True</property>
@@ -134,6 +142,8 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="receives_default">False</property>
+                <property name="tooltip_markup" translatable="yes">Show a shortcut to "Devices" on the desktop</property>
+                <property name="tooltip_text" translatable="yes">Show a shortcut to "Devices" on the desktop</property>
                 <property name="margin_left">18</property>
                 <property name="xalign">0</property>
                 <property name="draw_indicator">True</property>
@@ -175,6 +185,8 @@
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="receives_default">False</property>
+            <property name="tooltip_markup" translatable="yes">When enabled, icons on the Desktop will align to a grid</property>
+            <property name="tooltip_text" translatable="yes">When enabled, icons on the Desktop will align to a grid</property>
             <property name="margin_left">12</property>
             <property name="margin_top">6</property>
             <property name="xalign">0</property>
@@ -199,8 +211,8 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="has_tooltip">True</property>
-                <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
-                <property name="tooltip_text" translatable="yes">Should the launcher show a "Show Desktop" symbol?</property>
+                <property name="tooltip_markup" translatable="yes">Changes the size of the icons on the desktop</property>
+                <property name="tooltip_text" translatable="yes">Changes the size of the icons on the desktop</property>
                 <property name="margin_left">4</property>
                 <property name="margin_right">6</property>
                 <property name="xalign">1</property>
@@ -246,6 +258,8 @@
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="receives_default">True</property>
+            <property name="tooltip_markup" translatable="yes">Restore the default configurations for Desktop icons</property>
+            <property name="tooltip_text" translatable="yes">Restore the default configurations for Desktop icons</property>
             <property name="halign">start</property>
             <property name="margin_left">6</property>
             <property name="margin_top">12</property>

@@ -286,6 +286,8 @@
               <object class="GtkRadioToolButton" id="tool_startpage">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
+                <property name="tooltip_markup" translatable="yes">Show the Home panel</property>
+                <property name="tooltip_text" translatable="yes">Show the Home panel</property>
                 <property name="label" translatable="yes">Home</property>
                 <property name="use_underline">True</property>
                 <property name="icon_name">stock_paste</property>
@@ -303,6 +305,8 @@
               <object class="GtkRadioToolButton" id="tool_unitysettings">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
+                <property name="tooltip_markup" translatable="yes">Show the Unity settings panel</property>
+                <property name="tooltip_text" translatable="yes">Show the Unity settings panel</property>
                 <property name="label" translatable="yes">Unity</property>
                 <property name="use_underline">True</property>
                 <property name="icon_name">gtk-about</property>
@@ -318,6 +322,8 @@
               <object class="GtkRadioToolButton" id="tool_compizsettings">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
+                <property name="tooltip_markup" translatable="yes">Show the window manager settings panel</property>
+                <property name="tooltip_text" translatable="yes">Show the window manager settings panel</property>
                 <property name="label" translatable="yes">Window manager</property>
                 <property name="use_underline">True</property>
                 <property name="icon_name">gtk-fullscreen</property>
@@ -333,6 +339,8 @@
               <object class="GtkRadioToolButton" id="tool_themesettings">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
+                <property name="tooltip_markup" translatable="yes">Show the appearance settings panel</property>
+                <property name="tooltip_text" translatable="yes">Show the appearance settings panel</property>
                 <property name="label" translatable="yes">Appearance</property>
                 <property name="use_underline">True</property>
                 <property name="icon_name">gtk-select-color</property>
@@ -348,6 +356,8 @@
               <object class="GtkRadioToolButton" id="tool_desktopsettings">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
+                <property name="tooltip_markup" translatable="yes">Show the desktop settings panel</property>
+                <property name="tooltip_text" translatable="yes">Show the desktop settings panel</property>
                 <property name="label" translatable="yes">Desktop</property>
                 <property name="use_underline">True</property>
                 <property name="icon_name">gtk-preferences</property>
@@ -378,6 +388,8 @@
                   <object class="GtkEntry" id="tool_entry_search">
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
+                    <property name="tooltip_markup" translatable="yes">Search Mechanig</property>
+                    <property name="tooltip_text" translatable="yes">Search Mechanig</property>
                     <property name="margin_right">10</property>
                     <property name="hexpand">True</property>
                     <property name="max_length">20</property>

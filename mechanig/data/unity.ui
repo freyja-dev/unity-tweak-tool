@@ -173,7 +173,7 @@
                     <property name="margin_right">7</property>
                     <property name="margin_top">6</property>
                     <property name="xalign">1</property>
-                    <property name="label" translatable="yes">Auto-hide launcher:</property>
+                    <property name="label" translatable="yes">Auto-hide behaviour:</property>
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
@@ -188,8 +188,8 @@
                     <property name="sensitive">False</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
-                    <property name="tooltip_text" translatable="yes">Should the launcher show a "Show Desktop" symbol?</property>
+                    <property name="tooltip_markup" translatable="yes">The amount of "pressure" required to reveal the launcher with the mouse.</property>
+                    <property name="tooltip_text" translatable="yes">The amount of "pressure" required to reveal the launcher with the mouse.</property>
                     <property name="margin_right">7</property>
                     <property name="margin_top">6</property>
                     <property name="xalign">1</property>
@@ -203,52 +203,12 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="l_launcher_transparent_switch">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
-                    <property name="tooltip_text" translatable="yes">Should the launcher show a "Show Desktop" symbol?</property>
-                    <property name="margin_right">7</property>
-                    <property name="margin_top">6</property>
-                    <property name="xalign">1</property>
-                    <property name="ypad">4</property>
-                    <property name="label" translatable="yes">Transparent launcher:</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">4</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="l_launcher_transparency_scale">
-                    <property name="visible">True</property>
-                    <property name="sensitive">False</property>
-                    <property name="can_focus">False</property>
-                    <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
-                    <property name="tooltip_text" translatable="yes">Should the launcher show a "Show Desktop" symbol?</property>
-                    <property name="margin_right">7</property>
-                    <property name="margin_top">6</property>
-                    <property name="xalign">1</property>
-                    <property name="label" translatable="yes">Launcher transparency:</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">5</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
                   <object class="GtkLabel" id="l_launcher_visibility">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
-                    <property name="tooltip_text" translatable="yes">Should the launcher show a "Show Desktop" symbol?</property>
+                    <property name="tooltip_markup" translatable="yes">Select the locations which the will launcher visible </property>
+                    <property name="tooltip_text" translatable="yes">Select the locations which the will launcher visible </property>
                     <property name="margin_right">7</property>
                     <property name="margin_top">6</property>
                     <property name="xalign">1</property>
@@ -262,55 +222,13 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkSwitch" id="sw_launcher_transparent">
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
-                    <property name="tooltip_text" translatable="yes">Should the launcher show a "Show Desktop" symbol?</property>
-                    <property name="halign">start</property>
-                    <property name="margin_left">1</property>
-                    <property name="margin_top">7</property>
-                    <signal name="notify::active" handler="on_sw_launcher_transparent_active_notify" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">4</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkScale" id="sc_launcher_transparency">
-                    <property name="visible">True</property>
-                    <property name="sensitive">False</property>
-                    <property name="can_focus">True</property>
-                    <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">The transparency of the launcher. </property>
-                    <property name="tooltip_text" translatable="yes">The transparency of the launcher. </property>
-                    <property name="margin_left">3</property>
-                    <property name="margin_top">18</property>
-                    <property name="adjustment">adj_launcher_transparency</property>
-                    <property name="inverted">True</property>
-                    <property name="digits">2</property>
-                    <property name="draw_value">False</property>
-                    <signal name="value-changed" handler="on_sc_launcher_transparency_value_changed" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">5</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
                   <object class="GtkScale" id="sc_reveal_sensitivity">
                     <property name="visible">True</property>
                     <property name="sensitive">False</property>
                     <property name="can_focus">True</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">The opacity of the Launcher background. </property>
-                    <property name="tooltip_text" translatable="yes">The opacity of the Launcher background. </property>
+                    <property name="tooltip_markup" translatable="yes">How much "pressure" should required to reveal the launcher with the mouse.</property>
+                    <property name="tooltip_text" translatable="yes">How much "pressure" should required to reveal the launcher with the mouse.</property>
                     <property name="margin_left">3</property>
                     <property name="margin_top">18</property>
                     <property name="adjustment">adj_reveal_sensitivity</property>
@@ -331,6 +249,8 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="receives_default">True</property>
+                    <property name="tooltip_markup" translatable="yes">If selected, the launcher is visible on all desktops</property>
+                    <property name="tooltip_text" translatable="yes">If selected, the launcher is visible on all desktops</property>
                     <property name="margin_top">7</property>
                     <property name="xalign">0</property>
                     <property name="active">True</property>
@@ -350,6 +270,8 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="receives_default">False</property>
+                    <property name="tooltip_markup" translatable="yes">If selected, the launcher is visible on the primary desktop</property>
+                    <property name="tooltip_text" translatable="yes">If selected, the launcher is visible on the primary desktop</property>
                     <property name="xalign">0</property>
                     <property name="yalign">0.54000002145767212</property>
                     <property name="draw_indicator">True</property>
@@ -369,6 +291,8 @@
                     <property name="sensitive">False</property>
                     <property name="can_focus">False</property>
                     <property name="receives_default">False</property>
+                    <property name="tooltip_markup" translatable="yes">The top left corner of the current workspace</property>
+                    <property name="tooltip_text" translatable="yes">The top left corner of the current workspace</property>
                     <property name="xalign">0</property>
                     <property name="draw_indicator">True</property>
                     <property name="group">radio_reveal_left</property>
@@ -388,6 +312,8 @@
                     <property name="sensitive">False</property>
                     <property name="can_focus">False</property>
                     <property name="receives_default">True</property>
+                    <property name="tooltip_markup" translatable="yes">The left edge of the current workspace</property>
+                    <property name="tooltip_text" translatable="yes">The left edge of the current workspace</property>
                     <property name="margin_top">8</property>
                     <property name="xalign">0</property>
                     <property name="active">True</property>
@@ -407,8 +333,8 @@
                     <property name="sensitive">False</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
-                    <property name="tooltip_text" translatable="yes">Should the launcher show a "Show Desktop" symbol?</property>
+                    <property name="tooltip_markup" translatable="yes">Select the option to reveal the dash with the mouse, when auto-hide is enabled.</property>
+                    <property name="tooltip_text" translatable="yes">Select the option to reveal the dash with the mouse, when auto-hide is enabled.</property>
                     <property name="margin_right">7</property>
                     <property name="margin_top">6</property>
                     <property name="xalign">1</property>
@@ -451,8 +377,8 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
-                    <property name="tooltip_text" translatable="yes">Should the launcher show a "Show Desktop" symbol?</property>
+                    <property name="tooltip_markup" translatable="yes">Select the option for colouring the launcher</property>
+                    <property name="tooltip_text" translatable="yes">Select the option for colouring the launcher</property>
                     <property name="margin_left">1</property>
                     <property name="margin_right">6</property>
                     <property name="margin_top">6</property>
@@ -494,6 +420,8 @@
                   <object class="GtkSpinButton" id="spin_launcher_icon_size">
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
+                    <property name="tooltip_markup" translatable="yes">Select the size of the icons on the launcher</property>
+                    <property name="tooltip_text" translatable="yes">Select the size of the icons on the launcher</property>
                     <property name="halign">start</property>
                     <property name="margin_top">7</property>
                     <property name="invisible_char">•</property>
@@ -512,6 +440,8 @@
                   <object class="GtkComboBoxText" id="cbox_launcher_icon_colouring">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="tooltip_markup" translatable="yes">Select how the icons are coloured on the launcher</property>
+                    <property name="tooltip_text" translatable="yes">Select how the icons are coloured on the launcher</property>
                     <property name="margin_top">7</property>
                     <property name="active">1</property>
                     <property name="entry_text_column">0</property>
@@ -537,8 +467,8 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
-                    <property name="tooltip_text" translatable="yes">Should the launcher show a "Show Desktop" symbol?</property>
+                    <property name="tooltip_markup" translatable="yes">Select the size of the icons on the launcher</property>
+                    <property name="tooltip_text" translatable="yes">Select the size of the icons on the launcher</property>
                     <property name="margin_right">5</property>
                     <property name="margin_top">6</property>
                     <property name="xalign">1</property>
@@ -556,8 +486,8 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
-                    <property name="tooltip_text" translatable="yes">Should the launcher show a "Show Desktop" symbol?</property>
+                    <property name="tooltip_markup" translatable="yes">Select how the icons are coloured on the launcher</property>
+                    <property name="tooltip_text" translatable="yes">Select how the icons are coloured on the launcher</property>
                     <property name="margin_right">5</property>
                     <property name="margin_top">6</property>
                     <property name="xalign">1</property>
@@ -575,12 +505,12 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
-                    <property name="tooltip_text" translatable="yes">Should the launcher show a "Show Desktop" symbol?</property>
+                    <property name="tooltip_markup" translatable="yes">Show a "Show Desktop" button on the launcher</property>
+                    <property name="tooltip_text" translatable="yes">Show a "Show Desktop" button on the launcher</property>
                     <property name="margin_right">5</property>
                     <property name="margin_top">6</property>
                     <property name="xalign">1</property>
-                    <property name="label" translatable="yes">Show desktop icon:</property>
+                    <property name="label" translatable="yes">"Show desktop" icon:</property>
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
@@ -593,6 +523,8 @@
                   <object class="GtkSwitch" id="sw_launcher_show_desktop">
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
+                    <property name="tooltip_markup" translatable="yes">Show a "Show Desktop" button on the launcher?</property>
+                    <property name="tooltip_text" translatable="yes">Show a "Show Desktop" button on the launcher?</property>
                     <property name="halign">start</property>
                     <property name="margin_left">1</property>
                     <property name="margin_top">7</property>
@@ -615,6 +547,8 @@
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">False</property>
+                        <property name="tooltip_markup" translatable="yes">If selected, the launcher will be the colour chosen by the user</property>
+                        <property name="tooltip_text" translatable="yes">If selected, the launcher will be the colour chosen by the user</property>
                         <property name="xalign">0</property>
                         <property name="draw_indicator">True</property>
                         <property name="group">radio_launcher_color_cham</property>
@@ -649,6 +583,8 @@
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">False</property>
+                        <property name="tooltip_markup" translatable="yes">If selected, the launcher colour itself based on the desktop background</property>
+                        <property name="tooltip_text" translatable="yes">If selected, the launcher colour itself based on the desktop background</property>
                         <property name="margin_top">7</property>
                         <property name="xalign">0</property>
                         <property name="active">True</property>
@@ -681,6 +617,88 @@
                     <property name="height">2</property>
                   </packing>
                 </child>
+                <child>
+                  <object class="GtkScale" id="sc_launcher_transparency">
+                    <property name="visible">True</property>
+                    <property name="sensitive">False</property>
+                    <property name="can_focus">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip_markup" translatable="yes">How transparent should the launcher be?</property>
+                    <property name="tooltip_text" translatable="yes">How transparent should the launcher be?</property>
+                    <property name="margin_left">3</property>
+                    <property name="margin_top">18</property>
+                    <property name="adjustment">adj_launcher_transparency</property>
+                    <property name="inverted">True</property>
+                    <property name="digits">2</property>
+                    <property name="draw_value">False</property>
+                    <signal name="value-changed" handler="on_sc_launcher_transparency_value_changed" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">5</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="l_launcher_transparency_scale">
+                    <property name="visible">True</property>
+                    <property name="sensitive">False</property>
+                    <property name="can_focus">False</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip_markup" translatable="yes">Select the level of the transparency of the launcher</property>
+                    <property name="tooltip_text" translatable="yes">Select the level of the transparency of the launcher</property>
+                    <property name="margin_right">7</property>
+                    <property name="margin_top">6</property>
+                    <property name="xalign">1</property>
+                    <property name="label" translatable="yes">Transparency level:</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">5</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkSwitch" id="sw_launcher_transparent">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip_markup" translatable="yes">Enable launcher transparency?</property>
+                    <property name="tooltip_text" translatable="yes">Enable launcher transparency?</property>
+                    <property name="halign">start</property>
+                    <property name="margin_left">1</property>
+                    <property name="margin_top">7</property>
+                    <signal name="notify::active" handler="on_sw_launcher_transparent_active_notify" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">4</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="l_launcher_transparent_switch">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip_markup" translatable="yes">Enable launcher transparency?</property>
+                    <property name="tooltip_text" translatable="yes">Enable launcher transparency?</property>
+                    <property name="margin_right">7</property>
+                    <property name="margin_top">6</property>
+                    <property name="xalign">1</property>
+                    <property name="ypad">4</property>
+                    <property name="label" translatable="yes">Launcher transparency:</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">4</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -694,6 +712,8 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="receives_default">True</property>
+                <property name="tooltip_markup" translatable="yes">Restore default Unity launcher settings</property>
+                <property name="tooltip_text" translatable="yes">Restore default Unity launcher settings</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
                 <property name="margin_top">10</property>
@@ -723,318 +743,10 @@
             <property name="can_focus">False</property>
             <property name="orientation">vertical</property>
             <child>
-              <object class="GtkGrid" id="grid_unity_dash">
+              <object class="GtkGrid" id="grid_unity_dash_blur">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="margin_left">20</property>
-                <child>
-                  <object class="GtkSwitch" id="sw_dash_blur">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="halign">start</property>
-                    <property name="margin_right">1</property>
-                    <property name="margin_top">7</property>
-                    <signal name="notify::active" handler="on_sw_dash_blur_active_notify" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">0</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkRadioButton" id="radio_dash_blur_smart">
-                    <property name="label" translatable="yes">Smart</property>
-                    <property name="visible">True</property>
-                    <property name="sensitive">False</property>
-                    <property name="can_focus">False</property>
-                    <property name="receives_default">False</property>
-                    <property name="margin_right">1</property>
-                    <property name="margin_top">6</property>
-                    <property name="xalign">0</property>
-                    <property name="active">True</property>
-                    <property name="draw_indicator">True</property>
-                    <signal name="toggled" handler="on_radio_dash_blur_smart_toggled" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">1</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="l_dash_blur">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
-                    <property name="tooltip_text" translatable="yes">Should the launcher show a "Show Desktop" symbol?</property>
-                    <property name="margin_right">6</property>
-                    <property name="margin_top">6</property>
-                    <property name="xalign">1</property>
-                    <property name="label" translatable="yes">Dash blur:</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">0</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkCheckButton" id="check_photolens">
-                    <property name="label" translatable="yes">Photo lens</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="xalign">0</property>
-                    <property name="draw_indicator">True</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">4</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkCheckButton" id="check_videolens">
-                    <property name="label" translatable="yes">Video lens</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="xalign">0</property>
-                    <property name="draw_indicator">True</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">5</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkButton" id="b_install_lens">
-                    <property name="label" translatable="yes">Install more lenses</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">True</property>
-                    <property name="margin_left">1</property>
-                    <property name="margin_top">6</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">6</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="l_lens_suggestions">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
-                    <property name="tooltip_text" translatable="yes">Should the launcher show a "Show Desktop" symbol?</property>
-                    <property name="margin_left">2</property>
-                    <property name="margin_right">6</property>
-                    <property name="margin_top">6</property>
-                    <property name="xalign">1</property>
-                    <property name="label" translatable="yes">Show "More suggestions" in:</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">7</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkCheckButton" id="check_suggestions_home">
-                    <property name="label" translatable="yes">Home lens</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="margin_top">6</property>
-                    <property name="xalign">0</property>
-                    <property name="draw_indicator">True</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">7</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkCheckButton" id="check_suggestions_app">
-                    <property name="label" translatable="yes">Application lens</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="xalign">0</property>
-                    <property name="draw_indicator">True</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">8</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkCheckButton" id="check_suggestions_video">
-                    <property name="label" translatable="yes">Video lens</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="xalign">0</property>
-                    <property name="draw_indicator">True</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">9</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkCheckButton" id="check_suggestions_music">
-                    <property name="label" translatable="yes">Music lens</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="xalign">0</property>
-                    <property name="draw_indicator">True</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">10</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="l_lenses_photo_empty">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">4</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="l_lenses_video_empty">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">5</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="l_lenses_install_lens_empty">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">6</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="l_suggestions_app_empty">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">8</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="l_suggestions_music_empty">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">10</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="l_suggestions_video_empty">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">9</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="l_lenses">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
-                    <property name="tooltip_text" translatable="yes">Should the launcher show a "Show Desktop" symbol?</property>
-                    <property name="margin_left">2</property>
-                    <property name="margin_right">6</property>
-                    <property name="xalign">1</property>
-                    <property name="label" translatable="yes">Lenses:</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">3</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkCheckButton" id="check_musiclens">
-                    <property name="label" translatable="yes">Music lens</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="xalign">0</property>
-                    <property name="draw_indicator">True</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">3</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="l_dash_blur_type_empty">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">2</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
+                <property name="margin_left">15</property>
                 <child>
                   <object class="GtkRadioButton" id="radio_dash_blur_static">
                     <property name="label" translatable="yes">Static</property>
@@ -1055,12 +767,62 @@
                   </packing>
                 </child>
                 <child>
+                  <object class="GtkRadioButton" id="radio_dash_blur_smart">
+                    <property name="label" translatable="yes">Smart</property>
+                    <property name="visible">True</property>
+                    <property name="sensitive">False</property>
+                    <property name="can_focus">False</property>
+                    <property name="receives_default">False</property>
+                    <property name="margin_right">1</property>
+                    <property name="margin_top">6</property>
+                    <property name="xalign">0</property>
+                    <property name="active">True</property>
+                    <property name="draw_indicator">True</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">1</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkSwitch" id="sw_dash_blur">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="tooltip_markup" translatable="yes">Enable dash blur?</property>
+                    <property name="tooltip_text" translatable="yes">Enable dash blur?</property>
+                    <property name="halign">start</property>
+                    <property name="margin_right">1</property>
+                    <property name="margin_top">7</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">0</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="l_dash_blur_type_empty">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">2</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
                   <object class="GtkLabel" id="l_dash_blur_type">
+                    <property name="width_request">180</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
-                    <property name="tooltip_text" translatable="yes">Should the launcher show a "Show Desktop" symbol?</property>
+                    <property name="tooltip_markup" translatable="yes">Select the type of blur in the dash</property>
+                    <property name="tooltip_text" translatable="yes">Select the type of blur in the dash</property>
                     <property name="halign">end</property>
                     <property name="margin_right">6</property>
                     <property name="margin_top">6</property>
@@ -1074,11 +836,303 @@
                     <property name="height">1</property>
                   </packing>
                 </child>
+                <child>
+                  <object class="GtkLabel" id="l_dash_blur">
+                    <property name="width_request">180</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip_markup" translatable="yes">Enable dash blur?</property>
+                    <property name="tooltip_text" translatable="yes">Enable dash blur?</property>
+                    <property name="margin_right">6</property>
+                    <property name="margin_top">6</property>
+                    <property name="xalign">1</property>
+                    <property name="label" translatable="yes">Dash blur:</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">0</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
               </object>
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">0</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkGrid" id="grid_unity_dash_lenses">
+                <property name="width_request">0</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="margin_left">15</property>
+                <child>
+                  <object class="GtkCheckButton" id="check_videolens">
+                    <property name="label" translatable="yes">Video lens</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">False</property>
+                    <property name="tooltip_markup" translatable="yes">If enabled, the Video lens is visible in the Dash</property>
+                    <property name="tooltip_text" translatable="yes">If enabled, the Video lens is visible in the Dash</property>
+                    <property name="xalign">0</property>
+                    <property name="draw_indicator">True</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">2</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkCheckButton" id="check_photolens">
+                    <property name="label" translatable="yes">Photo lens</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">False</property>
+                    <property name="tooltip_markup" translatable="yes">If enabled, the Photo lens is visible in the Dash</property>
+                    <property name="tooltip_text" translatable="yes">If enabled, the Photo lens is visible in the Dash</property>
+                    <property name="xalign">0</property>
+                    <property name="draw_indicator">True</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">1</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkCheckButton" id="check_musiclens">
+                    <property name="label" translatable="yes">Music lens</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">False</property>
+                    <property name="tooltip_markup" translatable="yes">If enabled, the Music lens is visible in the Dash</property>
+                    <property name="tooltip_text" translatable="yes">If enabled, the Music lens is visible in the Dash</property>
+                    <property name="xalign">0</property>
+                    <property name="draw_indicator">True</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">0</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="l_lenses_photo_empty">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">2</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="l_lenses_video_empty">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">1</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="l_lenses">
+                    <property name="width_request">180</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip_markup" translatable="yes">Select which lenses are enabled in the Dash</property>
+                    <property name="tooltip_text" translatable="yes">Select which lenses are enabled in the Dash</property>
+                    <property name="margin_left">2</property>
+                    <property name="margin_right">6</property>
+                    <property name="xalign">1</property>
+                    <property name="label" translatable="yes">Visible lenses:</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">0</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b_install_lens">
+                <property name="label" translatable="yes">Install more lenses...</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="has_tooltip">True</property>
+                <property name="tooltip_markup" translatable="yes">Show all lenses available to install via the Ubuntu Software Centre</property>
+                <property name="tooltip_text" translatable="yes">Show all lenses available to install via the Ubuntu Software Centre</property>
+                <property name="halign">start</property>
+                <property name="margin_left">200</property>
+                <property name="margin_top">6</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkGrid" id="grid_unity_lenses_suggestions">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="margin_left">15</property>
+                <child>
+                  <object class="GtkCheckButton" id="check_suggestions_music">
+                    <property name="label" translatable="yes">Music lens</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">False</property>
+                    <property name="tooltip_markup" translatable="yes">If selected, "More Suggestions" are visible in the Music lens</property>
+                    <property name="tooltip_text" translatable="yes">If selected, "More Suggestions" are visible in the Music lens</property>
+                    <property name="xalign">0</property>
+                    <property name="draw_indicator">True</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">3</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkCheckButton" id="check_suggestions_video">
+                    <property name="label" translatable="yes">Video lens</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">False</property>
+                    <property name="tooltip_markup" translatable="yes">If selected, "More Suggestions" are visible in the Video lens</property>
+                    <property name="tooltip_text" translatable="yes">If selected, "More Suggestions" are visible in the Video lens</property>
+                    <property name="xalign">0</property>
+                    <property name="draw_indicator">True</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">2</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkCheckButton" id="check_suggestions_app">
+                    <property name="label" translatable="yes">Application lens</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">False</property>
+                    <property name="tooltip_markup" translatable="yes">If selected, "More Suggestions" are visible in the Applications lens</property>
+                    <property name="tooltip_text" translatable="yes">If selected, "More Suggestions" are visible in the Applications lens</property>
+                    <property name="xalign">0</property>
+                    <property name="draw_indicator">True</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">1</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkCheckButton" id="check_suggestions_home">
+                    <property name="label" translatable="yes">Home lens</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">False</property>
+                    <property name="tooltip_markup" translatable="yes">If selected, "More Suggestions" are visible in the Home lens</property>
+                    <property name="tooltip_text" translatable="yes">If selected, "More Suggestions" are visible in the Home lens</property>
+                    <property name="margin_top">6</property>
+                    <property name="xalign">0</property>
+                    <property name="draw_indicator">True</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">0</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="l_suggestions_music_empty">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">3</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="l_suggestions_video_empty">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">2</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="l_suggestions_app_empty">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">1</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="l_lens_suggestions">
+                    <property name="width_request">180</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip_markup" translatable="yes">Select which lenses display "More Suggestions"</property>
+                    <property name="tooltip_text" translatable="yes">Select which lenses display "More Suggestions"</property>
+                    <property name="margin_left">2</property>
+                    <property name="margin_right">6</property>
+                    <property name="margin_top">6</property>
+                    <property name="xalign">1</property>
+                    <property name="label" translatable="yes">Show "More suggestions" in:</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">0</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">7</property>
               </packing>
             </child>
             <child>
@@ -1087,6 +1141,8 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="receives_default">True</property>
+                <property name="tooltip_markup" translatable="yes">Restore the default Dash configurations</property>
+                <property name="tooltip_text" translatable="yes">Restore the default Dash configurations</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
                 <property name="margin_top">10</property>
@@ -1095,7 +1151,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">3</property>
+                <property name="position">8</property>
               </packing>
             </child>
           </object>
@@ -1130,8 +1186,8 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
-                    <property name="tooltip_text" translatable="yes">Should the launcher show a "Show Desktop" symbol?</property>
+                    <property name="tooltip_markup" translatable="yes">Select how long the application menu is visible when an application is first opened</property>
+                    <property name="tooltip_text" translatable="yes">Select how long the application menu is visible when an application is first opened</property>
                     <property name="margin_right">6</property>
                     <property name="margin_top">6</property>
                     <property name="xalign">1</property>
@@ -1149,8 +1205,8 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
-                    <property name="tooltip_text" translatable="yes">Should the launcher show a "Show Desktop" symbol?</property>
+                    <property name="tooltip_markup" translatable="yes">Enable transparency for the panel?</property>
+                    <property name="tooltip_text" translatable="yes">Enable transparency for the panel?</property>
                     <property name="margin_right">6</property>
                     <property name="margin_top">6</property>
                     <property name="xalign">1</property>
@@ -1169,8 +1225,8 @@
                     <property name="sensitive">False</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
-                    <property name="tooltip_text" translatable="yes">Should the launcher show a "Show Desktop" symbol?</property>
+                    <property name="tooltip_markup" translatable="yes">Set the level of transparency for the panel</property>
+                    <property name="tooltip_text" translatable="yes">Set the level of transparency for the panel</property>
                     <property name="margin_right">6</property>
                     <property name="margin_top">6</property>
                     <property name="xalign">1</property>
@@ -1206,6 +1262,8 @@
                   <object class="GtkSwitch" id="sw_transparent_panel">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="tooltip_markup" translatable="yes">Enable transparency for the panel?</property>
+                    <property name="tooltip_text" translatable="yes">Enable transparency for the panel?</property>
                     <property name="halign">start</property>
                     <property name="margin_left">1</property>
                     <property name="margin_top">8</property>
@@ -1220,11 +1278,13 @@
                 </child>
                 <child>
                   <object class="GtkCheckButton" id="check_panel_opaque">
-                    <property name="label" translatable="yes">Opaque menu for maximized windows</property>
+                    <property name="label" translatable="yes">Opaque panel for maximized windows</property>
                     <property name="visible">True</property>
                     <property name="sensitive">False</property>
                     <property name="can_focus">False</property>
                     <property name="receives_default">False</property>
+                    <property name="tooltip_markup" translatable="yes">If selected, the panel will be opaque for maximized windows</property>
+                    <property name="tooltip_text" translatable="yes">If selected, the panel will be opaque for maximized windows</property>
                     <property name="margin_top">2</property>
                     <property name="xalign">0</property>
                     <property name="draw_indicator">True</property>
@@ -1239,10 +1299,12 @@
                 </child>
                 <child>
                   <object class="GtkCheckButton" id="check_indicator_username">
-                    <property name="label" translatable="yes">Display name</property>
+                    <property name="label" translatable="yes">Display user's real name</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="receives_default">False</property>
+                    <property name="tooltip_markup" translatable="yes">If enabled, the user's real name will appear in the panel</property>
+                    <property name="tooltip_text" translatable="yes">If enabled, the user's real name will appear in the panel</property>
                     <property name="margin_top">9</property>
                     <property name="xalign">0</property>
                     <property name="draw_indicator">True</property>
@@ -1257,10 +1319,12 @@
                 </child>
                 <child>
                   <object class="GtkCheckButton" id="check_indicator_batterytime">
-                    <property name="label" translatable="yes">Show remaining battery time</property>
+                    <property name="label" translatable="yes">Display remaining battery life</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="receives_default">False</property>
+                    <property name="tooltip_markup" translatable="yes">If enabled, the remaining percentage of battery life will appear in the panel</property>
+                    <property name="tooltip_text" translatable="yes">If enabled, the remaining percentage of battery life will appear in the panel</property>
                     <property name="margin_top">4</property>
                     <property name="xalign">0</property>
                     <property name="draw_indicator">True</property>
@@ -1278,6 +1342,8 @@
                     <property name="visible">True</property>
                     <property name="sensitive">False</property>
                     <property name="can_focus">False</property>
+                    <property name="tooltip_markup" translatable="yes">How transparent should the panel be?</property>
+                    <property name="tooltip_text" translatable="yes">How transparent should the panel be?</property>
                     <property name="margin_left">3</property>
                     <property name="margin_top">9</property>
                     <property name="adjustment">adj_panel_transparency</property>
@@ -1373,11 +1439,14 @@
               <object class="GtkGrid" id="grid_panel_showdate">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="margin_left">214</property>
+                <property name="halign">start</property>
+                <property name="margin_left">140</property>
                 <child>
                   <object class="GtkComboBoxText" id="cbox_timeformat">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="tooltip_markup" translatable="yes">Select the date-time format</property>
+                    <property name="tooltip_text" translatable="yes">Select the date-time format</property>
                     <property name="entry_text_column">0</property>
                     <property name="id_column">1</property>
                     <items>
@@ -1426,6 +1495,8 @@
                   <object class="GtkComboBoxText" id="cbox_showdate">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="tooltip_markup" translatable="yes">Select whether to hide or show the date</property>
+                    <property name="tooltip_text" translatable="yes">Select whether to hide or show the date</property>
                     <property name="entry_text_column">0</property>
                     <property name="id_column">1</property>
                     <items>
@@ -1465,7 +1536,8 @@
               <object class="GtkGrid" id="grid_panel_timeformat">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="margin_left">214</property>
+                <property name="halign">start</property>
+                <property name="margin_left">140</property>
                 <property name="margin_top">5</property>
                 <child>
                   <object class="GtkComboBoxText" id="cbox_formattime">
@@ -1550,6 +1622,8 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="receives_default">True</property>
+                <property name="tooltip_markup" translatable="yes">Restore the default Unity panel settings</property>
+                <property name="tooltip_text" translatable="yes">Restore the default Unity panel settings</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
                 <property name="margin_top">10</property>
@@ -1600,7 +1674,7 @@
                         <property name="margin_left">6</property>
                         <property name="margin_top">6</property>
                         <property name="xalign">0</property>
-                        <property name="label" translatable="yes">Window switcher:</property>
+                        <property name="label" translatable="yes">Window switcher</property>
                         <attributes>
                           <attribute name="weight" value="bold"/>
                         </attributes>
@@ -1623,6 +1697,8 @@
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
+                            <property name="tooltip_markup" translatable="yes">If enabled, the window switcher cycles through all windows on all workspaces</property>
+                            <property name="tooltip_text" translatable="yes">If enabled, the window switcher cycles through all windows on all workspaces</property>
                             <property name="xalign">0</property>
                             <property name="draw_indicator">True</property>
                             <signal name="toggled" handler="on_check_switchwindows_all_workspaces_toggled" swapped="no"/>
@@ -1640,6 +1716,8 @@
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
+                            <property name="tooltip_markup" translatable="yes">If enabled, show the "Show Desktop" option in the window switcher</property>
+                            <property name="tooltip_text" translatable="yes">If enabled, show the "Show Desktop" option in the window switcher</property>
                             <property name="xalign">0</property>
                             <property name="draw_indicator">True</property>
                             <signal name="toggled" handler="on_check_switcher_showdesktop_toggled" swapped="no"/>
@@ -1657,6 +1735,8 @@
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
+                            <property name="tooltip_markup" translatable="yes">If enabled, the window switcher will switch through minimized windows</property>
+                            <property name="tooltip_text" translatable="yes">If enabled, the window switcher will switch through minimized windows</property>
                             <property name="xalign">0</property>
                             <property name="draw_indicator">True</property>
                             <signal name="toggled" handler="on_check_minimizedwindows_switch_toggled" swapped="no"/>
@@ -1674,6 +1754,8 @@
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
+                            <property name="tooltip_markup" translatable="yes">If enabled, the window switcher will expose minimized windows</property>
+                            <property name="tooltip_text" translatable="yes">If enabled, the window switcher will expose minimized windows</property>
                             <property name="xalign">0</property>
                             <property name="draw_indicator">True</property>
                             <signal name="toggled" handler="on_check_autoexposewindows_toggled" swapped="no"/>
@@ -1704,6 +1786,8 @@
                           <object class="GtkTreeView" id="treeview_unity_switcher_windows">
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
+                            <property name="tooltip_markup" translatable="yes">List of window switcher shortcuts</property>
+                            <property name="tooltip_text" translatable="yes">List of window switcher shortcuts</property>
                             <property name="model">list_unity_switcher_windows_accelerators</property>
                             <property name="headers_visible">False</property>
                             <property name="headers_clickable">False</property>
@@ -1767,7 +1851,7 @@
                         <property name="margin_left">6</property>
                         <property name="margin_top">6</property>
                         <property name="xalign">0</property>
-                        <property name="label" translatable="yes">Launcher switcher:</property>
+                        <property name="label" translatable="yes">Launcher keyboard shortcuts:</property>
                         <attributes>
                           <attribute name="weight" value="bold"/>
                         </attributes>
@@ -1790,12 +1874,14 @@
                           <object class="GtkTreeView" id="treeview_unity_switcher_launcher">
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
+                            <property name="tooltip_markup" translatable="yes">List of launcher switcher shortcuts</property>
+                            <property name="tooltip_text" translatable="yes">List of launcher switcher shortcuts</property>
                             <property name="model">list_unity_switcher_launcher_accelerators</property>
                             <property name="headers_visible">False</property>
                             <property name="headers_clickable">False</property>
                             <property name="search_column">0</property>
                             <child internal-child="selection">
-                              <object class="GtkTreeSelection" id="treeview-selection1"/>
+                              <object class="GtkTreeSelection" id="treeview-selection2"/>
                             </child>
                             <child>
                               <object class="GtkTreeViewColumn" id="treeview_unity_switcher_launcher_column_title">
@@ -1900,6 +1986,8 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="receives_default">False</property>
+                    <property name="tooltip_markup" translatable="yes">When enabled, pressing the Super key displays an overlay of all Unity keyboard shortcuts</property>
+                    <property name="tooltip_text" translatable="yes">When enabled, pressing the Super key displays an overlay of all Unity keyboard shortcuts</property>
                     <property name="xalign">0</property>
                     <property name="draw_indicator">True</property>
                     <signal name="toggled" handler="on_check_shortcuts_hints_overlay_toggled" swapped="no"/>
@@ -1930,12 +2018,14 @@
                   <object class="GtkTreeView" id="treeview_unity_additional">
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
+                    <property name="tooltip_markup" translatable="yes">List of Unity keyboard shortcuts</property>
+                    <property name="tooltip_text" translatable="yes">List of Unity keyboard shortcuts</property>
                     <property name="model">list_unity_additional_accelerators</property>
                     <property name="headers_visible">False</property>
                     <property name="headers_clickable">False</property>
                     <property name="search_column">0</property>
                     <child internal-child="selection">
-                      <object class="GtkTreeSelection" id="treeview-selection2"/>
+                      <object class="GtkTreeSelection" id="treeview-selection4"/>
                     </child>
                     <child>
                       <object class="GtkTreeViewColumn" id="treeview_unity_additional_column_title">
@@ -1980,6 +2070,8 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="receives_default">True</property>
+                <property name="tooltip_markup" translatable="yes">Restore the default Unity keyboard shortcut settings</property>
+                <property name="tooltip_text" translatable="yes">Restore the default Unity keyboard shortcut settings</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
                 <property name="margin_top">10</property>
