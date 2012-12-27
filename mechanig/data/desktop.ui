@@ -21,8 +21,6 @@
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="has_tooltip">True</property>
-            <property name="tooltip_markup" translatable="yes">Should the launcher show a &amp;quot;Show Desktop&amp;quot; symbol?</property>
-            <property name="tooltip_text" translatable="yes">Should the launcher show a "Show Desktop" symbol?</property>
             <property name="halign">start</property>
             <property name="margin_right">6</property>
             <property name="xalign">1</property>

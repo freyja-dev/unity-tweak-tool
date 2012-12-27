@@ -731,6 +731,8 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="receives_default">True</property>
+                <property name="tooltip_markup" translatable="yes">Restore system's default font configurations</property>
+                <property name="tooltip_text" translatable="yes">Restore system's default font configurations</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
                 <property name="margin_top">12</property>
@@ -751,8 +753,6 @@
           <object class="GtkLabel" id="l_page_theme_font">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="tooltip_markup" translatable="yes">Restore system's default font configurations</property>
-            <property name="tooltip_text" translatable="yes">Restore system's default font configurations</property>
             <property name="label" translatable="yes">Fonts</property>
           </object>
           <packing>

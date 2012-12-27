@@ -474,23 +474,21 @@ class Unitysettings ():
 
         if widget.get_active():
             self.ui.sensitize(dependants)
+            self.ui['check_panel_opaque'].set_active(True)
 
             # Design call from me4oslav to do the following if the switch is turned on
-        
-            if self.ui['sc_panel_transparency'].get_value() == 1.0:                
+
+            if self.ui['sc_panel_transparency'].get_value() == 1.0:
                 self.ui['sc_panel_transparency'].set_value(0.67)
                 self.unityshell.set_double('panel-opacity',0.33)
-            
+
             else:
                 panel_transparency = self.ui['sc_panel_transparency'].get_value()
                 self.unityshell.set_double('panel-opacity', panel_transparency)
-                
-            self.ui['check_panel_opaque'].set_active(True)
 
         else:
             self.ui.unsensitize(dependants)
             self.unityshell.set_double('panel-opacity',1.00)
-            #self.ui['sc_panel_transparency'].set_value(1.00)
 
     def on_sc_panel_transparency_value_changed(self,widget,udata=None):
         panel_transparency=widget.get_value()
