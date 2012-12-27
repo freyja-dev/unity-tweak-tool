@@ -53,7 +53,6 @@ class Mechanig ():
 
         self.builder.connect_signals(self)
         self.ui['mechanig_main'].set_resizable(False)
-        #self.ui['nb_mechanig'].set_show_tabs(False)
 
         self.notebook = self.ui['nb_mechanig']
 
@@ -62,8 +61,6 @@ class Mechanig ():
         self.compizsettings = Compizsettings(self.ui)
         self.themesettings = Themesettings(self.ui)
         self.desktopsettings = Desktopsettings(self.ui)
-
-        #self.box.pack_end(self.start, True, True, 0)
 
         self.notebook.append_page(self.startpage.page, None)
         self.notebook.append_page(self.unitysettings.page, None)

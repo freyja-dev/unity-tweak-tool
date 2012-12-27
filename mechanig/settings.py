@@ -29,7 +29,6 @@
 # this program; if not, see <https://www.gnu.org/licenses/gpl-3.0.txt>
 
 from os import path
-#import xdg, xdg.BaseDirectory
 
 UI_DIR = path.join(path.dirname(path.abspath(__file__)), 'data')
 assert path.isdir(UI_DIR)
