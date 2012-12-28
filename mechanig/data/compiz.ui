@@ -1399,16 +1399,37 @@
     </columns>
     <data>
       <row>
-        <col id="0" translatable="yes">Do nothing</col>
+        <col id="0" translatable="yes">Do Nothing</col>
       </row>
       <row>
-        <col id="0" translatable="yes">Show the desktop</col>
+        <col id="0" translatable="yes">Bottom Left Corner</col>
       </row>
       <row>
-        <col id="0" translatable="yes">Activate workspace switcher</col>
+        <col id="0" translatable="yes">Bottom Half</col>
       </row>
       <row>
-        <col id="0" translatable="yes">Activate window snapping</col>
+        <col id="0" translatable="yes">Bottom Right Corner</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Left Half</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Fill Screen</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Right Half</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Top Left Corner</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Top Half</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Top Right Corner</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Maximize</col>
       </row>
     </data>
   </object>
