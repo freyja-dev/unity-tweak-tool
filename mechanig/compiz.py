@@ -55,8 +55,7 @@ class Compizsettings ():
 
 # Initialise Cairo bits
         self.window_snapping_drawable = self.ui['draw_window_snapping']
-        self._base_window_snapping_surface = cairo.ImageSurface.create_from_png(os.path.join(settings.UI_DIR,
-                                                                                              'monitor-window-snapping.png'))
+        self._base_window_snapping_surface = cairo.ImageSurface.create_from_png(os.path.join(settings.UI_DIR, 'monitor-window-snapping.png'))
 
         self.window_snapping_cboxes = {
             'cbox_window_snapping_top': 0,
@@ -176,6 +175,8 @@ class Compizsettings ():
         self.window_snapping_cboxes[cbox_id] = combobox.get_active()
         self.window_snapping_drawable.queue_draw()
 
+
+
 #=====================================================================#
 #                                Helpers                              #
 #=====================================================================#
@@ -220,6 +221,8 @@ class Compizsettings ():
 
         del model, close_window_key, iter_close_window_key, initiate_key, iter_initiate_key, show_desktop_key, iter_show_desktop_key
 
+        # refreshing workspace settings
+
         hsize = gsettings.core.get_int('hsize')
         vsize = gsettings.core.get_int('vsize')
 
@@ -245,6 +248,8 @@ class Compizsettings ():
         model.set_value(iter_expo_key, 1, expo_key)
 
         del model, expo_key, iter_expo_key
+
+        # refreshing windows spread settings
 
         plugins = gsettings.core.get_strv('active-plugins')
         if 'scale' in plugins:
@@ -273,6 +278,28 @@ class Compizsettings ():
         model.set_value(iter_initiate_all_key, 1, initiate_all_key)
 
         del model, initiate_key, iter_initiate_key, initiate_all_key, iter_initiate_all_key
+
+        # refreshing window snapping settings
+
+        plugins = gsettings.core.get_strv('active-plugins')
+        if 'grid' in plugins:
+            self.ui['sw_window_snapping'].set_active(True)
+        else:
+            self.ui['sw_window_snapping'].set_active(False)
+        del plugins
+
+        color = gsettings.grid.get_string('fill-color')
+        valid, gdkcolor = Gdk.Color.parse(color[:-2])
+        if valid:
+            self.ui['color_fill_color'].set_color(gdkcolor)
+        del color, valid, gdkcolor
+
+        color = gsettings.grid.get_string('outline-color')
+        valid, gdkcolor = Gdk.Color.parse(color[:-2])
+        if valid:
+            self.ui['color_outline_color'].set_color(gdkcolor)
+        del color, valid, gdkcolor
+
 
 # TODO : Find a clever way or set each one manually.
 # Do it the dumb way now. BIIIG refactoring needed later.
@@ -510,6 +537,76 @@ class Compizsettings ():
         gsettings.scale.reset('initiate-key')
         gsettings.scale.reset('initiate-all-key')
         self.refresh()
+
+    # Compiz - Window snapping
+    def on_sw_window_snapping_active_notify(self, widget, udata=None):
+
+        plugins = gsettings.core.get_strv('active-plugins')
+
+        if widget.get_active():
+            if 'grid' not in plugins:
+                plugins.append('grid')
+                gsettings.core.set_strv('active-plugins', plugins)
+
+        else:
+            if 'grid' in plugins:
+                plugins.remove('grid')
+                gsettings.core.set_strv('active-plugins', plugins)
+
+    def on_color_outline_color_color_set(self, widget, udata=None):
+        color = self.ui['color_outline_color'].get_color()
+        colorhash = self.color_to_hash(color)
+        gsettings.grid.set_string('outline-color', colorhash)
+
+    def on_color_fill_color_color_set(self, widget, udata=None):
+        color = self.ui['color_fill_color'].get_color()
+        colorhash = self.color_to_hash(color)
+        gsettings.grid.set_string('fill-color', colorhash)
+
+    def on_cbox_window_snapping_top_changed (self, widget, udata = None):
+
+        mode = self.ui['cbox_window_snapping_top'].get_active()
+
+        show_desktop = gsettings.core.get_string('show-desktop-edge')
+        expo = gsettings.expo.get_string('expo-edge')
+
+        if mode == 0:
+
+            gsettings.grid.set_string('top-edge-action', None)
+
+            if 'Top' in show_desktop:
+                show_desktop_edge = show_desktop.replace("Top","")
+                gsettings.core.set_string('show-desktop-edge', show_desktop_edge)
+            if 'Top' in expo:
+                expo_edge = expo.replace("Top","")
+                gsettings.expo.set_string('expo-edge', expo_edge)
+
+        elif mode == 1:
+
+            if show_desktop != 'None':
+                show_desktop_edge = show_desktop+'|'+'Top'
+                gsettings.core.set_string('show-desktop-edge', show_desktop_edge)
+            else:
+                gsettings.core.set_string('show-desktop-edge', 'Top')
+
+        elif mode == 2:
+
+            if expo != None:
+                expo_edge = expo+'|'+'Top'
+                gsettings.expo.set_string('expo-edge',expo_edge)
+            else:
+                gsettings.expo.set_string('expo-edge', 'Top')
+
+        else:
+            gsettings.grid.set_string('top-edge-action', Maximize)
+
+    def on_b_compiz_windowsnapping_reset_clicked(self, widget):
+        gsettings.core.reset('active-plugins')
+        gsettings.core.reset('show-desktop-edge')
+        gsettings.expo.reset('expo-edge')
+        gsettings.grid.reset('fill-color')
+        gsettings.grid.reset('outline-color')
+        gsettings.grid.reset('top-edge-action')
 
 if __name__ == '__main__':
 # Fire up the Engines
