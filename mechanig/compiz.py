@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 #
 # Team:
-#   J Phani Mahesh <phanimahesh@gmail.com> 
-#   Barneedhar (jokerdino) <barneedhar@ubuntu.com> 
+#   J Phani Mahesh <phanimahesh@gmail.com>
+#   Barneedhar (jokerdino) <barneedhar@ubuntu.com>
 #   Amith KK <amithkumaran@gmail.com>
 #   Georgi Karavasilev <motorslav@gmail.com>
 #   Sam Tran <samvtran@gmail.com>
@@ -43,7 +43,7 @@ class Compizsettings ():
         '''Handler Initialisations.
         Obtain all references here.'''
         self.builder = Gtk.Builder()
-        self.glade = (os.path.join(settings.UI_DIR, 
+        self.glade = (os.path.join(settings.UI_DIR,
                                     'compiz.ui'))
         self.container = container
 # TODO : Use os module to resolve to the full path.
@@ -58,22 +58,22 @@ class Compizsettings ():
         self._base_window_snapping_surface = cairo.ImageSurface.create_from_png(os.path.join(settings.UI_DIR, 'monitor-window-snapping.png'))
 
         self.window_snapping_cboxes = {
-            'cbox_window_snapping_top': 0,
-            'cbox_window_snapping_topleft': 0,
-            'cbox_window_snapping_left': 0,
-            'cbox_window_snapping_bottomleft': 0,
-            'cbox_window_snapping_bottom': 0,
-            'cbox_window_snapping_topright': 0,
-            'cbox_window_snapping_right': 0,
-            'cbox_window_snapping_bottomright': 0
+            'cbox_window_snapping_top': [0, 'top-edge-action'],
+            'cbox_window_snapping_topleft': [0, 'top-left-corner-action'],
+            'cbox_window_snapping_left': [0, 'left-edge-action'],
+            'cbox_window_snapping_bottomleft': [0, 'bottom-left-corner-action'],
+            'cbox_window_snapping_bottom': [0, 'bottom-edge-action'],
+            'cbox_window_snapping_topright': [0, 'top-right-corner-action'],
+            'cbox_window_snapping_right': [0, 'right-edge-action'],
+            'cbox_window_snapping_bottomright': [0, 'bottom-right-corner-action']
         }
 
 # TODO grab active corners from the backend and set the values in
 # self.window_snapping_cboxes appropriately
         for box in self.window_snapping_cboxes:
-            self.ui[box].set_active(self.window_snapping_cboxes[box])
+            self.window_snapping_cboxes[box][0] = gsettings.grid.get_int(self.window_snapping_cboxes[box][1])
+            self.ui[box].set_active(self.window_snapping_cboxes[box][0])
             self.ui[box].connect("changed", self.on_cbox_window_snapping_changed, box)
-
 
         self.builder.connect_signals(self)
         self.refresh()
@@ -81,7 +81,6 @@ class Compizsettings ():
     def on_draw_window_snapping_draw (self, window, cr):
 # TODO : Since this gets retrigged completely on queue_draw,
 # need to have it query for active hot corners
-
         x1 = 16
         y1 = 16
         x2 = 284
@@ -98,7 +97,7 @@ class Compizsettings ():
         cr.paint()
         cr.set_source_rgba(221/255, 72/255, 20/255);
 
-        if self.window_snapping_cboxes['cbox_window_snapping_top'] != 0:
+        if self.window_snapping_cboxes['cbox_window_snapping_top'][0] != 0:
             cr.new_path()
             cr.move_to(x3, y1)
             cr.line_to (x3 + top_bottom_width, y1)
@@ -106,7 +105,7 @@ class Compizsettings ():
             cr.arc(x3 + (top_bottom_width / 2), y1 - values['offset'], values['radius'], pi/4 , (3 * pi)/4)
             cr.fill_preserve()
 
-        if self.window_snapping_cboxes['cbox_window_snapping_topleft'] != 0:
+        if self.window_snapping_cboxes['cbox_window_snapping_topleft'][0] != 0:
             cr.new_path()
             cr.move_to(x1, y1)
             cr.line_to(x1 + corner_width, y1)
@@ -114,7 +113,7 @@ class Compizsettings ():
             cr.line_to(x1, y1)
             cr.fill_preserve()
 
-        if self.window_snapping_cboxes['cbox_window_snapping_left'] != 0:
+        if self.window_snapping_cboxes['cbox_window_snapping_left'][0] != 0:
             cr.new_path()
             cr.move_to(x1, y3 + left_right_width)
             cr.line_to(x1, y3)
@@ -122,7 +121,7 @@ class Compizsettings ():
             cr.arc(x1 - values['offset'], y3 + (left_right_width / 2), values['radius'], -pi/4, pi/4)
             cr.fill_preserve()
 
-        if self.window_snapping_cboxes['cbox_window_snapping_bottomleft'] != 0:
+        if self.window_snapping_cboxes['cbox_window_snapping_bottomleft'][0] != 0:
             cr.new_path()
             cr.move_to(x1, y2 - corner_width)
             cr.line_to(x1, y2)
@@ -130,7 +129,7 @@ class Compizsettings ():
             cr.arc(x1, y2, corner_width, - pi / 2, 0)
             cr.fill_preserve()
 
-        if self.window_snapping_cboxes['cbox_window_snapping_bottom'] != 0:
+        if self.window_snapping_cboxes['cbox_window_snapping_bottom'][0] != 0:
             cr.new_path()
             cr.move_to(x3 + top_bottom_width, y2)
             cr.line_to(x3, y2)
@@ -138,7 +137,7 @@ class Compizsettings ():
             cr.arc(x3 + (top_bottom_width / 2), y2 + values['offset'], values['radius'], (5 * pi) / 4, (7 * pi) / 4)
             cr.fill_preserve()
 
-        if self.window_snapping_cboxes['cbox_window_snapping_topright'] != 0:
+        if self.window_snapping_cboxes['cbox_window_snapping_topright'][0] != 0:
             cr.new_path()
             cr.move_to(x2, y1)
             cr.line_to(x2, y1 + corner_width)
@@ -146,7 +145,7 @@ class Compizsettings ():
             cr.line_to(x2, y1)
             cr.fill_preserve()
 
-        if self.window_snapping_cboxes['cbox_window_snapping_right'] != 0:
+        if self.window_snapping_cboxes['cbox_window_snapping_right'][0] != 0:
             # TODO : DRAW
             cr.new_path()
             cr.move_to(x2, y3)
@@ -155,7 +154,7 @@ class Compizsettings ():
             cr.arc(x2 + values['offset'], y3 + (left_right_width / 2), values['radius'], (3 * pi) / 4, (5 * pi) / 4)
             cr.fill_preserve()
 
-        if self.window_snapping_cboxes['cbox_window_snapping_bottomright'] != 0:
+        if self.window_snapping_cboxes['cbox_window_snapping_bottomright'][0] != 0:
             cr.new_path()
             cr.move_to(x2, y2)
             cr.line_to(x2 - corner_width, y2)
@@ -172,7 +171,8 @@ class Compizsettings ():
         }
 
     def on_cbox_window_snapping_changed (self, combobox, cbox_id):
-        self.window_snapping_cboxes[cbox_id] = combobox.get_active()
+        self.window_snapping_cboxes[cbox_id][0] = combobox.get_active()
+        gsettings.grid.set_int(self.window_snapping_cboxes[cbox_id][1], combobox.get_active())
         self.window_snapping_drawable.queue_draw()
 
 
@@ -312,7 +312,7 @@ class Compizsettings ():
 # Apologies Gnome devs, but Glade is not our favorite.      |
 #___________________________________________________________/
 
-# ===== BEGIN: Compiz settings ===== 
+# ===== BEGIN: Compiz settings =====
 #-----BEGIN: General -----
 
      # selective sensitivity in compiz - general
@@ -405,9 +405,9 @@ class Compizsettings ():
     # selective sensitivity in compiz - workspaces
 
     def on_sw_workspace_switcher_active_notify(self, widget, udata = None):
-        dependants = ['l_horizontal_desktop', 
-                    'l_vertical_desktop', 
-                    'spin_horizontal_desktop', 
+        dependants = ['l_horizontal_desktop',
+                    'l_vertical_desktop',
+                    'spin_horizontal_desktop',
                     'spin_vertical_desktop']
 
         if widget.get_active():
@@ -467,10 +467,10 @@ class Compizsettings ():
     # selective sensitivity in compiz - windows spread
 
     def on_sw_windows_spread_active_notify(self, widget, udata = None):
-        dependants = ['l_compiz_spacing', 
-                    'spin_compiz_spacing', 
-                    'check_overlay_emblem', 
-                    'check_click_desktop', 
+        dependants = ['l_compiz_spacing',
+                    'spin_compiz_spacing',
+                    'check_overlay_emblem',
+                    'check_click_desktop',
                     'scrolledwindow_compiz_window_spread']
 
         plugins = gsettings.core.get_strv('active-plugins')
@@ -498,7 +498,7 @@ class Compizsettings ():
             gsettings.scale.set_int('overlay-icon', 0)
 
     def on_check_click_desktop_toggled(self, widget):
-    
+
         if self.ui['check_click_desktop'].get_active():
             gsettings.scale.set_boolean('show-desktop', True)
         else:
@@ -562,43 +562,6 @@ class Compizsettings ():
         color = self.ui['color_fill_color'].get_color()
         colorhash = self.color_to_hash(color)
         gsettings.grid.set_string('fill-color', colorhash)
-
-    def on_cbox_window_snapping_top_changed (self, widget, udata = None):
-
-        mode = self.ui['cbox_window_snapping_top'].get_active()
-
-        show_desktop = gsettings.core.get_string('show-desktop-edge')
-        expo = gsettings.expo.get_string('expo-edge')
-
-        if mode == 0:
-
-            gsettings.grid.set_string('top-edge-action', None)
-
-            if 'Top' in show_desktop:
-                show_desktop_edge = show_desktop.replace("Top","")
-                gsettings.core.set_string('show-desktop-edge', show_desktop_edge)
-            if 'Top' in expo:
-                expo_edge = expo.replace("Top","")
-                gsettings.expo.set_string('expo-edge', expo_edge)
-
-        elif mode == 1:
-
-            if show_desktop != 'None':
-                show_desktop_edge = show_desktop+'|'+'Top'
-                gsettings.core.set_string('show-desktop-edge', show_desktop_edge)
-            else:
-                gsettings.core.set_string('show-desktop-edge', 'Top')
-
-        elif mode == 2:
-
-            if expo != None:
-                expo_edge = expo+'|'+'Top'
-                gsettings.expo.set_string('expo-edge',expo_edge)
-            else:
-                gsettings.expo.set_string('expo-edge', 'Top')
-
-        else:
-            gsettings.grid.set_string('top-edge-action', Maximize)
 
     def on_b_compiz_windowsnapping_reset_clicked(self, widget):
         gsettings.core.reset('active-plugins')
