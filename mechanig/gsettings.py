@@ -31,7 +31,7 @@ def color_to_hash(c):
         return "#{:02x}{:02x}{:02x}ff".format(*map(lambda x: round(x*255), [c.red_float, c.green_float, c.blue_float]))
     if isinstance(x, Gdk.RGBA):
         return "#{:02x}{:02x}{:02x}{:02x}".format(*map(lambda x: round(x*255), [c.red, c.green, c.blue, c.alpha]))
-    # If it is neither a Gdk.Color object nor a Gdk.RGBA objcect, 
+    # If it is neither a Gdk.Color object nor a Gdk.RGBA objcect,
     raise NotImplementedError
 
 # GSettings objects go here
@@ -52,3 +52,4 @@ scale = plugin('scale')
 expo = plugin('expo')
 move = plugin('move')
 zoom = plugin('ezoom')
+grid = plugin('grid')

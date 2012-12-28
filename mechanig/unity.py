@@ -41,7 +41,7 @@ class Unitysettings ():
         '''Handler Initialisations.
         Obtain all references here.'''
         self.builder = Gtk.Builder()
-        self.glade = (os.path.join(settings.UI_DIR, 
+        self.glade = (os.path.join(settings.UI_DIR,
                                     'unity.ui'))
         self.container = container
 # TODO : Use os module to resolve to the full path.
@@ -66,10 +66,10 @@ class Unitysettings ():
     def refresh(self):
         '''Reads the current config and refreshes the displayed values'''
     # Launcher
-        dependants = ['radio_reveal_left', 
-                    'radio_reveal_topleft', 
-                    'sc_reveal_sensitivity', 
-                    'l_launcher_reveal', 
+        dependants = ['radio_reveal_left',
+                    'radio_reveal_topleft',
+                    'sc_reveal_sensitivity',
+                    'l_launcher_reveal',
                     'l_launcher_reveal_sensitivity']
         if gsettings.unityshell.get_int('launcher-hide-mode'):
             self.ui['sw_launcher_hidemode'].set_active(True)
@@ -84,7 +84,7 @@ class Unitysettings ():
         self.ui['radio_reveal_topleft'].set_active(True if gsettings.unityshell.get_int('reveal-trigger') is 1 else False)
         self.ui['sc_reveal_sensitivity'].set_value(gsettings.unityshell.get_double('edge-responsiveness'))
 
-        dependants = ['l_launcher_transparency_scale', 
+        dependants = ['l_launcher_transparency_scale',
                     'sc_launcher_transparency']
         opacity = gsettings.unityshell.get_double('launcher-opacity')
         if opacity == 1:
@@ -125,8 +125,8 @@ class Unitysettings ():
 
         dash_blur = gsettings.unityshell.get_int('dash-blur-experimental')
 
-        dependants = ['radio_dash_blur_smart', 
-                    'radio_dash_blur_static', 
+        dependants = ['radio_dash_blur_smart',
+                    'radio_dash_blur_static',
                     'l_dash_blur_type']
 
         if dash_blur == 0:
@@ -149,8 +149,8 @@ class Unitysettings ():
 
         self.ui['spin_menu_visible'].set_value(gsettings.unityshell.get_int('menus-discovery-duration'))
 
-        dependants = ['l_transparent_panel', 
-                    'sc_panel_transparency', 
+        dependants = ['l_transparent_panel',
+                    'sc_panel_transparency',
                     'check_panel_opaque']
         opacity = gsettings.unityshell.get_double('panel-opacity')
         if opacity == 1:
@@ -230,6 +230,7 @@ class Unitysettings ():
         model.set_value(iter_alt_tab_next_window, 1, alt_tab_next_window)
 
         alt_tab_prev_window = gsettings.unityshell.get_string('alt-tab-prev-window')
+
         iter_alt_tab_prev_window = model.iter_next(iter_alt_tab_prev_window)
         model.set_value(iter_alt_tab_prev_window, 1, alt_tab_prev_window)
 
@@ -282,13 +283,13 @@ class Unitysettings ():
 
 
 
-#===== BEGIN: Unity settings ===== 
+#===== BEGIN: Unity settings =====
 #-----BEGIN: Launcher ----------
     def on_sw_launcher_hidemode_active_notify(self, widget, udata = None):
-        dependants = ['radio_reveal_left', 
-                    'radio_reveal_topleft', 
-                    'sc_reveal_sensitivity', 
-                    'l_launcher_reveal', 
+        dependants = ['radio_reveal_left',
+                    'radio_reveal_topleft',
+                    'sc_reveal_sensitivity',
+                    'l_launcher_reveal',
                     'l_launcher_reveal_sensitivity']
         if self.ui['sw_launcher_hidemode'].get_active():
             gsettings.unityshell.set_int("launcher-hide-mode", 1)
@@ -318,7 +319,7 @@ class Unitysettings ():
 # XXX : To be discussed and changed if necessary.
 
     def on_sw_launcher_transparent_active_notify(self, widget, udata = None):
-        dependants = ['l_launcher_transparency_scale', 
+        dependants = ['l_launcher_transparency_scale',
                     'sc_launcher_transparency']
         if self.ui['sw_launcher_transparent'].get_active():
             self.ui.sensitize(dependants)
@@ -383,8 +384,8 @@ class Unitysettings ():
 # ---------- BEGIN DASH
 
     def on_sw_dash_blur_active_notify(self, widget, udata = None):
-        dependants = ['radio_dash_blur_smart', 
-                    'radio_dash_blur_static', 
+        dependants = ['radio_dash_blur_smart',
+                    'radio_dash_blur_static',
                     'l_dash_blur_type']
 
         if self.ui['sw_dash_blur'].get_active():
@@ -413,8 +414,8 @@ class Unitysettings ():
     # selective selection in unity-panel  part 1
 
     def on_sw_transparent_panel_active_notify(self, widget, udata = None):
-        dependants = ['sc_panel_transparency', 
-                    'l_transparent_panel', 
+        dependants = ['sc_panel_transparency',
+                    'l_transparent_panel',
                     'check_panel_opaque']
 
         if widget.get_active():
