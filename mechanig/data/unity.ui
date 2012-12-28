@@ -746,7 +746,239 @@
               <object class="GtkGrid" id="grid_unity_dash_blur">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="margin_left">15</property>
+                <property name="margin_left">20</property>
+                <child>
+                  <object class="GtkCheckButton" id="check_suggestions_music">
+                    <property name="label" translatable="yes">Music lens</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">False</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip_markup" translatable="yes">If selected, &amp;quot;More Suggestions&amp;quot; are visible in the Music lens</property>
+                    <property name="tooltip_text" translatable="yes">If selected, "More Suggestions" are visible in the Music lens</property>
+                    <property name="xalign">0</property>
+                    <property name="draw_indicator">True</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">10</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkCheckButton" id="check_suggestions_video">
+                    <property name="label" translatable="yes">Video lens</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">False</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip_markup" translatable="yes">If selected, &amp;quot;More Suggestions&amp;quot; are visible in the Video lens</property>
+                    <property name="tooltip_text" translatable="yes">If selected, "More Suggestions" are visible in the Video lens</property>
+                    <property name="xalign">0</property>
+                    <property name="draw_indicator">True</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">9</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkCheckButton" id="check_suggestions_app">
+                    <property name="label" translatable="yes">Application lens</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">False</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip_markup" translatable="yes">If selected, &amp;quot;More Suggestions&amp;quot; are visible in the Applications lens</property>
+                    <property name="tooltip_text" translatable="yes">If selected, "More Suggestions" are visible in the Applications lens</property>
+                    <property name="xalign">0</property>
+                    <property name="draw_indicator">True</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">8</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkCheckButton" id="check_suggestions_home">
+                    <property name="label" translatable="yes">Home lens</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">False</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip_markup" translatable="yes">If selected, &amp;quot;More Suggestions&amp;quot; are visible in the Home lens</property>
+                    <property name="tooltip_text" translatable="yes">If selected, "More Suggestions" are visible in the Home lens</property>
+                    <property name="margin_top">6</property>
+                    <property name="xalign">0</property>
+                    <property name="draw_indicator">True</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">7</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="l_suggestions_music_empty">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">10</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="l_suggestions_video_empty">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">9</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="l_suggestions_app_empty">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">8</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="l_lens_suggestions">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip_markup" translatable="yes">Select which lenses display &amp;quot;More Suggestions&amp;quot;</property>
+                    <property name="tooltip_text" translatable="yes">Select which lenses display "More Suggestions"</property>
+                    <property name="margin_right">6</property>
+                    <property name="margin_top">6</property>
+                    <property name="xalign">1</property>
+                    <property name="label" translatable="yes">Show "More suggestions" in:</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">7</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkCheckButton" id="check_videolens">
+                    <property name="label" translatable="yes">Video lens</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">False</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip_markup" translatable="yes">If enabled, the Video lens is visible in the Dash</property>
+                    <property name="tooltip_text" translatable="yes">If enabled, the Video lens is visible in the Dash</property>
+                    <property name="xalign">0</property>
+                    <property name="draw_indicator">True</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">5</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkCheckButton" id="check_photolens">
+                    <property name="label" translatable="yes">Photo lens</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">False</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip_markup" translatable="yes">If enabled, the Photo lens is visible in the Dash</property>
+                    <property name="tooltip_text" translatable="yes">If enabled, the Photo lens is visible in the Dash</property>
+                    <property name="xalign">0</property>
+                    <property name="draw_indicator">True</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">4</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkCheckButton" id="check_musiclens">
+                    <property name="label" translatable="yes">Music lens</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">False</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip_markup" translatable="yes">If enabled, the Music lens is visible in the Dash</property>
+                    <property name="tooltip_text" translatable="yes">If enabled, the Music lens is visible in the Dash</property>
+                    <property name="xalign">0</property>
+                    <property name="draw_indicator">True</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">3</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="l_lenses_photo_empty">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">4</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="l_lenses_video_empty">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">5</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="l_lenses">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip_markup" translatable="yes">Select which lenses are enabled in the Dash</property>
+                    <property name="tooltip_text" translatable="yes">Select which lenses are enabled in the Dash</property>
+                    <property name="margin_left">2</property>
+                    <property name="margin_right">6</property>
+                    <property name="xalign">1</property>
+                    <property name="label" translatable="yes">Visible lenses:</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">3</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
                 <child>
                   <object class="GtkRadioButton" id="radio_dash_blur_static">
                     <property name="label" translatable="yes">Static</property>
@@ -819,7 +1051,6 @@
                 </child>
                 <child>
                   <object class="GtkLabel" id="l_dash_blur_type">
-                    <property name="width_request">180</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
@@ -840,7 +1071,6 @@
                 </child>
                 <child>
                   <object class="GtkLabel" id="l_dash_blur">
-                    <property name="width_request">180</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
@@ -858,302 +1088,56 @@
                     <property name="height">1</property>
                   </packing>
                 </child>
+                <child>
+                  <object class="GtkButton" id="b_install_lens">
+                    <property name="label" translatable="yes">Install more lenses...</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip_markup" translatable="yes">Show all lenses available to install via the Ubuntu Software Centre</property>
+                    <property name="tooltip_text" translatable="yes">Show all lenses available to install via the Ubuntu Software Centre</property>
+                    <property name="halign">start</property>
+                    <property name="margin_top">6</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">6</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="b_unity_dash_reset">
+                    <property name="label" translatable="yes">Restore defaults</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip_markup" translatable="yes">Restore the default Dash configurations</property>
+                    <property name="tooltip_text" translatable="yes">Restore the default Dash configurations</property>
+                    <property name="halign">start</property>
+                    <property name="margin_top">10</property>
+                    <property name="margin_bottom">10</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">11</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <placeholder/>
+                </child>
+                <child>
+                  <placeholder/>
+                </child>
               </object>
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
                 <property name="position">2</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkGrid" id="grid_unity_dash_lenses">
-                <property name="width_request">0</property>
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="margin_left">15</property>
-                <child>
-                  <object class="GtkCheckButton" id="check_videolens">
-                    <property name="label" translatable="yes">Video lens</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="tooltip_markup" translatable="yes">If enabled, the Video lens is visible in the Dash</property>
-                    <property name="tooltip_text" translatable="yes">If enabled, the Video lens is visible in the Dash</property>
-                    <property name="xalign">0</property>
-                    <property name="draw_indicator">True</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">2</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkCheckButton" id="check_photolens">
-                    <property name="label" translatable="yes">Photo lens</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="tooltip_markup" translatable="yes">If enabled, the Photo lens is visible in the Dash</property>
-                    <property name="tooltip_text" translatable="yes">If enabled, the Photo lens is visible in the Dash</property>
-                    <property name="xalign">0</property>
-                    <property name="draw_indicator">True</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">1</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkCheckButton" id="check_musiclens">
-                    <property name="label" translatable="yes">Music lens</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="tooltip_markup" translatable="yes">If enabled, the Music lens is visible in the Dash</property>
-                    <property name="tooltip_text" translatable="yes">If enabled, the Music lens is visible in the Dash</property>
-                    <property name="xalign">0</property>
-                    <property name="draw_indicator">True</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">0</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="l_lenses_photo_empty">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">2</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="l_lenses_video_empty">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">1</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="l_lenses">
-                    <property name="width_request">180</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">Select which lenses are enabled in the Dash</property>
-                    <property name="tooltip_text" translatable="yes">Select which lenses are enabled in the Dash</property>
-                    <property name="margin_left">2</property>
-                    <property name="margin_right">6</property>
-                    <property name="xalign">1</property>
-                    <property name="label" translatable="yes">Visible lenses:</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">0</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">4</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkButton" id="b_install_lens">
-                <property name="label" translatable="yes">Install more lenses...</property>
-                <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
-                <property name="has_tooltip">True</property>
-                <property name="tooltip_markup" translatable="yes">Show all lenses available to install via the Ubuntu Software Centre</property>
-                <property name="tooltip_text" translatable="yes">Show all lenses available to install via the Ubuntu Software Centre</property>
-                <property name="halign">start</property>
-                <property name="margin_left">200</property>
-                <property name="margin_top">6</property>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">False</property>
-                <property name="position">5</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkGrid" id="grid_unity_lenses_suggestions">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="margin_left">15</property>
-                <child>
-                  <object class="GtkCheckButton" id="check_suggestions_music">
-                    <property name="label" translatable="yes">Music lens</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="tooltip_markup" translatable="yes">If selected, "More Suggestions" are visible in the Music lens</property>
-                    <property name="tooltip_text" translatable="yes">If selected, "More Suggestions" are visible in the Music lens</property>
-                    <property name="xalign">0</property>
-                    <property name="draw_indicator">True</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">3</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkCheckButton" id="check_suggestions_video">
-                    <property name="label" translatable="yes">Video lens</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="tooltip_markup" translatable="yes">If selected, "More Suggestions" are visible in the Video lens</property>
-                    <property name="tooltip_text" translatable="yes">If selected, "More Suggestions" are visible in the Video lens</property>
-                    <property name="xalign">0</property>
-                    <property name="draw_indicator">True</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">2</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkCheckButton" id="check_suggestions_app">
-                    <property name="label" translatable="yes">Application lens</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="tooltip_markup" translatable="yes">If selected, "More Suggestions" are visible in the Applications lens</property>
-                    <property name="tooltip_text" translatable="yes">If selected, "More Suggestions" are visible in the Applications lens</property>
-                    <property name="xalign">0</property>
-                    <property name="draw_indicator">True</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">1</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkCheckButton" id="check_suggestions_home">
-                    <property name="label" translatable="yes">Home lens</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="tooltip_markup" translatable="yes">If selected, "More Suggestions" are visible in the Home lens</property>
-                    <property name="tooltip_text" translatable="yes">If selected, "More Suggestions" are visible in the Home lens</property>
-                    <property name="margin_top">6</property>
-                    <property name="xalign">0</property>
-                    <property name="draw_indicator">True</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">0</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="l_suggestions_music_empty">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">3</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="l_suggestions_video_empty">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">2</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="l_suggestions_app_empty">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">1</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="l_lens_suggestions">
-                    <property name="width_request">180</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">Select which lenses display "More Suggestions"</property>
-                    <property name="tooltip_text" translatable="yes">Select which lenses display "More Suggestions"</property>
-                    <property name="margin_left">2</property>
-                    <property name="margin_right">6</property>
-                    <property name="margin_top">6</property>
-                    <property name="xalign">1</property>
-                    <property name="label" translatable="yes">Show "More suggestions" in:</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">0</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">7</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkButton" id="b_unity_dash_reset">
-                <property name="label" translatable="yes">Restore defaults</property>
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="receives_default">True</property>
-                <property name="tooltip_markup" translatable="yes">Restore the default Dash configurations</property>
-                <property name="tooltip_text" translatable="yes">Restore the default Dash configurations</property>
-                <property name="halign">start</property>
-                <property name="margin_left">12</property>
-                <property name="margin_top">10</property>
-                <property name="margin_bottom">10</property>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">8</property>
               </packing>
             </child>
           </object>
@@ -1176,17 +1160,16 @@
           <object class="GtkBox" id="box_unity_panel">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="margin_right">16</property>
             <property name="vexpand">True</property>
             <property name="orientation">vertical</property>
             <child>
               <object class="GtkGrid" id="grid_panel_menu">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="margin_left">16</property>
+                <property name="margin_left">20</property>
+                <property name="margin_right">20</property>
                 <child>
                   <object class="GtkLabel" id="l_menu_visible">
-                    <property name="width_request">156</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
@@ -1279,27 +1262,6 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkCheckButton" id="check_panel_opaque">
-                    <property name="label" translatable="yes">Opaque panel for maximized windows</property>
-                    <property name="visible">True</property>
-                    <property name="sensitive">False</property>
-                    <property name="can_focus">False</property>
-                    <property name="receives_default">False</property>
-                    <property name="tooltip_markup" translatable="yes">If selected, the panel will be opaque for maximized windows</property>
-                    <property name="tooltip_text" translatable="yes">If selected, the panel will be opaque for maximized windows</property>
-                    <property name="margin_top">2</property>
-                    <property name="xalign">0</property>
-                    <property name="draw_indicator">True</property>
-                    <signal name="toggled" handler="on_check_panel_opaque_toggled" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">3</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
                   <object class="GtkCheckButton" id="check_indicator_username">
                     <property name="label" translatable="yes">Display user's real name</property>
                     <property name="visible">True</property>
@@ -1335,27 +1297,6 @@
                   <packing>
                     <property name="left_attach">1</property>
                     <property name="top_attach">5</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkScale" id="sc_panel_transparency">
-                    <property name="visible">True</property>
-                    <property name="sensitive">False</property>
-                    <property name="can_focus">False</property>
-                    <property name="tooltip_markup" translatable="yes">How transparent should the panel be?</property>
-                    <property name="tooltip_text" translatable="yes">How transparent should the panel be?</property>
-                    <property name="margin_left">3</property>
-                    <property name="margin_top">9</property>
-                    <property name="adjustment">adj_panel_transparency</property>
-                    <property name="inverted">True</property>
-                    <property name="draw_value">False</property>
-                    <signal name="value-changed" handler="on_sc_panel_transparency_value_changed" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">2</property>
                     <property name="width">1</property>
                     <property name="height">1</property>
                   </packing>
@@ -1429,236 +1370,299 @@
                     <property name="height">1</property>
                   </packing>
                 </child>
+                <child>
+                  <object class="GtkGrid" id="grid_panel_showdate">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkComboBoxText" id="cbox_timeformat">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="has_tooltip">True</property>
+                        <property name="tooltip_markup" translatable="yes">Select the date-time format</property>
+                        <property name="tooltip_text" translatable="yes">Select the date-time format</property>
+                        <property name="entry_text_column">0</property>
+                        <property name="id_column">1</property>
+                        <items>
+                          <item translatable="yes">ISO</item>
+                        </items>
+                      </object>
+                      <packing>
+                        <property name="left_attach">2</property>
+                        <property name="top_attach">0</property>
+                        <property name="width">1</property>
+                        <property name="height">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="l_formatdisplay">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="xpad">4</property>
+                        <property name="label" translatable="yes">format and display the </property>
+                      </object>
+                      <packing>
+                        <property name="left_attach">3</property>
+                        <property name="top_attach">0</property>
+                        <property name="width">1</property>
+                        <property name="height">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkComboBoxText" id="cbox_timepanel">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="entry_text_column">0</property>
+                        <property name="id_column">1</property>
+                        <items>
+                          <item translatable="yes">day, month and year</item>
+                        </items>
+                      </object>
+                      <packing>
+                        <property name="left_attach">4</property>
+                        <property name="top_attach">0</property>
+                        <property name="width">1</property>
+                        <property name="height">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkComboBoxText" id="cbox_showdate">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="has_tooltip">True</property>
+                        <property name="tooltip_markup" translatable="yes">Select whether to hide or show the date</property>
+                        <property name="tooltip_text" translatable="yes">Select whether to hide or show the date</property>
+                        <property name="entry_text_column">0</property>
+                        <property name="id_column">1</property>
+                        <items>
+                          <item translatable="yes">Show</item>
+                        </items>
+                      </object>
+                      <packing>
+                        <property name="left_attach">0</property>
+                        <property name="top_attach">0</property>
+                        <property name="width">1</property>
+                        <property name="height">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="l_showdatepresent">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="xalign">0.60000002384185791</property>
+                        <property name="xpad">4</property>
+                        <property name="label" translatable="yes">the date, presented in</property>
+                      </object>
+                      <packing>
+                        <property name="left_attach">1</property>
+                        <property name="top_attach">0</property>
+                        <property name="width">1</property>
+                        <property name="height">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">6</property>
+                    <property name="width">2</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkGrid" id="grid_panel_timeformat">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="margin_top">5</property>
+                    <child>
+                      <object class="GtkComboBoxText" id="cbox_formattime">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="entry_text_column">0</property>
+                        <property name="id_column">1</property>
+                        <items>
+                          <item translatable="yes">AM/PM</item>
+                          <item translatable="yes">24 hours</item>
+                          <item translatable="yes">Custom</item>
+                        </items>
+                        <signal name="changed" handler="on_cbox_formattime_changed" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="left_attach">0</property>
+                        <property name="top_attach">0</property>
+                        <property name="width">1</property>
+                        <property name="height">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkComboBoxText" id="cbox_time_seconds">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="entry_text_column">0</property>
+                        <property name="id_column">1</property>
+                        <items>
+                          <item translatable="yes">with</item>
+                          <item translatable="yes">without</item>
+                        </items>
+                        <signal name="changed" handler="on_cbox_time_seconds_changed" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="left_attach">2</property>
+                        <property name="top_attach">0</property>
+                        <property name="width">1</property>
+                        <property name="height">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="l_formattime">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="xalign">0.019999999552965164</property>
+                        <property name="xpad">4</property>
+                        <property name="label" translatable="yes">format time</property>
+                        <property name="justify">fill</property>
+                      </object>
+                      <packing>
+                        <property name="left_attach">1</property>
+                        <property name="top_attach">0</property>
+                        <property name="width">1</property>
+                        <property name="height">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="l_showseconds">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="xalign">0.25</property>
+                        <property name="xpad">4</property>
+                        <property name="label" translatable="yes">the seconds.</property>
+                      </object>
+                      <packing>
+                        <property name="left_attach">3</property>
+                        <property name="top_attach">0</property>
+                        <property name="width">1</property>
+                        <property name="height">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">7</property>
+                    <property name="width">2</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="b_unity_panel_reset">
+                    <property name="label" translatable="yes">Restore defaults</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip_markup" translatable="yes">Restore the default Unity panel settings</property>
+                    <property name="tooltip_text" translatable="yes">Restore the default Unity panel settings</property>
+                    <property name="halign">start</property>
+                    <property name="margin_top">10</property>
+                    <property name="margin_bottom">10</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">8</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkGrid" id="grid_panel_transparency_alignment">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkScale" id="sc_panel_transparency">
+                        <property name="visible">True</property>
+                        <property name="sensitive">False</property>
+                        <property name="can_focus">True</property>
+                        <property name="has_tooltip">True</property>
+                        <property name="tooltip_markup" translatable="yes">How transparent should the panel be?</property>
+                        <property name="tooltip_text" translatable="yes">How transparent should the panel be?</property>
+                        <property name="margin_left">3</property>
+                        <property name="margin_top">9</property>
+                        <property name="adjustment">adj_panel_transparency</property>
+                        <property name="inverted">True</property>
+                        <property name="draw_value">False</property>
+                        <signal name="value-changed" handler="on_sc_panel_transparency_value_changed" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="left_attach">0</property>
+                        <property name="top_attach">0</property>
+                        <property name="width">1</property>
+                        <property name="height">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkCheckButton" id="check_panel_opaque">
+                        <property name="label" translatable="yes">Opaque panel for maximized windows</property>
+                        <property name="visible">True</property>
+                        <property name="sensitive">False</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">False</property>
+                        <property name="has_tooltip">True</property>
+                        <property name="tooltip_markup" translatable="yes">If selected, the panel will be opaque for maximized windows</property>
+                        <property name="tooltip_text" translatable="yes">If selected, the panel will be opaque for maximized windows</property>
+                        <property name="margin_top">2</property>
+                        <property name="xalign">0</property>
+                        <property name="draw_indicator">True</property>
+                        <signal name="toggled" handler="on_check_panel_opaque_toggled" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="left_attach">0</property>
+                        <property name="top_attach">1</property>
+                        <property name="width">1</property>
+                        <property name="height">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">2</property>
+                    <property name="width">1</property>
+                    <property name="height">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <placeholder/>
+                </child>
+                <child>
+                  <placeholder/>
+                </child>
+                <child>
+                  <placeholder/>
+                </child>
+                <child>
+                  <placeholder/>
+                </child>
+                <child>
+                  <placeholder/>
+                </child>
+                <child>
+                  <placeholder/>
+                </child>
+                <child>
+                  <placeholder/>
+                </child>
+                <child>
+                  <placeholder/>
+                </child>
+                <child>
+                  <placeholder/>
+                </child>
+                <child>
+                  <placeholder/>
+                </child>
               </object>
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
                 <property name="padding">6</property>
                 <property name="position">0</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkGrid" id="grid_panel_showdate">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="halign">start</property>
-                <child>
-                  <object class="GtkComboBoxText" id="cbox_timeformat">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="tooltip_markup" translatable="yes">Select the date-time format</property>
-                    <property name="tooltip_text" translatable="yes">Select the date-time format</property>
-                    <property name="entry_text_column">0</property>
-                    <property name="id_column">1</property>
-                    <items>
-                      <item translatable="yes">ISO</item>
-                    </items>
-                  </object>
-                  <packing>
-                    <property name="left_attach">3</property>
-                    <property name="top_attach">0</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="l_formatdisplay">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="xpad">4</property>
-                    <property name="label" translatable="yes">format and display the </property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">4</property>
-                    <property name="top_attach">0</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkComboBoxText" id="cbox_timepanel">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="entry_text_column">0</property>
-                    <property name="id_column">1</property>
-                    <items>
-                      <item translatable="yes">day, month and year</item>
-                    </items>
-                  </object>
-                  <packing>
-                    <property name="left_attach">5</property>
-                    <property name="top_attach">0</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkComboBoxText" id="cbox_showdate">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="tooltip_markup" translatable="yes">Select whether to hide or show the date</property>
-                    <property name="tooltip_text" translatable="yes">Select whether to hide or show the date</property>
-                    <property name="entry_text_column">0</property>
-                    <property name="id_column">1</property>
-                    <items>
-                      <item translatable="yes">Show</item>
-                    </items>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">0</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="l_showdatepresent">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="xalign">0.60000002384185791</property>
-                    <property name="xpad">4</property>
-                    <property name="label" translatable="yes">the date, presented in</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">2</property>
-                    <property name="top_attach">0</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="l_showdate_empty">
-                    <property name="width_request">180</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">0</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">1</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkGrid" id="grid_panel_timeformat">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="halign">start</property>
-                <property name="margin_top">5</property>
-                <child>
-                  <object class="GtkComboBoxText" id="cbox_formattime">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="entry_text_column">0</property>
-                    <property name="id_column">1</property>
-                    <items>
-                      <item translatable="yes">AM/PM</item>
-                      <item translatable="yes">24 hours</item>
-                      <item translatable="yes">Custom</item>
-                    </items>
-                    <signal name="changed" handler="on_cbox_formattime_changed" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">0</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkComboBoxText" id="cbox_time_seconds">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="entry_text_column">0</property>
-                    <property name="id_column">1</property>
-                    <items>
-                      <item translatable="yes">with</item>
-                      <item translatable="yes">without</item>
-                    </items>
-                    <signal name="changed" handler="on_cbox_time_seconds_changed" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="left_attach">3</property>
-                    <property name="top_attach">0</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="l_formattime">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="xalign">0.019999999552965164</property>
-                    <property name="xpad">4</property>
-                    <property name="label" translatable="yes">format time</property>
-                    <property name="justify">fill</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">2</property>
-                    <property name="top_attach">0</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="l_showseconds">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="xalign">0.25</property>
-                    <property name="xpad">4</property>
-                    <property name="label" translatable="yes">the seconds.</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">4</property>
-                    <property name="top_attach">0</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="l_empty_timeformat">
-                    <property name="width_request">180</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">0</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">3</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkButton" id="b_unity_panel_reset">
-                <property name="label" translatable="yes">Restore defaults</property>
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="receives_default">True</property>
-                <property name="tooltip_markup" translatable="yes">Restore the default Unity panel settings</property>
-                <property name="tooltip_text" translatable="yes">Restore the default Unity panel settings</property>
-                <property name="halign">start</property>
-                <property name="margin_left">12</property>
-                <property name="margin_top">10</property>
-                <property name="margin_bottom">10</property>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">3</property>
               </packing>
             </child>
           </object>
