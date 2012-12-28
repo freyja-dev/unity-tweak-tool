@@ -9,27 +9,27 @@
   <object class="GtkImage" id="i_tool_compizsettings">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="pixbuf">icons/48/wm-settings-light_48.svg</property>
+    <property name="pixbuf">icons/36/wm-settings-light_36.svg</property>
   </object>
   <object class="GtkImage" id="i_tool_desktopsettings">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="pixbuf">icons/48/desktop-settings-light_48.svg</property>
+    <property name="pixbuf">icons/36/desktop-settings-light_36.svg</property>
   </object>
   <object class="GtkImage" id="i_tool_startpage">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="pixbuf">icons/48/home-light_48.svg</property>
+    <property name="pixbuf">icons/36/home-light_36.svg</property>
   </object>
   <object class="GtkImage" id="i_tool_themesettings">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="pixbuf">icons/48/appearance-settings-light_48.svg</property>
+    <property name="pixbuf">icons/36/appearance-settings-light_36.svg</property>
   </object>
   <object class="GtkImage" id="i_tool_unitysettings">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="pixbuf">icons/48/unity-settings-light_48.svg</property>
+    <property name="pixbuf">icons/36/unity-settings-light_36.svg</property>
   </object>
   <object class="GtkImage" id="image_menu_compiz_settings">
     <property name="visible">True</property>
@@ -309,7 +309,6 @@
             <property name="can_focus">False</property>
             <property name="toolbar_style">both</property>
             <property name="show_arrow">False</property>
-            <property name="icon_size">5</property>
             <style>
               <class name="primary-toolbar"/>
             </style>
@@ -317,7 +316,7 @@
               <object class="GtkRadioToolButton" id="tool_startpage">
                 <property name="use_action_appearance">False</property>
                 <property name="related_action">a_tool_startpage</property>
-                <property name="width_request">100</property>
+                <property name="width_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="tooltip_markup" translatable="yes">Show the Home panel</property>
@@ -339,7 +338,7 @@
               <object class="GtkRadioToolButton" id="tool_unitysettings">
                 <property name="use_action_appearance">False</property>
                 <property name="related_action">a_tool_unitysettings</property>
-                <property name="width_request">100</property>
+                <property name="width_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="tooltip_markup" translatable="yes">Show the Unity settings panel</property>
