@@ -230,7 +230,7 @@ class Unitysettings ():
         model.set_value(iter_alt_tab_next_window, 1, alt_tab_next_window)
 
         alt_tab_prev_window = gsettings.unityshell.get_string('alt-tab-prev-window')
-        iter_alt_tab_prev_window = model.iter_next(iter_alt_tab_prev_window)
+        iter_alt_tab_prev_window = model.iter_next(iter_alt_tab_next_window)
         model.set_value(iter_alt_tab_prev_window, 1, alt_tab_prev_window)
 
         del model
