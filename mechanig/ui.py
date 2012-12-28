@@ -29,14 +29,13 @@
 # this program; if not, see <https://www.gnu.org/licenses/gpl-3.0.txt>
 
 class ui():
-    def __init__(self,builder):
-        self.builder=builder
-    def __getitem__(self,obj):
+    def __init__(self, builder):
+        self.builder = builder
+    def __getitem__(self, obj):
         return self.builder.get_object(obj)
-    def sensitize(self,list):
+    def sensitize(self, list):
         for item in list:
             self.__getitem__(item).set_sensitive(True)
     def unsensitize(self,list):
         for item in list:
             self.__getitem__(item).set_sensitive(False)
-

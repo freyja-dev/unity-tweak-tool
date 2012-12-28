@@ -1,0 +1,17 @@
+[Desktop Entry]
+Categories=Settings;
+Comment=Configuration frontend for the Unity desktop environment
+Exec=mechanig-gtk %f
+Icon=gconf-editor
+GenericName=Mechanig
+Name=Mechanig
+OnlyShowIn=Unity;
+StartupNotify=true
+Terminal=false
+Type=Application
+Actions=Restart;
+
+[Desktop Action Restart]
+Name=Restart Unity
+Exec=setsid unity
+OnlyShowIn=Unity;
