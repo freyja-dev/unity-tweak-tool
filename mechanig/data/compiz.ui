@@ -1033,6 +1033,7 @@
               <object class="GtkGrid" id="grid_window_snapping">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
+                <property name="halign">center</property>
                 <property name="margin_left">20</property>
                 <property name="margin_right">20</property>
                 <property name="margin_top">20</property>
@@ -1299,6 +1300,7 @@
           <object class="GtkBox" id="box_compiz_hotcorners">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="halign">center</property>
             <property name="orientation">vertical</property>
             <child>
               <object class="GtkGrid" id="grid_hotcorners">
@@ -1650,7 +1652,7 @@
         <col id="0" translatable="yes">Do Nothing</col>
       </row>
       <row>
-        <col id="0" translatable="yes">Show the Desktop</col>
+        <col id="0" translatable="yes">Toggle Desktop</col>
       </row>
       <row>
         <col id="0" translatable="yes">Activate Workspace Switcher</col>
