@@ -49,7 +49,7 @@
                   <object class="GtkImage" id="image_box_start_unity">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="stock">gtk-about</property>
+                    <property name="pixbuf">icons/unity-settings-dark_24.svg</property>
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
@@ -211,7 +211,7 @@
                   <object class="GtkImage" id="image_box_start_compiz">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="stock">gtk-fullscreen</property>
+                    <property name="pixbuf">icons/wm-settings-dark_24.svg</property>
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
@@ -378,7 +378,7 @@
                   <object class="GtkImage" id="image_start_theme">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="stock">gtk-select-color</property>
+                    <property name="pixbuf">icons/appearance-settings-dark_24.svg</property>
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
@@ -523,7 +523,7 @@
                   <object class="GtkImage" id="image_start_desktop">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="stock">gtk-preferences</property>
+                    <property name="pixbuf">icons/desktop-settings-dark_24.svg</property>
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
@@ -575,6 +575,7 @@
                   </object>
                   <packing>
                     <property name="expand">False</property>
+                    <property name="homogeneous">True</property>
                   </packing>
                 </child>
               </object>
