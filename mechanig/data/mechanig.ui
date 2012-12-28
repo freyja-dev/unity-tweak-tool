@@ -378,7 +378,7 @@
               <object class="GtkRadioToolButton" id="tool_themesettings">
                 <property name="use_action_appearance">False</property>
                 <property name="related_action">a_tool_themesettings</property>
-                <property name="width_request">100</property>
+                <property name="width_request">90</property>
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="tooltip_markup" translatable="yes">Show the appearance settings panel</property>
@@ -398,7 +398,7 @@
               <object class="GtkRadioToolButton" id="tool_desktopsettings">
                 <property name="use_action_appearance">False</property>
                 <property name="related_action">a_tool_desktopsettings</property>
-                <property name="width_request">100</property>
+                <property name="width_request">80</property>
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="tooltip_markup" translatable="yes">Show the desktop settings panel</property>
