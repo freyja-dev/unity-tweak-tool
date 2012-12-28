@@ -57,6 +57,9 @@ class Compizsettings ():
         self.window_snapping_drawable = self.ui['draw_window_snapping']
         self._base_window_snapping_surface = cairo.ImageSurface.create_from_png(os.path.join(settings.UI_DIR, 'monitor-window-snapping.png'))
 
+        self.hotcorners_drawable = self.ui['draw_hotcorners']
+        self._base_hotcorners_surface = cairo.ImageSurface.create_from_png(os.path.join(settings.UI_DIR, 'monitor-hotcorners.png'))
+
         self.window_snapping_cboxes = {
             'cbox_window_snapping_top': [0, 'top-edge-action'],
             'cbox_window_snapping_topleft': [0, 'top-left-corner-action'],
@@ -67,20 +70,49 @@ class Compizsettings ():
             'cbox_window_snapping_right': [0, 'right-edge-action'],
             'cbox_window_snapping_bottomright': [0, 'bottom-right-corner-action']
         }
-
-# TODO grab active corners from the backend and set the values in
-# self.window_snapping_cboxes appropriately
         for box in self.window_snapping_cboxes:
             self.window_snapping_cboxes[box][0] = gsettings.grid.get_int(self.window_snapping_cboxes[box][1])
             self.ui[box].set_active(self.window_snapping_cboxes[box][0])
             self.ui[box].connect("changed", self.on_cbox_window_snapping_changed, box)
 
+        self.hotcorners_cboxes = {
+            'cbox_hotcorners_top': [0, 'Top'],
+            'cbox_hotcorners_topleft': [0, 'TopLeft'],
+            'cbox_hotcorners_left': [0, 'Left'],
+            'cbox_hotcorners_bottomleft': [0, 'BottomLeft'],
+            'cbox_hotcorners_bottom': [0, 'Bottom'],
+            'cbox_hotcorners_topright': [0, 'TopRight'],
+            'cbox_hotcorners_right': [0, 'Right'],
+            'cbox_hotcorners_bottomright': [0, 'BottomRight']
+        }
+        self.hotcorner_values = {
+            'show_desktop': gsettings.core.get_string('show-desktop-edge').split('|'),
+            'expo': gsettings.expo.get_string('expo-edge').split('|'),
+            'window_spread': gsettings.scale.get_string('initiate-edge').split('|')
+        }
+
+        for box in self.hotcorners_cboxes:
+            if self.hotcorners_cboxes[box][1] in self.hotcorner_values['show_desktop']:
+                self.hotcorners_cboxes[box][0] = 1
+            elif self.hotcorners_cboxes[box][1] in self.hotcorner_values['expo']:
+                self.hotcorners_cboxes[box][0] = 2
+            elif self.hotcorners_cboxes[box][1] in self.hotcorner_values['window_spread']:
+                self.hotcorners_cboxes[box][0] = 3
+            else:
+                self.hotcorners_cboxes[box][0] = 0
+
+            self.ui[box].set_active(self.hotcorners_cboxes[box][0])
+            self.ui[box].connect("changed", self.on_cbox_hotcorners_changed, box)
         self.builder.connect_signals(self)
         self.refresh()
 
+    def on_draw_hotcorners_draw (self, window, cr):
+        self.draw_monitor(window, cr, self._base_hotcorners_surface, self.hotcorners_cboxes, 'hotcorners')
+
     def on_draw_window_snapping_draw (self, window, cr):
-# TODO : Since this gets retrigged completely on queue_draw,
-# need to have it query for active hot corners
+        self.draw_monitor(window, cr, self._base_window_snapping_surface, self.window_snapping_cboxes, 'window_snapping')
+
+    def draw_monitor (self, window, cr, base_surface, corner_store, cbox_title):
         x1 = 16
         y1 = 16
         x2 = 284
@@ -93,11 +125,11 @@ class Compizsettings ():
         left_right_width = 70
         top_bottom_width = 68
 
-        cr.set_source_surface(self._base_window_snapping_surface)
+        cr.set_source_surface(base_surface)
         cr.paint()
         cr.set_source_rgba(221/255, 72/255, 20/255);
 
-        if self.window_snapping_cboxes['cbox_window_snapping_top'][0] != 0:
+        if corner_store['cbox_' + cbox_title + '_top'][0] != 0:
             cr.new_path()
             cr.move_to(x3, y1)
             cr.line_to (x3 + top_bottom_width, y1)
@@ -105,7 +137,7 @@ class Compizsettings ():
             cr.arc(x3 + (top_bottom_width / 2), y1 - values['offset'], values['radius'], pi/4 , (3 * pi)/4)
             cr.fill_preserve()
 
-        if self.window_snapping_cboxes['cbox_window_snapping_topleft'][0] != 0:
+        if corner_store['cbox_' + cbox_title + '_topleft'][0] != 0:
             cr.new_path()
             cr.move_to(x1, y1)
             cr.line_to(x1 + corner_width, y1)
@@ -113,7 +145,7 @@ class Compizsettings ():
             cr.line_to(x1, y1)
             cr.fill_preserve()
 
-        if self.window_snapping_cboxes['cbox_window_snapping_left'][0] != 0:
+        if corner_store['cbox_' + cbox_title + '_left'][0] != 0:
             cr.new_path()
             cr.move_to(x1, y3 + left_right_width)
             cr.line_to(x1, y3)
@@ -121,7 +153,7 @@ class Compizsettings ():
             cr.arc(x1 - values['offset'], y3 + (left_right_width / 2), values['radius'], -pi/4, pi/4)
             cr.fill_preserve()
 
-        if self.window_snapping_cboxes['cbox_window_snapping_bottomleft'][0] != 0:
+        if corner_store['cbox_' + cbox_title + '_bottomleft'][0] != 0:
             cr.new_path()
             cr.move_to(x1, y2 - corner_width)
             cr.line_to(x1, y2)
@@ -129,7 +161,7 @@ class Compizsettings ():
             cr.arc(x1, y2, corner_width, - pi / 2, 0)
             cr.fill_preserve()
 
-        if self.window_snapping_cboxes['cbox_window_snapping_bottom'][0] != 0:
+        if corner_store['cbox_' + cbox_title + '_bottom'][0] != 0:
             cr.new_path()
             cr.move_to(x3 + top_bottom_width, y2)
             cr.line_to(x3, y2)
@@ -137,7 +169,7 @@ class Compizsettings ():
             cr.arc(x3 + (top_bottom_width / 2), y2 + values['offset'], values['radius'], (5 * pi) / 4, (7 * pi) / 4)
             cr.fill_preserve()
 
-        if self.window_snapping_cboxes['cbox_window_snapping_topright'][0] != 0:
+        if corner_store['cbox_' + cbox_title + '_topright'][0] != 0:
             cr.new_path()
             cr.move_to(x2, y1)
             cr.line_to(x2, y1 + corner_width)
@@ -145,7 +177,7 @@ class Compizsettings ():
             cr.line_to(x2, y1)
             cr.fill_preserve()
 
-        if self.window_snapping_cboxes['cbox_window_snapping_right'][0] != 0:
+        if corner_store['cbox_' + cbox_title + '_right'][0] != 0:
             # TODO : DRAW
             cr.new_path()
             cr.move_to(x2, y3)
@@ -154,7 +186,7 @@ class Compizsettings ():
             cr.arc(x2 + values['offset'], y3 + (left_right_width / 2), values['radius'], (3 * pi) / 4, (5 * pi) / 4)
             cr.fill_preserve()
 
-        if self.window_snapping_cboxes['cbox_window_snapping_bottomright'][0] != 0:
+        if corner_store['cbox_' + cbox_title + '_bottomright'][0] != 0:
             cr.new_path()
             cr.move_to(x2, y2)
             cr.line_to(x2 - corner_width, y2)
@@ -175,6 +207,45 @@ class Compizsettings ():
         gsettings.grid.set_int(self.window_snapping_cboxes[cbox_id][1], combobox.get_active())
         self.window_snapping_drawable.queue_draw()
 
+    def on_cbox_hotcorners_changed (self, combobox, cbox_id):
+        self.hotcorners_cboxes[cbox_id][0] = combobox.get_active()
+        clear_corners = []
+        if combobox.get_active() == 0:
+            clear_corners = ['show_desktop', 'expo', 'window_spread']
+
+        if combobox.get_active() == 1:
+            if self.hotcorners_cboxes[cbox_id][1] not in self.hotcorner_values['show_desktop']:
+                self.hotcorner_values['show_desktop'].append(self.hotcorners_cboxes[cbox_id][1])
+                gsettings.core.set_string('show-desktop-edge', '|'.join(self.hotcorner_values['show_desktop']))
+        else:
+            clear_corners.append('show_desktop')
+
+        if combobox.get_active() == 2:
+            if self.hotcorners_cboxes[cbox_id][1] not in self.hotcorner_values['expo']:
+                self.hotcorner_values['expo'].append(self.hotcorners_cboxes[cbox_id][1])
+                gsettings.expo.set_string('expo-edge', '|'.join(self.hotcorner_values['expo']))
+        else:
+            clear_corners.append('expo')
+
+        if combobox.get_active() == 3:
+            if self.hotcorners_cboxes[cbox_id][1] not in self.hotcorner_values['window_spread']:
+                self.hotcorner_values['window_spread'].append(self.hotcorners_cboxes[cbox_id][1])
+                gsettings.scale.set_string('initiate-edge', '|'.join(self.hotcorner_values['window_spread']))
+        else:
+            clear_corners.append('window_spread')
+
+        # Removing potentially conflicting bindings
+        if 'show_desktop' in clear_corners and self.hotcorners_cboxes[cbox_id][1] in self.hotcorner_values['show_desktop']:
+                self.hotcorner_values['show_desktop'].remove(self.hotcorners_cboxes[cbox_id][1])
+                gsettings.core.set_string('show-desktop-edge', '|'.join(self.hotcorner_values['show_desktop']))
+        if 'expo' in clear_corners and self.hotcorners_cboxes[cbox_id][1] in self.hotcorner_values['expo']:
+                self.hotcorner_values['expo'].remove(self.hotcorners_cboxes[cbox_id][1])
+                gsettings.expo.set_string('expo-edge', '|'.join(self.hotcorner_values['expo']))
+        if 'window_spread' in clear_corners and self.hotcorners_cboxes[cbox_id][1] in self.hotcorner_values['window_spread']:
+                self.hotcorner_values['window_spread'].remove(self.hotcorners_cboxes[cbox_id][1])
+                gsettings.scale.set_string('initiate-edge', '|'.join(self.hotcorner_values['window_spread']))
+
+        self.hotcorners_drawable.queue_draw()
 
 
 #=====================================================================#
