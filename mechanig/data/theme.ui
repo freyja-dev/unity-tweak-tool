@@ -458,6 +458,7 @@
                 <property name="can_focus">False</property>
                 <property name="margin_left">14</property>
                 <property name="margin_top">5</property>
+                <property name="row_spacing">5</property>
                 <child>
                   <object class="GtkLabel" id="l_defaultfont">
                     <property name="visible">True</property>
@@ -467,6 +468,7 @@
                     <property name="tooltip_text" translatable="yes">Select the default font for all applications.</property>
                     <property name="margin_right">6</property>
                     <property name="margin_top">6</property>
+                    <property name="margin_bottom">6</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Default font:</property>
                   </object>
@@ -486,6 +488,7 @@
                     <property name="tooltip_text" translatable="yes">Select the factor used to enlarge or reduce text display, without changing font size.</property>
                     <property name="margin_right">6</property>
                     <property name="margin_top">6</property>
+                    <property name="margin_bottom">6</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Text scaling factor:</property>
                   </object>
@@ -505,6 +508,7 @@
                     <property name="tooltip_text" translatable="yes">Select the default font used for reading documents.</property>
                     <property name="margin_right">6</property>
                     <property name="margin_top">6</property>
+                    <property name="margin_bottom">6</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Document font:</property>
                   </object>
@@ -524,6 +528,7 @@
                     <property name="tooltip_text" translatable="yes">Select the default monospace font.</property>
                     <property name="margin_right">6</property>
                     <property name="margin_top">6</property>
+                    <property name="margin_bottom">6</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Monospace font:</property>
                   </object>
@@ -543,6 +548,7 @@
                     <property name="tooltip_text" translatable="yes">Select the default font for the window titlebar.</property>
                     <property name="margin_right">6</property>
                     <property name="margin_top">6</property>
+                    <property name="margin_bottom">6</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Window title font:</property>
                   </object>
@@ -562,6 +568,7 @@
                     <property name="tooltip_text" translatable="yes">Select tSelect the type of hinting to use when rendering fonts</property>
                     <property name="margin_right">6</property>
                     <property name="margin_top">6</property>
+                    <property name="margin_bottom">6</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Antialiasing:</property>
                   </object>
@@ -581,6 +588,7 @@
                     <property name="tooltip_text" translatable="yes">Select the type of hinting to use when rendering fonts</property>
                     <property name="margin_right">6</property>
                     <property name="margin_top">6</property>
+                    <property name="margin_bottom">6</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Hinting:</property>
                   </object>
