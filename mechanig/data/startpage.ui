@@ -1,11 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
   <!-- interface-requires gtk+ 3.0 -->
+  <object class="GtkAction" id="a_tool_additional"/>
+  <object class="GtkAction" id="a_tool_compiz_switcher"/>
+  <object class="GtkAction" id="a_tool_cursors"/>
+  <object class="GtkAction" id="a_tool_dash"/>
+  <object class="GtkAction" id="a_tool_desktop"/>
+  <object class="GtkAction" id="a_tool_fonts"/>
+  <object class="GtkAction" id="a_tool_general"/>
+  <object class="GtkAction" id="a_tool_hotcorners"/>
+  <object class="GtkAction" id="a_tool_icons"/>
+  <object class="GtkAction" id="a_tool_launcher"/>
+  <object class="GtkAction" id="a_tool_panel"/>
+  <object class="GtkAction" id="a_tool_system"/>
+  <object class="GtkAction" id="a_tool_unity_switcher"/>
+  <object class="GtkAction" id="a_tool_window_snapping"/>
+  <object class="GtkAction" id="a_tool_window_spread"/>
+  <object class="GtkImage" id="i_tool_additional">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">icons/36/unity-settings-additional-dark_36.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_compiz_switcher">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">icons/36/wm-settings-workspace-switcher-dark_36.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_cursors">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">icons/36/appearance-settings-cursor-dark_36.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_dash">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">icons/36/unity-settings-dash-dark_36.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_desktop">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">icons/36/desktop-settings-icons-dark_36.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_fonts">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">icons/36/appearance-settings-font-dark_36.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_system">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">icons/36/appearance-settings-theme-dark_36.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_general">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">icons/36/wm-settings-general-dark_36.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_hotcorners">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">icons/36/wm-settings-hotcorners-dark_36.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_icons">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">icons/36/appearance-settings-icons-dark_36.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_launcher">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">icons/36/unity-settings-launcher-dark_36.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_panel">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">icons/36/unity-settings-panel-dark_36.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_unity_switcher">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">icons/36/unity-settings-switcher-dark_36.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_window_snapping">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">icons/36/wm-settings-window-snapping-dark_36.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_window_spread">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">icons/36/wm-settings-window-switcher-dark_36.svg</property>
+  </object>
   <object class="GtkLabel" id="l_tool_windows_snapping">
     <property name="width_request">70</property>
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="label" translatable="yes">Windows snapping</property>
+    <property name="label" translatable="yes">Window snapping</property>
     <property name="justify">center</property>
     <property name="wrap">True</property>
   </object>
@@ -13,7 +103,7 @@
     <property name="width_request">70</property>
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="label" translatable="yes">Windows spread</property>
+    <property name="label" translatable="yes">Window spread</property>
     <property name="justify">center</property>
     <property name="wrap">True</property>
   </object>
@@ -49,7 +139,7 @@
                   <object class="GtkImage" id="image_box_start_unity">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="stock">gtk-about</property>
+                    <property name="pixbuf">icons/24/unity-settings-dark_24.svg</property>
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
@@ -89,14 +179,16 @@
                 <property name="icon_size">5</property>
                 <child>
                   <object class="GtkToolButton" id="tool_launcher">
-                    <property name="width_request">70</property>
+                    <property name="use_action_appearance">False</property>
+                    <property name="related_action">a_tool_launcher</property>
+                    <property name="width_request">90</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="tooltip_markup" translatable="yes">Show the Unity launcher settings</property>
                     <property name="tooltip_text" translatable="yes">Show the Unity launcher settings</property>
                     <property name="label" translatable="yes">Launcher</property>
                     <property name="use_underline">True</property>
-                    <property name="icon_name">stock_print</property>
+                    <property name="icon_widget">i_tool_launcher</property>
                     <signal name="clicked" handler="on_tool_launcher_clicked" swapped="no"/>
                   </object>
                   <packing>
@@ -106,14 +198,16 @@
                 </child>
                 <child>
                   <object class="GtkToolButton" id="tool_dash">
-                    <property name="width_request">70</property>
+                    <property name="use_action_appearance">False</property>
+                    <property name="related_action">a_tool_dash</property>
+                    <property name="width_request">90</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="tooltip_markup" translatable="yes">Show the Unity Dash settings</property>
                     <property name="tooltip_text" translatable="yes">Show the Unity Dash settings</property>
                     <property name="label" translatable="yes">Dash</property>
                     <property name="use_underline">True</property>
-                    <property name="icon_name">stock_print</property>
+                    <property name="icon_widget">i_tool_dash</property>
                     <signal name="clicked" handler="on_tool_dash_clicked" swapped="no"/>
                   </object>
                   <packing>
@@ -123,14 +217,16 @@
                 </child>
                 <child>
                   <object class="GtkToolButton" id="tool_panel">
-                    <property name="width_request">70</property>
+                    <property name="use_action_appearance">False</property>
+                    <property name="related_action">a_tool_panel</property>
+                    <property name="width_request">90</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="tooltip_markup" translatable="yes">Show the Unity Panel settings</property>
                     <property name="tooltip_text" translatable="yes">Show the Unity Panel settings</property>
                     <property name="label" translatable="yes">Panel</property>
                     <property name="use_underline">True</property>
-                    <property name="icon_name">stock_print</property>
+                    <property name="icon_widget">i_tool_panel</property>
                     <signal name="clicked" handler="on_tool_panel_clicked" swapped="no"/>
                   </object>
                   <packing>
@@ -140,14 +236,16 @@
                 </child>
                 <child>
                   <object class="GtkToolButton" id="tool_unity_switcher">
-                    <property name="width_request">70</property>
+                    <property name="use_action_appearance">False</property>
+                    <property name="related_action">a_tool_unity_switcher</property>
+                    <property name="width_request">90</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="tooltip_markup" translatable="yes">Show the Unity Switcher settings</property>
                     <property name="tooltip_text" translatable="yes">Show the Unity Switcher settings</property>
                     <property name="label" translatable="yes">Switcher</property>
                     <property name="use_underline">True</property>
-                    <property name="icon_name">stock_print</property>
+                    <property name="icon_widget">i_tool_unity_switcher</property>
                     <signal name="clicked" handler="on_tool_unity_switcher_clicked" swapped="no"/>
                   </object>
                   <packing>
@@ -157,14 +255,16 @@
                 </child>
                 <child>
                   <object class="GtkToolButton" id="tool_additional">
-                    <property name="width_request">70</property>
+                    <property name="use_action_appearance">False</property>
+                    <property name="related_action">a_tool_additional</property>
+                    <property name="width_request">90</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="tooltip_markup" translatable="yes">Show the additional Unity settings</property>
                     <property name="tooltip_text" translatable="yes">Show the additional Unity settings</property>
                     <property name="label" translatable="yes">Additional</property>
                     <property name="use_underline">True</property>
-                    <property name="icon_name">stock_print</property>
+                    <property name="icon_widget">i_tool_additional</property>
                     <signal name="clicked" handler="on_tool_additional_clicked" swapped="no"/>
                   </object>
                   <packing>
@@ -211,7 +311,7 @@
                   <object class="GtkImage" id="image_box_start_compiz">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="stock">gtk-fullscreen</property>
+                    <property name="pixbuf">icons/24/wm-settings-dark_24.svg</property>
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
@@ -251,7 +351,9 @@
                 <property name="icon_size">5</property>
                 <child>
                   <object class="GtkToolButton" id="tool_general">
-                    <property name="width_request">70</property>
+                    <property name="use_action_appearance">False</property>
+                    <property name="related_action">a_tool_general</property>
+                    <property name="width_request">90</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="tooltip_markup" translatable="yes">Show the general settings for the window manager</property>
@@ -259,7 +361,7 @@
                     <property name="valign">start</property>
                     <property name="label" translatable="yes">General</property>
                     <property name="use_underline">True</property>
-                    <property name="icon_name">stock_print</property>
+                    <property name="icon_widget">i_tool_general</property>
                     <signal name="clicked" handler="on_tool_general_clicked" swapped="no"/>
                   </object>
                   <packing>
@@ -269,7 +371,9 @@
                 </child>
                 <child>
                   <object class="GtkToolButton" id="tool_compiz_switcher">
-                    <property name="width_request">70</property>
+                    <property name="use_action_appearance">False</property>
+                    <property name="related_action">a_tool_compiz_switcher</property>
+                    <property name="width_request">90</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="tooltip_markup" translatable="yes">Show the settings for the workspace switcher</property>
@@ -277,7 +381,7 @@
                     <property name="valign">start</property>
                     <property name="use_underline">True</property>
                     <property name="label_widget">l_tool_workspace_switcher</property>
-                    <property name="stock_id">gtk-cdrom</property>
+                    <property name="icon_widget">i_tool_compiz_switcher</property>
                     <signal name="clicked" handler="on_tool_compiz_switcher_clicked" swapped="no"/>
                   </object>
                   <packing>
@@ -287,7 +391,9 @@
                 </child>
                 <child>
                   <object class="GtkToolButton" id="tool_windows_spread">
-                    <property name="width_request">70</property>
+                    <property name="use_action_appearance">False</property>
+                    <property name="related_action">a_tool_window_spread</property>
+                    <property name="width_request">90</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="tooltip_markup" translatable="yes">Show the settings for window spread behaviour</property>
@@ -295,7 +401,7 @@
                     <property name="valign">start</property>
                     <property name="use_underline">True</property>
                     <property name="label_widget">l_tool_windows_spread</property>
-                    <property name="stock_id">gtk-print-preview</property>
+                    <property name="icon_widget">i_tool_window_spread</property>
                     <signal name="clicked" handler="on_tool_windows_spread_clicked" swapped="no"/>
                   </object>
                   <packing>
@@ -305,7 +411,9 @@
                 </child>
                 <child>
                   <object class="GtkToolButton" id="tool_windows_snapping">
-                    <property name="width_request">70</property>
+                    <property name="use_action_appearance">False</property>
+                    <property name="related_action">a_tool_window_snapping</property>
+                    <property name="width_request">90</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="tooltip_markup" translatable="yes">Show the settings for window snapping behaviour</property>
@@ -313,7 +421,7 @@
                     <property name="valign">start</property>
                     <property name="use_underline">True</property>
                     <property name="label_widget">l_tool_windows_snapping</property>
-                    <property name="stock_id">gtk-justify-right</property>
+                    <property name="icon_widget">i_tool_window_snapping</property>
                     <signal name="clicked" handler="on_tool_windows_snapping_clicked" swapped="no"/>
                   </object>
                   <packing>
@@ -323,7 +431,9 @@
                 </child>
                 <child>
                   <object class="GtkToolButton" id="tool_hotcorners">
-                    <property name="width_request">70</property>
+                    <property name="use_action_appearance">False</property>
+                    <property name="related_action">a_tool_hotcorners</property>
+                    <property name="width_request">90</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="tooltip_markup" translatable="yes">Show the settings for hotcorner behaviour</property>
@@ -331,7 +441,7 @@
                     <property name="valign">start</property>
                     <property name="label" translatable="yes">Hotcorners</property>
                     <property name="use_underline">True</property>
-                    <property name="icon_name">stock_print</property>
+                    <property name="icon_widget">i_tool_hotcorners</property>
                     <signal name="clicked" handler="on_tool_hotcorners_clicked" swapped="no"/>
                   </object>
                   <packing>
@@ -378,7 +488,7 @@
                   <object class="GtkImage" id="image_start_theme">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="stock">gtk-select-color</property>
+                    <property name="pixbuf">icons/24/appearance-settings-dark_24.svg</property>
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
@@ -418,14 +528,16 @@
                 <property name="icon_size">5</property>
                 <child>
                   <object class="GtkToolButton" id="tool_system">
-                    <property name="width_request">70</property>
+                    <property name="use_action_appearance">False</property>
+                    <property name="related_action">a_tool_system</property>
+                    <property name="width_request">90</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="tooltip_markup" translatable="yes">Show the settings for the global system themes</property>
                     <property name="tooltip_text" translatable="yes">Show the settings for the global system themes</property>
-                    <property name="label" translatable="yes">System</property>
+                    <property name="label" translatable="yes">Theme</property>
                     <property name="use_underline">True</property>
-                    <property name="icon_name">stock_print</property>
+                    <property name="icon_widget">i_tool_system</property>
                     <signal name="clicked" handler="on_tool_system_clicked" swapped="no"/>
                   </object>
                   <packing>
@@ -435,14 +547,16 @@
                 </child>
                 <child>
                   <object class="GtkToolButton" id="tool_icons">
-                    <property name="width_request">70</property>
+                    <property name="use_action_appearance">False</property>
+                    <property name="related_action">a_tool_icons</property>
+                    <property name="width_request">90</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="tooltip_markup" translatable="yes">Show the settings for the icon themes</property>
                     <property name="tooltip_text" translatable="yes">Show the settings for the icon themes</property>
                     <property name="label" translatable="yes">Icons</property>
                     <property name="use_underline">True</property>
-                    <property name="icon_name">stock_print</property>
+                    <property name="icon_widget">i_tool_icons</property>
                     <signal name="clicked" handler="on_tool_icons_clicked" swapped="no"/>
                   </object>
                   <packing>
@@ -452,14 +566,16 @@
                 </child>
                 <child>
                   <object class="GtkToolButton" id="tool_cursors">
-                    <property name="width_request">70</property>
+                    <property name="use_action_appearance">False</property>
+                    <property name="related_action">a_tool_cursors</property>
+                    <property name="width_request">90</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="tooltip_markup" translatable="yes">Show the settings for the cursor themes</property>
                     <property name="tooltip_text" translatable="yes">Show the settings for the cursor themes</property>
                     <property name="label" translatable="yes">Cursor</property>
                     <property name="use_underline">True</property>
-                    <property name="icon_name">stock_print</property>
+                    <property name="icon_widget">i_tool_cursors</property>
                     <signal name="clicked" handler="on_tool_cursors_clicked" swapped="no"/>
                   </object>
                   <packing>
@@ -469,14 +585,16 @@
                 </child>
                 <child>
                   <object class="GtkToolButton" id="tool_fonts">
-                    <property name="width_request">70</property>
+                    <property name="use_action_appearance">False</property>
+                    <property name="related_action">a_tool_fonts</property>
+                    <property name="width_request">90</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="tooltip_markup" translatable="yes">Show the settings for the system-wide fonts</property>
                     <property name="tooltip_text" translatable="yes">Show the settings for the system-wide fonts</property>
                     <property name="label" translatable="yes">Fonts</property>
                     <property name="use_underline">True</property>
-                    <property name="icon_name">stock_print</property>
+                    <property name="icon_widget">i_tool_fonts</property>
                     <signal name="clicked" handler="on_tool_fonts_clicked" swapped="no"/>
                   </object>
                   <packing>
@@ -523,7 +641,7 @@
                   <object class="GtkImage" id="image_start_desktop">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="stock">gtk-preferences</property>
+                    <property name="pixbuf">icons/24/desktop-settings-dark_24.svg</property>
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
@@ -563,18 +681,21 @@
                 <property name="icon_size">5</property>
                 <child>
                   <object class="GtkToolButton" id="tool_desktop">
-                    <property name="width_request">70</property>
+                    <property name="use_action_appearance">False</property>
+                    <property name="related_action">a_tool_desktop</property>
+                    <property name="width_request">90</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="tooltip_markup" translatable="yes">Show the settings for the desktop icons</property>
                     <property name="tooltip_text" translatable="yes">Show the settings for the desktop icons</property>
                     <property name="label" translatable="yes">Icons</property>
                     <property name="use_underline">True</property>
-                    <property name="icon_name">stock_print</property>
+                    <property name="icon_widget">i_tool_desktop</property>
                     <signal name="clicked" handler="on_tool_desktop_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="expand">False</property>
+                    <property name="homogeneous">True</property>
                   </packing>
                 </child>
               </object>

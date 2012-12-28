@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
   <!-- interface-requires gtk+ 3.0 -->
+  <object class="GtkAction" id="a_tool_compizsettings"/>
+  <object class="GtkAction" id="a_tool_desktopsettings"/>
+  <object class="GtkAction" id="a_tool_startpage"/>
+  <object class="GtkAction" id="a_tool_themesettings"/>
+  <object class="GtkAction" id="a_tool_unitysettings"/>
+  <object class="GtkImage" id="i_tool_compizsettings">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">icons/48/wm-settings-light_48.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_desktopsettings">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">icons/48/desktop-settings-light_48.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_startpage">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">icons/48/home-light_48.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_themesettings">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">icons/48/appearance-settings-light_48.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_unitysettings">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">icons/48/unity-settings-light_48.svg</property>
+  </object>
   <object class="GtkImage" id="image_menu_compiz_settings">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
@@ -279,18 +309,22 @@
             <property name="can_focus">False</property>
             <property name="toolbar_style">both</property>
             <property name="show_arrow">False</property>
+            <property name="icon_size">5</property>
             <style>
               <class name="primary-toolbar"/>
             </style>
             <child>
               <object class="GtkRadioToolButton" id="tool_startpage">
+                <property name="use_action_appearance">False</property>
+                <property name="related_action">a_tool_startpage</property>
+                <property name="width_request">100</property>
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="tooltip_markup" translatable="yes">Show the Home panel</property>
                 <property name="tooltip_text" translatable="yes">Show the Home panel</property>
                 <property name="label" translatable="yes">Home</property>
                 <property name="use_underline">True</property>
-                <property name="icon_name">stock_paste</property>
+                <property name="icon_widget">i_tool_startpage</property>
                 <style>
                   <class name="primary-toolbar"/>
                 </style>
@@ -303,13 +337,16 @@
             </child>
             <child>
               <object class="GtkRadioToolButton" id="tool_unitysettings">
+                <property name="use_action_appearance">False</property>
+                <property name="related_action">a_tool_unitysettings</property>
+                <property name="width_request">100</property>
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="tooltip_markup" translatable="yes">Show the Unity settings panel</property>
                 <property name="tooltip_text" translatable="yes">Show the Unity settings panel</property>
                 <property name="label" translatable="yes">Unity</property>
                 <property name="use_underline">True</property>
-                <property name="icon_name">gtk-about</property>
+                <property name="icon_widget">i_tool_unitysettings</property>
                 <property name="group">tool_startpage</property>
                 <signal name="toggled" handler="on_tool_unitysettings_toggled" swapped="no"/>
               </object>
@@ -320,13 +357,16 @@
             </child>
             <child>
               <object class="GtkRadioToolButton" id="tool_compizsettings">
+                <property name="use_action_appearance">False</property>
+                <property name="related_action">a_tool_compizsettings</property>
+                <property name="width_request">100</property>
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="tooltip_markup" translatable="yes">Show the window manager settings panel</property>
                 <property name="tooltip_text" translatable="yes">Show the window manager settings panel</property>
-                <property name="label" translatable="yes">Window manager</property>
+                <property name="label" translatable="yes">Window Manager</property>
                 <property name="use_underline">True</property>
-                <property name="icon_name">gtk-fullscreen</property>
+                <property name="icon_widget">i_tool_compizsettings</property>
                 <property name="group">tool_startpage</property>
                 <signal name="toggled" handler="on_tool_compizsettings_toggled" swapped="no"/>
               </object>
@@ -337,13 +377,16 @@
             </child>
             <child>
               <object class="GtkRadioToolButton" id="tool_themesettings">
+                <property name="use_action_appearance">False</property>
+                <property name="related_action">a_tool_themesettings</property>
+                <property name="width_request">100</property>
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="tooltip_markup" translatable="yes">Show the appearance settings panel</property>
                 <property name="tooltip_text" translatable="yes">Show the appearance settings panel</property>
                 <property name="label" translatable="yes">Appearance</property>
                 <property name="use_underline">True</property>
-                <property name="icon_name">gtk-select-color</property>
+                <property name="icon_widget">i_tool_themesettings</property>
                 <property name="group">tool_startpage</property>
                 <signal name="toggled" handler="on_tool_themesettings_toggled" swapped="no"/>
               </object>
@@ -354,13 +397,16 @@
             </child>
             <child>
               <object class="GtkRadioToolButton" id="tool_desktopsettings">
+                <property name="use_action_appearance">False</property>
+                <property name="related_action">a_tool_desktopsettings</property>
+                <property name="width_request">100</property>
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="tooltip_markup" translatable="yes">Show the desktop settings panel</property>
                 <property name="tooltip_text" translatable="yes">Show the desktop settings panel</property>
                 <property name="label" translatable="yes">Desktop</property>
                 <property name="use_underline">True</property>
-                <property name="icon_name">gtk-preferences</property>
+                <property name="icon_widget">i_tool_desktopsettings</property>
                 <property name="group">tool_startpage</property>
                 <signal name="toggled" handler="on_tool_desktopsettings_toggled" swapped="no"/>
               </object>

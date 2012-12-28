@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="36"
+   height="36"
+   id="svg2985"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="appearance-settings-theme-dark_36.svg">
+  <defs
+     id="defs2987" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#777777"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.46666667"
+     inkscape:pageshadow="2"
+     inkscape:zoom="15.556349"
+     inkscape:cx="9.7534215"
+     inkscape:cy="24.32699"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:document-units="px"
+     inkscape:grid-bbox="true"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2982"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="9,35"
+       id="guide3761" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata2990">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     transform="translate(0,-28)">
+    <rect
+       style="opacity:0.2;fill:#333333;fill-opacity:1;stroke:none"
+       id="rect3826"
+       width="30"
+       height="5"
+       x="3"
+       y="34"
+       rx="0"
+       ry="2.5" />
+    <rect
+       style="fill:none;stroke:#333333;stroke-width:1.00004399;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect2984"
+       width="30.999956"
+       height="24.999956"
+       x="2.5187221"
+       y="33.481327"
+       rx="3.0999956"
+       ry="3.1249945" />
+    <rect
+       style="fill:#333333;fill-opacity:1;stroke:none"
+       id="rect3773"
+       width="32"
+       height="1"
+       x="2"
+       y="38"
+       rx="0"
+       ry="0" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3816"
+       sodipodi:cx="6"
+       sodipodi:cy="9"
+       sodipodi:rx="1"
+       sodipodi:ry="1"
+       d="M 7,9 A 1,1 0 1 1 5,9 1,1 0 1 1 7,9 z"
+       transform="translate(0,27)" />
+    <path
+       transform="translate(3,27)"
+       d="M 7,9 A 1,1 0 1 1 5,9 1,1 0 1 1 7,9 z"
+       sodipodi:ry="1"
+       sodipodi:rx="1"
+       sodipodi:cy="9"
+       sodipodi:cx="6"
+       id="path3757"
+       style="fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       sodipodi:type="arc" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3759"
+       sodipodi:cx="6"
+       sodipodi:cy="9"
+       sodipodi:rx="1"
+       sodipodi:ry="1"
+       d="M 7,9 A 1,1 0 1 1 5,9 1,1 0 1 1 7,9 z"
+       transform="translate(6,27)" />
+    <rect
+       style="opacity:1;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="rect3766"
+       width="1"
+       height="21"
+       x="7"
+       y="38"
+       ry="0" />
+    <rect
+       style="fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;opacity:0.1"
+       id="rect3768"
+       width="4"
+       height="19"
+       x="3"
+       y="11"
+       transform="translate(0,28)" />
+  </g>
+</svg>
