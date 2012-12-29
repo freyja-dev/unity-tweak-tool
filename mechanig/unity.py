@@ -52,11 +52,11 @@ class Unitysettings ():
         self.builder.connect_signals(self)
 
 # TODO : Set these marks to the proper "sticky" location
-        revealScale = self.ui['sc_reveal_sensitivity']
-        revealScale.add_mark(5.333, Gtk.PositionType.BOTTOM, None)
+        self.ui['sc_reveal_sensitivity'].add_mark(5.333, Gtk.PositionType.BOTTOM, None)
 
-        transparencyScale = self.ui['sc_launcher_transparency']
-        transparencyScale.add_mark(.666, Gtk.PositionType.BOTTOM, None)
+        self.ui['sc_launcher_transparency'].add_mark(.666, Gtk.PositionType.BOTTOM, None)
+
+        self.ui['sc_panel_transparency'].add_mark(.666, Gtk.PositionType.BOTTOM, None)
 
         self.refresh()
 
