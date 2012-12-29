@@ -10,7 +10,8 @@ setup(
     license='GPLv3+',
     packages=['mechanig'],
     scripts=['mechanig-gtk'],
-    package_data={'mechanig': ['data/*.ui']},
+    package_data={'mechanig': ['data/*.ui','data/*.png',
+                                'data/icons/24/*.svg','data/icons/36/*.svg','data/icons/48/*.svg']},
     data_files=[
         ('share/applications',
             ['mechanig.desktop']
