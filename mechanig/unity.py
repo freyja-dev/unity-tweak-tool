@@ -55,7 +55,7 @@ class Unitysettings ():
 
         self.ui['sc_launcher_transparency'].add_mark(.666, Gtk.PositionType.BOTTOM, None)
 
-        self.ui['sc_panel_transparency'].add_mark(.666, Gtk.PositionType.BOTTOM, None)
+        self.ui['sc_panel_transparency'].add_mark(.67, Gtk.PositionType.BOTTOM, None)
 
         if Gdk.Screen.get_default().get_n_monitors() == 1:
             self.ui['radio_launcher_visibility_all'].set_sensitive(False)
