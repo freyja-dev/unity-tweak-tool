@@ -51,12 +51,15 @@ class Unitysettings ():
         self.page.unparent()
         self.builder.connect_signals(self)
 
-# TODO : Set these marks to the proper "sticky" location
-        revealScale = self.ui['sc_reveal_sensitivity']
-        revealScale.add_mark(5.333, Gtk.PositionType.BOTTOM, None)
+        self.ui['sc_reveal_sensitivity'].add_mark(5.333, Gtk.PositionType.BOTTOM, None)
 
-        transparencyScale = self.ui['sc_launcher_transparency']
-        transparencyScale.add_mark(.666, Gtk.PositionType.BOTTOM, None)
+        self.ui['sc_launcher_transparency'].add_mark(.666, Gtk.PositionType.BOTTOM, None)
+
+        self.ui['sc_panel_transparency'].add_mark(.67, Gtk.PositionType.BOTTOM, None)
+
+        if Gdk.Screen.get_default().get_n_monitors() == 1:
+            self.ui['radio_launcher_visibility_all'].set_sensitive(False)
+            self.ui['radio_launcher_visibility_primary'].set_sensitive(False)
 
         self.refresh()
 

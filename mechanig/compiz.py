@@ -626,12 +626,12 @@ class Compizsettings ():
 
     def on_color_outline_color_color_set(self, widget, udata=None):
         color = self.ui['color_outline_color'].get_color()
-        colorhash = self.color_to_hash(color)
+        colorhash = gsettings.color_to_hash(color)
         gsettings.grid.set_string('outline-color', colorhash)
 
     def on_color_fill_color_color_set(self, widget, udata=None):
         color = self.ui['color_fill_color'].get_color()
-        colorhash = self.color_to_hash(color)
+        colorhash = gsettings.color_to_hash(color)
         gsettings.grid.set_string('fill-color', colorhash)
 
     def on_b_compiz_windowsnapping_reset_clicked(self, widget):
@@ -641,6 +641,7 @@ class Compizsettings ():
         gsettings.grid.reset('fill-color')
         gsettings.grid.reset('outline-color')
         gsettings.grid.reset('top-edge-action')
+        self.refresh()
 
 if __name__ == '__main__':
 # Fire up the Engines
