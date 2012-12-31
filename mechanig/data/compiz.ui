@@ -933,7 +933,6 @@
                     <property name="can_focus">False</property>
                     <property name="margin_right">6</property>
                     <property name="margin_top">6</property>
-                    <property name="xalign">1</property>
                     <property name="label" translatable="yes">Window snapping:</property>
                   </object>
                   <packing>
@@ -1269,7 +1268,7 @@
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
                 <property name="halign">start</property>
-                <property name="margin_left">12</property>
+                <property name="margin_left">20</property>
                 <property name="margin_top">10</property>
                 <property name="margin_bottom">10</property>
                 <signal name="clicked" handler="on_b_compiz_windowsnapping_reset_clicked" swapped="no"/>
@@ -1541,7 +1540,7 @@
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
                 <property name="halign">start</property>
-                <property name="margin_left">12</property>
+                <property name="margin_left">20</property>
                 <property name="margin_top">10</property>
                 <property name="margin_bottom">10</property>
               </object>
