@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 #
 # Team:
-#   J Phani Mahesh <phanimahesh@gmail.com> 
-#   Barneedhar (jokerdino) <barneedhar@ubuntu.com> 
+#   J Phani Mahesh <phanimahesh@gmail.com>
+#   Barneedhar (jokerdino) <barneedhar@ubuntu.com>
 #   Amith KK <amithkumaran@gmail.com>
 #   Georgi Karavasilev <motorslav@gmail.com>
 #   Sam Tran <samvtran@gmail.com>
@@ -28,9 +28,9 @@
 # You should have received a copy of the GNU General Public License along with
 # this program; if not, see <https://www.gnu.org/licenses/gpl-3.0.txt>
 
-import os, os.path
+import os, os.path, re
 
-from gi.repository import Gtk, Gio
+from gi.repository import Gtk, Gio, Gdk
 
 from mechanig.ui import ui
 from mechanig.start import Startpage
@@ -73,6 +73,52 @@ class Mechanig ():
 
         Gtk.main()
 
+    def on_mechanig_main_key_press_event(self, widget, event):
+        print("Key press event")
+        active_widget = widget.get_focus()
+        print(active_widget)
+        if isinstance(active_widget, Gtk.Entry):
+            return
+        elif isinstance(active_widget, Gtk.TreeView):
+            active_accel_name = Gtk.Buildable.get_name(active_widget)
+            active_kbd_cell_renderer = None
+            active_kbd_cell_location = None
+
+            if active_accel_name == 'treeview_unity_switcher_windows':
+                active_kbd_cell_renderer = 'craccel_unity_switcher_windows'
+                active_kbd_cell_location = 'unitysettings'
+            elif active_accel_name == 'treeview_unity_switcher_launcher':
+                active_kbd_cell_renderer = 'craccel_unity_switcher_launcher'
+                active_kbd_cell_location = 'unitysettings'
+            elif active_accel_name == 'treeview_unity_additional':
+                active_kbd_cell_renderer = 'craccel_unity_additional'
+                active_kbd_cell_location = 'unitysettings'
+            elif active_accel_name == 'treeview_compiz_general_zoom':
+                active_kbd_cell_renderer = 'craccel_compiz_general_zoom'
+                active_kbd_cell_location = 'compizsettings'
+            elif active_accel_name == 'treeview_compiz_general_keys':
+                active_kbd_cell_renderer = 'craccel_compiz_general_keys'
+                active_kbd_cell_location = 'compizsettings'
+            elif active_accel_name == 'treeview_compiz_workspace':
+                active_kbd_cell_renderer = 'craccel_compiz_workspace'
+                active_kbd_cell_location = 'compizsettings'
+            elif active_accel_name == 'treeview_compiz_windows_spread':
+                active_kbd_cell_renderer = 'craccel_compiz_windows_spread'
+                active_kbd_cell_location = 'compizsettings'
+
+            if active_kbd_cell_renderer:
+                print(getattr(self, active_kbd_cell_location).ui[active_kbd_cell_renderer].get_property('editing'))
+                if not getattr(self, active_kbd_cell_location).ui[active_kbd_cell_renderer].get_property('editing'):
+                    print("Grabbing focus!")
+                    self.ui['mechanig_main'].set_focus(self.ui['tool_entry_search'])
+                else:
+                    print("Not grabbing focus")
+        else:
+            key_name = Gdk.keyval_name(event.keyval)
+            if len(key_name) == 1: # Single letter
+                if re.match('\w', key_name):
+                    print("Key pressed: ", key_name)
+                    self.ui['tool_entry_search'].grab_focus()
     # ===== Top Navigation bar =====
     def on_tool_startpage_toggled(self,udata):
         self.notebook.set_current_page(0)

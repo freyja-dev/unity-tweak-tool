@@ -60,6 +60,7 @@
   <object class="GtkWindow" id="mechanig_main">
     <property name="can_focus">False</property>
     <property name="title" translatable="yes">Mechanig</property>
+    <signal name="key-press-event" handler="on_mechanig_main_key_press_event" swapped="no"/>
     <child>
       <object class="GtkBox" id="box_toolbar">
         <property name="visible">True</property>
