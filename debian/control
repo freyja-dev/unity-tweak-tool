@@ -1,0 +1,20 @@
+Source: unity-tweak-tool
+Section: gnome
+Priority: optional
+Maintainer: Barneedhar Vigneshwar <barneedhar@ubuntu.com>
+Uploaders: Barneedhar Vigneshwar <barneedhar@ubuntu.com>
+Build-Depends: debhelper (>= 9~), python3 (>= 3.2) python3-distutils-extra (>= 2.10)
+Build-Depends-Indep: python (>= 2.6.6-3~)
+Standards-Version: 3.9.4
+X-Python3-Version: >= 3.2
+Homepage: https://github.com/freyja-dev/unity-tweak-tool
+
+Package: unity-tweak-tool
+Architecture: all
+Depends: ${python3:Depends},
+ gir1.2-glib-2.0,
+ gir1.2-gtk-3.0,
+ ${misc:Depends}
+Description: configuration manager for Unity desktop environment.
+ Unity Tweak Tool is a one-stop settings manager for Ubuntu Unity.
+ It houses most configuration from Unity, Compiz and what not.

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <!-- interface-requires gtk+ 3.0 -->
+  <object class="GtkAboutDialog" id="about_unitytweak">
+    <property name="can_focus">False</property>
+    <property name="border_width">5</property>
+    <property name="resizable">False</property>
+    <property name="default_width">70</property>
+    <property name="type_hint">dialog</property>
+    <property name="program_name">Unity Tweak Tool</property>
+    <property name="version">0.0.2</property>
+    <property name="copyright" translatable="yes">Copyright © 2013 Freyja Development team</property>
+    <property name="comments" translatable="yes">Unity Tweak Tool is a settings manager intended to be used with Ubuntu Unity.</property>
+    <property name="website">https://launchpad.net/unity-tweak-tool</property>
+    <property name="website_label" translatable="yes">Unity Tweak Tool on Launchpad</property>
+    <property name="license" translatable="yes">GPL3</property>
+    <property name="authors">J Phani Mahesh &lt;phanimahesh@gmail.com&gt;
+Barneedhar (jokerdino) &lt;barneedhar@ubuntu.com&gt;
+Amith KK &lt;amithkumaran@gmail.com&gt;
+Georgi Karavasilev &lt;motorslav@gmail.com&gt;
+Sam Tran &lt;samvtran@gmail.com&gt;
+Sam Hewitt &lt;hewittsamuel@gmail.com&gt;</property>
+    <property name="documenters">Barneedhar (jokerdino) &lt;barneedhar@ubuntu.com&gt;</property>
+    <property name="artists">Sam Hewitt &lt;hewittsamuel@gmail.com&gt;</property>
+    <property name="license_type">gpl-3-0</property>
+    <child internal-child="vbox">
+      <object class="GtkBox" id="box_aboutdialog">
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">2</property>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox" id="action_aboutdialog">
+            <property name="can_focus">False</property>
+            <property name="layout_style">end</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="pack_type">end</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
