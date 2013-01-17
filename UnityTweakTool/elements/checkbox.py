@@ -36,6 +36,7 @@ logger=logging.getLogger('UnityTweakTool.elements.checkbox')
 
 class CheckBox:
     def __init__(self,controlObj):
+        ''' Initialise a Checkbox element from a dictionary'''
         self.id         = controlObj['id']
         self.ui         = controlObj['builder'].get_obj(controlObj['id'])
         self.schema     = controlObj['schema']
@@ -51,7 +52,12 @@ class CheckBox:
             key=self.key
             )
 
+    def register(self,handler):
+        ''' register handler on a handler object '''
+        handler['on_%s_toggled'%self.id]=self.handler
+
     def refresh(self):
+        ''' Refresh UI reading from backend '''
         self.ui.set_active(
             self.map[
                 gsettings.get(
@@ -63,7 +69,8 @@ class CheckBox:
                 ]
             )
     
-    def handle(self,*args,**kwargs):
+    def handler(self,*args,**kwargs):
+        ''' handle toggle signals '''
         gsettings.set(
             schema=self.schema,
             path=self.path,
