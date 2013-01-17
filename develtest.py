@@ -28,23 +28,9 @@
 # You should have received a copy of the GNU General Public License along with
 # this program; if not, see <https://www.gnu.org/licenses/gpl-3.0.txt>
 
-# List of all subpackages that can be imported using
-# from UnityTweakTool import *
-__all__=['backends','config','elements']
+''' Run this file from the top devel dir for testing purposes. '''
 
-import logging
+import sys,os
 
-logger=logging.getLogger('UnityTweakTool')
-logger.setLevel(logging.DEBUG)
-
-# TODO : give a sensible logfile name.
-logfile='utt.log'
-_fh=logging.FileHandler(logfile)
-_fh.setLevel(logging.DEBUG)
-
-_formatter=logging.Formatter('%(asctime)s - %(levelname)-8s :: %(name)s - %(funcName)s - %(message)s')
-
-_fh.setFormatter(_formatter)
-logger.addHandler(_fh)
-
-del _fh, _formatter
+sys.path.append(os.path.split(__name__)[0])
+os.system('./unity-tweak-tool')
