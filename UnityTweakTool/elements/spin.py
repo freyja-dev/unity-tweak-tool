@@ -32,7 +32,7 @@
 from UnityTweakTool.backends import gsettings
 
 import logging
-logger=logging.getLogger('UnityTweakTool.elements.switch')
+logger=logging.getLogger('UnityTweakTool.elements.spin')
 
 class SpinButton:
     def __init__(self,controlObj):
