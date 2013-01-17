@@ -28,7 +28,7 @@
 # You should have received a copy of the GNU General Public License along with
 # this program; if not, see <https://www.gnu.org/licenses/gpl-3.0.txt>
 
-# This file contains the bindings to Gio.Settings
+'''This file contains the bindings to Gio.Settings'''
 from gi.repository import Gio
 import logging
 
@@ -44,16 +44,29 @@ all_relocatable_schemas = frozenset(
 GSettings = dict()
 
 
-def is_valid(*,schema,key=None,path=None):
+def is_valid(*,schema,path=None,key=None):
+    '''
+    Check if the given schema,path,key,type combination is valid. All arguments are keyword-only. path is used to instantiate Gio.Settings only if schema is relocatable. Relocatable schemas are expected to be accompanied by path.
+    '''
+    logger.debug('Checking if schema %s with path %s has key %s',schema,path,key)
     if schema in all_schemas:
+        logger.debug('Ignoring path for static schema')
         if key is not None:
-            return key in Gio.Settings(schema).list_keys()
+            try:
+                _gs=GSettings[schema]
+            except KeyError as e:
+                _gs=Gio.Settings(schema)
+            return key in _gs.list_keys() 
         else:
             return True
     if schema in all_relocatable_schemas:
         if key is not None:
             assert path is not None, 'Relocatable schemas must be accompanied with path'
-            return key in Gio.Settings(schema,path).list_keys()
+            try:
+                _gs=GSettings[schema]
+            except KeyError as e:
+                _gs=Gio.Settings(schema,path)
+            return key in _gs.list_keys() 
         else:
             return True
 
@@ -70,19 +83,33 @@ VALID_TYPES=frozenset([
             ])
 
 def get(*,schema,key,type,path=None):
-    _suffix=':'+path if path is not None else ''
+    '''
+    Getter that calls appropriate function on Gio.Settings depending on type. The schema,path,key,type combination is expected to be valid. Uses cache wherever possible.
+    '''
+    logger.debug('Attempting to get key %s of type %s from schema %s with path %s',key,type,schema,path)
+    _gskey=schema+(':'+path if path is not None else '')
     try:
-        _gs=GSettings[schema+_suffix]
+        _gs=GSettings[_gskey]
+        logger.debug('Using cached Settings object for %s',_gskey)
     except KeyError as e:
+        logger.debug('Cache miss for Settings object %s',_gskey)
         _gs=Gio.Settings(schema,path)
+        GSettings[_gskey]=_gs
     return _gs.__getattr__('get_'+type)(key)
 
 def set(*,schema,key,type,path=None,value):
-    _suffix=':'+path if path is not None else ''
+    '''
+    Setter that calls appropriate function on Gio.Settings depending on the type. The schema,path,key,type combination is expected to be valid, and the value must be of the proper type. Uses cache wherever possible.
+    '''
+    logger.debug('Attempting to set key %s of type %s from schema %s with path %s to value %s',key,type,schema,path,value)
+    _gskey=schema+(':'+path if path is not None else '')
     try:
-        _gs=GSettings[schema+_suffix]
+        _gs=GSettings[_gskey]
+        logger.debug('Using cached Settings object for %s',_gskey)
     except KeyError as e:
+        logger.debug('Cache miss for Settings object %s',_gskey)
         _gs=Gio.Settings(schema,path)
+        GSettings[_gskey]=_gs
 # TODO : check if value is legal, if possible.
     return _gs.__setattr__('set_'+type)(key,value)
 
