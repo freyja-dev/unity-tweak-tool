@@ -3,8 +3,8 @@
 # -*- coding: utf-8 -*-
 #
 # Team:
-#   J Phani Mahesh <phanimahesh@gmail.com> 
-#   Barneedhar (jokerdino) <barneedhar@ubuntu.com> 
+#   J Phani Mahesh <phanimahesh@gmail.com>
+#   Barneedhar (jokerdino) <barneedhar@ubuntu.com>
 #   Amith KK <amithkumaran@gmail.com>
 #   Georgi Karavasilev <motorslav@gmail.com>
 #   Sam Tran <samvtran@gmail.com>
@@ -37,7 +37,7 @@ logger=logging.getLogger('UnityTweakTool.elements.radio')
 
 class Radio:
     def __init__(self,controlObj):
-        ''' Initialise a switch from a controlObj dictionary '''
+        ''' Initialise a Radio from a controlObj dictionary '''
         self.id         = controlObj['id']
         self.ui         = controlObj['builder'].get_obj(controlObj['id'])
         self.schema     = controlObj['schema']
@@ -52,13 +52,16 @@ class Radio:
             path=self.path,
             key=self.key
             )
+        logger.debug('Initialised a radiobutton with id {self.id} to control key {self.key} of type {self.type} in schema {self.schema} with path {self.path}'.format(self=self))
 
     def register(self,handler):
         ''' Register handler on a handler object '''
         handler['on_%s_toggled'% self.id]=self.handler
+        logger.debug('Handler for {self.id} registered'.format(self=self))
 
     def refresh(self):
         ''' Refresh the UI querying the backend '''
+        logger.debug('Refreshing UI display for {self.id}'.format(self=self))
         self.ui.set_active(
             gsettings.get(
                 schema=self.schema,
@@ -67,7 +70,7 @@ class Radio:
                 type  =self.type
                 ) == self.value
             )
-    
+
     def handler(self,*args,**kwargs):
         ''' Handle toggled signals '''
         if self.ui.get_active():
@@ -78,3 +81,9 @@ class Radio:
                 type=self.type,
                 value=self.value
                 )
+        logger.info('Handler for {self.id} executed'.format(self=self))
+
+    def reset(self):
+        ''' Reset the controlled key '''
+        gsettings.reset(schema=self.schema,path=self.path,key=self.key)
+        logger.debug('Key {self.key} in schema {self.schema} and path {self.path} reset.'.format(self=self))

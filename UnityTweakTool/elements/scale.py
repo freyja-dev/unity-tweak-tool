@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 #
 # Team:
-#   J Phani Mahesh <phanimahesh@gmail.com> 
-#   Barneedhar (jokerdino) <barneedhar@ubuntu.com> 
+#   J Phani Mahesh <phanimahesh@gmail.com>
+#   Barneedhar (jokerdino) <barneedhar@ubuntu.com>
 #   Amith KK <amithkumaran@gmail.com>
 #   Georgi Karavasilev <motorslav@gmail.com>
 #   Sam Tran <samvtran@gmail.com>
@@ -54,13 +54,17 @@ class Scale:
         for tick in self.ticks:
             self.ui.add_mark(*tick)
 # TODO : Set range using min, max
+        logger.debug('Initialised a scale with id {self.id} to control key {self.key} of type {self.type} in schema {self.schema} with path {self.path}'.format(self=self))
+
 
     def register(self,handler):
         ''' Register handler on a handler object '''
         handler['on_%s_value_changed'% self.id]=self.handler
+        logger.debug('Handler for {self.id} registered'.format(self=self))
 
     def refresh(self):
         ''' Refresh the UI querying the backend '''
+        logger.debug('Refreshing UI display for {self.id}'.format(self=self))
         self.ui.set_value(
             gsettings.get(
                 schema=self.schema,
@@ -69,7 +73,7 @@ class Scale:
                 type  =self.type
                 )
             )
-    
+
     def handler(self,*args,**kwargs):
         ''' Handle value_changed signals '''
         gsettings.set(
@@ -79,3 +83,9 @@ class Scale:
             type=self.type,
             value=self.ui.get_active()
             )
+        logger.info('Handler for {self.id} executed'.format(self=self))
+
+    def reset(self):
+        ''' Reset the controlled key '''
+        gsettings.reset(schema=self.schema,path=self.path,key=self.key)
+        logger.debug('Key {self.key} in schema {self.schema} and path {self.path} reset.'.format(self=self))
