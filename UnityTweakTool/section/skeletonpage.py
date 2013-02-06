@@ -28,17 +28,28 @@
 # You should have received a copy of the GNU General Public License along with
 # this program; if not, see <https://www.gnu.org/licenses/gpl-3.0.txt>
 
-# This file should control the logging setup for entire application
+import os, os.path
+import UnityTweakTool.config.data as data
+from gi.repository import Gtk, Gio
 
-import logging
-import xdg.BaseDirectory
-import os
+class SkeletonPage ():
+    def __init__(self, ui,id):
+        self.builder = Gtk.Builder()
+        self.ui = os.path.join(data.get_data_path(),ui)
+        self.builder.add_from_file(self.ui)
+        self.page = self.builder.get_object(id)
+        self.page.unparent()
+        self.registered=False
+        self.elements=set()
 
-logger=logging.getLogger('UnityTweakTool.config.logging')
+    def register(self):
+        assert self.registered is False
+        handler={}
+        for element in self.elements:
+            element.register(handler)
+        self.builder.connect_signals(handler)
+        self.registered=True
 
-# This makes the directory if missing.
-CFGDIR  = xdg.BaseDirectory.save_config_path('unity-tweak-tool')
-LOGFILE = os.path.join(CFGDIR,'debug.log')
-LOGFMT  = '%(asctime)s - %(levelname)-8s :: %(name)s - %(funcName)s - %(message)s'
-LOGLVL  = logging.DEBUG
-
+    def reset(self):
+        for element in self.elements:
+            element.reset()

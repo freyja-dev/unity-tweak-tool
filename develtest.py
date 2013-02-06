@@ -33,4 +33,4 @@
 import sys,os
 
 sys.path.append(os.path.split(__name__)[0])
-os.system('./unity-tweak-tool')
+os.system(os.path.join(os.path.dirname(__file__),'unity-tweak-tool'))

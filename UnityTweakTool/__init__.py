@@ -32,19 +32,37 @@
 # from UnityTweakTool import *
 __all__=['backends','config','elements']
 
+import os
 import logging
+from gi.repository import Gtk
+from UnityTweakTool.config.logging import LOGFILE,LOGFMT,LOGLVL
 
 logger=logging.getLogger('UnityTweakTool')
-logger.setLevel(logging.DEBUG)
+logger.setLevel(LOGLVL)
 
-# TODO : give a sensible logfile name.
-logfile='utt.log'
-_fh=logging.FileHandler(logfile)
-_fh.setLevel(logging.DEBUG)
+_fh=logging.FileHandler(LOGFILE)
+_fh.setLevel(LOGLVL)
 
-_formatter=logging.Formatter('%(asctime)s - %(levelname)-8s :: %(name)s - %(funcName)s - %(message)s')
+_formatter=logging.Formatter(LOGFMT)
 
 _fh.setFormatter(_formatter)
 logger.addHandler(_fh)
 
 del _fh, _formatter
+
+def init(page='overview'):
+    print('Initialising...')
+    from UnityTweakTool.config.data import get_data_path
+    from UnityTweakTool.section.overview import Overview
+    builder=Gtk.Builder()
+    ui=os.path.join(get_data_path(),'unitytweak.ui')
+    builder.add_from_file(ui)
+    handler={}
+    builder.connect_signals(handler)
+    notebook=builder.get_object('nb_unitytweak')
+    overview=Overview(notebook)
+    notebook.append_page(overview.page,None)
+    builder.get_object('unitytweak_main').show_all()
+    builder.get_object('unitytweak_main').connect('delete-event',Gtk.main_quit)
+    Gtk.main()
+
