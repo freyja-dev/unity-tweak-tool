@@ -81,4 +81,9 @@ class Switch:
             type=self.type,
             value=self.invmap[self.ui.get_active()]
             )
-        logger.debug('Handler for {self.id} executed'.format(self=self))
+        logger.info('Handler for {self.id} executed'.format(self=self))
+
+    def reset(self):
+        ''' Reset the controlled key '''
+        gsettings.reset(schema=self.schema,path=self.path,key=self.key)
+        logger.debug('Key {self.key} in schema {self.schema} and path {self.path} reset.'.format(self=self))
