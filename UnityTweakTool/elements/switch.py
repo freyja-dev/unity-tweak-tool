@@ -51,13 +51,16 @@ class Switch:
             path=self.path,
             key=self.key
             )
+        logger.debug('Initialised a switch with id {self.id} to control key {self.key} of type {self.type} in schema {self.schema} with path {self.path}'.format(self=self))
 
     def register(self,handler):
         ''' Register handler on a handler object '''
         handler['on_%s_active_notify'% self.id]=self.handler
+        logger.debug('Handler for {self.id} registered'.format(self=self))
 
     def refresh(self):
         ''' Refresh the UI querying the backend '''
+        logger.debug('Refreshing UI display for {self.id}'.format(self=self))
         self.ui.set_active(
             self.map[
                 gsettings.get(
@@ -78,3 +81,4 @@ class Switch:
             type=self.type,
             value=self.invmap[self.ui.get_active()]
             )
+        logger.debug('Handler for {self.id} executed'.format(self=self))
