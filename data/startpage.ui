@@ -24,110 +24,111 @@
   <object class="GtkImage" id="i_tool_icons">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="pixbuf">media/36/appearance-settings-icons-dark_36.svg</property>
+    <property name="pixbuf">media/48/appearance-settings-icons.svg</property>
   </object>
   <object class="GtkImage" id="i_tool_additional">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="pixbuf">media/36/unity-settings-additional-dark_36.svg</property>
+    <property name="pixbuf">media/48/unity-settings-additional.svg</property>
   </object>
   <object class="GtkImage" id="i_tool_dash">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="pixbuf">media/36/unity-settings-dash-dark_36.svg</property>
+    <property name="pixbuf">media/48/unity-settings-dash.svg</property>
   </object>
   <object class="GtkImage" id="i_tool_launcher">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="pixbuf">media/36/unity-settings-launcher-dark_36.svg</property>
+    <property name="pixbuf">media/48/unity-settings-launcher.svg</property>
   </object>
   <object class="GtkImage" id="i_tool_panel">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="pixbuf">media/36/unity-settings-panel-dark_36.svg</property>
+    <property name="pixbuf">media/48/unity-settings-panel.svg</property>
   </object>
   <object class="GtkImage" id="i_tool_compiz_switcher">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="pixbuf">media/36/wm-settings-workspace-switcher-dark_36.svg</property>
+    <property name="pixbuf">media/48/wm-settings-workspace-switcher.svg</property>
   </object>
   <object class="GtkImage" id="i_tool_cursors">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="pixbuf">media/36/appearance-settings-cursor-dark_36.svg</property>
+    <property name="pixbuf">media/48/appearance-settings-cursor.svg</property>
   </object>
   <object class="GtkImage" id="i_tool_desktop_icons">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="pixbuf">media/36/desktop-settings-icons-dark_36.svg</property>
+    <property name="pixbuf">media/48/desktop-settings-icons.svg</property>
   </object>
   <object class="GtkImage" id="i_tool_desktop_security">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="tooltip_markup" translatable="yes">Show the settings for the security.</property>
     <property name="tooltip_text" translatable="yes">Show the settings for the security.</property>
-    <property name="pixbuf">media/36/desktop-settings-security-dark_36.svg</property>
+    <property name="pixbuf">media/48/desktop-settings-security.svg</property>
   </object>
   <object class="GtkImage" id="i_tool_fonts">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="pixbuf">media/36/appearance-settings-font-dark_36.svg</property>
+    <property name="pixbuf">media/48/appearance-settings-font.svg</property>
   </object>
   <object class="GtkImage" id="i_tool_general">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="pixbuf">media/36/wm-settings-general-dark_36.svg</property>
+    <property name="pixbuf">media/48/wm-settings-general.svg</property>
   </object>
   <object class="GtkImage" id="i_tool_hotcorners">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="pixbuf">media/36/wm-settings-hotcorners-dark_36.svg</property>
+    <property name="pixbuf">media/48/wm-settings-hotcorners.svg</property>
   </object>
   <object class="GtkImage" id="i_tool_scrolling">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="pixbuf">media/36/desktop-settings-scrolling-dark_36.svg</property>
+    <property name="pixbuf">media/48/desktop-settings-scrolling.svg</property>
   </object>
   <object class="GtkImage" id="i_tool_system">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="pixbuf">media/36/appearance-settings-theme-dark_36.svg</property>
+    <property name="pixbuf">media/48/appearance-settings-theme.svg</property>
   </object>
   <object class="GtkImage" id="i_tool_unity_switcher">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="pixbuf">media/36/unity-settings-switcher-dark_36.svg</property>
+    <property name="pixbuf">media/48/unity-settings-switcher.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_unity_webapps">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="valign">start</property>
+    <property name="pixbuf">media/48/unity-settings-webapps.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_window_controls">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">media/48/appearance-settings-window-controls.svg</property>
   </object>
   <object class="GtkImage" id="i_tool_window_snapping">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="pixbuf">media/36/wm-settings-window-snapping-dark_36.svg</property>
+    <property name="pixbuf">media/48/wm-settings-window-snapping.svg</property>
   </object>
   <object class="GtkImage" id="i_tool_window_spread">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="pixbuf">media/36/wm-settings-window-switcher-dark_36.svg</property>
+    <property name="pixbuf">media/48/wm-settings-window-switcher.svg</property>
   </object>
   <object class="GtkImage" id="i_tool_wm_additional">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="pixbuf">media/36/wm-settings-additional-dark_36.svg</property>
-  </object>
-  <object class="GtkImage" id="i_unity_webapps">
-    <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="valign">start</property>
-    <property name="pixbuf">media/36/unity-settings-webapps-dark_36.svg</property>
-  </object>
-  <object class="GtkImage" id="i_window_controls">
-    <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="pixbuf">media/36/appearance-settings-window-controls-dark_36.svg</property>
+    <property name="pixbuf">media/48/wm-settings-additional.svg</property>
   </object>
   <object class="GtkLabel" id="l_desktop_icons">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="valign">start</property>
+    <property name="margin_bottom">1</property>
     <property name="label" translatable="yes">Desktop Icons</property>
     <property name="justify">center</property>
     <property name="wrap">True</property>
@@ -136,7 +137,10 @@
     <property name="width_request">70</property>
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="label" translatable="yes">Window snapping</property>
+    <property name="valign">end</property>
+    <property name="vexpand">True</property>
+    <property name="label" translatable="yes">Window
+Snapping</property>
     <property name="justify">center</property>
     <property name="wrap">True</property>
   </object>
@@ -144,14 +148,16 @@
     <property name="width_request">70</property>
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="label" translatable="yes">Window spread</property>
+    <property name="label" translatable="yes">Window
+Spread</property>
     <property name="justify">center</property>
     <property name="wrap">True</property>
   </object>
-  <object class="GtkLabel" id="l_tool_workspace_switcher">
+  <object class="GtkLabel" id="l_tool_workspace">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="label" translatable="yes">Workspaces</property>
+    <property name="label" translatable="yes">Workspace
+Settings</property>
     <property name="justify">center</property>
     <property name="wrap">True</property>
   </object>
@@ -169,12 +175,12 @@ Controls</property>
       <object class="GtkBox" id="box_startpage">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
+        <property name="valign">start</property>
         <property name="margin_left">12</property>
         <property name="margin_right">12</property>
         <property name="margin_top">12</property>
         <property name="margin_bottom">12</property>
         <property name="orientation">vertical</property>
-        <property name="homogeneous">True</property>
         <child>
           <object class="GtkBox" id="box_start_unity">
             <property name="visible">True</property>
@@ -225,7 +231,7 @@ Controls</property>
                 <property name="margin_top">6</property>
                 <property name="toolbar_style">both</property>
                 <property name="show_arrow">False</property>
-                <property name="icon_size">5</property>
+                <property name="icon_size">6</property>
                 <child>
                   <object class="GtkToolButton" id="tool_launcher">
                     <property name="use_action_appearance">False</property>
@@ -254,7 +260,7 @@ Controls</property>
                     <property name="can_focus">False</property>
                     <property name="tooltip_markup" translatable="yes">Show the Unity Dash settings</property>
                     <property name="tooltip_text" translatable="yes">Show the Unity Dash settings</property>
-                    <property name="label" translatable="yes">Dash</property>
+                    <property name="label" translatable="yes">Search</property>
                     <property name="use_underline">True</property>
                     <property name="icon_widget">i_tool_dash</property>
                     <signal name="clicked" handler="on_tool_dash_clicked" swapped="no"/>
@@ -311,9 +317,9 @@ Controls</property>
                     <property name="can_focus">False</property>
                     <property name="halign">center</property>
                     <property name="valign">start</property>
-                    <property name="label" translatable="yes">Webapps</property>
+                    <property name="label" translatable="yes">Web Apps</property>
                     <property name="use_underline">True</property>
-                    <property name="icon_widget">i_unity_webapps</property>
+                    <property name="icon_widget">i_tool_unity_webapps</property>
                     <signal name="clicked" handler="on_tool_unity_webapps_clicked" swapped="no"/>
                   </object>
                   <packing>
@@ -347,23 +353,25 @@ Controls</property>
                 <property name="position">1</property>
               </packing>
             </child>
-            <child>
-              <object class="GtkSeparator" id="sep_start_unity">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="margin_top">6</property>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">2</property>
-              </packing>
-            </child>
           </object>
           <packing>
             <property name="expand">False</property>
             <property name="fill">True</property>
             <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSeparator" id="sep_start_unity">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="valign">end</property>
+            <property name="margin_top">6</property>
+            <property name="margin_bottom">12</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
           </packing>
         </child>
         <child>
@@ -406,7 +414,7 @@ Controls</property>
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">0</property>
+                <property name="position">1</property>
               </packing>
             </child>
             <child>
@@ -442,13 +450,15 @@ Controls</property>
                     <property name="use_action_appearance">False</property>
                     <property name="related_action">a_tool_compiz_switcher</property>
                     <property name="width_request">90</property>
+                    <property name="height_request">50</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="tooltip_markup" translatable="yes">Show the settings for the workspace switcher</property>
                     <property name="tooltip_text" translatable="yes">Show the settings for the workspace switcher</property>
                     <property name="valign">start</property>
+                    <property name="vexpand">True</property>
                     <property name="use_underline">True</property>
-                    <property name="label_widget">l_tool_workspace_switcher</property>
+                    <property name="label_widget">l_tool_workspace</property>
                     <property name="icon_widget">i_tool_compiz_switcher</property>
                     <signal name="clicked" handler="on_tool_compiz_switcher_clicked" swapped="no"/>
                   </object>
@@ -462,11 +472,13 @@ Controls</property>
                     <property name="use_action_appearance">False</property>
                     <property name="related_action">a_tool_window_spread</property>
                     <property name="width_request">90</property>
+                    <property name="height_request">50</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="tooltip_markup" translatable="yes">Show the settings for window spread behaviour</property>
                     <property name="tooltip_text" translatable="yes">Show the settings for window spread behaviour</property>
                     <property name="valign">start</property>
+                    <property name="vexpand">True</property>
                     <property name="use_underline">True</property>
                     <property name="label_widget">l_tool_windows_spread</property>
                     <property name="icon_widget">i_tool_window_spread</property>
@@ -541,18 +553,6 @@ Controls</property>
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">1</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkSeparator" id="sep_start_compiz">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="margin_top">6</property>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
                 <property name="position">2</property>
               </packing>
             </child>
@@ -560,7 +560,21 @@ Controls</property>
           <packing>
             <property name="expand">False</property>
             <property name="fill">True</property>
-            <property name="position">1</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSeparator" id="sep_start_compiz">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="valign">start</property>
+            <property name="margin_top">6</property>
+            <property name="margin_bottom">12</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">3</property>
           </packing>
         </child>
         <child>
@@ -704,7 +718,7 @@ Controls</property>
                     <property name="valign">start</property>
                     <property name="use_underline">True</property>
                     <property name="label_widget">l_window_controls</property>
-                    <property name="icon_widget">i_window_controls</property>
+                    <property name="icon_widget">i_tool_window_controls</property>
                     <signal name="clicked" handler="on_tool_window_controls_clicked" swapped="no"/>
                   </object>
                   <packing>
@@ -719,23 +733,25 @@ Controls</property>
                 <property name="position">1</property>
               </packing>
             </child>
-            <child>
-              <object class="GtkSeparator" id="sep_start_theme">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="margin_top">6</property>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">2</property>
-              </packing>
-            </child>
           </object>
           <packing>
             <property name="expand">False</property>
             <property name="fill">True</property>
-            <property name="position">2</property>
+            <property name="position">4</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSeparator" id="sep_start_theme">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="valign">start</property>
+            <property name="margin_top">6</property>
+            <property name="margin_bottom">12</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">5</property>
           </packing>
         </child>
         <child>
@@ -857,7 +873,7 @@ Controls</property>
           <packing>
             <property name="expand">False</property>
             <property name="fill">True</property>
-            <property name="position">3</property>
+            <property name="position">6</property>
           </packing>
         </child>
       </object>

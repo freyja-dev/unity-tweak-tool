@@ -284,7 +284,7 @@
           <object class="GtkLabel" id="l_page_theme_system">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="label" translatable="yes">System theme</property>
+            <property name="label" translatable="yes">Theme</property>
           </object>
           <packing>
             <property name="tab_fill">False</property>
@@ -415,7 +415,7 @@
           <object class="GtkLabel" id="l_page_theme_icon">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="label" translatable="yes">Icon theme</property>
+            <property name="label" translatable="yes">Icons</property>
           </object>
           <packing>
             <property name="position">1</property>
@@ -432,12 +432,28 @@
             <property name="margin_bottom">12</property>
             <property name="orientation">vertical</property>
             <child>
+              <object class="GtkLabel" id="l_cursor_theme">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="halign">start</property>
+                <property name="label" translatable="yes">Theme</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
               <object class="GtkScrolledWindow" id="scrolledwindow_cursor_theme">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="margin_left">6</property>
                 <property name="margin_right">6</property>
-                <property name="margin_top">12</property>
+                <property name="margin_top">6</property>
                 <property name="shadow_type">in</property>
                 <child>
                   <object class="GtkTreeView" id="tree_cursor_theme">
@@ -519,6 +535,44 @@
               </packing>
             </child>
             <child>
+              <object class="GtkLabel" id="l_cursor_preferences">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="halign">start</property>
+                <property name="margin_top">6</property>
+                <property name="label" translatable="yes">Preferences</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="check_cursor_size">
+                <property name="label" translatable="yes">Use large cursors</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="receives_default">False</property>
+                <property name="tooltip_markup" translatable="yes">If enabled, the system will use a larger cursor.</property>
+                <property name="tooltip_text" translatable="yes">If enabled, the system will use a larger cursor.</property>
+                <property name="margin_left">6</property>
+                <property name="margin_top">6</property>
+                <property name="margin_bottom">6</property>
+                <property name="xalign">0</property>
+                <property name="draw_indicator">True</property>
+                <signal name="toggled" handler="on_check_cursor_size_toggled" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">4</property>
+              </packing>
+            </child>
+            <child>
               <object class="GtkButton" id="b_theme_cursor_reset">
                 <property name="label" translatable="yes">Restore defaults</property>
                 <property name="visible">True</property>
@@ -533,7 +587,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">False</property>
-                <property name="position">4</property>
+                <property name="position">7</property>
               </packing>
             </child>
           </object>
@@ -545,7 +599,7 @@
           <object class="GtkLabel" id="l_page_theme_cursor">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="label" translatable="yes">Cursor theme</property>
+            <property name="label" translatable="yes">Cursor</property>
           </object>
           <packing>
             <property name="position">2</property>
@@ -579,8 +633,6 @@
               <object class="GtkGrid" id="grid_font_settings">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="margin_left">18</property>
-                <property name="margin_right">18</property>
                 <property name="row_spacing">6</property>
                 <child>
                   <object class="GtkLabel" id="l_defaultfont">
@@ -765,8 +817,6 @@
               <object class="GtkGrid" id="grid_font_appearance">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="margin_left">18</property>
-                <property name="margin_right">18</property>
                 <property name="row_spacing">6</property>
                 <child>
                   <object class="GtkLabel" id="l_antialiasing">
@@ -1089,7 +1139,7 @@
                   <item translatable="yes">Close, minimize, window title</item>
                   <item translatable="yes">Close, window title, maximize</item>
                 </items>
-                <signal name="changed" handler="on_cbox_cbox_custom_layout_changed" swapped="no"/>
+                <signal name="changed" handler="on_cbox_custom_layout_changed" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">False</property>

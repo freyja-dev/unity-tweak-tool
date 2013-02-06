@@ -209,7 +209,7 @@
                     <property name="entry_text_column">0</property>
                     <property name="id_column">1</property>
                     <items>
-                      <item translatable="yes">Fade on Dash &amp; Slide</item>
+                      <item translatable="yes">Fade Dash &amp; Slide</item>
                       <item translatable="yes">Slide only</item>
                       <item translatable="yes">Fade only</item>
                       <item translatable="yes">Fade &amp; slide</item>
@@ -383,7 +383,6 @@
                 <property name="can_focus">False</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
-                <property name="margin_bottom">6</property>
                 <property name="label" translatable="yes">Appearance</property>
                 <attributes>
                   <attribute name="weight" value="bold"/>
@@ -669,6 +668,7 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="halign">start</property>
+                <property name="margin_top">6</property>
                 <property name="row_spacing">6</property>
                 <child>
                   <object class="GtkSpinButton" id="spin_launcher_icon_size">
@@ -807,8 +807,8 @@
                     <signal name="changed" handler="on_cbox_launcher_icon_colouring_changed" swapped="no"/>
                   </object>
                   <packing>
-                    <property name="left_attach">3</property>
-                    <property name="top_attach">1</property>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">2</property>
                     <property name="width">1</property>
                     <property name="height">1</property>
                   </packing>
@@ -824,24 +824,27 @@
                     <property name="label" translatable="yes">Icon backgrounds:</property>
                   </object>
                   <packing>
-                    <property name="left_attach">2</property>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">2</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkSwitch" id="switch_show_desktop">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="halign">start</property>
+                    <property name="valign">center</property>
+                    <signal name="notify::active" handler="on_switch_show_desktop_active_notify" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="left_attach">3</property>
                     <property name="top_attach">1</property>
                     <property name="width">1</property>
                     <property name="height">1</property>
                   </packing>
                 </child>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">7</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkGrid" id="grid_launcher_item">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="margin_top">6</property>
                 <child>
                   <object class="GtkLabel" id="l_show_desktop_icon">
                     <property name="width_request">150</property>
@@ -853,31 +856,23 @@
                     <property name="label" translatable="yes">"Show Desktop" icon:</property>
                   </object>
                   <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">0</property>
+                    <property name="left_attach">2</property>
+                    <property name="top_attach">1</property>
                     <property name="width">1</property>
                     <property name="height">1</property>
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkSwitch" id="switch_show_desktop">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="halign">start</property>
-                    <signal name="notify::active" handler="on_switch_show_desktop_active_notify" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">0</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
+                  <placeholder/>
+                </child>
+                <child>
+                  <placeholder/>
                 </child>
               </object>
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">9</property>
+                <property name="position">7</property>
               </packing>
             </child>
             <child>
@@ -950,7 +945,7 @@
                     <property name="halign">end</property>
                     <property name="margin_right">6</property>
                     <property name="xalign">1</property>
-                    <property name="label" translatable="yes">Dash blur:</property>
+                    <property name="label" translatable="yes">Background blur:</property>
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
@@ -1058,7 +1053,7 @@
             </child>
             <child>
               <object class="GtkCheckButton" id="check_suggestions">
-                <property name="label" translatable="yes">Online Suggestions</property>
+                <property name="label" translatable="yes">Search online sources</property>
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="receives_default">False</property>
@@ -1145,7 +1140,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">4</property>
+                <property name="position">3</property>
               </packing>
             </child>
             <child>
@@ -1197,7 +1192,45 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">6</property>
+                <property name="position">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="l_run_command">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="halign">start</property>
+                <property name="margin_left">12</property>
+                <property name="margin_top">12</property>
+                <property name="label" translatable="yes">Run Command</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b_clear_run_history">
+                <property name="label" translatable="yes">Clear History</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="receives_default">True</property>
+                <property name="tooltip_markup" translatable="yes">Clear ALT+F2 command history.</property>
+                <property name="tooltip_text" translatable="yes">Clear ALT+F2 command history.</property>
+                <property name="halign">start</property>
+                <property name="margin_left">18</property>
+                <property name="margin_top">6</property>
+                <property name="margin_bottom">6</property>
+                <signal name="clicked" handler="on_b_clear_run_history_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">8</property>
               </packing>
             </child>
             <child>
@@ -1218,7 +1251,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">9</property>
+                <property name="position">11</property>
               </packing>
             </child>
           </object>
@@ -1230,7 +1263,7 @@
           <object class="GtkLabel" id="l_page_unity_dash">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="label" translatable="yes">Dash</property>
+            <property name="label" translatable="yes">Search</property>
           </object>
           <packing>
             <property name="position">1</property>
@@ -2461,7 +2494,7 @@
           <object class="GtkLabel" id="l_page_webapps">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="label" translatable="yes">Webapps</property>
+            <property name="label" translatable="yes">Web Apps</property>
           </object>
           <packing>
             <property name="position">4</property>
@@ -2474,6 +2507,44 @@
             <property name="can_focus">False</property>
             <property name="margin_top">6</property>
             <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkLabel" id="l_hud">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="halign">start</property>
+                <property name="margin_left">12</property>
+                <property name="label" translatable="yes">HUD</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="check_hud_store_data">
+                <property name="label" translatable="yes">Remember previous commands</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="receives_default">False</property>
+                <property name="tooltip_markup" translatable="yes">If enabled, the HUD will remember previously executed entries and sort them by frequently used.</property>
+                <property name="tooltip_text" translatable="yes">If enabled, the HUD will remember previously executed entries and sort them by frequently used.</property>
+                <property name="margin_left">18</property>
+                <property name="margin_top">6</property>
+                <property name="margin_bottom">6</property>
+                <property name="xalign">0</property>
+                <property name="draw_indicator">True</property>
+                <signal name="toggled" handler="on_check_hud_store_data_toggled" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
             <child>
               <object class="GtkLabel" id="l_unity_addtional_shortcuts">
                 <property name="visible">True</property>
@@ -2488,7 +2559,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">0</property>
+                <property name="position">2</property>
               </packing>
             </child>
             <child>
@@ -2521,7 +2592,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">False</property>
-                <property name="position">1</property>
+                <property name="position">3</property>
               </packing>
             </child>
             <child>
@@ -2579,7 +2650,7 @@
               <packing>
                 <property name="expand">True</property>
                 <property name="fill">True</property>
-                <property name="position">2</property>
+                <property name="position">4</property>
               </packing>
             </child>
             <child>
@@ -2598,7 +2669,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">3</property>
+                <property name="position">5</property>
               </packing>
             </child>
             <child>
@@ -2650,7 +2721,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">4</property>
+                <property name="position">6</property>
               </packing>
             </child>
             <child>
@@ -2670,7 +2741,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">6</property>
+                <property name="position">8</property>
               </packing>
             </child>
           </object>

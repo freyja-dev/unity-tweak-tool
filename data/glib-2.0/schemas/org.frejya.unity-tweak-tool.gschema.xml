@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist gettext-domain="unity-tweak-tool">
-  <schema id="org.freyja.unity-tweak-tool" path="/net/freyja/unity-tweak-tool/">
-    <key name="example" type="s">
+  <schema id="org.freyja.unity-tweak-tool" path="/org/freyja/unity-tweak-tool/">
+    <key name="utt" type="s">
       <default>''</default>
       <summary>Summary</summary>
       <description>Description</description>
