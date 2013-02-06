@@ -5,6 +5,7 @@ class OverviewToolButton:
         self.page=page
         self.notebook=notebook
     def handler(self,*args,**kwargs):
+        self.notebook.set_current_page(self.section)
         self.notebook.get_nth_page(self.section).set_current_page(self.page)
     def register(self,handler):
         handler['on_%s_clicked'%self.id]=self.handler

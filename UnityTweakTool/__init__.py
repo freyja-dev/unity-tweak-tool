@@ -50,18 +50,28 @@ logger.addHandler(_fh)
 
 del _fh, _formatter
 
+def connectpages(notebook):
+    from UnityTweakTool.section.overview import Overview
+    from UnityTweakTool.section.unity import Unity
+    from UnityTweakTool.section.windowmanager import WindowManager
+    from UnityTweakTool.section.system import System
+    from UnityTweakTool.section.appearance import Appearance
+    sections=[Overview,Unity,WindowManager,Appearance,System]
+    for section in sections:
+        id=notebook.append_page(section(notebook).page,None)
+        assert id is not -1
+    notebook.set_current_page(0)
+
 def init(page='overview'):
     print('Initialising...')
     from UnityTweakTool.config.data import get_data_path
-    from UnityTweakTool.section.overview import Overview
     builder=Gtk.Builder()
     ui=os.path.join(get_data_path(),'unitytweak.ui')
     builder.add_from_file(ui)
     handler={}
     builder.connect_signals(handler)
     notebook=builder.get_object('nb_unitytweak')
-    overview=Overview(notebook)
-    notebook.append_page(overview.page,None)
+    connectpages(notebook)
     builder.get_object('unitytweak_main').show_all()
     builder.get_object('unitytweak_main').connect('delete-event',Gtk.main_quit)
     Gtk.main()
