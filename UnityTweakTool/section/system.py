@@ -31,6 +31,7 @@
 
 from UnityTweakTool.section.skeletonpage import Section,Tab
 from UnityTweakTool.elements.switch import Switch
+from UnityTweakTool.elements.checkbox import CheckBox
 
 System=Section(ui='desktop.ui',id='nb_desktop_settings')
 
@@ -48,7 +49,56 @@ switch_desktop_icons= Switch({
                     'check_desktop_trash',
                     'check_desktop_devices']
 })
-DesktopIcons=Tab([switch_desktop_icons])
+
+check_desktop_home= CheckBox({
+    'id'        : 'check_desktop_home',
+    'builder'   : System.builder,
+    'schema'    : 'org.gnome.nautilus.desktop',
+    'path'      : None,
+    'key'       : 'home-icon-visible',
+    'type'      : 'boolean',
+    'map'       : {True:True,False:False},
+    'dependants': []
+})
+
+check_desktop_networkserver= CheckBox({
+    'id'        : 'check_desktop_networkserver',
+    'builder'   : System.builder,
+    'schema'    : 'org.gnome.nautilus.desktop',
+    'path'      : None,
+    'key'       : 'network-icon-visible',
+    'type'      : 'boolean',
+    'map'       : {True:True,False:False},
+    'dependants': []
+})
+
+check_desktop_trash= CheckBox({
+    'id'        : 'check_desktop_trash',
+    'builder'   : System.builder,
+    'schema'    : 'org.gnome.nautilus.desktop',
+    'path'      : None,
+    'key'       : 'trash-icon-visible',
+    'type'      : 'boolean',
+    'map'       : {True:True,False:False},
+    'dependants': []
+})
+
+check_desktop_devices= CheckBox({
+    'id'        : 'check_desktop_devices',
+    'builder'   : System.builder,
+    'schema'    : 'org.gnome.nautilus.desktop',
+    'path'      : None,
+    'key'       : 'volumes-visible',
+    'type'      : 'boolean',
+    'map'       : {True:True,False:False},
+    'dependants': []
+})
+
+DesktopIcons=Tab([  switch_desktop_icons,
+                    check_desktop_home,
+                    check_desktop_networkserver,
+                    check_desktop_trash,
+                    check_desktop_devices])
 
 # Each page must be added using add_page
 System.add_page(DesktopIcons)

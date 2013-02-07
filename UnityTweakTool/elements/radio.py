@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
@@ -39,7 +38,7 @@ class Radio:
     def __init__(self,controlObj):
         ''' Initialise a Radio from a controlObj dictionary '''
         self.id         = controlObj['id']
-        self.ui         = controlObj['builder'].get_obj(controlObj['id'])
+        self.ui         = controlObj['builder'].get_object(controlObj['id'])
         self.schema     = controlObj['schema']
         self.path       = controlObj['path']
         self.key        = controlObj['key']

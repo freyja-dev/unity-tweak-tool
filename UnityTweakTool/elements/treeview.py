@@ -38,7 +38,7 @@ class TreeView:
     def __init__(self,controlObj):
         ''' Initialise a Treeview element from a dictionary'''
         self.id         = controlObj['id']
-        self.ui         = controlObj['builder'].get_obj(controlObj['id'])
+        self.ui         = controlObj['builder'].get_object(controlObj['id'])
         self.schema     = controlObj['schema']
         self.path       = controlObj['path']
         self.key        = controlObj['key']
