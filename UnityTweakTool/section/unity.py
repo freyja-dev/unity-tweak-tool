@@ -65,7 +65,7 @@ WebappsIcons=Tab([switch_unity_webapps])
 
 
 # Each page must be added using add_page
-#Unity.add_page(LauncherIcons)
+Unity.add_page(LauncherIcons)
 Unity.add_page(WebappsIcons)
 # After all pages are added, the section needs to be registered to start listening for events
 Unity.register()
