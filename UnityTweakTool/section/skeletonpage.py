@@ -30,6 +30,7 @@
 
 import os, os.path
 import UnityTweakTool.config.data as data
+from UnityTweakTool.elements.resetbutton import ResetButton
 from gi.repository import Gtk, Gio
 
 class Section ():
@@ -56,7 +57,8 @@ class Tab():
         for element in self.elements:
             element.register(handler)
         self.registered=True
-
+    def enable_restore(self,id):
+        self.elements.append(ResetButton({'id':id,'tab':self}))
     def reset(self):
         for element in self.elements:
             element.reset()

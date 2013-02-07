@@ -100,6 +100,9 @@ DesktopIcons=Tab([  switch_desktop_icons,
                     check_desktop_trash,
                     check_desktop_devices])
 
+# Pass in the id of restore defaults button to enable it.
+DesktopIcons.enable_restore('b_desktop_settings_icons_reset')
+
 # Each page must be added using add_page
 System.add_page(DesktopIcons)
 # After all pages are added, the section needs to be registered to start listening for events

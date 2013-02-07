@@ -113,3 +113,16 @@ def set(*,schema,key,type,path=None,value):
 # TODO : check if value is legal, if possible.
     return _gs.__getattribute__('set_'+type)(key,value)
 
+def reset(*,schema,key,path=None):
+    ''' Reset the given key. schema,path,key combination is expected to be valid. '''
+    logger.debug('Attempting to reset key %s from schema %s with path %s',key,schema,path)
+    _gskey=schema+(':'+path if path is not None else '')
+    try:
+        _gs=GSettings[_gskey]
+        logger.debug('Using cached Settings object for %s',_gskey)
+    except KeyError as e:
+        logger.debug('Cache miss for Settings object %s',_gskey)
+        _gs=Gio.Settings(schema,path)
+        GSettings[_gskey]=_gs
+    _gs.reset(key)
+
