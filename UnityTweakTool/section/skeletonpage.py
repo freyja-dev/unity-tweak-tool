@@ -42,6 +42,7 @@ class Section ():
         self.handler={}
     def add_page(self,page):
         page.register_tab(self.handler)
+        page.refresh()
     def register(self):
         self.builder.connect_signals(self.handler)
 
@@ -59,3 +60,6 @@ class Tab():
     def reset(self):
         for element in self.elements:
             element.reset()
+    def refresh(self):
+        for element in self.elements:
+            element.refresh()

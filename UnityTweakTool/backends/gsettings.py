@@ -95,7 +95,7 @@ def get(*,schema,key,type,path=None):
         logger.debug('Cache miss for Settings object %s',_gskey)
         _gs=Gio.Settings(schema,path)
         GSettings[_gskey]=_gs
-    return _gs.__getattr__('get_'+type)(key)
+    return _gs.__getattribute__('get_'+type)(key)
 
 def set(*,schema,key,type,path=None,value):
     '''
