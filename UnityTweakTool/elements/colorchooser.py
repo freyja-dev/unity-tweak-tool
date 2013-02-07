@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 #
 # Team:
-#   J Phani Mahesh <phanimahesh@gmail.com> 
-#   Barneedhar (jokerdino) <barneedhar@ubuntu.com> 
+#   J Phani Mahesh <phanimahesh@gmail.com>
+#   Barneedhar (jokerdino) <barneedhar@ubuntu.com>
 #   Amith KK <amithkumaran@gmail.com>
 #   Georgi Karavasilev <motorslav@gmail.com>
 #   Sam Tran <samvtran@gmail.com>
@@ -51,13 +51,16 @@ class ColorChooser:
             key=self.key
             )
         self.color=Gdk.RGBA()
+        logger.debug('Initialised a colorchooser with id {self.id} to control key {self.key} of type {self.type} in schema {self.schema} with path {self.path}'.format(self=self))
 
     def register(self,handler):
         ''' register handler on a handler object '''
         handler['on_%s_color_set'%self.id]=self.handler
+        logger.debug('Handler for {self.id} registered'.format(self=self))
 
     def refresh(self):
         ''' Refresh UI reading from backend '''
+        logger.debug('Refreshing UI display for {self.id}'.format(self=self))
         color = gsettings.get(
                 schema=self.schema,
                 path  =self.path,
@@ -74,10 +77,11 @@ class ColorChooser:
         valid = Gdk.RGBA.parse(self.color,colorspec)
         if valid:
             self.ui.set_color(self.color)
-    
+
     def get_color(self):
         self.ui.get_rgba(self.color)
         return '#{:02x}{:02x}{:02x}{:02x}'.format(*[round(x*255) for x in [c.red, c.green, c.blue, c.alpha]])
+        logger.debug('Getting color for {self.id}'.format(self=self))
 
     def handler(self,*args,**kwargs):
         ''' handle toggle signals '''
@@ -88,3 +92,9 @@ class ColorChooser:
             type=self.type,
             value=self.get_color()
             )
+        logger.info('Handler for {self.id} executed'.format(self=self))
+
+    def reset(self):
+        ''' Reset the controlled key '''
+        gsettings.reset(schema=self.schema,path=self.path,key=self.key)
+        logger.debug('Key {self.key} in schema {self.schema} and path {self.path} reset.'.format(self=self))
