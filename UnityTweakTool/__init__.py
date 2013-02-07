@@ -56,9 +56,9 @@ def connectpages(notebook):
     from UnityTweakTool.section.windowmanager import WindowManager
     from UnityTweakTool.section.system import System
     from UnityTweakTool.section.appearance import Appearance
-    sections=[Overview,Unity,WindowManager,Appearance,System]
+    sections=[Overview(notebook),Unity,WindowManager,Appearance,System]
     for section in sections:
-        id=notebook.append_page(section(notebook).page,None)
+        id=notebook.append_page(section.page,None)
         assert id is not -1
     notebook.set_current_page(0)
 

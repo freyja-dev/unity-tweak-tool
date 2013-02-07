@@ -29,9 +29,7 @@
 # this program; if not, see <https://www.gnu.org/licenses/gpl-3.0.txt>
 
 
-from UnityTweakTool.section.skeletonpage import SkeletonPage
+from UnityTweakTool.section.skeletonpage import Section
 
-class Appearance(SkeletonPage):
-    def __init__(self,notebook):
-        SkeletonPage.__init__(self,ui='theme.ui',id='nb_themesettings')
+Appearance =Section(ui='theme.ui',id='nb_themesettings')
 # TODO : Complete stub

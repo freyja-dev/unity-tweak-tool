@@ -32,22 +32,28 @@ import os, os.path
 import UnityTweakTool.config.data as data
 from gi.repository import Gtk, Gio
 
-class SkeletonPage ():
+class Section ():
     def __init__(self, ui,id):
         self.builder = Gtk.Builder()
         self.ui = os.path.join(data.get_data_path(),ui)
         self.builder.add_from_file(self.ui)
         self.page = self.builder.get_object(id)
         self.page.unparent()
-        self.registered=False
-        self.elements=set()
-
+        self.handler={}
+    def add_page(self,page):
+        page.register_tab(self.handler)
     def register(self):
+        self.builder.connect_signals(self.handler)
+
+class Tab():
+    def __init__(self,elements):
+        self.registered=False
+        self.elements=elements
+
+    def register_tab(self,handler):
         assert self.registered is False
-        handler={}
         for element in self.elements:
             element.register(handler)
-        self.builder.connect_signals(handler)
         self.registered=True
 
     def reset(self):

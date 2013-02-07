@@ -29,10 +29,8 @@
 # this program; if not, see <https://www.gnu.org/licenses/gpl-3.0.txt>
 
 
-from UnityTweakTool.section.skeletonpage import SkeletonPage
+from UnityTweakTool.section.skeletonpage import Section,Tab
 from UnityTweakTool.elements import cbox,spin,colorchooser,scale,radio,switch
 
-class Unity(SkeletonPage):
-    def __init__(self,notebook):
-        SkeletonPage.__init__(self,ui='unity.ui',id='nb_unitysettings')
+Unity=Section(ui='unity.ui',id='nb_unitysettings')
 # TODO : Complete stub

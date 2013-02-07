@@ -111,5 +111,5 @@ def set(*,schema,key,type,path=None,value):
         _gs=Gio.Settings(schema,path)
         GSettings[_gskey]=_gs
 # TODO : check if value is legal, if possible.
-    return _gs.__setattr__('set_'+type)(key,value)
+    return _gs.__getattribute__('set_'+type)(key,value)
 

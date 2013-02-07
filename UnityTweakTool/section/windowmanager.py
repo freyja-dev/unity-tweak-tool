@@ -29,9 +29,7 @@
 # this program; if not, see <https://www.gnu.org/licenses/gpl-3.0.txt>
 
 
-from UnityTweakTool.section.skeletonpage import SkeletonPage
+from UnityTweakTool.section.skeletonpage import Section
 
-class WindowManager(SkeletonPage):
-    def __init__(self,notebook):
-        SkeletonPage.__init__(self,ui='compiz.ui',id='nb_compizsettings')
+WindowManager=Section(ui='compiz.ui',id='nb_compizsettings')
 # TODO : Complete stub

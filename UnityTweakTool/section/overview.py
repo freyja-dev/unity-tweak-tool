@@ -1,9 +1,9 @@
-from UnityTweakTool.section.skeletonpage import SkeletonPage
+from UnityTweakTool.section.skeletonpage import Section,Tab
 from UnityTweakTool.elements.toolbutton import OverviewToolButton
 
-class Overview(SkeletonPage):
+class Overview(Tab,Section):
     def __init__(self,notebook):
-        SkeletonPage.__init__(self,ui='startpage.ui',id='box_startpage')
+        Section.__init__(self,ui='startpage.ui',id='box_startpage')
         sections={
             1:{ 0:'tool_launcher',
                 1:'tool_dash',
@@ -26,5 +26,6 @@ class Overview(SkeletonPage):
                 1:'tool_desktop_security',
                 2:'tool_desktop_scrolling'}
         }
-        self.elements.update([OverviewToolButton(section=section,page=page,id=id,notebook=notebook) for section,set in sections.items() for page,id in set.items()])
+        Tab.__init__(self,[OverviewToolButton(section=section,page=page,id=id,notebook=notebook) for section,set in sections.items() for page,id in set.items()])
+        self.register_tab(self.handler)
         self.register()

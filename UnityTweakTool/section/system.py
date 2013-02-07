@@ -29,9 +29,28 @@
 # this program; if not, see <https://www.gnu.org/licenses/gpl-3.0.txt>
 
 
-from UnityTweakTool.section.skeletonpage import SkeletonPage
+from UnityTweakTool.section.skeletonpage import Section,Tab
+from UnityTweakTool.elements.switch import Switch
 
-class System(SkeletonPage):
-    def __init__(self,notebook):
-        SkeletonPage.__init__(self,ui='desktop.ui',id='nb_desktop_settings')
-# TODO : Complete stub
+System=Section(ui='desktop.ui',id='nb_desktop_settings')
+
+switch_desktop_icons= Switch({
+    'id'        : 'switch_desktop_icons',
+    'builder'   : System.builder,
+    'schema'    : 'org.gnome.desktop.background',
+    'path'      : None,
+    'key'       : 'show-desktop-icons',
+    'type'      : 'boolean',
+    'map'       : {True:True,False:False},
+    'dependants': ['l_desktop_icons_display',
+                    'check_desktop_home',
+                    'check_desktop_networkserver',
+                    'check_desktop_trash',
+                    'check_desktop_devices']
+})
+DesktopIcons=Tab([switch_desktop_icons])
+
+# Each page must be added using add_page
+System.add_page(DesktopIcons)
+# After all pages are added, the section needs to be registered to start listening for events
+System.register()
