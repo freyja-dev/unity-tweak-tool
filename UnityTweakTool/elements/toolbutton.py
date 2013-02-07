@@ -37,7 +37,7 @@ class OverviewToolButton:
         self.id=id
         self.page=page
         self.notebook=notebook
-        logger.debug('Initialised a toolbutton with id {self.id} to control key {self.key} of type {self.type} in schema {self.schema} with path {self.path}'.format(self=self))
+        logger.debug('Initialised a toolbutton with id {self.id} in section {self.sction} and page {self.page}'.format(self=self))
 
     def handler(self,*args,**kwargs):
         self.notebook.set_current_page(self.section)
