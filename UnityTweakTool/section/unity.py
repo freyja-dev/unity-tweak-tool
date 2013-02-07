@@ -38,7 +38,7 @@ sw_launcher_hidemode= Switch({
     'id'        : 'sw_launcher_hidemode',
     'builder'   : Unity.builder,
     'schema'    : 'org.compiz.unityshell',
-    'path'      : '/org/compiz/profiles/unity/plugins/unityshell',
+    'path'      : '/org/compiz/profiles/unity/plugins/unityshell/',
     'key'       : 'launcher-hide-mode',
     'type'      : 'int',
     'map'       : {1:True,0:False},
@@ -59,13 +59,13 @@ switch_unity_webapps= Switch({
     'key'       : 'integration-allowed',
     'type'      : 'boolean',
     'map'       : {True:True,False:False},
-    'dependants': [None]
+    'dependants': []
 })
 WebappsIcons=Tab([switch_unity_webapps])
 
 
 # Each page must be added using add_page
-Unity.add_page(LauncherIcons)
+#Unity.add_page(LauncherIcons)
 Unity.add_page(WebappsIcons)
 # After all pages are added, the section needs to be registered to start listening for events
 Unity.register()
