@@ -38,6 +38,7 @@ class CheckBox:
     def __init__(self,controlObj):
         ''' Initialise a Checkbox element from a dictionary'''
         self.id         = controlObj['id']
+        self.builder    = controlObj['builder']
         self.ui         = controlObj['builder'].get_object(controlObj['id'])
         self.schema     = controlObj['schema']
         self.path       = controlObj['path']
@@ -46,6 +47,7 @@ class CheckBox:
         self.map        = controlObj['map']
         self.invmap     = dict([ (v,k) for (k,v) in self.map.items() ])
         self.dependants = controlObj['dependants']
+        self.active     = False
         assert gsettings.is_valid(
             schema=self.schema,
             path=self.path,
@@ -61,8 +63,7 @@ class CheckBox:
     def refresh(self):
         ''' Refresh UI reading from backend '''
         logger.debug('Refreshing UI display for {self.id}'.format(self=self))
-        self.ui.set_active(
-            self.map[
+        self.active=self.map[
                 gsettings.get(
                     schema=self.schema,
                     path  =self.path,
@@ -70,20 +71,27 @@ class CheckBox:
                     type  =self.type
                     )
                 ]
-            )
+        self.ui.set_active(self.active)
+        self.handledependants()
 
     def handler(self,*args,**kwargs):
         ''' handle toggle signals '''
+        self.active=self.ui.get_active()
         gsettings.set(
             schema=self.schema,
             path=self.path,
             key=self.key,
             type=self.type,
-            value=self.invmap[self.ui.get_active()]
+            value=self.invmap[self.active]
             )
+        self.handledependants()
         logger.info('Handler for {self.id} executed'.format(self=self))
 
     def reset(self):
         ''' Reset the controlled key '''
         gsettings.reset(schema=self.schema,path=self.path,key=self.key)
         logger.debug('Key {self.key} in schema {self.schema} and path {self.path} reset.'.format(self=self))
+        
+    def handledependants(self):
+        for element in self.dependants:
+            self.builder.get_object(element).set_sensitive(self.active)

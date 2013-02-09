@@ -46,6 +46,7 @@ class Radio:
         self.group      = controlObj['group']
         self.value      = controlObj['value']
         self.dependants = controlObj['dependants']
+        self.active     = False
         assert gsettings.is_valid(
             schema=self.schema,
             path=self.path,
@@ -61,14 +62,14 @@ class Radio:
     def refresh(self):
         ''' Refresh the UI querying the backend '''
         logger.debug('Refreshing UI display for {self.id}'.format(self=self))
-        self.ui.set_active(
-            gsettings.get(
+        self.active=gsettings.get(
                 schema=self.schema,
                 path  =self.path,
                 key   =self.key,
                 type  =self.type
                 ) == self.value
-            )
+        self.ui.set_active(self.active)
+        self.handledependants()
 
     def handler(self,*args,**kwargs):
         ''' Handle toggled signals '''
@@ -80,9 +81,14 @@ class Radio:
                 type=self.type,
                 value=self.value
                 )
+        self.handledependants()
         logger.info('Handler for {self.id} executed'.format(self=self))
 
     def reset(self):
         ''' Reset the controlled key '''
         gsettings.reset(schema=self.schema,path=self.path,key=self.key)
         logger.debug('Key {self.key} in schema {self.schema} and path {self.path} reset.'.format(self=self))
+
+    def handledependants(self):
+        for element in self.dependants:
+            self.builder.get_object(element).set_sensitive(self.active)

@@ -42,7 +42,7 @@ class FontButton:
         self.schema     = controlObj['schema']
         self.path       = controlObj['path']
         self.key        = controlObj['key']
-        self.type       = 'str'
+        self.type       = 'string'
         assert gsettings.is_valid(
             schema=self.schema,
             path=self.path,

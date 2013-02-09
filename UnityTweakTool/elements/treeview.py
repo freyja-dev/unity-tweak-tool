@@ -83,7 +83,7 @@ class TreeView:
 class TreeSelection:
     def __init__(self,controlObj):
         self.id=controlObj['id']
-        logger.debug('Initialised a switch with id {self.id} to control key {self.key} of type {self.type} in schema {self.schema} with path {self.path}'.format(self=self))
+        logger.debug('Initialised a Treeselection with id {self.id}'.format(self=self))
 
     def register(self,handler):
         handler['on_%s_changed']=self.handler

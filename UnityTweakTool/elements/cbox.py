@@ -45,7 +45,6 @@ class ComboBox:
         self.type       = controlObj['type']
         self.map        = controlObj['map']
         self.invmap     = dict([ (v,k) for (k,v) in self.map.items() ])
-        self.dependants = controlObj['dependants']
         assert gsettings.is_valid(
             schema=self.schema,
             path=self.path,
