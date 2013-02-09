@@ -68,10 +68,12 @@ def init(page='overview'):
     builder=Gtk.Builder()
     ui=os.path.join(get_data_path(),'unitytweak.ui')
     builder.add_from_file(ui)
-    handler={}
-    builder.connect_signals(handler)
     notebook=builder.get_object('nb_unitytweak')
     connectpages(notebook)
+    def show_overview(*args,**kwargs):
+        notebook.set_current_page(0)
+    handler={'on_b_overview_clicked':show_overview}
+    builder.connect_signals(handler)
     builder.get_object('unitytweak_main').show_all()
     builder.get_object('unitytweak_main').connect('delete-event',Gtk.main_quit)
     Gtk.main()
