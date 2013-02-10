@@ -32,6 +32,8 @@
 from UnityTweakTool.section.skeletonpage import Section,Tab
 from UnityTweakTool.elements.switch import Switch
 from UnityTweakTool.elements.checkbox import CheckBox
+from UnityTweakTool.elements.cbox import ComboBox
+from UnityTweakTool.elements.radio import Radio
 
 System=Section(ui='desktop.ui',id='nb_desktop_settings')
 
@@ -133,12 +135,14 @@ check_security_user_switching= CheckBox({
     'dependants': []
 })
 
+# TODO: This check should tweak 'disable-print-setup' key too.
+
 check_security_printing= CheckBox({
     'id'        : 'check_security_printing',
     'builder'   : System.builder,
     'schema'    : 'org.gnome.desktop.lockdown',
     'path'      : None,
-    'key'       : 'disable-printing',#'disable-print-setup',
+    'key'       : 'disable-printing',
     'type'      : 'boolean',
     'map'       : {True:True,False:False},
     'dependants': []
@@ -148,6 +152,43 @@ SecurityIcons=Tab([check_security_lock_screen,
                    check_security_logout,
                    check_security_user_switching,
                    check_security_printing])
+
+radio_overlay_scrollbars=Radio({
+    'id': 'radio_overlay_scrollbars',
+    'builder': System.builder,
+    'schema': 'com.canonical.desktop.interface',
+    'path': None,
+    'key': 'scrollbar-mode',
+    'type': 'string',
+    'group': 'radio_legacy_scrollbars',
+    'value': 'overlay-auto',
+    'dependants': ['l_overlay_scrollbar_mode',
+                   'cbox_overlay_scrollbar_mode']
+})
+
+# TODO: Look at overlay-auto
+
+cbox_overlay_scrollbar_mode=ComboBox({
+    'id' : 'cbox_overlay_scrollbar_mode',
+    'builder' : System.builder,
+    'schema' : 'com.canonical.desktop.interface',
+    'path' : None,
+    'key' : 'scrollbar-mode',
+    'type' : 'string',
+    'map' : {'overlay-auto':0,'overlay-pointer':1,'overlay-touch':2}
+})
+
+radio_legacy_scrollbars=Radio({
+    'id': 'radio_legacy_scrollbars',
+    'builder': System.builder,
+    'schema': 'com.canonical.desktop.interface',
+    'path': None,
+    'key': 'scrollbar-mode',
+    'type': 'string',
+    'group': 'radio_legacy_scrollbars',
+    'value': 'normal',
+    'dependants': []
+})
 
 check_horizontal_scrolling= CheckBox({
     'id'        : 'check_horizontal_scrolling',
@@ -160,7 +201,36 @@ check_horizontal_scrolling= CheckBox({
     'dependants': []
 })
 
-ScrollingIcons=Tab([check_horizontal_scrolling])
+radio_edge=Radio({
+    'id': 'radio_edge',
+    'builder': System.builder,
+    'schema': 'org.gnome.settings-daemon.peripherals.touchpad',
+    'path': None,
+    'key': 'scroll-method',
+    'type': 'string',
+    'group': 'radio_two_finger',
+    'value': 'edge-scrolling',
+    'dependants': []
+})
+
+radio_two_finger=Radio({
+    'id': 'radio_two_finger',
+    'builder': System.builder,
+    'schema': 'org.gnome.settings-daemon.peripherals.touchpad',
+    'path': None,
+    'key': 'scroll-method',
+    'type': 'string',
+    'group': 'radio_two_finger',
+    'value': 'two-finger-scrolling',
+    'dependants': []
+})
+
+ScrollingIcons=Tab([radio_overlay_scrollbars,
+                    cbox_overlay_scrollbar_mode,
+                    radio_legacy_scrollbars,
+                    radio_edge,
+                    radio_two_finger,
+                    check_horizontal_scrolling])
 
 # Pass in the id of restore defaults button to enable it.
 DesktopIcons.enable_restore('b_desktop_settings_icons_reset')
