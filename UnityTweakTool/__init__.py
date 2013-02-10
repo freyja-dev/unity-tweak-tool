@@ -50,6 +50,8 @@ logger.addHandler(_fh)
 
 del _fh, _formatter
 
+global notebook
+
 def connectpages(notebook):
     from UnityTweakTool.section.overview import Overview
     from UnityTweakTool.section.unity import Unity
@@ -61,7 +63,8 @@ def connectpages(notebook):
         id=notebook.append_page(section.page,None)
         assert id is not -1
     notebook.set_current_page(0)
-
+def show_overview(*args,**kwargs):
+    notebook.set_current_page(0)
 def init(page='overview'):
     print('Initialising...')
     from UnityTweakTool.config.data import get_data_path
@@ -70,8 +73,6 @@ def init(page='overview'):
     builder.add_from_file(ui)
     notebook=builder.get_object('nb_unitytweak')
     connectpages(notebook)
-    def show_overview(*args,**kwargs):
-        notebook.set_current_page(0)
     handler={'on_b_overview_clicked':show_overview}
     builder.connect_signals(handler)
     builder.get_object('unitytweak_main').show_all()

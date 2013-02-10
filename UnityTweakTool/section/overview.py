@@ -4,7 +4,7 @@ from UnityTweakTool.elements.toolbutton import OverviewToolButton
 class Overview(Tab,Section):
     def __init__(self,notebook):
         Section.__init__(self,ui='startpage.ui',id='box_startpage')
-        sections={
+        self.sections={
             1:{ 0:'tool_launcher',
                 1:'tool_dash',
                 2:'tool_panel',
@@ -26,6 +26,13 @@ class Overview(Tab,Section):
                 1:'tool_desktop_security',
                 2:'tool_desktop_scrolling'}
         }
-        Tab.__init__(self,[OverviewToolButton(section=section,page=page,id=id,notebook=notebook) for section,set in sections.items() for page,id in set.items()])
+
+        Tab.__init__(self,[OverviewToolButton(
+                            section=section,page=page,id=id,notebook=notebook)
+                    for section,set in self.sections.items()
+                        for page,id in set.items()
+            ]
+        )
+
         self.register_tab(self.handler)
         self.register()
