@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 #
 # Team:
-#   J Phani Mahesh <phanimahesh@gmail.com> 
-#   Barneedhar (jokerdino) <barneedhar@ubuntu.com> 
+#   J Phani Mahesh <phanimahesh@gmail.com>
+#   Barneedhar (jokerdino) <barneedhar@ubuntu.com>
 #   Amith KK <amithkumaran@gmail.com>
 #   Georgi Karavasilev <motorslav@gmail.com>
 #   Sam Tran <samvtran@gmail.com>
@@ -32,6 +32,8 @@
 from UnityTweakTool.section.skeletonpage import Section,Tab
 from UnityTweakTool.elements.switch import Switch
 from UnityTweakTool.elements.checkbox import CheckBox
+from UnityTweakTool.elements.cbox import ComboBox
+from UnityTweakTool.elements.radio import Radio
 
 System=Section(ui='desktop.ui',id='nb_desktop_settings')
 
@@ -100,10 +102,145 @@ DesktopIcons=Tab([  switch_desktop_icons,
                     check_desktop_trash,
                     check_desktop_devices])
 
+check_security_lock_screen= CheckBox({
+    'id'        : 'check_security_lock_screen',
+    'builder'   : System.builder,
+    'schema'    : 'org.gnome.desktop.lockdown',
+    'path'      : None,
+    'key'       : 'disable-lock-screen',
+    'type'      : 'boolean',
+    'map'       : {True:True,False:False},
+    'dependants': []
+})
+
+check_security_logout= CheckBox({
+    'id'        : 'check_security_logout',
+    'builder'   : System.builder,
+    'schema'    : 'org.gnome.desktop.lockdown',
+    'path'      : None,
+    'key'       : 'disable-log-out',
+    'type'      : 'boolean',
+    'map'       : {True:True,False:False},
+    'dependants': []
+})
+
+check_security_user_switching= CheckBox({
+    'id'        : 'check_security_user_switching',
+    'builder'   : System.builder,
+    'schema'    : 'org.gnome.desktop.lockdown',
+    'path'      : None,
+    'key'       : 'disable-user-switching',
+    'type'      : 'boolean',
+    'map'       : {True:True,False:False},
+    'dependants': []
+})
+
+# TODO: This check should tweak 'disable-print-setup' key too.
+
+check_security_printing= CheckBox({
+    'id'        : 'check_security_printing',
+    'builder'   : System.builder,
+    'schema'    : 'org.gnome.desktop.lockdown',
+    'path'      : None,
+    'key'       : 'disable-printing',
+    'type'      : 'boolean',
+    'map'       : {True:True,False:False},
+    'dependants': []
+})
+
+SecurityIcons=Tab([check_security_lock_screen,
+                   check_security_logout,
+                   check_security_user_switching,
+                   check_security_printing])
+
+radio_overlay_scrollbars=Radio({
+    'id': 'radio_overlay_scrollbars',
+    'builder': System.builder,
+    'schema': 'com.canonical.desktop.interface',
+    'path': None,
+    'key': 'scrollbar-mode',
+    'type': 'string',
+    'group': 'radio_legacy_scrollbars',
+    'value': 'overlay-auto',
+    'dependants': ['l_overlay_scrollbar_mode',
+                   'cbox_overlay_scrollbar_mode']
+})
+
+# TODO: Look at overlay-auto
+
+cbox_overlay_scrollbar_mode=ComboBox({
+    'id' : 'cbox_overlay_scrollbar_mode',
+    'builder' : System.builder,
+    'schema' : 'com.canonical.desktop.interface',
+    'path' : None,
+    'key' : 'scrollbar-mode',
+    'type' : 'string',
+    'map' : {'overlay-auto':0,'overlay-pointer':1,'overlay-touch':2}
+})
+
+radio_legacy_scrollbars=Radio({
+    'id': 'radio_legacy_scrollbars',
+    'builder': System.builder,
+    'schema': 'com.canonical.desktop.interface',
+    'path': None,
+    'key': 'scrollbar-mode',
+    'type': 'string',
+    'group': 'radio_legacy_scrollbars',
+    'value': 'normal',
+    'dependants': []
+})
+
+check_horizontal_scrolling= CheckBox({
+    'id'        : 'check_horizontal_scrolling',
+    'builder'   : System.builder,
+    'schema'    : 'org.gnome.settings-daemon.peripherals.touchpad',
+    'path'      : None,
+    'key'       : 'horiz-scroll-enabled',
+    'type'      : 'boolean',
+    'map'       : {True:True,False:False},
+    'dependants': []
+})
+
+radio_edge=Radio({
+    'id': 'radio_edge',
+    'builder': System.builder,
+    'schema': 'org.gnome.settings-daemon.peripherals.touchpad',
+    'path': None,
+    'key': 'scroll-method',
+    'type': 'string',
+    'group': 'radio_two_finger',
+    'value': 'edge-scrolling',
+    'dependants': []
+})
+
+radio_two_finger=Radio({
+    'id': 'radio_two_finger',
+    'builder': System.builder,
+    'schema': 'org.gnome.settings-daemon.peripherals.touchpad',
+    'path': None,
+    'key': 'scroll-method',
+    'type': 'string',
+    'group': 'radio_two_finger',
+    'value': 'two-finger-scrolling',
+    'dependants': []
+})
+
+ScrollingIcons=Tab([radio_overlay_scrollbars,
+                    cbox_overlay_scrollbar_mode,
+                    radio_legacy_scrollbars,
+                    radio_edge,
+                    radio_two_finger,
+                    check_horizontal_scrolling])
+
 # Pass in the id of restore defaults button to enable it.
 DesktopIcons.enable_restore('b_desktop_settings_icons_reset')
+SecurityIcons.enable_restore('b_desktop_settings_security_reset')
+ScrollingIcons.enable_restore('b_settings_scrolling_reset')
 
 # Each page must be added using add_page
 System.add_page(DesktopIcons)
+System.add_page(SecurityIcons)
+System.add_page(ScrollingIcons)
+
 # After all pages are added, the section needs to be registered to start listening for events
 System.register()

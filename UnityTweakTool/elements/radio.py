@@ -38,6 +38,7 @@ class Radio:
     def __init__(self,controlObj):
         ''' Initialise a Radio from a controlObj dictionary '''
         self.id         = controlObj['id']
+        self.builder    = controlObj['builder']
         self.ui         = controlObj['builder'].get_object(controlObj['id'])
         self.schema     = controlObj['schema']
         self.path       = controlObj['path']
@@ -73,7 +74,8 @@ class Radio:
 
     def handler(self,*args,**kwargs):
         ''' Handle toggled signals '''
-        if self.ui.get_active():
+        self.active=self.ui.get_active()
+        if self.active:
             gsettings.set(
                 schema=self.schema,
                 path=self.path,
