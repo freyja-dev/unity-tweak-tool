@@ -44,3 +44,7 @@ class Option:
         self.refresh=controlObj['refresh']
     def register(self,handler):
         handler[self.handlerid]=self.handler
+
+class HandlerObject:
+    def register(self,handler):
+        handler.update(self.__dict__)

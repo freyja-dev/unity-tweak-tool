@@ -31,6 +31,7 @@
 
 from UnityTweakTool.section.skeletonpage import Section,Tab
 from UnityTweakTool.elements.switch import Switch
+from UnityTweakTool.elements.cbox import ComboBox
 
 Unity=Section(ui='unity.ui',id='nb_unitysettings')
 
@@ -50,7 +51,19 @@ sw_launcher_hidemode= Switch({
                    'l_autohide_animation',
                    'cbox_autohide_animation']
 })
-LauncherIcons=Tab([sw_launcher_hidemode])
+
+cbox_autohide_animation=ComboBox({
+    'id'        : 'cbox_autohide_animation',
+    'builder'   : Unity.builder,
+    'schema'    : 'org.compiz.unityshell',
+    'path'      : '/org/compiz/profiles/unity/plugins/unityshell/',
+    'key'       : 'autohide-animation',
+    'type'      : 'int',
+    'map'       : {0:0,1:1,2:2,3:3}
+})
+
+LauncherIcons=Tab([sw_launcher_hidemode,
+                    cbox_autohide_animation])
 switch_unity_webapps= Switch({
     'id'        : 'switch_unity_webapps',
     'builder'   : Unity.builder,
