@@ -29,7 +29,25 @@
 # this program; if not, see <https://www.gnu.org/licenses/gpl-3.0.txt>
 
 
-from UnityTweakTool.section.skeletonpage import Section
+from UnityTweakTool.section.skeletonpage import Section, Tab
+from UnityTweakTool.elements.switch import Switch
 
 WindowManager=Section(ui='compiz.ui',id='nb_compizsettings')
-# TODO : Complete stub
+
+#sw_compiz_zoom= Switch({
+#    'id'        : 'sw_compiz_zoom',
+#    'builder'   : WindowManager.builder,
+#    'schema'    : 'org.compiz.ezoom',
+#    'path'      : '/org/compiz/profiles/unity/plugins/ezoom/',
+#    'key'       : 'integration-allowed',
+#    'type'      : 'boolean',
+#    'map'       : {True:True,False:False},
+#    'dependants': []
+#})
+#GeneralIcons=Tab([sw_compiz_zoom])
+
+## Each page must be added using add_page
+#WindowManager.add_page(GeneralIcons)
+
+# After all pages are added, the section needs to be registered to start listening for events
+WindowManager.register()

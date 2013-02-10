@@ -51,6 +51,35 @@ sw_launcher_hidemode= Switch({
                    'cbox_autohide_animation']
 })
 LauncherIcons=Tab([sw_launcher_hidemode])
+
+sw_dash_blur= Switch({
+    'id'        : 'sw_dash_blur',
+    'builder'   : Unity.builder,
+    'schema'    : 'org.compiz.unityshell',
+    'path'      : '/org/compiz/profiles/unity/plugins/unityshell/',
+    'key'       : 'dash-blur-experimental',
+    'type'      : 'int',
+    'map'       : {2:True,0:False},
+    'dependants': ['radio_dash_blur_smart',
+                   'radio_dash_blur_static',
+                   'l_dash_blur_type']
+})
+DashIcons=Tab([sw_dash_blur])
+
+sw_transparent_panel= Switch({
+    'id'        : 'sw_transparent_panel',
+    'builder'   : Unity.builder,
+    'schema'    : 'org.compiz.unityshell',
+    'path'      : '/org/compiz/profiles/unity/plugins/unityshell/',
+    'key'       : 'panel-opacity',
+    'type'      : 'double',
+    'map'       : {0.33:True,1:False},
+    'dependants': ['sc_panel_transparency',
+                   'l_transparent_panel',
+                   'check_panel_opaque']
+})
+PanelIcons=Tab([sw_transparent_panel])
+
 switch_unity_webapps= Switch({
     'id'        : 'switch_unity_webapps',
     'builder'   : Unity.builder,
@@ -63,9 +92,10 @@ switch_unity_webapps= Switch({
 })
 WebappsIcons=Tab([switch_unity_webapps])
 
-
 # Each page must be added using add_page
 Unity.add_page(LauncherIcons)
+Unity.add_page(DashIcons)
+Unity.add_page(PanelIcons)
 Unity.add_page(WebappsIcons)
 # After all pages are added, the section needs to be registered to start listening for events
 Unity.register()

@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 #
 # Team:
-#   J Phani Mahesh <phanimahesh@gmail.com> 
-#   Barneedhar (jokerdino) <barneedhar@ubuntu.com> 
+#   J Phani Mahesh <phanimahesh@gmail.com>
+#   Barneedhar (jokerdino) <barneedhar@ubuntu.com>
 #   Amith KK <amithkumaran@gmail.com>
 #   Georgi Karavasilev <motorslav@gmail.com>
 #   Sam Tran <samvtran@gmail.com>
@@ -100,10 +100,77 @@ DesktopIcons=Tab([  switch_desktop_icons,
                     check_desktop_trash,
                     check_desktop_devices])
 
+check_security_lock_screen= CheckBox({
+    'id'        : 'check_security_lock_screen',
+    'builder'   : System.builder,
+    'schema'    : 'org.gnome.desktop.lockdown',
+    'path'      : None,
+    'key'       : 'disable-lock-screen',
+    'type'      : 'boolean',
+    'map'       : {True:True,False:False},
+    'dependants': []
+})
+
+check_security_logout= CheckBox({
+    'id'        : 'check_security_logout',
+    'builder'   : System.builder,
+    'schema'    : 'org.gnome.desktop.lockdown',
+    'path'      : None,
+    'key'       : 'disable-log-out',
+    'type'      : 'boolean',
+    'map'       : {True:True,False:False},
+    'dependants': []
+})
+
+check_security_user_switching= CheckBox({
+    'id'        : 'check_security_user_switching',
+    'builder'   : System.builder,
+    'schema'    : 'org.gnome.desktop.lockdown',
+    'path'      : None,
+    'key'       : 'disable-user-switching',
+    'type'      : 'boolean',
+    'map'       : {True:True,False:False},
+    'dependants': []
+})
+
+check_security_printing= CheckBox({
+    'id'        : 'check_security_printing',
+    'builder'   : System.builder,
+    'schema'    : 'org.gnome.desktop.lockdown',
+    'path'      : None,
+    'key'       : 'disable-printing',#'disable-print-setup',
+    'type'      : 'boolean',
+    'map'       : {True:True,False:False},
+    'dependants': []
+})
+
+SecurityIcons=Tab([check_security_lock_screen,
+                   check_security_logout,
+                   check_security_user_switching,
+                   check_security_printing])
+
+check_horizontal_scrolling= CheckBox({
+    'id'        : 'check_horizontal_scrolling',
+    'builder'   : System.builder,
+    'schema'    : 'org.gnome.settings-daemon.peripherals.touchpad',
+    'path'      : None,
+    'key'       : 'horiz-scroll-enabled',
+    'type'      : 'boolean',
+    'map'       : {True:True,False:False},
+    'dependants': []
+})
+
+ScrollingIcons=Tab([check_horizontal_scrolling])
+
 # Pass in the id of restore defaults button to enable it.
 DesktopIcons.enable_restore('b_desktop_settings_icons_reset')
+SecurityIcons.enable_restore('b_desktop_settings_security_reset')
+ScrollingIcons.enable_restore('b_settings_scrolling_reset')
 
 # Each page must be added using add_page
 System.add_page(DesktopIcons)
+System.add_page(SecurityIcons)
+System.add_page(ScrollingIcons)
+
 # After all pages are added, the section needs to be registered to start listening for events
 System.register()
