@@ -29,7 +29,163 @@
 # this program; if not, see <https://www.gnu.org/licenses/gpl-3.0.txt>
 
 
-from UnityTweakTool.section.skeletonpage import Section
+from UnityTweakTool.section.skeletonpage import Section,Tab
+from UnityTweakTool.elements.fontbutton import FontButton
+from UnityTweakTool.elements.cbox import ComboBox
+from UnityTweakTool.elements.spin import SpinButton
+from UnityTweakTool.elements.radio import Radio
 
 Appearance =Section(ui='theme.ui',id='nb_themesettings')
-# TODO : Complete stub
+
+font_default= FontButton({
+    'id'        : 'font_default',
+    'builder'   : Appearance.builder,
+    'schema'    : 'org.gnome.desktop.interface',
+    'path'      : None,
+    'key'       : 'font-name',
+    'type'      : 'string'
+})
+
+font_document= FontButton({
+    'id'        : 'font_document',
+    'builder'   : Appearance.builder,
+    'schema'    : 'org.gnome.desktop.interface',
+    'path'      : None,
+    'key'       : 'document-font-name',
+    'type'      : 'string'
+})
+
+font_monospace= FontButton({
+    'id'        : 'font_monospace',
+    'builder'   : Appearance.builder,
+    'schema'    : 'org.gnome.desktop.interface',
+    'path'      : None,
+    'key'       : 'monospace-font-name',
+    'type'      : 'string'
+})
+
+font_window_title= FontButton({
+    'id'        : 'font_window_title',
+    'builder'   : Appearance.builder,
+    'schema'    : 'org.gnome.desktop.wm.preferences',
+    'path'      : None,
+    'key'       : 'titlebar-font',
+    'type'      : 'string'
+})
+
+cbox_antialiasing=ComboBox({
+    'id' : 'cbox_antialiasing',
+    'builder' : Appearance.builder,
+    'schema' : 'org.gnome.settings-daemon.plugins.xsettings',
+    'path' : None,
+    'key' : 'antialiasing',
+    'type' : 'string',
+    'map' : {'none':0,'grayscale':1,'rgba':2}
+})
+
+cbox_hinting=ComboBox({
+    'id' : 'cbox_hinting',
+    'builder' : Appearance.builder,
+    'schema' : 'org.gnome.settings-daemon.plugins.xsettings',
+    'path' : None,
+    'key' : 'hinting',
+    'type' : 'string',
+    'map' : {'none':0,'slight':1,'medium':2,'full':3}
+})
+
+spin_textscaling=SpinButton({
+    'id': 'spin_textscaling',
+    'builder': Appearance.builder,
+    'schema': 'org.gnome.desktop.interface',
+    'path': None,
+    'key': 'text-scaling-factor',
+    'type': 'double',
+    'min': 0.50,
+    'max': 3.00
+})
+
+FontsIcons=Tab([font_default,
+                font_document,
+                font_monospace,
+                font_window_title,
+                cbox_antialiasing,
+                cbox_hinting,
+                spin_textscaling])
+
+radio_default_layout=Radio({
+    'id': 'radio_default_layout',
+    'builder': Appearance.builder,
+    'schema': 'org.gnome.desktop.wm.preferences',
+    'path': None,
+    'key': 'button-layout',
+    'type': 'string',
+    'group': 'radio_default_layout',
+    'value': 'close,minimize,maximize:' or ':minimize,maximize,close',
+    'dependants': ['radio_left',
+                   'radio_right',
+                   'l_alignment']
+})
+
+radio_left=Radio({
+    'id': 'radio_left',
+    'builder': Appearance.builder,
+    'schema': 'org.gnome.desktop.wm.preferences',
+    'path': None,
+    'key': 'button-layout',
+    'type': 'string',
+    'group': 'radio_left',
+    'value': 'close,minimize,maximize:',
+    'dependants': []
+})
+
+radio_right=Radio({
+    'id': 'radio_right',
+    'builder': Appearance.builder,
+    'schema': 'org.gnome.desktop.wm.preferences',
+    'path': None,
+    'key': 'button-layout',
+    'type': 'string',
+    'group': 'radio_right',
+    'value': ':minimize,maximize,close',
+    'dependants': []
+})
+
+radio_custom_layout=Radio({
+    'id': 'radio_custom_layout',
+    'builder': Appearance.builder,
+    'schema': 'org.gnome.desktop.wm.preferences',
+    'path': None,
+    'key': 'button-layout',
+    'type': 'string',
+    'group': 'radio_default_layout',
+    'value': not 'close,minimize,maximize:' and  ':minimize,maximize,close',
+    'dependants': ['cbox_custom_layout']
+})
+
+cbox_custom_layout=ComboBox({
+    'id' : 'cbox_custom_layout',
+    'builder' : Appearance.builder,
+    'schema' : 'org.gnome.desktop.wm.preferences',
+    'path' : None,
+    'key' : 'button-layout',
+    'type' : 'string',
+    'map' : {'close,minimize,maximize:':0,'close:':1,'close,maximize:':2,'close,minimize:':3,'close:maximize':4}
+})
+
+
+WindowControlsIcons=Tab([radio_default_layout,
+                        radio_custom_layout,
+                        radio_left,
+                        radio_right,
+                        cbox_custom_layout])
+
+# Pass in the id of restore defaults button to enable it.
+FontsIcons.enable_restore('b_theme_font_reset')
+WindowControlsIcons.enable_restore('b_window_control_reset')
+
+# Each page must be added using add_page
+Appearance.add_page(FontsIcons)
+Appearance.add_page(WindowControlsIcons)
+
+# After all pages are added, the section needs to be registered to start listening for events
+Appearance.register()
