@@ -10,7 +10,7 @@
       <mime-type>application/x-7z-compressed</mime-type>
     </mime-types>
   </object>
-  <object class="GtkFileChooserDialog" id="themechoser">
+  <object class="GtkFileChooserDialog" id="themeselector">
     <property name="can_focus">False</property>
     <property name="border_width">5</property>
     <property name="type">popup</property>
@@ -33,10 +33,12 @@
             <property name="layout_style">end</property>
             <child>
               <object class="GtkButton" id="button_cancel">
-                <property name="label" translatable="yes">Cancel</property>
+                <property name="label">gtk-cancel</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <property name="use_stock">True</property>
+                <signal name="clicked" handler="on_button_cancel_clicked" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -45,11 +47,12 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="button_ok">
+              <object class="GtkButton" id="button_install">
                 <property name="label" translatable="yes">Install Theme</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_button_install_clicked" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -69,7 +72,7 @@
     </child>
     <action-widgets>
       <action-widget response="0">button_cancel</action-widget>
-      <action-widget response="0">button_ok</action-widget>
+      <action-widget response="0">button_install</action-widget>
     </action-widgets>
   </object>
 </interface>
