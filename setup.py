@@ -38,9 +38,9 @@ except ImportError:
     sys.exit(1)
 assert DistUtilsExtra.auto.__version__ >= '2.18', 'needs DistUtilsExtra.auto >= 2.18'
 
-def update_config(libdir, values = {}):
+def update_config_old(libdir, values = {}):
 
-    filename = os.path.join(libdir, 'unitytweak/unitytweakconfig.py')
+    filename = os.path.join(libdir, 'UnityTweakTool/section/sphagetti/unitytweakconfig.py')
     oldvalues = {}
     try:
         fin = open(filename, 'r')
@@ -62,6 +62,33 @@ def update_config(libdir, values = {}):
         sys.exit(1)
     return oldvalues
 
+def update_config_new(libdir, values = {}):
+
+    filename = os.path.join(libdir, 'UnityTweakTool/config/data.py')
+    oldvalues = {}
+    try:
+        fin = open(filename, 'r')
+        fout = open(filename + '.new', 'w')
+
+        for line in fin:
+            fields = line.split(' = ') # Separate variable from value
+            if fields[0] in values:
+                oldvalues[fields[0]] = fields[1].strip()
+                line = "%s = %s\n" % (fields[0], values[fields[0]])
+            fout.write(line)
+
+        fout.flush()
+        fout.close()
+        fin.close()
+        os.rename(fout.name, fin.name)
+    except u.URLError as e:
+        print ("ERROR: Can't find %s" % filename)
+        sys.exit(1)
+    return oldvalues
+
+def update_config(libdir,values={}):
+    update_config_new(libdir,values)
+    update_config_old(libdir,values)
 
 def move_desktop_open(root, target_data, prefix):
 
