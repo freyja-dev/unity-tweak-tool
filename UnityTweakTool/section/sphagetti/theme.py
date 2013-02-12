@@ -270,7 +270,8 @@ class Themesettings ():
 
     # Cursor
     def on_tree_cursor_theme_cursor_changed(self,udata=None):
-        if self.ui['tree_cursor_theme'].get_selection() is None:
+        cursortreesel= self.ui['tree_cursor_theme'].get_selection()
+        if cursortreesel is None:
             return
         cursorthemestore,iter = cursortreesel.get_selected()
         themepath=cursorthemestore.get_value(iter,1)
@@ -285,54 +286,6 @@ class Themesettings ():
             gsettings.interface.set_int('cursor-size', 24)
 
 #----- End: Cursor settings------
-
-#----- Begin: Font settings--------
-
-    def on_font_default_font_set(self, widget):
-        gsettings.interface.set_string('font-name', self.ui['font_default'].get_font_name())
-    
-    def on_font_document_font_set(self, widget):
-        gsettings.interface.set_string('document-font-name', self.ui['font_document'].get_font_name())
-    
-    def on_font_monospace_font_set(self, widget):
-        gsettings.interface.set_string('monospace-font-name', self.ui['font_monospace'].get_font_name())
-        
-    def on_font_window_title_font_set(self, widget):
-        gsettings.wm.set_string('titlebar-font', self.ui['font_window_title'].get_font_name())
-        
-    def on_cbox_antialiasing_changed(self, widget):
-        if self.ui['cbox_antialiasing'].get_active() == 0:
-            gsettings.antialiasing.set_string('antialiasing', 'none')
-        elif self.ui['cbox_antialiasing'].get_active() == 1:
-            gsettings.antialiasing.set_string('antialiasing', 'grayscale')
-        elif self.ui['cbox_antialiasing'].get_active() == 2:
-            gsettings.antialiasing.set_string('antialiasing', 'rgba')
-
-    def on_cbox_hinting_changed(self, widget):
-        if self.ui['cbox_hinting'].get_active() == 0:
-            gsettings.antialiasing.set_string('hinting', 'none')
-        elif self.ui['cbox_hinting'].get_active() == 1:
-            gsettings.antialiasing.set_string('hinting', 'slight')
-        elif self.ui['cbox_hinting'].get_active() == 2:
-            gsettings.antialiasing.set_string('hinting', 'medium')
-        elif v == 3:
-            gsettings.antialiasing.set_string('hinting', 'full')
-            
-    def on_spin_textscaling_value_changed(self, widget):
-        gsettings.interface.set_double('text-scaling-factor', self.ui['spin_textscaling'].get_value())
-
-    def on_b_theme_font_reset_clicked(self, widget):
-        gsettings.interface.reset('font-name')
-        gsettings.interface.reset('document-font-name')
-        gsettings.interface.reset('monospace-font-name')
-        gsettings.wm.reset('titlebar-font')
-        gsettings.antialiasing.reset('antialiasing')
-        gsettings.antialiasing.reset('hinting')
-        gsettings.interface.reset('text-scaling-factor')
-        self.refresh()
-
-#----- End: Font settings--------
-
 #----- Begin: Window control settings--------
 
     def on_radio_default_layout_toggled(self, button, udata = None):
