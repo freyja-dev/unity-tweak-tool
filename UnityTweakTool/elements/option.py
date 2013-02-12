@@ -48,8 +48,6 @@ class Option:
 class HandlerObject:
     def __init__(self,ho):
         self.ho=ho
-        self.hokeys=[x for x in dir(ho) if not x.startswith('_')]
-
         def isHandler(attrname,ho=ho,prefix='on'):
             return attrname.startswith(prefix) and \
                    callable(getattr(ho, attrname))
@@ -64,4 +62,3 @@ class HandlerObject:
         self.ho.refresh()
     def reset(self):
         self.ho.reset()
-       
