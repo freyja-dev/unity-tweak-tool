@@ -37,7 +37,17 @@ from UnityTweakTool.elements.radio import Radio
 from UnityTweakTool.section.sphagetti.theme import Themesettings as SphagettiThemeSettings
 from UnityTweakTool.elements.option import Option,HandlerObject
 
+from collections import defaultdict
+
 Appearance =Section(ui='theme.ui',id='nb_themesettings')
+
+#=============== THEME ==========================
+
+#=============== ICONS ==========================
+
+#=============== CURSOR =========================
+
+#=============== FONTS ==========================
 
 font_default= FontButton({
     'id'        : 'font_default',
@@ -114,6 +124,8 @@ FontsIcons=Tab([font_default,
                 cbox_hinting,
                 spin_textscaling])
 
+#========== WINDOW CONTROLS =====================
+
 radio_default_layout=Radio({
     'id': 'radio_default_layout',
     'builder': Appearance.builder,
@@ -160,7 +172,7 @@ radio_custom_layout=Radio({
     'key': 'button-layout',
     'type': 'string',
     'group': 'radio_default_layout',
-    'value': not 'close,minimize,maximize:' and  ':minimize,maximize,close',
+    'value': not 'close,minimize,maximize:' and not ':minimize,maximize,close',
     'dependants': ['cbox_custom_layout']
 })
 
@@ -171,7 +183,13 @@ cbox_custom_layout=ComboBox({
     'path' : None,
     'key' : 'button-layout',
     'type' : 'string',
-    'map' : {'close,minimize,maximize:':0,'close:':1,'close,maximize:':2,'close,minimize:':3,'close:maximize':4}
+# This allows unknown keys to be mapped to zero.
+    'map' : defaultdict( lambda : 0,
+            {'close,minimize,maximize:':0,
+            'close:':1,
+            'close,maximize:':2,
+            'close,minimize:':3,
+            'close:maximize':4})
 })
 
 
@@ -187,7 +205,8 @@ WindowControlsIcons.enable_restore('b_window_control_reset')
 
 # Each page must be added using add_page
 Appearance.add_page(FontsIcons)
-Appearance.add_page(WindowControlsIcons)
+# XXX : Disabled since the implementation is inadequate
+# Appearance.add_page(WindowControlsIcons)
 
 themesettings=HandlerObject(SphagettiThemeSettings(Appearance.builder))
 Appearance.add_page(themesettings)
