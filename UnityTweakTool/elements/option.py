@@ -53,7 +53,6 @@ class HandlerObject:
                    callable(getattr(ho, attrname))
         handlers = list(filter(isHandler, dir(ho)))
         self.hodict={key:getattr(ho,key) for key in handlers}
-        print(handlers)
     def register(self,handler):
         handler.update(self.hodict)
     def register_tab(self,handler):
