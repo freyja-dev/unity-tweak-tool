@@ -46,5 +46,22 @@ class Option:
         handler[self.handlerid]=self.handler
 
 class HandlerObject:
+    def __init__(self,ho):
+        self.ho=ho
+        self.hokeys=[x for x in dir(ho) if not x.startswith('_')]
+
+        def isHandler(attrname,ho=ho,prefix='on'):
+            return attrname.startswith(prefix) and \
+                   callable(getattr(ho, attrname))
+        handlers = list(filter(isHandler, dir(ho)))
+        self.hodict={key:getattr(ho,key) for key in handlers}
+        print(handlers)
     def register(self,handler):
-        handler.update(self.__dict__)
+        handler.update(self.hodict)
+    def register_tab(self,handler):
+        handler.update(self.hodict)
+    def refresh(self):
+        self.ho.refresh()
+    def reset(self):
+        self.ho.reset()
+       

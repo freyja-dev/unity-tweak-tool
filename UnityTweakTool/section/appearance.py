@@ -30,6 +30,12 @@
 
 
 from UnityTweakTool.section.skeletonpage import Section
+from UnityTweakTool.section.sphagetti.theme import Themesettings as SphagettiThemeSettings
+from UnityTweakTool.elements.option import Option,HandlerObject
 
 Appearance =Section(ui='theme.ui',id='nb_themesettings')
 # TODO : Complete stub
+themesettings=HandlerObject(SphagettiThemeSettings(Appearance.builder))
+Appearance.add_page(themesettings)
+
+Appearance.register()

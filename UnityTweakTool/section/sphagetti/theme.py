@@ -37,18 +37,8 @@ from . import unitytweakconfig
 from . import gsettings
 
 class Themesettings ():
-    def __init__(self, container):
-        '''Handler Initialisations.
-        Obtain all references here.'''
-        self.builder = Gtk.Builder()
-        self.glade = (os.path.join(unitytweakconfig.get_data_path(), 
-                                    'theme.ui'))
-        self.container = container
-        self.builder.add_from_file(self.glade)
-        self.ui = ui(self.builder)
-        self.page = self.ui['nb_themesettings']
-        self.page.unparent()
-        
+    def __init__(self, builder):
+        self.ui=ui(builder)
         self.gtkthemestore=Gtk.ListStore(str,str)
         self.windowthemestore=self.gtkthemestore
         self.ui['tree_gtk_theme'].set_model(self.gtkthemestore)
@@ -105,11 +95,6 @@ class Themesettings ():
                 self.cursorthemes[themename]={'iter':iter,'path':theme[1]}
 
         self.matchthemes=True
-        self.refresh()
-        self.refresh_window_controls()
-        self.refresh_window_controls_combobox()
-        self.refresh_window_menu_check()
-        self.builder.connect_signals(self)
 
 #=====================================================================#
 #                                Helpers                              #
@@ -183,6 +168,9 @@ class Themesettings ():
 
         # Scaling        
         self.ui['spin_textscaling'].set_value(gsettings.interface.get_double('text-scaling-factor'))
+        self.refresh_window_controls()
+        self.refresh_window_controls_combobox()
+        self.refresh_window_menu_check()
 
 
     # ===== Window Controls ===== #
@@ -447,7 +435,3 @@ class Themesettings ():
 
 #----- End: Window control settings--------
         
-if __name__ == '__main__':
-# Fire up the Engines
-    Themesettings()
-# FIXME : Guaranteed to fail. Arguments mismatch.
