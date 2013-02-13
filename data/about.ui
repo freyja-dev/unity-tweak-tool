@@ -22,6 +22,7 @@ Sam Tran &lt;samvtran@gmail.com&gt;
 Sam Hewitt &lt;hewittsamuel@gmail.com&gt;</property>
     <property name="documenters">Barneedhar (jokerdino) &lt;barneedhar@ubuntu.com&gt;</property>
     <property name="artists">Sam Hewitt &lt;hewittsamuel@gmail.com&gt;</property>
+    <property name="logo">/usr/share/icons/hicolor/64x64/apps/unity-tweak-tool.png</property>
     <property name="license_type">gpl-3-0</property>
     <child internal-child="vbox">
       <object class="GtkBox" id="box_aboutdialog">

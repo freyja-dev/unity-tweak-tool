@@ -136,7 +136,7 @@
                               <object class="GtkMenuItem" id="menuitem_compiz_workspace">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
-                                <property name="label" translatable="yes">Workspace</property>
+                                <property name="label" translatable="yes">Workspace settings</property>
                                 <property name="use_underline">True</property>
                                 <signal name="activate" handler="on_menuitem_compiz_workspace_activate" swapped="no"/>
                               </object>
@@ -166,6 +166,15 @@
                                 <property name="label" translatable="yes">Hotcorners</property>
                                 <property name="use_underline">True</property>
                                 <signal name="activate" handler="on_menuitem_compiz_hotcorners_activate" swapped="no"/>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkMenuItem" id="menuitem_compiz_additional">
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="label" translatable="yes">Additional</property>
+                                <property name="use_underline">True</property>
+                                <signal name="activate" handler="on_menuitem_compiz_additional_activate" swapped="no"/>
                               </object>
                             </child>
                           </object>
@@ -217,6 +226,15 @@
                                 <property name="label" translatable="yes">Fonts</property>
                                 <property name="use_underline">True</property>
                                 <signal name="activate" handler="on_menuitem_theme_fonts_activate" swapped="no"/>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkMenuItem" id="menuitem_window_controls">
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="label" translatable="yes">Window controls</property>
+                                <property name="use_underline">True</property>
+                                <signal name="activate" handler="on_menuitem_window_controls_activate" swapped="no"/>
                               </object>
                             </child>
                           </object>
@@ -328,6 +346,7 @@
               <object class="GtkToolItem" id="tool_overview">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
+                <property name="is_focus">True</property>
                 <child>
                   <object class="GtkButton" id="b_overview">
                     <property name="label" translatable="yes"> Overview</property>
@@ -335,6 +354,9 @@
                     <property name="related_action">a_tool_overview</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="has_focus">True</property>
+                    <property name="is_focus">True</property>
+                    <property name="can_default">True</property>
                     <property name="receives_default">True</property>
                     <property name="valign">center</property>
                     <property name="margin_left">12</property>
@@ -367,9 +389,8 @@
                 <property name="can_focus">False</property>
                 <child>
                   <object class="GtkEntry" id="tool_entry_search">
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="has_focus">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="no_show_all">True</property>
                     <property name="tooltip_markup" translatable="yes">Search Unity Tweak Tool</property>
                     <property name="tooltip_text" translatable="yes">Search Unity Tweak Tool</property>
                     <property name="margin_right">10</property>

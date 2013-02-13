@@ -2385,7 +2385,7 @@
                     <property name="tooltip_markup" translatable="yes">Enable prompts for webapp integration when visitiing supported websites?</property>
                     <property name="tooltip_text" translatable="yes">Enable prompts for webapp integration when visitiing supported websites?</property>
                     <property name="halign">start</property>
-                    <signal name="notify::active" handler="on_switch_unity_webapps_active_notify" swapped="no"/>
+                    <signal name="notify::active" handler="on_switch_webapps_active_notify" swapped="no"/>
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
