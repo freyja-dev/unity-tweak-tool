@@ -43,13 +43,13 @@ optgrp.add_argument('-r', '--restore', help='Restore settings to its default val
 args=parser.parse_args()
 
 if args.unity:
-    UnityTweakTool.init('unity')
+    UnityTweakTool.init(1)
 elif args.winmng:
-    UnityTweakTool.init('window-manager')
+    UnityTweakTool.init(2)
 elif args.appearance:
-    UnityTweakTool.init('appearance')
+    UnityTweakTool.init(3)
 elif args.system:
-    UnityTweakTool.init('system')
+    UnityTweakTool.init(4)
 elif args.restore:
     UnityTweakTool.reset_all()
 else:
