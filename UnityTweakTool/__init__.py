@@ -60,8 +60,50 @@ def connectpages():
     for section in sections:
         id=notebook.append_page(section.page,None)
         assert id is not -1
-def show_overview(*args,**kwargs):
-    notebook.set_current_page(0)
+
+def connecthandlers(builder):
+    handler={}
+    def show_overview(*args,**kwargs):
+        notebook.set_current_page(0)
+    handler['on_b_overview_clicked']=show_overview
+
+    appmenu={
+        'unity_launcher'    :(1,0),
+        'unity_dash'        :(1,1),
+        'unity_panel'       :(1,2),
+        'unity_switcher'    :(1,3),
+        'unity_webapps'     :(1,4),
+        'unity_additional'  :(1,5),
+
+        'compiz_general'    :(2,0),
+        'compiz_workspace'  :(2,1),
+        'compiz_windows_spread' :(2,2),
+        'compiz_windows_snapping':(2,3),
+        'compiz_hotcorners'         :(2,4),
+        'compiz_additional'         :(2,5),
+
+        'theme_system'      :(3,0),
+        'theme_icon'        :(3,1),
+        'theme_cursor'      :(3,2),
+        'theme_fonts'       :(3,3),
+        'window_controls'   :(3,4),
+
+        'desktop_icons'     :(4,0),
+        'system_security'   :(4,1),
+        'scrolling'         :(4,2)
+    }
+
+    def gen_appmenu_handler(loc):
+        def appmenu_handler(*args):
+            notebook.set_current_page(loc[0])
+            notebook.get_nth_page(loc[0]).set_current_page(loc[1])
+        return appmenu_handler
+
+    for item,location in appmenu.items():
+        handler['on_menuitem_%s_activate'%item]=gen_appmenu_handler(location)
+
+    builder.connect_signals(handler)
+##########################################################################
 def init(page=0):
     print('Initialising...')
     from UnityTweakTool.config.data import get_data_path
@@ -72,8 +114,7 @@ def init(page=0):
     notebook=builder.get_object('nb_unitytweak')
     connectpages()
     notebook.set_current_page(page)
-    handler={'on_b_overview_clicked':show_overview}
-    builder.connect_signals(handler)
+    connecthandlers(builder)
     builder.get_object('unitytweak_main').show_all()
     builder.get_object('unitytweak_main').connect('delete-event',Gtk.main_quit)
     Gtk.main()
