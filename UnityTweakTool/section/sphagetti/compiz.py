@@ -39,17 +39,9 @@ from . import unitytweakconfig
 from . import gsettings
 
 class Compizsettings ():
-    def __init__(self, container):
-        '''Handler Initialisations.
-        Obtain all references here.'''
-        self.builder = Gtk.Builder()
-        self.glade = (os.path.join(unitytweakconfig.get_data_path(),
-                                    'compiz.ui'))
-        self.container = container
-        self.builder.add_from_file(self.glade)
-        self.ui = ui(self.builder)
+    def __init__(self, builder):
+        self.ui = ui(builder)
         self.page = self.ui['nb_compizsettings']
-        self.page.unparent()
 
         self.ui['scale_auto_raise_delay'].add_mark(500, Gtk.PositionType.BOTTOM, None)
 
@@ -82,9 +74,6 @@ class Compizsettings ():
             'cbox_hotcorners_right': [0, 'Right'],
             'cbox_hotcorners_bottomright': [0, 'BottomRight']
         }
-
-        self.refresh()
-        self.builder.connect_signals(self)
 
     def on_draw_hotcorners_draw (self, window, cr):
         self.draw_monitor(window, cr, self._base_hotcorners_surface, self.hotcorners_cboxes, 'hotcorners')

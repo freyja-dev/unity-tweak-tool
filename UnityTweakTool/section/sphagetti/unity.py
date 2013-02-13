@@ -37,17 +37,8 @@ from . import unitytweakconfig
 from . import gsettings
 
 class Unitysettings ():
-    def __init__(self, container):
-        '''Handler Initialisations.
-        Obtain all references here.'''
-        self.builder = Gtk.Builder()
-        self.glade = (os.path.join(unitytweakconfig.get_data_path(),
-                                    'unity.ui'))
-        self.container = container
-        self.builder.add_from_file(self.glade)
-        self.ui = ui(self.builder)
-        self.page = self.ui['nb_unitysettings']
-        self.page.unparent()
+    def __init__(self, builder):
+        self.ui = ui(builder)
 
         self.ui['sc_reveal_sensitivity'].add_mark(2.0, Gtk.PositionType.BOTTOM, None)
         self.ui['sc_launcher_transparency'].add_mark(.666, Gtk.PositionType.BOTTOM, None)
@@ -61,9 +52,6 @@ class Unitysettings ():
                           'radio_active_monitor',
                           'radio_all_monitors']
             self.ui.unsensitize(dependants)
-
-        self.refresh()
-        self.builder.connect_signals(self)
 
 #=====================================================================#
 #                                Helpers                              #

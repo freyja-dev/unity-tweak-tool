@@ -33,6 +33,11 @@ from UnityTweakTool.section.skeletonpage import Section,Tab
 from UnityTweakTool.elements.switch import Switch
 from UnityTweakTool.elements.cbox import ComboBox
 
+from UnityTweakTool.section.sphagetti.unity import Unitysettings as SphagettiUnitySettings
+from UnityTweakTool.elements.option import Option,HandlerObject
+
+from collections import defaultdict
+
 Unity=Section(ui='unity.ui',id='nb_unitysettings')
 
 sw_launcher_hidemode= Switch({
@@ -80,21 +85,19 @@ sw_dash_blur= Switch({
 })
 DashIcons=Tab([sw_dash_blur])
 
-# TODO : Double can be anything. not just 0.33 or 1.
-#        This demands functors
-#sw_transparent_panel= Switch({
-#    'id'        : 'sw_transparent_panel',
-#    'builder'   : Unity.builder,
-#    'schema'    : 'org.compiz.unityshell',
-#    'path'      : '/org/compiz/profiles/unity/plugins/unityshell/',
-#    'key'       : 'panel-opacity',
-#    'type'      : 'double',
-#    'map'       : {0.33:True,1:False},
-#    'dependants': ['sc_panel_transparency',
-#                   'l_transparent_panel',
-#                   'check_panel_opaque']
-#})
-#PanelIcons=Tab([sw_transparent_panel])
+sw_transparent_panel= Switch({
+    'id'        : 'sw_transparent_panel',
+    'builder'   : Unity.builder,
+    'schema'    : 'org.compiz.unityshell',
+    'path'      : '/org/compiz/profiles/unity/plugins/unityshell/',
+    'key'       : 'panel-opacity',
+    'type'      : 'double',
+    'map'       : defaultdict(lambda:True,{0.33:True,1:False}),
+    'dependants': ['sc_panel_transparency',
+                   'l_transparent_panel',
+                   'check_panel_opaque']
+})
+PanelIcons=Tab([sw_transparent_panel])
 
 switch_unity_webapps= Switch({
     'id'        : 'switch_unity_webapps',
@@ -114,5 +117,9 @@ Unity.add_page(LauncherIcons)
 Unity.add_page(DashIcons)
 #Unity.add_page(PanelIcons)
 Unity.add_page(WebappsIcons)
+
+# XXX : Sphagetti bridge
+unitysettings=HandlerObject(SphagettiUnitySettings(Unity.builder))
+Unity.add_page(unitysettings)
 # After all pages are added, the section needs to be registered to start listening for events
 Unity.register()

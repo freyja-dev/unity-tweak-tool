@@ -32,6 +32,10 @@
 from UnityTweakTool.section.skeletonpage import Section, Tab
 from UnityTweakTool.elements.switch import Switch
 
+from UnityTweakTool.section.sphagetti.compiz import Compizsettings as SphagettiCompizSettings
+from UnityTweakTool.elements.option import Option,HandlerObject
+
+
 WindowManager=Section(ui='compiz.ui',id='nb_compizsettings')
 
 #sw_compiz_zoom= Switch({
@@ -48,6 +52,10 @@ WindowManager=Section(ui='compiz.ui',id='nb_compizsettings')
 
 ## Each page must be added using add_page
 #WindowManager.add_page(GeneralIcons)
+
+# XXX : Sphagetti bridge
+wmsettings=HandlerObject(SphagettiCompizSettings(WindowManager.builder))
+WindowManager.add_page(wmsettings)
 
 # After all pages are added, the section needs to be registered to start listening for events
 WindowManager.register()
