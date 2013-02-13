@@ -5,6 +5,11 @@
     <property name="hide_if_empty">False</property>
     <property name="always_show_image">True</property>
   </object>
+  <object class="GtkImage" id="image_overview">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">/usr/share/icons/gnome/scalable/apps/unity-tweak-tool-overview-symbolic.svg</property>
+  </object>
   <object class="GtkImage" id="image_menu_compiz_settings">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
@@ -24,11 +29,6 @@
   <object class="GtkImage" id="image_menu_unity_settings">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-  </object>
-  <object class="GtkImage" id="image_overview">
-    <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="pixbuf">/usr/share/icons/gnome/scalable/apps/unity-tweak-tool-overview-symbolic.svg</property>
   </object>
   <object class="GtkWindow" id="unitytweak_main">
     <property name="can_focus">False</property>
@@ -97,6 +97,15 @@
                                 <property name="label" translatable="yes">Switcher</property>
                                 <property name="use_underline">True</property>
                                 <signal name="activate" handler="on_menuitem_unity_switcher_activate" swapped="no"/>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkMenuItem" id="menuitem_unity_webapps">
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="label" translatable="yes">Web Apps</property>
+                                <property name="use_underline">True</property>
+                                <signal name="activate" handler="on_menuitem_unity_webapps_activate" swapped="no"/>
                               </object>
                             </child>
                             <child>
