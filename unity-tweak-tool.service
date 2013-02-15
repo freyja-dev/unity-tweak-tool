@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=org.freyja.utt
+Exec=/usr/bin/unity-tweak-tool
