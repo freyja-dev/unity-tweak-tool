@@ -103,7 +103,8 @@ def connecthandlers(builder):
         handler['on_menuitem_%s_activate'%item]=gen_appmenu_handler(location)
 
     handler['on_menuimage_quit_activate']=lambda *args:Gtk.main_quit()
-    handler['on_menuimage_about_activate']=lambda *args: print('About unimplemeted')# About()
+    from UnityTweakTool.about import About
+    handler['on_menuimage_about_activate']=lambda *args: About()
     builder.connect_signals(handler)
 ##########################################################################
 def init(page=0):
