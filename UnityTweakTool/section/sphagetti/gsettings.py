@@ -30,32 +30,70 @@
 
 from gi.repository import Gio,  Gdk
 
+def test_schema(schema):
+    if schema in Gio.Settings.list_relocatable_schemas():
+        pass
+    elif schema in Gio.Settings.list_schemas():
+        pass
+    else:
+        raise Exception("Schema %s not installed" % schema)
+
+def test_key(schema, key):
+    if key in schema.list_keys():
+        return True
+    else:
+        return False
+
 def plugin(plugin):
     schema = 'org.compiz.'+plugin
     path = '/org/compiz/profiles/unity/plugins/'+plugin+'/'
-    return Gio.Settings(schema = schema,  path = path)
+    try:
+        test_schema(schema)
+        return Gio.Settings(schema = schema,  path = path)
+    except Exception:
+        print("schema %s not installed" % schema)
 
 def unity(child = None):
     schema = 'com.canonical.Unity'
     schema = schema+'.'+child if child else schema
-    return Gio.Settings(schema)
+    try:
+        test_schema(schema)
+        return Gio.Settings(schema)
+    except Exception:
+        print("schema %s not installed" % schema)
 
 def unity_webapps(child = None):
     schema = 'com.canonical.unity'
     schema = schema+'.'+child if child else schema
-    return Gio.Settings(schema)
+    try:
+        test_schema(schema)
+        return Gio.Settings(schema)
+    except Exception:
+        print("schema %s not installed" % schema)
 
 def canonical(child):
     schema = 'com.canonical.'+child
-    return Gio.Settings(schema)
+    try:
+        test_schema(schema)
+        return Gio.Settings(schema)
+    except Exception:
+        print("schema %s not installed"% schema)
 
 def compiz(child):
     schema = 'org.compiz.'+child
-    return Gio.Settings(schema)
+    try:
+        test_schema(schema)
+        return Gio.Settings(schema)
+    except Exception:
+        print("schema %s not installed" % schema)
 
 def gnome(child):
     schema = 'org.gnome.'+child
-    return Gio.Settings(schema)
+    try:
+        test_schema(schema)
+        return Gio.Settings(schema)
+    except Exception:
+        print("schema %s not installed" % schema)
 
 def color_to_hash(c):
     """Convert a Gdk.Color or Gdk.RGBA object to hex representation"""

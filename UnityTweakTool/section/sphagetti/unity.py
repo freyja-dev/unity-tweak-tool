@@ -30,11 +30,12 @@
 
 import os, os.path
 
-from gi.repository import Gtk, Gio, Gdk
+from gi.repository import Gtk, Gdk
 
 from .ui import ui
 from . import unitytweakconfig
 from . import gsettings
+from .values import values
 
 class Unitysettings ():
     def __init__(self, builder):
@@ -242,7 +243,16 @@ class Unitysettings ():
         self.ui['check_calendar'].set_active(gsettings.datetime.get_boolean('show-calendar'))
 
         # Bluetooth indicator
-        self.ui['check_indicator_bluetooth'].set_active(gsettings.bluetooth.get_boolean('visible'))
+        bluetooth_list = ['check_indicator_bluetooth']
+        
+        if values.get_value(self, 'boolean', gsettings.bluetooth, 'visible', bluetooth_list):
+
+            self.ui['check_indicator_bluetooth'].set_active(True)
+
+        else:
+            self.ui['check_indicator_bluetooth'].set_active(False)
+
+       # self.ui['check_indicator_bluetooth'].set_active(gsettings.bluetooth.get_boolean('visible'))
 
         # Sound indicator
         self.ui['check_indicator_sound'].set_active(gsettings.sound.get_boolean('visible'))
@@ -708,9 +718,11 @@ class Unitysettings ():
     def on_check_indicator_bluetooth_toggled(self, widget, udata = None):
 
         if widget.get_active():
-            gsettings.bluetooth.set_boolean('visible', True)
+            values.set_value(self, 'boolean', gsettings.bluetooth, 'visible', True)
+        #    gsettings.bluetooth.set_boolean('visible', True)
         else:
-            gsettings.bluetooth.set_boolean('visible', False)
+            values.set_value(self, 'boolean', gsettings.bluetooth, 'visible', False)
+           # gsettings.bluetooth.set_boolean('visible', False)
 
     def on_check_indicator_sound_toggled(self, widget, udata = None):
 
@@ -732,7 +744,7 @@ class Unitysettings ():
 
     def on_b_unity_panel_reset_clicked(self, widget):
         gsettings.sound.reset('visible')
-        gsettings.bluetooth.reset('visible')
+        #gsettings.bluetooth.reset('visible')
         gsettings.datetime.reset('show-calendar')
         gsettings.datetime.reset('show-day')
         gsettings.datetime.reset('show-date')
@@ -746,6 +758,8 @@ class Unitysettings ():
         gsettings.unityshell.reset('panel-opacity')
         gsettings.sound.reset('preferred-media-players')
         gsettings.sound.reset('show-notify-osd-on-scroll')
+        
+        values.reset_value(self, gsettings.bluetooth, 'visible')
         self.refresh()
 
 #----- END: Panel -----
