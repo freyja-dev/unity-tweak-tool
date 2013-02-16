@@ -235,7 +235,7 @@ class Themesettings ():
             self.ui['treeselection_window_theme'].select_iter(iter)
         themepath=gtkthemestore.get_value(iter,1)
         theme=os.path.split(themepath)[1]
-        gsettings.gnome('desktop.interface').set_string('gtk-theme',theme)
+        gsettings.interface.set_string('gtk-theme',theme)
 
     def on_treeselection_window_theme_changed(self,udata=None):
         windowtreesel = self.ui['tree_window_theme'].get_selection()
@@ -246,7 +246,7 @@ class Themesettings ():
             self.ui['treeselection_gtk_theme'].select_iter(iter)
         themepath=windowthemestore.get_value(iter,1)
         theme=os.path.split(themepath)[1]
-        gsettings.gnome('desktop.wm.preferences').set_string('theme',theme)
+        gsettings.wm.set_string('theme',theme)
 
     # Icon theme
     def on_tree_icon_theme_cursor_changed(self,udata=None):
@@ -256,15 +256,26 @@ class Themesettings ():
         iconthemestore,iter = icontreesel.get_selected()
         themepath=iconthemestore.get_value(iter,1)
         theme=os.path.split(themepath)[1]
-        gsettings.gnome('desktop.interface').set_string('icon-theme',theme)
+        gsettings.interface.set_string('icon-theme',theme)
 
     def on_check_show_incomplete_toggled(self,udata=None):
     # TODO 
         print('To do')
 
-
+    def on_b_theme_system_reset_clicked(self, widget):
+        gsettings.interface.reset('gtk-theme')
+        gsettings.wm.reset('theme')
+        self.refresh()
 
 #----- End: Theme settings------
+
+#----- Begin: Icon settings--------
+
+    def on_b_theme_icon_reset_clicked(self, widget):
+        gsettings.interface.reset('icon-theme')
+        self.refresh()
+
+#----- End: Icon settings------
 
 #----- Begin: Cursor settings--------
 
@@ -276,7 +287,7 @@ class Themesettings ():
         cursorthemestore,iter = cursortreesel.get_selected()
         themepath=cursorthemestore.get_value(iter,1)
         theme=os.path.split(themepath)[1]
-        gsettings.gnome('desktop.interface').set_string('cursor-theme',theme)
+        gsettings.interface.set_string('cursor-theme',theme)
 
     # Cursor Size
     def on_check_cursor_size_toggled(self, widget, udata = None):
@@ -284,6 +295,11 @@ class Themesettings ():
             gsettings.interface.set_int('cursor-size', 48)
         else:
             gsettings.interface.set_int('cursor-size', 24)
+
+    def on_b_theme_cursor_reset_clicked(self, widget):
+        gsettings.interface.reset('cursor-theme')
+        gsettings.interface.reset('cursor-size')
+        self.refresh()
 
 #----- End: Cursor settings------
 #----- Begin: Window control settings--------
@@ -387,4 +403,3 @@ class Themesettings ():
         self.refresh_window_menu_check()
 
 #----- End: Window control settings--------
-        

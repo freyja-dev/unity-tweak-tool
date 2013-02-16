@@ -271,6 +271,7 @@
                 <property name="halign">start</property>
                 <property name="margin_top">6</property>
                 <property name="use_underline">True</property>
+                <signal name="clicked" handler="on_b_theme_system_reset_clicked" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -399,6 +400,7 @@
                 <property name="halign">start</property>
                 <property name="margin_top">6</property>
                 <property name="use_underline">True</property>
+                <signal name="clicked" handler="on_b_theme_icon_reset_clicked" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -583,6 +585,7 @@
                 <property name="halign">start</property>
                 <property name="margin_top">6</property>
                 <property name="use_underline">True</property>
+                <signal name="clicked" handler="on_b_theme_cursor_reset_clicked" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">False</property>
