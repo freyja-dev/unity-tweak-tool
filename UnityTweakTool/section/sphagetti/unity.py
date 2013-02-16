@@ -149,8 +149,24 @@ class Unitysettings ():
             self.ui['check_suggestions'].set_active(False)
 
         # Applications Lens
-        self.ui['check_show_recent_apps'].set_active(gsettings.lens_apps.get_boolean('display-recent-apps'))
-        self.ui['check_show_available_apps'].set_active(gsettings.lens_apps.get_boolean('display-available-apps'))
+
+        recent_apps_list = ['check_show_recent_apps']
+
+        if values.get_value(self, 'boolean', gsettings.lens_apps, 'display-recent-apps', recent_apps_list):
+            self.ui['check_show_recent_apps'].set_active(True)
+        else:
+            self.ui['check_show_recent_apps'].set_active(False)
+#        self.ui['check_show_recent_apps'].set_active(gsettings.lens_apps.get_boolean('display-recent-apps'))
+
+        available_apps_list = ['check_show_available_apps']
+        
+        if values.get_value(self, 'boolean', gsettings.lens_apps, 'display-available-apps', available_apps_list):
+            self.ui['check_show_available_apps'].set_active(True)
+        else:
+            self.ui['check_show_available_apps'].set_active(False)
+
+
+#        self.ui['check_show_available_apps'].set_active(gsettings.lens_apps.get_boolean('display-available-apps'))
 
         # Files Lens
         self.ui['check_use_locate'].set_active(gsettings.lens_files.get_boolean('use-locate'))
@@ -256,7 +272,14 @@ class Unitysettings ():
 
         # Sound indicator
         self.ui['check_indicator_sound'].set_active(gsettings.sound.get_boolean('visible'))
-        self.ui['check_scroll_notifyosd'].set_active(gsettings.sound.get_boolean('show-notify-osd-on-scroll'))
+        
+        notify_osd_list = ['check_scroll_notifyosd']
+        
+        if values.get_value(self, 'boolean', gsettings.sound, 'show-notify-osd-on-scroll', notify_osd_list):
+            self.ui['check_scroll_notifyosd'].set_active(True)
+        else:
+            self.ui['check_scroll_notifyosd'].set_active(False)
+        #self.ui['check_scroll_notifyosd'].set_active(gsettings.sound.get_boolean('show-notify-osd-on-scroll'))
 
          # Default Player
         interested_players = gsettings.sound.get_strv('interested-media-players')
@@ -574,8 +597,11 @@ class Unitysettings ():
     def on_b_unity_dash_reset_clicked(self, widget):
         gsettings.unityshell.reset('dash-blur-experimental')
         gsettings.lenses.reset('remote-content-search')
-        gsettings.lens_apps.reset('display-recent-apps')
-        gsettings.lens_apps.reset('display-available-apps')
+       # gsettings.lens_apps.reset('display-recent-apps')
+       # gsettings.lens_apps.reset('display-available-apps')
+       
+        values.reset_value(self, gsettings.lens_apps, 'display-recent-apps')
+        values.reset_value(self, gsettings.lens_apps, 'display-available-apps')
         self.refresh()
 
 #----- END: Dash -------
@@ -757,9 +783,10 @@ class Unitysettings ():
         gsettings.unityshell.reset('panel-opacity-maximized-toggle')
         gsettings.unityshell.reset('panel-opacity')
         gsettings.sound.reset('preferred-media-players')
-        gsettings.sound.reset('show-notify-osd-on-scroll')
+        #gsettings.sound.reset('show-notify-osd-on-scroll')
         
         values.reset_value(self, gsettings.bluetooth, 'visible')
+        values.reset_value(self, gsettings.sound, 'show-notify-osd-on-scroll')
         self.refresh()
 
 #----- END: Panel -----
