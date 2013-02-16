@@ -78,7 +78,7 @@ sw_dash_blur= Switch({
     'path'      : '/org/compiz/profiles/unity/plugins/unityshell/',
     'key'       : 'dash-blur-experimental',
     'type'      : 'int',
-    'map'       : {2:True,0:False},
+    'map'       : {not 0:True,0:False},
     'dependants': ['radio_dash_blur_smart',
                    'radio_dash_blur_static',
                    'l_dash_blur_type']
