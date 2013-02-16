@@ -175,7 +175,7 @@ cbox_overlay_scrollbar_mode=ComboBox({
     'path' : None,
     'key' : 'scrollbar-mode',
     'type' : 'string',
-    'map' : {'overlay-auto':0,'overlay-pointer':1,'overlay-touch':2}
+    'map' : {'overlay-auto':0,'overlay-pointer':1,'overlay-touch':2,'normal':0}
 })
 
 radio_legacy_scrollbars=Radio({
