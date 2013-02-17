@@ -2,8 +2,8 @@
 # -*- Mode: Python; coding: utf-8; indent-tabs-mode: nil; tab-width: 4 -*-
 #
 # Team:
-#   J Phani Mahesh <phanimahesh@gmail.com> 
-#   Barneedhar (jokerdino) <barneedhar@ubuntu.com> 
+#   J Phani Mahesh <phanimahesh@gmail.com>
+#   Barneedhar (jokerdino) <barneedhar@ubuntu.com>
 #   Amith KK <amithkumaran@gmail.com>
 #   Georgi Karavasilev <motorslav@gmail.com>
 #   Sam Tran <samvtran@gmail.com>
@@ -115,30 +115,6 @@ def move_desktop_open(root, target_data, prefix):
 
     return desktop_file
 
-#def update_desktop_open(filename, target_pkgdata, target_scripts):
-
-#    try:
-#        fin = open(filename, 'r')
-#        fout = open(filename + '.new', 'w')
-
-#        for line in fin:
-#            if 'Icon=' in line:
-#                line = "Icon=%s\n" % (target_pkgdata + 'media/unity-tweak-tool.svg')
-#            elif 'Exec=' in line:
-#                cmd = line.split("=")[1].split(None, 1)
-#                line = "Exec=%s" % (target_scripts + 'unity-tweak-tool')
-#                if len(cmd) > 1:
-#                    line += " %s" % cmd[1].strip()  # Add script arguments back
-#                line += "\n"
-#            fout.write(line)
-#        fout.flush()
-#        fout.close()
-#        fin.close()
-#        os.rename(fout.name, fin.name)
-#    except u.URLError as e:
-#        print ("ERROR: Can't find %s" % filename)
-#        sys.exit(1)
-
 def compile_schemas(root, target_data):
     if target_data == '/usr/':
         return  # /usr paths dirgon't need this, they will be handled by dpkg
@@ -161,7 +137,6 @@ class InstallAndUpdateDataDirectory(DistUtilsExtra.auto.install_auto):
         update_config(self.install_lib, values)
 
         desktop_file = move_desktop_open(self.root, target_data, self.prefix)
-#        update_desktop_open(desktop_file, target_pkgdata, target_scripts)
         compile_schemas(self.root, target_data)
 
 ##################################################################################
