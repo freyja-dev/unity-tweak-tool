@@ -2,7 +2,7 @@
 #-*- coding:utf-8 -*-
 
 from . import gsettings
-from .ui import ui
+from UnityTweakTool.config.ui import ui
 
 class values():
 

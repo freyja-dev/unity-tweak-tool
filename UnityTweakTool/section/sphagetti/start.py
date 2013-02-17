@@ -32,7 +32,7 @@ import os, os.path
 
 from gi.repository import Gtk, Gio
 
-from .ui import ui
+from UnityTweakTool.config.ui import ui
 from . import unitytweakconfig
 
 class Startpage ():
@@ -49,6 +49,11 @@ class Startpage ():
         self.page = self.ui['box_startpage']
         self.page.unparent()
         self.builder.connect_signals(self)
+
+        # Symbolic icons
+        self.icons = Gtk.IconTheme.get_default()
+        self.style_context = self.ui['startpage_window'].get_style_context()
+        self.style_context.connect('changed', self.on_style_context_change)
 
     # Unity settings buttons on start page
     def on_tool_launcher_clicked(self, udata):
@@ -117,6 +122,30 @@ class Startpage ():
     def on_tool_desktop_scrolling_clicked(self, udata):
         self.notebook.set_current_page(4)
         self.notebook.get_nth_page(4).set_current_page(2)
+
+    # Symbolic icons
+    def on_style_context_change(self, widget):
+        self.symbolic_color = self.style_context.get_color(Gtk.StateFlags.ACTIVE)
+
+        appearance_symbolic_icon = self.icons.lookup_icon('unity-tweak-tool-appearance-symbolic', 24, Gtk.IconLookupFlags.FORCE_SIZE)
+        if appearance_symbolic_icon:
+            appearance_symbolic_icon_pixbuf, was_sym = appearance_symbolic_icon.load_symbolic(self.symbolic_color, None, None, None)
+            self.ui['image_start_theme'].set_from_pixbuf(appearance_symbolic_icon_pixbuf)
+
+        unity_symbolic_icon = self.icons.lookup_icon('unity-tweak-tool-unity-symbolic', 24, Gtk.IconLookupFlags.FORCE_SIZE)
+        if unity_symbolic_icon:
+            unity_symbolic_icon_pixbuf, was_sym = unity_symbolic_icon.load_symbolic(self.symbolic_color, None, None, None)
+            self.ui['image_box_start_unity'].set_from_pixbuf(unity_symbolic_icon_pixbuf)
+
+        system_symbolic_icon = self.icons.lookup_icon('unity-tweak-tool-system-symbolic', 24, Gtk.IconLookupFlags.FORCE_SIZE)
+        if system_symbolic_icon:
+            system_symbolic_icon_pixbuf, was_sym = system_symbolic_icon.load_symbolic(self.symbolic_color, None, None, None)
+            self.ui['image_start_desktop'].set_from_pixbuf(system_symbolic_icon_pixbuf)
+
+        wm_symbolic_icon = self.icons.lookup_icon('unity-tweak-tool-wm-symbolic', 24, Gtk.IconLookupFlags.FORCE_SIZE)
+        if wm_symbolic_icon:
+            wm_symbolic_icon_pixbuf, was_sym = wm_symbolic_icon.load_symbolic(self.symbolic_color, None, None, None)
+            self.ui['image_box_start_compiz'].set_from_pixbuf(wm_symbolic_icon_pixbuf)
 
 
 if __name__ == '__main__':
