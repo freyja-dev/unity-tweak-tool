@@ -1,0 +1,1273 @@
+--- org.compiz.firepaint ---
+    clear-button 		:  'Disabled'
+    initiate-button 		:  '<Super><Shift>Button1'
+    fire-life 		:  0.69999999999999996
+    fire-slowdown 		:  0.5
+    fire-mystical 		:  true
+    fire-color 		:  '#ff3305ff'
+    bg-brightness 		:  50
+    fire-size 		:  15.0
+    clear-key 		:  '<Super><Shift>c'
+    num-particles 		:  3000
+    initiate-key 		:  '<Shift><Control><Primary><Alt>z'
+
+--- org.compiz.td ---
+    window-match 		:  'Toolbar | Utility | Dialog | Normal | Unknown'
+    bevel 		:  0
+    width-color-inactive 		:  '#333333ff'
+    max-window-space 		:  10
+    manual-only 		:  true
+    min-cube-size 		:  60
+    width-color 		:  '#333333ff'
+    bevel-topleft 		:  true
+    width 		:  0.29999999999999999
+    bevel-bottomright 		:  false
+    bevel-topright 		:  true
+    bevel-bottomleft 		:  false
+
+--- org.compiz.switcher ---
+    window-match 		:  'Toolbar | Utility | Dialog | Normal | Unknown'
+    next-panel-button 		:  'Disabled'
+    auto-rotate 		:  false
+    next-key 		:  '<Alt>Tab'
+    next-all-key 		:  '<Control><Alt>Tab'
+    next-button 		:  'Disabled'
+    speed 		:  1.5
+    next-no-popup-key 		:  'Disabled'
+    next-panel-key 		:  'Disabled'
+    focus-on-switch 		:  false
+    prev-all-button 		:  'Disabled'
+    prev-key 		:  '<Shift><Alt>Tab'
+    timestep 		:  1.2
+    next-all-button 		:  'Disabled'
+    opacity 		:  40
+    saturation 		:  100
+    icon-only 		:  false
+    minimized 		:  true
+    mipmap 		:  true
+    prev-panel-key 		:  'Disabled'
+    prev-button 		:  'Disabled'
+    next-no-popup-button 		:  'Disabled'
+    icon 		:  true
+    brightness 		:  65
+    prev-no-popup-button 		:  'Disabled'
+    zoom 		:  1.0
+    prev-panel-button 		:  'Disabled'
+    bring-to-front 		:  true
+    prev-all-key 		:  '<Shift><Control><Alt>Tab'
+    prev-no-popup-key 		:  'Disabled'
+
+--- org.compiz.snap ---
+    snap-type 		:  [0, 1]
+    resistance-distance 		:  30
+    avoid-snap 		:  [0]
+    attraction-distance 		:  20
+    edges-categories 		:  [0, 1]
+
+--- org.compiz.imgsvg ---
+
+--- org.compiz.fadedesktop ---
+    window-match 		:  'Toolbar | Utility | Dialog | Normal | Unknown'
+    fadetime 		:  500
+
+--- org.compiz.resize ---
+    initiate-button 		:  '<Alt>Button2'
+    stretch-modifier 		:  @ai []
+    resize-from-center 		:  false
+    border-color 		:  '#fb8b009f'
+    rectangle-modifier 		:  @ai []
+    outline-modifier 		:  @ai []
+    maximize-vertically 		:  true
+    fill-color 		:  '#fb8b0019'
+    outline-match 		:  ''
+    mode 		:  2
+    stretch-match 		:  ''
+    normal-match 		:  ''
+    centered-modifier 		:  [0]
+    rectangle-match 		:  ''
+    resize-from-center-match 		:  ''
+    initiate-key 		:  '<Alt>F8'
+
+--- org.compiz.addhelper ---
+    opacity 		:  100
+    saturation 		:  100
+    brightness 		:  30
+    window-types 		:  'Toolbar | Utility | Dialog | ModalDialog | Fullscreen | Normal'
+    toggle-key 		:  '<Super>p'
+    ononinit 		:  false
+
+--- org.compiz.scale ---
+    window-match 		:  'Toolbar | Utility | Dialog | Normal | Unknown'
+    opacity 		:  100
+    timestep 		:  0.10000000000000001
+    initiate-all-button 		:  'Disabled'
+    initiate-output-key 		:  'Disabled'
+    speed 		:  2.3999999999999999
+    hover-time 		:  750
+    initiate-key 		:  '<Super>w'
+    initiate-button 		:  'Disabled'
+    key-bindings-toggle 		:  true
+    dnd-distance 		:  6
+    initiate-all-key 		:  'Disabled'
+    initiate-all-edge 		:  ''
+    initiate-output-button 		:  'Disabled'
+    initiate-edge 		:  ''
+    initiate-output-edge 		:  ''
+    spacing 		:  68
+    initiate-group-edge 		:  ''
+    multioutput-mode 		:  1
+    initiate-group-button 		:  'Disabled'
+    button-bindings-toggle 		:  false
+    darken-back 		:  true
+    show-desktop 		:  false
+    overlay-icon 		:  0
+    initiate-group-key 		:  'Disabled'
+
+--- org.compiz.gnomecompat ---
+    command-window-screenshot 		:  'gnome-screenshot --window'
+    run-command-screenshot-key 		:  'Print'
+    command-terminal 		:  'gnome-terminal'
+    main-menu-key 		:  ''
+    run-command-terminal-key 		:  '<Control><Alt>T'
+    command-screenshot 		:  'gnome-screenshot'
+    run-key 		:  ''
+    run-command-window-screenshot-key 		:  '<Alt>Print'
+
+--- org.compiz.wall ---
+    up-button 		:  'Disabled'
+    next-key 		:  'Disabled'
+    miniscreen 		:  true
+    edgeflip-move 		:  false
+    prev-key 		:  'Disabled'
+    down-button 		:  'Disabled'
+    flip-down-edge 		:  'Bottom'
+    next-button 		:  'Disabled'
+    down-window-key 		:  '<Control><Alt><Shift>Down'
+    thumb-gradient-base-color 		:  '#55555532'
+    up-window-key 		:  '<Control><Alt><Shift>Up'
+    background-gradient-base-color 		:  '#00000064'
+    prev-button 		:  'Disabled'
+    thumb-highlight-gradient-base-color 		:  '#ffffffff'
+    slide-duration 		:  0.29999999999999999
+    preview-scale 		:  130
+    border-width 		:  7
+    thumb-highlight-gradient-shadow-color 		:  '#dfdfdfff'
+    up-key 		:  '<Control><Alt>Up'
+    show-switcher 		:  true
+    down-key 		:  '<Control><Alt>Down'
+    left-key 		:  '<Control><Alt>Left'
+    right-button 		:  'Disabled'
+    outline-color 		:  '#ffffff32'
+    allow-wraparound 		:  true
+    right-key 		:  '<Control><Alt>Right'
+    edgeflip-dnd 		:  false
+    left-window-key 		:  '<Control><Alt><Shift>Left'
+    arrow-base-color 		:  '#e6e6e6d9'
+    background-gradient-shadow-color 		:  '#00000064'
+    flip-right-edge 		:  'Right'
+    arrow-shadow-color 		:  '#dcdcdcd9'
+    flip-left-edge 		:  'Left'
+    edge-radius 		:  5
+    thumb-gradient-highlight-color 		:  '#55555532'
+    mmmode 		:  0
+    edgeflip-pointer 		:  false
+    left-button 		:  'Disabled'
+    preview-timeout 		:  0.20000000000000001
+    no-slide-match 		:  'type=Dock | type=Desktop | state=Sticky'
+    background-gradient-highlight-color 		:  '#00000064'
+    flip-up-edge 		:  'Top'
+    right-window-key 		:  '<Control><Alt><Shift>Right'
+
+--- org.compiz.staticswitcher ---
+    window-match 		:  'Normal | Dialog | Toolbar | Utility | Unknown'
+    next-panel-button 		:  'Disabled'
+    next-group-key 		:  'Disabled'
+    highlight-border-inlay-color 		:  '#c8c8c8c8'
+    highlight-border-color 		:  '#000000c8'
+    next-all-key 		:  '<Control><Alt>Tab'
+    next-panel-key 		:  'Disabled'
+    next-button 		:  'Disabled'
+    speed 		:  4.0
+    next-no-popup-key 		:  'Disabled'
+    mouse-select 		:  true
+    focus-on-switch 		:  false
+    prev-key 		:  '<Shift><Alt>Tab'
+    prev-no-popup-button 		:  'Disabled'
+    prev-group-key 		:  'Disabled'
+    next-key 		:  '<Alt>Tab'
+    next-all-button 		:  'Disabled'
+    highlight-mode 		:  0
+    row-align 		:  1
+    opacity 		:  100
+    saturation 		:  100
+    icon-only 		:  false
+    auto-change-vp 		:  true
+    popup-delay 		:  0.20000000000000001
+    highlight-color 		:  '#00000096'
+    mipmap 		:  false
+    minimized 		:  true
+    prev-group-button 		:  'Disabled'
+    prev-panel-key 		:  'Disabled'
+    prev-button 		:  'Disabled'
+    next-group-button 		:  'Disabled'
+    next-no-popup-button 		:  'Disabled'
+    icon 		:  true
+    highlight-rect-hidden 		:  1
+    brightness 		:  100
+    prev-all-button 		:  'Disabled'
+    prev-panel-button 		:  'Disabled'
+    bring-to-front 		:  false
+    prev-all-key 		:  '<Shift><Control><Alt>Tab'
+    timestep 		:  1.2
+    prev-no-popup-key 		:  'Disabled'
+
+--- org.compiz.notification ---
+    timeout 		:  -1
+    max-log-level 		:  4
+
+--- org.compiz.vpswitch ---
+    up-button 		:  'Disabled'
+    switch-to-4-key 		:  'Disabled'
+    down-button 		:  'Disabled'
+    switch-to-5-key 		:  'Disabled'
+    next-button 		:  'Disabled'
+    init-plugin 		:  'rotate'
+    switch-to-2-key 		:  'Disabled'
+    switch-to-12-key 		:  'Disabled'
+    initiate-button 		:  'Button2'
+    switch-to-10-key 		:  'Disabled'
+    begin-key 		:  'Disabled'
+    right-button 		:  'Disabled'
+    switch-to-11-key 		:  'Disabled'
+    switch-to-9-key 		:  'Disabled'
+    switch-to-6-key 		:  'Disabled'
+    switch-to-1-key 		:  'Disabled'
+    switch-to-8-key 		:  'Disabled'
+    prev-button 		:  'Disabled'
+    switch-to-7-key 		:  'Disabled'
+    switch-to-3-key 		:  'Disabled'
+    left-button 		:  'Disabled'
+    init-action 		:  'initiate_button'
+
+--- org.compiz.opacify ---
+    passive-opacity 		:  10
+    window-match 		:  'Normal | Dialog | ModalDialog | Utility | Toolbar | Fullscreen'
+    only-if-block 		:  false
+    toggle-reset 		:  true
+    focus-instant 		:  false
+    init-toggle 		:  true
+    timeout 		:  700
+    toggle-key 		:  '<Super>o'
+    no-delay-change 		:  false
+    active-opacity 		:  100
+
+--- org.compiz.ezoom ---
+    zoom-in-button 		:  'Disabled'
+    pan-down-key 		:  'Disabled'
+    lock-zoom-key 		:  'Disabled'
+    timestep 		:  1.2
+    spec-target-focus 		:  true
+    center-mouse-key 		:  'Disabled'
+    restrain-margin 		:  5
+    autoscale-min 		:  0.25
+    restrain-mouse 		:  false
+    fit-to-zoom-key 		:  'Disabled'
+    zoom-out-key 		:  'Disabled'
+    pan-right-key 		:  'Disabled'
+    speed 		:  25.0
+    pan-left-key 		:  'Disabled'
+    follow-focus-delay 		:  0
+    zoom-mode 		:  0
+    focus-fit-window 		:  false
+    zoom-spec3 		:  0.20000000000000001
+    zoom-spec2 		:  0.5
+    zoom-spec1 		:  1.0
+    scale-mouse 		:  true
+    zoom-out-button 		:  'Disabled'
+    scale-mouse-dynamic 		:  true
+    scale-mouse-static 		:  0.20000000000000001
+    always-focus-fit-window 		:  false
+    zoom-specific-1-key 		:  'Disabled'
+    zoom-specific-3-key 		:  'Disabled'
+    hide-original-mouse 		:  true
+    follow-focus 		:  true
+    pan-factor 		:  0.10000000000000001
+    zoom-specific-2-key 		:  'Disabled'
+    pan-up-key 		:  'Disabled'
+    fit-to-window-key 		:  'Disabled'
+    zoom-factor 		:  1.1499999999999999
+    zoom-box-button 		:  'Disabled'
+    minimum-zoom 		:  0.125
+    zoom-in-key 		:  'Disabled'
+
+--- org.compiz.composite ---
+    unredirect-fullscreen-windows 		:  false
+    slow-animations-key 		:  'Disabled'
+    refresh-rate 		:  60
+    detect-refresh-rate 		:  true
+    force-independent-output-painting 		:  false
+
+--- org.compiz.bench ---
+    console-update-time 		:  5
+    position-x 		:  100
+    position-y 		:  50
+    fps-limiter-mode 		:  0
+    output-screen 		:  true
+    output-console 		:  false
+    initiate-key 		:  '<Super>F12'
+
+--- org.compiz.commands ---
+    run-command17-button 		:  'Disabled'
+    run-command20-key 		:  'Disabled'
+    run-command8-button 		:  'Disabled'
+    run-command10-edge 		:  ''
+    run-command12-key 		:  'Disabled'
+    run-command8-edge 		:  ''
+    run-command4-button 		:  'Disabled'
+    run-command1-key 		:  'Disabled'
+    run-command19-key 		:  'Disabled'
+    run-command16-edge 		:  ''
+    run-command17-edge 		:  ''
+    run-command9-button 		:  'Disabled'
+    run-command2-edge 		:  ''
+    run-command11-edge 		:  ''
+    run-command1-edge 		:  ''
+    run-command3-button 		:  'Disabled'
+    run-command19-edge 		:  ''
+    run-command7-edge 		:  ''
+    run-command18-edge 		:  ''
+    run-command9-edge 		:  ''
+    command1 		:  ''
+    command0 		:  ''
+    command3 		:  ''
+    command2 		:  ''
+    command5 		:  ''
+    command4 		:  ''
+    command7 		:  ''
+    command6 		:  ''
+    command9 		:  ''
+    command8 		:  ''
+    run-command11-key 		:  'Disabled'
+    run-command15-edge 		:  ''
+    run-command7-key 		:  'Disabled'
+    run-command14-button 		:  'Disabled'
+    run-command3-edge 		:  ''
+    run-command4-key 		:  'Disabled'
+    run-command11-button 		:  'Disabled'
+    run-command18-button 		:  'Disabled'
+    run-command15-key 		:  'Disabled'
+    run-command16-button 		:  'Disabled'
+    run-command2-key 		:  'Disabled'
+    run-command20-button 		:  'Disabled'
+    run-command0-key 		:  'Disabled'
+    run-command9-key 		:  'Disabled'
+    command11 		:  ''
+    command10 		:  ''
+    command13 		:  ''
+    command12 		:  ''
+    command15 		:  ''
+    command14 		:  ''
+    command17 		:  ''
+    command16 		:  ''
+    command19 		:  ''
+    command18 		:  ''
+    run-command6-button 		:  'Disabled'
+    run-command13-button 		:  'Disabled'
+    run-command16-key 		:  'Disabled'
+    run-command14-key 		:  'Disabled'
+    run-command7-button 		:  'Disabled'
+    run-command3-key 		:  'Disabled'
+    run-command8-key 		:  'Disabled'
+    run-command4-edge 		:  ''
+    run-command15-button 		:  'Disabled'
+    run-command5-key 		:  'Disabled'
+    run-command5-button 		:  'Disabled'
+    run-command20-edge 		:  ''
+    run-command17-key 		:  'Disabled'
+    run-command19-button 		:  'Disabled'
+    run-command1-button 		:  'Disabled'
+    run-command0-edge 		:  ''
+    run-command10-key 		:  'Disabled'
+    run-command0-button 		:  'Disabled'
+    run-command13-key 		:  'Disabled'
+    run-command13-edge 		:  ''
+    run-command6-key 		:  'Disabled'
+    run-command14-edge 		:  ''
+    run-command5-edge 		:  ''
+    run-command12-button 		:  'Disabled'
+    run-command10-button 		:  'Disabled'
+    command20 		:  ''
+    run-command18-key 		:  'Disabled'
+    run-command12-edge 		:  ''
+    run-command2-button 		:  'Disabled'
+    run-command6-edge 		:  ''
+
+--- org.compiz.titleinfo ---
+    show-remote-machine 		:  true
+    show-root 		:  true
+
+--- org.compiz.place ---
+    viewport-matches 		:  @as []
+    mode-matches 		:  @as []
+    workarounds 		:  true
+    position-x-values 		:  @ai []
+    force-placement-match 		:  ''
+    position-constrain-workarea 		:  @ab []
+    viewport-y-values 		:  @ai []
+    mode 		:  2
+    position-y-values 		:  @ai []
+    mode-modes 		:  @ai []
+    position-matches 		:  @as []
+    multioutput-mode 		:  0
+    viewport-x-values 		:  @ai []
+
+--- org.compiz.session ---
+    save-legacy 		:  false
+    ignore-match 		:  ''
+
+--- org.compiz.obs ---
+    saturation-decrease-button 		:  'Disabled'
+    saturation-decrease-key 		:  'Disabled'
+    opacity-step 		:  5
+    saturation-matches 		:  @as []
+    brightness-matches 		:  @as []
+    saturation-increase-button 		:  'Disabled'
+    saturation-step 		:  5
+    opacity-decrease-key 		:  'Disabled'
+    brightness-step 		:  5
+    brightness-decrease-button 		:  'Disabled'
+    opacity-decrease-button 		:  '<Alt>Button5'
+    brightness-increase-button 		:  'Disabled'
+    brightness-values 		:  [90]
+    saturation-increase-key 		:  'Disabled'
+    opacity-values 		:  [90]
+    saturation-values 		:  [90]
+    opacity-matches 		:  @as []
+    brightness-decrease-key 		:  'Disabled'
+    opacity-increase-button 		:  '<Alt>Button4'
+    opacity-increase-key 		:  'Disabled'
+    brightness-increase-key 		:  'Disabled'
+
+--- org.compiz.unitymtgrabhandles ---
+    hide-handles-key 		:  'Disabled'
+    show-handles-key 		:  'Disabled'
+    toggle-handles-key 		:  'Disabled'
+    fade-duration 		:  150
+
+--- org.compiz.rotate ---
+    edge-flip-pointer 		:  false
+    timestep 		:  1.0
+    sensitivity 		:  1.0
+    rotate-left-window-key 		:  '<Control><Alt><Shift>Left'
+    rotate-to-8-key 		:  'Disabled'
+    rotate-to-2-window-key 		:  'Disabled'
+    rotate-to-11-key 		:  'Disabled'
+    rotate-right-window-button 		:  'Disabled'
+    rotate-to-4-window-key 		:  'Disabled'
+    speed 		:  2.0
+    rotate-to-key 		:  'Disabled'
+    rotate-to-8-window-key 		:  'Disabled'
+    acceleration 		:  4.0
+    initiate-button 		:  '<Control><Alt>Button1'
+    rotate-to-9-key 		:  'Disabled'
+    rotate-to-10-key 		:  'Disabled'
+    rotate-window-key 		:  'Disabled'
+    rotate-flip-left-edge 		:  'Left'
+    rotate-flip-right-edge 		:  'Right'
+    rotate-to-2-key 		:  'Disabled'
+    rotate-to-10-window-key 		:  'Disabled'
+    rotate-to-6-window-key 		:  'Disabled'
+    rotate-to-3-window-key 		:  'Disabled'
+    rotate-to-12-window-key 		:  'Disabled'
+    rotate-to-12-key 		:  'Disabled'
+    snap-top 		:  false
+    rotate-to-3-key 		:  'Disabled'
+    rotate-to-1-key 		:  'Disabled'
+    rotate-to-6-key 		:  'Disabled'
+    flip-time 		:  350
+    raise-on-rotate 		:  false
+    invert-y 		:  false
+    rotate-to-7-window-key 		:  'Disabled'
+    rotate-to-7-key 		:  'Disabled'
+    rotate-left-button 		:  'Disabled'
+    rotate-right-key 		:  '<Control><Alt>Right'
+    rotate-to-9-window-key 		:  'Disabled'
+    rotate-to-5-window-key 		:  'Disabled'
+    edge-flip-window 		:  true
+    rotate-to-4-key 		:  'Disabled'
+    rotate-right-window-key 		:  '<Control><Alt><Shift>Right'
+    snap-bottom 		:  false
+    rotate-to-11-window-key 		:  'Disabled'
+    rotate-right-button 		:  'Disabled'
+    rotate-to-5-key 		:  'Disabled'
+    edge-flip-dnd 		:  true
+    rotate-left-key 		:  '<Control><Alt>Left'
+    rotate-to-1-window-key 		:  'Disabled'
+    rotate-left-window-button 		:  'Disabled'
+    zoom 		:  0.0
+
+--- org.compiz.crashhandler ---
+    directory 		:  '/tmp'
+    start-wm 		:  false
+    enabled 		:  true
+    wm-cmd 		:  ''
+
+--- org.compiz.maximumize ---
+    ignore-overlapping 		:  false
+    trigger-max-vertically 		:  'Disabled'
+    trigger-min-up 		:  'Disabled'
+    trigger-max-up 		:  'Disabled'
+    trigger-min-vertically 		:  'Disabled'
+    trigger-min-up-right 		:  'Disabled'
+    ignore-sticky 		:  true
+    trigger-min-down 		:  'Disabled'
+    trigger-min-right 		:  'Disabled'
+    trigger-max-up-right 		:  'Disabled'
+    trigger-max-down-right 		:  'Disabled'
+    maximumize-up 		:  true
+    maximumize-down 		:  true
+    trigger-max-right 		:  'Disabled'
+    trigger-min-down-right 		:  'Disabled'
+    trigger-max-down-left 		:  'Disabled'
+    trigger-max-up-left 		:  'Disabled'
+    trigger-min-left 		:  'Disabled'
+    trigger-max-horizontally 		:  'Disabled'
+    maximumize-right 		:  true
+    allow-shrink 		:  true
+    maximumize-left 		:  true
+    trigger-max-down 		:  'Disabled'
+    trigger-min-up-left 		:  'Disabled'
+    trigger-min-key 		:  '<Super><Shift>M'
+    trigger-min-down-left 		:  'Disabled'
+    trigger-max-left 		:  'Disabled'
+    trigger-max-key 		:  '<Super>M'
+    trigger-min-horizontally 		:  'Disabled'
+
+--- org.compiz.core ---
+    toggle-window-maximized-vertically-key 		:  'Disabled'
+    hsize 		:  2
+    edge-delay 		:  0
+    window-menu-key 		:  '<Alt>space'
+    close-window-key 		:  '<Alt>F4'
+    focus-prevention-level 		:  1
+    click-to-focus 		:  true
+    lower-window-button 		:  '<Alt>Button6'
+    close-window-button 		:  'Disabled'
+    active-plugins 		:  ['core', 'composite', 'opengl', 'decor', 'grid', 'text', 'compiztoolbox', 'gnomecompat', 'shift', 'annotate', 'place', 'regex', 'animation', 'workarounds', 'imgpng', 'ring', 'mousepoll', 'imgsvg', 'snap', 'titleinfo', 'resize', 'move', 'expo', 'session', 'wall', 'fade', 'unitymtgrabhandles', 'scale', 'unityshell', 'addhelper']
+    toggle-window-maximized-button 		:  'Disabled'
+    minimize-window-button 		:  'Disabled'
+    audible-bell 		:  true
+    window-menu-button 		:  '<Alt>Button3'
+    lower-window-key 		:  'Disabled'
+    hide-skip-taskbar-windows 		:  true
+    do-serialize 		:  true
+    ping-delay 		:  5000
+    detect-outputs 		:  true
+    maximize-window-horizontally-key 		:  'Disabled'
+    outputs 		:  ['640x480+0+0']
+    focus-prevention-match 		:  '!(class=Polkit-gnome-authentication-agent-1)'
+    number-of-desktops 		:  1
+    autoraise 		:  true
+    raise-on-click 		:  true
+    minimize-window-key 		:  '<Control><Alt>KP_0'
+    show-desktop-key 		:  '<Control><Super>d'
+    toggle-window-maximized-horizontally-key 		:  'Disabled'
+    raise-window-button 		:  '<Control>Button6'
+    unmaximize-window-key 		:  '<Control><Super>Down'
+    raise-window-key 		:  'Disabled'
+    toggle-window-maximized-key 		:  '<Control><Alt>KP_5'
+    ignore-hints-when-maximized 		:  true
+    show-desktop-edge 		:  ''
+    maximize-window-vertically-key 		:  'Disabled'
+    maximize-window-key 		:  '<Control><Super>Up'
+    default-icon 		:  'icon'
+    vsize 		:  2
+    toggle-window-shaded-key 		:  '<Control><Alt>s'
+    autoraise-delay 		:  1000
+    overlapping-outputs 		:  0
+
+--- org.compiz.extrawm ---
+    toggle-always-on-top-key 		:  'Disabled'
+    activate-demands-attention-key 		:  'Disabled'
+    toggle-redirect-key 		:  'Disabled'
+    toggle-sticky-key 		:  'Disabled'
+    toggle-fullscreen-key 		:  'Disabled'
+
+--- org.compiz.resizeinfo ---
+    text-color 		:  '#000000ff'
+    always-show 		:  false
+    fade-time 		:  500
+    gradient-1 		:  '#cccce6cc'
+    gradient-3 		:  '#d9d9d9cc'
+    gradient-2 		:  '#f3f3f3cc'
+
+--- org.compiz.grid ---
+    snapoff-maximized 		:  false
+    top-edge-action 		:  10
+    left-edge-action 		:  4
+    put-center-key 		:  'Disabled'
+    bottom-edge-action 		:  0
+    put-topleft-key 		:  '<Control><Alt>KP_7'
+    put-bottom-key 		:  '<Control><Alt>KP_2'
+    snapback-windows 		:  true
+    put-topright-key 		:  '<Control><Alt>KP_9'
+    put-top-key 		:  '<Control><Alt>KP_8'
+    put-right-key 		:  '<Control><Super>Right'
+    top-left-corner-action 		:  7
+    fill-color 		:  '#fb8b004f'
+    right-edge-threshold 		:  15
+    put-restore-key 		:  '<Control><Alt>r'
+    top-right-corner-action 		:  9
+    outline-color 		:  '#fb8b009f'
+    bottom-left-corner-action 		:  1
+    bottom-edge-threshold 		:  5
+    put-bottomleft-key 		:  '<Control><Alt>KP_1'
+    bottom-right-corner-action 		:  3
+    put-bottomright-key 		:  '<Control><Alt>KP_3'
+    put-left-key 		:  '<Control><Super>Left'
+    right-edge-action 		:  6
+    top-edge-threshold 		:  20
+    left-edge-threshold 		:  15
+    put-maximize-key 		:  'Disabled'
+    draw-indicator 		:  true
+
+--- org.compiz.ring ---
+    window-match 		:  'Normal | Dialog | ModalDialog | Utility | Unknown'
+    next-group-key 		:  'Disabled'
+    title-text-placement 		:  0
+    window-title 		:  true
+    next-all-key 		:  '<Super><Alt>Tab'
+    next-key 		:  '<Alt>Tab'
+    next-button 		:  'Disabled'
+    speed 		:  1.5
+    min-scale 		:  0.5
+    inactive-opacity 		:  100
+    thumb-height 		:  500
+    min-brightness 		:  0.5
+    ring-clockwise 		:  false
+    prev-key 		:  '<Shift><Alt>Tab'
+    title-back-color 		:  '#00000099'
+    prev-group-key 		:  'Disabled'
+    title-font-color 		:  '#ffffffff'
+    prev-group-button 		:  'Disabled'
+    ring-height 		:  45
+    ring-width 		:  60
+    thumb-width 		:  700
+    minimized 		:  true
+    title-font-bold 		:  false
+    prev-button 		:  'Disabled'
+    next-group-button 		:  'Disabled'
+    prev-all-button 		:  'Disabled'
+    darken-back 		:  true
+    next-all-button 		:  'Disabled'
+    title-font-size 		:  16
+    select-with-mouse 		:  true
+    prev-all-key 		:  '<Super><Shift><Alt>Tab'
+    timestep 		:  1.2
+    overlay-icon 		:  1
+
+--- org.compiz.expo ---
+    deform 		:  0
+    expo-immediate-move 		:  false
+    vp-saturation 		:  40.0
+    next-vp-button 		:  'Button5'
+    vp-brightness 		:  40.0
+    scale-factor 		:  1.0
+    expo-animation 		:  0
+    mipmaps 		:  false
+    selected-color 		:  '#fb8b00ff'
+    vp-distance 		:  0.20000000000000001
+    exit-button 		:  'Button3'
+    dnd-button 		:  'Button1'
+    y-offset 		:  24
+    x-offset 		:  64
+    zoom-time 		:  0.29999999999999999
+    ground-color1 		:  '#b3b3b3cc'
+    ground-color2 		:  '#b3b3b300'
+    ground-size 		:  0.5
+    double-click-time 		:  500
+    multioutput-mode 		:  0
+    expo-edge 		:  ''
+    distance 		:  0.0050000000000000001
+    expo-key 		:  '<Super>s'
+    reflection 		:  false
+    curve 		:  0.5
+    hide-docks 		:  false
+    expo-button 		:  'Disabled'
+    prev-vp-button 		:  'Button4'
+    aspect-ratio 		:  1.0
+
+--- org.compiz.shelf ---
+    interval 		:  0.90000000000000002
+    inc-button 		:  '<Alt><Super>Button5'
+    dec-button 		:  '<Alt><Super>Button4'
+    triggerscreen-key 		:  '<Super>p'
+    animtime 		:  150
+    trigger-key 		:  '<Super>l'
+    reset-key 		:  'Disabled'
+
+--- org.compiz.screenshot ---
+    directory 		:  ''
+    initiate-button 		:  '<Super>Button1'
+    launch-app 		:  ''
+
+--- org.compiz.annotate ---
+    clear-button 		:  'Disabled'
+    initiate-ellipse-button 		:  '<Super><Alt><Shift>Button2'
+    stroke-width 		:  3.0
+    stroke-color 		:  '#00ff00ff'
+    erase-button 		:  '<Super><Alt>Button3'
+    fill-color 		:  '#ff000088'
+    initiate-free-draw-button 		:  '<Super><Alt>Button1'
+    erase-width 		:  20.0
+    initiate-line-button 		:  '<Super><Alt>Button2'
+    draw-shapes-from-center 		:  false
+    clear-key 		:  '<Super><Alt>k'
+    initiate-rectangle-button 		:  '<Super><Alt><Shift>Button1'
+
+--- org.compiz.unityshell ---
+    launcher-switcher-prev 		:  '<Super><Shift>Tab'
+    automaximize-value 		:  75
+    autohide-animation 		:  3
+    alt-tab-prev 		:  'Disabled'
+    overcome-pressure 		:  20
+    num-launchers 		:  1
+    menus-discovery-duration 		:  2
+    backlight-mode 		:  1
+    show-minimized-windows 		:  true
+    alt-tab-prev-window 		:  'Disabled'
+    alt-tab-forward-all 		:  '<Control><Alt>Tab'
+    dash-blur-experimental 		:  2
+    urgent-animation 		:  2
+    decay-rate 		:  15
+    edge-responsiveness 		:  2.0
+    icon-size 		:  32
+    menus-fadein 		:  100
+    show-hud 		:  '<Alt>'
+    menus-fadeout 		:  120
+    alt-tab-detail-stop 		:  '<Alt>Up'
+    edge-passed-disabled-ms 		:  1000
+    launcher-capture-mouse 		:  true
+    launcher-opacity 		:  0.66669999999999996
+    background-color 		:  '#00000000'
+    launcher-hide-mode 		:  1
+    panel-opacity-maximized-toggle 		:  false
+    alt-tab-bias-viewport 		:  true
+    launch-animation 		:  1
+    disable-show-desktop 		:  false
+    panel-opacity 		:  1.0
+    alt-tab-forward 		:  'Disabled'
+    menus-discovery-fadeout 		:  300
+    alt-tab-prev-all 		:  '<Control><Alt><Shift>Tab'
+    keyboard-focus 		:  '<Alt>F1'
+    alt-tab-next-window 		:  'Disabled'
+    panel-first-menu 		:  '<Alt>F10'
+    reveal-pressure 		:  20
+    stop-velocity 		:  65
+    launcher-switcher-forward 		:  '<Super>Tab'
+    reveal-trigger 		:  0
+    alt-tab-right 		:  '<Alt>Right'
+    show-launcher 		:  '<Super>'
+    alt-tab-timeout 		:  true
+    menus-discovery-fadein 		:  200
+    execute-command 		:  '<Alt>F2'
+    alt-tab-detail-start 		:  '<Alt>Down'
+    shortcut-overlay 		:  true
+    alt-tab-left 		:  '<Alt>Left'
+
+--- org.compiz.shift ---
+    cover-angle 		:  60.0
+    cover-max-visible-windows 		:  10
+    next-group-key 		:  'Disabled'
+    initiate-all-button 		:  'Disabled'
+    title-text-placement 		:  2
+    window-title 		:  true
+    prev-key 		:  '<Super><Shift>Tab'
+    cover-extra-space 		:  1.0
+    intensity 		:  0.40000000000000002
+    next-all-key 		:  '<Super><Alt>Tab'
+    next-button 		:  'Disabled'
+    speed 		:  1.5
+    initiate-key 		:  '<Super><Shift>s'
+    initiate-button 		:  'Disabled'
+    title-font-bold 		:  false
+    click-duration 		:  500
+    initiate-all-key 		:  'Disabled'
+    initiate-all-edge 		:  ''
+    mipmaps 		:  false
+    flip-rotation 		:  30
+    title-back-color 		:  '#00000099'
+    prev-group-key 		:  'Disabled'
+    title-font-color 		:  '#ffffffff'
+    next-key 		:  '<Super>Tab'
+    multioutput-mode 		:  0
+    size 		:  50
+    next-all-button 		:  'Disabled'
+    initiate-edge 		:  ''
+    ground-color1 		:  '#b3b3b3cc'
+    ground-color2 		:  '#b3b3b300'
+    cover-offset 		:  0.0
+    minimized 		:  true
+    prev-group-button 		:  'Disabled'
+    prev-button 		:  'Disabled'
+    next-group-button 		:  'Disabled'
+    mouse-speed 		:  10.0
+    hide-all 		:  false
+    ground-size 		:  0.5
+    reflection 		:  true
+    prev-all-button 		:  'Disabled'
+    window-match 		:  'Normal | Dialog | ModalDialog | Utility | Unknown'
+    background-intensity 		:  0.5
+    title-font-size 		:  16
+    timestep 		:  1.2
+    mode 		:  0
+    prev-all-key 		:  '<Super><Shift><Alt>Tab'
+    shift-speed 		:  1.0
+    overlay-icon 		:  1
+
+--- org.compiz.imgjpeg ---
+    quality 		:  80
+
+--- org.compiz.showrepaint ---
+    intensity 		:  20
+    toggle-key 		:  '<Super><Alt>r'
+
+--- org.compiz.neg ---
+    neg-match 		:  'any'
+    neg-decorations 		:  false
+    window-toggle-key 		:  '<Super>n'
+    screen-toggle-key 		:  '<Super>m'
+    exclude-match 		:  'type=Desktop'
+
+--- org.compiz.scaleaddon ---
+    layout-mode 		:  0
+    border-size 		:  3
+    exit-after-pull 		:  false
+    pull-button 		:  'Disabled'
+    window-title 		:  1
+    pull-key 		:  'Disabled'
+    close-button 		:  'Button2'
+    zoom-key 		:  'Disabled'
+    highlight-color 		:  '#ffffff96'
+    window-highlight 		:  false
+    title-bold 		:  false
+    zoom-button 		:  'Button3'
+    constrain-pull-to-screen 		:  true
+    font-color 		:  '#ffffffff'
+    natural-precision 		:  2.0
+    title-size 		:  10
+    back-color 		:  '#00000099'
+    close-key 		:  'Disabled'
+
+--- org.compiz.showdesktop ---
+    window-match 		:  'type=toolbar | type=utility | type=dialog | type=normal'
+    direction 		:  6
+    window-opacity 		:  0.29999999999999999
+    window-part-size 		:  20
+    timestep 		:  0.10000000000000001
+    speed 		:  1.2
+
+--- org.compiz.kdecompat ---
+    window-blur 		:  true
+    present-windows 		:  true
+    sliding-popups 		:  true
+    slide-in-duration 		:  250
+    plasma-thumbnails 		:  true
+    slide-out-duration 		:  250
+
+--- org.compiz.widget ---
+    toggle-edge 		:  ''
+    bg-saturation 		:  100
+    fade-time 		:  0.5
+    toggle-button 		:  'Disabled'
+    bg-brightness 		:  50
+    end-on-click 		:  true
+    toggle-key 		:  'F9'
+    match 		:  ''
+
+--- org.compiz.clone ---
+    initiate-button 		:  '<Super><Shift>Button1'
+
+--- org.compiz.mblur ---
+    on-transformed-screen 		:  false
+    strength 		:  20.0
+    mode 		:  0
+    initiate-key 		:  '<Control><Primary><Alt>m'
+
+--- org.compiz.move ---
+    opacity 		:  100
+    initiate-button 		:  '<Alt>Button1'
+    snapoff-maximized 		:  true
+    constrain-y 		:  true
+    lazy-positioning 		:  true
+    initiate-key 		:  '<Alt>F7'
+
+--- org.compiz.workspacenames ---
+    text-font-size 		:  16
+    display-time 		:  0.5
+    text-placement 		:  0
+    fade-time 		:  0.25
+    bold-text 		:  false
+    names 		:  @as []
+    font-color 		:  '#ffffffff'
+    viewports 		:  @ai []
+    back-color 		:  '#00000099'
+
+--- org.compiz.fade ---
+    window-match 		:  'any & !(title=notify-osd)'
+    fullscreen-visual-bell 		:  false
+    visual-bell 		:  false
+    unresponsive-saturation 		:  0
+    fade-time 		:  100
+    fade-mode 		:  0
+    dim-unresponsive 		:  true
+    unresponsive-brightness 		:  65
+    fade-speed 		:  5.0
+
+--- org.compiz.animation ---
+    close-effects 		:  ['animation:Glide 2', 'animation:Fade', 'animation:Fade']
+    minimize-options 		:  ['']
+    magic-lamp-wavy-max-waves 		:  3
+    glide1-away-angle 		:  0.0
+    close-matches 		:  ['((type=Normal | Unknown) | name=sun-awt-X11-XFramePeer | name=sun-awt-X11-XDialogPeer) & !(role=toolTipTip | role=qtooltip_label) & !(type=Normal & override_redirect=1) & !(name=gnome-screensaver) & !(name=gnome-screenshot)', '(type=Menu | PopupMenu | DropdownMenu | Combo | Dialog | ModalDialog | Normal)', '(type=Tooltip | Notification | Utility) & !(name=compiz) & !(title=notify-osd)']
+    magic-lamp-moving-end 		:  true
+    magic-lamp-wavy-amp-min 		:  200.0
+    minimize-matches 		:  ['(type=Normal | Dialog | ModalDialog | Unknown)']
+    shade-matches 		:  ['(type=Normal | Dialog | ModalDialog | Utility | Unknown)']
+    magic-lamp-wavy-grid-res 		:  100
+    time-step 		:  16
+    glide2-away-angle 		:  0.0
+    wave-amp-mult 		:  1.0
+    dodge-mode 		:  1
+    unminimize-durations 		:  [300]
+    minimize-durations 		:  [220]
+    open-effects 		:  ['animation:Glide 2', 'animation:Fade', 'animation:Fade']
+    magic-lamp-wavy-open-start-width 		:  30
+    zoom-springiness 		:  0.080000000000000002
+    shade-options 		:  ['']
+    unminimize-effects 		:  ['animation:Glide 2']
+    glide1-zoom-to-taskbar 		:  false
+    unminimize-matches 		:  ['(type=Normal | Dialog | ModalDialog | Unknown)']
+    sidekick-zoom-from-center 		:  0
+    horizontal-folds-amp-mult 		:  1.0
+    open-matches 		:  ['((type=Normal | Unknown) | name=sun-awt-X11-XFramePeer | name=sun-awt-X11-XDialogPeer) & !(role=toolTipTip | role=qtooltip_label) & !(type=Normal & override_redirect=1) & !(name=gnome-screensaver)', '(type=Menu | PopupMenu | DropdownMenu | Combo | Dialog | ModalDialog | Normal)', '(type=Tooltip | Notification | Utility) & !(name=compiz) & !(title=notify-osd)']
+    unminimize-random-effects 		:  @as []
+    rollup-fixed-interior 		:  false
+    focus-durations 		:  [150]
+    sidekick-num-rotations 		:  0.5
+    focus-matches 		:  ['(type=Normal | Dialog | ModalDialog | Utility | Unknown) & !(name=compiz)']
+    wave-width 		:  0.69999999999999996
+    magic-lamp-grid-res 		:  100
+    horizontal-folds-num-folds 		:  3
+    open-durations 		:  [120, 80, 80]
+    close-options 		:  ['', '', '']
+    glide1-away-position 		:  1.0
+    horizontal-folds-zoom-to-taskbar 		:  true
+    unminimize-options 		:  ['']
+    magic-lamp-wavy-moving-end 		:  true
+    curved-fold-zoom-to-taskbar 		:  true
+    dream-zoom-to-taskbar 		:  true
+    open-options 		:  ['', '', '']
+    shade-durations 		:  [100]
+    sidekick-springiness 		:  0.0
+    minimize-random-effects 		:  @as []
+    close-random-effects 		:  @as []
+    close-durations 		:  [120, 80, 50]
+    focus-options 		:  ['']
+    magic-lamp-wavy-amp-max 		:  300.0
+    minimize-effects 		:  ['animation:Zoom']
+    zoom-from-center 		:  0
+    shade-effects 		:  ['animation:Random']
+    open-random-effects 		:  @as []
+    shade-random-effects 		:  ['animation:Curved Fold', 'animation:Horizontal Folds', 'animation:Roll Up']
+    glide2-away-position 		:  -0.10000000000000001
+    focus-effects 		:  ['animation:Fade']
+    magic-lamp-open-start-width 		:  30
+    dodge-gap-ratio 		:  0.5
+    all-random 		:  false
+    glide2-zoom-to-taskbar 		:  true
+    curved-fold-amp-mult 		:  1.0
+
+--- org.compiz.profile ---
+    plugins-with-set-keys 		:  @as []
+
+--- org.compiz.scalefilter ---
+    filter-display 		:  true
+    font-size 		:  24
+    border-size 		:  5
+    filter-case-insensitive 		:  true
+    timeout 		:  0
+    font-color 		:  '#ffffffff'
+    font-bold 		:  true
+    back-color 		:  '#00000099'
+
+--- org.compiz.cube ---
+    acceleration 		:  4.0
+    unfold-key 		:  '<Control><Alt>Down'
+    bottom-color 		:  '#ffffffff'
+    skydome-animated 		:  false
+    multioutput-mode 		:  0
+    skydome-gradient-start-color 		:  '#0db1fdff'
+    skydome-image 		:  ''
+    mipmap 		:  true
+    skydome-gradient-end-color 		:  '#feffc7ff'
+    skydome 		:  false
+    top-color 		:  '#ffffffff'
+    in 		:  false
+    timestep 		:  1.2
+    inactive-opacity 		:  100.0
+    active-opacity 		:  100.0
+    transparent-manual-only 		:  true
+    speed 		:  1.5
+
+--- org.compiz.put ---
+    put-empty-topright-key 		:  'Disabled'
+    window-center 		:  false
+    put-viewport-12-key 		:  'Disabled'
+    timestep 		:  0.5
+    pad-right 		:  0
+    put-left-button 		:  'Disabled'
+    put-topleft-button 		:  'Disabled'
+    put-viewport-10-key 		:  'Disabled'
+    put-empty-bottom-key 		:  'Disabled'
+    put-bottomright-button 		:  'Disabled'
+    put-empty-top-key 		:  'Disabled'
+    put-center-key 		:  '<Super>KP_Begin'
+    speed 		:  2.5
+    put-viewport-up-key 		:  'Disabled'
+    put-restore-key 		:  '<Super>KP_Insert'
+    put-viewport-11-key 		:  'Disabled'
+    put-bottom-key 		:  '<Super>KP_Down'
+    put-viewport-3-key 		:  'Disabled'
+    put-empty-topright-button 		:  'Disabled'
+    avoid-offscreen 		:  false
+    put-next-output-key 		:  'Disabled'
+    put-viewport-7-key 		:  'Disabled'
+    put-empty-bottomleft-button 		:  'Disabled'
+    put-viewport-8-key 		:  'Disabled'
+    put-topright-key 		:  '<Super>KP_Prior'
+    put-top-key 		:  '<Super>KP_Up'
+    put-right-key 		:  '<Super>KP_Right'
+    put-viewport-1-key 		:  'Disabled'
+    put-empty-topleft-key 		:  'Disabled'
+    put-bottom-button 		:  '<Super>KP_Down'
+    put-topright-button 		:  'Disabled'
+    put-empty-right-key 		:  'Disabled'
+    put-viewport-9-key 		:  'Disabled'
+    put-pointer-key 		:  '<Super>z'
+    put-topleft-key 		:  '<Super>KP_Home'
+    put-empty-left-button 		:  'Disabled'
+    put-empty-top-button 		:  'Disabled'
+    put-viewport-left-key 		:  'Disabled'
+    put-empty-bottomright-key 		:  'Disabled'
+    put-empty-center-button 		:  'Disabled'
+    put-viewport-6-key 		:  'Disabled'
+    unfocus-window 		:  false
+    put-right-button 		:  'Disabled'
+    put-viewport-2-key 		:  'Disabled'
+    put-empty-bottomleft-key 		:  'Disabled'
+    put-empty-center-key 		:  'Disabled'
+    put-viewport-5-key 		:  'Disabled'
+    put-bottomleft-key 		:  '<Super>KP_End'
+    pad-left 		:  0
+    put-pointer-button 		:  'Disabled'
+    put-bottomright-key 		:  '<Super>KP_Next'
+    put-left-key 		:  '<Super>KP_Left'
+    put-bottomleft-button 		:  'Disabled'
+    put-empty-topleft-button 		:  'Disabled'
+    put-top-button 		:  'Disabled'
+    put-empty-bottom-button 		:  'Disabled'
+    put-viewport-right-key 		:  'Disabled'
+    put-empty-right-button 		:  'Disabled'
+    put-empty-bottomright-button 		:  'Disabled'
+    put-center-button 		:  'Disabled'
+    pad-bottom 		:  0
+    put-viewport-4-key 		:  'Disabled'
+    pad-top 		:  0
+    put-next-output-button 		:  'Disabled'
+    put-empty-left-key 		:  'Disabled'
+    put-viewport-down-key 		:  'Disabled'
+    put-restore-button 		:  'Disabled'
+
+--- org.compiz.water ---
+    toggle-wiper-key 		:  '<Shift>F8'
+    toggle-rain-key 		:  '<Shift>F9'
+    offset-scale 		:  10.0
+    title-wave 		:  true
+    light-vec-y 		:  1.0
+    light-vec-x 		:  -1.0
+    light-vec-z 		:  0.0
+    rain-delay 		:  250
+    initiate-key 		:  '<Control><Super>'
+
+--- org.compiz.mousepoll ---
+    mouse-poll-interval 		:  10
+
+--- org.compiz.showmouse ---
+    initiate-button 		:  'Disabled'
+    life 		:  0.69999999999999996
+    darken 		:  0.90000000000000002
+    initiate-edge 		:  ''
+    color 		:  '#ffdf3fff'
+    blend 		:  true
+    random 		:  true
+    slowdown 		:  1.0
+    initiate 		:  '<Super>k'
+    radius 		:  100
+    num-particles 		:  500
+    rotation-speed 		:  0.5
+    emiters 		:  3
+    size 		:  10.0
+
+--- org.compiz.winrules ---
+    no-argb-match 		:  ''
+    no-close-match 		:  ''
+    no-focus-match 		:  ''
+    above-match 		:  ''
+    no-resize-match 		:  ''
+    size-height-values 		:  @ai []
+    sticky-match 		:  ''
+    no-maximize-match 		:  ''
+    size-matches 		:  @as []
+    below-match 		:  ''
+    no-move-match 		:  ''
+    skiptaskbar-match 		:  ''
+    no-minimize-match 		:  ''
+    maximize-match 		:  ''
+    skippager-match 		:  ''
+    size-width-values 		:  @ai []
+    fullscreen-match 		:  ''
+
+--- org.compiz.networkarearegion ---
+
+--- org.compiz.wobbly ---
+    focus-effect 		:  0
+    maximize-effect 		:  true
+    grid-resolution 		:  8
+    friction 		:  3.0
+    min-grid-size 		:  8
+    map-effect 		:  0
+    shiver 		:  false
+    focus-window-match 		:  ''
+    spring-k 		:  8.0
+    grab-window-match 		:  ''
+    snap-inverted 		:  false
+    move-window-match 		:  'Toolbar | Menu | Utility | Dialog | Normal | Unknown'
+    snap-key 		:  '<Shift>'
+    map-window-match 		:  'Splash | DropdownMenu | PopupMenu | Tooltip | Notification | Combo | Dnd | Unknown'
+
+--- org.compiz.opengl ---
+    vertex-buffer-object 		:  true
+    texture-compression 		:  true
+    texture-filter 		:  0
+    sync-to-vblank 		:  true
+    always-swap-buffers 		:  true
+    lighting 		:  true
+    framebuffer-object 		:  true
+
+--- org.compiz.trailfocus ---
+    window-match 		:  '(type=toolbar | type=utility | type=dialog | type=normal) & !(state=skiptaskbar | state=skippager)'
+    min-saturation 		:  100
+    min-brightness 		:  80
+    windows-count 		:  5
+    max-saturation 		:  100
+    min-opacity 		:  70
+    max-brightness 		:  100
+    windows-start 		:  2
+    max-opacity 		:  100
+
+--- org.compiz.splash ---
+    firststart 		:  true
+    saturation 		:  50.0
+    brightness 		:  50.0
+    display-time 		:  2.0
+    fade-time 		:  1.0
+    background 		:  'splash_background.png'
+    logo 		:  'splash_logo.png'
+    initiate-key 		:  '<Control>F11'
+
+--- org.compiz.unitydialog ---
+    alpha 		:  0.75
+    fade-time 		:  300
+
+--- org.compiz.mag ---
+    zoom-in-button 		:  '<Super><Shift>Button4'
+    x-offset 		:  155
+    initiate 		:  '<Super>m'
+    box-color 		:  '#000000ff'
+    speed 		:  1.5
+    overlay 		:  'Gnome/overlay.png'
+    mask 		:  'Gnome/mask.png'
+    box-height 		:  200
+    box-width 		:  300
+    radius 		:  200
+    mode 		:  0
+    timestep 		:  1.2
+    zoom-out-button 		:  '<Super><Shift>Button5'
+    keep-screen 		:  true
+    border 		:  2
+    zoom-factor 		:  2.0
+    y-offset 		:  155
+
+--- org.compiz.decor ---
+    inactive-shadow-radius 		:  5.0
+    active-shadow-y-offset 		:  1
+    inactive-shadow-y-offset 		:  1
+    inactive-shadow-color 		:  '#000000ff'
+    shadow-match 		:  'any'
+    active-shadow-color 		:  '#00000080'
+    active-shadow-x-offset 		:  1
+    command 		:  '/usr/bin/gtk-window-decorator'
+    mipmap 		:  false
+    decoration-match 		:  'any'
+    inactive-shadow-x-offset 		:  1
+    inactive-shadow-opacity 		:  0.40000000000000002
+    active-shadow-radius 		:  8.0
+    active-shadow-opacity 		:  0.80000000000000004
+
+--- org.compiz.workarounds ---
+    initial-damage-complete-redraw 		:  true
+    legacy-fullscreen 		:  true
+    keep-minimized-windows 		:  false
+    aiglx-fragment-fix 		:  true
+    notification-daemon-fix 		:  false
+    force-swap-buffers 		:  false
+    force-glx-sync 		:  false
+    java-fix 		:  true
+    firefox-menu-fix 		:  false
+    convert-urgency 		:  true
+    no-wait-for-video-sync 		:  false
+    qt-fix 		:  false
+    alldesktop-sticky-match 		:  'any'
+    java-taskbar-fix 		:  true
+    fglrx-xgl-fix 		:  false
+    sticky-alldesktops 		:  false
+    ooo-menu-fix 		:  true
+
+--- com.canonical.Unity.Runner ---
+    history 		:  @as []
+
+--- com.canonical.Unity.Devices ---
+    blacklist 		:  @as []
+
+--- com.canonical.Unity.Panel ---
+    systray-whitelist 		:  ['all', 'clementine']
+
+--- com.canonical.Unity.Dash ---
+    home-lens-ordering 		:  ['applications.lens', 'files.lens', 'music.lens']
+
+--- com.canonical.Unity ---
+    minimize-fast-duration 		:  300
+    form-factor 		:  'Automatic'
+    minimize-count 		:  54
+    minimize-slow-duration 		:  800
+    minimize-speed-threshold 		:  100
+    home-expanded 		:  'Expanded'
+
+--- com.canonical.Unity.FilesLens ---
+    use-locate 		:  true
+
+--- com.canonical.Unity.ApplicationsLens ---
+    display-available-apps 		:  true
+    display-recent-apps 		:  true
+
