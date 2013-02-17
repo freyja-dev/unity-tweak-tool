@@ -32,7 +32,7 @@ import os, os.path
 
 from gi.repository import Gtk, Gdk
 
-from .ui import ui
+from UnityTweakTool.config.ui import ui
 from . import unitytweakconfig
 from . import gsettings
 from .values import values

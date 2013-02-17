@@ -34,7 +34,7 @@ import cairo
 from gi.repository import Gtk, Gdk
 from math import pi, sqrt
 
-from .ui import ui
+from UnityTweakTool.config.ui import ui
 from . import unitytweakconfig
 from . import gsettings
 
