@@ -459,6 +459,19 @@ class Compizsettings ():
         else:
             pass
 
+        # Resize colours
+        color = gsettings.resize.get_string('border-color')
+        valid, gdkcolor = Gdk.Color.parse(color[:-2])
+        if valid:
+            self.ui['colorbutton_resize_outline'].set_color(gdkcolor)
+        del color, valid, gdkcolor
+
+        color = gsettings.resize.get_string('fill-color')
+        valid, gdkcolor = Gdk.Color.parse(color[:-2])
+        if valid:
+            self.ui['colorbutton_resize_fill'].set_color(gdkcolor)
+        del color, valid, gdkcolor
+
 
 # TODO : Find a clever way or set each one manually.
 # Do it the dumb way now. BIIIG refactoring needed later.
@@ -767,6 +780,14 @@ class Compizsettings ():
         gsettings.wm.set_int('auto-raise-delay', value)
         del value
 
+    def on_colorbutton_resize_outline_color_set(self, widget, udata=None):
+        colorhash = gsettings.color_to_hash(self.ui['colorbutton_resize_outline'].get_color())
+        gsettings.resize.set_string('border-color', colorhash)
+
+    def on_colorbutton_resize_fill_color_set(self, widget, udata=None):
+        colorhash = gsettings.color_to_hash(self.ui['colorbutton_resize_fill'].get_color())
+        gsettings.resize.set_string('fill-color', colorhash)
+
     def on_b_wm_additional_reset_clicked(self, widget):
         gsettings.wm.reset('auto-raise-delay')
         gsettings.wm.reset('auto-raise')
@@ -774,6 +795,8 @@ class Compizsettings ():
         gsettings.wm.reset('action-double-click-titlebar')
         gsettings.wm.reset('action-middle-click-titlebar')
         gsettings.wm.reset('action-right-click-titlebar')
+        gsettings.resize.reset('border-color')
+        gsettings.resize.reset('fill-color')
         self.refresh()
 
 if __name__ == '__main__':
