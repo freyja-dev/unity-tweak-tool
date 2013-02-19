@@ -39,3 +39,9 @@ class ui():
     def unsensitize(self,list):
         for item in list:
             self.__getitem__(item).set_sensitive(False)
+    def tooltip(self, list):
+        for item in list:
+            tooltip = "Schema / key missing for this widget."
+            self.unsensitize(list)
+            self.__getitem__(item).set_tooltip_text(tooltip)
+            self.__getitem__(item).set_tooltip_markup(tooltip)

@@ -30,3 +30,8 @@
 * Preset settings
 * Apport hook attached with debug logs
 * Backup and restore settings
+* Auto packaging tests [http://developer.ubuntu.com/packaging/html/auto-pkg-test.html]
+* Unit tests
+* libcolumbus (python bindings)
+* get/\_color() / get_rgba() --> deprecated stuff
+
