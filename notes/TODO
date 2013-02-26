@@ -8,20 +8,9 @@
        - Overlay scrollbar (Under System Section - Scrollbars)
 5. [Only on 13.04] Launcher icon size can be set below 32 -- up to 8 pixels.
 6. Prevent same keybindings from being set
-7. Add Ángel Araya `<al.arayaq@gmail.com>` to all files.
-8. Symbolic icon colourising
-9. Two more options in window manager:
-
-     - checkbox in Window snapping: `<checkbox>` Activate hot corners by clicking on them
-     - 2nd one (Resize colours) is wibbly to get correct- but we can stack it in Window Manager - Additional for now:
-         * *Resize window*
-         * Outline colour: `<gtk-colour-box>`
-         * Fill colour: `<gtk-colour-box>`
-
-
+7. Symbolic icon colourising
 
 -----------------------
-
 
 ###Wishlist
 
@@ -34,4 +23,3 @@
 * Unit tests
 * libcolumbus (python bindings)
 * get/\_color() / get_rgba() --> deprecated stuff
-
