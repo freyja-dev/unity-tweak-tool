@@ -8,14 +8,13 @@
        - Overlay scrollbar (Under System Section - Scrollbars)
 5. [Only on 13.04] Launcher icon size can be set below 32 -- up to 8 pixels.
 6. Prevent same keybindings from being set
-7. Symbolic icon colourising
 
 -----------------------
 
 ###Wishlist
 
 * Search
-* Ubuntu1 sync (#TODO: Need to write spec for this feature)
+* Ubuntu-one sync (#TODO: Need to write spec for this feature)
 * Preset settings
 * Apport hook attached with debug logs
 * Backup and restore settings

@@ -57,7 +57,7 @@ def is_valid(*,schema,path=None,key=None):
                 _gs=GSettings[schema]
             except KeyError as e:
                 _gs=Gio.Settings(schema)
-            return key in _gs.list_keys() 
+            return key in _gs.list_keys()
         else:
             return True
     if schema in all_relocatable_schemas:
@@ -67,7 +67,7 @@ def is_valid(*,schema,path=None,key=None):
                 _gs=GSettings[schema]
             except KeyError as e:
                 _gs=Gio.Settings(schema,path)
-            return key in _gs.list_keys() 
+            return key in _gs.list_keys()
         else:
             return True
 

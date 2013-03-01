@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 #
 # Team:
-#   J Phani Mahesh <phanimahesh@gmail.com> 
-#   Barneedhar (jokerdino) <barneedhar@ubuntu.com> 
+#   J Phani Mahesh <phanimahesh@gmail.com>
+#   Barneedhar (jokerdino) <barneedhar@ubuntu.com>
 #   Amith KK <amithkumaran@gmail.com>
 #   Georgi Karavasilev <motorslav@gmail.com>
 #   Sam Tran <samvtran@gmail.com>
@@ -44,7 +44,7 @@ class Themesettings ():
         self.windowthemestore=self.gtkthemestore
         self.ui['tree_gtk_theme'].set_model(self.gtkthemestore)
         self.ui['tree_window_theme'].set_model(self.windowthemestore)
-        
+
         # Get all themes
         systhdir='/usr/share/themes'
         systemthemes=[(theme.capitalize(),os.path.join(systhdir,theme)) for theme in os.listdir(systhdir) if os.path.isdir(os.path.join(systhdir,theme))]
@@ -69,7 +69,7 @@ class Themesettings ():
         self.cursorthemestore=Gtk.ListStore(str,str)
         self.ui['tree_icon_theme'].set_model(self.iconthemestore)
         self.ui['tree_cursor_theme'].set_model(self.cursorthemestore)
-        
+
         sysithdir='/usr/share/icons'
         systemiconthemes= [(theme.capitalize(),os.path.join(sysithdir,theme)) for theme in os.listdir(sysithdir) if os.path.isdir(os.path.join(sysithdir,theme))]
         to_be_hidden=[('Loginicons','/usr/share/icons/LoginIcons'),('Unity-webapps-applications','/usr/share/icons/unity-webapps-applications')]
@@ -103,7 +103,7 @@ class Themesettings ():
 
 
     def refresh(self):
-    
+
         # System theme
         gtkthemesel=self.ui['tree_gtk_theme'].get_selection()
         gtktheme=gsettings.gnome('desktop.interface').get_string('gtk-theme')
@@ -157,7 +157,7 @@ class Themesettings ():
         elif gsettings.antialiasing.get_string('antialiasing') == 'rgba':
             self.ui['cbox_antialiasing'].set_active(2)
 
-        # Hinting            
+        # Hinting
         if gsettings.antialiasing.get_string('hinting') == 'none':
             self.ui['cbox_hinting'].set_active(0)
         elif gsettings.antialiasing.get_string('hinting') == 'slight':
@@ -167,7 +167,7 @@ class Themesettings ():
         elif gsettings.antialiasing.get_string('hinting') == 'full':
             self.ui['cbox_hinting'].set_active(3)
 
-        # Scaling        
+        # Scaling
         self.ui['spin_textscaling'].set_value(gsettings.interface.get_double('text-scaling-factor'))
         self.refresh_window_controls()
         self.refresh_window_controls_combobox()
@@ -216,14 +216,14 @@ class Themesettings ():
             self.ui['check_show_menu'].set_active(True)
         else:
             self.ui['check_show_menu'].set_active(False)
-      
+
 # TODO : Find a clever way or set each one manually.
 # Do it the dumb way now. BIIIG refactoring needed later.
 
 
 #-----BEGIN: Theme settings------
 
-# These check for nonetype and return since for some bizzare reason Gtk.quit destroys 
+# These check for nonetype and return since for some bizzare reason Gtk.quit destroys
 # the selection object and then calls these callbacks. This is a temporary fix to LP:1096964
 
     # System Theme
@@ -260,7 +260,7 @@ class Themesettings ():
         gsettings.interface.set_string('icon-theme',theme)
 
     def on_check_show_incomplete_toggled(self,udata=None):
-    # TODO 
+    # TODO
         print('To do')
 
     def on_b_theme_system_reset_clicked(self, widget):
