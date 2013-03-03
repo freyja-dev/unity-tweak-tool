@@ -121,7 +121,7 @@ class Unitysettings ():
         self.ui['cbox_launch_animation'].set_active(gsettings.unityshell.get_int('launch-animation'))
 
         # Show Desktop
-        self.ui['switch_show_desktop'].set_active(True if 'unity://desktop-icon' in gsettings.launcher.get_strv('favorites') else False)
+        self.ui['sw_show_desktop'].set_active(True if 'unity://desktop-icon' in gsettings.launcher.get_strv('favorites') else False)
 
         # ====== Dash Helpers ===== #
 
@@ -510,10 +510,10 @@ class Unitysettings ():
         mode = self.ui['cbox_launch_animation'].get_active()
         gsettings.unityshell.set_int('launch-animation', mode)
 
-    def on_switch_show_desktop_active_notify(self, widget, udata = None):
+    def on_sw_show_desktop_active_notify(self, widget, udata = None):
         fav = gsettings.launcher.get_strv('favorites')
         desktop = 'unity://desktop-icon'
-        if self.ui['switch_show_desktop'].get_active():
+        if self.ui['sw_show_desktop'].get_active():
             if desktop not in fav:
                 fav.append(desktop)
                 gsettings.launcher.set_strv('favorites', fav)
