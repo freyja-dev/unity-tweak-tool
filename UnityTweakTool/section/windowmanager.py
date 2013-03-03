@@ -37,7 +37,7 @@ from UnityTweakTool.section.sphagetti.compiz import Compizsettings as SphagettiC
 from UnityTweakTool.elements.option import Option,HandlerObject
 
 
-WindowManager=Section(ui='compiz.ui',id='nb_compizsettings')
+WindowManager=Section(ui='windowmanager.ui',id='nb_compizsettings')
 
 #sw_compiz_zoom= Switch({
 #    'id'        : 'sw_compiz_zoom',

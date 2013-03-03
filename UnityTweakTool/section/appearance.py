@@ -40,7 +40,7 @@ from UnityTweakTool.elements.option import Option,HandlerObject
 
 from collections import defaultdict
 
-Appearance =Section(ui='theme.ui',id='nb_themesettings')
+Appearance =Section(ui='appearance.ui',id='nb_themesettings')
 
 #=============== THEME ==========================
 

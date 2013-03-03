@@ -36,7 +36,7 @@ from UnityTweakTool.elements.checkbox import CheckBox
 from UnityTweakTool.elements.cbox import ComboBox
 from UnityTweakTool.elements.radio import Radio
 
-System=Section(ui='desktop.ui',id='nb_desktop_settings')
+System=Section(ui='system.ui',id='nb_desktop_settings')
 
 switch_desktop_icons= Switch({
     'id'        : 'switch_desktop_icons',
