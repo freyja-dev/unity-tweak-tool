@@ -119,12 +119,25 @@ class Themesettings ():
         # Window theme
         windowthemesel=self.ui['tree_window_theme'].get_selection()
         windowtheme=gsettings.gnome('desktop.wm.preferences').get_string('theme')
-        windowthemesel.select_iter(self.windowthemes[windowtheme]['iter'])
+
+        # FIXME: Workaround to fix LP bug: #1146122
+        try:
+            windowthemesel.select_iter(self.windowthemes[windowtheme]['iter'])
+
+        # TODO: This except part should do a lot more.
+        except KeyError:
+            windowthemesel.unselect_all()    
 
         # Icon theme
         iconthemesel=self.ui['tree_icon_theme'].get_selection()
         icontheme=gsettings.gnome('desktop.interface').get_string('icon-theme')
-        iconthemesel.select_iter(self.iconthemes[icontheme]['iter'])
+
+        # FIXME: Workaround to fix potential bug
+        try:
+            iconthemesel.select_iter(self.iconthemes[icontheme]['iter'])
+
+        except KeyError:
+            iconthemesel.unselect_all()
 
         # Cursor theme
         cursorthemesel=self.ui['tree_cursor_theme'].get_selection()
