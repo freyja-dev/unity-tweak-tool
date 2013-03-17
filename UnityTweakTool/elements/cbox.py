@@ -45,21 +45,30 @@ class ComboBox:
         self.type       = controlObj['type']
         self.map        = controlObj['map']
         self.invmap     = dict([ (v,k) for (k,v) in self.map.items() ])
-        assert gsettings.is_valid(
-            schema=self.schema,
-            path=self.path,
-            key=self.key
-            )
+        self.disabled   = False
+        try:
+            gsettings.is_valid(
+                schema=self.schema,
+                path=self.path,
+                key=self.key
+                )
+        except AssertionError as e:
+            self.disabled = True
         logger.debug('Initialised a ComboBox with id {self.id} to control key {self.key} of type {self.type} in schema {self.schema} with path {self.path}'.format(self=self))
 
     def register(self,handler):
         ''' register handler on a handler object '''
+        if self.disabled:
+            return
         handler['on_%s_changed'%self.id]=self.handler
         logger.debug('Handler for {self.id} registered'.format(self=self))
 
     def refresh(self):
         ''' Refresh UI reading from backend '''
         logger.debug('Refreshing UI display for {self.id}'.format(self=self))
+        if self.disabled:
+            self.ui.set_active(False)
+            return
         self.ui.set_active(
             self.map[
                 gsettings.get(
@@ -84,5 +93,7 @@ class ComboBox:
 
     def reset(self):
         ''' Reset the controlled key '''
+        if self.disabled:
+            return
         gsettings.reset(schema=self.schema,path=self.path,key=self.key)
         logger.debug('Key {self.key} in schema {self.schema} and path {self.path} reset.'.format(self=self))
