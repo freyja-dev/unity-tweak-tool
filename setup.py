@@ -8,6 +8,7 @@
 #   Georgi Karavasilev <motorslav@gmail.com>
 #   Sam Tran <samvtran@gmail.com>
 #   Sam Hewitt <hewittsamuel@gmail.com>
+#   Angel Araya <al.arayaq@gmail.com>
 #
 # Description:
 #   A One-stop configuration tool for Unity.
@@ -58,7 +59,7 @@ def update_config_old(libdir, values = {}):
         fout.close()
         fin.close()
         os.rename(fout.name, fin.name)
-    except u.URLError as e:
+    except IOError as e:
         print ("ERROR: Can't find %s" % filename)
         sys.exit(1)
     return oldvalues
@@ -82,7 +83,7 @@ def update_config_new(libdir, values = {}):
         fout.close()
         fin.close()
         os.rename(fout.name, fin.name)
-    except u.URLError as e:
+    except IOError as e:
         print ("ERROR: Can't find %s" % filename)
         sys.exit(1)
     return oldvalues

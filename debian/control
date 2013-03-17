@@ -16,6 +16,9 @@ Depends: ${python3:Depends},
  unity (>= 6.8),
  python3-xdg,
  ${misc:Depends}
-Description: configuration manager for Unity desktop environment.
- Unity Tweak Tool is a one-stop settings manager for Ubuntu Unity.
- It houses most configuration from Unity, Compiz and what not.
+Description: configuration manager for Unity desktop environment
+ Unity Tweak Tool is a settings manager for Ubuntu Unity.
+ It is a handy tool for  both power users as well as novice users
+ and contains  most settings that any user might want to configure.
+ It is simple, fast, well-designed and packed with plenty of useful features
+ relevant to Unity and Compiz.

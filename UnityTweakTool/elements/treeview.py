@@ -8,6 +8,7 @@
 #   Georgi Karavasilev <motorslav@gmail.com>
 #   Sam Tran <samvtran@gmail.com>
 #   Sam Hewitt <hewittsamuel@gmail.com>
+#   Angel Araya <al.arayaq@gmail.com>
 #
 # Description:
 #   A One-stop configuration tool for Unity.

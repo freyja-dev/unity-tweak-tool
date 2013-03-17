@@ -1,31 +1,31 @@
 unity-tweak-tool
 ================
 
-Unity Tweak Tool is a configuration tool for the Unity Desktop
+Unity Tweak Tool is a configuration tool for the Unity Desktop.
 
 License: GPLv3
 
-Unity Tweak Tool can be found at http://launchpad.net/unity-tweak-tool
+Unity Tweak Tool can be found at http://launchpad.net/unity-tweak-tool.
 
 You can get the latest sources from the git repository:
 
-git clone https://github.com/freyja-dev/unity-tweak-tool.git .
+    git clone https://github.com/freyja-dev/unity-tweak-tool.git .
 
-You can also browse the sources on github:
+You can also browse the sources on GitHub:
 
 https://github.com/freyja-dev/unity-tweak-tool
 
 
-Usage:
-======
+###Usage:
+
 
 On Ubuntu systems (>12.10) you can install from the Freyja Development PPA:
 
-sudo add-apt-repository ppa:freyja-dev/unity-tweak-tool-daily
+    sudo add-apt-repository ppa:freyja-dev/unity-tweak-tool-daily
 
 or, from source folder:
 
-./unity-tweak-tool
+    ./unity-tweak-tool
 
 Unity Tweak Tool depends on:
 
@@ -37,11 +37,11 @@ Unity Tweak Tool depends on:
  * gir1.2-gtk-3.0
  * python3-xdg
 
-Contributing:
-=============
+-----------
 
-If you want to contribute code, please either send patches or
-a pull request to github:
+###Contributing:
+
+If you want to contribute code, please either send patches or a pull request to GitHub:
 
 https://github.com/freyja-dev/unity-tweak-tool
 

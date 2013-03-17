@@ -2,12 +2,13 @@
 # -*- coding: utf-8 -*-
 #
 # Team:
-#   J Phani Mahesh <phanimahesh@gmail.com> 
-#   Barneedhar (jokerdino) <barneedhar@ubuntu.com> 
+#   J Phani Mahesh <phanimahesh@gmail.com>
+#   Barneedhar (jokerdino) <barneedhar@ubuntu.com>
 #   Amith KK <amithkumaran@gmail.com>
 #   Georgi Karavasilev <motorslav@gmail.com>
 #   Sam Tran <samvtran@gmail.com>
 #   Sam Hewitt <hewittsamuel@gmail.com>
+#   Angel Araya <al.arayaq@gmail.com>
 #
 # Description:
 #   A One-stop configuration tool for Unity.
@@ -110,27 +111,10 @@ def connecthandlers(builder):
 def init(page=0):
     print('Initialising...')
     from UnityTweakTool.config.data import get_data_path
-    from UnityTweakTool.config.ui import ui
     global notebook
     builder=Gtk.Builder()
-    glade=os.path.join(get_data_path(),'unitytweak.ui')
-    builder.add_from_file(glade)
-    interface = ui(builder)
-
-    # Symbolic icon
-    def on_style_context_change(widget):
-        main_fg_color = style_context.get_color(Gtk.StateFlags.ACTIVE)
-
-        overview_symbolic_icon = icons.lookup_icon('unity-tweak-tool-overview-symbolic', 24, Gtk.IconLookupFlags.FORCE_SIZE)
-        if overview_symbolic_icon:
-            overview_symbolic_icon_pixbuf, was_sym = overview_symbolic_icon.load_symbolic(main_fg_color, None, None, None)
-            interface['image_overview'].set_from_pixbuf(overview_symbolic_icon_pixbuf)
-
-    icons = Gtk.IconTheme.get_default()
-    style_context = interface['toolbar_main'].get_style_context()
-    style_context.add_class(Gtk.STYLE_CLASS_PRIMARY_TOOLBAR)
-    style_context.connect('changed', on_style_context_change)
-
+    ui=os.path.join(get_data_path(),'unitytweak.ui')
+    builder.add_from_file(ui)
     notebook=builder.get_object('nb_unitytweak')
     connectpages()
     notebook.set_current_page(page)

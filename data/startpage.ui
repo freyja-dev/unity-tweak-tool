@@ -194,7 +194,7 @@ Controls</property>
                   <object class="GtkImage" id="image_box_start_unity">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="pixbuf">media/24/unity-settings-dark_24.svg</property>
+                    <property name="icon_name">unity-tweak-tool-unity-symbolic</property>
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
@@ -387,7 +387,7 @@ Controls</property>
                   <object class="GtkImage" id="image_box_start_compiz">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="pixbuf">media/24/wm-settings-dark_24.svg</property>
+                    <property name="icon_name">unity-tweak-tool-wm-symbolic</property>
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
@@ -590,7 +590,7 @@ Controls</property>
                   <object class="GtkImage" id="image_start_theme">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="pixbuf">media/24/appearance-settings-dark_24.svg</property>
+                    <property name="icon_name">unity-tweak-tool-appearance-symbolic</property>
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
@@ -767,7 +767,7 @@ Controls</property>
                   <object class="GtkImage" id="image_start_desktop">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="pixbuf">media/24/desktop-settings-dark_24.svg</property>
+                    <property name="icon_name">unity-tweak-tool-system-symbolic</property>
                   </object>
                   <packing>
                     <property name="left_attach">0</property>

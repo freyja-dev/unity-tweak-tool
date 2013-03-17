@@ -8,6 +8,7 @@
 #   Georgi Karavasilev <motorslav@gmail.com>
 #   Sam Tran <samvtran@gmail.com>
 #   Sam Hewitt <hewittsamuel@gmail.com>
+#   Angel Araya <al.arayaq@gmail.com>
 #
 # Description:
 #   A One-stop configuration tool for Unity.
@@ -685,7 +686,7 @@ class Unitysettings ():
 
     def on_check_indicator_battery_life_toggled(self, widget, udata = None):
 
-        if self.ui['check_indicator_battery'].get_active() == True:
+        if self.ui['check_indicator_battery_life'].get_active() == True:
             gsettings.power.set_boolean('show-time', True)
         else:
             gsettings.power.set_boolean('show-time', False)

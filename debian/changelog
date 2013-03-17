@@ -1,12 +1,7 @@
-unity-tweak-tool (0.0.3-0ubuntu1) raring; urgency=low
-
-  * Closes needs-packaging bug (LP: #1126433)
-
- -- Barneedhar Vigneshwar <barneedhar@ubuntu.com>  Sun, 17 Feb 2013 15:43:56 +0530
-
 unity-tweak-tool (0.0.3) raring; urgency=low
 
   * New upstream release
+  * Closes needs-packaging bug (LP: #1126433)
 
  -- Barneedhar Vigneshwar <barneedhar@ubuntu.com>  Fri, 15 Feb 2013 20:33:41 +0530
 
