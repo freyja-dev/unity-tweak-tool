@@ -49,21 +49,30 @@ class Radio:
         self.value      = controlObj['value']
         self.dependants = controlObj['dependants']
         self.active     = False
-        assert gsettings.is_valid(
-            schema=self.schema,
-            path=self.path,
-            key=self.key
-            )
+        self.disabled   = False
+        try:
+            assert gsettings.is_valid(
+                schema=self.schema,
+                path=self.path,
+                key=self.key
+                )
+        except AssertionError as e:
+            self.disabled=True
         logger.debug('Initialised a radiobutton with id {self.id} to control key {self.key} of type {self.type} in schema {self.schema} with path {self.path}'.format(self=self))
 
     def register(self,handler):
         ''' Register handler on a handler object '''
+        if self.disabled:
+            return
         handler['on_%s_toggled'% self.id]=self.handler
         logger.debug('Handler for {self.id} registered'.format(self=self))
 
     def refresh(self):
         ''' Refresh the UI querying the backend '''
         logger.debug('Refreshing UI display for {self.id}'.format(self=self))
+        if self.disabled:
+            self.ui.set_sensitive(False)
+            return
         self.active=gsettings.get(
                 schema=self.schema,
                 path  =self.path,
@@ -89,9 +98,12 @@ class Radio:
 
     def reset(self):
         ''' Reset the controlled key '''
+        if self.disabled:
+            return
         gsettings.reset(schema=self.schema,path=self.path,key=self.key)
         logger.debug('Key {self.key} in schema {self.schema} and path {self.path} reset.'.format(self=self))
 
     def handledependants(self):
+        status = False if self.disabled else self.active
         for element in self.dependants:
-            self.builder.get_object(element).set_sensitive(self.active)
+            self.builder.get_object(element).set_sensitive(status)
