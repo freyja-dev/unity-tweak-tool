@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 #
 # Team:
-#   J Phani Mahesh <phanimahesh@gmail.com> 
-#   Barneedhar (jokerdino) <barneedhar@ubuntu.com> 
+#   J Phani Mahesh <phanimahesh@gmail.com>
+#   Barneedhar (jokerdino) <barneedhar@ubuntu.com>
 #   Amith KK <amithkumaran@gmail.com>
 #   Georgi Karavasilev <motorslav@gmail.com>
 #   Sam Tran <samvtran@gmail.com>
@@ -40,7 +40,7 @@ from UnityTweakTool.elements.option import Option,HandlerObject
 
 from collections import defaultdict
 
-Appearance =Section(ui='theme.ui',id='nb_themesettings')
+Appearance =Section(ui='appearance.ui',id='nb_themesettings')
 
 #=============== THEME ==========================
 
@@ -87,34 +87,34 @@ font_window_title= FontButton({
 })
 
 cbox_antialiasing=ComboBox({
-    'id' : 'cbox_antialiasing',
+    'id'      : 'cbox_antialiasing',
     'builder' : Appearance.builder,
-    'schema' : 'org.gnome.settings-daemon.plugins.xsettings',
-    'path' : None,
-    'key' : 'antialiasing',
-    'type' : 'string',
-    'map' : {'none':0,'grayscale':1,'rgba':2}
+    'schema'  : 'org.gnome.settings-daemon.plugins.xsettings',
+    'path'    : None,
+    'key'     : 'antialiasing',
+    'type'    : 'string',
+    'map'     : {'none':0,'grayscale':1,'rgba':2}
 })
 
 cbox_hinting=ComboBox({
-    'id' : 'cbox_hinting',
+    'id'      : 'cbox_hinting',
     'builder' : Appearance.builder,
-    'schema' : 'org.gnome.settings-daemon.plugins.xsettings',
-    'path' : None,
-    'key' : 'hinting',
-    'type' : 'string',
-    'map' : {'none':0,'slight':1,'medium':2,'full':3}
+    'schema'  : 'org.gnome.settings-daemon.plugins.xsettings',
+    'path'    : None,
+    'key'     : 'hinting',
+    'type'    : 'string',
+    'map'     : {'none':0,'slight':1,'medium':2,'full':3}
 })
 
 spin_textscaling=SpinButton({
-    'id': 'spin_textscaling',
+    'id'     : 'spin_textscaling',
     'builder': Appearance.builder,
-    'schema': 'org.gnome.desktop.interface',
-    'path': None,
-    'key': 'text-scaling-factor',
-    'type': 'double',
-    'min': 0.50,
-    'max': 3.00
+    'schema' : 'org.gnome.desktop.interface',
+    'path'   : None,
+    'key'    : 'text-scaling-factor',
+    'type'   : 'double',
+    'min'    : 0.50,
+    'max'    : 3.00
 })
 
 FontsIcons=Tab([font_default,
@@ -128,69 +128,69 @@ FontsIcons=Tab([font_default,
 #========== WINDOW CONTROLS =====================
 
 radio_default_layout=Radio({
-    'id': 'radio_default_layout',
-    'builder': Appearance.builder,
-    'schema': 'org.gnome.desktop.wm.preferences',
-    'path': None,
-    'key': 'button-layout',
-    'type': 'string',
-    'group': 'radio_default_layout',
-    'value': 'close,minimize,maximize:' or ':minimize,maximize,close',
+    'id'        : 'radio_default_layout',
+    'builder'   : Appearance.builder,
+    'schema'    : 'org.gnome.desktop.wm.preferences',
+    'path'      : None,
+    'key'       : 'button-layout',
+    'type'      : 'string',
+    'group'     : 'radio_default_layout',
+    'value'     : 'close,minimize,maximize:' or ':minimize,maximize,close',
     'dependants': ['radio_left',
                    'radio_right',
                    'l_alignment']
 })
 
 radio_left=Radio({
-    'id': 'radio_left',
-    'builder': Appearance.builder,
-    'schema': 'org.gnome.desktop.wm.preferences',
-    'path': None,
-    'key': 'button-layout',
-    'type': 'string',
-    'group': 'radio_left',
-    'value': 'close,minimize,maximize:',
+    'id'        : 'radio_left',
+    'builder'   : Appearance.builder,
+    'schema'    : 'org.gnome.desktop.wm.preferences',
+    'path'      : None,
+    'key'       : 'button-layout',
+    'type'      : 'string',
+    'group'     : 'radio_left',
+    'value'     : 'close,minimize,maximize:',
     'dependants': []
 })
 
 radio_right=Radio({
-    'id': 'radio_right',
-    'builder': Appearance.builder,
-    'schema': 'org.gnome.desktop.wm.preferences',
-    'path': None,
-    'key': 'button-layout',
-    'type': 'string',
-    'group': 'radio_right',
-    'value': ':minimize,maximize,close',
+    'id'        : 'radio_right',
+    'builder'   : Appearance.builder,
+    'schema'    : 'org.gnome.desktop.wm.preferences',
+    'path'      : None,
+    'key'       : 'button-layout',
+    'type'      : 'string',
+    'group'     : 'radio_right',
+    'value'     : ':minimize,maximize,close',
     'dependants': []
 })
 
 radio_custom_layout=Radio({
-    'id': 'radio_custom_layout',
-    'builder': Appearance.builder,
-    'schema': 'org.gnome.desktop.wm.preferences',
-    'path': None,
-    'key': 'button-layout',
-    'type': 'string',
-    'group': 'radio_default_layout',
-    'value': not 'close,minimize,maximize:' and not ':minimize,maximize,close',
+    'id'        : 'radio_custom_layout',
+    'builder'   : Appearance.builder,
+    'schema'    : 'org.gnome.desktop.wm.preferences',
+    'path'      : None,
+    'key'       : 'button-layout',
+    'type'      : 'string',
+    'group'     : 'radio_default_layout',
+    'value'     : not 'close,minimize,maximize:' and not ':minimize,maximize,close',
     'dependants': ['cbox_custom_layout']
 })
 
 cbox_custom_layout=ComboBox({
-    'id' : 'cbox_custom_layout',
+    'id'      : 'cbox_custom_layout',
     'builder' : Appearance.builder,
-    'schema' : 'org.gnome.desktop.wm.preferences',
-    'path' : None,
-    'key' : 'button-layout',
-    'type' : 'string',
+    'schema'  : 'org.gnome.desktop.wm.preferences',
+    'path'    : None,
+    'key'     : 'button-layout',
+    'type'    : 'string',
 # This allows unknown keys to be mapped to zero.
-    'map' : defaultdict( lambda : 0,
-            {'close,minimize,maximize:':0,
-            'close:':1,
-            'close,maximize:':2,
-            'close,minimize:':3,
-            'close:maximize':4})
+    'map'     : defaultdict( lambda : 0,
+                {'close,minimize,maximize:':0,
+                'close:':1,
+                'close,maximize:':2,
+                'close,minimize:':3,
+                'close:maximize':4})
 })
 
 

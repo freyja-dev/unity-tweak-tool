@@ -36,7 +36,7 @@ from UnityTweakTool.elements.checkbox import CheckBox
 from UnityTweakTool.elements.cbox import ComboBox
 from UnityTweakTool.elements.radio import Radio
 
-System=Section(ui='desktop.ui',id='nb_desktop_settings')
+System=Section(ui='system.ui',id='nb_desktop_settings')
 
 switch_desktop_icons= Switch({
     'id'        : 'switch_desktop_icons',
@@ -155,14 +155,14 @@ SecurityIcons=Tab([check_security_lock_screen,
                    check_security_printing])
 
 radio_overlay_scrollbars=Radio({
-    'id': 'radio_overlay_scrollbars',
-    'builder': System.builder,
-    'schema': 'com.canonical.desktop.interface',
-    'path': None,
-    'key': 'scrollbar-mode',
-    'type': 'string',
-    'group': 'radio_legacy_scrollbars',
-    'value': 'overlay-auto',
+    'id'        : 'radio_overlay_scrollbars',
+    'builder'   : System.builder,
+    'schema'    : 'com.canonical.desktop.interface',
+    'path'      : None,
+    'key'       : 'scrollbar-mode',
+    'type'      : 'string',
+    'group'     : 'radio_legacy_scrollbars',
+    'value'     : 'overlay-auto',
     'dependants': ['l_overlay_scrollbar_mode',
                    'cbox_overlay_scrollbar_mode']
 })
@@ -170,24 +170,24 @@ radio_overlay_scrollbars=Radio({
 # TODO: Look at overlay-auto
 
 cbox_overlay_scrollbar_mode=ComboBox({
-    'id' : 'cbox_overlay_scrollbar_mode',
+    'id'      : 'cbox_overlay_scrollbar_mode',
     'builder' : System.builder,
-    'schema' : 'com.canonical.desktop.interface',
-    'path' : None,
-    'key' : 'scrollbar-mode',
-    'type' : 'string',
-    'map' : {'overlay-auto':0,'overlay-pointer':1,'overlay-touch':2,'normal':0}
+    'schema'  : 'com.canonical.desktop.interface',
+    'path'    : None,
+    'key'     : 'scrollbar-mode',
+    'type'    : 'string',
+    'map'     : {'overlay-auto':0,'overlay-pointer':1,'overlay-touch':2,'normal':0}
 })
 
 radio_legacy_scrollbars=Radio({
-    'id': 'radio_legacy_scrollbars',
-    'builder': System.builder,
-    'schema': 'com.canonical.desktop.interface',
-    'path': None,
-    'key': 'scrollbar-mode',
-    'type': 'string',
-    'group': 'radio_legacy_scrollbars',
-    'value': 'normal',
+    'id'        : 'radio_legacy_scrollbars',
+    'builder'   : System.builder,
+    'schema'    : 'com.canonical.desktop.interface',
+    'path'      : None,
+    'key'       : 'scrollbar-mode',
+    'type'      : 'string',
+    'group'     : 'radio_legacy_scrollbars',
+    'value'     : 'normal',
     'dependants': []
 })
 
@@ -203,26 +203,26 @@ check_horizontal_scrolling= CheckBox({
 })
 
 radio_edge=Radio({
-    'id': 'radio_edge',
-    'builder': System.builder,
-    'schema': 'org.gnome.settings-daemon.peripherals.touchpad',
-    'path': None,
-    'key': 'scroll-method',
-    'type': 'string',
-    'group': 'radio_two_finger',
-    'value': 'edge-scrolling',
+    'id'        : 'radio_edge',
+    'builder'   : System.builder,
+    'schema'    : 'org.gnome.settings-daemon.peripherals.touchpad',
+    'path'      : None,
+    'key'       : 'scroll-method',
+    'type'      : 'string',
+    'group'     : 'radio_two_finger',
+    'value'     : 'edge-scrolling',
     'dependants': []
 })
 
 radio_two_finger=Radio({
-    'id': 'radio_two_finger',
-    'builder': System.builder,
-    'schema': 'org.gnome.settings-daemon.peripherals.touchpad',
-    'path': None,
-    'key': 'scroll-method',
-    'type': 'string',
-    'group': 'radio_two_finger',
-    'value': 'two-finger-scrolling',
+    'id'        : 'radio_two_finger',
+    'builder'   : System.builder,
+    'schema'    : 'org.gnome.settings-daemon.peripherals.touchpad',
+    'path'      : None,
+    'key'       : 'scroll-method',
+    'type'      : 'string',
+    'group'     : 'radio_two_finger',
+    'value'     : 'two-finger-scrolling',
     'dependants': []
 })
 

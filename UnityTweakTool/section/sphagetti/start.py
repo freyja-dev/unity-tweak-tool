@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 #
 # Team:
-#   J Phani Mahesh <phanimahesh@gmail.com> 
-#   Barneedhar (jokerdino) <barneedhar@ubuntu.com> 
+#   J Phani Mahesh <phanimahesh@gmail.com>
+#   Barneedhar (jokerdino) <barneedhar@ubuntu.com>
 #   Amith KK <amithkumaran@gmail.com>
 #   Georgi Karavasilev <motorslav@gmail.com>
 #   Sam Tran <samvtran@gmail.com>
@@ -43,7 +43,7 @@ class Startpage ():
         self.builder = Gtk.Builder()
         self.container = container
         self.notebook = notebook
-        self.glade = (os.path.join(unitytweakconfig.get_data_path(), 
+        self.glade = (os.path.join(unitytweakconfig.get_data_path(),
                                    'startpage.ui'))
         self.builder.add_from_file(self.glade)
         self.ui = ui(self.builder)

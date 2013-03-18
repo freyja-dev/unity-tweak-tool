@@ -121,7 +121,7 @@ class Unitysettings ():
         self.ui['cbox_launch_animation'].set_active(gsettings.unityshell.get_int('launch-animation'))
 
         # Show Desktop
-        self.ui['switch_show_desktop'].set_active(True if 'unity://desktop-icon' in gsettings.launcher.get_strv('favorites') else False)
+        self.ui['sw_show_desktop'].set_active(True if 'unity://desktop-icon' in gsettings.launcher.get_strv('favorites') else False)
 
         # ====== Dash Helpers ===== #
 
@@ -160,7 +160,7 @@ class Unitysettings ():
 #        self.ui['check_show_recent_apps'].set_active(gsettings.lens_apps.get_boolean('display-recent-apps'))
 
         available_apps_list = ['check_show_available_apps']
-        
+
         if values.get_value(self, 'boolean', gsettings.lens_apps, 'display-available-apps', available_apps_list):
             self.ui['check_show_available_apps'].set_active(True)
         else:
@@ -175,7 +175,7 @@ class Unitysettings ():
         # Run Command History
         dependants = ['b_clear_run_history']
         if gsettings.runner.get_strv('history') == '[]':
-            self.ui.unsensitize(dependants) 
+            self.ui.unsensitize(dependants)
             self.ui['b_clear_run_history'].set_active(False)
         else:
             self.ui.sensitize(dependants)
@@ -253,7 +253,7 @@ class Unitysettings ():
         else:
             return
 
-        # Indicator Date-Time 
+        # Indicator Date-Time
         self.ui['check_time_seconds'].set_active(gsettings.datetime.get_boolean('show-seconds'))
         self.ui['check_date'].set_active(gsettings.datetime.get_boolean('show-date'))
         self.ui['check_weekday'].set_active(gsettings.datetime.get_boolean('show-day'))
@@ -261,7 +261,7 @@ class Unitysettings ():
 
         # Bluetooth indicator
         bluetooth_list = ['check_indicator_bluetooth']
-        
+
         if values.get_value(self, 'boolean', gsettings.bluetooth, 'visible', bluetooth_list):
 
             self.ui['check_indicator_bluetooth'].set_active(True)
@@ -273,9 +273,9 @@ class Unitysettings ():
 
         # Sound indicator
         self.ui['check_indicator_sound'].set_active(gsettings.sound.get_boolean('visible'))
-        
+
         notify_osd_list = ['check_scroll_notifyosd']
-        
+
         if values.get_value(self, 'boolean', gsettings.sound, 'show-notify-osd-on-scroll', notify_osd_list):
             self.ui['check_scroll_notifyosd'].set_active(True)
         else:
@@ -298,7 +298,7 @@ class Unitysettings ():
         self.ui['check_minimizedwindows_switch'].set_active(gsettings.unityshell.get_boolean('show-minimized-windows'))
         self.ui['check_autoexposewindows'].set_active(gsettings.unityshell.get_boolean('alt-tab-timeout'))
 
-        # Window Switcher accelerators 
+        # Window Switcher accelerators
         model = self.ui['list_unity_switcher_windows_accelerators']
 
         alt_tab_forward = gsettings.unityshell.get_string('alt-tab-forward')
@@ -344,7 +344,7 @@ class Unitysettings ():
 
         del model
 
-        # Launcher switcher accelerators 
+        # Launcher switcher accelerators
         model = self.ui['list_unity_switcher_launcher_accelerators']
 
         launcher_switcher_forward = gsettings.unityshell.get_string('launcher-switcher-forward')
@@ -510,10 +510,10 @@ class Unitysettings ():
         mode = self.ui['cbox_launch_animation'].get_active()
         gsettings.unityshell.set_int('launch-animation', mode)
 
-    def on_switch_show_desktop_active_notify(self, widget, udata = None):
+    def on_sw_show_desktop_active_notify(self, widget, udata = None):
         fav = gsettings.launcher.get_strv('favorites')
         desktop = 'unity://desktop-icon'
-        if self.ui['switch_show_desktop'].get_active():
+        if self.ui['sw_show_desktop'].get_active():
             if desktop not in fav:
                 fav.append(desktop)
                 gsettings.launcher.set_strv('favorites', fav)
@@ -600,7 +600,7 @@ class Unitysettings ():
         gsettings.lenses.reset('remote-content-search')
        # gsettings.lens_apps.reset('display-recent-apps')
        # gsettings.lens_apps.reset('display-available-apps')
-       
+
         values.reset_value(self, gsettings.lens_apps, 'display-recent-apps')
         values.reset_value(self, gsettings.lens_apps, 'display-available-apps')
         self.refresh()
@@ -785,7 +785,7 @@ class Unitysettings ():
         gsettings.unityshell.reset('panel-opacity')
         gsettings.sound.reset('preferred-media-players')
         #gsettings.sound.reset('show-notify-osd-on-scroll')
-        
+
         values.reset_value(self, gsettings.bluetooth, 'visible')
         values.reset_value(self, gsettings.sound, 'show-notify-osd-on-scroll')
         self.refresh()
@@ -976,7 +976,7 @@ class Unitysettings ():
                 gsettings.webapps.set_strv('preauthorized-domains', preauthorized)
             elif ubuntuone in preauthorized:
                 pass
-    
+
     # Reset button
     def on_b_unity_webapps_reset_clicked(self, widget):
         gsettings.webapps.reset('preauthorized-domains')

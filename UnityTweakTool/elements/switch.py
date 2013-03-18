@@ -91,7 +91,7 @@ class Switch:
         ''' Reset the controlled key '''
         gsettings.reset(schema=self.schema,path=self.path,key=self.key)
         logger.debug('Key {self.key} in schema {self.schema} and path {self.path} reset.'.format(self=self))
-        
+
     def handledependants(self):
         for element in self.dependants:
             self.builder.get_object(element).set_sensitive(self.active)
