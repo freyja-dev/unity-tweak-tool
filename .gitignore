@@ -1,5 +1,14 @@
 __pycache__
+
 *~
 *.bak
-build
 *.orig
+
+build
+
+debian/files
+debian/unity-tweak-tool.debhelper.log
+debian/unity-tweak-tool.postinst.debhelper
+debian/unity-tweak-tool.prerm.debhelper
+debian/unity-tweak-tool.substvars
+debian/unity-tweak-tool
