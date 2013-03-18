@@ -62,6 +62,8 @@ class CheckBox:
 
     def register(self,handler):
         ''' register handler on a handler object '''
+        if self.disabled:
+            return
         handler['on_%s_toggled'%self.id]=self.handler
         logger.debug('Handler for {self.id} registered'.format(self=self))
 
