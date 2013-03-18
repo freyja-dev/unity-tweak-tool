@@ -454,17 +454,16 @@ check_calendar= CheckBox({
     'dependants': []
 })
 
-# TODO: indicator-bluetooth missing
-# check_indicator_bluetooth= CheckBox({
-#     'id'        : 'check_indicator_bluetooth',
-#     'builder'   : Unity.builder,
-#     'schema'    : 'com.canonical.indicator.bluetooth',
-#     'path'      : None,
-#     'key'       : 'visible',
-#     'type'      : 'boolean',
-#     'map'       : {True:True,False:False},
-#     'dependants': []
-# })
+check_indicator_bluetooth= CheckBox({
+    'id'        : 'check_indicator_bluetooth',
+    'builder'   : Unity.builder,
+    'schema'    : 'com.canonical.indicator.bluetooth',
+    'path'      : None,
+    'key'       : 'visible',
+    'type'      : 'boolean',
+    'map'       : {True:True,False:False},
+    'dependants': []
+})
 
 check_indicator_battery= CheckBox({
     'id'        : 'check_indicator_battery',
@@ -570,8 +569,7 @@ PanelIcons=Tab([spin_menu_visible,
                  radio_power_charging,
                  radio_power_always,
                  check_indicator_battery_life,
-                # indicator-bluetooth missing -- crashes on my side
-                #check_indicator_bluetooth,
+                 check_indicator_bluetooth,
                  check_indicator_sound,
                  check_scroll_notifyosd,
                  check_indicator_username])
