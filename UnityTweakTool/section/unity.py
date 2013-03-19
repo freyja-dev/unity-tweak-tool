@@ -201,22 +201,17 @@ spin_launcher_icon_size=SpinButton({
 # })
 
 
-# TODO: Yet to be fully implemented
-# for tick in self.ticks:
-# TypeError: 'float' object is not iterable
-
-
-# sc_reveal_sensitivity=Scale({
-#     'id'     : 'sc_reveal_sensitivity',
-#     'builder': Unity.builder,
-#     'schema' : 'org.compiz.unityshell',
-#     'path'   : '/org/compiz/profiles/unity/plugins/unityshell',
-#     'key'    : 'edge-responsiveness',
-#     'type'   : 'double',
-#     'min'    : 0.2,
-#     'max'    : 8.0,
-#     'ticks'  : 2.0
-# })
+sc_reveal_sensitivity=Scale({
+     'id'     : 'sc_reveal_sensitivity',
+     'builder': Unity.builder,
+     'schema' : 'org.compiz.unityshell',
+     'path'   : '/org/compiz/profiles/unity/plugins/unityshell',
+     'key'    : 'edge-responsiveness',
+     'type'   : 'double',
+     'min'    : 0.2,
+     'max'    : 8.0,
+     'ticks'  : [] #[2.0] XXX : Correct this or get rid of ticks altogether
+ })
 
 
 LauncherIcons=Tab([sw_launcher_hidemode,
@@ -644,6 +639,7 @@ switch_unity_webapps= Switch({
     'dependants': []
 })
 
+# XXX : functors
 # check_preauthorized_amazon= CheckBox({
 #     'id'        : 'check_preauthorized_amazon',
 #     'builder'   : Unity.builder,

@@ -1544,7 +1544,7 @@
                             <property name="xalign">0</property>
                             <property name="active">True</property>
                             <property name="draw_indicator">True</property>
-                            <signal name="notify::active" handler="on_check_indicator_datetime_active" swapped="no"/>
+                            <signal name="toggled" handler="on_check_indicator_datetime_toggled" swapped="no"/>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -1612,7 +1612,7 @@
                                 <property name="margin_left">10</property>
                                 <property name="xalign">0</property>
                                 <property name="draw_indicator">True</property>
-                                <signal name="notify::active" handler="on_check_time_seconds_toggled" swapped="no"/>
+                                <signal name="toggled" handler="on_check_time_seconds_toggled" swapped="no"/>
                               </object>
                               <packing>
                                 <property name="left_attach">0</property>
@@ -1633,7 +1633,7 @@
                                 <property name="margin_left">10</property>
                                 <property name="xalign">0</property>
                                 <property name="draw_indicator">True</property>
-                                <signal name="notify::active" handler="on_check_date_toggled" swapped="no"/>
+                                <signal name="toggled" handler="on_check_date_toggled" swapped="no"/>
                               </object>
                               <packing>
                                 <property name="left_attach">0</property>
@@ -1654,7 +1654,7 @@
                                 <property name="margin_left">10</property>
                                 <property name="xalign">0</property>
                                 <property name="draw_indicator">True</property>
-                                <signal name="notify::active" handler="on_check_weekday_toggled" swapped="no"/>
+                                <signal name="toggled" handler="on_check_weekday_toggled" swapped="no"/>
                               </object>
                               <packing>
                                 <property name="left_attach">0</property>
@@ -1691,7 +1691,7 @@
                                 <property name="margin_left">10</property>
                                 <property name="xalign">0</property>
                                 <property name="draw_indicator">True</property>
-                                <signal name="notify::active" handler="on_check_calendar_toggled" swapped="no"/>
+                                <signal name="toggled" handler="on_check_calendar_toggled" swapped="no"/>
                               </object>
                               <packing>
                                 <property name="left_attach">0</property>
@@ -1728,7 +1728,7 @@
                         <property name="margin_left">12</property>
                         <property name="xalign">0</property>
                         <property name="draw_indicator">True</property>
-                        <signal name="notify::active" handler="on_check_indicator_bluetooth_toggled" swapped="no"/>
+                        <signal name="toggled" handler="on_check_indicator_bluetooth_toggled" swapped="no"/>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1768,7 +1768,7 @@
                             <property name="xalign">0</property>
                             <property name="active">True</property>
                             <property name="draw_indicator">True</property>
-                            <signal name="notify::active" handler="on_check_indicator_battery_toggled" swapped="no"/>
+                            <signal name="toggled" handler="on_check_indicator_battery_toggled" swapped="no"/>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -1873,7 +1873,7 @@
                             <property name="margin_left">12</property>
                             <property name="xalign">0</property>
                             <property name="draw_indicator">True</property>
-                            <signal name="notify::active" handler="on_check_indicator_sound_toggled" swapped="no"/>
+                            <signal name="toggled" handler="on_check_indicator_sound_toggled" swapped="no"/>
                           </object>
                           <packing>
                             <property name="left_attach">0</property>
@@ -1967,7 +1967,7 @@
                         <property name="margin_left">12</property>
                         <property name="xalign">0</property>
                         <property name="draw_indicator">True</property>
-                        <signal name="notify::active" handler="on_check_indicator_username_active" swapped="no"/>
+                        <signal name="toggled" handler="on_check_indicator_username_toggled" swapped="no"/>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -2385,7 +2385,7 @@
                     <property name="tooltip_markup" translatable="yes">Enable prompts for webapp integration when visitiing supported websites?</property>
                     <property name="tooltip_text" translatable="yes">Enable prompts for webapp integration when visitiing supported websites?</property>
                     <property name="halign">start</property>
-                    <signal name="notify::active" handler="on_switch_webapps_active_notify" swapped="no"/>
+                    <signal name="notify::active" handler="on_switch_unity_webapps_active_notify" swapped="no"/>
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
