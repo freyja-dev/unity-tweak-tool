@@ -45,23 +45,31 @@ class ColorChooser:
         self.path       = controlObj['path']
         self.key        = controlObj['key']
         self.type       = 'string'
-        self.usealpha   = controlObj['usealpha']
-        assert gsettings.is_valid(
-            schema=self.schema,
-            path=self.path,
-            key=self.key
-            )
+        self.disabled   = False
+        try:
+            assert gsettings.is_valid(
+                schema=self.schema,
+                path=self.path,
+                key=self.key
+                )
+        except AssertionError as e:
+            self.disabled = True
         self.color=Gdk.RGBA()
         logger.debug('Initialised a colorchooser with id {self.id} to control key {self.key} of type {self.type} in schema {self.schema} with path {self.path}'.format(self=self))
 
     def register(self,handler):
         ''' register handler on a handler object '''
+        if self.disabled:
+            return
         handler['on_%s_color_set'%self.id]=self.handler
         logger.debug('Handler for {self.id} registered'.format(self=self))
 
     def refresh(self):
         ''' Refresh UI reading from backend '''
         logger.debug('Refreshing UI display for {self.id}'.format(self=self))
+        if self.disabled:
+            self.ui.set_sensitive(False)
+            return
         color = gsettings.get(
                 schema=self.schema,
                 path  =self.path,
@@ -77,15 +85,17 @@ class ColorChooser:
         colorspec='rgba(%s,%s,%s,%f)'%components
         valid = Gdk.RGBA.parse(self.color,colorspec)
         if valid:
-            self.ui.set_color(self.color)
+            self.ui.set_rgba(self.color)
 
     def get_color(self):
         self.ui.get_rgba(self.color)
-        return '#{:02x}{:02x}{:02x}{:02x}'.format(*[round(x*255) for x in [c.red, c.green, c.blue, c.alpha]])
+        return '#{:02x}{:02x}{:02x}{:02x}'.format(*[round(x*255) for x in [self.color.red, self.color.green, self.color.blue, self.color.alpha]])
         logger.debug('Getting color for {self.id}'.format(self=self))
 
     def handler(self,*args,**kwargs):
         ''' handle toggle signals '''
+        if self.disabled:
+            return
         gsettings.set(
             schema=self.schema,
             path=self.path,

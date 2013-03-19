@@ -190,15 +190,14 @@ spin_launcher_icon_size=SpinButton({
 # TODO: Yet to be fully implemented
 # TypeError: argument color: Expected Gdk.Color, but got gi.overrides.Gdk.RGBA
 
-# color_launcher_color_cus=ColorChooser({
-#     'id'      : 'color_launcher_color_cus',
-#     'builder' : Unity.builder,
-#     'schema'  : 'org.compiz.unityshell',
-#     'path'    : '/org/compiz/profiles/unity/plugins/unityshell/',
-#     'key'     : 'background-color',
-#     'type'    : 'string',
-#     'usealpha': 'gdkcolor'
-# })
+color_launcher_color_cus=ColorChooser({
+     'id'      : 'color_launcher_color_cus',
+     'builder' : Unity.builder,
+     'schema'  : 'org.compiz.unityshell',
+     'path'    : '/org/compiz/profiles/unity/plugins/unityshell/',
+     'key'     : 'background-color',
+     'type'    : 'string',
+ })
 
 
 sc_reveal_sensitivity=Scale({
@@ -224,9 +223,9 @@ LauncherIcons=Tab([sw_launcher_hidemode,
                    cbox_urgent_animation,
                    cbox_launch_animation,
                    cbox_launcher_icon_colouring,
-                   spin_launcher_icon_size]) #,
+                   spin_launcher_icon_size,
                  #  sc_reveal_sensitivity,
-                 #  color_launcher_color_cus])
+                   color_launcher_color_cus])
 
 #=============== DASH ==========================
 

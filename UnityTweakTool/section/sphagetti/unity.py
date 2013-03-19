@@ -211,10 +211,6 @@ class Unitysettings ():
             self.ui.unsensitize(dependants)
             gsettings.unityshell.set_string('background-color', colorhash[:-2]+'00')
 
-    def on_color_launcher_color_cus_color_set(self, widget, udata = None):
-        color = self.ui['color_launcher_color_cus'].get_color()
-        colorhash = gsettings.color_to_hash(color)
-        gsettings.unityshell.set_string('background-color', colorhash)
 
     def on_sw_show_desktop_active_notify(self, widget, udata = None):
         fav = gsettings.launcher.get_strv('favorites')
