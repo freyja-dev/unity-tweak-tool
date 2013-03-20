@@ -46,11 +46,15 @@ class SpinButton:
         self.type       = controlObj['type']
         self.min        = controlObj['min']
         self.max        = controlObj['max']
-        assert gsettings.is_valid(
-            schema=self.schema,
-            path=self.path,
-            key=self.key
-            )
+        self.disabled   = False
+        try:
+            assert gsettings.is_valid(
+                schema=self.schema,
+                path=self.path,
+                key=self.key
+                )
+        except AssertionError as e:
+            self.disabled = True
 # TODO : set the range mased on the config min-max
 #        self.ui.
         logger.debug('Initialised a spin with id {self.id} to control key {self.key} of type {self.type} in schema {self.schema} with path {self.path}'.format(self=self))
@@ -64,6 +68,9 @@ class SpinButton:
     def refresh(self):
         ''' Refresh the UI querying the backend '''
         logger.debug('Refreshing UI display for {self.id}'.format(self=self))
+        if self.disabled:
+            self.ui.set_sensitive(False)
+            return
         self.ui.set_value(
             gsettings.get(
                 schema= self.schema,
@@ -75,6 +82,8 @@ class SpinButton:
 
     def handler(self,*args,**kwargs):
         ''' Handle notify::active signals '''
+        if self.disabled:
+            return
         gsettings.set(
             schema  = self.schema,
             path    = self.path,
@@ -86,5 +95,7 @@ class SpinButton:
 
     def reset(self):
         ''' Reset the controlled key '''
+        if self.disabled:
+            return
         gsettings.reset(schema=self.schema,path=self.path,key=self.key)
         logger.debug('Key {self.key} in schema {self.schema} and path {self.path} reset.'.format(self=self))

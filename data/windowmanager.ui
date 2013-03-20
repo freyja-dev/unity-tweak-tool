@@ -1163,6 +1163,7 @@
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="halign">start</property>
+                    <property name="use_alpha">True</property>
                     <signal name="color-set" handler="on_color_fill_color_color_set" swapped="no"/>
                   </object>
                   <packing>
@@ -1178,6 +1179,7 @@
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="halign">start</property>
+                    <property name="use_alpha">True</property>
                     <signal name="color-set" handler="on_color_outline_color_color_set" swapped="no"/>
                   </object>
                   <packing>
@@ -2170,7 +2172,6 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="margin_right">6</property>
-                    <property name="xalign">0.94999998807907104</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Outline colour:</property>
                   </object>

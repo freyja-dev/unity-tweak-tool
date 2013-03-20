@@ -62,8 +62,6 @@ class Radio:
 
     def register(self,handler):
         ''' Register handler on a handler object '''
-        if self.disabled:
-            return
         handler['on_%s_toggled'% self.id]=self.handler
         logger.debug('Handler for {self.id} registered'.format(self=self))
 
@@ -84,6 +82,8 @@ class Radio:
 
     def handler(self,*args,**kwargs):
         ''' Handle toggled signals '''
+        if self.disabled:
+            return
         self.active=self.ui.get_active()
         if self.active:
             gsettings.set(

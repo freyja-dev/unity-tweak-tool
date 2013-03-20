@@ -48,11 +48,15 @@ class Switch:
         self.map        = controlObj['map']
         self.invmap     = dict([ (v,k) for (k,v) in self.map.items() ])
         self.dependants = controlObj['dependants']
-        assert gsettings.is_valid(
-            schema=self.schema,
-            path=self.path,
-            key=self.key
-            )
+        self.disabled   = False
+        try:
+            assert gsettings.is_valid(
+                schema=self.schema,
+                path=self.path,
+                key=self.key
+                )
+        except AssertionError as e:
+            self.disabled = True
         logger.debug('Initialised a switch with id {self.id} to control key {self.key} of type {self.type} in schema {self.schema} with path {self.path}'.format(self=self))
 
     def register(self,handler):
@@ -63,6 +67,9 @@ class Switch:
     def refresh(self):
         ''' Refresh the UI querying the backend '''
         logger.debug('Refreshing UI display for {self.id}'.format(self=self))
+        if self.disabled:
+            self.ui.set_sensitive(False)
+            return
         self.active=self.map[
                 gsettings.get(
                     schema=self.schema,
@@ -76,6 +83,8 @@ class Switch:
 
     def handler(self,*args,**kwargs):
         ''' Handle notify::active signals '''
+        if self.disabled:
+            return
         self.active=self.ui.get_active()
         gsettings.set(
             schema=self.schema,
@@ -89,9 +98,12 @@ class Switch:
 
     def reset(self):
         ''' Reset the controlled key '''
+        if self.disabled:
+            return
         gsettings.reset(schema=self.schema,path=self.path,key=self.key)
         logger.debug('Key {self.key} in schema {self.schema} and path {self.path} reset.'.format(self=self))
 
     def handledependants(self):
+        status = False if self.disabled else self.active
         for element in self.dependants:
-            self.builder.get_object(element).set_sensitive(self.active)
+            self.builder.get_object(element).set_sensitive(status)

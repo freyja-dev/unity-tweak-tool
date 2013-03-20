@@ -59,8 +59,6 @@ class ComboBox:
 
     def register(self,handler):
         ''' register handler on a handler object '''
-        if self.disabled:
-            return
         handler['on_%s_changed'%self.id]=self.handler
         logger.debug('Handler for {self.id} registered'.format(self=self))
 
@@ -83,6 +81,8 @@ class ComboBox:
 
     def handler(self,*args,**kwargs):
         ''' handle toggle signals '''
+        if self.disabled:
+            return
         gsettings.set(
             schema=self.schema,
             path=self.path,

@@ -46,14 +46,15 @@ class Scale:
         self.type       = controlObj['type']
         self.min        = controlObj['min']
         self.max        = controlObj['max']
-        self.ticks      = controlObj['ticks']
-        assert gsettings.is_valid(
-            schema  = self.schema,
-            path    = self.path,
-            key     = self.key
-            )
-        for tick in self.ticks:
-            self.ui.add_mark(*tick)
+        self.disabled   = False
+        try:
+            assert gsettings.is_valid(
+                schema  = self.schema,
+                path    = self.path,
+                key     = self.key
+                )
+        except AssertionError as e:
+            self.disabled=True
 # TODO : Set range using min, max
         logger.debug('Initialised a scale with id {self.id} to control key {self.key} of type {self.type} in schema {self.schema} with path {self.path}'.format(self=self))
 
@@ -66,6 +67,9 @@ class Scale:
     def refresh(self):
         ''' Refresh the UI querying the backend '''
         logger.debug('Refreshing UI display for {self.id}'.format(self=self))
+        if self.disabled:
+            self.ui.set_sensitive(False)
+            return
         self.ui.set_value(
             gsettings.get(
                 schema=self.schema,
@@ -77,6 +81,8 @@ class Scale:
 
     def handler(self,*args,**kwargs):
         ''' Handle value_changed signals '''
+        if self.disabled:
+            return
         gsettings.set(
             schema=self.schema,
             path=self.path,
@@ -88,5 +94,7 @@ class Scale:
 
     def reset(self):
         ''' Reset the controlled key '''
+        if self.disabled:
+            return
         gsettings.reset(schema=self.schema,path=self.path,key=self.key)
         logger.debug('Key {self.key} in schema {self.schema} and path {self.path} reset.'.format(self=self))

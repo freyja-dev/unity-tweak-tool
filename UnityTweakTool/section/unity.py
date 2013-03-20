@@ -183,12 +183,7 @@ spin_launcher_icon_size=SpinButton({
 # sc_launcher_transparency
 # radio_launcher_color_cham
 # radio_launcher_color_cus
-# color_launcher_color_cus
 # sw_show_desktop
-
-
-# TODO: Yet to be fully implemented
-# TypeError: argument color: Expected Gdk.Color, but got gi.overrides.Gdk.RGBA
 
 color_launcher_color_cus=ColorChooser({
      'id'      : 'color_launcher_color_cus',
@@ -197,7 +192,7 @@ color_launcher_color_cus=ColorChooser({
      'path'    : '/org/compiz/profiles/unity/plugins/unityshell/',
      'key'     : 'background-color',
      'type'    : 'string',
- })
+})
 
 
 sc_reveal_sensitivity=Scale({
