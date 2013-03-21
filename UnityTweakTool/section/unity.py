@@ -84,7 +84,7 @@ radio_reveal_left=Radio({
     'key'       : 'reveal-trigger',
     'type'      : 'int',
     'group'     : 'radio_reveal_topleft',
-    'value'     : '0',
+    'value'     : 0,
     'dependants': []
 })
 
@@ -96,7 +96,7 @@ radio_reveal_topleft=Radio({
     'key'       : 'reveal-trigger',
     'type'      : 'int',
     'group'     : 'radio_reveal_topleft',
-    'value'     : '1',
+    'value'     : 1,
     'dependants': []
 })
 
@@ -120,7 +120,7 @@ radio_launcher_visibility_all=Radio({
     'key'       : 'num-launchers',
     'type'      : 'int',
     'group'     : 'radio_launcher_visibility_primary',
-    'value'     : '0',
+    'value'     : 0,
     'dependants': []
 })
 
@@ -132,7 +132,7 @@ radio_launcher_visibility_primary=Radio({
     'key'       : 'num-launchers',
     'type'      : 'int',
     'group'     : 'radio_launcher_visibility_primary',
-    'value'     : '1',
+    'value'     : 1,
     'dependants': []
 })
 
@@ -246,7 +246,7 @@ radio_dash_blur_smart=Radio({
     'key'       : 'dash-blur-experimental',
     'type'      : 'int',
     'group'     : 'radio_dash_blur_static',
-    'value'     : '2',
+    'value'     : 2,
     'dependants': []
 })
 
@@ -258,7 +258,7 @@ radio_dash_blur_static=Radio({
     'key'       : 'dash-blur-experimental',
     'type'      : 'int',
     'group'     : 'radio_dash_blur_static',
-    'value'     : '1',
+    'value'     : 1,
     'dependants': []
 })
 
