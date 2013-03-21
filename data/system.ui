@@ -207,6 +207,21 @@
             <property name="can_focus">False</property>
             <property name="orientation">vertical</property>
             <child>
+              <object class="GtkLabel" id="l_warning">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="margin_left">12</property>
+                <property name="margin_top">6</property>
+                <property name="xalign">0</property>
+                <property name="label" translatable="yes">Enhance system security by disabling:</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
               <object class="GtkGrid" id="grid_lockdown">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
@@ -219,8 +234,8 @@
                     <property name="can_focus">False</property>
                     <property name="receives_default">False</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">If enabled, the user can activate the desktop lock screen.</property>
-                    <property name="tooltip_text" translatable="yes">If enabled, the user can activate the desktop lock screen.</property>
+                    <property name="tooltip_markup" translatable="yes">Disable the desktop lock screen.</property>
+                    <property name="tooltip_text" translatable="yes">Disable the desktop lock screen.</property>
                     <property name="xalign">0</property>
                     <property name="draw_indicator">True</property>
                     <signal name="toggled" handler="on_check_security_lock_screen_toggled" swapped="no"/>
@@ -239,8 +254,8 @@
                     <property name="can_focus">False</property>
                     <property name="receives_default">False</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">If enabled, users can log out of the session they&amp;apos;re in.</property>
-                    <property name="tooltip_text" translatable="yes">If enabled, users can log out of the session they're in.</property>
+                    <property name="tooltip_markup" translatable="yes">Disable session log out.</property>
+                    <property name="tooltip_text" translatable="yes">Disable session log out.</property>
                     <property name="xalign">0</property>
                     <property name="draw_indicator">True</property>
                     <signal name="toggled" handler="on_check_security_logout_toggled" swapped="no"/>
@@ -259,8 +274,8 @@
                     <property name="can_focus">False</property>
                     <property name="receives_default">False</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">If enabled, allow the user to switch to another account while their session is active.</property>
-                    <property name="tooltip_text" translatable="yes">If enabled, allow the user to switch to another account while their session is active.</property>
+                    <property name="tooltip_markup" translatable="yes">Disable fast user switching.</property>
+                    <property name="tooltip_text" translatable="yes">Disable fast user switching.</property>
                     <property name="xalign">0</property>
                     <property name="draw_indicator">True</property>
                     <signal name="toggled" handler="on_check_security_user_switching_toggled" swapped="no"/>
@@ -279,8 +294,8 @@
                     <property name="can_focus">False</property>
                     <property name="receives_default">False</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">If enabled, allow the access to the system&amp;apos;s printers and print setup.</property>
-                    <property name="tooltip_text" translatable="yes">If enabled, allow the access to the system's printers and print setup.</property>
+                    <property name="tooltip_markup" translatable="yes">Prevent user access to the system's printers and print setup.</property>
+                    <property name="tooltip_text" translatable="yes">Prevent user access to the system's printers and print setup.</property>
                     <property name="xalign">0</property>
                     <property name="draw_indicator">True</property>
                     <signal name="toggled" handler="on_check_security_printing_toggled" swapped="no"/>
@@ -296,7 +311,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">1</property>
+                <property name="position">2</property>
               </packing>
             </child>
             <child>
@@ -317,7 +332,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">3</property>
+                <property name="position">4</property>
               </packing>
             </child>
           </object>
