@@ -48,7 +48,7 @@ class ComboBox:
         self.invmap     = dict([ (v,k) for (k,v) in self.map.items() ])
         self.disabled   = False
         try:
-            gsettings.is_valid(
+            assert gsettings.is_valid(
                 schema=self.schema,
                 path=self.path,
                 key=self.key
