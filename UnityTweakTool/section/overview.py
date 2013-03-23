@@ -72,10 +72,9 @@ class Overview(Tab,Section):
         self.icons = Gtk.IconTheme.get_default()
         self.style_context = self.builder.get_object('startpage_window').get_style_context()
         self.style_context.connect('changed', self.on_style_context_change)
-# XXX : Delete the next line and UTT crashes with attribute error. absolutely no idea why.
-        self.on_style_context_change()
 
     def on_style_context_change(self, *args):
+     try:
         self.symbolic_color = self.style_context.get_color(Gtk.StateFlags.ACTIVE)
 
         appearance_symbolic_icon = self.icons.lookup_icon('unity-tweak-tool-appearance-symbolic', 24, Gtk.IconLookupFlags.FORCE_SIZE)
@@ -97,4 +96,7 @@ class Overview(Tab,Section):
         if wm_symbolic_icon:
             wm_symbolic_icon_pixbuf, was_sym = wm_symbolic_icon.load_symbolic(self.symbolic_color, None, None, None)
             self.builder.get_object('image_box_start_compiz').set_from_pixbuf(wm_symbolic_icon_pixbuf)
+     except Exception:
+        pass
+# XXX : Temporary fix to prevent random attributeerrors.
 

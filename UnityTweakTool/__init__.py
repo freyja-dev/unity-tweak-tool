@@ -51,6 +51,10 @@ logger.addHandler(_fh)
 
 del _fh, _formatter
 
+def pid_lock_exists():
+    return False
+# TODO : implement this.
+
 def connectpages():
     from UnityTweakTool.section.overview import Overview
     from UnityTweakTool.section.unity import Unity
@@ -109,7 +113,8 @@ def connecthandlers(builder):
     builder.connect_signals(handler)
 ##########################################################################
 def init(page=0):
-    print('Initialising...')
+    if pid_lock_exists():
+        return
     from UnityTweakTool.config.data import get_data_path
     global notebook
     builder=Gtk.Builder()
