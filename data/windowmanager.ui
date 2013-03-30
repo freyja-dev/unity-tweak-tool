@@ -1949,6 +1949,7 @@
                     <property name="can_focus">False</property>
                     <property name="tooltip_markup" translatable="yes">If enabled, windows that take focus will be automatically raised.</property>
                     <property name="halign">start</property>
+                    <signal name="notify::active" handler="on_switch_auto_raise_active_notify" swapped="no"/>
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
