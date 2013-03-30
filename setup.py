@@ -144,7 +144,7 @@ class InstallAndUpdateDataDirectory(DistUtilsExtra.auto.install_auto):
 
 DistUtilsExtra.auto.setup(
     name='unity-tweak-tool',
-    version='0.0.3',
+    version='0.0.4',
     license='GPL-3',
     author='Freyja Development Team',
     #author_email='email@ubuntu.com',
