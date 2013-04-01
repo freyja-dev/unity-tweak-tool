@@ -1163,7 +1163,6 @@
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="halign">start</property>
-                    <property name="use_alpha">True</property>
                     <signal name="color-set" handler="on_color_fill_color_color_set" swapped="no"/>
                   </object>
                   <packing>
