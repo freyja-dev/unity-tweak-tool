@@ -128,3 +128,6 @@ def init(page=0):
     builder.get_object('unitytweak_main').connect('delete-event',Gtk.main_quit)
     Gtk.main()
 
+def reset_all():
+    import UnityTweakTool.utils.unityreset as unityreset
+    unityreset.UnityReset()
