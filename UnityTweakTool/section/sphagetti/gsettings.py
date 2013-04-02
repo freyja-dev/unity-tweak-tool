@@ -96,12 +96,12 @@ def gnome(child):
     except Exception:
         print("schema %s not installed" % schema)
 
-def color_to_hash(c):
-    """Convert a Gdk.Color or Gdk.RGBA object to hex representation"""
+def color_to_hash(c,alpha=1):
+    """Convert a Gdk.Color or Gdk.RGBA object to hex representation, overriding the alpha if asked"""
     if isinstance(c, Gdk.Color):
-        return "#{:02x}{:02x}{:02x}ff".format(*[round(x*255) for x in [c.red_float, c.green_float, c.blue_float]])
+        return "#{:02x}{:02x}{:02x}{:02x}".format(*[round(x*255) for x in [c.red_float, c.green_float, c.blue_float,alpha]])
     if isinstance(x, Gdk.RGBA):
-        return "#{:02x}{:02x}{:02x}{:02x}".format(*[round(x*255) for x in [c.red, c.green, c.blue, c.alpha]])
+        return "#{:02x}{:02x}{:02x}{:02x}".format(*[round(x*255) for x in [c.red, c.green, c.blue, alpha]])
     # If it is neither a Gdk.Color object nor a Gdk.RGBA object,
     raise NotImplementedError
 
