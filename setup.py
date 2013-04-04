@@ -139,7 +139,7 @@ for po in glob.glob(os.path.join(PO_DIR, '*.po')):
     try:
         return_code = call(['msgfmt', '-o', mo, po])
     except OSError:
-        print 'Translation not available, please install gettext'
+        print('Translation not available, please install gettext')
         break
     if return_code:
         raise Warning('Error when building locales')
@@ -147,7 +147,6 @@ for po in glob.glob(os.path.join(PO_DIR, '*.po')):
 
 class InstallAndUpdateDataDirectory(DistUtilsExtra.auto.install_auto):
     def run(self):
-        self.data_files.extend(self.find_mo_files())
         DistUtilsExtra.auto.install_auto.run(self)
 
         target_data = '/' + os.path.relpath(self.install_data, self.root) + '/'
@@ -161,15 +160,28 @@ class InstallAndUpdateDataDirectory(DistUtilsExtra.auto.install_auto):
         desktop_file = move_desktop_open(self.root, target_data, self.prefix)
         compile_schemas(self.root, target_data)
 
-    def find_mo_files(self):
-        data_files = []
-        for mo in glob.glob(os.path.join(MO_DIR, '*', 'unity-tweak-tool.mo')):
-            lang = os.path.basename(os.path.dirname(mo))
-            dest = os.path.join('share', 'locale', lang, 'LC_MESSAGES')
-            data_files.append((dest, [mo]))
-        return data_files
 
 ##################################################################################
+data_files=[
+        ('share/dbus-1/services', ['unity-tweak-tool.service']),
+        ('share/icons/gnome/scalable/apps/', glob.glob("data/media/scalable/*svg")),
+        ('share/icons/hicolor/16x16/apps/', glob.glob("data/media/hicolor/16x16/apps/*.png")),
+        ('share/icons/hicolor/24x24/apps/', glob.glob("data/media/hicolor/24x24/apps/*.png")),
+        ('share/icons/hicolor/32x32/apps/', glob.glob("data/media/hicolor/32x32/apps/*.png")),
+        ('share/icons/hicolor/48x48/apps/', glob.glob("data/media/hicolor/48x48/apps/*.png")),
+        ('share/icons/hicolor/64x64/apps/', glob.glob("data/media/hicolor/64x64/apps/*.png")),
+        ('share/icons/hicolor/256x256/apps/', glob.glob("data/media/hicolor/256x256/apps/*.png")),
+        ]
+
+def find_mo_files():
+    data_files = []
+    for mo in glob.glob(os.path.join(MO_DIR, '*', 'unity-tweak-tool.mo')):
+        lang = os.path.basename(os.path.dirname(mo))
+        dest = os.path.join('share', 'locale', lang, 'LC_MESSAGES')
+        data_files.append((dest, [mo]))
+    return data_files
+
+data_files.extend(find_mo_files())
 
 DistUtilsExtra.auto.setup(
     name='unity-tweak-tool',
@@ -179,16 +191,7 @@ DistUtilsExtra.auto.setup(
     #author_email='email@ubuntu.com',
     description='A One-stop configuration tool for Unity',
     url='https://launchpad.net/unity-tweak-tool',
-    data_files=[
-        ('share/dbus-1/services', ['unity-tweak-tool.service']),
-        ('share/icons/gnome/scalable/apps/', glob.glob("data/media/scalable/*svg")),
-        ('share/icons/hicolor/16x16/apps/', glob.glob("data/media/hicolor/16x16/apps/*.png")),
-        ('share/icons/hicolor/24x24/apps/', glob.glob("data/media/hicolor/24x24/apps/*.png")),
-        ('share/icons/hicolor/32x32/apps/', glob.glob("data/media/hicolor/32x32/apps/*.png")),
-        ('share/icons/hicolor/48x48/apps/', glob.glob("data/media/hicolor/48x48/apps/*.png")),
-        ('share/icons/hicolor/64x64/apps/', glob.glob("data/media/hicolor/64x64/apps/*.png")),
-        ('share/icons/hicolor/256x256/apps/', glob.glob("data/media/hicolor/256x256/apps/*.png")),
-        ],
+    data_files=data_files,
     cmdclass={'install': InstallAndUpdateDataDirectory}
     )
 

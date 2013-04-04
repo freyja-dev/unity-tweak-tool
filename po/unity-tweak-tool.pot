@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-20 23:34+0530\n"
+"POT-Creation-Date: 2013-04-05 00:20+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -527,6 +527,24 @@ msgstr ""
 msgid "Install Theme"
 msgstr ""
 
+#: ../data/dialog.ui.h:1
+msgid "Reset Unity settings?"
+msgstr ""
+
+#: ../data/dialog.ui.h:2
+msgid "Cancel"
+msgstr ""
+
+#: ../data/dialog.ui.h:3
+msgid "Proceed"
+msgstr ""
+
+#: ../data/dialog.ui.h:4
+msgid ""
+"This will reset all your Unity settings.\n"
+"Are you sure you want to proceed?"
+msgstr ""
+
 #: ../unity-tweak-tool.desktop.in.h:1 ../data/unitytweak.ui.h:1
 msgid "Unity Tweak Tool"
 msgstr ""
@@ -688,7 +706,7 @@ msgstr ""
 msgid "Show the settings for the desktop icons"
 msgstr ""
 
-#: ../data/startpage.ui.h:43 ../data/system.ui.h:30 ../data/unitytweak.ui.h:24
+#: ../data/startpage.ui.h:43 ../data/system.ui.h:29 ../data/unitytweak.ui.h:24
 msgid "Security"
 msgstr ""
 
@@ -696,10 +714,11 @@ msgstr ""
 msgid "Show the settings for the scrolling."
 msgstr ""
 
-#: ../data/startpage.ui.h:45 ../data/system.ui.h:45 ../data/unitytweak.ui.h:25
+#: ../data/startpage.ui.h:45 ../data/system.ui.h:44 ../data/unitytweak.ui.h:25
 msgid "Scrolling"
 msgstr ""
 
+#. XXX : Temporary fix to prevent random attributeerrors.
 #: ../data/unity.ui.h:1
 msgid "Invoke HUD"
 msgstr ""
@@ -1515,23 +1534,23 @@ msgid "Restore the default configurations for Desktop icons"
 msgstr ""
 
 #: ../data/system.ui.h:19
-msgid "Desktop lock"
+msgid "Enhance system security by disabling:"
 msgstr ""
 
 #: ../data/system.ui.h:20
-msgid "If enabled, the user can activate the desktop lock screen."
+msgid "Desktop lock"
 msgstr ""
 
 #: ../data/system.ui.h:21
-msgid "User log out"
+msgid "Disable the desktop lock screen."
 msgstr ""
 
 #: ../data/system.ui.h:22
-msgid "If enabled, users can log out of the session they&apos;re in."
+msgid "User log out"
 msgstr ""
 
 #: ../data/system.ui.h:23
-msgid "If enabled, users can log out of the session they're in."
+msgid "Disable session log out."
 msgstr ""
 
 #: ../data/system.ui.h:24
@@ -1539,9 +1558,7 @@ msgid "User switching"
 msgstr ""
 
 #: ../data/system.ui.h:25
-msgid ""
-"If enabled, allow the user to switch to another account while their session "
-"is active."
+msgid "Disable fast user switching."
 msgstr ""
 
 #: ../data/system.ui.h:26
@@ -1549,71 +1566,66 @@ msgid "Printing"
 msgstr ""
 
 #: ../data/system.ui.h:27
-msgid ""
-"If enabled, allow the access to the system&apos;s printers and print setup."
+msgid "Prevent user access to the system's printers and print setup."
 msgstr ""
 
 #: ../data/system.ui.h:28
-msgid "If enabled, allow the access to the system's printers and print setup."
-msgstr ""
-
-#: ../data/system.ui.h:29
 msgid "Restore the default configurations for Security settings"
 msgstr ""
 
-#: ../data/system.ui.h:31
+#: ../data/system.ui.h:30
 msgid "Scrollbars"
 msgstr ""
 
-#: ../data/system.ui.h:32
+#: ../data/system.ui.h:31
 msgid "Legacy"
 msgstr ""
 
-#: ../data/system.ui.h:33
+#: ../data/system.ui.h:32
 msgid "Overlay "
 msgstr ""
 
-#: ../data/system.ui.h:34
+#: ../data/system.ui.h:33
 msgid "Select the behaviour of the overlay scrollbars."
 msgstr ""
 
-#: ../data/system.ui.h:35 ../data/appearance.ui.h:45
+#: ../data/system.ui.h:34 ../data/appearance.ui.h:45
 msgid "Default"
 msgstr ""
 
-#: ../data/system.ui.h:36
+#: ../data/system.ui.h:35
 msgid "Overlay with mouse"
 msgstr ""
 
-#: ../data/system.ui.h:37
+#: ../data/system.ui.h:36
 msgid "No overlay"
 msgstr ""
 
-#: ../data/system.ui.h:38
+#: ../data/system.ui.h:37
 msgid "Behaviour:"
 msgstr ""
 
-#: ../data/system.ui.h:39
+#: ../data/system.ui.h:38
 msgid "Edge"
 msgstr ""
 
-#: ../data/system.ui.h:40
+#: ../data/system.ui.h:39
 msgid "If enabled, edge scrolling is active on touchpads."
 msgstr ""
 
-#: ../data/system.ui.h:41
+#: ../data/system.ui.h:40
 msgid "Two-finger"
 msgstr ""
 
-#: ../data/system.ui.h:42
+#: ../data/system.ui.h:41
 msgid "If enabled, two-finger scrolling is active on multitouch touchpads."
 msgstr ""
 
-#: ../data/system.ui.h:43
+#: ../data/system.ui.h:42
 msgid "Touch scrolling"
 msgstr ""
 
-#: ../data/system.ui.h:44
+#: ../data/system.ui.h:43
 msgid "Horizontal scrolling"
 msgstr ""
 
