@@ -179,3 +179,6 @@ class Application(dbus.service.Object):
             self.notebook.set_current_page(pageid)
         self.window.present()
 
+def reset_all():
+    import UnityTweakTool.utils.unityreset as unityreset
+    unityreset.UnityReset()
