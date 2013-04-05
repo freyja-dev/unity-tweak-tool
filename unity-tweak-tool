@@ -39,7 +39,7 @@ optgrp.add_argument('-u', '--unity', help='Start in the Unity tab', action='stor
 optgrp.add_argument('-w', '--winmng', help='Start in the WindowManager tab', action='store_true')
 optgrp.add_argument('-a', '--appearance', help='Start in the appearance tab', action='store_true')
 optgrp.add_argument('-s', '--system', help='Start in the system tab', action='store_true')
- optgrp.add_argument('--reset-unity', help='Reset Unity, wiping all configuration changes.', action='store_true')
+optgrp.add_argument('--reset-unity', help='Reset Unity, wiping all configuration changes.', action='store_true')
 
 
 
@@ -52,7 +52,7 @@ elif args.appearance:
     UnityTweakTool.Application(3)
 elif args.system:
     UnityTweakTool.Application(4)
-elif args.restore:
+elif args.reset_unity:
     print("""
 WARNING: You are about to reset Unity to its default configuration.
     This will result in loss of configuration.
