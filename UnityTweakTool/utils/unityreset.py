@@ -30,7 +30,7 @@ from gi.repository import Gio
 import re
 
 import gettext
-gettext.settranslationdomain('unity-tweak-tool')
+gettext.bindtextdomain('unity-tweak-tool')
 _=gettext.gettext
 
 class UnityReset():

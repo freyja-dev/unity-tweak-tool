@@ -61,7 +61,7 @@ elif args.reset_unity:
     print(_("""
 WARNING: You are about to reset Unity to its default configuration.
     This will result in loss of configuration.
-    It is normal for your desktop to flicker.
+    It is normal for your desktop to flicker during the process.
     Type yes to continue, anything else to exit.
     """))
     prompt = input(_("Do you wish to continue?"))
