@@ -602,7 +602,7 @@ class Compizsettings ():
         gsettings.core.set_int('vsize', self.ui['spin_vertical_desktop'].get_value())
 
     def on_color_desk_outline_color_set(self, widget, udata = None):
-        colorhash = gsettings.color_to_hash(self.ui['color_desk_outline'].get_color())
+        colorhash = gsettings.color_to_hash(self.ui['color_desk_outline'].get_color(),alpha=1)
         gsettings.expo.set_string('selected-color', colorhash)
 
     def on_craccel_compiz_workspace_accel_edited(self, craccel, path, key, mods, hwcode, model = None):
@@ -701,11 +701,11 @@ class Compizsettings ():
                 gsettings.core.set_strv('active-plugins', plugins)
 
     def on_color_outline_color_color_set(self, widget, udata=None):
-        colorhash = gsettings.color_to_hash(self.ui['color_outline_color'].get_color())
+        colorhash = gsettings.color_to_hash(self.ui['color_outline_color'].get_color(),alpha=1)
         gsettings.grid.set_string('outline-color', colorhash)
 
     def on_color_fill_color_color_set(self, widget, udata=None):
-        colorhash = gsettings.color_to_hash(self.ui['color_fill_color'].get_color())
+        colorhash = gsettings.color_to_hash(self.ui['color_fill_color'].get_color(),alpha=0.31)
         gsettings.grid.set_string('fill-color', colorhash)
 
     def on_b_compiz_windowsnapping_reset_clicked(self, widget):
@@ -782,11 +782,11 @@ class Compizsettings ():
         del value
 
     def on_colorbutton_resize_outline_color_set(self, widget, udata=None):
-        colorhash = gsettings.color_to_hash(self.ui['colorbutton_resize_outline'].get_color())
+        colorhash = gsettings.color_to_hash(self.ui['colorbutton_resize_outline'].get_color(),aplha=1)
         gsettings.resize.set_string('border-color', colorhash)
 
     def on_colorbutton_resize_fill_color_set(self, widget, udata=None):
-        colorhash = gsettings.color_to_hash(self.ui['colorbutton_resize_fill'].get_color())
+        colorhash = gsettings.color_to_hash(self.ui['colorbutton_resize_fill'].get_color(),alpha=0.31)
         gsettings.resize.set_string('fill-color', colorhash)
 
     def on_b_wm_additional_reset_clicked(self, widget):
