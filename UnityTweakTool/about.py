@@ -39,6 +39,7 @@ class About ():
         '''Handler Initialisations.
         Obtain all references here.'''
         self.builder = Gtk.Builder()
+        self.builder.set_translation_domain('unity-tweak-tool')
         self.glade = (os.path.join(get_data_path(),
                                     'about.ui'))
         self.builder.add_from_file(self.glade)

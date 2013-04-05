@@ -118,6 +118,7 @@ def init(page=0):
     from UnityTweakTool.config.data import get_data_path
     global notebook
     builder=Gtk.Builder()
+    builder.set_translation_domain('unity-tweak-tool')
     ui=os.path.join(get_data_path(),'unitytweak.ui')
     builder.add_from_file(ui)
     notebook=builder.get_object('nb_unitytweak')

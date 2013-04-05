@@ -37,6 +37,7 @@ from gi.repository import Gtk, Gio
 class Section ():
     def __init__(self, ui,id):
         self.builder = Gtk.Builder()
+        self.builder.set_translation_domain('unity-tweak-tool')
         self.ui = os.path.join(data.get_data_path(),ui)
         self.builder.add_from_file(self.ui)
         self.page = self.builder.get_object(id)
