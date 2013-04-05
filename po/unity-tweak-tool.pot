@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-05 21:26+0530\n"
+"POT-Creation-Date: 2013-04-05 22:54+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1452,6 +1452,44 @@ msgstr ""
 msgid "Restore the default Unity keyboard shortcut settings."
 msgstr ""
 
+#: ../unity-tweak-tool.py:43
+msgid "Start in the Unity tab"
+msgstr ""
+
+#: ../unity-tweak-tool.py:44
+msgid "Start in the WindowManager tab"
+msgstr ""
+
+#: ../unity-tweak-tool.py:45
+msgid "Start in the appearance tab"
+msgstr ""
+
+#: ../unity-tweak-tool.py:46
+msgid "Start in the system tab"
+msgstr ""
+
+#: ../unity-tweak-tool.py:47
+msgid "Reset Unity, wiping all configuration changes."
+msgstr ""
+
+#: ../unity-tweak-tool.py:61
+msgid ""
+"\n"
+"WARNING: You are about to reset Unity to its default configuration.\n"
+"    This will result in loss of configuration.\n"
+"    It is normal for your desktop to flicker.\n"
+"    Type yes to continue, anything else to exit.\n"
+"    "
+msgstr ""
+
+#: ../unity-tweak-tool.py:67
+msgid "Do you wish to continue?"
+msgstr ""
+
+#: ../unity-tweak-tool.py:70
+msgid "Please log out and log back in."
+msgstr ""
+
 #: ../data/about.ui.h:1
 msgid "Copyright © 2013 Freyja Development team"
 msgstr ""
@@ -1627,6 +1665,30 @@ msgstr ""
 
 #: ../data/system.ui.h:43
 msgid "Horizontal scrolling"
+msgstr ""
+
+#: ../UnityTweakTool/utils/unityreset.py:41
+msgid "Initialising Unity reset"
+msgstr ""
+
+#: ../UnityTweakTool/utils/unityreset.py:42
+msgid "Killing Unity and Compiz"
+msgstr ""
+
+#: ../UnityTweakTool/utils/unityreset.py:45
+msgid "Resetting compiz plugins"
+msgstr ""
+
+#: ../UnityTweakTool/utils/unityreset.py:47
+msgid "Resetting more compiz plugins"
+msgstr ""
+
+#: ../UnityTweakTool/utils/unityreset.py:49
+msgid "Resetting Unity settings"
+msgstr ""
+
+#: ../UnityTweakTool/utils/unityreset.py:51
+msgid "Reset complete. Reloading unity"
 msgstr ""
 
 #: ../data/appearance.ui.h:1
