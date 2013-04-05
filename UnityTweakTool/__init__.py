@@ -150,8 +150,8 @@ class Application(dbus.service.Object):
 
         def gen_appmenu_handler(loc):
             def appmenu_handler(*args):
-                notebook.set_current_page(loc[0])
-                notebook.get_nth_page(loc[0]).set_current_page(loc[1])
+                self.notebook.set_current_page(loc[0])
+                self.notebook.get_nth_page(loc[0]).set_current_page(loc[1])
             return appmenu_handler
 
         for item,location in appmenu.items():
@@ -175,7 +175,7 @@ class Application(dbus.service.Object):
 
     @dbus.service.method('org.freyja.utt', in_signature='i')
     def switch_to_page(self, pageid):
-        if pageid is not -1:
+        if not pageid == -1:
             self.notebook.set_current_page(pageid)
         self.window.present()
 
