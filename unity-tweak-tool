@@ -32,14 +32,19 @@
 import argparse
 import UnityTweakTool
 
+import gettext
+gettext.bindtextdomain('unity-tweak-tool')
+_=gettext.gettext
+
+
 parser = argparse.ArgumentParser()
 optgrp = parser.add_mutually_exclusive_group()
 
-optgrp.add_argument('-u', '--unity', help='Start in the Unity tab', action='store_true')
-optgrp.add_argument('-w', '--winmng', help='Start in the WindowManager tab', action='store_true')
-optgrp.add_argument('-a', '--appearance', help='Start in the appearance tab', action='store_true')
-optgrp.add_argument('-s', '--system', help='Start in the system tab', action='store_true')
-optgrp.add_argument('--reset-unity', help='Reset Unity, wiping all configuration changes.', action='store_true')
+optgrp.add_argument('-u', '--unity', help=_('Start in the Unity tab'), action='store_true')
+optgrp.add_argument('-w', '--winmng', help=_('Start in the WindowManager tab'), action='store_true')
+optgrp.add_argument('-a', '--appearance', help=_('Start in the appearance tab'), action='store_true')
+optgrp.add_argument('-s', '--system', help=_('Start in the system tab'), action='store_true')
+optgrp.add_argument('--reset-unity', help=_('Reset Unity, wiping all configuration changes.'), action='store_true')
 
 
 
@@ -53,15 +58,15 @@ elif args.appearance:
 elif args.system:
     UnityTweakTool.Application(4)
 elif args.reset_unity:
-    print("""
+    print(_("""
 WARNING: You are about to reset Unity to its default configuration.
     This will result in loss of configuration.
-    It is normal for your desktop to flicker.
+    It is normal for your desktop to flicker during the process.
     Type yes to continue, anything else to exit.
-    """)
-    prompt = input("Do you wish to continue?")
-    if prompt.lower() is 'yes':
+    """))
+    prompt = input(_("Do you wish to continue?"))
+    if prompt.lower() == 'yes':
         UnityTweakTool.reset_all()
-        print("Please log out and log back in.")
+        print(_("Please log out and log back in."))
 else:
     UnityTweakTool.Application()

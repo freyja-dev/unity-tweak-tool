@@ -29,22 +29,26 @@ import subprocess
 from gi.repository import Gio
 import re
 
+import gettext
+gettext.bindtextdomain('unity-tweak-tool')
+_=gettext.gettext
+
 class UnityReset():
     allSchemas=Gio.Settings.list_schemas()
     allRelocatableSchemas=Gio.Settings.list_relocatable_schemas()
     
     def __init__(self,refresh=True):
-        print("Initialising Unity reset")
-        print("Killing Unity and Compiz")
+        print(_("Initialising Unity reset"))
+        print(_("Killing Unity and Compiz"))
         subprocess.call(["killall","unity-panel-service"])
         subprocess.call(["pkill","-9","compiz"])
-        print("Resetting compiz plugins")
+        print(_("Resetting compiz plugins"))
         self.resetPlugins()
-        print("Resetting more compiz plugins")
+        print(_("Resetting more compiz plugins"))
         self.resetCompizChildren()
-        print("Resetting Unity settings")
+        print(_("Resetting Unity settings"))
         self.resetUnityChildren()
-        print("Reset complete. Reloading unity")
+        print(_("Reset complete. Reloading unity"))
         if refresh:
             subprocess.call("unity")
 
