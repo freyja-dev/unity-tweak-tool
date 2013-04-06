@@ -1,7 +1,7 @@
 unity-tweak-tool (0.0.4) raring; urgency=medium
 
   [ Barneedhar Vigneshwar ]
-  * New upstream release
+  * New upstream release (LP: #1165141)
   * data/windowmanager.ui
     - Fix missing signal in the auto-raise switch (LP: #1160782)
   * UnityTweakTool/section/sphagetti/theme.py
