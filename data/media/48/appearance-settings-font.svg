@@ -43,8 +43,8 @@
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:zoom="1"
-     inkscape:cx="11.770322"
-     inkscape:cy="4.6531247"
+     inkscape:cx="11.987243"
+     inkscape:cy="5.6517672"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:current-layer="svg5496"
@@ -1349,11 +1349,11 @@
      x="10"
      y="40" />
   <rect
-     style="opacity:0.45000000000000001;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;filter:url(#filter7561)"
+     style="opacity:0.45;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;filter:url(#filter7561)"
      id="rect7049"
-     width="30"
+     width="28"
      height="4"
-     x="9"
+     x="10"
      y="39" />
   <rect
      style="fill:url(#linearGradient4220);fill-opacity:1;stroke:none"
