@@ -38,7 +38,7 @@ __all__ = [
 # files). By default, this is ../data, relative your trunk layout
 __unity_tweak_tool_data_directory__ = '../../../data/'
 __license__ = 'GPL-3'
-__version__ = '0.0.4'
+__version__ = '0.0.5'
 
 import os
 

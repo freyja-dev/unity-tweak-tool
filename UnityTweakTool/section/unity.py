@@ -280,7 +280,7 @@ check_show_available_apps= CheckBox({
     'builder'   : Unity.builder,
     'schema'    : 'com.canonical.Unity.ApplicationsLens',
     'path'      : None,
-    'key'       : 'display-recent-apps',
+    'key'       : 'display-available-apps',
     'type'      : 'boolean',
     'map'       : {True:True,False:False},
     'dependants': []
@@ -291,7 +291,7 @@ check_show_recent_apps= CheckBox({
     'builder'   : Unity.builder,
     'schema'    : 'com.canonical.Unity.ApplicationsLens',
     'path'      : None,
-    'key'       : 'display-available-apps',
+    'key'       : 'display-recent-apps',
     'type'      : 'boolean',
     'map'       : {True:True,False:False},
     'dependants': []
