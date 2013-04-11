@@ -1570,6 +1570,7 @@
                                 <property name="tooltip_markup" translatable="yes">Have the clock use 12-hour time.</property>
                                 <property name="tooltip_text" translatable="yes">Have the clock use 12-hour time.</property>
                                 <property name="xalign">0</property>
+                                <property name="active">True</property>
                                 <property name="draw_indicator">True</property>
                                 <property name="group">radio_24hour</property>
                                 <signal name="notify::active" handler="on_radio_12hour_toggled" swapped="no"/>
