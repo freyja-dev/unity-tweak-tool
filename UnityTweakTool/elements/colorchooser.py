@@ -86,9 +86,13 @@ class ColorChooser:
             self.ui.set_rgba(self.color)
 
     def get_color(self):
-        self.ui.get_rgba(self.color)
-        return '#{:02x}{:02x}{:02x}{:02x}'.format(*[round(x*255) for x in [self.color.red, self.color.green, self.color.blue, self.color.alpha]])
         logger.debug('Getting color for {self.id}'.format(self=self))
+# This try catch is a fix for LP 1165627
+        try:
+            self.color = self.ui.get_rgba()
+        except TypeError:
+            self.ui.get_rgba(self.color)
+        return '#{:02x}{:02x}{:02x}{:02x}'.format(*[round(x*255) for x in [self.color.red, self.color.green, self.color.blue, self.color.alpha]])
 
     def handler(self,*args,**kwargs):
         ''' handle toggle signals '''
