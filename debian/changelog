@@ -4,6 +4,8 @@ unity-tweak-tool (0.0.5) UNRELEASED; urgency=low
   * Bug-fix only release (LP: #???????)
   * UnityTweakTool/section/unity.py
     - Fix Show recently used and more suggestions in dash search (LP: #1166294)
+  * UnityTweakTool/elements/colorchooser.py
+    - Fix TypeError in get_rgba() (LP: #1165627)
 
   [ Barneedhar Vigneshwar ]
   * UnityTweakTool/section/unity.py
