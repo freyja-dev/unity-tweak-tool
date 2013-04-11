@@ -1,9 +1,13 @@
 unity-tweak-tool (0.0.5) UNRELEASED; urgency=low
 
-  [ J Phani Mahesh ] 
-  * Bug-fix only release (LP: # ???????) 
+  [ J Phani Mahesh ]
+  * Bug-fix only release (LP: #???????)
   * UnityTweakTool/section/unity.py
-    - Fix Show recently used and more suggestions in dash search (LP: #1166294) 
+    - Fix Show recently used and more suggestions in dash search (LP: #1166294)
+
+  [ Barneedhar Vigneshwar ]
+  * UnityTweakTool/section/unity.py
+    - Fix 'Can't set background blur to static' (LP: #1167343) 
 
  -- Barneedhar Vigneshwar <barneedhar@ubuntu.com>  Tue, 09 Apr 2013 19:55:14 +0530
 
