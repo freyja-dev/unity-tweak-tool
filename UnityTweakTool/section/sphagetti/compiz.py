@@ -782,7 +782,7 @@ class Compizsettings ():
         del value
 
     def on_colorbutton_resize_outline_color_set(self, widget, udata=None):
-        colorhash = gsettings.color_to_hash(self.ui['colorbutton_resize_outline'].get_color(),aplha=1)
+        colorhash = gsettings.color_to_hash(self.ui['colorbutton_resize_outline'].get_color(),alpha=1)
         gsettings.resize.set_string('border-color', colorhash)
 
     def on_colorbutton_resize_fill_color_set(self, widget, udata=None):

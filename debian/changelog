@@ -9,7 +9,9 @@ unity-tweak-tool (0.0.5) UNRELEASED; urgency=low
 
   [ Barneedhar Vigneshwar ]
   * UnityTweakTool/section/unity.py
-    - Fix 'Can't set background blur to static' (LP: #1167343) 
+    - Fix 'Can't set background blur to static' (LP: #1167343)
+  * UnityTweakTool/section/sphagetti/compiz.py
+    - Fix TypeError in color_to_hash() (LP: #1166884)
 
  -- Barneedhar Vigneshwar <barneedhar@ubuntu.com>  Tue, 09 Apr 2013 19:55:14 +0530
 
