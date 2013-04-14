@@ -219,7 +219,7 @@ LauncherIcons=Tab([sw_launcher_hidemode,
                    cbox_launch_animation,
                    cbox_launcher_icon_colouring,
                    spin_launcher_icon_size,
-                 #  sc_reveal_sensitivity,
+                   sc_reveal_sensitivity,
                    color_launcher_color_cus])
 
 #=============== DASH ==========================
