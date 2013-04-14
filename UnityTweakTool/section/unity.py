@@ -107,7 +107,7 @@ sw_launcher_transparent= Switch({
     'path'      : '/org/compiz/profiles/unity/plugins/unityshell/',
     'key'       : 'launcher-opacity',
     'type'      : 'double',
-    'map'       : defaultdict(lambda:True,{1:True,0:False}),
+    'map'       : defaultdict(lambda:True,{0:True,1:False}),
     'dependants': ['l_launcher_transparency_scale',
                    'sc_launcher_transparency']
 })
