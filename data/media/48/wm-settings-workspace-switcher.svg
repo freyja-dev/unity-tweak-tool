@@ -605,7 +605,7 @@
        ry="0.87722546"
        transform="translate(0,16)" />
     <path
-       style="color:#000000;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        d="M 6.84375 8 C 6.5625 8.046875 6 8.25 6 9 L 6 31 C 5.999223 31.556323 6.324108 31.99905 7 32 L 41 32 C 41 32 42 32 42 31 L 42 9 C 42 9 42 8 41 8 L 7 8 C 7 8 6.9375 7.984375 6.84375 8 z M 7 9 L 41 9 L 41 31 L 7 31 L 7 9 z "
        id="rect10528"
        transform="translate(0,16)" />
