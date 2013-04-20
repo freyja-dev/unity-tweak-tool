@@ -194,6 +194,7 @@ Controls</property>
                   <object class="GtkImage" id="image_box_start_unity">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="pixel_size">16</property>
                     <property name="icon_name">unity-tweak-tool-unity-symbolic</property>
                   </object>
                   <packing>
@@ -387,6 +388,7 @@ Controls</property>
                   <object class="GtkImage" id="image_box_start_compiz">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="pixel_size">16</property>
                     <property name="icon_name">unity-tweak-tool-wm-symbolic</property>
                   </object>
                   <packing>
@@ -590,6 +592,7 @@ Controls</property>
                   <object class="GtkImage" id="image_start_theme">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="pixel_size">16</property>
                     <property name="icon_name">unity-tweak-tool-appearance-symbolic</property>
                   </object>
                   <packing>
@@ -767,6 +770,7 @@ Controls</property>
                   <object class="GtkImage" id="image_start_desktop">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <property name="pixel_size">16</property>
                     <property name="icon_name">unity-tweak-tool-system-symbolic</property>
                   </object>
                   <packing>

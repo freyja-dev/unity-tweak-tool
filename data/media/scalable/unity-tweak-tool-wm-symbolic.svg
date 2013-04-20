@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="24"
-   height="24"
+   width="16"
+   height="16"
    id="svg2985"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="wm-settings-symbolic.svg">
+   sodipodi:docname="unity-tweak-tool-wm-symbolic.svg">
   <defs
      id="defs2987" />
   <sodipodi:namedview
@@ -24,18 +24,19 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="8"
-     inkscape:cx="1.8011555"
-     inkscape:cy="10.707197"
+     inkscape:zoom="1"
+     inkscape:cx="3.9429377"
+     inkscape:cy="8.5848926"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:document-units="px"
      inkscape:grid-bbox="true"
-     inkscape:window-width="1366"
-     inkscape:window-height="683"
-     inkscape:window-x="0"
-     inkscape:window-y="27"
-     inkscape:window-maximized="1">
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:snap-bbox="true">
     <inkscape:grid
        type="xygrid"
        id="grid2982"
@@ -60,34 +61,31 @@
      id="layer1"
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     transform="translate(0,-40)">
+     transform="translate(0,-48)">
     <path
-       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#777777;fill-opacity:1;stroke:none;stroke-width:1.99982572000000003;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
-       d="M 6,6 C 4,6 4,8 4,8 l 0,9 0,2 16,0 0,-2 0,-9 C 20,6 18,6 18,6 z m 0.5,4 11,0 c 0,0 0.5,0 0.5,0.5 l 0,6 c 0,0 0,0.5 -0.5,0.5 l -11,0 C 6,17 6,16.5 6,16.5 l 0,-6 C 6,10.5 6,10 6.5,10 z"
-       transform="translate(0,40)"
-       id="rect2984"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="scccccscsscscssccs" />
+       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#777777;fill-opacity:1;stroke:none;stroke-width:1.99982572;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
+       d="M 4 4 C 3 4 3 5 3 5 L 3 12 L 13 12 L 13 5 C 13 4 12 4 12 4 L 4 4 z M 4.15625 6 L 11.84375 6 C 11.923575 6 12 6.072434 12 6.15625 L 12 10.84375 C 12 10.927566 11.923575 11 11.84375 11 L 4.15625 11 C 4.0764252 11 4 10.927566 4 10.84375 L 4 6.15625 C 4 6.072434 4.0764252 6 4.15625 6 z "
+       transform="translate(0,48)"
+       id="rect2984" />
     <path
-       style="fill:#777777;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
-       d="m 1,12 2,-2 0,4 z"
+       style="fill:#777777;fill-opacity:1;stroke:none"
+       d="m 0,56 2,-2 0,4 z"
        id="path3773"
-       inkscape:connector-curvature="0"
-       transform="translate(0,40)" />
+       inkscape:connector-curvature="0" />
     <path
        inkscape:connector-curvature="0"
        id="path3775"
-       d="m 23,52 -2,-2 0,4 z"
+       d="m 16,56 -2,-2 0,4 z"
        style="fill:#777777;fill-opacity:1;stroke:none" />
     <path
        style="fill:#777777;fill-opacity:1;stroke:none"
-       d="m 12,43 -2,2 4,0 z"
+       d="m 8,49 -2,2 4,0 z"
        id="path3777"
        inkscape:connector-curvature="0" />
     <path
        inkscape:connector-curvature="0"
        id="path3779"
-       d="m 12,62 -2,-2 4,0 z"
+       d="m 8,63 -2,-2 4,0 z"
        style="fill:#777777;fill-opacity:1;stroke:none" />
   </g>
 </svg>
