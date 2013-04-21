@@ -623,9 +623,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="11.313708"
-     inkscape:cx="-0.53545522"
-     inkscape:cy="10.427971"
+     inkscape:zoom="1"
+     inkscape:cx="8.4998349"
+     inkscape:cy="-1.863396"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:document-units="px"
@@ -636,7 +636,8 @@
      inkscape:window-y="27"
      inkscape:window-maximized="1"
      showguides="true"
-     inkscape:guide-bbox="true">
+     inkscape:guide-bbox="true"
+     inkscape:snap-bbox="true">
     <inkscape:grid
        type="xygrid"
        id="grid2982"
