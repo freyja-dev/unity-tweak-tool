@@ -10,6 +10,7 @@ StartupNotify=true
 Terminal=false
 Type=Application
 Actions=Unity;WinMng;Appearance;System;
+X-Unity-IconBackgroundColor=#ff0025
 
 [Desktop Action Unity]
 Name=Unity
