@@ -129,28 +129,28 @@
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="label" translatable="yes">Cursors</property>
-    <property name="ellipsize">end</property>
+    <property name="ellipsize">middle</property>
   </object>
   <object class="GtkLabel" id="l_appearance_fonts">
     <property name="width_request">85</property>
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="label" translatable="yes">Fonts</property>
-    <property name="ellipsize">end</property>
+    <property name="ellipsize">middle</property>
   </object>
   <object class="GtkLabel" id="l_appearance_icons">
     <property name="width_request">85</property>
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="label" translatable="yes">Icons</property>
-    <property name="ellipsize">end</property>
+    <property name="ellipsize">middle</property>
   </object>
   <object class="GtkLabel" id="l_appearance_theme">
     <property name="width_request">85</property>
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="label" translatable="yes">Theme</property>
-    <property name="ellipsize">end</property>
+    <property name="ellipsize">middle</property>
   </object>
   <object class="GtkLabel" id="l_appearance_window_controls">
     <property name="width_request">85</property>
@@ -160,7 +160,7 @@
 Controls</property>
     <property name="justify">center</property>
     <property name="wrap">True</property>
-    <property name="ellipsize">end</property>
+    <property name="ellipsize">middle</property>
   </object>
   <object class="GtkLabel" id="l_system_desktop_icons">
     <property name="width_request">85</property>
@@ -172,83 +172,84 @@ Controls</property>
 Icons</property>
     <property name="justify">center</property>
     <property name="wrap">True</property>
-    <property name="ellipsize">end</property>
+    <property name="ellipsize">middle</property>
   </object>
   <object class="GtkLabel" id="l_system_scrolling">
     <property name="width_request">85</property>
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="label" translatable="yes">Scrolling</property>
-    <property name="ellipsize">end</property>
+    <property name="ellipsize">middle</property>
   </object>
   <object class="GtkLabel" id="l_system_security">
     <property name="width_request">85</property>
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="label" translatable="yes">Security</property>
-    <property name="ellipsize">end</property>
+    <property name="ellipsize">middle</property>
   </object>
   <object class="GtkLabel" id="l_unity_additional">
     <property name="width_request">85</property>
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="label" translatable="yes">Additional</property>
+    <property name="ellipsize">middle</property>
   </object>
   <object class="GtkLabel" id="l_unity_launcher">
     <property name="width_request">85</property>
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="label" translatable="yes">Launcher</property>
-    <property name="ellipsize">end</property>
+    <property name="ellipsize">middle</property>
   </object>
   <object class="GtkLabel" id="l_unity_panel">
     <property name="width_request">85</property>
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="label" translatable="yes">Panel</property>
-    <property name="ellipsize">end</property>
+    <property name="ellipsize">middle</property>
   </object>
   <object class="GtkLabel" id="l_unity_search">
     <property name="width_request">85</property>
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="label" translatable="yes">Search</property>
-    <property name="ellipsize">end</property>
+    <property name="ellipsize">middle</property>
   </object>
   <object class="GtkLabel" id="l_unity_switcher">
     <property name="width_request">85</property>
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="label" translatable="yes">Switcher</property>
-    <property name="ellipsize">end</property>
+    <property name="ellipsize">middle</property>
   </object>
   <object class="GtkLabel" id="l_unity_webapps">
     <property name="width_request">85</property>
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="label" translatable="yes">Web Apps</property>
-    <property name="ellipsize">end</property>
+    <property name="ellipsize">middle</property>
   </object>
   <object class="GtkLabel" id="l_wm_additional">
     <property name="width_request">85</property>
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="label" translatable="yes">Additional</property>
-    <property name="ellipsize">end</property>
+    <property name="ellipsize">middle</property>
   </object>
   <object class="GtkLabel" id="l_wm_general">
     <property name="width_request">85</property>
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="label" translatable="yes">General</property>
-    <property name="ellipsize">end</property>
+    <property name="ellipsize">middle</property>
   </object>
   <object class="GtkLabel" id="l_wm_hotcorners">
     <property name="width_request">85</property>
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="label" translatable="yes">Hotcorners</property>
-    <property name="ellipsize">end</property>
+    <property name="ellipsize">middle</property>
   </object>
   <object class="GtkLabel" id="l_wm_windows_snapping">
     <property name="width_request">85</property>
@@ -260,7 +261,7 @@ Icons</property>
 Snapping</property>
     <property name="justify">center</property>
     <property name="wrap">True</property>
-    <property name="ellipsize">end</property>
+    <property name="ellipsize">middle</property>
   </object>
   <object class="GtkLabel" id="l_wm_windows_spread">
     <property name="width_request">85</property>
@@ -270,7 +271,7 @@ Snapping</property>
 Spread</property>
     <property name="justify">fill</property>
     <property name="wrap">True</property>
-    <property name="ellipsize">end</property>
+    <property name="ellipsize">middle</property>
   </object>
   <object class="GtkLabel" id="l_wm_workspace">
     <property name="width_request">85</property>
@@ -280,7 +281,7 @@ Spread</property>
 Settings</property>
     <property name="justify">center</property>
     <property name="wrap">True</property>
-    <property name="ellipsize">end</property>
+    <property name="ellipsize">middle</property>
   </object>
   <object class="GtkWindow" id="startpage_window">
     <property name="can_focus">False</property>
