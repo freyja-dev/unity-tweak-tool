@@ -6,6 +6,7 @@ unity-tweak-tool (0.0.5) UNRELEASED; urgency=low
     - Fix Show recently used and more suggestions in dash search (LP: #1166294)
     - Fix reversed launcher transparency switch (LP: #1168834)
     - Fix Launcher reveal sensitivity scale update issues (LP: #1168863)
+    - Fix Panel opacity scale update bug (LP: #1168836)
   * UnityTweakTool/elements/colorchooser.py
     - Fix TypeError in get_rgba() (LP: #1165627)
 
