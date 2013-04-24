@@ -42,7 +42,10 @@ from UnityTweakTool.elements.switch import Switch
 from UnityTweakTool.section.sphagetti.unity import Unitysettings as SphagettiUnitySettings
 from UnityTweakTool.elements.option import Option,HandlerObject
 
+from UnityTweakTool.backends import gsettings
+
 from collections import defaultdict
+from gi.repository import Gtk
 
 Unity=Section(ui='unity.ui',id='nb_unitysettings')
 
@@ -100,17 +103,44 @@ radio_reveal_topleft=Radio({
     'dependants': []
 })
 
-sw_launcher_transparent= Switch({
+sw_launcher_transparent_dummy= Switch({
     'id'        : 'sw_launcher_transparent',
     'builder'   : Unity.builder,
     'schema'    : 'org.compiz.unityshell',
     'path'      : '/org/compiz/profiles/unity/plugins/unityshell/',
     'key'       : 'launcher-opacity',
     'type'      : 'double',
-    'map'       : defaultdict(lambda:True,{0:True,1:False}),
+    'map'       : defaultdict(lambda:True,{0.66:True,1:False}),
+    # XXX : Use option object and correct this. switching on transparency will
+    # always set it at 0.66.
     'dependants': ['l_launcher_transparency_scale',
                    'sc_launcher_transparency']
 })
+
+def on_sw_launcher_transparent_active_notify(*args,**kwargs):
+    if sw_launcher_transparent_dummy.disabled:
+        return
+    active =sw_launcher_transparent_dummy.ui.get_active()
+    if active:
+        val =Unity.builder.get_object('sc_launcher_transparency').get_value()
+    else:
+        val = 1
+    gsettings.set(
+        schema=sw_launcher_transparent_dummy.schema,
+        path=sw_launcher_transparent_dummy.path,
+        key=sw_launcher_transparent_dummy.key,
+        type=sw_launcher_transparent_dummy.type,
+        value= val
+        )
+    for element in sw_launcher_transparent_dummy.dependants:
+        Unity.builder.get_object(element).set_sensitive(active)
+
+sw_launcher_transparent = Option({
+    'handler': on_sw_launcher_transparent_active_notify,
+    'reset' : sw_launcher_transparent_dummy.reset,
+    'handlerid': 'on_sw_launcher_transparent_active_notify',
+    'refresh' : sw_launcher_transparent_dummy.refresh
+    })
 
 radio_launcher_visibility_all=Radio({
     'id'        : 'radio_launcher_visibility_all',
@@ -179,7 +209,6 @@ spin_launcher_icon_size=SpinButton({
 
 # TODO:
 
-# sc_reveal_sensitivity
 # sc_launcher_transparency
 # radio_launcher_color_cham
 # radio_launcher_color_cus
@@ -204,8 +233,23 @@ sc_reveal_sensitivity=Scale({
      'type'   : 'double',
      'min'    : 0.2,
      'max'    : 8.0,
-     'ticks'  : [] #[2.0] XXX : Correct this or get rid of ticks altogether
+     'ticks'  : [(2.0,Gtk.PositionType.BOTTOM,None)] # XXX : Correct this or get rid of ticks altogether
  })
+
+
+sc_launcher_transparency=Scale({
+     'id'     : 'sc_launcher_transparency',
+     'builder': Unity.builder,
+     'schema' : 'org.compiz.unityshell',
+     'path'   : '/org/compiz/profiles/unity/plugins/unityshell/',
+     'key'    : 'launcher-opacity',
+     'type'   : 'double',
+     'min'    : 0.2, # TODO : Check these min max. Most prolly wrong.
+     'max'    : 8.0, # But fine since they are ignored anyway.
+     'ticks'  : [(0.666, Gtk.PositionType.BOTTOM, None)]
+
+ })
+
 
 
 LauncherIcons=Tab([sw_launcher_hidemode,
@@ -219,7 +263,8 @@ LauncherIcons=Tab([sw_launcher_hidemode,
                    cbox_launch_animation,
                    cbox_launcher_icon_colouring,
                    spin_launcher_icon_size,
-                 #  sc_reveal_sensitivity,
+                   sc_reveal_sensitivity,
+                   sc_launcher_transparency,
                    color_launcher_color_cus])
 
 #=============== DASH ==========================

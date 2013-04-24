@@ -42,8 +42,6 @@ class Unitysettings ():
     def __init__(self, builder):
         self.ui = ui(builder)
 
-        self.ui['sc_reveal_sensitivity'].add_mark(2.0, Gtk.PositionType.BOTTOM, None)
-        self.ui['sc_launcher_transparency'].add_mark(.666, Gtk.PositionType.BOTTOM, None)
         self.ui['sc_panel_transparency'].add_mark(.67, Gtk.PositionType.BOTTOM, None)
 
         if Gdk.Screen.get_default().get_n_monitors() == 1:
@@ -192,14 +190,6 @@ class Unitysettings ():
 
 # ===== BEGIN: Unity settings =====
 # ----- BEGIN: Launcher -----
-
-    def on_sc_reveal_sensitivity_value_changed(self, widget, udata = None):
-        value = self.ui['sc_reveal_sensitivity'].get_value()
-        gsettings.unityshell.set_double('edge-responsiveness', value)
-        del value
-    def on_sc_launcher_transparency_value_changed(self, widget, udata = None):
-        opacity = self.ui['sc_launcher_transparency'].get_value()
-        gsettings.unityshell.set_double('launcher-opacity', opacity)
     def on_radio_launcher_color_cus_toggled(self, widget, udata = None):
         dependants = ['color_launcher_color_cus']
         color = self.ui['color_launcher_color_cus'].get_color()

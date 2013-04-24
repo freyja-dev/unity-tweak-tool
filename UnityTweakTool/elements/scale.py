@@ -46,6 +46,7 @@ class Scale:
         self.type       = controlObj['type']
         self.min        = controlObj['min']
         self.max        = controlObj['max']
+        self.ticks      = controlObj['ticks']
         self.disabled   = False
         try:
             assert gsettings.is_valid(
@@ -55,6 +56,8 @@ class Scale:
                 )
         except AssertionError as e:
             self.disabled=True
+        for tick in self.ticks:
+            self.ui.add_mark(*tick)
 # TODO : Set range using min, max
         logger.debug('Initialised a scale with id {self.id} to control key {self.key} of type {self.type} in schema {self.schema} with path {self.path}'.format(self=self))
 
@@ -88,7 +91,7 @@ class Scale:
             path=self.path,
             key=self.key,
             type=self.type,
-            value=self.ui.get_active()
+            value=self.ui.get_value()
             )
         logger.info('Handler for {self.id} executed'.format(self=self))
 
