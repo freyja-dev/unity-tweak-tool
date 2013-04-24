@@ -42,6 +42,8 @@ from UnityTweakTool.elements.switch import Switch
 from UnityTweakTool.section.sphagetti.unity import Unitysettings as SphagettiUnitySettings
 from UnityTweakTool.elements.option import Option,HandlerObject
 
+from UnityTweakTool.backends import gsettings
+
 from collections import defaultdict
 from gi.repository import Gtk
 
@@ -101,7 +103,7 @@ radio_reveal_topleft=Radio({
     'dependants': []
 })
 
-sw_launcher_transparent= Switch({
+sw_launcher_transparent_dummy= Switch({
     'id'        : 'sw_launcher_transparent',
     'builder'   : Unity.builder,
     'schema'    : 'org.compiz.unityshell',
@@ -114,6 +116,31 @@ sw_launcher_transparent= Switch({
     'dependants': ['l_launcher_transparency_scale',
                    'sc_launcher_transparency']
 })
+
+def on_sw_launcher_transparent_active_notify(*args,**kwargs):
+    if sw_launcher_transparent_dummy.disabled:
+        return
+    active =sw_launcher_transparent_dummy.ui.get_active()
+    if active:
+        val =Unity.builder.get_object('sc_launcher_transparency').get_value()
+    else:
+        val = 1
+    gsettings.set(
+        schema=sw_launcher_transparent_dummy.schema,
+        path=sw_launcher_transparent_dummy.path,
+        key=sw_launcher_transparent_dummy.key,
+        type=sw_launcher_transparent_dummy.type,
+        value= val
+        )
+    for element in sw_launcher_transparent_dummy.dependants:
+        Unity.builder.get_object(element).set_sensitive(active)
+
+sw_launcher_transparent = Option({
+    'handler': on_sw_launcher_transparent_active_notify,
+    'reset' : sw_launcher_transparent_dummy.reset,
+    'handlerid': 'on_sw_launcher_transparent_active_notify',
+    'refresh' : sw_launcher_transparent_dummy.refresh
+    })
 
 radio_launcher_visibility_all=Radio({
     'id'        : 'radio_launcher_visibility_all',
