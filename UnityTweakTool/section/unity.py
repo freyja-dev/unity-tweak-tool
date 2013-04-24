@@ -379,7 +379,7 @@ spin_menu_visible=SpinButton({
     'max'    : 10
 })
 
-sw_transparent_panel= Switch({
+sw_transparent_panel_dummy = Switch({
     'id'        : 'sw_transparent_panel',
     'builder'   : Unity.builder,
     'schema'    : 'org.compiz.unityshell',
@@ -391,6 +391,32 @@ sw_transparent_panel= Switch({
                    'l_transparent_panel',
                    'check_panel_opaque']
 })
+
+def on_sw_transparent_panel_active_notify(*args,**kwargs):
+    if sw_transparent_panel_dummy.disabled:
+        return
+    active =sw_transparent_panel_dummy.ui.get_active()
+    if active:
+        val =Unity.builder.get_object('sc_panel_transparency').get_value()
+    else:
+        val = 1
+    gsettings.set(
+        schema=sw_transparent_panel_dummy.schema,
+        path=sw_transparent_panel_dummy.path,
+        key=sw_transparent_panel_dummy.key,
+        type=sw_transparent_panel_dummy.type,
+        value= val
+        )
+    for element in sw_transparent_panel_dummy.dependants:
+        Unity.builder.get_object(element).set_sensitive(active)
+
+sw_transparent_panel = Option({
+    'handler': on_sw_transparent_panel_active_notify,
+    'reset' : sw_transparent_panel_dummy.reset,
+    'handlerid': 'on_sw_transparent_panel_active_notify',
+    'refresh' : sw_transparent_panel_dummy.refresh
+    })
+
 
 check_panel_opaque= CheckBox({
     'id'        : 'check_panel_opaque',
