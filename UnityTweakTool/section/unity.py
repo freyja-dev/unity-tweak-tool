@@ -43,6 +43,7 @@ from UnityTweakTool.section.sphagetti.unity import Unitysettings as SphagettiUni
 from UnityTweakTool.elements.option import Option,HandlerObject
 
 from collections import defaultdict
+from gi.repository import Gtk
 
 Unity=Section(ui='unity.ui',id='nb_unitysettings')
 
@@ -107,7 +108,9 @@ sw_launcher_transparent= Switch({
     'path'      : '/org/compiz/profiles/unity/plugins/unityshell/',
     'key'       : 'launcher-opacity',
     'type'      : 'double',
-    'map'       : defaultdict(lambda:True,{1:True,0:False}),
+    'map'       : defaultdict(lambda:True,{0.66:True,1:False}),
+    # XXX : Use option object and correct this. switching on transparency will
+    # always set it at 0.66.
     'dependants': ['l_launcher_transparency_scale',
                    'sc_launcher_transparency']
 })
@@ -179,7 +182,6 @@ spin_launcher_icon_size=SpinButton({
 
 # TODO:
 
-# sc_reveal_sensitivity
 # sc_launcher_transparency
 # radio_launcher_color_cham
 # radio_launcher_color_cus
@@ -204,8 +206,23 @@ sc_reveal_sensitivity=Scale({
      'type'   : 'double',
      'min'    : 0.2,
      'max'    : 8.0,
-     'ticks'  : [] #[2.0] XXX : Correct this or get rid of ticks altogether
+     'ticks'  : [(2.0,Gtk.PositionType.BOTTOM,None)] # XXX : Correct this or get rid of ticks altogether
  })
+
+
+sc_launcher_transparency=Scale({
+     'id'     : 'sc_launcher_transparency',
+     'builder': Unity.builder,
+     'schema' : 'org.compiz.unityshell',
+     'path'   : '/org/compiz/profiles/unity/plugins/unityshell/',
+     'key'    : 'launcher-opacity',
+     'type'   : 'double',
+     'min'    : 0.2, # TODO : Check these min max. Most prolly wrong.
+     'max'    : 8.0, # But fine since they are ignored anyway.
+     'ticks'  : [(0.666, Gtk.PositionType.BOTTOM, None)]
+
+ })
+
 
 
 LauncherIcons=Tab([sw_launcher_hidemode,
@@ -220,6 +237,7 @@ LauncherIcons=Tab([sw_launcher_hidemode,
                    cbox_launcher_icon_colouring,
                    spin_launcher_icon_size,
                    sc_reveal_sensitivity,
+                   sc_launcher_transparency,
                    color_launcher_color_cus])
 
 #=============== DASH ==========================
