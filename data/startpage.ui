@@ -26,103 +26,10 @@
     <property name="can_focus">False</property>
     <property name="pixbuf">media/48/unity-settings-additional.svg</property>
   </object>
-  <object class="GtkImage" id="i_tool_compiz_switcher">
-    <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="pixbuf">media/48/wm-settings-workspace-switcher.svg</property>
-  </object>
-  <object class="GtkImage" id="i_tool_cursors">
-    <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="pixbuf">media/48/appearance-settings-cursor.svg</property>
-  </object>
-  <object class="GtkImage" id="i_tool_dash">
-    <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="pixbuf">media/48/unity-settings-dash.svg</property>
-  </object>
-  <object class="GtkImage" id="i_tool_desktop_icons">
-    <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="pixbuf">media/48/desktop-settings-icons.svg</property>
-  </object>
-  <object class="GtkImage" id="i_tool_desktop_security">
-    <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="tooltip_markup" translatable="yes">Show the settings for the security.</property>
-    <property name="tooltip_text" translatable="yes">Show the settings for the security.</property>
-    <property name="pixbuf">media/48/desktop-settings-security.svg</property>
-  </object>
-  <object class="GtkImage" id="i_tool_fonts">
-    <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="pixbuf">media/48/appearance-settings-font.svg</property>
-  </object>
-  <object class="GtkImage" id="i_tool_general">
-    <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="pixbuf">media/48/wm-settings-general.svg</property>
-  </object>
-  <object class="GtkImage" id="i_tool_hotcorners">
-    <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="pixbuf">media/48/wm-settings-hotcorners.svg</property>
-  </object>
-  <object class="GtkImage" id="i_tool_icons">
-    <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="pixbuf">media/48/appearance-settings-icons.svg</property>
-  </object>
   <object class="GtkImage" id="i_tool_launcher">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="pixbuf">media/48/unity-settings-launcher.svg</property>
-  </object>
-  <object class="GtkImage" id="i_tool_panel">
-    <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="pixbuf">media/48/unity-settings-panel.svg</property>
-  </object>
-  <object class="GtkImage" id="i_tool_scrolling">
-    <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="pixbuf">media/48/desktop-settings-scrolling.svg</property>
-  </object>
-  <object class="GtkImage" id="i_tool_system">
-    <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="pixbuf">media/48/appearance-settings-theme.svg</property>
-  </object>
-  <object class="GtkImage" id="i_tool_unity_switcher">
-    <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="pixbuf">media/48/unity-settings-switcher.svg</property>
-  </object>
-  <object class="GtkImage" id="i_tool_unity_webapps">
-    <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="valign">start</property>
-    <property name="pixbuf">media/48/unity-settings-webapps.svg</property>
-  </object>
-  <object class="GtkImage" id="i_tool_window_controls">
-    <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="pixbuf">media/48/appearance-settings-window-controls.svg</property>
-  </object>
-  <object class="GtkImage" id="i_tool_window_snapping">
-    <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="pixbuf">media/48/wm-settings-window-snapping.svg</property>
-  </object>
-  <object class="GtkImage" id="i_tool_window_spread">
-    <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="pixbuf">media/48/wm-settings-window-switcher.svg</property>
-  </object>
-  <object class="GtkImage" id="i_tool_wm_additional">
-    <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="pixbuf">media/48/wm-settings-additional.svg</property>
   </object>
   <object class="GtkLabel" id="l_appearance_cursor">
     <property name="width_request">85</property>
@@ -229,6 +136,99 @@ Icons</property>
     <property name="can_focus">False</property>
     <property name="label" translatable="yes">Web Apps</property>
     <property name="ellipsize">middle</property>
+  </object>
+  <object class="GtkImage" id="i_tool_compiz_switcher">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">media/48/wm-settings-workspace-switcher.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_cursors">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">media/48/appearance-settings-cursor.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_dash">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">media/48/unity-settings-dash.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_desktop_icons">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">media/48/desktop-settings-icons.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_desktop_security">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="tooltip_markup" translatable="yes">Show the settings for the security.</property>
+    <property name="tooltip_text" translatable="yes">Show the settings for the security.</property>
+    <property name="pixbuf">media/48/desktop-settings-security.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_fonts">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">media/48/appearance-settings-font.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_general">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">media/48/wm-settings-general.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_hotcorners">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">media/48/wm-settings-hotcorners.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_icons">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">media/48/appearance-settings-icons.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_panel">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">media/48/unity-settings-panel.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_scrolling">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">media/48/desktop-settings-scrolling.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_system">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">media/48/appearance-settings-theme.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_unity_switcher">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">media/48/unity-settings-switcher.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_unity_webapps">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="valign">start</property>
+    <property name="pixbuf">media/48/unity-settings-webapps.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_window_controls">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">media/48/appearance-settings-window-controls.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_window_snapping">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">media/48/wm-settings-window-snapping.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_window_spread">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">media/48/wm-settings-window-switcher.svg</property>
+  </object>
+  <object class="GtkImage" id="i_tool_wm_additional">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">media/48/wm-settings-additional.svg</property>
   </object>
   <object class="GtkLabel" id="l_wm_additional">
     <property name="width_request">85</property>
