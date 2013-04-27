@@ -555,14 +555,6 @@
        id="radialGradient3220"
        xlink:href="#linearGradient11473-9"
        inkscape:collect="always" />
-    <filter
-       inkscape:collect="always"
-       id="filter4014">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="0.47891926"
-         id="feGaussianBlur4016" />
-    </filter>
     <radialGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3983-4-1"
@@ -868,9 +860,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="37.468484"
-     inkscape:cy="13.134676"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="-115.35756"
+     inkscape:cy="15.140656"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:document-units="px"
@@ -908,6 +900,12 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      transform="translate(0,-16)">
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;fill:#b3b3b3;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:new"
+       d="m 39,23 c -0.554,0 -1,0.446 -1,1 l 0,25 -4,0 c -0.554,0 -1,0.446 -1,1 L 33,53 4,52 C 3.4463291,51.98091 3,52.446 3,53 l 0,5 c 0,0.554 0.446,1 1,1 l 33,0 c 0.554,0 1,-0.446 1,-1 l 0,-2 4,0 c 0.554,0 1,-0.446 1,-1 l 0,-2 3,0 c 0.554,0 1,-0.446 1,-1 l 0,-28 c 0,-0.554 -0.446,-1 -1,-1 z"
+       id="rect3064"
+       sodipodi:nodetypes="sscsscsssssscsscsssss" />
     <rect
        transform="matrix(0.99999892,0.00147216,-0.00133369,0.99999911,0,0)"
        ry="0"
