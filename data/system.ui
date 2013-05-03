@@ -21,16 +21,46 @@
             <property name="margin_left">12</property>
             <property name="margin_top">6</property>
             <property name="orientation">vertical</property>
+            <property name="spacing">6</property>
             <child>
-              <object class="GtkGrid" id="grid_switch_desktop_icons">
+              <object class="GtkLabel" id="l_desktop-icons">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
+                <property name="halign">start</property>
+                <property name="margin_top">6</property>
+                <property name="xalign">0</property>
+                <property name="label" translatable="yes">Items to display:</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkGrid" id="grid_desktop_icons">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="halign">start</property>
+                <property name="margin_left">6</property>
+                <property name="row_spacing">6</property>
+                <property name="column_spacing">6</property>
                 <child>
-                  <object class="GtkLabel" id="l_desktop_icon">
+                  <object class="GtkToggleButton" id="tb_home_folder">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="margin_right">6</property>
-                    <property name="label" translatable="yes">Icons on desktop:</property>
+                    <property name="receives_default">True</property>
+                    <property name="tooltip_markup" translatable="yes">Home Folder</property>
+                    <property name="relief">none</property>
+                    <signal name="toggled" handler="on_tb_home_folder_toggled" swapped="no"/>
+                    <child>
+                      <object class="GtkImage" id="i_desktop-icon-home">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="pixel_size">48</property>
+                        <property name="icon_name">user-home</property>
+                      </object>
+                    </child>
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
@@ -40,14 +70,72 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkSwitch" id="switch_desktop_icons">
+                  <object class="GtkToggleButton" id="tb_trash">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <signal name="notify::active" handler="on_switch_desktop_icons_active_notify" swapped="no"/>
+                    <property name="receives_default">True</property>
+                    <property name="tooltip_markup" translatable="yes">Rubbish Bin</property>
+                    <property name="relief">none</property>
+                    <signal name="toggled" handler="on_tb_trash_toggled" swapped="no"/>
+                    <child>
+                      <object class="GtkImage" id="i_desktop-icon-trash">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="pixel_size">48</property>
+                        <property name="icon_name">user-trash</property>
+                      </object>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">1</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkToggleButton" id="tb_network">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="receives_default">True</property>
+                    <property name="tooltip_markup" translatable="yes">Network</property>
+                    <property name="relief">none</property>
+                    <signal name="toggled" handler="on_tb_network_toggled" swapped="no"/>
+                    <child>
+                      <object class="GtkImage" id="i_desktop-icon-network">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="pixel_size">48</property>
+                        <property name="icon_name">network-workgroup</property>
+                      </object>
+                    </child>
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
                     <property name="top_attach">0</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkToggleButton" id="tb_devices">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="receives_default">True</property>
+                    <property name="tooltip_markup" translatable="yes">Mounted Devices</property>
+                    <property name="relief">none</property>
+                    <child>
+                      <object class="GtkImage" id="i_desktop-icon-devices">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="pixel_size">48</property>
+                        <property name="icon_name">drive-removable-media</property>
+                      </object>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">1</property>
                     <property name="width">1</property>
                     <property name="height">1</property>
                   </packing>
@@ -57,116 +145,6 @@
                 <property name="expand">False</property>
                 <property name="fill">True</property>
                 <property name="position">1</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkBox" id="box_desktop_icons_display">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="margin_top">6</property>
-                <property name="orientation">vertical</property>
-                <child>
-                  <object class="GtkLabel" id="l_desktop_icons_display">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">A list of icons to display on the desktop</property>
-                    <property name="tooltip_text" translatable="yes">A list of icons to display on the desktop</property>
-                    <property name="halign">start</property>
-                    <property name="margin_bottom">6</property>
-                    <property name="label" translatable="yes">Display:</property>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">0</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkCheckButton" id="check_desktop_home">
-                    <property name="label" translatable="yes">Home Folder</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="receives_default">False</property>
-                    <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">Show a shortcut to &amp;quot;Home Folder&amp;quot; on the desktop</property>
-                    <property name="tooltip_text" translatable="yes">Show a shortcut to "Home Folder" on the desktop</property>
-                    <property name="margin_left">6</property>
-                    <property name="xalign">0</property>
-                    <property name="draw_indicator">True</property>
-                    <signal name="toggled" handler="on_check_desktop_home_toggled" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkCheckButton" id="check_desktop_networkserver">
-                    <property name="label" translatable="yes">Network</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="receives_default">False</property>
-                    <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">Show a shortcut to &amp;quot;Network&amp;quot; on the desktop</property>
-                    <property name="tooltip_text" translatable="yes">Show a shortcut to "Network" on the desktop</property>
-                    <property name="margin_left">6</property>
-                    <property name="xalign">0</property>
-                    <property name="draw_indicator">True</property>
-                    <signal name="toggled" handler="on_check_desktop_networkserver_toggled" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">2</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkCheckButton" id="check_desktop_trash">
-                    <property name="label" translatable="yes">Rubbish Bin</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="receives_default">False</property>
-                    <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">Show a shortcut to &amp;quot;Trash&amp;quot; on the desktop</property>
-                    <property name="tooltip_text" translatable="yes">Show a shortcut to "Trash" on the desktop</property>
-                    <property name="margin_left">6</property>
-                    <property name="xalign">0</property>
-                    <property name="draw_indicator">True</property>
-                    <signal name="toggled" handler="on_check_desktop_trash_toggled" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">3</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkCheckButton" id="check_desktop_devices">
-                    <property name="label" translatable="yes">Devices</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="receives_default">False</property>
-                    <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">Show a shortcut to &amp;quot;Devices&amp;quot; on the desktop</property>
-                    <property name="tooltip_text" translatable="yes">Show a shortcut to "Devices" on the desktop</property>
-                    <property name="margin_left">6</property>
-                    <property name="xalign">0</property>
-                    <property name="draw_indicator">True</property>
-                    <signal name="toggled" handler="on_check_desktop_devices_toggled" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">4</property>
-                  </packing>
-                </child>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">2</property>
               </packing>
             </child>
             <child>
@@ -186,7 +164,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">9</property>
+                <property name="position">11</property>
               </packing>
             </child>
           </object>

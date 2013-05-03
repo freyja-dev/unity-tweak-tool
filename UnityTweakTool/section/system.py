@@ -35,26 +35,12 @@ from UnityTweakTool.elements.switch import Switch
 from UnityTweakTool.elements.checkbox import CheckBox
 from UnityTweakTool.elements.cbox import ComboBox
 from UnityTweakTool.elements.radio import Radio
+from UnityTweakTool.elements.togglebutton import ToggleButton
 
 System=Section(ui='system.ui',id='nb_desktop_settings')
 
-switch_desktop_icons= Switch({
-    'id'        : 'switch_desktop_icons',
-    'builder'   : System.builder,
-    'schema'    : 'org.gnome.desktop.background',
-    'path'      : None,
-    'key'       : 'show-desktop-icons',
-    'type'      : 'boolean',
-    'map'       : {True:True,False:False},
-    'dependants': ['l_desktop_icons_display',
-                    'check_desktop_home',
-                    'check_desktop_networkserver',
-                    'check_desktop_trash',
-                    'check_desktop_devices']
-})
-
-check_desktop_home= CheckBox({
-    'id'        : 'check_desktop_home',
+tb_home_folder= ToggleButton({
+    'id'        : 'tb_home_folder',
     'builder'   : System.builder,
     'schema'    : 'org.gnome.nautilus.desktop',
     'path'      : None,
@@ -64,8 +50,8 @@ check_desktop_home= CheckBox({
     'dependants': []
 })
 
-check_desktop_networkserver= CheckBox({
-    'id'        : 'check_desktop_networkserver',
+tb_network= ToggleButton({
+    'id'        : 'tb_network',
     'builder'   : System.builder,
     'schema'    : 'org.gnome.nautilus.desktop',
     'path'      : None,
@@ -75,8 +61,8 @@ check_desktop_networkserver= CheckBox({
     'dependants': []
 })
 
-check_desktop_trash= CheckBox({
-    'id'        : 'check_desktop_trash',
+tb_trash= ToggleButton({
+    'id'        : 'tb_trash',
     'builder'   : System.builder,
     'schema'    : 'org.gnome.nautilus.desktop',
     'path'      : None,
@@ -86,8 +72,8 @@ check_desktop_trash= CheckBox({
     'dependants': []
 })
 
-check_desktop_devices= CheckBox({
-    'id'        : 'check_desktop_devices',
+tb_devices= ToggleButton({
+    'id'        : 'tb_devices',
     'builder'   : System.builder,
     'schema'    : 'org.gnome.nautilus.desktop',
     'path'      : None,
@@ -97,11 +83,10 @@ check_desktop_devices= CheckBox({
     'dependants': []
 })
 
-DesktopIcons=Tab([  switch_desktop_icons,
-                    check_desktop_home,
-                    check_desktop_networkserver,
-                    check_desktop_trash,
-                    check_desktop_devices])
+DesktopIcons=Tab([  tb_home_folder,
+                    tb_network,
+                    tb_trash,
+                    tb_devices])
 
 check_security_lock_screen= CheckBox({
     'id'        : 'check_security_lock_screen',
