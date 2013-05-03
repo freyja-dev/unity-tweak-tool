@@ -38,59 +38,60 @@
               </packing>
             </child>
             <child>
-              <object class="GtkGrid" id="grid_desktop_icons">
+              <object class="GtkButtonBox" id="buttonbox_desktop_icons">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="halign">start</property>
-                <property name="margin_left">6</property>
-                <property name="row_spacing">6</property>
-                <property name="column_spacing">6</property>
+                <property name="margin_top">6</property>
+                <property name="spacing">6</property>
+                <property name="layout_style">start</property>
                 <child>
                   <object class="GtkToggleButton" id="tb_home_folder">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
                     <property name="tooltip_markup" translatable="yes">Home Folder</property>
+                    <property name="tooltip_text" translatable="yes">Home Folder</property>
                     <property name="relief">none</property>
                     <signal name="toggled" handler="on_tb_home_folder_toggled" swapped="no"/>
                     <child>
-                      <object class="GtkImage" id="i_desktop-icon-home">
+                      <object class="GtkBox" id="box_home_folder">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="pixel_size">48</property>
-                        <property name="icon_name">user-home</property>
+                        <property name="orientation">vertical</property>
+                        <property name="spacing">6</property>
+                        <child>
+                          <object class="GtkImage" id="i_desktop_icon_home_folder">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="pixel_size">48</property>
+                            <property name="icon_name">user-home</property>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="l_desktop_icon_home_folder">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="label" translatable="yes">Home Folder</property>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
                       </object>
                     </child>
                   </object>
                   <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">0</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkToggleButton" id="tb_trash">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="receives_default">True</property>
-                    <property name="tooltip_markup" translatable="yes">Rubbish Bin</property>
-                    <property name="relief">none</property>
-                    <signal name="toggled" handler="on_tb_trash_toggled" swapped="no"/>
-                    <child>
-                      <object class="GtkImage" id="i_desktop-icon-trash">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="pixel_size">48</property>
-                        <property name="icon_name">user-trash</property>
-                      </object>
-                    </child>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">1</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">0</property>
                   </packing>
                 </child>
                 <child>
@@ -98,23 +99,99 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
                     <property name="tooltip_markup" translatable="yes">Network</property>
+                    <property name="tooltip_text" translatable="yes">Network</property>
                     <property name="relief">none</property>
                     <signal name="toggled" handler="on_tb_network_toggled" swapped="no"/>
                     <child>
-                      <object class="GtkImage" id="i_desktop-icon-network">
+                      <object class="GtkBox" id="box_network">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="pixel_size">48</property>
-                        <property name="icon_name">network-workgroup</property>
+                        <property name="orientation">vertical</property>
+                        <property name="spacing">6</property>
+                        <child>
+                          <object class="GtkImage" id="i_desktop_icon_network">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="pixel_size">48</property>
+                            <property name="icon_name">network-workgroup</property>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="l_desktop_icon_network">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="label" translatable="yes">Network</property>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
                       </object>
                     </child>
                   </object>
                   <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">0</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkToggleButton" id="tb_trash">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip_markup" translatable="yes">Rubbish Bin</property>
+                    <property name="tooltip_text" translatable="yes">Rubbish Bin</property>
+                    <property name="relief">none</property>
+                    <signal name="toggled" handler="on_tb_trash_toggled" swapped="no"/>
+                    <child>
+                      <object class="GtkBox" id="box_trash">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="orientation">vertical</property>
+                        <property name="spacing">6</property>
+                        <child>
+                          <object class="GtkImage" id="i_desktop_icon_trash">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="pixel_size">48</property>
+                            <property name="icon_name">user-trash</property>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="l_desktop_icon_trash">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="label" translatable="yes">Trash</property>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">2</property>
                   </packing>
                 </child>
                 <child>
@@ -122,22 +199,48 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
                     <property name="tooltip_markup" translatable="yes">Mounted Devices</property>
+                    <property name="tooltip_text" translatable="yes">Mounted Devices</property>
                     <property name="relief">none</property>
                     <child>
-                      <object class="GtkImage" id="i_desktop-icon-devices">
+                      <object class="GtkBox" id="box_devices">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="pixel_size">48</property>
-                        <property name="icon_name">drive-removable-media</property>
+                        <property name="orientation">vertical</property>
+                        <property name="spacing">6</property>
+                        <child>
+                          <object class="GtkImage" id="i_desktop_icon_devices">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="pixel_size">48</property>
+                            <property name="icon_name">drive-harddisk</property>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="l_desktop_icon_devices">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="label" translatable="yes">Devices</property>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
                       </object>
                     </child>
                   </object>
                   <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">1</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">3</property>
                   </packing>
                 </child>
               </object>
@@ -164,7 +267,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">11</property>
+                <property name="position">12</property>
               </packing>
             </child>
           </object>
