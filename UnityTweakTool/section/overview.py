@@ -30,35 +30,35 @@
 # this program; if not, see <https://www.gnu.org/licenses/gpl-3.0.txt>
 
 from UnityTweakTool.section.skeletonpage import Section,Tab,Gtk
-from UnityTweakTool.elements.toolbutton import OverviewToolButton
+from UnityTweakTool.elements.button import OverviewButton
 
 class Overview(Tab,Section):
     def __init__(self,notebook):
-        Section.__init__(self,ui='startpage.ui',id='box_startpage')
+        Section.__init__(self,ui='overview.ui',id='box_overview')
         self.sections={
-            1:{ 0:'tool_launcher',
-                1:'tool_dash',
-                2:'tool_panel',
-                3:'tool_unity_switcher',
-                4:'tool_unity_webapps',
-                5:'tool_additional'},
-            2:{ 0:'tool_general',
-                1:'tool_compiz_switcher',
-                2:'tool_windows_spread',
-                3:'tool_windows_snapping',
-                4:'tool_hotcorners',
-                5:'tool_wm_additional'},
-            3:{ 0:'tool_system',
-                1:'tool_icons',
-                2:'tool_cursors',
-                3:'tool_fonts',
-                4:'tool_window_controls'},
-            4:{ 0:'tool_desktop_icons',
-                1:'tool_desktop_security',
-                2:'tool_desktop_scrolling'}
+            1:{ 0:'b_unity-launcher',
+                1:'b_unity-search',
+                2:'b_unity-panel',
+                3:'b_unity-switcher',
+                4:'b_unity-webapps',
+                5:'b_unity-additional'},
+            2:{ 0:'b_wm-general',
+                1:'b_wm-workspaces',
+                2:'b_wm-window-spread',
+                3:'b_wm-window-snapping',
+                4:'b_wm-hotcorners',
+                5:'b_wm-additional'},
+            3:{ 0:'b_appearance-theme',
+                1:'b_appearance-icons',
+                2:'b_appearance-cursors',
+                3:'b_appearance-fonts',
+                4:'b_appearance-window-controls'},
+            4:{ 0:'b_system-desktop-icons',
+                1:'b_system-security',
+                2:'b_system-scrolling'}
         }
 
-        Tab.__init__(self,[OverviewToolButton(
+        Tab.__init__(self,[OverviewButton(
                             section=section,page=page,id=id,notebook=notebook)
                     for section,set in self.sections.items()
                         for page,id in set.items()
@@ -70,7 +70,7 @@ class Overview(Tab,Section):
  
         # Symbolic icons
         self.icons = Gtk.IconTheme.get_default()
-        self.style_context = self.builder.get_object('startpage_window').get_style_context()
+        self.style_context = self.builder.get_object('overview_window').get_style_context()
         self.style_context.connect('changed', self.on_style_context_change)
 
     def on_style_context_change(self, *args):
@@ -80,22 +80,22 @@ class Overview(Tab,Section):
         appearance_symbolic_icon = self.icons.lookup_icon('unity-tweak-tool-appearance-symbolic', 24, Gtk.IconLookupFlags.FORCE_SIZE)
         if appearance_symbolic_icon:
             appearance_symbolic_icon_pixbuf, was_sym = appearance_symbolic_icon.load_symbolic(self.symbolic_color, None, None, None)
-            self.builder.get_object('image_start_theme').set_from_pixbuf(appearance_symbolic_icon_pixbuf)
+            self.builder.get_object('i_appearance-title').set_from_pixbuf(appearance_symbolic_icon_pixbuf)
 
         unity_symbolic_icon = self.icons.lookup_icon('unity-tweak-tool-unity-symbolic', 24, Gtk.IconLookupFlags.FORCE_SIZE)
         if unity_symbolic_icon:
             unity_symbolic_icon_pixbuf, was_sym = unity_symbolic_icon.load_symbolic(self.symbolic_color, None, None, None)
-            self.builder.get_object('image_box_start_unity').set_from_pixbuf(unity_symbolic_icon_pixbuf)
+            self.builder.get_object('i_unity-title').set_from_pixbuf(unity_symbolic_icon_pixbuf)
 
         system_symbolic_icon = self.icons.lookup_icon('unity-tweak-tool-system-symbolic', 24, Gtk.IconLookupFlags.FORCE_SIZE)
         if system_symbolic_icon:
             system_symbolic_icon_pixbuf, was_sym = system_symbolic_icon.load_symbolic(self.symbolic_color, None, None, None)
-            self.builder.get_object('image_start_desktop').set_from_pixbuf(system_symbolic_icon_pixbuf)
+            self.builder.get_object('i_system-title').set_from_pixbuf(system_symbolic_icon_pixbuf)
 
         wm_symbolic_icon = self.icons.lookup_icon('unity-tweak-tool-wm-symbolic', 24, Gtk.IconLookupFlags.FORCE_SIZE)
         if wm_symbolic_icon:
             wm_symbolic_icon_pixbuf, was_sym = wm_symbolic_icon.load_symbolic(self.symbolic_color, None, None, None)
-            self.builder.get_object('image_box_start_compiz').set_from_pixbuf(wm_symbolic_icon_pixbuf)
+            self.builder.get_object('i_wm-title').set_from_pixbuf(wm_symbolic_icon_pixbuf)
      except Exception:
         pass
 # XXX : Temporary fix to prevent random attributeerrors.

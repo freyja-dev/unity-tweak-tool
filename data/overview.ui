@@ -1,0 +1,1290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <!-- interface-requires gtk+ 3.0 -->
+  <object class="GtkWindow" id="overview_window">
+    <property name="can_focus">False</property>
+    <child>
+      <object class="GtkBox" id="box_overview">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="valign">start</property>
+        <property name="margin_left">12</property>
+        <property name="margin_right">12</property>
+        <property name="margin_top">12</property>
+        <property name="margin_bottom">12</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">12</property>
+        <child>
+          <object class="GtkGrid" id="grid_unity-title">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkImage" id="i_unity-title">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="pixel_size">16</property>
+                <property name="icon_name">unity-tweak-tool-unity-symbolic</property>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="l_unity-title">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="margin_left">6</property>
+                <property name="label" translatable="yes">Unity</property>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButtonBox" id="buttonbox_unity">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="spacing">6</property>
+            <property name="homogeneous">True</property>
+            <property name="layout_style">start</property>
+            <child>
+              <object class="GtkButton" id="b_unity-launcher">
+                <property name="width_request">90</property>
+                <property name="height_request">90</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="receives_default">True</property>
+                <property name="relief">none</property>
+                <property name="image_position">top</property>
+                <property name="always_show_image">True</property>
+                <signal name="clicked" handler="on_b_unity-launcher_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkBox" id="box_b_unity-launcher">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="margin_bottom">6</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkImage" id="i_unity-launcher">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="pixbuf">media/48/unity-settings-launcher.svg</property>
+                        <property name="pixel_size">48</property>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="l_unity-launcher">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Launcher</property>
+                        <property name="justify">center</property>
+                        <property name="ellipsize">end</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b_unity-search">
+                <property name="width_request">90</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="receives_default">True</property>
+                <property name="relief">none</property>
+                <property name="image_position">top</property>
+                <property name="always_show_image">True</property>
+                <signal name="clicked" handler="on_b_unity-search_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkBox" id="box_b_unity-search">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="margin_bottom">6</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkImage" id="i_unity-search">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="pixbuf">media/48/unity-settings-dash.svg</property>
+                        <property name="pixel_size">48</property>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="l_unity-search">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Search</property>
+                        <property name="justify">center</property>
+                        <property name="ellipsize">end</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b_unity-panel">
+                <property name="width_request">90</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="receives_default">True</property>
+                <property name="relief">none</property>
+                <signal name="clicked" handler="on_b_unity-panel_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkBox" id="box_b_unity-panel">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="margin_bottom">6</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkImage" id="i_unity-panel">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="pixbuf">media/48/unity-settings-panel.svg</property>
+                        <property name="pixel_size">48</property>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="l_unity-panel">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Panel</property>
+                        <property name="justify">center</property>
+                        <property name="ellipsize">end</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b_unity-switcher">
+                <property name="width_request">90</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="receives_default">True</property>
+                <property name="relief">none</property>
+                <signal name="clicked" handler="on_b_unity-switcher_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkBox" id="box_b_unity-switcher">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="margin_bottom">6</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkImage" id="i_unity-switcher">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="pixbuf">media/48/unity-settings-switcher.svg</property>
+                        <property name="pixel_size">48</property>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="l_unity-switcher">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Switcher</property>
+                        <property name="justify">center</property>
+                        <property name="ellipsize">end</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b_unity-webapps">
+                <property name="width_request">90</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="receives_default">True</property>
+                <property name="relief">none</property>
+                <signal name="clicked" handler="on_b_unity-webapps_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkBox" id="box_b_unity-webapps">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="margin_bottom">6</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkImage" id="i_unity-webapps">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="pixbuf">media/48/unity-settings-webapps.svg</property>
+                        <property name="pixel_size">48</property>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="l_unity-webapps">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Web Apps</property>
+                        <property name="justify">center</property>
+                        <property name="ellipsize">end</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b_unity-additional">
+                <property name="width_request">90</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="receives_default">True</property>
+                <property name="relief">none</property>
+                <signal name="clicked" handler="on_b_unity-additional_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkBox" id="box_b_unity-additional">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="margin_bottom">6</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkImage" id="i_unity-additional">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="pixbuf">media/48/unity-settings-additional.svg</property>
+                        <property name="pixel_size">48</property>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="l_unity-additional">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Additional</property>
+                        <property name="justify">center</property>
+                        <property name="ellipsize">end</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">5</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSeparator" id="sep_unity-title">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkGrid" id="grid_wm-title">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkImage" id="i_wm-title">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="pixel_size">16</property>
+                <property name="icon_name">unity-tweak-tool-wm-symbolic</property>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="l_wm-title">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="margin_left">6</property>
+                <property name="label" translatable="yes">Window Manager</property>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButtonBox" id="buttonbox_wm">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="spacing">6</property>
+            <property name="homogeneous">True</property>
+            <property name="layout_style">start</property>
+            <child>
+              <object class="GtkButton" id="b_wm-general">
+                <property name="width_request">90</property>
+                <property name="height_request">90</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="receives_default">True</property>
+                <property name="relief">none</property>
+                <signal name="clicked" handler="on_b_wm-general_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkBox" id="box_b_wm-general">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="margin_bottom">6</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkImage" id="i_wm-general">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="pixbuf">media/48/wm-settings-general.svg</property>
+                        <property name="pixel_size">48</property>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="l_wm-general">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">General</property>
+                        <property name="justify">center</property>
+                        <property name="ellipsize">end</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b_wm-workspaces">
+                <property name="width_request">90</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="receives_default">True</property>
+                <property name="relief">none</property>
+                <signal name="clicked" handler="on_b_wm-workspaces_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkBox" id="box_b_wm-workspaces">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="margin_bottom">6</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkImage" id="i_wm-workspaces">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="pixbuf">media/48/wm-settings-workspaces.svg</property>
+                        <property name="pixel_size">48</property>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="l_wm-workspaces">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Workspace
+Settings</property>
+                        <property name="justify">center</property>
+                        <property name="ellipsize">end</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b_wm-window-spread">
+                <property name="width_request">90</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="receives_default">True</property>
+                <property name="relief">none</property>
+                <signal name="clicked" handler="on_b_wm-window-spread_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkBox" id="box_b_wm-window-spread">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="margin_bottom">6</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkImage" id="i_wm-window-spread">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="pixbuf">media/48/wm-settings-window-spread.svg</property>
+                        <property name="pixel_size">48</property>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="l_wm-window-spread">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Window
+Spread</property>
+                        <property name="justify">center</property>
+                        <property name="ellipsize">end</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b_wm-window-snapping">
+                <property name="width_request">90</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="receives_default">True</property>
+                <property name="relief">none</property>
+                <signal name="clicked" handler="on_b_wm-window-snapping_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkBox" id="box_b_wm-window-snapping">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="margin_bottom">6</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkImage" id="i_wm-window-snapping">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="pixbuf">media/48/wm-settings-window-snapping.svg</property>
+                        <property name="pixel_size">48</property>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="l_wm-window-snapping">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Window
+Snapping</property>
+                        <property name="justify">center</property>
+                        <property name="ellipsize">end</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b_wm-hotcorners">
+                <property name="width_request">90</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="receives_default">True</property>
+                <property name="relief">none</property>
+                <signal name="clicked" handler="on_b_wm-hotcorners_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkBox" id="box_b_wm-hotcorners">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="margin_bottom">6</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkImage" id="i_wm-hotcorners">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="pixbuf">media/48/wm-settings-hotcorners.svg</property>
+                        <property name="pixel_size">48</property>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="l_wm-hotcorners">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Hotcorners</property>
+                        <property name="justify">center</property>
+                        <property name="ellipsize">end</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b_wm-additional">
+                <property name="width_request">90</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="receives_default">True</property>
+                <property name="relief">none</property>
+                <signal name="clicked" handler="on_b_wm-additional_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkBox" id="box_b_wm-additional">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="margin_bottom">6</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkImage" id="i_wm-additional">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="pixbuf">media/48/wm-settings-additional.svg</property>
+                        <property name="pixel_size">48</property>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="l_wm-additional">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Additional</property>
+                        <property name="justify">center</property>
+                        <property name="ellipsize">end</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">5</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">4</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSeparator" id="sep_wm-title">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">5</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkGrid" id="grid_appearance-title">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkImage" id="i_appearance-title">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="pixel_size">16</property>
+                <property name="icon_name">unity-tweak-tool-appearance-symbolic</property>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="l_appearance-title">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="margin_left">6</property>
+                <property name="label" translatable="yes">Appearance</property>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">6</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButtonBox" id="buttonbox_appearance">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="spacing">6</property>
+            <property name="homogeneous">True</property>
+            <property name="layout_style">start</property>
+            <child>
+              <object class="GtkButton" id="b_appearance-theme">
+                <property name="width_request">90</property>
+                <property name="height_request">90</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="receives_default">True</property>
+                <property name="relief">none</property>
+                <signal name="clicked" handler="on_b_appearance-theme_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkBox" id="box_b_appearance-theme">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="margin_bottom">6</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkImage" id="i_appearance-theme">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="pixbuf">media/48/appearance-settings-theme.svg</property>
+                        <property name="pixel_size">48</property>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="l_appearance-theme">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Theme</property>
+                        <property name="justify">center</property>
+                        <property name="ellipsize">end</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b_appearance-icons">
+                <property name="width_request">90</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="receives_default">True</property>
+                <property name="relief">none</property>
+                <signal name="clicked" handler="on_b_appearance-icons_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkBox" id="box_b_appearance-icons">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="margin_bottom">6</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkImage" id="i_appearance-icons">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="pixbuf">media/48/appearance-settings-icons.svg</property>
+                        <property name="pixel_size">48</property>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="l_appearance-icons">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Icons</property>
+                        <property name="justify">center</property>
+                        <property name="ellipsize">end</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b_appearance-cursors">
+                <property name="width_request">90</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="receives_default">True</property>
+                <property name="relief">none</property>
+                <signal name="clicked" handler="on_b_appearance-cursors_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkBox" id="box_b_appearance-cursors">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="margin_bottom">6</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkImage" id="i_appearance-cursors">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="pixbuf">media/48/appearance-settings-cursors.svg</property>
+                        <property name="pixel_size">48</property>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="l_appearance-cursors">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Cursors</property>
+                        <property name="justify">center</property>
+                        <property name="ellipsize">end</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b_appearance-fonts">
+                <property name="width_request">90</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="receives_default">True</property>
+                <property name="relief">none</property>
+                <signal name="clicked" handler="on_b_appearance-fonts_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkBox" id="box_b_appearance-fonts">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="margin_bottom">6</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkImage" id="i_appearance-fonts">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="pixbuf">media/48/appearance-settings-fonts.svg</property>
+                        <property name="pixel_size">48</property>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="l_appearance-fonts">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Fonts</property>
+                        <property name="justify">center</property>
+                        <property name="ellipsize">end</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b_appearance-window-controls">
+                <property name="width_request">90</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="receives_default">True</property>
+                <property name="relief">none</property>
+                <signal name="clicked" handler="on_b_appearance-window-controls_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkBox" id="box_b_appearance-window-controls">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="margin_bottom">6</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkImage" id="i_appearance-window-controls">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="pixbuf">media/48/appearance-settings-window-controls.svg</property>
+                        <property name="pixel_size">48</property>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="l_appearance-window-controls">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Window
+Controls</property>
+                        <property name="justify">center</property>
+                        <property name="ellipsize">end</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">4</property>
+              </packing>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">7</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSeparator" id="sep_appearance-title">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">8</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkGrid" id="grid_system-title">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkImage" id="i_system-title">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="pixel_size">16</property>
+                <property name="icon_name">unity-tweak-tool-system-symbolic</property>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="l__system-title">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="margin_left">6</property>
+                <property name="label" translatable="yes">System</property>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">9</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButtonBox" id="buttonbox_system">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="spacing">6</property>
+            <property name="homogeneous">True</property>
+            <property name="layout_style">start</property>
+            <child>
+              <object class="GtkButton" id="b_system-desktop-icons">
+                <property name="width_request">90</property>
+                <property name="height_request">90</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="receives_default">True</property>
+                <property name="relief">none</property>
+                <signal name="clicked" handler="on_b_system-desktop-icons_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkBox" id="box_b_system-desktop-icons">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="margin_bottom">6</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkImage" id="i_system-desktop-icons">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="pixbuf">media/48/system-settings-desktop-icons.svg</property>
+                        <property name="pixel_size">48</property>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="l_system-desktop-icons">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Desktop
+Icons</property>
+                        <property name="justify">center</property>
+                        <property name="ellipsize">end</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b_system-security">
+                <property name="width_request">90</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="receives_default">True</property>
+                <property name="relief">none</property>
+                <signal name="clicked" handler="on_b_system-security_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkBox" id="box_b_system-security">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="margin_bottom">6</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkImage" id="i_system-security">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="pixbuf">media/48/system-settings-security.svg</property>
+                        <property name="pixel_size">48</property>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="l_system-security">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Security</property>
+                        <property name="justify">center</property>
+                        <property name="ellipsize">end</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="b_system-scrolling">
+                <property name="width_request">90</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="receives_default">True</property>
+                <property name="relief">none</property>
+                <signal name="clicked" handler="on_b_system-scrolling_clicked" swapped="no"/>
+                <child>
+                  <object class="GtkBox" id="box_b_system-scrolling">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="margin_bottom">6</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkImage" id="i_system-scrolling">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="pixbuf">media/48/system-settings-scrolling.svg</property>
+                        <property name="pixel_size">48</property>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="l_system-scrolling">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Scrolling</property>
+                        <property name="justify">center</property>
+                        <property name="ellipsize">end</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">10</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
