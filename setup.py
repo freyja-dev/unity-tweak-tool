@@ -37,7 +37,7 @@ from subprocess import call
 try:
     import DistUtilsExtra.auto
 except ImportError:
-    print >> sys.stderr, 'To build unity-tweak-tool you need https://launchpad.net/python-distutils-extra'
+    print >> sys.stderr, 'To build unity-tweak-tool you need python3-distutils-extra (https://launchpad.net/python-distutils-extra)'
     sys.exit(1)
 assert DistUtilsExtra.auto.__version__ >= '2.18', 'needs DistUtilsExtra.auto >= 2.18'
 
