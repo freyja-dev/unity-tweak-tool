@@ -4,7 +4,7 @@
   <object class="GtkAdjustment" id="adj_launcher_icon_size">
     <property name="lower">32</property>
     <property name="upper">64</property>
-    <property name="step_increment">1</property>
+    <property name="step_increment">2</property>
     <property name="page_increment">10</property>
   </object>
   <object class="GtkAdjustment" id="adj_launcher_transparency">
@@ -671,26 +671,6 @@
                 <property name="margin_top">6</property>
                 <property name="row_spacing">6</property>
                 <child>
-                  <object class="GtkSpinButton" id="spin_launcher_icon_size">
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">Select the size of the icons on the launcher</property>
-                    <property name="tooltip_text" translatable="yes">Select the size of the icons on the launcher</property>
-                    <property name="halign">start</property>
-                    <property name="invisible_char">•</property>
-                    <property name="invisible_char_set">True</property>
-                    <property name="adjustment">adj_launcher_icon_size</property>
-                    <signal name="value-changed" handler="on_spin_launcher_icon_size_value_changed" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="left_attach">3</property>
-                    <property name="top_attach">0</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
                   <object class="GtkLabel" id="l_icon_size">
                     <property name="width_request">150</property>
                     <property name="visible">True</property>
@@ -858,6 +838,26 @@
                   <packing>
                     <property name="left_attach">2</property>
                     <property name="top_attach">1</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkSpinButton" id="spin_launcher_icon_size">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip_markup" translatable="yes">Select the size of the icons on the launcher</property>
+                    <property name="tooltip_text" translatable="yes">Select the size of the icons on the launcher</property>
+                    <property name="halign">start</property>
+                    <property name="invisible_char">•</property>
+                    <property name="invisible_char_set">True</property>
+                    <property name="adjustment">adj_launcher_icon_size</property>
+                    <signal name="value-changed" handler="on_spin_launcher_icon_size_value_changed" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="left_attach">3</property>
+                    <property name="top_attach">0</property>
                     <property name="width">1</property>
                     <property name="height">1</property>
                   </packing>

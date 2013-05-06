@@ -13,7 +13,7 @@
         <property name="margin_top">12</property>
         <property name="margin_bottom">12</property>
         <property name="orientation">vertical</property>
-        <property name="spacing">12</property>
+        <property name="spacing">6</property>
         <child>
           <object class="GtkGrid" id="grid_unity-title">
             <property name="visible">True</property>
@@ -57,6 +57,7 @@
           <object class="GtkButtonBox" id="buttonbox_unity">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="margin_top">6</property>
             <property name="spacing">6</property>
             <property name="homogeneous">True</property>
             <property name="layout_style">start</property>
@@ -75,8 +76,9 @@
                   <object class="GtkBox" id="box_b_unity-launcher">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="margin_bottom">6</property>
+                    <property name="valign">start</property>
                     <property name="orientation">vertical</property>
+                    <property name="spacing">6</property>
                     <child>
                       <object class="GtkImage" id="i_unity-launcher">
                         <property name="visible">True</property>
@@ -127,8 +129,9 @@
                   <object class="GtkBox" id="box_b_unity-search">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="margin_bottom">6</property>
+                    <property name="valign">start</property>
                     <property name="orientation">vertical</property>
+                    <property name="spacing">6</property>
                     <child>
                       <object class="GtkImage" id="i_unity-search">
                         <property name="visible">True</property>
@@ -177,8 +180,9 @@
                   <object class="GtkBox" id="box_b_unity-panel">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="margin_bottom">6</property>
+                    <property name="valign">start</property>
                     <property name="orientation">vertical</property>
+                    <property name="spacing">6</property>
                     <child>
                       <object class="GtkImage" id="i_unity-panel">
                         <property name="visible">True</property>
@@ -227,8 +231,9 @@
                   <object class="GtkBox" id="box_b_unity-switcher">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="margin_bottom">6</property>
+                    <property name="valign">start</property>
                     <property name="orientation">vertical</property>
+                    <property name="spacing">6</property>
                     <child>
                       <object class="GtkImage" id="i_unity-switcher">
                         <property name="visible">True</property>
@@ -277,8 +282,9 @@
                   <object class="GtkBox" id="box_b_unity-webapps">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="margin_bottom">6</property>
+                    <property name="valign">start</property>
                     <property name="orientation">vertical</property>
+                    <property name="spacing">6</property>
                     <child>
                       <object class="GtkImage" id="i_unity-webapps">
                         <property name="visible">True</property>
@@ -327,8 +333,9 @@
                   <object class="GtkBox" id="box_b_unity-additional">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="margin_bottom">6</property>
+                    <property name="valign">start</property>
                     <property name="orientation">vertical</property>
+                    <property name="spacing">6</property>
                     <child>
                       <object class="GtkImage" id="i_unity-additional">
                         <property name="visible">True</property>
@@ -387,6 +394,7 @@
           <object class="GtkGrid" id="grid_wm-title">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="margin_top">6</property>
             <child>
               <object class="GtkImage" id="i_wm-title">
                 <property name="visible">True</property>
@@ -426,6 +434,7 @@
           <object class="GtkButtonBox" id="buttonbox_wm">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="margin_top">6</property>
             <property name="spacing">6</property>
             <property name="homogeneous">True</property>
             <property name="layout_style">start</property>
@@ -442,8 +451,9 @@
                   <object class="GtkBox" id="box_b_wm-general">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="margin_bottom">6</property>
+                    <property name="valign">start</property>
                     <property name="orientation">vertical</property>
+                    <property name="spacing">6</property>
                     <child>
                       <object class="GtkImage" id="i_wm-general">
                         <property name="visible">True</property>
@@ -492,8 +502,9 @@
                   <object class="GtkBox" id="box_b_wm-workspaces">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="margin_bottom">6</property>
+                    <property name="valign">start</property>
                     <property name="orientation">vertical</property>
+                    <property name="spacing">6</property>
                     <child>
                       <object class="GtkImage" id="i_wm-workspaces">
                         <property name="visible">True</property>
@@ -543,8 +554,9 @@ Settings</property>
                   <object class="GtkBox" id="box_b_wm-window-spread">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="margin_bottom">6</property>
+                    <property name="valign">start</property>
                     <property name="orientation">vertical</property>
+                    <property name="spacing">6</property>
                     <child>
                       <object class="GtkImage" id="i_wm-window-spread">
                         <property name="visible">True</property>
@@ -594,8 +606,9 @@ Spread</property>
                   <object class="GtkBox" id="box_b_wm-window-snapping">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="margin_bottom">6</property>
+                    <property name="valign">start</property>
                     <property name="orientation">vertical</property>
+                    <property name="spacing">6</property>
                     <child>
                       <object class="GtkImage" id="i_wm-window-snapping">
                         <property name="visible">True</property>
@@ -645,8 +658,9 @@ Snapping</property>
                   <object class="GtkBox" id="box_b_wm-hotcorners">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="margin_bottom">6</property>
+                    <property name="valign">start</property>
                     <property name="orientation">vertical</property>
+                    <property name="spacing">6</property>
                     <child>
                       <object class="GtkImage" id="i_wm-hotcorners">
                         <property name="visible">True</property>
@@ -695,8 +709,9 @@ Snapping</property>
                   <object class="GtkBox" id="box_b_wm-additional">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="margin_bottom">6</property>
+                    <property name="valign">start</property>
                     <property name="orientation">vertical</property>
+                    <property name="spacing">6</property>
                     <child>
                       <object class="GtkImage" id="i_wm-additional">
                         <property name="visible">True</property>
@@ -755,6 +770,7 @@ Snapping</property>
           <object class="GtkGrid" id="grid_appearance-title">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="margin_top">6</property>
             <child>
               <object class="GtkImage" id="i_appearance-title">
                 <property name="visible">True</property>
@@ -794,6 +810,7 @@ Snapping</property>
           <object class="GtkButtonBox" id="buttonbox_appearance">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="margin_top">6</property>
             <property name="spacing">6</property>
             <property name="homogeneous">True</property>
             <property name="layout_style">start</property>
@@ -810,8 +827,9 @@ Snapping</property>
                   <object class="GtkBox" id="box_b_appearance-theme">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="margin_bottom">6</property>
+                    <property name="valign">start</property>
                     <property name="orientation">vertical</property>
+                    <property name="spacing">6</property>
                     <child>
                       <object class="GtkImage" id="i_appearance-theme">
                         <property name="visible">True</property>
@@ -860,8 +878,9 @@ Snapping</property>
                   <object class="GtkBox" id="box_b_appearance-icons">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="margin_bottom">6</property>
+                    <property name="valign">start</property>
                     <property name="orientation">vertical</property>
+                    <property name="spacing">6</property>
                     <child>
                       <object class="GtkImage" id="i_appearance-icons">
                         <property name="visible">True</property>
@@ -910,8 +929,9 @@ Snapping</property>
                   <object class="GtkBox" id="box_b_appearance-cursors">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="margin_bottom">6</property>
+                    <property name="valign">start</property>
                     <property name="orientation">vertical</property>
+                    <property name="spacing">6</property>
                     <child>
                       <object class="GtkImage" id="i_appearance-cursors">
                         <property name="visible">True</property>
@@ -960,8 +980,9 @@ Snapping</property>
                   <object class="GtkBox" id="box_b_appearance-fonts">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="margin_bottom">6</property>
+                    <property name="valign">start</property>
                     <property name="orientation">vertical</property>
+                    <property name="spacing">6</property>
                     <child>
                       <object class="GtkImage" id="i_appearance-fonts">
                         <property name="visible">True</property>
@@ -1010,8 +1031,9 @@ Snapping</property>
                   <object class="GtkBox" id="box_b_appearance-window-controls">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="margin_bottom">6</property>
+                    <property name="valign">start</property>
                     <property name="orientation">vertical</property>
+                    <property name="spacing">6</property>
                     <child>
                       <object class="GtkImage" id="i_appearance-window-controls">
                         <property name="visible">True</property>
@@ -1074,6 +1096,7 @@ Controls</property>
           <object class="GtkGrid" id="grid_system-title">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="margin_top">6</property>
             <child>
               <object class="GtkImage" id="i_system-title">
                 <property name="visible">True</property>
@@ -1113,6 +1136,7 @@ Controls</property>
           <object class="GtkButtonBox" id="buttonbox_system">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="margin_top">6</property>
             <property name="spacing">6</property>
             <property name="homogeneous">True</property>
             <property name="layout_style">start</property>
@@ -1129,8 +1153,9 @@ Controls</property>
                   <object class="GtkBox" id="box_b_system-desktop-icons">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="margin_bottom">6</property>
+                    <property name="valign">start</property>
                     <property name="orientation">vertical</property>
+                    <property name="spacing">6</property>
                     <child>
                       <object class="GtkImage" id="i_system-desktop-icons">
                         <property name="visible">True</property>
@@ -1180,8 +1205,9 @@ Icons</property>
                   <object class="GtkBox" id="box_b_system-security">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="margin_bottom">6</property>
+                    <property name="valign">start</property>
                     <property name="orientation">vertical</property>
+                    <property name="spacing">6</property>
                     <child>
                       <object class="GtkImage" id="i_system-security">
                         <property name="visible">True</property>
@@ -1230,8 +1256,9 @@ Icons</property>
                   <object class="GtkBox" id="box_b_system-scrolling">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="margin_bottom">6</property>
+                    <property name="valign">start</property>
                     <property name="orientation">vertical</property>
+                    <property name="spacing">6</property>
                     <child>
                       <object class="GtkImage" id="i_system-scrolling">
                         <property name="visible">True</property>
