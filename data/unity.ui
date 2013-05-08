@@ -2110,30 +2110,12 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkCheckButton" id="check_minimizedwindows_switch">
-                            <property name="label" translatable="yes">Switch between minimized windows</property>
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="receives_default">False</property>
-                            <property name="tooltip_markup" translatable="yes">If enabled, the window switcher will switch through minimized windows</property>
-                            <property name="tooltip_text" translatable="yes">If enabled, the window switcher will switch through minimized windows</property>
-                            <property name="xalign">0</property>
-                            <property name="draw_indicator">True</property>
-                            <signal name="toggled" handler="on_check_minimizedwindows_switch_toggled" swapped="no"/>
-                          </object>
-                          <packing>
-                            <property name="left_attach">0</property>
-                            <property name="top_attach">2</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
-                        </child>
-                        <child>
                           <object class="GtkCheckButton" id="check_autoexposewindows">
                             <property name="label" translatable="yes">Automatically expose windows</property>
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="receives_default">False</property>
+                            <property name="has_tooltip">True</property>
                             <property name="tooltip_markup" translatable="yes">If enabled, the window switcher will expose minimized windows</property>
                             <property name="tooltip_text" translatable="yes">If enabled, the window switcher will expose minimized windows</property>
                             <property name="xalign">0</property>
@@ -2141,8 +2123,28 @@
                             <signal name="toggled" handler="on_check_autoexposewindows_toggled" swapped="no"/>
                           </object>
                           <packing>
-                            <property name="left_attach">0</property>
-                            <property name="top_attach">3</property>
+                            <property name="left_attach">1</property>
+                            <property name="top_attach">1</property>
+                            <property name="width">1</property>
+                            <property name="height">1</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkCheckButton" id="check_minimizedwindows_switch">
+                            <property name="label" translatable="yes">Switch between minimized windows</property>
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="receives_default">False</property>
+                            <property name="has_tooltip">True</property>
+                            <property name="tooltip_markup" translatable="yes">If enabled, the window switcher will switch through minimized windows</property>
+                            <property name="tooltip_text" translatable="yes">If enabled, the window switcher will switch through minimized windows</property>
+                            <property name="xalign">0</property>
+                            <property name="draw_indicator">True</property>
+                            <signal name="toggled" handler="on_check_minimizedwindows_switch_toggled" swapped="no"/>
+                          </object>
+                          <packing>
+                            <property name="left_attach">1</property>
+                            <property name="top_attach">0</property>
                             <property name="width">1</property>
                             <property name="height">1</property>
                           </packing>

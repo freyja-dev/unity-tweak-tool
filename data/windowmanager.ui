@@ -252,26 +252,6 @@
                     <property name="position">-1</property>
                   </packing>
                 </child>
-                <child>
-                  <object class="GtkCheckButton" id="check_synctovblank">
-                    <property name="label" translatable="yes">Update display during VBlank</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="receives_default">False</property>
-                    <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">When enabled, screen updates are performed when the monitor is in vertical blank mode.</property>
-                    <property name="tooltip_text" translatable="yes">When enabled, screen updates are performed when the monitor is in vertical blank mode.</property>
-                    <property name="halign">start</property>
-                    <property name="xalign">0</property>
-                    <property name="draw_indicator">True</property>
-                    <signal name="toggled" handler="on_check_synctovblank_toggled" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">1</property>
-                  </packing>
-                </child>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -591,6 +571,21 @@
                   </packing>
                 </child>
                 <child>
+                  <object class="GtkColorButton" id="color_desk_outline">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="receives_default">True</property>
+                    <property name="halign">start</property>
+                    <signal name="color-set" handler="on_color_desk_outline_color_set" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">3</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
                   <object class="GtkLabel" id="l_vertical_desktop">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
@@ -622,21 +617,6 @@
                   <packing>
                     <property name="left_attach">0</property>
                     <property name="top_attach">1</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkColorButton" id="color_desk_outline">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="receives_default">True</property>
-                    <property name="halign">start</property>
-                    <signal name="color-set" handler="on_color_desk_outline_color_set" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">3</property>
                     <property name="width">1</property>
                     <property name="height">1</property>
                   </packing>
@@ -1178,7 +1158,6 @@
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="halign">start</property>
-                    <property name="use_alpha">False</property>
                     <signal name="color-set" handler="on_color_outline_color_color_set" swapped="no"/>
                   </object>
                   <packing>
@@ -1485,7 +1464,6 @@
           <object class="GtkBox" id="box_compiz_hotcorners">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="halign">center</property>
             <property name="orientation">vertical</property>
             <child>
               <object class="GtkLabel" id="l_hotcorners_general">
@@ -1571,8 +1549,7 @@
               <object class="GtkGrid" id="grid_hotcorners">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="margin_left">18</property>
-                <property name="margin_right">18</property>
+                <property name="halign">center</property>
                 <property name="margin_top">6</property>
                 <property name="margin_bottom">6</property>
                 <child>
@@ -2203,7 +2180,6 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="receives_default">True</property>
-                    <property name="use_alpha">False</property>
                     <signal name="color-set" handler="on_colorbutton_resize_outline_color_set" swapped="no"/>
                   </object>
                   <packing>
@@ -2218,7 +2194,6 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="receives_default">True</property>
-                    <property name="use_alpha">False</property>
                     <signal name="color-set" handler="on_colorbutton_resize_fill_color_set" swapped="no"/>
                   </object>
                   <packing>

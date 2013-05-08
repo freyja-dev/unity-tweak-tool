@@ -254,7 +254,6 @@ class Compizsettings ():
         del model, zoom_in_key, iter_zoom_in_key, zoom_out_key, iter_zoom_out_key
 
         self.ui['cbox_opengl'].set_active(gsettings.opengl.get_int('texture-filter'))
-        self.ui['check_synctovblank'].set_active(gsettings.opengl.get_boolean('sync-to-vblank'))
 
         model = self.ui['list_compiz_general_keys_accelerators']
 
@@ -524,9 +523,6 @@ class Compizsettings ():
 
     def on_cbox_opengl_changed(self, widget, udata = None):
         gsettings.opengl.set_int('texture-filter', self.ui['cbox_opengl'].get_active())
-
-    def on_check_synctovblank_toggled(self, widget, udata = None):
-        gsettings.opengl.set_boolean('sync-to-vblank', self.ui['check_synctovblank'].get_active())
 
     def on_craccel_compiz_general_keys_accel_edited(self, craccel, path, key, mods, hwcode, model = None):
         model = self.ui['list_compiz_general_keys_accelerators']
