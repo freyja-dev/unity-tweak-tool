@@ -36,7 +36,7 @@ from UnityTweakTool.elements.cbox import ComboBox
 from UnityTweakTool.elements.spin import SpinButton
 from UnityTweakTool.elements.radio import Radio
 from UnityTweakTool.elements.checkbox import CheckBox
-from UnityTweakTool.section.sphagetti.theme import Themesettings as SphagettiThemeSettings
+from UnityTweakTool.section.spaghetti.theme import Themesettings as SpaghettiThemeSettings
 from UnityTweakTool.elements.option import Option,HandlerObject
 
 from collections import defaultdict
@@ -165,7 +165,7 @@ Appearance.add_page(Fonts)
 # XXX : Disabled since the implementation is inadequate
 # Appearance.add_page(WindowControls)
 
-themesettings=HandlerObject(SphagettiThemeSettings(Appearance.builder))
+themesettings=HandlerObject(SpaghettiThemeSettings(Appearance.builder))
 Appearance.add_page(themesettings)
 
 # After all pages are added, the section needs to be registered to start listening for events

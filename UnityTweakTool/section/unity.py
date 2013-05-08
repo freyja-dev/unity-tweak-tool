@@ -39,7 +39,7 @@ from UnityTweakTool.elements.scale import Scale
 from UnityTweakTool.elements.spin import SpinButton
 from UnityTweakTool.elements.switch import Switch
 
-from UnityTweakTool.section.sphagetti.unity import Unitysettings as SphagettiUnitySettings
+from UnityTweakTool.section.spaghetti.unity import Unitysettings as SpaghettiUnitySettings
 from UnityTweakTool.elements.option import Option,HandlerObject
 
 from UnityTweakTool.backends import gsettings
@@ -808,8 +808,8 @@ Unity.add_page(SwitcherIcons)
 Unity.add_page(WebappsIcons)
 Unity.add_page(AdditionalIcons)
 
-# XXX : Sphagetti bridge
-unitysettings=HandlerObject(SphagettiUnitySettings(Unity.builder))
+# XXX : Spaghetti bridge
+unitysettings=HandlerObject(SpaghettiUnitySettings(Unity.builder))
 Unity.add_page(unitysettings)
 # After all pages are added, the section needs to be registered to start listening for events
 Unity.register()
