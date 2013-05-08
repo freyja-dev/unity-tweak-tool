@@ -799,7 +799,7 @@
                 <property name="margin_left">12</property>
                 <property name="margin_top">6</property>
                 <property name="margin_bottom">6</property>
-                <property name="label" translatable="yes">Layout:</property>
+                <property name="label" translatable="yes">Layout</property>
                 <attributes>
                   <attribute name="weight" value="bold"/>
                 </attributes>
@@ -811,30 +811,10 @@
               </packing>
             </child>
             <child>
-              <object class="GtkRadioButton" id="radio_default_layout">
-                <property name="label" translatable="yes">Default</property>
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="receives_default">False</property>
-                <property name="tooltip_markup" translatable="yes">Use the default window button layout.</property>
-                <property name="tooltip_text" translatable="yes">Use the default window button layout.</property>
-                <property name="margin_left">18</property>
-                <property name="xalign">0</property>
-                <property name="active">True</property>
-                <property name="draw_indicator">True</property>
-                <signal name="toggled" handler="on_radio_default_layout_toggled" swapped="no"/>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">1</property>
-              </packing>
-            </child>
-            <child>
               <object class="GtkGrid" id="grid_window_controls_radio">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="margin_left">30</property>
+                <property name="margin_left">18</property>
                 <property name="column_spacing">6</property>
                 <child>
                   <object class="GtkRadioButton" id="radio_left">
@@ -897,60 +877,12 @@
               </packing>
             </child>
             <child>
-              <object class="GtkRadioButton" id="radio_custom_layout">
-                <property name="label" translatable="yes">Custom</property>
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="receives_default">False</property>
-                <property name="tooltip_markup" translatable="yes">Use a custom window button layout.</property>
-                <property name="tooltip_text" translatable="yes">Use a custom window button layout.</property>
-                <property name="margin_left">18</property>
-                <property name="margin_top">6</property>
-                <property name="xalign">0</property>
-                <property name="active">True</property>
-                <property name="draw_indicator">True</property>
-                <property name="group">radio_default_layout</property>
-                <signal name="toggled" handler="on_radio_custom_layout_toggled" swapped="no"/>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">3</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkComboBoxText" id="cbox_custom_layout">
-                <property name="visible">True</property>
-                <property name="sensitive">False</property>
-                <property name="can_focus">False</property>
-                <property name="tooltip_markup" translatable="yes">Select a custom window controls layout.</property>
-                <property name="tooltip_text" translatable="yes">Select a custom window controls layout.</property>
-                <property name="halign">start</property>
-                <property name="margin_left">30</property>
-                <property name="entry_text_column">0</property>
-                <property name="id_column">1</property>
-                <items>
-                  <item translatable="yes">Current layout</item>
-                  <item translatable="yes">Close button only</item>
-                  <item translatable="yes">Close, maximize, window title</item>
-                  <item translatable="yes">Close, minimize, window title</item>
-                  <item translatable="yes">Close, window title, maximize</item>
-                </items>
-                <signal name="changed" handler="on_cbox_custom_layout_changed" swapped="no"/>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">4</property>
-              </packing>
-            </child>
-            <child>
               <object class="GtkLabel" id="l_window_controls_pref">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
-                <property name="margin_top">12</property>
+                <property name="margin_top">6</property>
                 <property name="margin_bottom">6</property>
                 <property name="label" translatable="yes">Preferences</property>
                 <attributes>

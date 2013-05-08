@@ -35,6 +35,7 @@ from UnityTweakTool.elements.fontbutton import FontButton
 from UnityTweakTool.elements.cbox import ComboBox
 from UnityTweakTool.elements.spin import SpinButton
 from UnityTweakTool.elements.radio import Radio
+from UnityTweakTool.elements.checkbox import CheckBox
 from UnityTweakTool.section.sphagetti.theme import Themesettings as SphagettiThemeSettings
 from UnityTweakTool.elements.option import Option,HandlerObject
 
@@ -117,7 +118,7 @@ spin_textscaling=SpinButton({
     'max'    : 3.00
 })
 
-FontsIcons=Tab([font_default,
+Fonts=Tab([font_default,
                 font_document,
                 font_monospace,
                 font_window_title,
@@ -126,20 +127,6 @@ FontsIcons=Tab([font_default,
                 spin_textscaling])
 
 #========== WINDOW CONTROLS =====================
-
-radio_default_layout=Radio({
-    'id'        : 'radio_default_layout',
-    'builder'   : Appearance.builder,
-    'schema'    : 'org.gnome.desktop.wm.preferences',
-    'path'      : None,
-    'key'       : 'button-layout',
-    'type'      : 'string',
-    'group'     : 'radio_default_layout',
-    'value'     : 'close,minimize,maximize:' or ':minimize,maximize,close',
-    'dependants': ['radio_left',
-                   'radio_right',
-                   'l_alignment']
-})
 
 radio_left=Radio({
     'id'        : 'radio_left',
@@ -165,49 +152,18 @@ radio_right=Radio({
     'dependants': []
 })
 
-radio_custom_layout=Radio({
-    'id'        : 'radio_custom_layout',
-    'builder'   : Appearance.builder,
-    'schema'    : 'org.gnome.desktop.wm.preferences',
-    'path'      : None,
-    'key'       : 'button-layout',
-    'type'      : 'string',
-    'group'     : 'radio_default_layout',
-    'value'     : not 'close,minimize,maximize:' and not ':minimize,maximize,close',
-    'dependants': ['cbox_custom_layout']
-})
 
-cbox_custom_layout=ComboBox({
-    'id'      : 'cbox_custom_layout',
-    'builder' : Appearance.builder,
-    'schema'  : 'org.gnome.desktop.wm.preferences',
-    'path'    : None,
-    'key'     : 'button-layout',
-    'type'    : 'string',
-# This allows unknown keys to be mapped to zero.
-    'map'     : defaultdict( lambda : 0,
-                {'close,minimize,maximize:':0,
-                'close:':1,
-                'close,maximize:':2,
-                'close,minimize:':3,
-                'close:maximize':4})
-})
-
-
-WindowControlsIcons=Tab([radio_default_layout,
-                        radio_custom_layout,
-                        radio_left,
-                        radio_right,
-                        cbox_custom_layout])
+WindowControls=Tab([radio_left,
+                    radio_right])
 
 # Pass in the id of restore defaults button to enable it.
-FontsIcons.enable_restore('b_theme_font_reset')
-WindowControlsIcons.enable_restore('b_window_control_reset')
+Fonts.enable_restore('b_theme_font_reset')
+WindowControls.enable_restore('b_window_control_reset')
 
 # Each page must be added using add_page
-Appearance.add_page(FontsIcons)
+Appearance.add_page(Fonts)
 # XXX : Disabled since the implementation is inadequate
-# Appearance.add_page(WindowControlsIcons)
+# Appearance.add_page(WindowControls)
 
 themesettings=HandlerObject(SphagettiThemeSettings(Appearance.builder))
 Appearance.add_page(themesettings)

@@ -364,7 +364,7 @@ msgstr "Възстанови първоначалните настройки н�
 
 #: ../data/windowmanager.ui.h:44
 msgid "Workspace Settings"
-msgstr "Работни места"
+msgstr "Работни \n места"
 
 #: ../data/windowmanager.ui.h:45
 msgid "Enable the window spread?"
