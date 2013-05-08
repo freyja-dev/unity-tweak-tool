@@ -14,13 +14,13 @@
     <property name="website">https://launchpad.net/unity-tweak-tool</property>
     <property name="website_label" translatable="yes">Unity Tweak Tool on Launchpad</property>
     <property name="license" translatable="yes">GPL3</property>
-    <property name="authors">J Phani Mahesh &lt;phanimahesh@gmail.com&gt;
+    <property name="authors">Amith KK &lt;amithkumaran@gmail.com&gt;
+Angel Araya &lt;al.arayaq@gmail.com&gt; 
 Barneedhar (jokerdino) &lt;barneedhar@ubuntu.com&gt;
-Amith KK &lt;amithkumaran@gmail.com&gt;
-Georgi Karavasilev &lt;motorslav@gmail.com&gt;
-Sam Tran &lt;samvtran@gmail.com&gt;
-Sam Hewitt &lt;hewittsamuel@gmail.com&gt;
-Angel Araya &lt;al.arayaq@gmail.com&gt; </property>
+Georgi Karavasilev &lt;kokoto-java@ubuntu.com&gt;
+J Phani Mahesh &lt;phanimahesh@gmail.com&gt;
+Sam Hewitt &lt;snwh@ubuntu.com&gt;
+Sam Tran &lt;samvtran@gmail.com&gt;</property>
     <property name="documenters">Barneedhar (jokerdino) &lt;barneedhar@ubuntu.com&gt;</property>
     <property name="artists">Sam Hewitt &lt;hewittsamuel@gmail.com&gt;</property>
     <property name="logo">/usr/share/icons/hicolor/64x64/apps/unity-tweak-tool.png</property>
