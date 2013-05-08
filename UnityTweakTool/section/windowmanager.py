@@ -67,16 +67,6 @@ cbox_opengl=ComboBox({
     'map'       : {0:0,1:1,2:2}
 })
 
-check_synctovblank= CheckBox({
-    'id'        : 'check_synctovblank',
-    'builder'   : WindowManager.builder,
-    'schema'    : 'org.compiz.opengl',
-    'path'      : '/org/compiz/profiles/unity/plugins/opengl/',
-    'key'       : 'sync-to-vblank',
-    'type'      : 'boolean',
-    'map'       : {True:True,False:False},
-    'dependants': []
-})
 
 # TODO:
 # TypeError: unhashable type: 'list'
@@ -132,8 +122,7 @@ check_synctovblank= CheckBox({
 # cbox_unminimize_animation
 # list_compiz_general_keys_accelerators 
 
-GeneralIcons=Tab([cbox_opengl,
-				  check_synctovblank ]) #,
+GeneralIcons=Tab([cbox_opengl]) #,
 				  # cbox_minimize_animation,
 				  # cbox_unminimize_animation])
 
