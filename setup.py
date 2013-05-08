@@ -43,7 +43,7 @@ assert DistUtilsExtra.auto.__version__ >= '2.18', 'needs DistUtilsExtra.auto >= 
 
 def update_config_old(libdir, values = {}):
 
-    filename = os.path.join(libdir, 'UnityTweakTool/section/sphagetti/unitytweakconfig.py')
+    filename = os.path.join(libdir, 'UnityTweakTool/section/spaghetti/unitytweakconfig.py')
     oldvalues = {}
     try:
         fin = open(filename, 'r')
