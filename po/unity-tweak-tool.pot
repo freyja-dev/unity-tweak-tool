@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-04 15:31-0400\n"
+"POT-Creation-Date: 2013-05-07 20:58-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,439 +17,225 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../data/filechooser-theme.ui.h:1
-msgid "Choose a Theme file to install"
-msgstr ""
-
-#: ../data/filechooser-theme.ui.h:2
-msgid "Install Theme"
-msgstr ""
-
-#. ! /usr/bin/env python3
-#: ../data/appearance.ui.h:1
-msgid "Available themes"
-msgstr ""
-
-#: ../data/appearance.ui.h:2
-msgid "List of GTK Themes"
-msgstr ""
-
-#: ../data/appearance.ui.h:3
-msgid "GTK Theme"
-msgstr ""
-
-#: ../data/appearance.ui.h:4
-msgid "List of Window decoration themes"
-msgstr ""
-
-#: ../data/appearance.ui.h:5
-msgid "Window decoration theme"
-msgstr ""
-
-#: ../data/appearance.ui.h:6 ../data/system.ui.h:8 ../data/unity.ui.h:85
-#: ../data/windowmanager.ui.h:30
-msgid "Restore defaults"
-msgstr ""
-
-#: ../data/appearance.ui.h:7
-msgid "Restore system's default theme configurations"
-msgstr ""
-
-#: ../data/appearance.ui.h:8 ../data/overview.ui.h:18
-#: ../data/unitytweak.ui.h:17
-msgid "Theme"
-msgstr ""
-
-#: ../data/appearance.ui.h:9
-msgid "List of icon themes"
-msgstr ""
-
-#: ../data/appearance.ui.h:10
-msgid "Icon theme"
-msgstr ""
-
-#: ../data/appearance.ui.h:11
-msgid "Restore system's default icon theme configurations"
-msgstr ""
-
-#: ../data/appearance.ui.h:12 ../data/overview.ui.h:19 ../data/unity.ui.h:66
-#: ../data/unitytweak.ui.h:18
-msgid "Icons"
-msgstr ""
-
-#: ../data/appearance.ui.h:13
-msgid "List of cursor themes"
-msgstr ""
-
-#: ../data/appearance.ui.h:14
-msgid "Cursor Theme"
-msgstr ""
-
-#: ../data/appearance.ui.h:15
-msgid "Preferences"
-msgstr ""
-
-#: ../data/appearance.ui.h:16
-msgid "Use large cursors"
-msgstr ""
-
-#: ../data/appearance.ui.h:17
-msgid "If enabled, the system will use a larger cursor."
-msgstr ""
-
-#: ../data/appearance.ui.h:18
-msgid "Restore system's default cursor theme configurations"
-msgstr ""
-
-#: ../data/appearance.ui.h:19 ../data/unitytweak.ui.h:19
-msgid "Cursor"
-msgstr ""
-
-#: ../data/appearance.ui.h:20 ../data/overview.ui.h:9 ../data/unity.ui.h:88
-#: ../data/unitytweak.ui.h:11 ../data/windowmanager.ui.h:32
-msgid "General"
-msgstr ""
-
-#: ../data/appearance.ui.h:21
-msgid "Select the default font for all applications."
-msgstr ""
-
-#: ../data/appearance.ui.h:22
-msgid "Default font:"
-msgstr ""
-
-#: ../data/appearance.ui.h:23
-msgid "Select the default font used for reading documents."
-msgstr ""
-
-#: ../data/appearance.ui.h:24
-msgid "Document font:"
-msgstr ""
-
-#: ../data/appearance.ui.h:25
-msgid "Select the default monospace font."
-msgstr ""
-
-#: ../data/appearance.ui.h:26
-msgid "Monospace font:"
-msgstr ""
-
-#: ../data/appearance.ui.h:27
-msgid "Select the default font for the window titlebar."
-msgstr ""
-
-#: ../data/appearance.ui.h:28
-msgid "Window title font:"
-msgstr ""
-
-#: ../data/appearance.ui.h:29 ../data/overview.ui.h:17 ../data/unity.ui.h:49
-#: ../data/unitytweak.ui.h:16
-msgid "Appearance"
-msgstr ""
-
-#: ../data/appearance.ui.h:30
-msgid "Select the type of antialiasing used to render fonts."
-msgstr ""
-
-#: ../data/appearance.ui.h:31
-msgid "Antialiasing:"
-msgstr ""
-
-#: ../data/appearance.ui.h:32 ../data/windowmanager.ui.h:17
-msgid "None"
-msgstr ""
-
-#: ../data/appearance.ui.h:33
-msgid "Grayscale"
-msgstr ""
-
-#: ../data/appearance.ui.h:34
-msgid "RGBA"
-msgstr ""
-
-#: ../data/appearance.ui.h:35
-msgid "Select the type of hinting to use when rendering fonts"
-msgstr ""
-
-#: ../data/appearance.ui.h:36
-msgid "Slight"
-msgstr ""
-
-#: ../data/appearance.ui.h:37
-msgid "Medium"
-msgstr ""
-
-#: ../data/appearance.ui.h:38
-msgid "Full"
-msgstr ""
-
-#: ../data/appearance.ui.h:39
-msgid "Hinting:"
-msgstr ""
-
-#: ../data/appearance.ui.h:40
-msgid ""
-"Select the factor used to enlarge or reduce text display, without changing "
-"font size."
-msgstr ""
-
-#: ../data/appearance.ui.h:41
-msgid "Text scaling factor:"
-msgstr ""
-
-#: ../data/appearance.ui.h:42
-msgid "Restore system's default font configurations"
-msgstr ""
-
-#: ../data/appearance.ui.h:43 ../data/overview.ui.h:21
-#: ../data/unitytweak.ui.h:20
-msgid "Fonts"
-msgstr ""
-
-#: ../data/appearance.ui.h:44
-msgid "Layout:"
-msgstr ""
-
-#: ../data/appearance.ui.h:45 ../data/system.ui.h:26
-msgid "Default"
-msgstr ""
-
-#: ../data/appearance.ui.h:46
-msgid "Use the default window button layout."
-msgstr ""
-
-#: ../data/appearance.ui.h:47
-msgid "Left"
-msgstr ""
-
-#: ../data/appearance.ui.h:48
-msgid "Align the window controls to the left side of the window."
-msgstr ""
-
-#: ../data/appearance.ui.h:49
-msgid "Right"
-msgstr ""
-
-#: ../data/appearance.ui.h:50
-msgid "Align the window controls to the right side of the window."
-msgstr ""
-
-#: ../data/appearance.ui.h:51
-msgid "Alignment:"
-msgstr ""
-
-#: ../data/appearance.ui.h:52
-msgid "Custom"
-msgstr ""
-
-#: ../data/appearance.ui.h:53
-msgid "Use a custom window button layout."
-msgstr ""
-
-#: ../data/appearance.ui.h:54
-msgid "Select a custom window controls layout."
-msgstr ""
-
-#: ../data/appearance.ui.h:55
-msgid "Current layout"
-msgstr ""
-
-#: ../data/appearance.ui.h:56
-msgid "Close button only"
-msgstr ""
-
-#: ../data/appearance.ui.h:57
-msgid "Close, maximize, window title"
-msgstr ""
-
-#: ../data/appearance.ui.h:58
-msgid "Close, minimize, window title"
-msgstr ""
-
-#: ../data/appearance.ui.h:59
-msgid "Close, window title, maximize"
-msgstr ""
-
-#: ../data/appearance.ui.h:60
-msgid "Show menu button"
-msgstr ""
-
-#: ../data/appearance.ui.h:61
-msgid "If enabled, show the window menu in the titlebar."
-msgstr ""
-
-#: ../data/appearance.ui.h:62
-msgid "Restore Defaults"
-msgstr ""
-
-#: ../data/appearance.ui.h:63
-msgid "Restore default window controls settings."
-msgstr ""
-
-#: ../data/appearance.ui.h:64
-msgid "Window Controls"
-msgstr ""
-
-#: ../data/system.ui.h:1
-msgid "Items to display:"
-msgstr ""
-
-#: ../data/system.ui.h:2
-msgid "Home Folder"
-msgstr ""
-
-#: ../data/system.ui.h:3
-msgid "Network"
-msgstr ""
-
-#: ../data/system.ui.h:4
-msgid "Rubbish Bin"
-msgstr ""
-
-#: ../data/system.ui.h:5
-msgid "Trash"
-msgstr ""
-
-#: ../data/system.ui.h:6
-msgid "Mounted Devices"
-msgstr ""
-
-#: ../data/system.ui.h:7
-msgid "Devices"
-msgstr ""
-
-#: ../data/system.ui.h:9
-msgid "Restore the default configurations for Desktop icons"
-msgstr ""
-
-#: ../data/system.ui.h:10 ../data/unitytweak.ui.h:23
-msgid "Desktop Icons"
-msgstr ""
-
-#: ../data/system.ui.h:11
-msgid "Enhance system security by disabling:"
-msgstr ""
-
-#: ../data/system.ui.h:12
-msgid "Desktop lock"
-msgstr ""
-
-#: ../data/system.ui.h:13
-msgid "Disable the desktop lock screen."
-msgstr ""
-
-#: ../data/system.ui.h:14
-msgid "User log out"
-msgstr ""
-
-#: ../data/system.ui.h:15
-msgid "Disable session log out."
-msgstr ""
-
-#: ../data/system.ui.h:16
-msgid "User switching"
-msgstr ""
-
-#: ../data/system.ui.h:17
-msgid "Disable fast user switching."
-msgstr ""
-
-#: ../data/system.ui.h:18
-msgid "Printing"
-msgstr ""
-
-#: ../data/system.ui.h:19
-msgid "Prevent user access to the system's printers and print setup."
-msgstr ""
-
-#: ../data/system.ui.h:20
-msgid "Restore the default configurations for Security settings"
-msgstr ""
-
-#: ../data/system.ui.h:21 ../data/overview.ui.h:27 ../data/unitytweak.ui.h:24
-msgid "Security"
-msgstr ""
-
-#: ../data/system.ui.h:22
-msgid "Scrollbars"
-msgstr ""
-
-#: ../data/system.ui.h:23
-msgid "Legacy"
-msgstr ""
-
-#: ../data/system.ui.h:24
-msgid "Overlay "
-msgstr ""
-
-#: ../data/system.ui.h:25
-msgid "Select the behaviour of the overlay scrollbars."
-msgstr ""
-
-#: ../data/system.ui.h:27
-msgid "Overlay with mouse"
-msgstr ""
-
-#: ../data/system.ui.h:28
-msgid "No overlay"
-msgstr ""
-
-#: ../data/system.ui.h:29
-msgid "Behaviour:"
-msgstr ""
-
-#: ../data/system.ui.h:30
-msgid "Edge"
-msgstr ""
-
-#: ../data/system.ui.h:31
-msgid "If enabled, edge scrolling is active on touchpads."
-msgstr ""
-
-#: ../data/system.ui.h:32
-msgid "Two-finger"
-msgstr ""
-
-#: ../data/system.ui.h:33
-msgid "If enabled, two-finger scrolling is active on multitouch touchpads."
-msgstr ""
-
-#: ../data/system.ui.h:34
-msgid "Touch scrolling"
-msgstr ""
-
-#: ../data/system.ui.h:35
-msgid "Horizontal scrolling"
-msgstr ""
-
-#: ../data/system.ui.h:36 ../data/overview.ui.h:28 ../data/unitytweak.ui.h:25
-msgid "Scrolling"
-msgstr ""
-
-#. ! /usr/bin/env python3
-#: ../unity-tweak-tool.desktop.in.h:1 ../data/unitytweak.ui.h:1
-msgid "Unity Tweak Tool"
-msgstr ""
-
-#: ../unity-tweak-tool.desktop.in.h:2
-msgid "Configuration frontend for the Unity desktop environment"
-msgstr ""
-
 #: ../data/about.ui.h:1
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/about.ui.h:1
 msgid "Copyright © 2013 Freyja Development team"
 msgstr ""
 
 #: ../data/about.ui.h:2
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/about.ui.h:2
 msgid ""
 "Unity Tweak Tool is a settings manager intended to be used with Ubuntu Unity."
 msgstr ""
 
 #: ../data/about.ui.h:3
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/about.ui.h:3
 msgid "Unity Tweak Tool on Launchpad"
 msgstr ""
 
 #: ../data/about.ui.h:4
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/about.ui.h:4
 msgid "GPL3"
+msgstr ""
+
+#. XXX : Temporary fix to prevent random attributeerrors.
+#: ../data/unitytweak.ui.h:1
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unitytweak.ui.h:1
+#: ../unity-tweak-tool.desktop.in.h:1
+msgid "Unity Tweak Tool"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:2
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unitytweak.ui.h:2
+msgid "_File"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:3
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/overview.ui.h:1
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unitytweak.ui.h:3
+#: ../data/overview.ui.h:1
+msgid "Unity"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:4
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:87
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/overview.ui.h:2
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unitytweak.ui.h:4
+#: ../data/unity.ui.h:87 ../data/overview.ui.h:2
+msgid "Launcher"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:5
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:111
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/overview.ui.h:3
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unitytweak.ui.h:5
+#: ../data/unity.ui.h:111 ../data/overview.ui.h:3
+msgid "Search"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:6
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:156
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/overview.ui.h:4
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unitytweak.ui.h:6
+#: ../data/unity.ui.h:156 ../data/overview.ui.h:4
+msgid "Panel"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:7
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:172
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/overview.ui.h:5
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unitytweak.ui.h:7
+#: ../data/unity.ui.h:172 ../data/overview.ui.h:5
+msgid "Switcher"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:8
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:179
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/overview.ui.h:6
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unitytweak.ui.h:8
+#: ../data/unity.ui.h:179 ../data/overview.ui.h:6
+msgid "Web Apps"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:9
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:193
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/overview.ui.h:7
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unitytweak.ui.h:9
+#: ../data/unity.ui.h:193
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:92
+#: ../data/windowmanager.ui.h:90 ../data/overview.ui.h:7
+msgid "Additional"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:10
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/overview.ui.h:8
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unitytweak.ui.h:10
+#: ../data/overview.ui.h:8
+msgid "Window Manager"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:11
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:88
+#: ../data/appearance.ui.h:20
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/overview.ui.h:9
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unitytweak.ui.h:11
+#: ../data/unity.ui.h:88
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:32
+#: ../data/windowmanager.ui.h:30 ../data/overview.ui.h:9
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:20
+msgid "General"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:12
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unitytweak.ui.h:12
+msgid "Workspace settings"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:13
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unitytweak.ui.h:13
+msgid "Windows spread"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:14
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unitytweak.ui.h:14
+msgid "Windows snapping"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:15
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/overview.ui.h:16
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unitytweak.ui.h:15
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:63
+#: ../data/windowmanager.ui.h:61 ../data/overview.ui.h:16
+msgid "Hotcorners"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:16
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:49
+#: ../data/appearance.ui.h:29
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/overview.ui.h:17
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unitytweak.ui.h:16
+#: ../data/unity.ui.h:49 ../data/overview.ui.h:17
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:29
+msgid "Appearance"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:17 ../data/appearance.ui.h:8
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/overview.ui.h:18
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unitytweak.ui.h:17
+#: ../data/overview.ui.h:18
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:8
+msgid "Theme"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:18
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:66
+#: ../data/appearance.ui.h:12
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/overview.ui.h:19
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unitytweak.ui.h:18
+#: ../data/unity.ui.h:66 ../data/overview.ui.h:19
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:12
+msgid "Icons"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:19 ../data/appearance.ui.h:19
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unitytweak.ui.h:19
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:19
+msgid "Cursor"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:20 ../data/appearance.ui.h:43
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/overview.ui.h:21
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unitytweak.ui.h:20
+#: ../data/overview.ui.h:21
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:43
+msgid "Fonts"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:21
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unitytweak.ui.h:21
+msgid "Window controls"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:22
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/overview.ui.h:24
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unitytweak.ui.h:22
+#: ../data/overview.ui.h:24
+msgid "System"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:23
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unitytweak.ui.h:23
+#: ../data/system.ui.h:10
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:10
+msgid "Desktop Icons"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:24
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/overview.ui.h:27
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unitytweak.ui.h:24
+#: ../data/system.ui.h:21
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:21
+#: ../data/overview.ui.h:27
+msgid "Security"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:25
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/overview.ui.h:28
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unitytweak.ui.h:25
+#: ../data/system.ui.h:36
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:36
+#: ../data/overview.ui.h:28
+msgid "Scrolling"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:26
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unitytweak.ui.h:26
+msgid "_Help"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:27
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unitytweak.ui.h:27
+msgid " Overview"
 msgstr ""
 
 #. !/usr/bin/env python3
@@ -483,102 +269,982 @@ msgstr ""
 #. You should have received a copy of the GNU General Public License along with
 #. this program; if not, see <https://www.gnu.org/licenses/gpl-3.0.txt>
 #. Any Unity One Sync settings should appear here.
-#: ../data/overview.ui.h:1 ../data/unitytweak.ui.h:3
-msgid "Unity"
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:1
+#: ../data/unity.ui.h:1
+msgid "Invoke HUD"
 msgstr ""
 
-#: ../data/overview.ui.h:2 ../data/unity.ui.h:87 ../data/unitytweak.ui.h:4
-msgid "Launcher"
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:2
+#: ../data/unity.ui.h:2
+msgid "Super+H"
 msgstr ""
 
-#: ../data/overview.ui.h:3 ../data/unity.ui.h:111 ../data/unitytweak.ui.h:5
-msgid "Search"
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:3
+#: ../data/unity.ui.h:3
+msgid "Show the launcher"
 msgstr ""
 
-#: ../data/overview.ui.h:4 ../data/unity.ui.h:156 ../data/unitytweak.ui.h:6
-msgid "Panel"
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:4
+#: ../data/unity.ui.h:4
+msgid "Super+E"
 msgstr ""
 
-#: ../data/overview.ui.h:5 ../data/unity.ui.h:172 ../data/unitytweak.ui.h:7
-msgid "Switcher"
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:5
+#: ../data/unity.ui.h:5
+msgid "Execute command"
 msgstr ""
 
-#: ../data/overview.ui.h:6 ../data/unity.ui.h:179 ../data/unitytweak.ui.h:8
-msgid "Web Apps"
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:6
+#: ../data/unity.ui.h:6
+msgid "Super+M"
 msgstr ""
 
-#: ../data/overview.ui.h:7 ../data/unity.ui.h:193 ../data/unitytweak.ui.h:9
-#: ../data/windowmanager.ui.h:92
-msgid "Additional"
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:7
+#: ../data/unity.ui.h:7
+msgid "Put keyboard focus on the launcher"
 msgstr ""
 
-#: ../data/overview.ui.h:8 ../data/unitytweak.ui.h:10
-msgid "Window Manager"
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:8
+#: ../data/unity.ui.h:8
+msgid "Super+A"
 msgstr ""
 
-#: ../data/overview.ui.h:10
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:9
+#: ../data/unity.ui.h:9
+msgid "Open the first panel menu"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:10
+#: ../data/unity.ui.h:10
+msgid "Super+N"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:11
+#: ../data/unity.ui.h:11
+msgid "Start switcher"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:12
+#: ../data/unity.ui.h:12
+msgid "Super+Tab"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:13
+#: ../data/unity.ui.h:13
+msgid "Start switcher in reverse"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:14
+#: ../data/unity.ui.h:14
+msgid "Shift+Super+Tab"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:15
+#: ../data/unity.ui.h:15
+msgid "Alt+Tab"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:16
+#: ../data/unity.ui.h:16
+msgid "Shift+Alt+Tab"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:17
+#: ../data/unity.ui.h:17
+msgid "Start switcher for all workspaces"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:18
+#: ../data/unity.ui.h:18
+msgid "Ctrl+Super+Alt+Tab"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:19
+#: ../data/unity.ui.h:19
+msgid "Start switcher for all workspaces in reverse"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:20
+#: ../data/unity.ui.h:20
+msgid "Shift+Ctrl+Super+Alt+Tab"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:21
+#: ../data/unity.ui.h:21
+msgid "Go right in the switcher"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:22
+#: ../data/unity.ui.h:22
+msgid "Alt+Right"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:23
+#: ../data/unity.ui.h:23
+msgid "Go left in the switcher"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:24
+#: ../data/unity.ui.h:24
+msgid "Alt+Left"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:25
+#: ../data/unity.ui.h:25
+msgid "Expose windows in the switcher"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:26
+#: ../data/unity.ui.h:26
+msgid "Alt+Down"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:27
+#: ../data/unity.ui.h:27
+msgid "Collapse windows in the switcher"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:28
+#: ../data/unity.ui.h:28
+msgid "Alt+Up"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:29
+#: ../data/unity.ui.h:29
+msgid "Flip through windows in the switcher"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:30
+#: ../data/unity.ui.h:30
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:106
+#: ../data/windowmanager.ui.h:104
+msgid "Disabled"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:31
+#: ../data/unity.ui.h:31
+msgid "Flip through windows in the switcher backwards"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:32
+#: ../data/unity.ui.h:32
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:60
+#: ../data/windowmanager.ui.h:58
+msgid "Behaviour"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:33
+#: ../data/unity.ui.h:33
+msgid "Should the launcher be hidden?"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:34
+#: ../data/unity.ui.h:34
+msgid "Auto-hide:"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:35
+#: ../data/unity.ui.h:35
+msgid "Select the auto-hide animation of the launcher."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:36
+#: ../data/unity.ui.h:36
+msgid "Fade Dash & Slide"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:37
+#: ../data/unity.ui.h:37
+msgid "Slide only"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:38
+#: ../data/unity.ui.h:38
+msgid "Fade only"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:39
+#: ../data/unity.ui.h:39
+msgid "Fade & slide"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:40
+#: ../data/unity.ui.h:40
+msgid "Auto-hide animation:"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:41
+#: ../data/unity.ui.h:41
 msgid ""
-"Workspace\n"
-"Settings"
+"Select the option to reveal the dash with the mouse, when auto-hide is "
+"enabled."
 msgstr ""
 
-#: ../data/overview.ui.h:12
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:42
+#: ../data/unity.ui.h:42
+msgid "Reveal location:"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:43
+#: ../data/unity.ui.h:43
+msgid "Reveal sensitivity:"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:44
+#: ../data/unity.ui.h:44
+msgid "How much pointer \"pressure\" is required to reveal the launcher."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:45
+#: ../data/unity.ui.h:45
+msgid "Left side"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:46
+#: ../data/unity.ui.h:46
 msgid ""
-"Window\n"
-"Spread"
+"When in auto-hide mode the left edge of the current workspace triggers the "
+"launcher."
 msgstr ""
 
-#: ../data/overview.ui.h:14
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:47
+#: ../data/unity.ui.h:47
+msgid "Top left corner"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:48
+#: ../data/unity.ui.h:48
 msgid ""
-"Window\n"
-"Snapping"
+"When in auto-hide mode the top left corner of the current workspace triggers "
+"the launcher."
 msgstr ""
 
-#: ../data/overview.ui.h:16 ../data/unitytweak.ui.h:15
-#: ../data/windowmanager.ui.h:63
-msgid "Hotcorners"
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:50
+#: ../data/unity.ui.h:50
+msgid "Transparency:"
 msgstr ""
 
-#: ../data/overview.ui.h:20
-msgid "Cursors"
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:51
+#: ../data/unity.ui.h:51
+msgid "Enable launcher transparency?"
 msgstr ""
 
-#: ../data/overview.ui.h:22
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:52
+#: ../data/unity.ui.h:52
+msgid "Select the level of the transparency of the launcher"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:53
+#: ../data/unity.ui.h:53
+msgid "Transparency level:"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:54
+#: ../data/unity.ui.h:54
+msgid "How transparent the launcher will be."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:55
+#: ../data/unity.ui.h:55
+msgid "Based on wallpaper"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:56
+#: ../data/unity.ui.h:56
+msgid "If selected, the launcher colour is based on the desktop background"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:57
+#: ../data/unity.ui.h:57
+msgid "Colour:"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:58
+#: ../data/unity.ui.h:58
+msgid "Visibility:"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:59
+#: ../data/unity.ui.h:59
+msgid "Custom:"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:60
+#: ../data/unity.ui.h:60
+msgid "If selected, the launcher will be the colour chosen by the user"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:61
+#: ../data/unity.ui.h:61
+msgid "All desktops"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:62
+#: ../data/unity.ui.h:62
+msgid "If selected, the launcher is visible on all desktops."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:63
+#: ../data/unity.ui.h:63
+msgid "If selected, the launcher is visible on all desktops"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:64
+#: ../data/unity.ui.h:64
+msgid "Primary desktop"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:65
+#: ../data/unity.ui.h:65
+msgid "If selected, the launcher is visible on the primary desktop"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:67
+#: ../data/unity.ui.h:84
+msgid "Select the size of the icons on the launcher"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:68
+#: ../data/unity.ui.h:67
+msgid "Icon size:"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:69
+#: ../data/unity.ui.h:68
+msgid "Select the animation used for launching an application."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:70
+#: ../data/unity.ui.h:69
+msgid "No animation"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:71
+#: ../data/unity.ui.h:70
+msgid "Pulse"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:72
+#: ../data/unity.ui.h:71
+msgid "Blink"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:73
+#: ../data/unity.ui.h:72
+msgid "Select the animation used for an urgent notification on the launcher"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:74
+#: ../data/unity.ui.h:73
+msgid "Wiggle"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:75
+#: ../data/unity.ui.h:74
+msgid "Launch animation:"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:76
+#: ../data/unity.ui.h:75
+msgid "Urgent animation:"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:77
+#: ../data/unity.ui.h:76
+msgid "Select how the icons are coloured on the launcher"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:78
+#: ../data/unity.ui.h:77
+msgid "All applications"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:79
+#: ../data/unity.ui.h:78
+msgid "Open applications only"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:80
+#: ../data/unity.ui.h:79
+msgid "No colouring"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:81
+#: ../data/unity.ui.h:80
+msgid "Coloured edges"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:82
+#: ../data/unity.ui.h:81
+msgid "Alternated for each workspace"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:83
+#: ../data/unity.ui.h:82
+msgid "Icon backgrounds:"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:84
+#: ../data/unity.ui.h:83
+msgid "\"Show Desktop\" icon:"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:85
+#: ../data/appearance.ui.h:6 ../data/system.ui.h:8
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:8
+#: ../data/unity.ui.h:85
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:30
+#: ../data/windowmanager.ui.h:28
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:6
+msgid "Restore defaults"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:86
+#: ../data/unity.ui.h:86
+msgid "Restore default Unity launcher settings."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:89
+#: ../data/unity.ui.h:89
+msgid "Background blur:"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:90
+#: ../data/unity.ui.h:90
+msgid "Enable dash blur?"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:91
+#: ../data/unity.ui.h:91
+msgid "Select the type of blur in the dash"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:92
+#: ../data/unity.ui.h:92
+msgid "Blur type:"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:93
+#: ../data/unity.ui.h:93
+msgid "Active"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:94
+#: ../data/unity.ui.h:94
+msgid "Use a dynamic blur in the dash."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:95
+#: ../data/unity.ui.h:95
+msgid "Static"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:96
+#: ../data/unity.ui.h:96
+msgid "Use a static blur in the dash, uses less resources."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:97
+#: ../data/unity.ui.h:97
+msgid "Search online sources"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:98
+#: ../data/unity.ui.h:98
+msgid "If enabled, the dash will get suggestions from online sources."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:99
+#: ../data/unity.ui.h:99
+msgid "Applications"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:100
+#: ../data/unity.ui.h:100
+msgid "Show \"Recently Used\" applications"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:101
+#: ../data/unity.ui.h:101
+msgid "If enabled, show recently used applications in the Dash."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:102
+#: ../data/unity.ui.h:102
+msgid "Show \"More Suggestions\""
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:103
+#: ../data/unity.ui.h:103
+msgid "If enabled, show applications available for download in the Dash."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:104
+#: ../data/unity.ui.h:104
+msgid "Files"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:105
+#: ../data/unity.ui.h:105
+msgid "Enable search of your files"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:106
+#: ../data/unity.ui.h:106
+msgid "If enabled, allow searches to find your files that aren't logged."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:107
+#: ../data/unity.ui.h:107
+msgid "Run Command"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:108
+#: ../data/unity.ui.h:108
+msgid "Clear History"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:109
+#: ../data/unity.ui.h:109
+msgid "Clear ALT+F2 command history."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:110
+#: ../data/unity.ui.h:110
+msgid "Restore the default Dash settings."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:112
+#: ../data/unity.ui.h:112
+msgid "Menu visible for:"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:113
+#: ../data/unity.ui.h:113
+msgid "Enable transparency for the panel?"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:114
+#: ../data/unity.ui.h:114
 msgid ""
-"Window\n"
-"Controls"
+"Select how long the application menu is visible when an application is first "
+"opened"
 msgstr ""
 
-#: ../data/overview.ui.h:24 ../data/unitytweak.ui.h:22
-msgid "System"
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:115
+#: ../data/unity.ui.h:115
+msgid "seconds"
 msgstr ""
 
-#: ../data/overview.ui.h:25
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:116
+#: ../data/unity.ui.h:116
+msgid "Set the level of transparency for the panel."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:117
+#: ../data/unity.ui.h:117
+msgid "Opaque panel for maximized windows"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:118
+#: ../data/unity.ui.h:118
+msgid "If selected, the panel will be opaque for maximized windows"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:119
+#: ../data/unity.ui.h:119
+msgid "Indicators"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:120
+#: ../data/unity.ui.h:120
+msgid "Date & time"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:121
+#: ../data/unity.ui.h:121
+msgid "If enabled, the date &amp; time indicator will be visible."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:122
+#: ../data/unity.ui.h:122
+msgid "If enabled, the date & time indicator will be visible."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:123
+#: ../data/unity.ui.h:123
+msgid "12-hour time"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:124
+#: ../data/unity.ui.h:124
+msgid "Have the clock use 12-hour time."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:125
+#: ../data/unity.ui.h:125
+msgid "24-hour time"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:126
+#: ../data/unity.ui.h:126
+msgid "Have the clock use 24-hour time."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:127
+#: ../data/unity.ui.h:127
+msgid "Seconds"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:128
+#: ../data/unity.ui.h:128
+msgid "If enabled, the clock will display seconds."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:129
+#: ../data/unity.ui.h:129
+msgid "Date"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:130
+#: ../data/unity.ui.h:130
+msgid "If enabled, the month and day will be visible in the panel."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:131
+#: ../data/unity.ui.h:131
+msgid "Weekday"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:132
+#: ../data/unity.ui.h:132
+msgid "If enabled, the day of the week will be visible in the panel."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:133
+#: ../data/unity.ui.h:133
+msgid "Include:"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:134
+#: ../data/unity.ui.h:134
+msgid "Calendar"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:135
+#: ../data/unity.ui.h:135
+msgid "If enabled, the calendar will be visible in the indicator menu."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:136
+#: ../data/unity.ui.h:136
+msgid "Bluetooth"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:137
+#: ../data/unity.ui.h:137
+msgid "If enabled, the bluetooth indicator is visible in the panel."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:138
+#: ../data/unity.ui.h:138
+msgid "Power"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:139
+#: ../data/unity.ui.h:139
+msgid "If enabled, show the power menu in the panel."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:140
+#: ../data/unity.ui.h:140
+msgid "Visible when charging or discharging"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:141
+#: ../data/unity.ui.h:141
 msgid ""
-"Desktop\n"
-"Icons"
+"Set the power indicator to be visible when charging or discharging power."
 msgstr ""
 
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:142
+#: ../data/unity.ui.h:142
+msgid "Always visible"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:143
+#: ../data/unity.ui.h:143
+msgid "Set the power indicator to be always visible."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:144
+#: ../data/unity.ui.h:144
+msgid "Display remaining battery life"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:145
+#: ../data/unity.ui.h:145
+msgid "If enabled, show the remaining battery life in the power indicator."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:146
+#: ../data/unity.ui.h:146
+msgid "Volume"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:147
+#: ../data/unity.ui.h:147
+msgid "If enabled, show the sound menu in the panel."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:148
+#: ../data/unity.ui.h:148
+msgid "Default player:"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:149
+#: ../data/unity.ui.h:149
+msgid ""
+"Select which of the installed audio players is default in the sound menu."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:150
+#: ../data/unity.ui.h:150
+msgid "Notifications when scrolling"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:151
+#: ../data/unity.ui.h:151
+msgid ""
+"When using scrolling to change the volume, show on-screen notifications."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:152
+#: ../data/unity.ui.h:152
+msgid "Show my name"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:153
+#: ../data/unity.ui.h:153
+msgid "If enabled, show the user&apos;s real name in the panel."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:154
+#: ../data/unity.ui.h:154
+msgid "If enabled, show the user's real name in the panel."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:155
+#: ../data/unity.ui.h:155
+msgid "Restore the default Unity panel settings."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:157
+#: ../data/unity.ui.h:157
+msgid "Switch between windows on all workspaces"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:158
+#: ../data/unity.ui.h:158
+msgid ""
+"If enabled, the window switcher cycles through all windows on all workspaces"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:159
+#: ../data/unity.ui.h:159
+msgid "Display \"Show Desktop\" icon"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:160
+#: ../data/unity.ui.h:160
+msgid "If enabled, show the \"Show Desktop\" option in the window switcher"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:161
+#: ../data/unity.ui.h:163
+msgid "Switch between minimized windows"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:162
+#: ../data/unity.ui.h:164
+msgid "If enabled, the window switcher will switch through minimized windows"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:163
+#: ../data/unity.ui.h:161
+msgid "Automatically expose windows"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:164
+#: ../data/unity.ui.h:162
+msgid "If enabled, the window switcher will expose minimized windows"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:165
+#: ../data/unity.ui.h:165
+msgid "Window switching shortcuts"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:166
+#: ../data/unity.ui.h:166
+msgid "Window switcher shortcuts"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:167
+#: ../data/unity.ui.h:167
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:5
+#: ../data/windowmanager.ui.h:5
+msgid "Title"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:168
+#: ../data/unity.ui.h:168
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:6
+#: ../data/windowmanager.ui.h:6
+msgid "Accelerator"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:169
+#: ../data/unity.ui.h:169
+msgid "Launcher switching shortcuts"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:170
+#: ../data/unity.ui.h:170
+msgid "Launcher switcher shortcuts"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:171
+#: ../data/unity.ui.h:171
+msgid "Restore the default window switcher settings."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:173
+#: ../data/unity.ui.h:173
+msgid ""
+"Enable prompts for webapp integration when visitiing supported websites?"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:174
+#: ../data/unity.ui.h:174
+msgid "Integration prompts:"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:175
+#: ../data/unity.ui.h:175
+msgid "Preauthorized domains:"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:176
+#: ../data/unity.ui.h:176
+msgid "Amazon"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:177
+#: ../data/unity.ui.h:177
+msgid "Ubuntu One"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:178
+#: ../data/unity.ui.h:178
+msgid "Restore the default Unity Webapps settings."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:180
+#: ../data/unity.ui.h:180
+msgid "HUD"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:181
+#: ../data/unity.ui.h:181
+msgid "Remember previous commands"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:182
+#: ../data/unity.ui.h:182
+msgid ""
+"If enabled, the HUD will remember previously executed entries and sort them "
+"by frequently used."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:183
+#: ../data/unity.ui.h:183
+msgid "Keyboard Shortcuts"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:184
+#: ../data/unity.ui.h:184
+msgid "Hold Super for keyboard shortcuts"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:185
+#: ../data/unity.ui.h:185
+msgid ""
+"When enabled, pressing the Super key displays an overlay of all Unity "
+"keyboard shortcuts"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:186
+#: ../data/unity.ui.h:186
+msgid "List of Unity keyboard shortcuts"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:187
+#: ../data/unity.ui.h:187
+msgid "Notifications"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:188
+#: ../data/unity.ui.h:188
+msgid "All displays"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:189
+#: ../data/unity.ui.h:189
+msgid "For multiple displays, notifications are visible on all of them."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:190
+#: ../data/unity.ui.h:190
+msgid "Active display"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:191
+#: ../data/unity.ui.h:191
+msgid "For multiple displays, notifications are visible on the active display."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/unity.ui.h:192
+#: ../data/unity.ui.h:192
+msgid "Restore the default Unity keyboard shortcut settings."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/bin/unity-tweak-tool.py:43
 #: ../unity-tweak-tool.py:43
 msgid "Start in the Unity tab"
 msgstr ""
 
+#: ../debian/unity-tweak-tool/usr/bin/unity-tweak-tool.py:44
 #: ../unity-tweak-tool.py:44
 msgid "Start in the WindowManager tab"
 msgstr ""
 
+#: ../debian/unity-tweak-tool/usr/bin/unity-tweak-tool.py:45
 #: ../unity-tweak-tool.py:45
 msgid "Start in the appearance tab"
 msgstr ""
 
+#: ../debian/unity-tweak-tool/usr/bin/unity-tweak-tool.py:46
 #: ../unity-tweak-tool.py:46
 msgid "Start in the system tab"
 msgstr ""
 
+#: ../debian/unity-tweak-tool/usr/bin/unity-tweak-tool.py:47
 #: ../unity-tweak-tool.py:47
 msgid "Reset Unity, wiping all configuration changes."
 msgstr ""
 
+#: ../debian/unity-tweak-tool/usr/bin/unity-tweak-tool.py:61
 #: ../unity-tweak-tool.py:61
 msgid ""
 "\n"
@@ -589,1062 +1255,795 @@ msgid ""
 "    "
 msgstr ""
 
+#: ../debian/unity-tweak-tool/usr/bin/unity-tweak-tool.py:67
 #: ../unity-tweak-tool.py:67
 msgid "Do you wish to continue?"
 msgstr ""
 
+#: ../debian/unity-tweak-tool/usr/bin/unity-tweak-tool.py:70
 #: ../unity-tweak-tool.py:70
 msgid "Please log out and log back in."
 msgstr ""
 
-#: ../data/unity.ui.h:1
-msgid "Invoke HUD"
-msgstr ""
-
-#: ../data/unity.ui.h:2
-msgid "Super+H"
-msgstr ""
-
-#: ../data/unity.ui.h:3
-msgid "Show the launcher"
-msgstr ""
-
-#: ../data/unity.ui.h:4
-msgid "Super+E"
-msgstr ""
-
-#: ../data/unity.ui.h:5
-msgid "Execute command"
-msgstr ""
-
-#: ../data/unity.ui.h:6
-msgid "Super+M"
-msgstr ""
-
-#: ../data/unity.ui.h:7
-msgid "Put keyboard focus on the launcher"
-msgstr ""
-
-#: ../data/unity.ui.h:8
-msgid "Super+A"
-msgstr ""
-
-#: ../data/unity.ui.h:9
-msgid "Open the first panel menu"
-msgstr ""
-
-#: ../data/unity.ui.h:10
-msgid "Super+N"
-msgstr ""
-
-#: ../data/unity.ui.h:11
-msgid "Start switcher"
-msgstr ""
-
-#: ../data/unity.ui.h:12
-msgid "Super+Tab"
-msgstr ""
-
-#: ../data/unity.ui.h:13
-msgid "Start switcher in reverse"
-msgstr ""
-
-#: ../data/unity.ui.h:14
-msgid "Shift+Super+Tab"
-msgstr ""
-
-#: ../data/unity.ui.h:15
-msgid "Alt+Tab"
-msgstr ""
-
-#: ../data/unity.ui.h:16
-msgid "Shift+Alt+Tab"
-msgstr ""
-
-#: ../data/unity.ui.h:17
-msgid "Start switcher for all workspaces"
-msgstr ""
-
-#: ../data/unity.ui.h:18
-msgid "Ctrl+Super+Alt+Tab"
-msgstr ""
-
-#: ../data/unity.ui.h:19
-msgid "Start switcher for all workspaces in reverse"
-msgstr ""
-
-#: ../data/unity.ui.h:20
-msgid "Shift+Ctrl+Super+Alt+Tab"
-msgstr ""
-
-#: ../data/unity.ui.h:21
-msgid "Go right in the switcher"
-msgstr ""
-
-#: ../data/unity.ui.h:22
-msgid "Alt+Right"
-msgstr ""
-
-#: ../data/unity.ui.h:23
-msgid "Go left in the switcher"
-msgstr ""
-
-#: ../data/unity.ui.h:24
-msgid "Alt+Left"
-msgstr ""
-
-#: ../data/unity.ui.h:25
-msgid "Expose windows in the switcher"
-msgstr ""
-
-#: ../data/unity.ui.h:26
-msgid "Alt+Down"
-msgstr ""
-
-#: ../data/unity.ui.h:27
-msgid "Collapse windows in the switcher"
-msgstr ""
-
-#: ../data/unity.ui.h:28
-msgid "Alt+Up"
-msgstr ""
-
-#: ../data/unity.ui.h:29
-msgid "Flip through windows in the switcher"
-msgstr ""
-
-#: ../data/unity.ui.h:30 ../data/windowmanager.ui.h:106
-msgid "Disabled"
-msgstr ""
-
-#: ../data/unity.ui.h:31
-msgid "Flip through windows in the switcher backwards"
-msgstr ""
-
-#: ../data/unity.ui.h:32 ../data/windowmanager.ui.h:60
-msgid "Behaviour"
-msgstr ""
-
-#: ../data/unity.ui.h:33
-msgid "Should the launcher be hidden?"
-msgstr ""
-
-#: ../data/unity.ui.h:34
-msgid "Auto-hide:"
-msgstr ""
-
-#: ../data/unity.ui.h:35
-msgid "Select the auto-hide animation of the launcher."
-msgstr ""
-
-#: ../data/unity.ui.h:36
-msgid "Fade Dash & Slide"
-msgstr ""
-
-#: ../data/unity.ui.h:37
-msgid "Slide only"
-msgstr ""
-
-#: ../data/unity.ui.h:38
-msgid "Fade only"
-msgstr ""
-
-#: ../data/unity.ui.h:39
-msgid "Fade & slide"
-msgstr ""
-
-#: ../data/unity.ui.h:40
-msgid "Auto-hide animation:"
-msgstr ""
-
-#: ../data/unity.ui.h:41
-msgid ""
-"Select the option to reveal the dash with the mouse, when auto-hide is "
-"enabled."
-msgstr ""
-
-#: ../data/unity.ui.h:42
-msgid "Reveal location:"
-msgstr ""
-
-#: ../data/unity.ui.h:43
-msgid "Reveal sensitivity:"
-msgstr ""
-
-#: ../data/unity.ui.h:44
-msgid "How much pointer \"pressure\" is required to reveal the launcher."
-msgstr ""
-
-#: ../data/unity.ui.h:45
-msgid "Left side"
-msgstr ""
-
-#: ../data/unity.ui.h:46
-msgid ""
-"When in auto-hide mode the left edge of the current workspace triggers the "
-"launcher."
-msgstr ""
-
-#: ../data/unity.ui.h:47
-msgid "Top left corner"
-msgstr ""
-
-#: ../data/unity.ui.h:48
-msgid ""
-"When in auto-hide mode the top left corner of the current workspace triggers "
-"the launcher."
-msgstr ""
-
-#: ../data/unity.ui.h:50
-msgid "Transparency:"
-msgstr ""
-
-#: ../data/unity.ui.h:51
-msgid "Enable launcher transparency?"
-msgstr ""
-
-#: ../data/unity.ui.h:52
-msgid "Select the level of the transparency of the launcher"
-msgstr ""
-
-#: ../data/unity.ui.h:53
-msgid "Transparency level:"
-msgstr ""
-
-#: ../data/unity.ui.h:54
-msgid "How transparent the launcher will be."
-msgstr ""
-
-#: ../data/unity.ui.h:55
-msgid "Based on wallpaper"
-msgstr ""
-
-#: ../data/unity.ui.h:56
-msgid "If selected, the launcher colour is based on the desktop background"
-msgstr ""
-
-#: ../data/unity.ui.h:57
-msgid "Colour:"
-msgstr ""
-
-#: ../data/unity.ui.h:58
-msgid "Visibility:"
-msgstr ""
-
-#: ../data/unity.ui.h:59
-msgid "Custom:"
-msgstr ""
-
-#: ../data/unity.ui.h:60
-msgid "If selected, the launcher will be the colour chosen by the user"
-msgstr ""
-
-#: ../data/unity.ui.h:61
-msgid "All desktops"
-msgstr ""
-
-#: ../data/unity.ui.h:62
-msgid "If selected, the launcher is visible on all desktops."
-msgstr ""
-
-#: ../data/unity.ui.h:63
-msgid "If selected, the launcher is visible on all desktops"
-msgstr ""
-
-#: ../data/unity.ui.h:64
-msgid "Primary desktop"
-msgstr ""
-
-#: ../data/unity.ui.h:65
-msgid "If selected, the launcher is visible on the primary desktop"
-msgstr ""
-
-#: ../data/unity.ui.h:67
-msgid "Select the size of the icons on the launcher"
-msgstr ""
-
-#: ../data/unity.ui.h:68
-msgid "Icon size:"
-msgstr ""
-
-#: ../data/unity.ui.h:69
-msgid "Select the animation used for launching an application."
-msgstr ""
-
-#: ../data/unity.ui.h:70
-msgid "No animation"
-msgstr ""
-
-#: ../data/unity.ui.h:71
-msgid "Pulse"
-msgstr ""
-
-#: ../data/unity.ui.h:72
-msgid "Blink"
-msgstr ""
-
-#: ../data/unity.ui.h:73
-msgid "Select the animation used for an urgent notification on the launcher"
-msgstr ""
-
-#: ../data/unity.ui.h:74
-msgid "Wiggle"
-msgstr ""
-
-#: ../data/unity.ui.h:75
-msgid "Launch animation:"
-msgstr ""
-
-#: ../data/unity.ui.h:76
-msgid "Urgent animation:"
-msgstr ""
-
-#: ../data/unity.ui.h:77
-msgid "Select how the icons are coloured on the launcher"
-msgstr ""
-
-#: ../data/unity.ui.h:78
-msgid "All applications"
-msgstr ""
-
-#: ../data/unity.ui.h:79
-msgid "Open applications only"
-msgstr ""
-
-#: ../data/unity.ui.h:80
-msgid "No colouring"
-msgstr ""
-
-#: ../data/unity.ui.h:81
-msgid "Coloured edges"
-msgstr ""
-
-#: ../data/unity.ui.h:82
-msgid "Alternated for each workspace"
-msgstr ""
-
-#: ../data/unity.ui.h:83
-msgid "Icon backgrounds:"
-msgstr ""
-
-#: ../data/unity.ui.h:84
-msgid "\"Show Desktop\" icon:"
-msgstr ""
-
-#: ../data/unity.ui.h:86
-msgid "Restore default Unity launcher settings."
-msgstr ""
-
-#: ../data/unity.ui.h:89
-msgid "Background blur:"
-msgstr ""
-
-#: ../data/unity.ui.h:90
-msgid "Enable dash blur?"
-msgstr ""
-
-#: ../data/unity.ui.h:91
-msgid "Select the type of blur in the dash"
-msgstr ""
-
-#: ../data/unity.ui.h:92
-msgid "Blur type:"
-msgstr ""
-
-#: ../data/unity.ui.h:93
-msgid "Active"
-msgstr ""
-
-#: ../data/unity.ui.h:94
-msgid "Use a dynamic blur in the dash."
-msgstr ""
-
-#: ../data/unity.ui.h:95
-msgid "Static"
-msgstr ""
-
-#: ../data/unity.ui.h:96
-msgid "Use a static blur in the dash, uses less resources."
-msgstr ""
-
-#: ../data/unity.ui.h:97
-msgid "Search online sources"
-msgstr ""
-
-#: ../data/unity.ui.h:98
-msgid "If enabled, the dash will get suggestions from online sources."
-msgstr ""
-
-#: ../data/unity.ui.h:99
-msgid "Applications"
-msgstr ""
-
-#: ../data/unity.ui.h:100
-msgid "Show \"Recently Used\" applications"
-msgstr ""
-
-#: ../data/unity.ui.h:101
-msgid "If enabled, show recently used applications in the Dash."
-msgstr ""
-
-#: ../data/unity.ui.h:102
-msgid "Show \"More Suggestions\""
-msgstr ""
-
-#: ../data/unity.ui.h:103
-msgid "If enabled, show applications available for download in the Dash."
-msgstr ""
-
-#: ../data/unity.ui.h:104
-msgid "Files"
-msgstr ""
-
-#: ../data/unity.ui.h:105
-msgid "Enable search of your files"
-msgstr ""
-
-#: ../data/unity.ui.h:106
-msgid "If enabled, allow searches to find your files that aren't logged."
-msgstr ""
-
-#: ../data/unity.ui.h:107
-msgid "Run Command"
-msgstr ""
-
-#: ../data/unity.ui.h:108
-msgid "Clear History"
-msgstr ""
-
-#: ../data/unity.ui.h:109
-msgid "Clear ALT+F2 command history."
-msgstr ""
-
-#: ../data/unity.ui.h:110
-msgid "Restore the default Dash settings."
-msgstr ""
-
-#: ../data/unity.ui.h:112
-msgid "Menu visible for:"
-msgstr ""
-
-#: ../data/unity.ui.h:113
-msgid "Enable transparency for the panel?"
-msgstr ""
-
-#: ../data/unity.ui.h:114
-msgid ""
-"Select how long the application menu is visible when an application is first "
-"opened"
-msgstr ""
-
-#: ../data/unity.ui.h:115
-msgid "seconds"
-msgstr ""
-
-#: ../data/unity.ui.h:116
-msgid "Set the level of transparency for the panel."
-msgstr ""
-
-#: ../data/unity.ui.h:117
-msgid "Opaque panel for maximized windows"
-msgstr ""
-
-#: ../data/unity.ui.h:118
-msgid "If selected, the panel will be opaque for maximized windows"
-msgstr ""
-
-#: ../data/unity.ui.h:119
-msgid "Indicators"
-msgstr ""
-
-#: ../data/unity.ui.h:120
-msgid "Date & time"
-msgstr ""
-
-#: ../data/unity.ui.h:121
-msgid "If enabled, the date &amp; time indicator will be visible."
-msgstr ""
-
-#: ../data/unity.ui.h:122
-msgid "If enabled, the date & time indicator will be visible."
-msgstr ""
-
-#: ../data/unity.ui.h:123
-msgid "12-hour time"
-msgstr ""
-
-#: ../data/unity.ui.h:124
-msgid "Have the clock use 12-hour time."
-msgstr ""
-
-#: ../data/unity.ui.h:125
-msgid "24-hour time"
-msgstr ""
-
-#: ../data/unity.ui.h:126
-msgid "Have the clock use 24-hour time."
-msgstr ""
-
-#: ../data/unity.ui.h:127
-msgid "Seconds"
-msgstr ""
-
-#: ../data/unity.ui.h:128
-msgid "If enabled, the clock will display seconds."
-msgstr ""
-
-#: ../data/unity.ui.h:129
-msgid "Date"
-msgstr ""
-
-#: ../data/unity.ui.h:130
-msgid "If enabled, the month and day will be visible in the panel."
-msgstr ""
-
-#: ../data/unity.ui.h:131
-msgid "Weekday"
-msgstr ""
-
-#: ../data/unity.ui.h:132
-msgid "If enabled, the day of the week will be visible in the panel."
-msgstr ""
-
-#: ../data/unity.ui.h:133
-msgid "Include:"
-msgstr ""
-
-#: ../data/unity.ui.h:134
-msgid "Calendar"
-msgstr ""
-
-#: ../data/unity.ui.h:135
-msgid "If enabled, the calendar will be visible in the indicator menu."
-msgstr ""
-
-#: ../data/unity.ui.h:136
-msgid "Bluetooth"
-msgstr ""
-
-#: ../data/unity.ui.h:137
-msgid "If enabled, the bluetooth indicator is visible in the panel."
-msgstr ""
-
-#: ../data/unity.ui.h:138
-msgid "Power"
-msgstr ""
-
-#: ../data/unity.ui.h:139
-msgid "If enabled, show the power menu in the panel."
-msgstr ""
-
-#: ../data/unity.ui.h:140
-msgid "Visible when charging or discharging"
-msgstr ""
-
-#: ../data/unity.ui.h:141
-msgid ""
-"Set the power indicator to be visible when charging or discharging power."
-msgstr ""
-
-#: ../data/unity.ui.h:142
-msgid "Always visible"
-msgstr ""
-
-#: ../data/unity.ui.h:143
-msgid "Set the power indicator to be always visible."
-msgstr ""
-
-#: ../data/unity.ui.h:144
-msgid "Display remaining battery life"
-msgstr ""
-
-#: ../data/unity.ui.h:145
-msgid "If enabled, show the remaining battery life in the power indicator."
-msgstr ""
-
-#: ../data/unity.ui.h:146
-msgid "Volume"
-msgstr ""
-
-#: ../data/unity.ui.h:147
-msgid "If enabled, show the sound menu in the panel."
-msgstr ""
-
-#: ../data/unity.ui.h:148
-msgid "Default player:"
-msgstr ""
-
-#: ../data/unity.ui.h:149
-msgid ""
-"Select which of the installed audio players is default in the sound menu."
-msgstr ""
-
-#: ../data/unity.ui.h:150
-msgid "Notifications when scrolling"
-msgstr ""
-
-#: ../data/unity.ui.h:151
-msgid ""
-"When using scrolling to change the volume, show on-screen notifications."
-msgstr ""
-
-#: ../data/unity.ui.h:152
-msgid "Show my name"
-msgstr ""
-
-#: ../data/unity.ui.h:153
-msgid "If enabled, show the user&apos;s real name in the panel."
-msgstr ""
-
-#: ../data/unity.ui.h:154
-msgid "If enabled, show the user's real name in the panel."
-msgstr ""
-
-#: ../data/unity.ui.h:155
-msgid "Restore the default Unity panel settings."
-msgstr ""
-
-#: ../data/unity.ui.h:157
-msgid "Switch between windows on all workspaces"
-msgstr ""
-
-#: ../data/unity.ui.h:158
-msgid ""
-"If enabled, the window switcher cycles through all windows on all workspaces"
-msgstr ""
-
-#: ../data/unity.ui.h:159
-msgid "Display \"Show Desktop\" icon"
-msgstr ""
-
-#: ../data/unity.ui.h:160
-msgid "If enabled, show the \"Show Desktop\" option in the window switcher"
-msgstr ""
-
-#: ../data/unity.ui.h:161
-msgid "Switch between minimized windows"
-msgstr ""
-
-#: ../data/unity.ui.h:162
-msgid "If enabled, the window switcher will switch through minimized windows"
-msgstr ""
-
-#: ../data/unity.ui.h:163
-msgid "Automatically expose windows"
-msgstr ""
-
-#: ../data/unity.ui.h:164
-msgid "If enabled, the window switcher will expose minimized windows"
-msgstr ""
-
-#: ../data/unity.ui.h:165
-msgid "Window switching shortcuts"
-msgstr ""
-
-#: ../data/unity.ui.h:166
-msgid "Window switcher shortcuts"
-msgstr ""
-
-#: ../data/unity.ui.h:167 ../data/windowmanager.ui.h:5
-msgid "Title"
-msgstr ""
-
-#: ../data/unity.ui.h:168 ../data/windowmanager.ui.h:6
-msgid "Accelerator"
-msgstr ""
-
-#: ../data/unity.ui.h:169
-msgid "Launcher switching shortcuts"
-msgstr ""
-
-#: ../data/unity.ui.h:170
-msgid "Launcher switcher shortcuts"
-msgstr ""
-
-#: ../data/unity.ui.h:171
-msgid "Restore the default window switcher settings."
-msgstr ""
-
-#: ../data/unity.ui.h:173
-msgid ""
-"Enable prompts for webapp integration when visitiing supported websites?"
-msgstr ""
-
-#: ../data/unity.ui.h:174
-msgid "Integration prompts:"
-msgstr ""
-
-#: ../data/unity.ui.h:175
-msgid "Preauthorized domains:"
-msgstr ""
-
-#: ../data/unity.ui.h:176
-msgid "Amazon"
-msgstr ""
-
-#: ../data/unity.ui.h:177
-msgid "Ubuntu One"
-msgstr ""
-
-#: ../data/unity.ui.h:178
-msgid "Restore the default Unity Webapps settings."
-msgstr ""
-
-#: ../data/unity.ui.h:180
-msgid "HUD"
-msgstr ""
-
-#: ../data/unity.ui.h:181
-msgid "Remember previous commands"
-msgstr ""
-
-#: ../data/unity.ui.h:182
-msgid ""
-"If enabled, the HUD will remember previously executed entries and sort them "
-"by frequently used."
-msgstr ""
-
-#: ../data/unity.ui.h:183
-msgid "Keyboard Shortcuts"
-msgstr ""
-
-#: ../data/unity.ui.h:184
-msgid "Hold Super for keyboard shortcuts"
-msgstr ""
-
-#: ../data/unity.ui.h:185
-msgid ""
-"When enabled, pressing the Super key displays an overlay of all Unity "
-"keyboard shortcuts"
-msgstr ""
-
-#: ../data/unity.ui.h:186
-msgid "List of Unity keyboard shortcuts"
-msgstr ""
-
-#: ../data/unity.ui.h:187
-msgid "Notifications"
-msgstr ""
-
-#: ../data/unity.ui.h:188
-msgid "All displays"
-msgstr ""
-
-#: ../data/unity.ui.h:189
-msgid "For multiple displays, notifications are visible on all of them."
-msgstr ""
-
-#: ../data/unity.ui.h:190
-msgid "Active display"
-msgstr ""
-
-#: ../data/unity.ui.h:191
-msgid "For multiple displays, notifications are visible on the active display."
-msgstr ""
-
-#: ../data/unity.ui.h:192
-msgid "Restore the default Unity keyboard shortcut settings."
-msgstr ""
-
+#: ../debian/unity-tweak-tool/usr/lib/python3/dist-packages/UnityTweakTool/utils/unityreset.py:41
 #: ../UnityTweakTool/utils/unityreset.py:41
 msgid "Initialising Unity reset"
 msgstr ""
 
+#: ../debian/unity-tweak-tool/usr/lib/python3/dist-packages/UnityTweakTool/utils/unityreset.py:42
 #: ../UnityTweakTool/utils/unityreset.py:42
 msgid "Killing Unity and Compiz"
 msgstr ""
 
+#: ../debian/unity-tweak-tool/usr/lib/python3/dist-packages/UnityTweakTool/utils/unityreset.py:45
 #: ../UnityTweakTool/utils/unityreset.py:45
 msgid "Resetting compiz plugins"
 msgstr ""
 
+#: ../debian/unity-tweak-tool/usr/lib/python3/dist-packages/UnityTweakTool/utils/unityreset.py:47
 #: ../UnityTweakTool/utils/unityreset.py:47
 msgid "Resetting more compiz plugins"
 msgstr ""
 
+#: ../debian/unity-tweak-tool/usr/lib/python3/dist-packages/UnityTweakTool/utils/unityreset.py:49
 #: ../UnityTweakTool/utils/unityreset.py:49
 msgid "Resetting Unity settings"
 msgstr ""
 
+#: ../debian/unity-tweak-tool/usr/lib/python3/dist-packages/UnityTweakTool/utils/unityreset.py:51
 #: ../UnityTweakTool/utils/unityreset.py:51
 msgid "Reset complete. Reloading unity"
 msgstr ""
 
-#: ../data/unitytweak.ui.h:2
-msgid "_File"
+#: ../data/appearance.ui.h:1
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:1
+msgid "Available themes"
 msgstr ""
 
-#: ../data/unitytweak.ui.h:12
-msgid "Workspace settings"
+#: ../data/appearance.ui.h:2
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:2
+msgid "List of GTK Themes"
 msgstr ""
 
-#: ../data/unitytweak.ui.h:13
-msgid "Windows spread"
+#: ../data/appearance.ui.h:3
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:3
+msgid "GTK Theme"
 msgstr ""
 
-#: ../data/unitytweak.ui.h:14
-msgid "Windows snapping"
+#: ../data/appearance.ui.h:4
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:4
+msgid "List of Window decoration themes"
 msgstr ""
 
-#: ../data/unitytweak.ui.h:21
-msgid "Window controls"
+#: ../data/appearance.ui.h:5
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:5
+msgid "Window decoration theme"
 msgstr ""
 
-#: ../data/unitytweak.ui.h:26
-msgid "_Help"
+#: ../data/appearance.ui.h:7
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:7
+msgid "Restore system's default theme configurations"
 msgstr ""
 
-#: ../data/unitytweak.ui.h:27
-msgid " Overview"
+#: ../data/appearance.ui.h:9
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:9
+msgid "List of icon themes"
 msgstr ""
 
+#: ../data/appearance.ui.h:10
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:10
+msgid "Icon theme"
+msgstr ""
+
+#: ../data/appearance.ui.h:11
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:11
+msgid "Restore system's default icon theme configurations"
+msgstr ""
+
+#: ../data/appearance.ui.h:13
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:13
+msgid "List of cursor themes"
+msgstr ""
+
+#: ../data/appearance.ui.h:14
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:14
+msgid "Cursor Theme"
+msgstr ""
+
+#: ../data/appearance.ui.h:15
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:15
+msgid "Preferences"
+msgstr ""
+
+#: ../data/appearance.ui.h:16
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:16
+msgid "Use large cursors"
+msgstr ""
+
+#: ../data/appearance.ui.h:17
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:17
+msgid "If enabled, the system will use a larger cursor."
+msgstr ""
+
+#: ../data/appearance.ui.h:18
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:18
+msgid "Restore system's default cursor theme configurations"
+msgstr ""
+
+#: ../data/appearance.ui.h:21
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:21
+msgid "Select the default font for all applications."
+msgstr ""
+
+#: ../data/appearance.ui.h:22
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:22
+msgid "Default font:"
+msgstr ""
+
+#: ../data/appearance.ui.h:23
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:23
+msgid "Select the default font used for reading documents."
+msgstr ""
+
+#: ../data/appearance.ui.h:24
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:24
+msgid "Document font:"
+msgstr ""
+
+#: ../data/appearance.ui.h:25
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:25
+msgid "Select the default monospace font."
+msgstr ""
+
+#: ../data/appearance.ui.h:26
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:26
+msgid "Monospace font:"
+msgstr ""
+
+#: ../data/appearance.ui.h:27
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:27
+msgid "Select the default font for the window titlebar."
+msgstr ""
+
+#: ../data/appearance.ui.h:28
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:28
+msgid "Window title font:"
+msgstr ""
+
+#: ../data/appearance.ui.h:30
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:30
+msgid "Select the type of antialiasing used to render fonts."
+msgstr ""
+
+#: ../data/appearance.ui.h:31
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:31
+msgid "Antialiasing:"
+msgstr ""
+
+#: ../data/appearance.ui.h:32
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:17
+#: ../data/windowmanager.ui.h:15
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:32
+msgid "None"
+msgstr ""
+
+#: ../data/appearance.ui.h:33
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:33
+msgid "Grayscale"
+msgstr ""
+
+#: ../data/appearance.ui.h:34
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:34
+msgid "RGBA"
+msgstr ""
+
+#: ../data/appearance.ui.h:35
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:35
+msgid "Select the type of hinting to use when rendering fonts"
+msgstr ""
+
+#: ../data/appearance.ui.h:36
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:36
+msgid "Slight"
+msgstr ""
+
+#: ../data/appearance.ui.h:37
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:37
+msgid "Medium"
+msgstr ""
+
+#: ../data/appearance.ui.h:38
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:38
+msgid "Full"
+msgstr ""
+
+#: ../data/appearance.ui.h:39
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:39
+msgid "Hinting:"
+msgstr ""
+
+#: ../data/appearance.ui.h:40
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:40
+msgid ""
+"Select the factor used to enlarge or reduce text display, without changing "
+"font size."
+msgstr ""
+
+#: ../data/appearance.ui.h:41
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:41
+msgid "Text scaling factor:"
+msgstr ""
+
+#: ../data/appearance.ui.h:42
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:42
+msgid "Restore system's default font configurations"
+msgstr ""
+
+#: ../data/appearance.ui.h:44
+msgid "Layout"
+msgstr ""
+
+#: ../data/appearance.ui.h:45
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:47
+msgid "Left"
+msgstr ""
+
+#: ../data/appearance.ui.h:46
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:48
+msgid "Align the window controls to the left side of the window."
+msgstr ""
+
+#: ../data/appearance.ui.h:47
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:49
+msgid "Right"
+msgstr ""
+
+#: ../data/appearance.ui.h:48
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:50
+msgid "Align the window controls to the right side of the window."
+msgstr ""
+
+#: ../data/appearance.ui.h:49
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:51
+msgid "Alignment:"
+msgstr ""
+
+#: ../data/appearance.ui.h:50
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:60
+msgid "Show menu button"
+msgstr ""
+
+#: ../data/appearance.ui.h:51
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:61
+msgid "If enabled, show the window menu in the titlebar."
+msgstr ""
+
+#: ../data/appearance.ui.h:52
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:62
+msgid "Restore Defaults"
+msgstr ""
+
+#: ../data/appearance.ui.h:53
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:63
+msgid "Restore default window controls settings."
+msgstr ""
+
+#: ../data/appearance.ui.h:54
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:64
+msgid "Window Controls"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/overview.ui.h:10
+#: ../data/overview.ui.h:10
+msgid ""
+"Workspace\n"
+"Settings"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/overview.ui.h:12
+#: ../data/overview.ui.h:12
+msgid ""
+"Window\n"
+"Spread"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/overview.ui.h:14
+#: ../data/overview.ui.h:14
+msgid ""
+"Window\n"
+"Snapping"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/overview.ui.h:20
+#: ../data/overview.ui.h:20
+msgid "Cursors"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/overview.ui.h:22
+#: ../data/overview.ui.h:22
+msgid ""
+"Window\n"
+"Controls"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/overview.ui.h:25
+#: ../data/overview.ui.h:25
+msgid ""
+"Desktop\n"
+"Icons"
+msgstr ""
+
+#: ../unity-tweak-tool.desktop.in.h:2
+msgid "Configuration frontend for the Unity desktop environment"
+msgstr ""
+
+#: ../data/system.ui.h:1
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:1
+msgid "Items to display:"
+msgstr ""
+
+#: ../data/system.ui.h:2
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:2
+msgid "Home Folder"
+msgstr ""
+
+#: ../data/system.ui.h:3
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:3
+msgid "Network"
+msgstr ""
+
+#: ../data/system.ui.h:4
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:4
+msgid "Rubbish Bin"
+msgstr ""
+
+#: ../data/system.ui.h:5
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:5
+msgid "Trash"
+msgstr ""
+
+#: ../data/system.ui.h:6
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:6
+msgid "Mounted Devices"
+msgstr ""
+
+#: ../data/system.ui.h:7
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:7
+msgid "Devices"
+msgstr ""
+
+#: ../data/system.ui.h:9
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:9
+msgid "Restore the default configurations for Desktop icons"
+msgstr ""
+
+#: ../data/system.ui.h:11
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:11
+msgid "Enhance system security by disabling:"
+msgstr ""
+
+#: ../data/system.ui.h:12
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:12
+msgid "Desktop lock"
+msgstr ""
+
+#: ../data/system.ui.h:13
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:13
+msgid "Disable the desktop lock screen."
+msgstr ""
+
+#: ../data/system.ui.h:14
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:14
+msgid "User log out"
+msgstr ""
+
+#: ../data/system.ui.h:15
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:15
+msgid "Disable session log out."
+msgstr ""
+
+#: ../data/system.ui.h:16
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:16
+msgid "User switching"
+msgstr ""
+
+#: ../data/system.ui.h:17
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:17
+msgid "Disable fast user switching."
+msgstr ""
+
+#: ../data/system.ui.h:18
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:18
+msgid "Printing"
+msgstr ""
+
+#: ../data/system.ui.h:19
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:19
+msgid "Prevent user access to the system's printers and print setup."
+msgstr ""
+
+#: ../data/system.ui.h:20
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:20
+msgid "Restore the default configurations for Security settings"
+msgstr ""
+
+#: ../data/system.ui.h:22
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:22
+msgid "Scrollbars"
+msgstr ""
+
+#: ../data/system.ui.h:23
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:23
+msgid "Legacy"
+msgstr ""
+
+#: ../data/system.ui.h:24
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:24
+msgid "Overlay "
+msgstr ""
+
+#: ../data/system.ui.h:25
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:25
+msgid "Select the behaviour of the overlay scrollbars."
+msgstr ""
+
+#: ../data/system.ui.h:26
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:26
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:45
+msgid "Default"
+msgstr ""
+
+#: ../data/system.ui.h:27
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:27
+msgid "Overlay with mouse"
+msgstr ""
+
+#: ../data/system.ui.h:28
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:28
+msgid "No overlay"
+msgstr ""
+
+#: ../data/system.ui.h:29
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:29
+msgid "Behaviour:"
+msgstr ""
+
+#: ../data/system.ui.h:30
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:30
+msgid "Edge"
+msgstr ""
+
+#: ../data/system.ui.h:31
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:31
+msgid "If enabled, edge scrolling is active on touchpads."
+msgstr ""
+
+#: ../data/system.ui.h:32
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:32
+msgid "Two-finger"
+msgstr ""
+
+#: ../data/system.ui.h:33
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:33
+msgid "If enabled, two-finger scrolling is active on multitouch touchpads."
+msgstr ""
+
+#: ../data/system.ui.h:34
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:34
+msgid "Touch scrolling"
+msgstr ""
+
+#: ../data/system.ui.h:35
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/system.ui.h:35
+msgid "Horizontal scrolling"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:1
 #: ../data/windowmanager.ui.h:1
 msgid "Zoom"
 msgstr ""
 
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:2
 #: ../data/windowmanager.ui.h:2
 msgid "Enable desktop zoom?"
 msgstr ""
 
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:3
 #: ../data/windowmanager.ui.h:3
 msgid "Desktop magnification:"
 msgstr ""
 
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:4
 #: ../data/windowmanager.ui.h:4
 msgid "List of keyboard shortcuts for zoom"
 msgstr ""
 
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:7
 #: ../data/windowmanager.ui.h:7
 msgid "Hardware acceleration"
 msgstr ""
 
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:8
 #: ../data/windowmanager.ui.h:8
 msgid "Select the level of texture rendering done by OpenGL"
 msgstr ""
 
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:9
 #: ../data/windowmanager.ui.h:9
 msgid "Texture quality: "
 msgstr ""
 
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:10
 #: ../data/windowmanager.ui.h:10
 msgid "Fast"
 msgstr ""
 
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:11
 #: ../data/windowmanager.ui.h:11
 msgid "Good"
 msgstr ""
 
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:12
 #: ../data/windowmanager.ui.h:12
 msgid "Best"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:13
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:13
 msgid "Update display during VBlank"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:14
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:14
 msgid ""
 "When enabled, screen updates are performed when the monitor is in vertical "
 "blank mode."
 msgstr ""
 
-#: ../data/windowmanager.ui.h:15
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:15
+#: ../data/windowmanager.ui.h:13
 msgid "Animations"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:16
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:16
+#: ../data/windowmanager.ui.h:14
 msgid "Minimize:"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:18
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:18
+#: ../data/windowmanager.ui.h:16
 msgid "Random"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:19
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:19
+#: ../data/windowmanager.ui.h:17
 msgid "Curved Fold"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:20
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:20
+#: ../data/windowmanager.ui.h:18
 msgid "Fade"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:21
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:21
+#: ../data/windowmanager.ui.h:19
 msgid "Glide 1"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:22
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:22
+#: ../data/windowmanager.ui.h:20
 msgid "Glide 2"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:23
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:23
+#: ../data/windowmanager.ui.h:21
 msgid "Horizontal Folds"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:24
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:24
+#: ../data/windowmanager.ui.h:22
 msgid "Magic Lamp"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:25
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:25
+#: ../data/windowmanager.ui.h:23
 msgid "Magic Lamp Wavy"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:26
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:26
+#: ../data/windowmanager.ui.h:24
 msgid "Sidekick"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:27
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:27
+#: ../data/windowmanager.ui.h:25
 msgid "Unminimize:"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:28
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:28
+#: ../data/windowmanager.ui.h:26
 msgid "Keyboard shortcuts"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:29
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:29
+#: ../data/windowmanager.ui.h:27
 msgid "List of window manager keyboard shortcuts"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:31
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:31
+#: ../data/windowmanager.ui.h:29
 msgid "Restore default window manager settings"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:33
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:33
+#: ../data/windowmanager.ui.h:31
 msgid "Enable the window manager to draw multiple workspaces"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:34
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:34
+#: ../data/windowmanager.ui.h:32
 msgid "Workspace switcher:"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:35
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:35
+#: ../data/windowmanager.ui.h:33
 msgid "Select the outline colour of the current workspace in the overview"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:36
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:36
+#: ../data/windowmanager.ui.h:34
 msgid "Current workspace colour:"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:37
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:37
+#: ../data/windowmanager.ui.h:35
 msgid "Select the number of vertical workspaces"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:38
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:38
+#: ../data/windowmanager.ui.h:36
 msgid "Vertical workspaces:"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:39
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:39
+#: ../data/windowmanager.ui.h:37
 msgid "Select the number of horizontal workspaces"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:40
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:40
+#: ../data/windowmanager.ui.h:38
 msgid "Horizontal workspaces:"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:41
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:41
+#: ../data/windowmanager.ui.h:39
 msgid "Workspace shortcuts"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:42
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:42
+#: ../data/windowmanager.ui.h:40
 msgid "List of workspace management keyboard shortcuts"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:43
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:43
+#: ../data/windowmanager.ui.h:41
 msgid "Restore default workspace configuration"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:44
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:44
+#: ../data/windowmanager.ui.h:42
 msgid "Workspace Settings"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:45
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:45
+#: ../data/windowmanager.ui.h:43
 msgid "Enable the window spread?"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:46
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:46
+#: ../data/windowmanager.ui.h:44
 msgid "Window spread:"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:47
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:47
+#: ../data/windowmanager.ui.h:45
 msgid "Select the space between window in the spead overview in pixels"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:48
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:48
+#: ../data/windowmanager.ui.h:46
 msgid "Spacing:"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:49
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:49
+#: ../data/windowmanager.ui.h:47
 msgid "Icons on previews"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:50
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:50
+#: ../data/windowmanager.ui.h:48
 msgid ""
 "When enabled, show an application's icon on the window preview in the window "
 "spread"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:51
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:51
+#: ../data/windowmanager.ui.h:49
 msgid "Click to access desktop"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:52
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:52
+#: ../data/windowmanager.ui.h:50
 msgid ""
 "When enabled, clicking on the desktop in the window spread will display the "
 "desktop"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:53
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:53
+#: ../data/windowmanager.ui.h:51
 msgid "Window spread shortcuts"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:54
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:54
+#: ../data/windowmanager.ui.h:52
 msgid "List of window spread shortcuts"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:55
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:55
+#: ../data/windowmanager.ui.h:53
 msgid "Restore default window spread settings"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:56
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:56
+#: ../data/windowmanager.ui.h:54
 msgid "Window spread"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:57
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:57
+#: ../data/windowmanager.ui.h:55
 msgid "Window snapping:"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:58
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:58
+#: ../data/windowmanager.ui.h:56
 msgid "Fill colour:"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:59
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:59
+#: ../data/windowmanager.ui.h:57
 msgid "Outline colour:"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:61
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:61
+#: ../data/windowmanager.ui.h:59
 msgid "Window snapping"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:62
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:62
+#: ../data/windowmanager.ui.h:60
 msgid "Hotcorners:"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:64
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:64
+#: ../data/windowmanager.ui.h:62
 msgid "Focus Behaviour"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:65
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:65
+#: ../data/windowmanager.ui.h:63
 msgid "Auto-raise delay:"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:66
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:66
+#: ../data/windowmanager.ui.h:64
 msgid "Set the delay for raising newly focused windows."
 msgstr ""
 
-#: ../data/windowmanager.ui.h:67
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:67
+#: ../data/windowmanager.ui.h:65
 msgid "Focus mode:"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:68
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:68
+#: ../data/windowmanager.ui.h:66
 msgid ""
 "Select the window focus mode; \"click\" means windows must be clicked in "
 "order to focus them, \"sloppy\" means windows are focused when the mouse "
@@ -1652,210 +2051,312 @@ msgid ""
 "enters the window and unfocused when the mouse leaves the window."
 msgstr ""
 
-#: ../data/windowmanager.ui.h:69
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:69
+#: ../data/windowmanager.ui.h:67
 msgid "Click"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:70
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:70
+#: ../data/windowmanager.ui.h:68
 msgid "Sloppy"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:71
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:71
+#: ../data/windowmanager.ui.h:69
 msgid "Mouse"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:72
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:72
+#: ../data/windowmanager.ui.h:70
 msgid "If enabled, windows that take focus will be automatically raised."
 msgstr ""
 
-#: ../data/windowmanager.ui.h:73
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:73
+#: ../data/windowmanager.ui.h:71
 msgid "Auto-raise:"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:74
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:74
+#: ../data/windowmanager.ui.h:72
 msgid "Titlebar Actions"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:75
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:75
+#: ../data/windowmanager.ui.h:73
 msgid "Double click:"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:76
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:76
+#: ../data/windowmanager.ui.h:74
 msgid "Select the titlebar's double click action."
 msgstr ""
 
-#: ../data/windowmanager.ui.h:77
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:77
+#: ../data/windowmanager.ui.h:75
 msgid "Toggle Shade"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:78
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:78
+#: ../data/windowmanager.ui.h:76
 msgid "Maximize"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:79
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:79
+#: ../data/windowmanager.ui.h:77
 msgid "Horizontal expand"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:80
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:80
+#: ../data/windowmanager.ui.h:78
 msgid "Vertical expand"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:81
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:81
+#: ../data/windowmanager.ui.h:79
 msgid "Minimize"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:82
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:82
+#: ../data/windowmanager.ui.h:80
 msgid "No action"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:83
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:83
+#: ../data/windowmanager.ui.h:81
 msgid "Lower"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:84
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:84
+#: ../data/windowmanager.ui.h:82
 msgid "Menu"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:85
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:85
+#: ../data/windowmanager.ui.h:83
 msgid "Middle click:"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:86
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:86
+#: ../data/windowmanager.ui.h:84
 msgid "Select the titlebar's middle click action."
 msgstr ""
 
-#: ../data/windowmanager.ui.h:87
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:87
+#: ../data/windowmanager.ui.h:85
 msgid "Toggle shade"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:88
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:88
+#: ../data/windowmanager.ui.h:86
 msgid "Right click:"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:89
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:89
+#: ../data/windowmanager.ui.h:87
 msgid "Select the titlebar's right click action."
 msgstr ""
 
-#: ../data/windowmanager.ui.h:90
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:90
+#: ../data/windowmanager.ui.h:88
 msgid "Resizing"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:91
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:91
+#: ../data/windowmanager.ui.h:89
 msgid "Restore the default settings for the additional options."
 msgstr ""
 
-#: ../data/windowmanager.ui.h:93
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:93
+#: ../data/windowmanager.ui.h:91
 msgid "Close window"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:94
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:94
+#: ../data/windowmanager.ui.h:92
 msgid "Alt+F4"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:95
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:95
+#: ../data/windowmanager.ui.h:93
 msgid "Move window"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:96
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:96
+#: ../data/windowmanager.ui.h:94
 msgid "Alt+mouse button 1"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:97
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:97
+#: ../data/windowmanager.ui.h:95
 msgid "Show desktop"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:98
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:98
+#: ../data/windowmanager.ui.h:96
 msgid "Super+D"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:99
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:99
+#: ../data/windowmanager.ui.h:97
 msgid "Zoom in"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:100
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:100
+#: ../data/windowmanager.ui.h:98
 msgid "Super++"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:101
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:101
+#: ../data/windowmanager.ui.h:99
 msgid "Zoom out"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:102
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:102
+#: ../data/windowmanager.ui.h:100
 msgid "Super+-"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:103
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:103
+#: ../data/windowmanager.ui.h:101
 msgid "Start windows spread"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:104
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:104
+#: ../data/windowmanager.ui.h:102
 msgid "Super+W"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:105
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:105
+#: ../data/windowmanager.ui.h:103
 msgid "Start windows spread for all windows"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:107
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:107
+#: ../data/windowmanager.ui.h:105
 msgid "Start workspace switcher"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:108
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:108
+#: ../data/windowmanager.ui.h:106
 msgid "Super+S"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:109
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:109
+#: ../data/windowmanager.ui.h:107
 msgid "Toggle Desktop"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:110
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:110
+#: ../data/windowmanager.ui.h:108
 msgid "Show Workspaces"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:111
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:111
+#: ../data/windowmanager.ui.h:109
 msgid "Window Spread"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:112
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:112
+#: ../data/windowmanager.ui.h:110
 msgid "Spread all Windows"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:113
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:113
+#: ../data/windowmanager.ui.h:111
 msgid "Do Nothing"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:114
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:114
+#: ../data/windowmanager.ui.h:112
 msgid "Bottom Left Corner"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:115
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:115
+#: ../data/windowmanager.ui.h:113
 msgid "Bottom Half"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:116
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:116
+#: ../data/windowmanager.ui.h:114
 msgid "Bottom Right Corner"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:117
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:117
+#: ../data/windowmanager.ui.h:115
 msgid "Left Half"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:118
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:118
+#: ../data/windowmanager.ui.h:116
 msgid "Fill Screen"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:119
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:119
+#: ../data/windowmanager.ui.h:117
 msgid "Right Half"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:120
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:120
+#: ../data/windowmanager.ui.h:118
 msgid "Top Left Corner"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:121
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:121
+#: ../data/windowmanager.ui.h:119
 msgid "Top Half"
 msgstr ""
 
-#: ../data/windowmanager.ui.h:122
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/windowmanager.ui.h:122
+#: ../data/windowmanager.ui.h:120
 msgid "Top Right Corner"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/filechooser-theme.ui.h:1
+#: ../data/filechooser-theme.ui.h:1
+msgid "Choose a Theme file to install"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/filechooser-theme.ui.h:2
+#: ../data/filechooser-theme.ui.h:2
+msgid "Install Theme"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:44
+msgid "Layout:"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:46
+msgid "Use the default window button layout."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:52
+msgid "Custom"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:53
+msgid "Use a custom window button layout."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:54
+msgid "Select a custom window controls layout."
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:55
+msgid "Current layout"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:56
+msgid "Close button only"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:57
+msgid "Close, maximize, window title"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:58
+msgid "Close, minimize, window title"
+msgstr ""
+
+#: ../debian/unity-tweak-tool/usr/share/unity-tweak-tool/appearance.ui.h:59
+msgid "Close, window title, maximize"
 msgstr ""

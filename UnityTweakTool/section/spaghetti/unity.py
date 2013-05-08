@@ -87,6 +87,7 @@ class Unitysettings ():
 
         # ====== Panel Helpers ====== #
         self.ui['sc_panel_transparency'].set_value(gsettings.unityshell.get_double('panel-opacity'))
+
          # Default Player
         interested_players = gsettings.sound.get_strv('interested-media-players')
         preferred_players = gsettings.sound.get_strv('preferred-media-players')
