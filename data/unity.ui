@@ -139,6 +139,7 @@
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="orientation">vertical</property>
+            <property name="spacing">6</property>
             <child>
               <object class="GtkLabel" id="l_behaviour">
                 <property name="visible">True</property>
@@ -162,7 +163,9 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="halign">start</property>
+                <property name="margin_left">12</property>
                 <property name="row_spacing">6</property>
+                <property name="column_spacing">6</property>
                 <child>
                   <object class="GtkSwitch" id="sw_launcher_hidemode">
                     <property name="visible">True</property>
@@ -171,8 +174,6 @@
                     <property name="tooltip_markup" translatable="yes">Should the launcher be hidden?</property>
                     <property name="tooltip_text" translatable="yes">Should the launcher be hidden?</property>
                     <property name="halign">start</property>
-                    <property name="margin_left">1</property>
-                    <property name="margin_top">7</property>
                     <signal name="notify::active" handler="on_sw_launcher_hidemode_active_notify" swapped="no"/>
                   </object>
                   <packing>
@@ -188,8 +189,6 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
-                    <property name="margin_right">7</property>
-                    <property name="margin_top">6</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Auto-hide:</property>
                   </object>
@@ -209,10 +208,10 @@
                     <property name="entry_text_column">0</property>
                     <property name="id_column">1</property>
                     <items>
-                      <item translatable="yes">Fade Dash &amp; Slide</item>
+                      <item translatable="yes">Fade Dash and slide</item>
                       <item translatable="yes">Slide only</item>
                       <item translatable="yes">Fade only</item>
-                      <item translatable="yes">Fade &amp; slide</item>
+                      <item translatable="yes">Fade and slide</item>
                     </items>
                     <signal name="changed" handler="on_cbox_autohide_animation_changed" swapped="no"/>
                   </object>
@@ -225,11 +224,11 @@
                 </child>
                 <child>
                   <object class="GtkLabel" id="l_autohide_animation">
-                    <property name="width_request">0</property>
+                    <property name="width_request">150</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="halign">end</property>
-                    <property name="margin_right">6</property>
+                    <property name="xalign">1</property>
                     <property name="label" translatable="yes">Auto-hide animation:</property>
                     <property name="justify">right</property>
                   </object>
@@ -251,8 +250,9 @@
               <object class="GtkGrid" id="grid_reveal">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="margin_top">6</property>
+                <property name="margin_left">12</property>
                 <property name="row_spacing">6</property>
+                <property name="column_spacing">6</property>
                 <child>
                   <object class="GtkLabel" id="l_launcher_reveal">
                     <property name="visible">True</property>
@@ -260,7 +260,6 @@
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
                     <property name="tooltip_text" translatable="yes">Select the option to reveal the dash with the mouse, when auto-hide is enabled.</property>
-                    <property name="margin_right">6</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Reveal location:</property>
                   </object>
@@ -278,7 +277,6 @@
                     <property name="sensitive">False</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
-                    <property name="margin_right">7</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Reveal sensitivity:</property>
                   </object>
@@ -298,8 +296,6 @@
                     <property name="has_tooltip">True</property>
                     <property name="tooltip_markup" translatable="yes">How much pointer "pressure" is required to reveal the launcher.</property>
                     <property name="tooltip_text" translatable="yes">How much pointer "pressure" is required to reveal the launcher.</property>
-                    <property name="margin_left">3</property>
-                    <property name="margin_top">12</property>
                     <property name="adjustment">adj_reveal_sensitivity</property>
                     <property name="digits">2</property>
                     <property name="draw_value">False</property>
@@ -398,14 +394,14 @@
               <object class="GtkGrid" id="grid_launcher_appearance">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="halign">start</property>
+                <property name="row_spacing">6</property>
+                <property name="column_spacing">6</property>
                 <child>
                   <object class="GtkLabel" id="l_launcher_transparent_switch">
+                    <property name="width_request">150</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
-                    <property name="margin_right">7</property>
-                    <property name="margin_top">6</property>
                     <property name="xalign">1</property>
                     <property name="ypad">4</property>
                     <property name="label" translatable="yes">Transparency:</property>
@@ -425,8 +421,6 @@
                     <property name="tooltip_markup" translatable="yes">Enable launcher transparency?</property>
                     <property name="tooltip_text" translatable="yes">Enable launcher transparency?</property>
                     <property name="halign">start</property>
-                    <property name="margin_left">1</property>
-                    <property name="margin_top">7</property>
                     <signal name="notify::active" handler="on_sw_launcher_transparent_active_notify" swapped="no"/>
                   </object>
                   <packing>
@@ -445,7 +439,6 @@
                     <property name="has_tooltip">True</property>
                     <property name="tooltip_markup" translatable="yes">Select the level of the transparency of the launcher</property>
                     <property name="tooltip_text" translatable="yes">Select the level of the transparency of the launcher</property>
-                    <property name="margin_right">7</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Transparency level:</property>
                   </object>
@@ -465,8 +458,6 @@
                     <property name="has_tooltip">True</property>
                     <property name="tooltip_markup" translatable="yes">How transparent the launcher will be.</property>
                     <property name="tooltip_text" translatable="yes">How transparent the launcher will be.</property>
-                    <property name="margin_left">3</property>
-                    <property name="margin_top">12</property>
                     <property name="adjustment">adj_launcher_transparency</property>
                     <property name="inverted">True</property>
                     <property name="digits">2</property>
@@ -492,6 +483,7 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="row_spacing">6</property>
+                <property name="column_spacing">6</property>
                 <child>
                   <object class="GtkRadioButton" id="radio_launcher_color_cham">
                     <property name="label" translatable="yes">Based on wallpaper</property>
@@ -501,7 +493,6 @@
                     <property name="has_tooltip">True</property>
                     <property name="tooltip_markup" translatable="yes">If selected, the launcher colour is based on the desktop background</property>
                     <property name="tooltip_text" translatable="yes">If selected, the launcher colour is based on the desktop background</property>
-                    <property name="margin_right">6</property>
                     <property name="xalign">0</property>
                     <property name="draw_indicator">True</property>
                     <property name="group">radio_launcher_color_cus</property>
@@ -515,10 +506,10 @@
                 </child>
                 <child>
                   <object class="GtkLabel" id="l_launcher_colour">
+                    <property name="width_request">150</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
-                    <property name="margin_right">6</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Colour:</property>
                   </object>
@@ -535,7 +526,6 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
-                    <property name="margin_right">6</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Visibility:</property>
                   </object>
@@ -605,7 +595,6 @@
                     <property name="has_tooltip">True</property>
                     <property name="tooltip_markup" translatable="yes">If selected, the launcher is visible on all desktops.</property>
                     <property name="tooltip_text" translatable="yes">If selected, the launcher is visible on all desktops</property>
-                    <property name="margin_right">6</property>
                     <property name="xalign">0</property>
                     <property name="active">True</property>
                     <property name="draw_indicator">True</property>
@@ -668,15 +657,14 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="halign">start</property>
-                <property name="margin_top">6</property>
                 <property name="row_spacing">6</property>
+                <property name="column_spacing">6</property>
                 <child>
                   <object class="GtkLabel" id="l_icon_size">
                     <property name="width_request">150</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
-                    <property name="margin_right">6</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Icon size:</property>
                   </object>
@@ -741,7 +729,6 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="halign">end</property>
-                    <property name="margin_right">6</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Launch animation:</property>
                   </object>
@@ -757,7 +744,6 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="halign">end</property>
-                    <property name="margin_right">6</property>
                     <property name="label" translatable="yes">Urgent animation:</property>
                   </object>
                   <packing>
@@ -799,7 +785,6 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
-                    <property name="margin_right">5</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Icon backgrounds:</property>
                   </object>
@@ -831,7 +816,6 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="halign">start</property>
-                    <property name="margin_right">6</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">"Show Desktop" icon:</property>
                   </object>
@@ -885,8 +869,8 @@
                 <property name="tooltip_text" translatable="yes">Restore default Unity launcher settings.</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
-                <property name="margin_top">12</property>
-                <property name="margin_bottom">12</property>
+                <property name="margin_top">6</property>
+                <property name="margin_bottom">6</property>
                 <signal name="clicked" handler="on_b_unity_launcher_reset_clicked" swapped="no"/>
               </object>
               <packing>
@@ -912,6 +896,7 @@
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="orientation">vertical</property>
+            <property name="spacing">6</property>
             <child>
               <object class="GtkLabel" id="l_dash_general">
                 <property name="visible">True</property>
@@ -919,7 +904,6 @@
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
                 <property name="margin_top">6</property>
-                <property name="margin_bottom">6</property>
                 <property name="label" translatable="yes">General</property>
                 <attributes>
                   <attribute name="weight" value="bold"/>
@@ -935,15 +919,16 @@
               <object class="GtkGrid" id="grid_unity_dash_settings">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="margin_left">18</property>
+                <property name="margin_left">12</property>
                 <property name="row_spacing">6</property>
+                <property name="column_spacing">6</property>
                 <child>
                   <object class="GtkLabel" id="l_dash_blur">
+                    <property name="width_request">120</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
                     <property name="halign">end</property>
-                    <property name="margin_right">6</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Background blur:</property>
                   </object>
@@ -979,7 +964,6 @@
                     <property name="tooltip_markup" translatable="yes">Select the type of blur in the dash</property>
                     <property name="tooltip_text" translatable="yes">Select the type of blur in the dash</property>
                     <property name="halign">end</property>
-                    <property name="margin_right">6</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Blur type:</property>
                   </object>
@@ -1061,7 +1045,6 @@
                 <property name="tooltip_markup" translatable="yes">If enabled, the dash will get suggestions from online sources.</property>
                 <property name="tooltip_text" translatable="yes">If enabled, the dash will get suggestions from online sources.</property>
                 <property name="margin_left">18</property>
-                <property name="margin_top">6</property>
                 <property name="xalign">0</property>
                 <property name="draw_indicator">True</property>
                 <signal name="toggled" handler="on_check_suggestions_toggled" swapped="no"/>
@@ -1073,29 +1056,29 @@
               </packing>
             </child>
             <child>
+              <object class="GtkLabel" id="l_dash_lens_applications">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="halign">start</property>
+                <property name="margin_left">12</property>
+                <property name="label" translatable="yes">Applications</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+            <child>
               <object class="GtkGrid" id="grid_application_lens">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="margin_left">6</property>
-                <child>
-                  <object class="GtkLabel" id="l_dash_lens_applications">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="halign">start</property>
-                    <property name="margin_left">6</property>
-                    <property name="margin_top">12</property>
-                    <property name="label" translatable="yes">Applications</property>
-                    <attributes>
-                      <attribute name="weight" value="bold"/>
-                    </attributes>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">0</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
+                <property name="margin_left">18</property>
+                <property name="row_spacing">6</property>
+                <property name="column_spacing">6</property>
                 <child>
                   <object class="GtkCheckButton" id="check_show_recent_apps">
                     <property name="label" translatable="yes">Show "Recently Used" applications</property>
@@ -1104,14 +1087,13 @@
                     <property name="receives_default">False</property>
                     <property name="tooltip_markup" translatable="yes">If enabled, show recently used applications in the Dash.</property>
                     <property name="tooltip_text" translatable="yes">If enabled, show recently used applications in the Dash.</property>
-                    <property name="margin_left">12</property>
                     <property name="xalign">0</property>
                     <property name="draw_indicator">True</property>
                     <signal name="toggled" handler="on_check_show_recent_apps_toggled" swapped="no"/>
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
-                    <property name="top_attach">2</property>
+                    <property name="top_attach">1</property>
                     <property name="width">1</property>
                     <property name="height">1</property>
                   </packing>
@@ -1124,67 +1106,13 @@
                     <property name="receives_default">False</property>
                     <property name="tooltip_markup" translatable="yes">If enabled, show applications available for download in the Dash.</property>
                     <property name="tooltip_text" translatable="yes">If enabled, show applications available for download in the Dash.</property>
-                    <property name="margin_left">12</property>
-                    <property name="margin_top">6</property>
                     <property name="xalign">0</property>
                     <property name="draw_indicator">True</property>
                     <signal name="toggled" handler="on_check_show_available_apps_toggled" swapped="no"/>
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
-                    <property name="top_attach">1</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">3</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkGrid" id="grid_files_lens">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="margin_left">6</property>
-                <child>
-                  <object class="GtkLabel" id="l_files_lens">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="halign">start</property>
-                    <property name="margin_left">6</property>
-                    <property name="margin_top">12</property>
-                    <property name="label" translatable="yes">Files</property>
-                    <attributes>
-                      <attribute name="weight" value="bold"/>
-                    </attributes>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
                     <property name="top_attach">0</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkCheckButton" id="check_use_locate">
-                    <property name="label" translatable="yes">Enable search of your files</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="receives_default">False</property>
-                    <property name="tooltip_markup" translatable="yes">If enabled, allow searches to find your files that aren't logged.</property>
-                    <property name="tooltip_text" translatable="yes">If enabled, allow searches to find your files that aren't logged.</property>
-                    <property name="margin_left">12</property>
-                    <property name="margin_top">6</property>
-                    <property name="xalign">0</property>
-                    <property name="draw_indicator">True</property>
-                    <signal name="toggled" handler="on_check_use_locate_toggled" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">1</property>
                     <property name="width">1</property>
                     <property name="height">1</property>
                   </packing>
@@ -1197,13 +1125,12 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="l_run_command">
+              <object class="GtkLabel" id="l_files_lens">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
-                <property name="margin_top">12</property>
-                <property name="label" translatable="yes">Run Command</property>
+                <property name="label" translatable="yes">Files</property>
                 <attributes>
                   <attribute name="weight" value="bold"/>
                 </attributes>
@@ -1212,6 +1139,43 @@
                 <property name="expand">False</property>
                 <property name="fill">True</property>
                 <property name="position">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="check_use_locate">
+                <property name="label" translatable="yes">Enable search of your files</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="receives_default">False</property>
+                <property name="has_tooltip">True</property>
+                <property name="tooltip_markup" translatable="yes">If enabled, allow searches to find your files that aren&amp;apos;t logged.</property>
+                <property name="tooltip_text" translatable="yes">If enabled, allow searches to find your files that aren't logged.</property>
+                <property name="margin_left">18</property>
+                <property name="xalign">0</property>
+                <property name="draw_indicator">True</property>
+                <signal name="toggled" handler="on_check_use_locate_toggled" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">6</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="l_run_command">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="halign">start</property>
+                <property name="margin_left">12</property>
+                <property name="label" translatable="yes">Run Command</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">7</property>
               </packing>
             </child>
             <child>
@@ -1224,14 +1188,12 @@
                 <property name="tooltip_text" translatable="yes">Clear ALT+F2 command history.</property>
                 <property name="halign">start</property>
                 <property name="margin_left">18</property>
-                <property name="margin_top">6</property>
-                <property name="margin_bottom">6</property>
                 <signal name="clicked" handler="on_b_clear_run_history_clicked" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">8</property>
+                <property name="position">10</property>
               </packing>
             </child>
             <child>
@@ -1245,14 +1207,14 @@
                 <property name="tooltip_text" translatable="yes">Restore the default Dash settings.</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
-                <property name="margin_top">12</property>
-                <property name="margin_bottom">12</property>
+                <property name="margin_top">6</property>
+                <property name="margin_bottom">6</property>
                 <signal name="clicked" handler="on_b_unity_dash_reset_clicked" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">11</property>
+                <property name="position">13</property>
               </packing>
             </child>
           </object>
@@ -2003,8 +1965,8 @@
                 <property name="tooltip_text" translatable="yes">Restore the default Unity panel settings.</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
-                <property name="margin_top">12</property>
-                <property name="margin_bottom">12</property>
+                <property name="margin_top">6</property>
+                <property name="margin_bottom">6</property>
                 <signal name="clicked" handler="on_b_unity_panel_reset_clicked" swapped="no"/>
               </object>
               <packing>
@@ -2034,306 +1996,270 @@
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="orientation">vertical</property>
+            <property name="spacing">6</property>
             <child>
-              <object class="GtkBox" id="box_unity_switcher_all">
+              <object class="GtkLabel" id="l_box_unity_switcher_windows">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="orientation">vertical</property>
-                <property name="spacing">5</property>
+                <property name="margin_left">12</property>
+                <property name="margin_top">6</property>
+                <property name="xalign">0</property>
+                <property name="label" translatable="yes">General</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkGrid" id="grid_switcher_settings">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="margin_left">18</property>
+                <property name="hexpand">True</property>
+                <property name="column_spacing">6</property>
                 <child>
-                  <object class="GtkBox" id="box_unity_switcher_windows">
+                  <object class="GtkCheckButton" id="check_switchwindows_all_workspaces">
+                    <property name="label" translatable="yes">Switch between windows on all workspaces</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="orientation">vertical</property>
-                    <child>
-                      <object class="GtkLabel" id="l_box_unity_switcher_windows">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="margin_left">12</property>
-                        <property name="margin_top">6</property>
-                        <property name="xalign">0</property>
-                        <property name="label" translatable="yes">General</property>
-                        <attributes>
-                          <attribute name="weight" value="bold"/>
-                        </attributes>
-                      </object>
-                      <packing>
-                        <property name="expand">False</property>
-                        <property name="fill">True</property>
-                        <property name="position">0</property>
-                      </packing>
-                    </child>
-                    <child>
-                      <object class="GtkGrid" id="grid_switcher_settings">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="margin_left">6</property>
-                        <property name="hexpand">True</property>
-                        <property name="border_width">10</property>
-                        <child>
-                          <object class="GtkCheckButton" id="check_switchwindows_all_workspaces">
-                            <property name="label" translatable="yes">Switch between windows on all workspaces</property>
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="receives_default">False</property>
-                            <property name="tooltip_markup" translatable="yes">If enabled, the window switcher cycles through all windows on all workspaces</property>
-                            <property name="tooltip_text" translatable="yes">If enabled, the window switcher cycles through all windows on all workspaces</property>
-                            <property name="xalign">0</property>
-                            <property name="active">True</property>
-                            <property name="draw_indicator">True</property>
-                            <signal name="toggled" handler="on_check_switchwindows_all_workspaces_toggled" swapped="no"/>
-                          </object>
-                          <packing>
-                            <property name="left_attach">0</property>
-                            <property name="top_attach">1</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkCheckButton" id="check_switcher_showdesktop">
-                            <property name="label" translatable="yes">Display "Show Desktop" icon</property>
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="receives_default">False</property>
-                            <property name="tooltip_markup" translatable="yes">If enabled, show the "Show Desktop" option in the window switcher</property>
-                            <property name="tooltip_text" translatable="yes">If enabled, show the "Show Desktop" option in the window switcher</property>
-                            <property name="xalign">0</property>
-                            <property name="draw_indicator">True</property>
-                            <signal name="toggled" handler="on_check_switcher_showdesktop_toggled" swapped="no"/>
-                          </object>
-                          <packing>
-                            <property name="left_attach">0</property>
-                            <property name="top_attach">0</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkCheckButton" id="check_autoexposewindows">
-                            <property name="label" translatable="yes">Automatically expose windows</property>
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="receives_default">False</property>
-                            <property name="has_tooltip">True</property>
-                            <property name="tooltip_markup" translatable="yes">If enabled, the window switcher will expose minimized windows</property>
-                            <property name="tooltip_text" translatable="yes">If enabled, the window switcher will expose minimized windows</property>
-                            <property name="xalign">0</property>
-                            <property name="draw_indicator">True</property>
-                            <signal name="toggled" handler="on_check_autoexposewindows_toggled" swapped="no"/>
-                          </object>
-                          <packing>
-                            <property name="left_attach">0</property>
-                            <property name="top_attach">3</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkCheckButton" id="check_minimizedwindows_switch">
-                            <property name="label" translatable="yes">Switch between minimized windows</property>
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="receives_default">False</property>
-                            <property name="has_tooltip">True</property>
-                            <property name="tooltip_markup" translatable="yes">If enabled, the window switcher will switch through minimized windows</property>
-                            <property name="tooltip_text" translatable="yes">If enabled, the window switcher will switch through minimized windows</property>
-                            <property name="xalign">0</property>
-                            <property name="draw_indicator">True</property>
-                            <signal name="toggled" handler="on_check_minimizedwindows_switch_toggled" swapped="no"/>
-                          </object>
-                          <packing>
-                            <property name="left_attach">0</property>
-                            <property name="top_attach">2</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
-                          </packing>
-                        </child>
-                      </object>
-                      <packing>
-                        <property name="expand">False</property>
-                        <property name="fill">True</property>
-                        <property name="position">1</property>
-                      </packing>
-                    </child>
-                    <child>
-                      <object class="GtkLabel" id="l_unity_switcher_shortcuts">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="margin_left">12</property>
-                        <property name="margin_bottom">6</property>
-                        <property name="label" translatable="yes">Window switching shortcuts</property>
-                        <attributes>
-                          <attribute name="weight" value="bold"/>
-                        </attributes>
-                      </object>
-                      <packing>
-                        <property name="expand">False</property>
-                        <property name="fill">True</property>
-                        <property name="position">3</property>
-                      </packing>
-                    </child>
-                    <child>
-                      <object class="GtkScrolledWindow" id="scrolledwindow_unity_switcher_windows">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="margin_left">18</property>
-                        <property name="margin_right">18</property>
-                        <property name="margin_top">6</property>
-                        <property name="shadow_type">in</property>
-                        <property name="min_content_height">200</property>
-                        <child>
-                          <object class="GtkTreeView" id="treeview_unity_switcher_windows">
-                            <property name="visible">True</property>
-                            <property name="can_focus">True</property>
-                            <property name="tooltip_markup" translatable="yes">Window switcher shortcuts</property>
-                            <property name="tooltip_text" translatable="yes">Window switcher shortcuts</property>
-                            <property name="model">list_unity_switcher_windows_accelerators</property>
-                            <property name="headers_visible">False</property>
-                            <property name="headers_clickable">False</property>
-                            <property name="search_column">0</property>
-                            <child internal-child="selection">
-                              <object class="GtkTreeSelection" id="treeview-selection"/>
-                            </child>
-                            <child>
-                              <object class="GtkTreeViewColumn" id="treeview_unity_switcher_windows_column_title">
-                                <property name="title" translatable="yes">Title</property>
-                                <property name="expand">True</property>
-                                <child>
-                                  <object class="GtkCellRendererText" id="crtext_unity_switcher_windows"/>
-                                  <attributes>
-                                    <attribute name="text">0</attribute>
-                                  </attributes>
-                                </child>
-                              </object>
-                            </child>
-                            <child>
-                              <object class="GtkTreeViewColumn" id="treeview_unity_switcher_windows_column_accelerator">
-                                <property name="sizing">autosize</property>
-                                <property name="title" translatable="yes">Accelerator</property>
-                                <child>
-                                  <object class="GtkCellRendererAccel" id="craccel_unity_switcher_windows">
-                                    <property name="editable">True</property>
-                                    <signal name="accel-cleared" handler="on_craccel_unity_switcher_windows_accel_cleared" object="list_unity_switcher_windows_accelerators" swapped="yes"/>
-                                    <signal name="accel-edited" handler="on_craccel_unity_switcher_windows_accel_edited" object="list_unity_switcher_windows_accelerators" swapped="yes"/>
-                                  </object>
-                                  <attributes>
-                                    <attribute name="text">1</attribute>
-                                  </attributes>
-                                </child>
-                              </object>
-                            </child>
-                          </object>
-                        </child>
-                      </object>
-                      <packing>
-                        <property name="expand">True</property>
-                        <property name="fill">True</property>
-                        <property name="position">4</property>
-                      </packing>
-                    </child>
+                    <property name="receives_default">False</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip_markup" translatable="yes">If enabled, the window switcher cycles through all windows on all workspaces</property>
+                    <property name="tooltip_text" translatable="yes">If enabled, the window switcher cycles through all windows on all workspaces</property>
+                    <property name="xalign">0</property>
+                    <property name="active">True</property>
+                    <property name="draw_indicator">True</property>
+                    <signal name="toggled" handler="on_check_switchwindows_all_workspaces_toggled" swapped="no"/>
                   </object>
                   <packing>
-                    <property name="expand">True</property>
-                    <property name="fill">True</property>
-                    <property name="position">0</property>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">1</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkBox" id="box_unity_switcher_launcher">
+                  <object class="GtkCheckButton" id="check_switcher_showdesktop">
+                    <property name="label" translatable="yes">Display "Show Desktop" icon</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="margin_top">12</property>
-                    <property name="orientation">vertical</property>
-                    <child>
-                      <object class="GtkLabel" id="l_box_unity_switcher_launcher">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="margin_left">12</property>
-                        <property name="xalign">0</property>
-                        <property name="label" translatable="yes">Launcher switching shortcuts</property>
-                        <attributes>
-                          <attribute name="weight" value="bold"/>
-                        </attributes>
-                      </object>
-                      <packing>
-                        <property name="expand">False</property>
-                        <property name="fill">True</property>
-                        <property name="position">1</property>
-                      </packing>
-                    </child>
-                    <child>
-                      <object class="GtkScrolledWindow" id="scrolledwindow_unity_switcher_launcher">
-                        <property name="height_request">48</property>
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="margin_left">18</property>
-                        <property name="margin_right">18</property>
-                        <property name="margin_top">6</property>
-                        <property name="shadow_type">in</property>
-                        <child>
-                          <object class="GtkTreeView" id="treeview_unity_switcher_launcher">
-                            <property name="visible">True</property>
-                            <property name="can_focus">True</property>
-                            <property name="tooltip_markup" translatable="yes">Launcher switcher shortcuts</property>
-                            <property name="tooltip_text" translatable="yes">Launcher switcher shortcuts</property>
-                            <property name="model">list_unity_switcher_launcher_accelerators</property>
-                            <property name="headers_visible">False</property>
-                            <property name="headers_clickable">False</property>
-                            <property name="search_column">0</property>
-                            <child internal-child="selection">
-                              <object class="GtkTreeSelection" id="treeview-selection2"/>
-                            </child>
-                            <child>
-                              <object class="GtkTreeViewColumn" id="treeview_unity_switcher_launcher_column_title">
-                                <property name="title" translatable="yes">Title</property>
-                                <property name="expand">True</property>
-                                <child>
-                                  <object class="GtkCellRendererText" id="crtext_unity_switcher_launcher"/>
-                                  <attributes>
-                                    <attribute name="text">0</attribute>
-                                  </attributes>
-                                </child>
-                              </object>
-                            </child>
-                            <child>
-                              <object class="GtkTreeViewColumn" id="treeview_unity_switcher_launcher_column_accelerator">
-                                <property name="sizing">autosize</property>
-                                <property name="title" translatable="yes">Accelerator</property>
-                                <child>
-                                  <object class="GtkCellRendererAccel" id="craccel_unity_switcher_launcher">
-                                    <property name="editable">True</property>
-                                    <signal name="accel-cleared" handler="on_craccel_unity_switcher_launcher_accel_cleared" object="list_unity_switcher_launcher_accelerators" swapped="yes"/>
-                                    <signal name="accel-edited" handler="on_craccel_unity_switcher_launcher_accel_edited" object="list_unity_switcher_launcher_accelerators" swapped="yes"/>
-                                  </object>
-                                  <attributes>
-                                    <attribute name="text">1</attribute>
-                                  </attributes>
-                                </child>
-                              </object>
-                            </child>
-                          </object>
-                        </child>
-                      </object>
-                      <packing>
-                        <property name="expand">True</property>
-                        <property name="fill">True</property>
-                        <property name="position">2</property>
-                      </packing>
-                    </child>
+                    <property name="receives_default">False</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip_markup" translatable="yes">If enabled, show the &amp;quot;Show Desktop&amp;quot; option in the window switcher</property>
+                    <property name="tooltip_text" translatable="yes">If enabled, show the "Show Desktop" option in the window switcher</property>
+                    <property name="xalign">0</property>
+                    <property name="draw_indicator">True</property>
+                    <signal name="toggled" handler="on_check_switcher_showdesktop_toggled" swapped="no"/>
                   </object>
                   <packing>
-                    <property name="expand">True</property>
-                    <property name="fill">True</property>
-                    <property name="position">1</property>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">0</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkCheckButton" id="check_autoexposewindows">
+                    <property name="label" translatable="yes">Automatically expose windows</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="receives_default">False</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip_markup" translatable="yes">If enabled, the window switcher will expose minimized windows</property>
+                    <property name="tooltip_text" translatable="yes">If enabled, the window switcher will expose minimized windows</property>
+                    <property name="xalign">0</property>
+                    <property name="draw_indicator">True</property>
+                    <signal name="toggled" handler="on_check_autoexposewindows_toggled" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">3</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkCheckButton" id="check_minimizedwindows_switch">
+                    <property name="label" translatable="yes">Switch between minimized windows</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="receives_default">False</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip_markup" translatable="yes">If enabled, the window switcher will switch through minimized windows</property>
+                    <property name="tooltip_text" translatable="yes">If enabled, the window switcher will switch through minimized windows</property>
+                    <property name="xalign">0</property>
+                    <property name="draw_indicator">True</property>
+                    <signal name="toggled" handler="on_check_minimizedwindows_switch_toggled" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">2</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
                   </packing>
                 </child>
               </object>
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">0</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="l_unity_switcher_shortcuts">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="halign">start</property>
+                <property name="margin_left">12</property>
+                <property name="label" translatable="yes">Window switching shortcuts</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkScrolledWindow" id="scrolledwindow_unity_switcher_windows">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="margin_left">18</property>
+                <property name="margin_right">18</property>
+                <property name="shadow_type">in</property>
+                <property name="min_content_height">200</property>
+                <child>
+                  <object class="GtkTreeView" id="treeview_unity_switcher_windows">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip_markup" translatable="yes">Window switcher shortcuts</property>
+                    <property name="tooltip_text" translatable="yes">Window switcher shortcuts</property>
+                    <property name="model">list_unity_switcher_windows_accelerators</property>
+                    <property name="headers_visible">False</property>
+                    <property name="headers_clickable">False</property>
+                    <property name="search_column">0</property>
+                    <child internal-child="selection">
+                      <object class="GtkTreeSelection" id="treeview-selection"/>
+                    </child>
+                    <child>
+                      <object class="GtkTreeViewColumn" id="treeview_unity_switcher_windows_column_title">
+                        <property name="title" translatable="yes">Title</property>
+                        <property name="expand">True</property>
+                        <child>
+                          <object class="GtkCellRendererText" id="crtext_unity_switcher_windows"/>
+                          <attributes>
+                            <attribute name="text">0</attribute>
+                          </attributes>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkTreeViewColumn" id="treeview_unity_switcher_windows_column_accelerator">
+                        <property name="sizing">autosize</property>
+                        <property name="title" translatable="yes">Accelerator</property>
+                        <child>
+                          <object class="GtkCellRendererAccel" id="craccel_unity_switcher_windows">
+                            <property name="editable">True</property>
+                            <signal name="accel-cleared" handler="on_craccel_unity_switcher_windows_accel_cleared" object="list_unity_switcher_windows_accelerators" swapped="yes"/>
+                            <signal name="accel-edited" handler="on_craccel_unity_switcher_windows_accel_edited" object="list_unity_switcher_windows_accelerators" swapped="yes"/>
+                          </object>
+                          <attributes>
+                            <attribute name="text">1</attribute>
+                          </attributes>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="l_box_unity_switcher_launcher">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="margin_left">12</property>
+                <property name="xalign">0</property>
+                <property name="label" translatable="yes">Launcher switching shortcuts</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkScrolledWindow" id="scrolledwindow_unity_switcher_launcher">
+                <property name="height_request">48</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="margin_left">18</property>
+                <property name="margin_right">18</property>
+                <property name="shadow_type">in</property>
+                <child>
+                  <object class="GtkTreeView" id="treeview_unity_switcher_launcher">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip_markup" translatable="yes">Launcher switcher shortcuts</property>
+                    <property name="tooltip_text" translatable="yes">Launcher switcher shortcuts</property>
+                    <property name="model">list_unity_switcher_launcher_accelerators</property>
+                    <property name="headers_visible">False</property>
+                    <property name="headers_clickable">False</property>
+                    <property name="search_column">0</property>
+                    <child internal-child="selection">
+                      <object class="GtkTreeSelection" id="treeview-selection2"/>
+                    </child>
+                    <child>
+                      <object class="GtkTreeViewColumn" id="treeview_unity_switcher_launcher_column_title">
+                        <property name="title" translatable="yes">Title</property>
+                        <property name="expand">True</property>
+                        <child>
+                          <object class="GtkCellRendererText" id="crtext_unity_switcher_launcher"/>
+                          <attributes>
+                            <attribute name="text">0</attribute>
+                          </attributes>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkTreeViewColumn" id="treeview_unity_switcher_launcher_column_accelerator">
+                        <property name="sizing">autosize</property>
+                        <property name="title" translatable="yes">Accelerator</property>
+                        <child>
+                          <object class="GtkCellRendererAccel" id="craccel_unity_switcher_launcher">
+                            <property name="editable">True</property>
+                            <signal name="accel-cleared" handler="on_craccel_unity_switcher_launcher_accel_cleared" object="list_unity_switcher_launcher_accelerators" swapped="yes"/>
+                            <signal name="accel-edited" handler="on_craccel_unity_switcher_launcher_accel_edited" object="list_unity_switcher_launcher_accelerators" swapped="yes"/>
+                          </object>
+                          <attributes>
+                            <attribute name="text">1</attribute>
+                          </attributes>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">5</property>
               </packing>
             </child>
             <child>
@@ -2352,7 +2278,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">2</property>
+                <property name="position">17</property>
               </packing>
             </child>
           </object>
@@ -2376,12 +2302,30 @@
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="orientation">vertical</property>
+            <property name="spacing">6</property>
+            <child>
+              <object class="GtkLabel" id="l_webapps_general">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="margin_left">12</property>
+                <property name="margin_top">6</property>
+                <property name="xalign">0</property>
+                <property name="label" translatable="yes">General</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
             <child>
               <object class="GtkGrid" id="grid_switch_unity_webapps">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="margin_left">12</property>
-                <property name="margin_top">6</property>
                 <child>
                   <object class="GtkSwitch" id="switch_unity_webapps">
                     <property name="visible">True</property>
@@ -2400,9 +2344,11 @@
                 </child>
                 <child>
                   <object class="GtkLabel" id="l_switch_unity_webapps">
+                    <property name="width_request">130</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="margin_right">6</property>
+                    <property name="xalign">1</property>
                     <property name="label" translatable="yes">Integration prompts:</property>
                   </object>
                   <packing>
@@ -2416,57 +2362,72 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">1</property>
+                <property name="position">2</property>
               </packing>
             </child>
             <child>
               <object class="GtkLabel" id="l_domains_preauthorized">
+                <property name="width_request">150</property>
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
-                <property name="margin_top">6</property>
-                <property name="margin_bottom">6</property>
-                <property name="label" translatable="yes">Preauthorized domains:</property>
+                <property name="xalign">1</property>
+                <property name="label" translatable="yes">Preauthorized domains</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
               </object>
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">9</property>
+                <property name="position">3</property>
               </packing>
             </child>
             <child>
-              <object class="GtkCheckButton" id="check_preauthorized_amazon">
-                <property name="label" translatable="yes">Amazon</property>
+              <object class="GtkBox" id="box_preauthorized">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="receives_default">False</property>
-                <property name="margin_left">18</property>
-                <property name="xalign">0</property>
-                <property name="draw_indicator">True</property>
-                <signal name="toggled" handler="on_check_preauthorized_amazon_toggled" swapped="no"/>
+                <property name="orientation">vertical</property>
+                <child>
+                  <object class="GtkCheckButton" id="check_preauthorized_amazon">
+                    <property name="label" translatable="yes">Amazon</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="receives_default">False</property>
+                    <property name="margin_left">18</property>
+                    <property name="xalign">0</property>
+                    <property name="draw_indicator">True</property>
+                    <signal name="toggled" handler="on_check_preauthorized_amazon_toggled" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkCheckButton" id="check_preauthorized_ubuntuone">
+                    <property name="label" translatable="yes">Ubuntu One</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="receives_default">False</property>
+                    <property name="margin_left">18</property>
+                    <property name="xalign">0</property>
+                    <property name="draw_indicator">True</property>
+                    <signal name="toggled" handler="on_check_preauthorized_ubuntuone_toggled" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
               </object>
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">10</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkCheckButton" id="check_preauthorized_ubuntuone">
-                <property name="label" translatable="yes">Ubuntu One</property>
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="receives_default">False</property>
-                <property name="margin_left">18</property>
-                <property name="xalign">0</property>
-                <property name="draw_indicator">True</property>
-                <signal name="toggled" handler="on_check_preauthorized_ubuntuone_toggled" swapped="no"/>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">11</property>
+                <property name="position">4</property>
               </packing>
             </child>
             <child>
@@ -2479,14 +2440,14 @@
                 <property name="tooltip_text" translatable="yes">Restore the default Unity Webapps settings.</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
-                <property name="margin_top">12</property>
+                <property name="margin_top">6</property>
                 <property name="margin_bottom">12</property>
                 <signal name="clicked" handler="on_b_unity_webapps_reset_clicked" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">14</property>
+                <property name="position">15</property>
               </packing>
             </child>
           </object>
@@ -2511,6 +2472,7 @@
             <property name="can_focus">False</property>
             <property name="margin_top">6</property>
             <property name="orientation">vertical</property>
+            <property name="spacing">6</property>
             <child>
               <object class="GtkLabel" id="l_hud">
                 <property name="visible">True</property>
@@ -2537,8 +2499,6 @@
                 <property name="tooltip_markup" translatable="yes">If enabled, the HUD will remember previously executed entries and sort them by frequently used.</property>
                 <property name="tooltip_text" translatable="yes">If enabled, the HUD will remember previously executed entries and sort them by frequently used.</property>
                 <property name="margin_left">18</property>
-                <property name="margin_top">6</property>
-                <property name="margin_bottom">6</property>
                 <property name="xalign">0</property>
                 <property name="draw_indicator">True</property>
                 <signal name="toggled" handler="on_check_hud_store_data_toggled" swapped="no"/>
@@ -2567,35 +2527,22 @@
               </packing>
             </child>
             <child>
-              <object class="GtkGrid" id="grid_unity_additional_shortcuts">
+              <object class="GtkCheckButton" id="check_shortcuts_hints_overlay">
+                <property name="label" translatable="yes">Hold Super for keyboard shortcuts</property>
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
+                <property name="receives_default">False</property>
+                <property name="has_tooltip">True</property>
+                <property name="tooltip_markup" translatable="yes">When enabled, pressing the Super key displays an overlay of all Unity keyboard shortcuts</property>
+                <property name="tooltip_text" translatable="yes">When enabled, pressing the Super key displays an overlay of all Unity keyboard shortcuts</property>
                 <property name="margin_left">18</property>
-                <property name="hexpand">True</property>
-                <child>
-                  <object class="GtkCheckButton" id="check_shortcuts_hints_overlay">
-                    <property name="label" translatable="yes">Hold Super for keyboard shortcuts</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="receives_default">False</property>
-                    <property name="tooltip_markup" translatable="yes">When enabled, pressing the Super key displays an overlay of all Unity keyboard shortcuts</property>
-                    <property name="tooltip_text" translatable="yes">When enabled, pressing the Super key displays an overlay of all Unity keyboard shortcuts</property>
-                    <property name="margin_top">6</property>
-                    <property name="xalign">0</property>
-                    <property name="draw_indicator">True</property>
-                    <signal name="toggled" handler="on_check_shortcuts_hints_overlay_toggled" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">0</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
+                <property name="xalign">0</property>
+                <property name="draw_indicator">True</property>
+                <signal name="toggled" handler="on_check_shortcuts_hints_overlay_toggled" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">False</property>
-                <property name="fill">False</property>
+                <property name="fill">True</property>
                 <property name="position">3</property>
               </packing>
             </child>
@@ -2605,7 +2552,6 @@
                 <property name="can_focus">False</property>
                 <property name="margin_left">18</property>
                 <property name="margin_right">18</property>
-                <property name="margin_top">6</property>
                 <property name="shadow_type">in</property>
                 <child>
                   <object class="GtkTreeView" id="treeview_unity_additional_shortcuts">
@@ -2663,8 +2609,6 @@
                 <property name="can_focus">False</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
-                <property name="margin_top">12</property>
-                <property name="margin_bottom">6</property>
                 <property name="label" translatable="yes">Notifications</property>
                 <attributes>
                   <attribute name="weight" value="bold"/>
@@ -2738,8 +2682,7 @@
                 <property name="tooltip_text" translatable="yes">Restore the default Unity keyboard shortcut settings.</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
-                <property name="margin_top">12</property>
-                <property name="margin_bottom">12</property>
+                <property name="margin_bottom">6</property>
                 <signal name="clicked" handler="on_b_unity_additional_reset_clicked" swapped="no"/>
               </object>
               <packing>

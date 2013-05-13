@@ -19,17 +19,16 @@
           <object class="GtkBox" id="box_theme_system">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="margin_left">12</property>
-            <property name="margin_right">12</property>
-            <property name="margin_top">6</property>
             <property name="margin_bottom">12</property>
             <property name="orientation">vertical</property>
+            <property name="spacing">6</property>
             <child>
               <object class="GtkLabel" id="l_system_theme">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="halign">start</property>
-                <property name="margin_bottom">6</property>
+                <property name="margin_left">12</property>
+                <property name="margin_top">6</property>
                 <property name="label" translatable="yes">Available themes</property>
                 <attributes>
                   <attribute name="weight" value="bold"/>
@@ -45,8 +44,8 @@
               <object class="GtkScrolledWindow" id="scrolledwindow_theme_system">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="margin_left">6</property>
-                <property name="margin_right">6</property>
+                <property name="margin_left">18</property>
+                <property name="margin_right">18</property>
                 <property name="shadow_type">in</property>
                 <child>
                   <object class="GtkViewport" id="viewport_theme_system">
@@ -159,7 +158,9 @@
                 <property name="tooltip_markup" translatable="yes">Restore system's default theme configurations</property>
                 <property name="tooltip_text" translatable="yes">Restore system's default theme configurations</property>
                 <property name="halign">start</property>
+                <property name="margin_left">12</property>
                 <property name="margin_top">6</property>
+                <property name="margin_bottom">6</property>
                 <property name="use_underline">True</property>
                 <signal name="clicked" handler="on_b_theme_system_reset_clicked" swapped="no"/>
               </object>
@@ -185,18 +186,32 @@
           <object class="GtkBox" id="box_theme_icon">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="margin_left">12</property>
-            <property name="margin_right">12</property>
-            <property name="margin_top">6</property>
-            <property name="margin_bottom">12</property>
             <property name="orientation">vertical</property>
+            <property name="spacing">6</property>
+            <child>
+              <object class="GtkLabel" id="l_icon_theme">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="halign">start</property>
+                <property name="margin_left">12</property>
+                <property name="margin_top">6</property>
+                <property name="label" translatable="yes">Available themes</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
             <child>
               <object class="GtkScrolledWindow" id="scroll_theme_icon">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
-                <property name="margin_left">6</property>
-                <property name="margin_right">6</property>
-                <property name="margin_top">12</property>
+                <property name="margin_left">18</property>
+                <property name="margin_right">18</property>
                 <property name="shadow_type">in</property>
                 <child>
                   <object class="GtkTreeView" id="tree_icon_theme">
@@ -228,7 +243,7 @@
               <packing>
                 <property name="expand">True</property>
                 <property name="fill">True</property>
-                <property name="position">1</property>
+                <property name="position">2</property>
               </packing>
             </child>
             <child>
@@ -240,14 +255,16 @@
                 <property name="tooltip_markup" translatable="yes">Restore system's default icon theme configurations</property>
                 <property name="tooltip_text" translatable="yes">Restore system's default icon theme configurations</property>
                 <property name="halign">start</property>
+                <property name="margin_left">12</property>
                 <property name="margin_top">6</property>
+                <property name="margin_bottom">6</property>
                 <property name="use_underline">True</property>
                 <signal name="clicked" handler="on_b_theme_icon_reset_clicked" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">False</property>
-                <property name="position">4</property>
+                <property name="position">5</property>
               </packing>
             </child>
           </object>
@@ -270,17 +287,16 @@
           <object class="GtkBox" id="box_theme_cursor">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="margin_left">12</property>
-            <property name="margin_right">12</property>
-            <property name="margin_top">6</property>
-            <property name="margin_bottom">12</property>
             <property name="orientation">vertical</property>
+            <property name="spacing">6</property>
             <child>
               <object class="GtkLabel" id="l_cursor_theme">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="halign">start</property>
-                <property name="label" translatable="yes">Theme</property>
+                <property name="margin_left">12</property>
+                <property name="margin_top">6</property>
+                <property name="label" translatable="yes">Available themes</property>
                 <attributes>
                   <attribute name="weight" value="bold"/>
                 </attributes>
@@ -295,9 +311,8 @@
               <object class="GtkScrolledWindow" id="scrolledwindow_cursor_theme">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
-                <property name="margin_left">6</property>
-                <property name="margin_right">6</property>
-                <property name="margin_top">6</property>
+                <property name="margin_left">18</property>
+                <property name="margin_right">18</property>
                 <property name="shadow_type">in</property>
                 <child>
                   <object class="GtkTreeView" id="tree_cursor_theme">
@@ -335,7 +350,7 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="halign">start</property>
-                <property name="margin_top">6</property>
+                <property name="margin_left">12</property>
                 <property name="label" translatable="yes">Preferences</property>
                 <attributes>
                   <attribute name="weight" value="bold"/>
@@ -355,9 +370,7 @@
                 <property name="receives_default">False</property>
                 <property name="tooltip_markup" translatable="yes">If enabled, the system will use a larger cursor.</property>
                 <property name="tooltip_text" translatable="yes">If enabled, the system will use a larger cursor.</property>
-                <property name="margin_left">6</property>
-                <property name="margin_top">6</property>
-                <property name="margin_bottom">6</property>
+                <property name="margin_left">18</property>
                 <property name="xalign">0</property>
                 <property name="draw_indicator">True</property>
                 <signal name="toggled" handler="on_check_cursor_size_toggled" swapped="no"/>
@@ -377,7 +390,9 @@
                 <property name="tooltip_markup" translatable="yes">Restore system's default cursor theme configurations</property>
                 <property name="tooltip_text" translatable="yes">Restore system's default cursor theme configurations</property>
                 <property name="halign">start</property>
+                <property name="margin_left">12</property>
                 <property name="margin_top">6</property>
+                <property name="margin_bottom">6</property>
                 <property name="use_underline">True</property>
                 <signal name="clicked" handler="on_b_theme_cursor_reset_clicked" swapped="no"/>
               </object>
@@ -408,6 +423,7 @@
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="orientation">vertical</property>
+            <property name="spacing">6</property>
             <child>
               <object class="GtkLabel" id="l_font_general">
                 <property name="visible">True</property>
@@ -431,6 +447,7 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="row_spacing">6</property>
+                <property name="column_spacing">6</property>
                 <child>
                   <object class="GtkLabel" id="l_defaultfont">
                     <property name="visible">True</property>
@@ -438,7 +455,6 @@
                     <property name="has_tooltip">True</property>
                     <property name="tooltip_markup" translatable="yes">Select the default font for all applications.</property>
                     <property name="tooltip_text" translatable="yes">Select the default font for all applications.</property>
-                    <property name="margin_right">6</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Default font:</property>
                   </object>
@@ -457,7 +473,6 @@
                     <property name="has_tooltip">True</property>
                     <property name="tooltip_markup" translatable="yes">Select the default font used for reading documents.</property>
                     <property name="tooltip_text" translatable="yes">Select the default font used for reading documents.</property>
-                    <property name="margin_right">6</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Document font:</property>
                   </object>
@@ -514,7 +529,6 @@
                     <property name="has_tooltip">True</property>
                     <property name="tooltip_markup" translatable="yes">Select the default monospace font.</property>
                     <property name="tooltip_text" translatable="yes">Select the default monospace font.</property>
-                    <property name="margin_right">6</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Monospace font:</property>
                   </object>
@@ -533,7 +547,6 @@
                     <property name="has_tooltip">True</property>
                     <property name="tooltip_markup" translatable="yes">Select the default font for the window titlebar.</property>
                     <property name="tooltip_text" translatable="yes">Select the default font for the window titlebar.</property>
-                    <property name="margin_right">6</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Window title font:</property>
                   </object>
@@ -597,8 +610,6 @@
                 <property name="can_focus">False</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
-                <property name="margin_top">6</property>
-                <property name="margin_bottom">6</property>
                 <property name="label" translatable="yes">Appearance</property>
                 <attributes>
                   <attribute name="weight" value="bold"/>
@@ -615,6 +626,7 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="row_spacing">6</property>
+                <property name="column_spacing">6</property>
                 <child>
                   <object class="GtkLabel" id="l_antialiasing">
                     <property name="width_request">120</property>
@@ -623,7 +635,7 @@
                     <property name="has_tooltip">True</property>
                     <property name="tooltip_markup" translatable="yes">Select the type of antialiasing used to render fonts.</property>
                     <property name="tooltip_text" translatable="yes">Select the type of antialiasing used to render fonts.</property>
-                    <property name="margin_right">6</property>
+                    <property name="halign">end</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Antialiasing:</property>
                   </object>
@@ -687,7 +699,6 @@
                     <property name="has_tooltip">True</property>
                     <property name="tooltip_markup" translatable="yes">Select the type of hinting to use when rendering fonts</property>
                     <property name="tooltip_text" translatable="yes">Select the type of hinting to use when rendering fonts</property>
-                    <property name="margin_right">6</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Hinting:</property>
                   </object>
@@ -706,7 +717,6 @@
                     <property name="has_tooltip">True</property>
                     <property name="tooltip_markup" translatable="yes">Select the factor used to enlarge or reduce text display, without changing font size.</property>
                     <property name="tooltip_text" translatable="yes">Select the factor used to enlarge or reduce text display, without changing font size.</property>
-                    <property name="margin_right">6</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Text scaling factor:</property>
                   </object>
@@ -760,8 +770,8 @@
                 <property name="tooltip_text" translatable="yes">Restore system's default font configurations</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
-                <property name="margin_top">12</property>
-                <property name="margin_bottom">12</property>
+                <property name="margin_top">6</property>
+                <property name="margin_bottom">6</property>
                 <signal name="clicked" handler="on_b_theme_font_reset_clicked" swapped="no"/>
               </object>
               <packing>
@@ -791,6 +801,7 @@
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="orientation">vertical</property>
+            <property name="spacing">6</property>
             <child>
               <object class="GtkLabel" id="l_window_controls_layout">
                 <property name="visible">True</property>
@@ -798,7 +809,6 @@
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
                 <property name="margin_top">6</property>
-                <property name="margin_bottom">6</property>
                 <property name="label" translatable="yes">Layout</property>
                 <attributes>
                   <attribute name="weight" value="bold"/>
@@ -877,13 +887,31 @@
               </packing>
             </child>
             <child>
+              <object class="GtkCheckButton" id="check_show_menu">
+                <property name="label" translatable="yes">Show menu button</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="receives_default">False</property>
+                <property name="has_tooltip">True</property>
+                <property name="tooltip_markup" translatable="yes">If enabled, show the window menu in the titlebar.</property>
+                <property name="tooltip_text" translatable="yes">If enabled, show the window menu in the titlebar.</property>
+                <property name="margin_left">18</property>
+                <property name="xalign">0</property>
+                <property name="draw_indicator">True</property>
+                <signal name="toggled" handler="on_check_show_menu_toggled" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+            <child>
               <object class="GtkLabel" id="l_window_controls_pref">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
-                <property name="margin_top">6</property>
-                <property name="margin_bottom">6</property>
                 <property name="label" translatable="yes">Preferences</property>
                 <attributes>
                   <attribute name="weight" value="bold"/>
@@ -896,37 +924,6 @@
               </packing>
             </child>
             <child>
-              <object class="GtkGrid" id="grid_window_controls_pref">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <child>
-                  <object class="GtkCheckButton" id="check_show_menu">
-                    <property name="label" translatable="yes">Show menu button</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="receives_default">False</property>
-                    <property name="tooltip_markup" translatable="yes">If enabled, show the window menu in the titlebar.</property>
-                    <property name="tooltip_text" translatable="yes">If enabled, show the window menu in the titlebar.</property>
-                    <property name="margin_left">18</property>
-                    <property name="xalign">0</property>
-                    <property name="draw_indicator">True</property>
-                    <signal name="toggled" handler="on_check_show_menu_toggled" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">0</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">6</property>
-              </packing>
-            </child>
-            <child>
               <object class="GtkButton" id="b_window_controls_reset">
                 <property name="label" translatable="yes">Restore Defaults</property>
                 <property name="visible">True</property>
@@ -936,8 +933,8 @@
                 <property name="tooltip_text" translatable="yes">Restore default window controls settings.</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
-                <property name="margin_top">12</property>
-                <property name="margin_bottom">12</property>
+                <property name="margin_top">6</property>
+                <property name="margin_bottom">6</property>
                 <signal name="clicked" handler="on_b_theme_window_controls_reset_clicked" swapped="no"/>
               </object>
               <packing>
