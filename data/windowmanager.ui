@@ -191,7 +191,7 @@
                 <property name="column_spacing">6</property>
                 <child>
                   <object class="GtkLabel" id="l_texture_quality">
-                    <property name="width_request">100</property>
+                    <property name="width_request">150</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
@@ -253,48 +253,6 @@
               </packing>
             </child>
             <child>
-              <object class="GtkGrid" id="grid_switch_animations">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="margin_left">18</property>
-                <property name="margin_right">18</property>
-                <property name="column_spacing">6</property>
-                <child>
-                  <object class="GtkLabel" id="l_window_animations">
-                    <property name="width_request">150</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="xalign">1</property>
-                    <property name="label" translatable="yes">Window Animations:</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">0</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkSwitch" id="switch_window_animations">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <signal name="notify::active" handler="on_switch_window_animations_active_notify" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">0</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">8</property>
-              </packing>
-            </child>
-            <child>
               <object class="GtkGrid" id="grid_animations">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
@@ -312,7 +270,7 @@
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
-                    <property name="top_attach">0</property>
+                    <property name="top_attach">1</property>
                     <property name="width">1</property>
                     <property name="height">1</property>
                   </packing>
@@ -340,7 +298,7 @@
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
-                    <property name="top_attach">0</property>
+                    <property name="top_attach">1</property>
                     <property name="width">1</property>
                     <property name="height">1</property>
                   </packing>
@@ -354,7 +312,7 @@
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
-                    <property name="top_attach">1</property>
+                    <property name="top_attach">2</property>
                     <property name="width">1</property>
                     <property name="height">1</property>
                   </packing>
@@ -382,7 +340,36 @@
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
-                    <property name="top_attach">1</property>
+                    <property name="top_attach">2</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="l_window_animations">
+                    <property name="width_request">150</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="xalign">1</property>
+                    <property name="label" translatable="yes">Window Animations:</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">0</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkSwitch" id="switch_window_animations">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="halign">start</property>
+                    <signal name="notify::active" handler="on_switch_window_animations_active_notify" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">0</property>
                     <property name="width">1</property>
                     <property name="height">1</property>
                   </packing>
@@ -480,7 +467,8 @@
                 <property name="tooltip_text" translatable="yes">Restore default window manager settings</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
-                <property name="margin_bottom">12</property>
+                <property name="margin_top">6</property>
+                <property name="margin_bottom">6</property>
                 <signal name="clicked" handler="on_b_compiz_general_reset_clicked" swapped="no"/>
               </object>
               <packing>
@@ -566,6 +554,7 @@
                 </child>
                 <child>
                   <object class="GtkLabel" id="l_desktop_outline_colour">
+                    <property name="width_request">150</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
@@ -757,7 +746,8 @@
                 <property name="tooltip_text" translatable="yes">Restore default workspace configuration</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
-                <property name="margin_bottom">12</property>
+                <property name="margin_top">6</property>
+                <property name="margin_bottom">6</property>
                 <signal name="clicked" handler="on_b_compiz_workspace_reset_clicked" swapped="no"/>
               </object>
               <packing>
@@ -787,6 +777,7 @@
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="orientation">vertical</property>
+            <property name="spacing">6</property>
             <child>
               <object class="GtkLabel" id="l_spread_general">
                 <property name="visible">True</property>
@@ -794,7 +785,6 @@
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
                 <property name="margin_top">6</property>
-                <property name="margin_bottom">6</property>
                 <property name="label" translatable="yes">General</property>
                 <attributes>
                   <attribute name="weight" value="bold"/>
@@ -811,8 +801,8 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="margin_left">18</property>
-                <property name="margin_bottom">6</property>
                 <property name="row_spacing">6</property>
+                <property name="column_spacing">6</property>
                 <child>
                   <object class="GtkSwitch" id="sw_windows_spread">
                     <property name="visible">True</property>
@@ -833,11 +823,11 @@
                 </child>
                 <child>
                   <object class="GtkLabel" id="l_switch_spread">
-                    <property name="width_request">0</property>
+                    <property name="width_request">120</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="halign">end</property>
-                    <property name="margin_right">6</property>
+                    <property name="xalign">1</property>
                     <property name="label" translatable="yes">Window spread:</property>
                   </object>
                   <packing>
@@ -871,8 +861,6 @@
                     <property name="has_tooltip">True</property>
                     <property name="tooltip_markup" translatable="yes">Select the space between window in the spead overview in pixels</property>
                     <property name="tooltip_text" translatable="yes">Select the space between window in the spead overview in pixels</property>
-                    <property name="margin_left">12</property>
-                    <property name="margin_right">6</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Spacing:</property>
                   </object>
@@ -946,8 +934,6 @@
                 <property name="can_focus">False</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
-                <property name="margin_top">12</property>
-                <property name="margin_bottom">6</property>
                 <property name="label" translatable="yes">Window spread shortcuts</property>
                 <attributes>
                   <attribute name="weight" value="bold"/>
@@ -1026,8 +1012,8 @@
                 <property name="tooltip_text" translatable="yes">Restore default window spread settings</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
-                <property name="margin_top">12</property>
-                <property name="margin_bottom">12</property>
+                <property name="margin_top">6</property>
+                <property name="margin_bottom">6</property>
                 <signal name="clicked" handler="on_b_compiz_windows_spread_reset_clicked" swapped="no"/>
               </object>
               <packing>
@@ -1057,6 +1043,7 @@
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="orientation">vertical</property>
+            <property name="spacing">6</property>
             <child>
               <object class="GtkLabel" id="l_snapping_general">
                 <property name="visible">True</property>
@@ -1081,9 +1068,8 @@
                 <property name="can_focus">False</property>
                 <property name="margin_left">18</property>
                 <property name="margin_right">18</property>
-                <property name="margin_top">6</property>
-                <property name="margin_bottom">6</property>
                 <property name="row_spacing">6</property>
+                <property name="column_spacing">6</property>
                 <child>
                   <object class="GtkSwitch" id="sw_window_snapping">
                     <property name="visible">True</property>
@@ -1100,10 +1086,11 @@
                 </child>
                 <child>
                   <object class="GtkLabel" id="l_window_snapping_switch">
+                    <property name="width_request">120</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="halign">end</property>
-                    <property name="margin_right">6</property>
+                    <property name="xalign">1</property>
                     <property name="label" translatable="yes">Window snapping:</property>
                   </object>
                   <packing>
@@ -1117,7 +1104,6 @@
                   <object class="GtkLabel" id="l_fill_color">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="margin_right">6</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Fill colour:</property>
                   </object>
@@ -1133,7 +1119,6 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="halign">end</property>
-                    <property name="margin_right">6</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Outline colour:</property>
                   </object>
@@ -1187,8 +1172,6 @@
                 <property name="can_focus">False</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
-                <property name="margin_top">12</property>
-                <property name="margin_bottom">6</property>
                 <property name="label" translatable="yes">Behaviour</property>
                 <attributes>
                   <attribute name="weight" value="bold"/>
@@ -1205,10 +1188,8 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="halign">center</property>
-                <property name="margin_left">18</property>
-                <property name="margin_right">18</property>
-                <property name="margin_top">6</property>
-                <property name="margin_bottom">6</property>
+                <property name="margin_left">12</property>
+                <property name="margin_right">12</property>
                 <child>
                   <object class="GtkGrid" id="grid_window_snapping_left">
                     <property name="visible">True</property>
@@ -1441,8 +1422,8 @@
                 <property name="receives_default">True</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
-                <property name="margin_top">12</property>
-                <property name="margin_bottom">12</property>
+                <property name="margin_top">6</property>
+                <property name="margin_bottom">6</property>
                 <signal name="clicked" handler="on_b_compiz_windowsnapping_reset_clicked" swapped="no"/>
               </object>
               <packing>
@@ -1472,6 +1453,7 @@
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="orientation">vertical</property>
+            <property name="spacing">6</property>
             <child>
               <object class="GtkLabel" id="l_hotcorners_general">
                 <property name="visible">True</property>
@@ -1494,8 +1476,9 @@
               <object class="GtkGrid" id="grid_hotcorners_settings">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="margin_left">18</property>
-                <property name="margin_top">6</property>
+                <property name="margin_left">12</property>
+                <property name="row_spacing">6</property>
+                <property name="column_spacing">6</property>
                 <child>
                   <object class="GtkSwitch" id="switch_hotcorners">
                     <property name="visible">True</property>
@@ -1513,10 +1496,10 @@
                 </child>
                 <child>
                   <object class="GtkLabel" id="l_hotcorner_switch">
-                    <property name="width_request">0</property>
+                    <property name="width_request">100</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="margin_right">6</property>
+                    <property name="xalign">1</property>
                     <property name="label" translatable="yes">Hotcorners:</property>
                   </object>
                   <packing>
@@ -1539,8 +1522,6 @@
                 <property name="can_focus">False</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
-                <property name="margin_top">12</property>
-                <property name="margin_bottom">6</property>
                 <property name="label" translatable="yes">Behaviour</property>
                 <attributes>
                   <attribute name="weight" value="bold"/>
@@ -1557,8 +1538,8 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="halign">center</property>
-                <property name="margin_top">6</property>
-                <property name="margin_bottom">6</property>
+                <property name="margin_left">12</property>
+                <property name="margin_right">12</property>
                 <child>
                   <object class="GtkGrid" id="grid_hotcorners_left">
                     <property name="visible">True</property>
@@ -1791,8 +1772,8 @@
                 <property name="receives_default">True</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
-                <property name="margin_top">12</property>
-                <property name="margin_bottom">12</property>
+                <property name="margin_top">6</property>
+                <property name="margin_bottom">6</property>
                 <signal name="clicked" handler="on_b_compiz_hotcorners_reset_clicked" swapped="no"/>
               </object>
               <packing>
@@ -1822,6 +1803,7 @@
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="orientation">vertical</property>
+            <property name="spacing">6</property>
             <child>
               <object class="GtkLabel" id="l_wm_additional_focus">
                 <property name="visible">True</property>
@@ -1845,15 +1827,15 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="halign">start</property>
-                <property name="margin_left">18</property>
-                <property name="margin_top">6</property>
+                <property name="margin_left">12</property>
                 <property name="row_spacing">6</property>
+                <property name="column_spacing">6</property>
                 <child>
                   <object class="GtkLabel" id="l_auto_raise_delay">
+                    <property name="width_request">120</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="halign">end</property>
-                    <property name="margin_right">6</property>
+                    <property name="xalign">1</property>
                     <property name="label" translatable="yes">Auto-raise delay:</property>
                   </object>
                   <packing>
@@ -1870,8 +1852,6 @@
                     <property name="can_focus">False</property>
                     <property name="tooltip_markup" translatable="yes">Set the delay for raising newly focused windows.</property>
                     <property name="tooltip_text" translatable="yes">Set the delay for raising newly focused windows.</property>
-                    <property name="margin_left">3</property>
-                    <property name="margin_right">3</property>
                     <property name="margin_top">12</property>
                     <property name="adjustment">adj_auto_raise_delay</property>
                     <property name="draw_value">False</property>
@@ -1890,7 +1870,6 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="halign">end</property>
-                    <property name="margin_right">6</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Focus mode:</property>
                   </object>
@@ -1946,7 +1925,6 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="halign">end</property>
-                    <property name="margin_right">6</property>
                     <property name="label" translatable="yes">Auto-raise:</property>
                   </object>
                   <packing>
@@ -1987,14 +1965,16 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="halign">start</property>
-                <property name="margin_left">18</property>
+                <property name="margin_left">12</property>
                 <property name="row_spacing">6</property>
+                <property name="column_spacing">6</property>
                 <child>
                   <object class="GtkLabel" id="l_double_click">
+                    <property name="width_request">120</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="halign">end</property>
-                    <property name="margin_right">6</property>
+                    <property name="xalign">1</property>
                     <property name="label" translatable="yes">Double click:</property>
                   </object>
                   <packing>
@@ -2037,7 +2017,6 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="halign">end</property>
-                    <property name="margin_right">6</property>
                     <property name="label" translatable="yes">Middle click:</property>
                   </object>
                   <packing>
@@ -2079,7 +2058,6 @@
                     <property name="width_request">110</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="margin_right">6</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Right click:</property>
                     <property name="justify">right</property>
@@ -2131,7 +2109,6 @@
                 <property name="can_focus">False</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
-                <property name="margin_top">6</property>
                 <property name="label" translatable="yes">Resizing</property>
                 <attributes>
                   <attribute name="weight" value="bold"/>
@@ -2148,14 +2125,14 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="halign">start</property>
-                <property name="margin_left">18</property>
-                <property name="margin_top">6</property>
+                <property name="margin_left">12</property>
                 <property name="row_spacing">6</property>
+                <property name="column_spacing">6</property>
                 <child>
                   <object class="GtkLabel" id="l_outline_colour">
+                    <property name="width_request">120</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="margin_right">6</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Outline colour:</property>
                   </object>
@@ -2171,7 +2148,6 @@
                     <property name="width_request">110</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="margin_right">6</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Fill colour:</property>
                   </object>
@@ -2227,8 +2203,7 @@
                 <property name="tooltip_text" translatable="yes">Restore the default settings for the additional options.</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
-                <property name="margin_top">12</property>
-                <property name="margin_bottom">12</property>
+                <property name="margin_bottom">6</property>
                 <signal name="clicked" handler="on_b_wm_additional_reset_clicked" swapped="no"/>
               </object>
               <packing>
