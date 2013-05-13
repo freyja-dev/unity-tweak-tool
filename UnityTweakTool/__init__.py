@@ -46,15 +46,19 @@ DBusGMainLoop(set_as_default=True)
 logger=logging.getLogger('UnityTweakTool')
 logger.setLevel(LOGLVL)
 
-_fh=logging.FileHandler(LOGFILE)
-_fh.setLevel(LOGLVL)
+try:
+    _fh=logging.FileHandler(LOGFILE)
+    _fh.setLevel(LOGLVL)
 
-_formatter=logging.Formatter(LOGFMT)
+    _formatter=logging.Formatter(LOGFMT)
 
-_fh.setFormatter(_formatter)
-logger.addHandler(_fh)
+    _fh.setFormatter(_formatter)
+    logger.addHandler(_fh)
+    del _fh
+except Exception:
+    print('Unable to open {LOGFILE} for writing.'.format(LOGFILE=LOGFILE),file=sys.stderr)
 
-del _fh, _formatter
+del _formatter
 
 
 ##########################################################################
