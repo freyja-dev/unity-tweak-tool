@@ -44,73 +44,18 @@
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="orientation">vertical</property>
+            <property name="spacing">6</property>
             <child>
-              <object class="GtkBox" id="box_compiz_general_zoom">
+              <object class="GtkLabel" id="l_compiz_general_zoom">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
+                <property name="halign">start</property>
+                <property name="margin_left">12</property>
                 <property name="margin_top">6</property>
-                <property name="orientation">vertical</property>
-                <child>
-                  <object class="GtkLabel" id="l_compiz_general_zoom">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="halign">start</property>
-                    <property name="margin_left">12</property>
-                    <property name="label" translatable="yes">Zoom</property>
-                    <attributes>
-                      <attribute name="weight" value="bold"/>
-                    </attributes>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">0</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkGrid" id="grid_zoom_switch">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="margin_left">18</property>
-                    <property name="margin_top">6</property>
-                    <child>
-                      <object class="GtkSwitch" id="sw_compiz_zoom">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="has_tooltip">True</property>
-                        <property name="tooltip_markup" translatable="yes">Enable desktop zoom?</property>
-                        <property name="tooltip_text" translatable="yes">Enable desktop zoom?</property>
-                        <property name="halign">start</property>
-                        <signal name="notify::active" handler="on_sw_compiz_zoom_active_notify" swapped="no"/>
-                      </object>
-                      <packing>
-                        <property name="left_attach">1</property>
-                        <property name="top_attach">0</property>
-                        <property name="width">1</property>
-                        <property name="height">1</property>
-                      </packing>
-                    </child>
-                    <child>
-                      <object class="GtkLabel" id="l_zoom_switch">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="margin_right">6</property>
-                        <property name="label" translatable="yes">Desktop magnification:</property>
-                      </object>
-                      <packing>
-                        <property name="left_attach">0</property>
-                        <property name="top_attach">0</property>
-                        <property name="width">1</property>
-                        <property name="height">1</property>
-                      </packing>
-                    </child>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">1</property>
-                  </packing>
-                </child>
+                <property name="label" translatable="yes">Zoom</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -119,12 +64,56 @@
               </packing>
             </child>
             <child>
+              <object class="GtkGrid" id="grid_zoom_switch">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="margin_left">12</property>
+                <property name="column_spacing">6</property>
+                <child>
+                  <object class="GtkSwitch" id="sw_compiz_zoom">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip_markup" translatable="yes">Enable desktop zoom?</property>
+                    <property name="tooltip_text" translatable="yes">Enable desktop zoom?</property>
+                    <property name="halign">start</property>
+                    <signal name="notify::active" handler="on_sw_compiz_zoom_active_notify" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">0</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="l_zoom_switch">
+                    <property name="width_request">150</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="xalign">1</property>
+                    <property name="label" translatable="yes">Desktop magnification:</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">0</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
               <object class="GtkScrolledWindow" id="scrolledwindow_compiz_general_zoom">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="margin_left">18</property>
                 <property name="margin_right">18</property>
-                <property name="margin_top">10</property>
                 <property name="shadow_type">in</property>
                 <child>
                   <object class="GtkTreeView" id="treeview_compiz_general_zoom">
@@ -173,7 +162,7 @@
               <packing>
                 <property name="expand">True</property>
                 <property name="fill">True</property>
-                <property name="position">1</property>
+                <property name="position">2</property>
               </packing>
             </child>
             <child>
@@ -182,7 +171,7 @@
                 <property name="can_focus">False</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
-                <property name="margin_top">12</property>
+                <property name="margin_top">6</property>
                 <property name="label" translatable="yes">Hardware acceleration</property>
                 <attributes>
                   <attribute name="weight" value="bold"/>
@@ -195,61 +184,48 @@
               </packing>
             </child>
             <child>
-              <object class="GtkBox" id="box_opengl">
+              <object class="GtkGrid" id="grid_opengl_options">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="margin_left">18</property>
-                <property name="margin_right">18</property>
-                <property name="margin_top">6</property>
-                <property name="margin_bottom">6</property>
-                <property name="orientation">vertical</property>
+                <property name="column_spacing">6</property>
                 <child>
-                  <object class="GtkGrid" id="grid_opengl_options">
+                  <object class="GtkLabel" id="l_texture_quality">
+                    <property name="width_request">100</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <child>
-                      <object class="GtkLabel" id="l_texture_quality">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="has_tooltip">True</property>
-                        <property name="tooltip_markup" translatable="yes">Select the level of texture rendering done by OpenGL</property>
-                        <property name="tooltip_text" translatable="yes">Select the level of texture rendering done by OpenGL</property>
-                        <property name="halign">end</property>
-                        <property name="margin_right">6</property>
-                        <property name="label" translatable="yes">Texture quality: </property>
-                      </object>
-                      <packing>
-                        <property name="left_attach">0</property>
-                        <property name="top_attach">0</property>
-                        <property name="width">1</property>
-                        <property name="height">1</property>
-                      </packing>
-                    </child>
-                    <child>
-                      <object class="GtkComboBoxText" id="cbox_opengl">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="entry_text_column">0</property>
-                        <property name="id_column">1</property>
-                        <items>
-                          <item translatable="yes">Fast</item>
-                          <item translatable="yes">Good</item>
-                          <item translatable="yes">Best</item>
-                        </items>
-                        <signal name="changed" handler="on_cbox_opengl_changed" swapped="no"/>
-                      </object>
-                      <packing>
-                        <property name="left_attach">1</property>
-                        <property name="top_attach">0</property>
-                        <property name="width">1</property>
-                        <property name="height">1</property>
-                      </packing>
-                    </child>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip_markup" translatable="yes">Select the level of texture rendering done by OpenGL</property>
+                    <property name="tooltip_text" translatable="yes">Select the level of texture rendering done by OpenGL</property>
+                    <property name="halign">end</property>
+                    <property name="xalign">1</property>
+                    <property name="label" translatable="yes">Texture quality: </property>
                   </object>
                   <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">-1</property>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">0</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkComboBoxText" id="cbox_opengl">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="entry_text_column">0</property>
+                    <property name="id_column">1</property>
+                    <items>
+                      <item translatable="yes">Fast</item>
+                      <item translatable="yes">Good</item>
+                      <item translatable="yes">Best</item>
+                    </items>
+                    <signal name="changed" handler="on_cbox_opengl_changed" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">0</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
                   </packing>
                 </child>
               </object>
@@ -265,7 +241,6 @@
                 <property name="can_focus">False</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
-                <property name="margin_top">12</property>
                 <property name="label" translatable="yes">Animations</property>
                 <attributes>
                   <attribute name="weight" value="bold"/>
@@ -274,7 +249,49 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">6</property>
+                <property name="position">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkGrid" id="grid_switch_animations">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="margin_left">18</property>
+                <property name="margin_right">18</property>
+                <property name="column_spacing">6</property>
+                <child>
+                  <object class="GtkLabel" id="l_window_animations">
+                    <property name="width_request">150</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="xalign">1</property>
+                    <property name="label" translatable="yes">Window Animations:</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">0</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkSwitch" id="switch_window_animations">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <signal name="notify::active" handler="on_switch_window_animations_active_notify" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">0</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">8</property>
               </packing>
             </child>
             <child>
@@ -282,15 +299,15 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="margin_left">18</property>
-                <property name="margin_right">18</property>
-                <property name="margin_top">6</property>
-                <property name="row_spacing">5</property>
+                <property name="row_spacing">6</property>
+                <property name="column_spacing">6</property>
                 <child>
                   <object class="GtkLabel" id="l_minimize_animation">
+                    <property name="width_request">100</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="halign">end</property>
-                    <property name="margin_right">6</property>
+                    <property name="xalign">1</property>
                     <property name="label" translatable="yes">Minimize:</property>
                   </object>
                   <packing>
@@ -333,7 +350,6 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="halign">end</property>
-                    <property name="margin_right">6</property>
                     <property name="label" translatable="yes">Unminimize:</property>
                   </object>
                   <packing>
@@ -375,7 +391,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">7</property>
+                <property name="position">9</property>
               </packing>
             </child>
             <child>
@@ -383,8 +399,6 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="margin_left">12</property>
-                <property name="margin_right">6</property>
-                <property name="margin_top">12</property>
                 <property name="margin_bottom">6</property>
                 <property name="xalign">0</property>
                 <property name="label" translatable="yes">Keyboard shortcuts</property>
@@ -395,7 +409,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">9</property>
+                <property name="position">11</property>
               </packing>
             </child>
             <child>
@@ -453,7 +467,7 @@
               <packing>
                 <property name="expand">True</property>
                 <property name="fill">True</property>
-                <property name="position">10</property>
+                <property name="position">12</property>
               </packing>
             </child>
             <child>
@@ -466,14 +480,13 @@
                 <property name="tooltip_text" translatable="yes">Restore default window manager settings</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
-                <property name="margin_top">12</property>
                 <property name="margin_bottom">12</property>
                 <signal name="clicked" handler="on_b_compiz_general_reset_clicked" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">12</property>
+                <property name="position">14</property>
               </packing>
             </child>
           </object>
@@ -493,6 +506,7 @@
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="orientation">vertical</property>
+            <property name="spacing">6</property>
             <child>
               <object class="GtkLabel" id="l_compiz_general">
                 <property name="visible">True</property>
@@ -500,7 +514,6 @@
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
                 <property name="margin_top">6</property>
-                <property name="margin_bottom">6</property>
                 <property name="label" translatable="yes">General</property>
                 <attributes>
                   <attribute name="weight" value="bold"/>
@@ -518,6 +531,7 @@
                 <property name="can_focus">False</property>
                 <property name="margin_left">18</property>
                 <property name="row_spacing">6</property>
+                <property name="column_spacing">6</property>
                 <child>
                   <object class="GtkSwitch" id="sw_workspace_switcher">
                     <property name="visible">True</property>
@@ -541,7 +555,6 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="halign">end</property>
-                    <property name="margin_right">6</property>
                     <property name="label" translatable="yes">Workspace switcher:</property>
                   </object>
                   <packing>
@@ -558,8 +571,6 @@
                     <property name="has_tooltip">True</property>
                     <property name="tooltip_markup" translatable="yes">Select the outline colour of the current workspace in the overview</property>
                     <property name="tooltip_text" translatable="yes">Select the outline colour of the current workspace in the overview</property>
-                    <property name="margin_left">6</property>
-                    <property name="margin_right">6</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Current workspace colour:</property>
                   </object>
@@ -592,31 +603,12 @@
                     <property name="has_tooltip">True</property>
                     <property name="tooltip_markup" translatable="yes">Select the number of vertical workspaces</property>
                     <property name="tooltip_text" translatable="yes">Select the number of vertical workspaces</property>
-                    <property name="margin_right">6</property>
                     <property name="xalign">1</property>
                     <property name="label" translatable="yes">Vertical workspaces:</property>
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
                     <property name="top_attach">2</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="l_horizontal_desktop">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="has_tooltip">True</property>
-                    <property name="tooltip_markup" translatable="yes">Select the number of horizontal workspaces</property>
-                    <property name="tooltip_text" translatable="yes">Select the number of horizontal workspaces</property>
-                    <property name="margin_right">6</property>
-                    <property name="xalign">1</property>
-                    <property name="label" translatable="yes">Horizontal workspaces:</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">1</property>
                     <property name="width">1</property>
                     <property name="height">1</property>
                   </packing>
@@ -655,6 +647,23 @@
                     <property name="height">1</property>
                   </packing>
                 </child>
+                <child>
+                  <object class="GtkLabel" id="l_horizontal_desktop">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip_markup" translatable="yes">Select the number of horizontal workspaces</property>
+                    <property name="tooltip_text" translatable="yes">Select the number of horizontal workspaces</property>
+                    <property name="xalign">1</property>
+                    <property name="label" translatable="yes">Horizontal workspaces:</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">1</property>
+                    <property name="width">1</property>
+                    <property name="height">1</property>
+                  </packing>
+                </child>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -668,7 +677,7 @@
                 <property name="can_focus">False</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
-                <property name="margin_top">12</property>
+                <property name="margin_bottom">6</property>
                 <property name="label" translatable="yes">Workspace shortcuts</property>
                 <attributes>
                   <attribute name="weight" value="bold"/>
@@ -686,7 +695,6 @@
                 <property name="can_focus">False</property>
                 <property name="margin_left">18</property>
                 <property name="margin_right">18</property>
-                <property name="margin_top">6</property>
                 <property name="shadow_type">in</property>
                 <child>
                   <object class="GtkTreeView" id="treeview_compiz_workspace">
@@ -749,7 +757,6 @@
                 <property name="tooltip_text" translatable="yes">Restore default workspace configuration</property>
                 <property name="halign">start</property>
                 <property name="margin_left">12</property>
-                <property name="margin_top">12</property>
                 <property name="margin_bottom">12</property>
                 <signal name="clicked" handler="on_b_compiz_workspace_reset_clicked" swapped="no"/>
               </object>
