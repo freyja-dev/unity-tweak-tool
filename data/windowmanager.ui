@@ -282,17 +282,17 @@
                     <property name="entry_text_column">0</property>
                     <property name="id_column">1</property>
                     <items>
-                      <item translatable="yes">None</item>
-                      <item translatable="yes">Random</item>
-                      <item translatable="yes">Curved Fold</item>
-                      <item translatable="yes">Fade</item>
-                      <item translatable="yes">Glide 1</item>
-                      <item translatable="yes">Glide 2</item>
-                      <item translatable="yes">Horizontal Folds</item>
-                      <item translatable="yes">Magic Lamp</item>
-                      <item translatable="yes">Magic Lamp Wavy</item>
-                      <item translatable="yes">Sidekick</item>
-                      <item translatable="yes">Zoom</item>
+                      <item>None</item>
+                      <item>Random</item>
+                      <item>Curved Fold</item>
+                      <item>Fade</item>
+                      <item>Glide 1</item>
+                      <item>Glide 2</item>
+                      <item>Horizontal Folds</item>
+                      <item>Magic Lamp</item>
+                      <item>Magic Lamp Wavy</item>
+                      <item>Sidekick</item>
+                      <item>Zoom</item>
                     </items>
                     <signal name="changed" handler="on_cbox_minimize_animation_changed" swapped="no"/>
                   </object>
@@ -324,17 +324,17 @@
                     <property name="entry_text_column">0</property>
                     <property name="id_column">1</property>
                     <items>
-                      <item translatable="yes">None</item>
-                      <item translatable="yes">Random</item>
-                      <item translatable="yes">Curved Fold</item>
-                      <item translatable="yes">Fade</item>
-                      <item translatable="yes">Glide 1</item>
-                      <item translatable="yes">Glide 2</item>
-                      <item translatable="yes">Horizontal Folds</item>
-                      <item translatable="yes">Magic Lamp</item>
-                      <item translatable="yes">Magic Lamp Wavy</item>
-                      <item translatable="yes">Sidekick</item>
-                      <item translatable="yes">Zoom</item>
+                      <item>None</item>
+                      <item>Random</item>
+                      <item>Curved Fold</item>
+                      <item>Fade</item>
+                      <item>Glide 1</item>
+                      <item>Glide 2</item>
+                      <item>Horizontal Folds</item>
+                      <item>Magic Lamp</item>
+                      <item>Magic Lamp Wavy</item>
+                      <item>Sidekick</item>
+                      <item>Zoom</item>
                     </items>
                     <signal name="changed" handler="on_cbox_unminimize_animation_changed" swapped="no"/>
                   </object>
