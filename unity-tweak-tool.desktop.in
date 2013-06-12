@@ -13,21 +13,21 @@ Actions=Unity;WinMng;Appearance;System;
 X-Unity-IconBackgroundColor=#ff0025
 
 [Desktop Action Unity]
-Name=Unity
+_Name=Unity
 Exec=unity-tweak-tool -u
 OnlyShowIn=Unity;
 
 [Desktop Action WinMng]
-Name=Window Manager
+_Name=Window Manager
 Exec=unity-tweak-tool -w
 OnlyShowIn=Unity;
 
 [Desktop Action Appearance]
-Name=Appearance
+_Name=Appearance
 Exec=unity-tweak-tool -a
 OnlyShowIn=Unity;
 
 [Desktop Action System]
-Name=System
+_Name=System
 Exec=unity-tweak-tool -s
 OnlyShowIn=Unity;
