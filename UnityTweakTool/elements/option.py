@@ -49,15 +49,29 @@ class Option:
 class HandlerObject:
     def __init__(self,ho):
         self.ho=ho
-        def isHandler(attrname,ho=ho,prefix='on'):
+        def isHandler(attrname,ho=ho,prefix='on',suffix='reset_clicked'):
             return attrname.startswith(prefix) and \
+                    not attrname.endswith(suffix) and \
+                   callable(getattr(ho, attrname))
+        def isResetHandler(attrname,ho=ho,prefix='on',suffix='reset_clicked'):
+            return attrname.startswith(prefix) and \
+                    attrname.endswith(suffix) and \
                    callable(getattr(ho, attrname))
         handlers = list(filter(isHandler, dir(ho)))
         self.hodict={key:getattr(ho,key) for key in handlers}
+        reset_handlers = list(filter(isResetHandler,dir(ho)))
+        self.hodict_reset={key:getattr(ho,key) for key in reset_handlers}
+        self.register_tab=self.register
     def register(self,handler):
         handler.update(self.hodict)
-    def register_tab(self,handler):
-        handler.update(self.hodict)
+        for key,val in self.hodict_reset.items():
+            if key in handler:
+                def reset_fix(*args,ported_reset=handler[key],old_reset=val,**kwargs):
+                    old_reset(*args,**kwargs)
+                    ported_reset(*args,**kwargs)
+                handler[key]=reset_fix
+            else:
+                handler[key]=val
     def refresh(self):
         self.ho.refresh()
     def reset(self):
