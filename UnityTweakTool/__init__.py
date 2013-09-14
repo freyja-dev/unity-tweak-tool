@@ -90,7 +90,10 @@ class Application(dbus.service.Object):
 
         self.register_dbus_session()
         self.run(pageid)
-        os.remove(LOCKFILE)
+        try:
+            os.remove(LOCKFILE)
+        except FileNotFoundError as e:
+            pass
 # If removing the lockfile prevents Bug 1168738, it is worth a try.
 # Deleting the lock file doesn't trouble us anyway. Suggested by LP:mjblenner
 
