@@ -103,45 +103,6 @@ radio_reveal_topleft=Radio({
     'dependants': []
 })
 
-sw_launcher_transparent_dummy= Switch({
-    'id'        : 'sw_launcher_transparent',
-    'builder'   : Unity.builder,
-    'schema'    : 'org.compiz.unityshell',
-    'path'      : '/org/compiz/profiles/unity/plugins/unityshell/',
-    'key'       : 'launcher-opacity',
-    'type'      : 'double',
-    'map'       : defaultdict(lambda:True,{0.66:True,1:False}),
-    # XXX : Use option object and correct this. switching on transparency will
-    # always set it at 0.66.
-    'dependants': ['l_launcher_transparency_scale',
-                   'sc_launcher_transparency']
-})
-
-def on_sw_launcher_transparent_active_notify(*args,**kwargs):
-    if sw_launcher_transparent_dummy.disabled:
-        return
-    active =sw_launcher_transparent_dummy.ui.get_active()
-    if active:
-        val =Unity.builder.get_object('sc_launcher_transparency').get_value()
-    else:
-        val = 1
-    gsettings.set(
-        schema=sw_launcher_transparent_dummy.schema,
-        path=sw_launcher_transparent_dummy.path,
-        key=sw_launcher_transparent_dummy.key,
-        type=sw_launcher_transparent_dummy.type,
-        value= val
-        )
-    for element in sw_launcher_transparent_dummy.dependants:
-        Unity.builder.get_object(element).set_sensitive(active)
-
-sw_launcher_transparent = Option({
-    'handler': on_sw_launcher_transparent_active_notify,
-    'reset' : sw_launcher_transparent_dummy.reset,
-    'handlerid': 'on_sw_launcher_transparent_active_notify',
-    'refresh' : sw_launcher_transparent_dummy.refresh
-    })
-
 radio_launcher_visibility_all=Radio({
     'id'        : 'radio_launcher_visibility_all',
     'builder'   : Unity.builder,
@@ -256,7 +217,6 @@ LauncherIcons=Tab([sw_launcher_hidemode,
                    cbox_autohide_animation,
                    radio_reveal_left, 
                    radio_reveal_topleft,
-                   sw_launcher_transparent,
                    radio_launcher_visibility_primary,
                    radio_launcher_visibility_all,
                    cbox_urgent_animation,
