@@ -94,8 +94,10 @@ class Unitysettings ():
 
         for player in interested_players:
             self.ui['cbox_default_player'].append_text(player.capitalize())
-            if preferred_players[0] in interested_players:
-                self.ui['cbox_default_player'].set_active(interested_players.index(preferred_players[0]))
+# Sanity check for LP:1219318. Ideally we need checkboxes to cover all cases.
+            if len(preferred_players)>0:
+                if preferred_players[0] in interested_players:
+                    self.ui['cbox_default_player'].set_active(interested_players.index(preferred_players[0]))
 
         # ====== Unity Switcher helpers ====== #
         # Window Switcher accelerators
