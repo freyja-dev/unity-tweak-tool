@@ -70,14 +70,16 @@ class Application(dbus.service.Object):
             pidfile.seek(0)
             old_pd = pidfile.readline()
             pidfile.close()
-            if os.path.exists("/proc/%s" % old_pd):
-                print("""
-        Another instance of Unity Tweak Tool seems to be running with
-        process id %s. Switching to the already existing window.
-                    """ % old_pd)
-                self.call_running_instance(pageid)
-                sys.exit(1)
-            else:
+            try:
+                if os.path.exists("/proc/%s" % old_pd):
+                    print("""
+            Another instance of Unity Tweak Tool seems to be running with
+            process id %s. Switching to the already existing window.
+                        """ % old_pd)
+                    self.call_running_instance(pageid)
+                    sys.exit(1)
+            except dbus.exceptions.DBusException as e:
+                # Most probably the process doesn't exist. remove and proceed
                 os.remove(LOCKFILE)
 
         pidfile = open(LOCKFILE, "w")
