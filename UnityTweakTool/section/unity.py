@@ -339,6 +339,19 @@ spin_menu_visible=SpinButton({
     'max'    : 10
 })
 
+sc_panel_transparency=Scale({
+     'id'     : 'sc_panel_transparency',
+     'builder': Unity.builder,
+     'schema' : 'org.compiz.unityshell',
+     'path'   : '/org/compiz/profiles/unity/plugins/unityshell/',
+     'key'    : 'panel-opacity',
+     'type'   : 'double',
+     'min'    : 0.2, # TODO : Check these min max. Most prolly wrong.
+     'max'    : 8.0, # But fine since they are ignored anyway.
+     'ticks'  : [(0.666, Gtk.PositionType.BOTTOM, None)]
+ })
+
+
 check_panel_opaque= CheckBox({
     'id'        : 'check_panel_opaque',
     'builder'   : Unity.builder,
@@ -533,10 +546,10 @@ check_indicator_username= CheckBox({
 
 # TODO:
 
-# sc_panel_transparency
 # cbox_default_player
 
 PanelIcons=Tab([spin_menu_visible,
+                 sc_panel_transparency,
                  check_panel_opaque,
                  check_indicator_datetime,
                  radio_12hour,

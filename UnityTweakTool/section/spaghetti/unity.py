@@ -42,7 +42,6 @@ class Unitysettings ():
     def __init__(self, builder):
         self.ui = ui(builder)
 
-        self.ui['sc_panel_transparency'].add_mark(.67, Gtk.PositionType.BOTTOM, None)
 
         if Gdk.Screen.get_default().get_n_monitors() == 1:
             dependants = ['l_launcher_visibility',
@@ -86,8 +85,6 @@ class Unitysettings ():
 
 
         # ====== Panel Helpers ====== #
-        self.ui['sc_panel_transparency'].set_value(gsettings.unityshell.get_double('panel-opacity'))
-
          # Default Player
         interested_players = gsettings.sound.get_strv('interested-media-players')
         preferred_players = gsettings.sound.get_strv('preferred-media-players')
@@ -241,9 +238,6 @@ class Unitysettings ():
 #----- END: Dash -------
 
 #----- BEGIN: Panel -----
-    def on_sc_panel_transparency_value_changed(self, widget, udata = None):
-        panel_transparency = widget.get_value()
-        gsettings.unityshell.set_double('panel-opacity', panel_transparency)
     def on_cbox_default_player_changed(self, widget, udata = None):
         combobox_text = self.ui['cbox_default_player'].get_active_text()
         gsettings.sound.set_strv('preferred-media-players', [combobox_text.lower()])
