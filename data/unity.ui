@@ -1279,26 +1279,8 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="l_transparent_panel_sw">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="has_tooltip">True</property>
-                    <property name="margin_right">6</property>
-                    <property name="margin_top">6</property>
-                    <property name="xalign">1</property>
-                    <property name="label" translatable="yes">Transparency:</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">1</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
                   <object class="GtkLabel" id="l_transparent_panel">
                     <property name="visible">True</property>
-                    <property name="sensitive">False</property>
                     <property name="can_focus">False</property>
                     <property name="has_tooltip">True</property>
                     <property name="margin_right">6</property>
@@ -1308,24 +1290,6 @@
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
-                    <property name="top_attach">2</property>
-                    <property name="width">1</property>
-                    <property name="height">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkSwitch" id="sw_transparent_panel">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="tooltip_markup" translatable="yes">Enable transparency for the panel?</property>
-                    <property name="tooltip_text" translatable="yes">Enable transparency for the panel?</property>
-                    <property name="halign">start</property>
-                    <property name="margin_left">1</property>
-                    <property name="margin_top">8</property>
-                    <signal name="notify::active" handler="on_sw_transparent_panel_active_notify" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
                     <property name="top_attach">1</property>
                     <property name="width">1</property>
                     <property name="height">1</property>
@@ -1339,7 +1303,7 @@
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
-                    <property name="top_attach">3</property>
+                    <property name="top_attach">2</property>
                     <property name="width">1</property>
                     <property name="height">1</property>
                   </packing>
@@ -1398,7 +1362,6 @@
                     <child>
                       <object class="GtkScale" id="sc_panel_transparency">
                         <property name="visible">True</property>
-                        <property name="sensitive">False</property>
                         <property name="can_focus">True</property>
                         <property name="has_tooltip">True</property>
                         <property name="tooltip_markup" translatable="yes">Set the level of transparency for the panel.</property>
@@ -1421,7 +1384,6 @@
                       <object class="GtkCheckButton" id="check_panel_opaque">
                         <property name="label" translatable="yes">Opaque panel for maximized windows</property>
                         <property name="visible">True</property>
-                        <property name="sensitive">False</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">False</property>
                         <property name="has_tooltip">True</property>
@@ -1442,7 +1404,7 @@
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
-                    <property name="top_attach">2</property>
+                    <property name="top_attach">1</property>
                     <property name="width">1</property>
                     <property name="height">2</property>
                   </packing>
