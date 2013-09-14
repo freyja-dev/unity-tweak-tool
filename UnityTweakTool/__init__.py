@@ -62,42 +62,41 @@ del _formatter
 
 
 ##########################################################################
+CACHEDIR=os.path.expanduser('~/.cache/unity-tweak-tool/')
+LOCKFILE=os.path.join(CACHEDIR,"pid.lockfile")
 
 class Application(dbus.service.Object):
     def __init__(self,pageid=-1):
-        DIR=os.path.expanduser('~/.config/unity-tweak-tool/')
-        LOCKFILE=os.path.join(DIR,"pid.lockfile")
-        if not os.path.exists(DIR):
-            os.makedirs(DIR)
-        if os.access(LOCKFILE, os.F_OK):
-            pidfile = open(LOCKFILE, "r")
-            pidfile.seek(0)
-            old_pd = pidfile.readline()
-            pidfile.close()
-            try:
-                if os.path.exists("/proc/%s" % old_pd):
-                    print("""
-            Another instance of Unity Tweak Tool seems to be running with
-            process id %s. Switching to the already existing window.
-                        """ % old_pd)
+        if not os.path.exists(CACHEDIR):
+            os.makedirs(CACHEDIR)
+        try:
+            if os.access(LOCKFILE,os.R_OK):
+                with open(LOCKFILE) as pidfile:
+                    old_pid = pidfile.read()
+                    OLD_CMDLINE="/proc/%s/cmdline" % old_pid
+                if os.access(OLD_CMDLINE,os.R_OK):
+                    with open(OLD_CMDLINE) as cmd_old_file:
+                        cmd_old=cmd_old_file.read()
+                    executable_name=cmd_old.split('\x00')[1]
+                    if os.path.basename(executable_name) == 'unity-tweak-tool':
+                        print("""\033[01;32m
+        Another instance of Unity Tweak Tool seems to be running with
+        process id {pid}. Switching to the already existing window.
+
+        If you believe there is no other instance running, remove the
+        file {LOCKFILE} and try again.
+                       \033[00m""".format(pid=old_pid,LOCKFILE=LOCKFILE))
                     self.call_running_instance(pageid)
                     sys.exit(1)
-            except dbus.exceptions.DBusException as e:
+        except dbus.exceptions.DBusException as e:
                 # Most probably the process doesn't exist. remove and proceed
-                os.remove(LOCKFILE)
+                pass
 
-        pidfile = open(LOCKFILE, "w")
-        pidfile.write("%s" % os.getpid())
-        pidfile.close()
+        with open(LOCKFILE, "w") as pidfile:
+            pidfile.write("%s" % os.getpid())
 
         self.register_dbus_session()
         self.run(pageid)
-        try:
-            os.remove(LOCKFILE)
-        except FileNotFoundError as e:
-            pass
-# If removing the lockfile prevents Bug 1168738, it is worth a try.
-# Deleting the lock file doesn't trouble us anyway. Suggested by LP:mjblenner
 
     def run(self,pageid):
         from UnityTweakTool.config.data import get_data_path
@@ -112,7 +111,7 @@ class Application(dbus.service.Object):
 #        self.launcher = Unity.LauncherEntry.get_for_desktop_id("unity-tweak-tool.desktop")        
         self.window=self.builder.get_object('unitytweak_main')
         self.window.show_all()
-        self.window.connect('delete-event',Gtk.main_quit)
+        self.window.connect('delete-event',self.quit)
         if pageid is not None:
             self.switch_to_page(pageid)
         Gtk.main()
@@ -169,7 +168,8 @@ class Application(dbus.service.Object):
         for item,location in appmenu.items():
             handler['on_menuitem_%s_activate'%item]=gen_appmenu_handler(location)
 
-        handler['on_menuimage_quit_activate']=lambda *args:Gtk.main_quit()
+        handler['on_menuimage_quit_activate']=self.quit
+
         from UnityTweakTool.about import About
         handler['on_menuimage_about_activate']=lambda *args: About()
         self.builder.connect_signals(handler)
@@ -190,6 +190,10 @@ class Application(dbus.service.Object):
         if not pageid == -1:
             self.notebook.set_current_page(pageid)
         self.window.present()
+
+    def quit(self,*args):
+        os.remove(LOCKFILE)
+        Gtk.main_quit()
 
 def reset_all():
     import UnityTweakTool.utils.unityreset as unityreset
