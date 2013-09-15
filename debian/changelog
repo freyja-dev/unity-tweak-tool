@@ -17,7 +17,7 @@ unity-tweak-tool (0.0.5) saucy; urgency=low
     - Fix unity-tweak-tool crashed with dbus.exceptions.DBusException in
     call_blocking() (LP: #1168738)
     - Fix FileNotFoundError (LP: #1225463)
-    - Fix dbus.exceptions.DBusException: org.freedesktop.DBus.Error.NameHasNoOwner (LP: #1170571)
+    - Fix dbus.exceptions.DBusException (LP: #1170571)
   * data/unity.ui
     - Remove Panel transparency switch (LP: #1168836)
     - Remove Launcher transparency switch (LP: #1168834)
