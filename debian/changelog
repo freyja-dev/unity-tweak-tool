@@ -1,18 +1,31 @@
-unity-tweak-tool (0.0.5) UNRELEASED; urgency=low
+unity-tweak-tool (0.0.5) saucy; urgency=low
 
   [ J Phani Mahesh ]
-  * Bug-fix only release (LP: #???????)
+  * New upstream release (LP: #???????)
+    - New application icon 
+    - Show error dialog when schemas are missing instead of crashing
+    - Trigger new build of pot files
   * UnityTweakTool/section/unity.py
     - Fix Show recently used and more suggestions in dash search (LP: #1166294)
-    - Fix reversed launcher transparency switch (LP: #1168834)
     - Fix Launcher reveal sensitivity scale update issues (LP: #1168863)
-    - Fix Panel opacity scale update bug (LP: #1168836)
   * UnityTweakTool/elements/colorchooser.py
     - Fix TypeError in get_rgba() (LP: #1165627)
+    - Fix segmentation fault on selecting custom launcher (LP: #1190398)
+  * UnityTweakTool/elements/option.py
+    - Fix "Restore defaults" button (LP: #1186634)
+  * UnityTweakTool/__init__.py  
+    - Fix unity-tweak-tool crashed with dbus.exceptions.DBusException in
+    call_blocking() (LP: #1168738)
+    - Fix FileNotFoundError (LP: #1225463)
+    - Fix dbus.exceptions.DBusException: org.freedesktop.DBus.Error.NameHasNoOwner (LP: #1170571)
+  * data/unity.ui
+    - Remove Panel transparency switch (LP: #1168836)
+    - Remove Launcher transparency switch (LP: #1168834)
 
   [ Barneedhar Vigneshwar ]
   * UnityTweakTool/section/unity.py
     - Fix 'Can't set background blur to static' (LP: #1167343)
+    - Fix non-working Launcher only on primary desktop (LP: #1173977)
   * UnityTweakTool/section/sphagetti/compiz.py
     - Fix TypeError in color_to_hash() (LP: #1166884)
 
