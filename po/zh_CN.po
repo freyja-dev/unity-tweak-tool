@@ -1,16 +1,16 @@
-# Italian translation for mechanig
+# Chinese (Simplified) translation for unity-tweak-tool
 # Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
-# This file is distributed under the same license as the mechanig package.
+# This file is distributed under the same license as the unity-tweak-tool package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: mechanig\n"
+"Project-Id-Version: unity-tweak-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2013-09-15 20:49+0530\n"
-"PO-Revision-Date: 2013-08-09 15:20+0000\n"
-"Last-Translator: Claudio Arseni <claudio.arseni@gmail.com>\n"
-"Language-Team: Italian <it@li.org>\n"
+"PO-Revision-Date: 2013-08-17 07:34+0000\n"
+"Last-Translator: Wang Dianjin <Unknown>\n"
+"Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,27 +19,27 @@ msgstr ""
 
 #: ../UnityTweakTool/utils/unityreset.py:41
 msgid "Initialising Unity reset"
-msgstr "Inizializzazione del rirpristino di Unity"
+msgstr "初始化 Unity 重置操作"
 
 #: ../UnityTweakTool/utils/unityreset.py:42
 msgid "Killing Unity and Compiz"
-msgstr "Unity è Compiz vengono terminati"
+msgstr "正在杀死 Unity 和 Compiz"
 
 #: ../UnityTweakTool/utils/unityreset.py:45
 msgid "Resetting compiz plugins"
-msgstr "Ripristino dei plugin di Compiz"
+msgstr "正在重置 compiz 插件"
 
 #: ../UnityTweakTool/utils/unityreset.py:47
 msgid "Resetting more compiz plugins"
-msgstr "Ripristino di ulteriori plugin di Compiz"
+msgstr "正在重置更多 compiz 插件"
 
 #: ../UnityTweakTool/utils/unityreset.py:49
 msgid "Resetting Unity settings"
-msgstr "Ripristino delle impostazioni di Unity"
+msgstr "正在重置 Unity 设置"
 
 #: ../UnityTweakTool/utils/unityreset.py:51
 msgid "Reset complete. Reloading unity"
-msgstr "Ripristino completato. Aggiornamento di Unity"
+msgstr "重置完成。正在重新加载 unity"
 
 #. ! /usr/bin/env python3
 #: ../data/errordialog.ui.h:1
@@ -52,142 +52,140 @@ msgstr ""
 
 #: ../data/appearance.ui.h:1
 msgid "Available themes"
-msgstr "Temi disponibili"
+msgstr "可用主题"
 
 #: ../data/appearance.ui.h:2
 msgid "List of GTK Themes"
-msgstr "Elenco di temi GTK"
+msgstr "GTK 主题列表"
 
 #: ../data/appearance.ui.h:3
 msgid "GTK Theme"
-msgstr "Tema GTK"
+msgstr "GTK 主题"
 
 #: ../data/appearance.ui.h:4
 msgid "List of Window decoration themes"
-msgstr "Elenco di temi per la decorazione delle finetsre"
+msgstr "窗口装饰主题列表"
 
 #: ../data/appearance.ui.h:5
 msgid "Window decoration theme"
-msgstr "Tema decorazione finestre"
+msgstr "窗口装饰主题"
 
 #: ../data/appearance.ui.h:6 ../data/unity.ui.h:83 ../data/system.ui.h:8
 #: ../data/windowmanager.ui.h:19
 msgid "Restore defaults"
-msgstr "Ripristina valori predefiniti"
+msgstr "恢复默认值"
 
 #: ../data/appearance.ui.h:7
 msgid "Restore system's default theme configurations"
-msgstr "Ripristina il tema del sistema alla configurazione predefinita"
+msgstr "恢复系统默认主题配置"
 
 #: ../data/appearance.ui.h:8 ../data/overview.ui.h:18
 #: ../data/unitytweak.ui.h:17
 msgid "Theme"
-msgstr "Tema"
+msgstr "主题"
 
 #: ../data/appearance.ui.h:9
 msgid "List of icon themes"
-msgstr "Elenco di temi delle icone"
+msgstr "图标主题列表"
 
 #: ../data/appearance.ui.h:10
 msgid "Icon theme"
-msgstr "Tema icone"
+msgstr "图标主题"
 
 #: ../data/appearance.ui.h:11
 msgid "Restore system's default icon theme configurations"
-msgstr "Ripristina il tema delle icone alla configurazione predefinita"
+msgstr "恢复系统默认图标主题配置"
 
 #: ../data/appearance.ui.h:12 ../data/overview.ui.h:19 ../data/unity.ui.h:64
 #: ../data/unitytweak.ui.h:18
 msgid "Icons"
-msgstr "Icone"
+msgstr "图标"
 
 #: ../data/appearance.ui.h:13
 msgid "List of cursor themes"
-msgstr "Elenco temi del puntatore"
+msgstr "光标主题列表"
 
 #: ../data/appearance.ui.h:14
 msgid "Cursor Theme"
-msgstr "Tema puntatore"
+msgstr "光标主题"
 
 #: ../data/appearance.ui.h:15
 msgid "Preferences"
-msgstr "Preferenze"
+msgstr "首选项"
 
 #: ../data/appearance.ui.h:16
 msgid "Use large cursors"
-msgstr "Usare cursori grandi"
+msgstr "使用大光标"
 
 #: ../data/appearance.ui.h:17
 msgid "If enabled, the system will use a larger cursor."
-msgstr "Se abilitato, il sistema userà un cursore di grandi dimensioni"
+msgstr "如果启用，则系统会使用一个较大的光标。"
 
 #: ../data/appearance.ui.h:18
 msgid "Restore system's default cursor theme configurations"
-msgstr "Ripristina il tema del puntatore alla configurazione predefinita"
+msgstr "恢复系统默认光标主题配置"
 
 #: ../data/appearance.ui.h:19 ../data/unitytweak.ui.h:19
 msgid "Cursor"
-msgstr "Puntatore"
+msgstr "指针"
 
 #: ../data/appearance.ui.h:20 ../data/overview.ui.h:9 ../data/unity.ui.h:86
 #: ../data/unitytweak.ui.h:11 ../data/windowmanager.ui.h:21
 msgid "General"
-msgstr "Generali"
+msgstr "常规"
 
 #: ../data/appearance.ui.h:21
 msgid "Select the default font for all applications."
-msgstr "Seleziona il tipo di carattere predefinito per tutte le applicazioni"
+msgstr "选择所有应用程序的默认字体。"
 
 #: ../data/appearance.ui.h:22
 msgid "Default font:"
-msgstr "Tipo do carattere predefinito:"
+msgstr "默认字体："
 
 #: ../data/appearance.ui.h:23
 msgid "Select the default font used for reading documents."
-msgstr ""
-"Seleziona il tipo di carattere predefinito usato per la lettura dei documenti"
+msgstr "选择阅读文档使用的默认字体。"
 
 #: ../data/appearance.ui.h:24
 msgid "Document font:"
-msgstr "Tipo di carattere documenti:"
+msgstr "文档字体："
 
 #: ../data/appearance.ui.h:25
 msgid "Select the default monospace font."
-msgstr "Seleziona il tipo di carattere a spaziatura fissa"
+msgstr "选择默认的等宽字体。"
 
 #: ../data/appearance.ui.h:26
 msgid "Monospace font:"
-msgstr "Tipo di carattere a spaziatura fissa:"
+msgstr "等宽字体："
 
 #: ../data/appearance.ui.h:27
 msgid "Select the default font for the window titlebar."
-msgstr "Seleziona il tipo carattere predefinito per la barra del titolo"
+msgstr "选择窗口标题栏使用的默认字体。"
 
 #: ../data/appearance.ui.h:28
 msgid "Window title font:"
-msgstr "Tipo di carattere barra del titolo:"
+msgstr "窗口标题字体："
 
 #: ../data/appearance.ui.h:29 ../data/overview.ui.h:17 ../data/unity.ui.h:49
 #: ../data/unitytweak.ui.h:16 ../unity-tweak-tool.desktop.in.h:5
 msgid "Appearance"
-msgstr "Aspetto"
+msgstr "外观"
 
 #: ../data/appearance.ui.h:30
 msgid "Select the type of antialiasing used to render fonts."
-msgstr ""
-"Seleziona il tipo di antialising usato per la resa a schermo dei caratteri"
+msgstr "选择用来渲染字体的抗锯齿类型。"
 
 #: ../data/appearance.ui.h:31
 msgid "Antialiasing:"
-msgstr "Antialiasing:"
+msgstr "抗锯齿："
 
 #: ../data/appearance.ui.h:32
 msgid "None"
-msgstr "Nessuno"
+msgstr "无"
 
 #: ../data/appearance.ui.h:33
 msgid "Grayscale"
-msgstr "Scala di grigi"
+msgstr "灰度"
 
 #: ../data/appearance.ui.h:34
 msgid "RGBA"
@@ -195,91 +193,86 @@ msgstr "RGBA"
 
 #: ../data/appearance.ui.h:35
 msgid "Select the type of hinting to use when rendering fonts"
-msgstr ""
-"Seleziona l'approssimazione (hinting) da usare per il render dei caratteri"
+msgstr "选择渲染字体使用的微调类型"
 
 #: ../data/appearance.ui.h:36
 msgid "Slight"
-msgstr "Leggera"
+msgstr "轻微"
 
 #: ../data/appearance.ui.h:37
 msgid "Medium"
-msgstr "Media"
+msgstr "中等"
 
 #: ../data/appearance.ui.h:38
 msgid "Full"
-msgstr "Completa"
+msgstr "完全"
 
 #: ../data/appearance.ui.h:39
 msgid "Hinting:"
-msgstr "Approssimazione:"
+msgstr "微调："
 
 #: ../data/appearance.ui.h:40
 msgid ""
 "Select the factor used to enlarge or reduce text display, without changing "
 "font size."
-msgstr ""
-"Seleziona il fattore usato per aumentare o diminuire la dimensione del testo "
-"visualizzato, senza cambiare la dimensione del tipo di carattere."
+msgstr "选择放大或缩小文本显示的系数，不改变字体大小。"
 
 #: ../data/appearance.ui.h:41
 msgid "Text scaling factor:"
-msgstr "Fattore di scala del testo:"
+msgstr "文字缩放比例："
 
 #: ../data/appearance.ui.h:42
 msgid "Restore system's default font configurations"
-msgstr ""
-"Ripristina il tipo di carattere del sistema alla configurazione predefinita"
+msgstr "恢复系统默认字体配置"
 
 #: ../data/appearance.ui.h:43 ../data/overview.ui.h:21
 #: ../data/unitytweak.ui.h:20
 msgid "Fonts"
-msgstr "Tipi di carattere"
+msgstr "字体"
 
 #: ../data/appearance.ui.h:44
 msgid "Layout"
-msgstr "Disposizione"
+msgstr "布局"
 
 #: ../data/appearance.ui.h:45
 msgid "Left"
-msgstr "A sinistra"
+msgstr "左侧"
 
 #: ../data/appearance.ui.h:46
 msgid "Align the window controls to the left side of the window."
-msgstr "Allinea i pulsanti della finestra sul lato sinistro"
+msgstr "将窗口控件对齐到窗口左侧。"
 
 #: ../data/appearance.ui.h:47
 msgid "Right"
-msgstr "A destra"
+msgstr "右侧"
 
 #: ../data/appearance.ui.h:48
 msgid "Align the window controls to the right side of the window."
-msgstr "Allinea i pulsanti della finestra sul lato desto"
+msgstr "将窗口控件对齐到窗口右侧。"
 
 #: ../data/appearance.ui.h:49
 msgid "Alignment:"
-msgstr "Allineamento:"
+msgstr "对齐："
 
 #: ../data/appearance.ui.h:50
 msgid "Show menu button"
-msgstr "Mostrare pulsante del menù"
+msgstr "显示菜单按钮"
 
 #: ../data/appearance.ui.h:51
 msgid "If enabled, show the window menu in the titlebar."
-msgstr "Se abilitato, mostra il menù della finestra nella barra del titolo"
+msgstr "如果启用，标题栏中将显示窗口菜单。"
 
 #: ../data/appearance.ui.h:52
 msgid "Restore Defaults"
-msgstr "Ripristina valori predefiniti"
+msgstr "恢复默认"
 
 #: ../data/appearance.ui.h:53
 msgid "Restore default window controls settings."
-msgstr ""
-"Ripristina le impostazioni predefinite per i controlli della finestra"
+msgstr "恢复默认窗口控件设置。"
 
 #: ../data/appearance.ui.h:54
 msgid "Window Controls"
-msgstr "Controlli della finestra"
+msgstr "窗口控件"
 
 #: ../data/overview.ui.h:1 ../data/unitytweak.ui.h:3
 #: ../unity-tweak-tool.desktop.in.h:3
@@ -288,101 +281,95 @@ msgstr "Unity"
 
 #: ../data/overview.ui.h:2 ../data/unity.ui.h:85 ../data/unitytweak.ui.h:4
 msgid "Launcher"
-msgstr "Launcher"
+msgstr "启动器"
 
 #: ../data/overview.ui.h:3 ../data/unity.ui.h:110 ../data/unitytweak.ui.h:5
 msgid "Search"
-msgstr "Ricerca"
+msgstr "搜索"
 
 #: ../data/overview.ui.h:4 ../data/unity.ui.h:154 ../data/unitytweak.ui.h:6
 msgid "Panel"
-msgstr "Pannello"
+msgstr "面板"
 
 #: ../data/overview.ui.h:5 ../data/unity.ui.h:171 ../data/unitytweak.ui.h:7
 msgid "Switcher"
-msgstr "Selettore"
+msgstr "切换器"
 
 #: ../data/overview.ui.h:6 ../data/unity.ui.h:178 ../data/unitytweak.ui.h:8
 msgid "Web Apps"
-msgstr "Applicazioni web"
+msgstr "Web 应用"
 
 #: ../data/overview.ui.h:7 ../data/unity.ui.h:192 ../data/unitytweak.ui.h:9
 #: ../data/windowmanager.ui.h:81
 msgid "Additional"
-msgstr "Impostazioni aggiuntive"
+msgstr "附加"
 
 #: ../data/overview.ui.h:8 ../data/unitytweak.ui.h:10
 #: ../unity-tweak-tool.desktop.in.h:4
 msgid "Window Manager"
-msgstr "Gestore finestre"
+msgstr "窗口管理器"
 
 #: ../data/overview.ui.h:10
 msgid ""
 "Workspace\n"
 "Settings"
 msgstr ""
-"Impostazioni\n"
-"spazio di lavoro"
+"工作区\n"
+"设置"
 
 #: ../data/overview.ui.h:12
 msgid ""
 "Window\n"
 "Spread"
 msgstr ""
-"Scalatura\n"
-"finestre"
 
 #: ../data/overview.ui.h:14
 msgid ""
 "Window\n"
 "Snapping"
 msgstr ""
-"Aggancio\n"
-"finestre"
 
 #: ../data/overview.ui.h:16 ../data/unitytweak.ui.h:15
 #: ../data/windowmanager.ui.h:52
 msgid "Hotcorners"
-msgstr "Angoli attivi"
+msgstr "热区"
 
 #: ../data/overview.ui.h:20
 msgid "Cursors"
-msgstr "Puntatori"
+msgstr "指针"
 
 #: ../data/overview.ui.h:22
 msgid ""
 "Window\n"
 "Controls"
 msgstr ""
-"Controlli\n"
-"finestra"
+"窗口\n"
+"控制"
 
 #: ../data/overview.ui.h:24 ../data/unitytweak.ui.h:22
 #: ../unity-tweak-tool.desktop.in.h:6
 msgid "System"
-msgstr "Sistema"
+msgstr "系统"
 
 #: ../data/overview.ui.h:25
 msgid ""
 "Desktop\n"
 "Icons"
 msgstr ""
-"Icone della\n"
-"scrivania"
 
 #: ../data/overview.ui.h:27 ../data/unitytweak.ui.h:24 ../data/system.ui.h:21
 msgid "Security"
-msgstr "Sicurezza"
+msgstr "安全"
 
 #: ../data/overview.ui.h:28 ../data/unitytweak.ui.h:25 ../data/system.ui.h:36
 msgid "Scrolling"
-msgstr "Scorrimento"
+msgstr "滚动"
 
 #. ----- END: Additional -----
 #. ! /usr/bin/env python3
 #: ../data/unity.ui.h:1
 msgid "Invoke HUD"
-msgstr "Richiama HUD"
+msgstr "调用 HUD"
 
 #: ../data/unity.ui.h:2
 msgid "Super+H"
@@ -390,7 +377,7 @@ msgstr "Super+H"
 
 #: ../data/unity.ui.h:3
 msgid "Show the launcher"
-msgstr "Mostra il Launcher"
+msgstr "显示启动器"
 
 #: ../data/unity.ui.h:4
 msgid "Super+E"
@@ -398,7 +385,7 @@ msgstr "Super+E"
 
 #: ../data/unity.ui.h:5
 msgid "Execute command"
-msgstr "Esegui un comando"
+msgstr "运行命令"
 
 #: ../data/unity.ui.h:6
 msgid "Super+M"
@@ -406,7 +393,7 @@ msgstr "Super+M"
 
 #: ../data/unity.ui.h:7
 msgid "Put keyboard focus on the launcher"
-msgstr "Sposta il focus della tastiera sul Launcher"
+msgstr "将键盘焦点移到启动器上"
 
 #: ../data/unity.ui.h:8
 msgid "Super+A"
@@ -414,7 +401,7 @@ msgstr "Super+A"
 
 #: ../data/unity.ui.h:9
 msgid "Open the first panel menu"
-msgstr "Apri il primo menù del pannello"
+msgstr "打开第一个面板菜单"
 
 #: ../data/unity.ui.h:10
 msgid "Super+N"
@@ -422,19 +409,19 @@ msgstr "Super+N"
 
 #: ../data/unity.ui.h:11
 msgid "Start switcher"
-msgstr "Avvia il selettore"
+msgstr "启动切换器"
 
 #: ../data/unity.ui.h:12
 msgid "Super+Tab"
-msgstr "Alt"
+msgstr "Super+Tab"
 
 #: ../data/unity.ui.h:13
 msgid "Start switcher in reverse"
-msgstr "Avvia il selettore in senso inverso"
+msgstr "启动切换器(反向)"
 
 #: ../data/unity.ui.h:14
 msgid "Shift+Super+Tab"
-msgstr "Maiusc+Super+Tab"
+msgstr "Shift+Super+Tab"
 
 #: ../data/unity.ui.h:15
 msgid "Alt+Tab"
@@ -442,657 +429,626 @@ msgstr "Alt+Tab"
 
 #: ../data/unity.ui.h:16
 msgid "Shift+Alt+Tab"
-msgstr "Maiusc+Alt+Tab"
+msgstr "Shift+Alt+Tab"
 
 #: ../data/unity.ui.h:17
 msgid "Start switcher for all workspaces"
-msgstr "Avvia il selettore per tutti gli spazi di lavoro"
+msgstr "启动所有工作区的切换器"
 
 #: ../data/unity.ui.h:18
 msgid "Ctrl+Super+Alt+Tab"
-msgstr "Ctrl+Alt+Tab"
+msgstr "Ctrl+Super+Alt+Tab"
 
 #: ../data/unity.ui.h:19
 msgid "Start switcher for all workspaces in reverse"
-msgstr "Avvia il selettore in senso inverso per tutti gli spazi di lavoro"
+msgstr "启动所有工作区的切换器(反向)"
 
 #: ../data/unity.ui.h:20
 msgid "Shift+Ctrl+Super+Alt+Tab"
-msgstr "Maiusc+Ctrl+Super+Alt+Tab"
+msgstr "Shift+Ctrl+Super+Alt+Tab"
 
 #: ../data/unity.ui.h:21
 msgid "Go right in the switcher"
-msgstr "Va a destra nel selettore"
+msgstr "在切换器中向右切换"
 
 #: ../data/unity.ui.h:22
 msgid "Alt+Right"
-msgstr "Ctrl+Alt+→"
+msgstr "Alt+Right"
 
 #: ../data/unity.ui.h:23
 msgid "Go left in the switcher"
-msgstr "Va a sinistra nel selettore"
+msgstr "在切换器中向左切换"
 
 #: ../data/unity.ui.h:24
 msgid "Alt+Left"
-msgstr "Ctrl+Alt+←"
+msgstr "Alt+Left"
 
 #: ../data/unity.ui.h:25
 msgid "Expose windows in the switcher"
-msgstr "Mostra le finestre nel selettore"
+msgstr "在切换器中展示窗口"
 
 #: ../data/unity.ui.h:26
 msgid "Alt+Down"
-msgstr "Ctrl+Alt+↓"
+msgstr "Alt+Down"
 
 #: ../data/unity.ui.h:27
 msgid "Collapse windows in the switcher"
-msgstr "Contrai finestre nel selettore"
+msgstr "在切换器中折叠窗口"
 
 #: ../data/unity.ui.h:28
 msgid "Alt+Up"
-msgstr "Ctrl+Alt+↑"
+msgstr "Alt+Up"
 
 #: ../data/unity.ui.h:29
 msgid "Flip through windows in the switcher"
-msgstr "Scorre tra le finestre del selettore"
+msgstr "在切换器中浏览窗口"
 
 #: ../data/unity.ui.h:30 ../data/windowmanager.ui.h:95
 msgid "Disabled"
-msgstr "Disabilitato"
+msgstr "已禁用"
 
 #: ../data/unity.ui.h:31
 msgid "Flip through windows in the switcher backwards"
-msgstr "Scorre tra le finestre del selettore all'indietro"
+msgstr "在切换器中浏览窗口(反向)"
 
 #: ../data/unity.ui.h:32 ../data/windowmanager.ui.h:49
 msgid "Behaviour"
-msgstr "Comportamento"
+msgstr "行为"
 
 #: ../data/unity.ui.h:33
 msgid "Should the launcher be hidden?"
-msgstr "Scomparsa automatica del Launcher"
+msgstr "启动器应该隐藏吗？"
 
 #: ../data/unity.ui.h:34
 msgid "Auto-hide:"
-msgstr "Scomparsa automatica:"
+msgstr "自动隐藏："
 
 #: ../data/unity.ui.h:35
 msgid "Select the auto-hide animation of the launcher."
-msgstr "Seleziona l'animazione per la scomparsa automatica del Launcher"
+msgstr "选择启动器自动隐藏动画"
 
 #: ../data/unity.ui.h:36
 msgid "Fade Dash and slide"
-msgstr "Dissolvenza della Dash e scorrimento"
+msgstr ""
 
 #: ../data/unity.ui.h:37
 msgid "Slide only"
-msgstr "Solo scorrimento"
+msgstr "仅滑动"
 
 #: ../data/unity.ui.h:38
 msgid "Fade only"
-msgstr "Solo dissolvenza"
+msgstr "仅淡出"
 
 #: ../data/unity.ui.h:39
 msgid "Fade and slide"
-msgstr "Dissolvenza e scorrimento"
+msgstr "淡出和滑动"
 
 #: ../data/unity.ui.h:40
 msgid "Auto-hide animation:"
-msgstr "Animazione scomparsa automatica:"
+msgstr "自动隐藏动画:"
 
 #: ../data/unity.ui.h:41
 msgid ""
 "Select the option to reveal the dash with the mouse, when auto-hide is "
 "enabled."
-msgstr ""
-"Seleziona l'opzione per visualizzare la Dash usando il mouse quando è attiva "
-"la scomparsa automatica"
+msgstr "选择此选项后时，在开启自动隐藏后使用鼠标调出 Dash。"
 
 #: ../data/unity.ui.h:42
 msgid "Reveal location:"
-msgstr "Posizione per mostrare:"
+msgstr "呈现位置："
 
 #: ../data/unity.ui.h:43
 msgid "Reveal sensitivity:"
-msgstr "Sensibilità area per mostrare:"
+msgstr "调用灵敏度"
 
 #: ../data/unity.ui.h:44
 msgid "How much pointer \"pressure\" is required to reveal the launcher."
-msgstr "Quanta pressione il mouse deve fare per mostrare il Launcher"
+msgstr "调出启动器需要多少指针“压力”。"
 
 #: ../data/unity.ui.h:45
 msgid "Left side"
-msgstr "Bordo sinistro"
+msgstr "左边"
 
 #: ../data/unity.ui.h:46
 msgid ""
 "When in auto-hide mode the left edge of the current workspace triggers the "
 "launcher."
-msgstr ""
-"In modalità a scomparsa automatica, il Launcher viene mostrato quando il "
-"puntatore si sposta sul bordo sinistro"
+msgstr "自动隐藏模式下，在当前工作区的左边缘触发启动器。"
 
 #: ../data/unity.ui.h:47
 msgid "Top left corner"
-msgstr "Angolo superiore sinistro"
+msgstr "左上角"
 
 #: ../data/unity.ui.h:48
 msgid ""
 "When in auto-hide mode the top left corner of the current workspace triggers "
 "the launcher."
-msgstr ""
-"In modalità a scomparsa automatica, il Launcher viene mostrato quando il "
-"puntatore si sposta sull'angolo superiore sinistro"
+msgstr "自动隐藏模式下，在当前工作区的左上角触发启动器。"
 
 #: ../data/unity.ui.h:50
 msgid "Select the level of the transparency of the launcher"
-msgstr "Seleziona il livello di trasparenza del Launcher"
+msgstr "选择启动器的透明度"
 
 #: ../data/unity.ui.h:51
 msgid "Transparency level:"
-msgstr "Livello trasparenza:"
+msgstr "透明度："
 
 #: ../data/unity.ui.h:52
 msgid "How transparent the launcher will be."
-msgstr "Imposta il livello di trasparenza del Launcher"
+msgstr "启动器的透明程度。"
 
 #: ../data/unity.ui.h:53
 msgid "Based on wallpaper"
-msgstr "Basato sullo sfondo"
+msgstr "基于壁纸"
 
 #: ../data/unity.ui.h:54
 msgid "If selected, the launcher colour is based on the desktop background"
-msgstr ""
-"Se selezionato, il colore da Launcher sarà basato sullo sfondo della "
-"scrivania"
+msgstr "如果选择，启动器颜色将基于桌面背景图片"
 
 #: ../data/unity.ui.h:55
 msgid "Colour:"
-msgstr "Colore:"
+msgstr "颜色:"
 
 #: ../data/unity.ui.h:56
 msgid "Visibility:"
-msgstr "Visibilità:"
+msgstr "可见性："
 
 #: ../data/unity.ui.h:57
 msgid "Custom:"
-msgstr "Personalizzato:"
+msgstr "自定义："
 
 #: ../data/unity.ui.h:58
 msgid "If selected, the launcher will be the colour chosen by the user"
-msgstr "Se selezionato, il colore da Launcher sarà quello scelto dall'utente"
+msgstr "如果选择，启动器将使用用户选择的颜色"
 
 #: ../data/unity.ui.h:59
 msgid "All desktops"
-msgstr "Tutte le scrivanie"
+msgstr "所有桌面"
 
 #: ../data/unity.ui.h:60
 msgid "If selected, the launcher is visible on all desktops."
-msgstr "Se selezionato, il Launcher sarà visibile su tutte le scrivanie"
+msgstr "如果选择，启动器在所有桌面上显示。"
 
 #: ../data/unity.ui.h:61
 msgid "If selected, the launcher is visible on all desktops"
-msgstr "Se selezionato, il Launcher sarà visibile su tutte le scrivanie"
+msgstr "如果选择，启动器在对所有桌面显示"
 
 #: ../data/unity.ui.h:62
 msgid "Primary desktop"
-msgstr "Scrivania principale"
+msgstr "主桌面"
 
 #: ../data/unity.ui.h:63
 msgid "If selected, the launcher is visible on the primary desktop"
-msgstr "Se selezionato, il Launcher sarà visibile sulla scrivania principale"
+msgstr "如果选择，启动器将在主桌面显示"
 
 #: ../data/unity.ui.h:65
 msgid "Icon size:"
-msgstr "Dimensione icone:"
+msgstr "图标大小："
 
 #: ../data/unity.ui.h:66
 msgid "Select the animation used for launching an application."
-msgstr "Seleziona l'animazione usata all'avvio delle applicazioni"
+msgstr "选择启动应用程序的动画。"
 
 #: ../data/unity.ui.h:67
 msgid "No animation"
-msgstr "Nessuna animazione"
+msgstr "无动画"
 
 #: ../data/unity.ui.h:68
 msgid "Pulse"
-msgstr "Pulsazione"
+msgstr "脉动"
 
 #: ../data/unity.ui.h:69
 msgid "Blink"
-msgstr "Lampeggiamento"
+msgstr "闪烁"
 
 #: ../data/unity.ui.h:70
 msgid "Select the animation used for an urgent notification on the launcher"
-msgstr "Seleziona l'animazione usata nel Launcher per le notifiche urgenti"
+msgstr "选择启动器上用于紧急通知的动画"
 
 #: ../data/unity.ui.h:71
 msgid "Wiggle"
-msgstr "Scuotimento"
+msgstr "摆动"
 
 #: ../data/unity.ui.h:72
 msgid "Launch animation:"
-msgstr "Animazione all'avvio:"
+msgstr "启动动画:"
 
 #: ../data/unity.ui.h:73
 msgid "Urgent animation:"
-msgstr "Animazione d'urgenza:"
+msgstr "紧急通知动画:"
 
 #: ../data/unity.ui.h:74
 msgid "Select how the icons are coloured on the launcher"
-msgstr "Seleziona la colorazione delle icone nel Launcher"
+msgstr "选择启动器上图标如何着色"
 
 #: ../data/unity.ui.h:75
 msgid "All applications"
-msgstr "Tutte le applicazioni"
+msgstr "所有程序"
 
 #: ../data/unity.ui.h:76
 msgid "Open applications only"
-msgstr "Solo applicazioni aperte"
+msgstr "仅打开的应用程序"
 
 #: ../data/unity.ui.h:77
 msgid "No colouring"
-msgstr "Nessuna colorazione"
+msgstr "不着色"
 
 #: ../data/unity.ui.h:78
 msgid "Coloured edges"
-msgstr "Bordi colorati"
+msgstr "边缘着色"
 
 #: ../data/unity.ui.h:79
 msgid "Alternated for each workspace"
-msgstr "Alternato per ogni spazio di lavoro"
+msgstr "每个工作区交替着色"
 
 #: ../data/unity.ui.h:80
 msgid "Icon backgrounds:"
-msgstr "Sfondo delle icone:"
+msgstr "图标背景："
 
 #: ../data/unity.ui.h:81
 msgid "\"Show Desktop\" icon:"
-msgstr "Icona «Mostra la scrivania»:"
+msgstr "“显示桌面”图标"
 
 #: ../data/unity.ui.h:82
 msgid "Select the size of the icons on the launcher"
-msgstr "Seleziona la dimensione delle icone nel Launcher"
+msgstr "选择启动器图标大小"
 
 #: ../data/unity.ui.h:84
 msgid "Restore default Unity launcher settings."
-msgstr "Ripristina le impostazioni predefinite del Launcher di Unity"
+msgstr "恢复 Unity 启动器默认设置"
 
 #: ../data/unity.ui.h:87
 msgid "Background blur:"
-msgstr "Sfocatura sfondo:"
+msgstr "背景模糊:"
 
 #: ../data/unity.ui.h:88
 msgid "Enable dash blur?"
-msgstr "Abilita la sfocatura della Dash"
+msgstr "启用 Dash 背景模糊？"
 
 #: ../data/unity.ui.h:89
 msgid "Select the type of blur in the dash"
-msgstr "Seleziona il tipo di sfocatura della Dash"
+msgstr "选择 Dash 模糊类型"
 
 #: ../data/unity.ui.h:90
 msgid "Blur type:"
-msgstr "Tipo di sfocatura:"
+msgstr "模糊类型："
 
 #: ../data/unity.ui.h:91
 msgid "Active"
-msgstr "Attiva"
+msgstr "活动"
 
 #: ../data/unity.ui.h:92
 msgid "Use a dynamic blur in the dash."
-msgstr "Una una sfocatura dinamica nella Dash"
+msgstr "在Dash中使用动态模糊。"
 
 #: ../data/unity.ui.h:93
 msgid "Static"
-msgstr "Statica"
+msgstr "静态"
 
 #: ../data/unity.ui.h:94
 msgid "Use a static blur in the dash, uses less resources."
-msgstr "Una una sfocatura statica nella Dash. Usa meno risorse"
+msgstr "在Dash中使用静态模糊，减少资源占用。"
 
 #: ../data/unity.ui.h:95
 msgid "Search online sources"
-msgstr "Eseguire ricerche online"
+msgstr "搜索在线资源"
 
 #: ../data/unity.ui.h:96
 msgid "If enabled, the dash will get suggestions from online sources."
-msgstr ""
-"Se abilitato, quando si eseguono ricerche dalla Dash, verranno mostrati "
-"suggerimenti da risorse online"
+msgstr "如果启用，Dash将从在线资源中获取建议。"
 
 #: ../data/unity.ui.h:97
 msgid "Applications"
-msgstr "Applicazioni"
+msgstr "应用程序"
 
 #: ../data/unity.ui.h:98
 msgid "Show \"Recently Used\" applications"
-msgstr "Mostrare «Usate di recente»"
+msgstr "显示“最近使用”应用程序"
 
 #: ../data/unity.ui.h:99
 msgid "If enabled, show recently used applications in the Dash."
-msgstr "Se abilitato, mostra nella Dash le applicazioni usate di recente"
+msgstr "如果启用，将在Dash显示最近使用的应用程序。"
 
 #: ../data/unity.ui.h:100
 msgid "Show \"More Suggestions\""
-msgstr "Mostrare «Altri suggerimenti»"
+msgstr "显示“更多推荐”"
 
 #: ../data/unity.ui.h:101
 msgid "If enabled, show applications available for download in the Dash."
-msgstr ""
-"Se abilitato, mostra nella Dash le applicazioni che possono essere scaricate"
+msgstr "如果启用，将在Dash显示可供下载的应用程序。"
 
 #: ../data/unity.ui.h:102
 msgid "Files"
-msgstr "File"
+msgstr "文件"
 
 #: ../data/unity.ui.h:103
 msgid "Enable search of your files"
-msgstr "Abilitare la ricerca dei file"
+msgstr "启用文件搜索"
 
 #: ../data/unity.ui.h:104
 msgid ""
 "If enabled, allow searches to find your files that aren&apos;t logged."
-msgstr "Se abilitato, consente la ricerca di file che non sono registrati"
+msgstr ""
 
 #: ../data/unity.ui.h:105
 msgid "If enabled, allow searches to find your files that aren't logged."
-msgstr "Se abilitato, consente la ricerca di file che non sono registrati"
+msgstr "如果启用，将允许搜索查找您没被记录的文件"
 
 #: ../data/unity.ui.h:106
 msgid "Run Command"
-msgstr "Esecuzione comandi"
+msgstr "运行命令"
 
 #: ../data/unity.ui.h:107
 msgid "Clear History"
-msgstr "Pulisci cronologia"
+msgstr "清除历史记录"
 
 #: ../data/unity.ui.h:108
 msgid "Clear ALT+F2 command history."
-msgstr "Pulisce la cronologia del comando Alt+F2"
+msgstr "清除 ALT+F2 命令历史记录"
 
 #: ../data/unity.ui.h:109
 msgid "Restore the default Dash settings."
-msgstr "Ripristina le impostazioni predefinite della Dash"
+msgstr "恢复 Dash 默认设置"
 
 #: ../data/unity.ui.h:111
 msgid "Menu visible for:"
-msgstr "Menù visibile per:"
+msgstr "菜单显示延时："
 
 #: ../data/unity.ui.h:112
 msgid ""
 "Select how long the application menu is visible when an application is first "
 "opened"
-msgstr ""
-"Seleziona il tempo di visualizzazione del menù quando un'applicazione viene "
-"avviata per la prima volta"
+msgstr "选择当一个应用程序首次被打开时菜单多久后可见。"
 
 #: ../data/unity.ui.h:113
 msgid "seconds"
-msgstr "secondi"
+msgstr "秒"
 
 #: ../data/unity.ui.h:114
 msgid "Set the level of transparency for the panel."
-msgstr "Imposta il livello di trasparenza del pannello"
+msgstr "设置面板透明度。"
 
 #: ../data/unity.ui.h:115
 msgid "Opaque panel for maximized windows"
-msgstr "Pannello opaco per le finestre massimizzate"
+msgstr "对于最大化窗口面板不透明"
 
 #: ../data/unity.ui.h:116
 msgid "If selected, the panel will be opaque for maximized windows"
-msgstr "Se abilitato, il pannello sarà opaco per le finestre massimizzate"
+msgstr "如果启用，在最大化窗口时面板将不透明。"
 
 #: ../data/unity.ui.h:117
 msgid "Indicators"
-msgstr "Indicatori"
+msgstr "指示器"
 
 #: ../data/unity.ui.h:118
 msgid "Date & time"
-msgstr "Data e ora"
+msgstr "日期 & 时间"
 
 #: ../data/unity.ui.h:119
 msgid "If enabled, the date &amp; time indicator will be visible."
-msgstr "Se abilitato, l'indicatore data e ora sarà visibile"
+msgstr "如果启用，日期 &amp; 时间指示器将可见。"
 
 #: ../data/unity.ui.h:120
 msgid "If enabled, the date & time indicator will be visible."
-msgstr "Se abilitato, l'indicatore data e ora sarà visibile"
+msgstr "如果启用，日期和时间指示器将可见。"
 
 #: ../data/unity.ui.h:121
 msgid "12-hour time"
-msgstr "Formato 12 ore"
+msgstr "12小时格式时间"
 
 #: ../data/unity.ui.h:122
 msgid "Have the clock use 12-hour time."
-msgstr "Verrà usato l'orologio nel formato 12 ore"
+msgstr "时钟使用12小时格式时间"
 
 #: ../data/unity.ui.h:123
 msgid "24-hour time"
-msgstr "Formato 24 ore"
+msgstr "24小时格式时间"
 
 #: ../data/unity.ui.h:124
 msgid "Have the clock use 24-hour time."
-msgstr "Verrà usato l'orologio nel formato 24 ore"
+msgstr "时钟使用24小时格式时间"
 
 #: ../data/unity.ui.h:125
 msgid "Seconds"
-msgstr "Secondi"
+msgstr "秒"
 
 #: ../data/unity.ui.h:126
 msgid "If enabled, the clock will display seconds."
-msgstr "Se abilitato, l'orologio mostrerà i secondi"
+msgstr "如果启用，时钟将显示秒数"
 
 #: ../data/unity.ui.h:127
 msgid "Date"
-msgstr "Data"
+msgstr "日期"
 
 #: ../data/unity.ui.h:128
 msgid "If enabled, the month and day will be visible in the panel."
-msgstr "Se abilitato, il mese e il giorno saranno visibili nel pannello"
+msgstr "如果启用，月份和日期将在面板上显示。"
 
 #: ../data/unity.ui.h:129
 msgid "Weekday"
-msgstr "Giorno della settimana"
+msgstr "星期几"
 
 #: ../data/unity.ui.h:130
 msgid "If enabled, the day of the week will be visible in the panel."
-msgstr "Se abilitato, il giorno della settimana sarà visibile nel pannello"
+msgstr "如果启用，星期几将在面板上显示。"
 
 #: ../data/unity.ui.h:131
 msgid "Include:"
-msgstr "Includere:"
+msgstr "包含："
 
 #: ../data/unity.ui.h:132
 msgid "Calendar"
-msgstr "Calendario"
+msgstr "日历"
 
 #: ../data/unity.ui.h:133
 msgid "If enabled, the calendar will be visible in the indicator menu."
-msgstr "Se abilitato, il calendario sarà visibile nel pannello"
+msgstr "如果启用，日历将在指示器菜单中显示。"
 
 #: ../data/unity.ui.h:134
 msgid "Bluetooth"
-msgstr "Bluetooth"
+msgstr "蓝牙"
 
 #: ../data/unity.ui.h:135
 msgid "If enabled, the bluetooth indicator is visible in the panel."
-msgstr "Se abilitato, l'indicatore Bluetooth sarà visibile nel pannello"
+msgstr "如果启用，蓝牙将在面板上显示。"
 
 #: ../data/unity.ui.h:136
 msgid "Power"
-msgstr "Alimentazione"
+msgstr "电源"
 
 #: ../data/unity.ui.h:137
 msgid "If enabled, show the power menu in the panel."
-msgstr "Se abilitato, mostra nel pannello il menù relativo all'alimentazione"
+msgstr "如果启用，将在面板中显示电源菜单。"
 
 #: ../data/unity.ui.h:138
 msgid "Visible when charging or discharging"
-msgstr "Visibile quando la bateria è in carica/in uso"
+msgstr "当机器充电/放电时可见"
 
 #: ../data/unity.ui.h:139
 msgid ""
 "Set the power indicator to be visible when charging or discharging power."
-msgstr ""
-"Imposta l'indicatore dell'alimentazione per essere visibile quando la "
-"batteria è in carica/in uso"
+msgstr "机器充电/放电时，设置电源指示器可见。"
 
 #: ../data/unity.ui.h:140
 msgid "Always visible"
-msgstr "Sempre visibile"
+msgstr "总是可见"
 
 #: ../data/unity.ui.h:141
 msgid "Set the power indicator to be always visible."
-msgstr "Imposta l'indicatore dell'alimentazione per essere sempre visibile"
+msgstr "设置电源指示器总是可见。"
 
 #: ../data/unity.ui.h:142
 msgid "Display remaining battery life"
-msgstr "Mostrare il tempo nella barra dei menù"
+msgstr "显示剩余电池续航时间"
 
 #: ../data/unity.ui.h:143
 msgid "If enabled, show the remaining battery life in the power indicator."
-msgstr ""
-"Se abilitato, mostra nell'indicatore dell'alimentazione il tempo residuo "
-"della batteria"
+msgstr "如果启用，将在电源指示器中显示剩余电池续航时间。"
 
 #: ../data/unity.ui.h:144
 msgid "Volume"
-msgstr "Audio"
+msgstr "音量"
 
 #: ../data/unity.ui.h:145
 msgid "If enabled, show the sound menu in the panel."
-msgstr "Se abilitato mostra il menù audio nel pannello"
+msgstr "如果启用，将在面板中显示声音菜单。"
 
 #: ../data/unity.ui.h:146
 msgid "Default player:"
-msgstr "Riproduttore predefinito:"
+msgstr "默认播放器:"
 
 #: ../data/unity.ui.h:147
 msgid ""
 "Select which of the installed audio players is default in the sound menu."
-msgstr ""
-"Seleziona quale, tra quelli installati, sarà il riproduttore multimediale "
-"predefinito nel menù audio"
+msgstr "选择显示在声音菜单中的默认音频播放器。"
 
 #: ../data/unity.ui.h:148
 msgid "Notifications when scrolling"
-msgstr "Notificare durante lo scorrimento"
+msgstr "鼠标滚动时的通知"
 
 #: ../data/unity.ui.h:149
 msgid ""
 "When using scrolling to change the volume, show on-screen notifications."
-msgstr ""
-"Quando viene usato lo scorrimento per modificare il volume, viene mostrata "
-"una notifica sullo schermo"
+msgstr "当使用滚轮来调节音量时，显示屏幕通知。"
 
 #: ../data/unity.ui.h:150
 msgid "Show my name"
-msgstr "Mostrare il proprio nome"
+msgstr "显示用户名"
 
 #: ../data/unity.ui.h:151
 msgid "If enabled, show the user&apos;s real name in the panel."
-msgstr "Se abilitato, viene mostrato nel pannello il vero nome dell'utente"
+msgstr "如果启用，将在面板中显示用户 &apos; 的真实姓名。"
 
 #: ../data/unity.ui.h:152
 msgid "If enabled, show the user's real name in the panel."
-msgstr "Se abilitato, viene mostrato nel pannello il vero nome dell'utente"
+msgstr "如果启用，将在面板中显示用户的真实姓名。"
 
 #: ../data/unity.ui.h:153
 msgid "Restore the default Unity panel settings."
-msgstr "Ripristina le impostazioni predefinite del pannello di Unity"
+msgstr "恢复 Unity 面板默认设置。"
 
 #: ../data/unity.ui.h:155
 msgid "Switch between windows on all workspaces"
-msgstr "Passare da una finestra all'altra in tutti gli spazi di lavoro"
+msgstr "在所有工作区的窗口间切换"
 
 #: ../data/unity.ui.h:156
 msgid ""
 "If enabled, the window switcher cycles through all windows on all workspaces"
-msgstr ""
-"Se abilitato, il selettore mostrerà tutte le finestre presenti in tutti gli "
-"spazi di lavoro"
+msgstr "如果启用，窗口切换器循环切换所有工作区的窗口"
 
 #: ../data/unity.ui.h:157
 msgid "Display \"Show Desktop\" icon"
-msgstr "Mostra l'icona «Mostra la scrivania»"
+msgstr "显示“显示桌面”图标"
 
 #: ../data/unity.ui.h:158
 msgid ""
 "If enabled, show the &quot;Show Desktop&quot; option in the window switcher"
 msgstr ""
-"Se abilitato, aggiunge al selettore finestre l'opzione per mostrare la "
-"Scrivania"
 
 #: ../data/unity.ui.h:159
 msgid "If enabled, show the \"Show Desktop\" option in the window switcher"
-msgstr ""
-"Se abilitato, aggiunge al selettore finestre l'opzione per mostrare la "
-"Scrivania"
+msgstr "如果启用，在窗口切换器中将显示“显示桌面”选项"
 
 #: ../data/unity.ui.h:160
 msgid "Automatically expose windows"
-msgstr "Mostrare le finestre automaticamente"
+msgstr "自动展示窗口"
 
 #: ../data/unity.ui.h:161
 msgid "If enabled, the window switcher will expose minimized windows"
-msgstr "Se abilitato, il selettore mostrerà le finestre minimizzate"
+msgstr "如果启用，窗口切换器将展示最小化的窗口"
 
 #: ../data/unity.ui.h:162
 msgid "Switch between minimized windows"
-msgstr "Passare da una finestra all'altra tra quelle minimizzate"
+msgstr "在最小化的窗口间切换"
 
 #: ../data/unity.ui.h:163
 msgid "If enabled, the window switcher will switch through minimized windows"
-msgstr ""
-"Se abilitato, il selettore passerà da una finestra all'altra, solo tra "
-"quelle minimizzate"
+msgstr "如果启用，窗口切换器将在最小化的窗口间进行切换"
 
 #: ../data/unity.ui.h:164
 msgid "Window switching shortcuts"
-msgstr "Scorciatoie selettore finestre"
+msgstr "窗口切换快捷键"
 
 #: ../data/unity.ui.h:165
 msgid "Window switcher shortcuts"
-msgstr "Scorciatoie per il selettore finestre"
+msgstr "窗口切换快捷键"
 
 #: ../data/unity.ui.h:166 ../data/windowmanager.ui.h:5
 msgid "Title"
-msgstr "Titolo"
+msgstr "标题"
 
 #: ../data/unity.ui.h:167 ../data/windowmanager.ui.h:6
 msgid "Accelerator"
-msgstr "Acceleratore"
+msgstr "快捷键"
 
 #: ../data/unity.ui.h:168
 msgid "Launcher switching shortcuts"
-msgstr "Scorciatoie selettore Launcher"
+msgstr "启动器切换快捷键"
 
 #: ../data/unity.ui.h:169
 msgid "Launcher switcher shortcuts"
-msgstr "Scorciatoie per il selettore del Launcher"
+msgstr "启动器切换快捷键"
 
 #: ../data/unity.ui.h:170
 msgid "Restore the default window switcher settings."
-msgstr "Ripristina le impostazioni predefinite del selettore di finestre"
+msgstr "恢复窗口切换器默认设置"
 
 #: ../data/unity.ui.h:172
 msgid ""
 "Enable prompts for webapp integration when visiting supported websites?"
 msgstr ""
-"Indica se abilitare gli avvisi per l'integrazione delle applicazioni web "
-"quando vengono visitati siti web supportati"
 
 #: ../data/unity.ui.h:173
 msgid "Integration prompts:"
-msgstr "Abilitare avvisi di integrazione:"
+msgstr "集成提示:"
 
 #: ../data/unity.ui.h:174
 msgid "Preauthorized domains"
-msgstr "Domini pre-autorizzati:"
+msgstr ""
 
 #: ../data/unity.ui.h:175
 msgid "Amazon"
-msgstr "Amazon"
+msgstr "亚马逊"
 
 #: ../data/unity.ui.h:176
 msgid "Ubuntu One"
@@ -1100,8 +1056,7 @@ msgstr "Ubuntu One"
 
 #: ../data/unity.ui.h:177
 msgid "Restore the default Unity Webapps settings."
-msgstr ""
-"Ripristina le impostazioni predefinite per le applicazioni web di Unity"
+msgstr "恢复 Unity Webapps 默认设置。"
 
 #: ../data/unity.ui.h:179
 msgid "HUD"
@@ -1109,79 +1064,69 @@ msgstr "HUD"
 
 #: ../data/unity.ui.h:180
 msgid "Remember previous commands"
-msgstr "Memorizzare comandi usati"
+msgstr "记住上一命令"
 
 #: ../data/unity.ui.h:181
 msgid ""
 "If enabled, the HUD will remember previously executed entries and sort them "
 "by frequently used."
 msgstr ""
-"Se abilitato, HUD memorizzerà i comandi eseguiti in precedenza e li "
-"elencherà in base alla frequenza di utilizzo"
 
 #: ../data/unity.ui.h:182
 msgid "Keyboard Shortcuts"
-msgstr "Scorciatoie da tastiera"
+msgstr "键盘快捷键"
 
 #: ../data/unity.ui.h:183
 msgid "Hold Super for keyboard shortcuts"
-msgstr "Tenere premuto «Super» per le scorciatoie da tastiera"
+msgstr ""
 
 #: ../data/unity.ui.h:184
 msgid ""
 "When enabled, pressing the Super key displays an overlay of all Unity "
 "keyboard shortcuts"
 msgstr ""
-"Quando abilitato, premendo il tasto «Super» verrà mostrata una finestra che "
-"elenca tutte le scorciatoie da tastiera di Unity"
 
 #: ../data/unity.ui.h:185
 msgid "List of Unity keyboard shortcuts"
-msgstr "Elenco di scorciatoie da tastiera per Unity"
+msgstr "Unity 键盘快捷键列表"
 
 #: ../data/unity.ui.h:186
 msgid "Notifications"
-msgstr "Notifiche"
+msgstr "通知"
 
 #: ../data/unity.ui.h:187
 msgid "All displays"
-msgstr "Tutti i monitor"
+msgstr "所有显示"
 
 #: ../data/unity.ui.h:188
 msgid "For multiple displays, notifications are visible on all of them."
-msgstr ""
-"Se si usano monitor multipli, le notifiche verranno visualizzate su tutti i "
-"monitor"
+msgstr "对于多屏显示，通知会在全部屏幕上可见。"
 
 #: ../data/unity.ui.h:189
 msgid "Active display"
-msgstr "Monitor in uso"
+msgstr "活动的显示器"
 
 #: ../data/unity.ui.h:190
 msgid ""
 "For multiple displays, notifications are visible on the active display."
-msgstr ""
-"Se si usano monitor multipli, le notifiche verranno visualizzate solo sul "
-"monitor attivo"
+msgstr "对于多屏显示，通知会在活动的显示器上可见。"
 
 #: ../data/unity.ui.h:191
 msgid "Restore the default Unity keyboard shortcut settings."
-msgstr ""
-"Ripristina le impostazioni predefinite delle scorciatoie da tastiera di Unity"
+msgstr "恢复 Unity 默认键盘快捷键设置"
 
 #: ../data/about.ui.h:1
 msgid "Copyright © 2013 Freyja Development team"
-msgstr "Copyright © 2013 Freyja Development team"
+msgstr "版权所有 © 2013 Freyja 开发团队"
 
 #: ../data/about.ui.h:2
 msgid ""
 "Unity Tweak Tool is a settings manager intended to be used with Ubuntu Unity."
-msgstr ""
-"Uniy Tweak Tool è un gestore delle impostazioni creato per Ubuntu Unity"
+msgstr "Unity Tweak Tool 是一款适用于ubuntu Unity桌面的设置管理器."
 
 #: ../data/about.ui.h:3
 msgid "Unity Tweak Tool on Launchpad"
-msgstr "Unity Tweak Tool su Launchpad"
+msgstr "Unity Tweak Tool Launchpad 项目主页"
 
 #: ../data/about.ui.h:4
 msgid "GPL3"
@@ -1193,35 +1138,35 @@ msgstr "Unity Tweak Tool"
 
 #: ../data/unitytweak.ui.h:2
 msgid "_File"
-msgstr "_File"
+msgstr "文件(_F)"
 
 #: ../data/unitytweak.ui.h:12
 msgid "Workspace settings"
-msgstr "Impostazioni spazio di lavoro"
+msgstr "工作区设置"
 
 #: ../data/unitytweak.ui.h:13
 msgid "Windows spread"
-msgstr "Scalatura finestre"
+msgstr "窗口铺展"
 
 #: ../data/unitytweak.ui.h:14
 msgid "Windows snapping"
-msgstr "Aggancio finestre"
+msgstr "窗口吸附"
 
 #: ../data/unitytweak.ui.h:21
 msgid "Window controls"
-msgstr "Controlli finestra"
+msgstr "窗口控制按钮"
 
 #: ../data/unitytweak.ui.h:23 ../data/system.ui.h:10
 msgid "Desktop Icons"
-msgstr "Icone della scrivania"
+msgstr "桌面图标"
 
 #: ../data/unitytweak.ui.h:26
 msgid "_Help"
-msgstr "A_iuto"
+msgstr "帮助(_H)"
 
 #: ../data/unitytweak.ui.h:27
 msgid " Overview"
-msgstr " Panoramica"
+msgstr " 预览"
 
 #. !/usr/bin/env python3
 #. -*- coding: utf-8 -*-
@@ -1257,168 +1202,163 @@ msgstr " Panoramica"
 #. ! /usr/bin/env python3
 #: ../data/filechooser-theme.ui.h:1
 msgid "Choose a Theme file to install"
-msgstr "Seleziona un tema da installare"
+msgstr "选择要安装的主题文件"
 
 #: ../data/filechooser-theme.ui.h:2
 msgid "Install Theme"
-msgstr "Installa tema"
+msgstr "安装主题"
 
 #: ../data/system.ui.h:1
 msgid "Items to display:"
-msgstr "Oggetti da visualizzare:"
+msgstr ""
 
 #: ../data/system.ui.h:2
 msgid "Home Folder"
-msgstr "Cartella home"
+msgstr "主文件夹"
 
 #: ../data/system.ui.h:3
 msgid "Network"
-msgstr "Rete"
+msgstr "网络"
 
 #: ../data/system.ui.h:4
 msgid "Rubbish Bin"
-msgstr "Cestino"
+msgstr "回收站"
 
 #: ../data/system.ui.h:5
 msgid "Trash"
-msgstr "Cestino"
+msgstr "回收站"
 
 #: ../data/system.ui.h:6
 msgid "Mounted Devices"
-msgstr "Dispositivi montati"
+msgstr "已挂载设备"
 
 #: ../data/system.ui.h:7
 msgid "Devices"
-msgstr "Dispositivi"
+msgstr "设备"
 
 #: ../data/system.ui.h:9
 msgid "Restore the default configurations for Desktop icons"
-msgstr ""
-"Ripristina la configurazione predefinita per le icone della scrivania"
+msgstr "恢复桌面图标的默认配置"
 
 #: ../data/system.ui.h:11
 msgid "Enhance system security by disabling:"
-msgstr "Migliorare la sicurezza del sistema disabilitando:"
+msgstr ""
 
 #: ../data/system.ui.h:12
 msgid "Desktop lock"
-msgstr "Bloccare il desktop"
+msgstr "桌面锁定"
 
 #: ../data/system.ui.h:13
 msgid "Disable the desktop lock screen."
-msgstr "Disabilita la schermata di blocco del desktop"
+msgstr "禁用桌面锁屏。"
 
 #: ../data/system.ui.h:14
 msgid "User log out"
-msgstr "Terminare sessione utente"
+msgstr "用户注销"
 
 #: ../data/system.ui.h:15
 msgid "Disable session log out."
-msgstr "Disabilita la funzione per terminare la sessione"
+msgstr "禁用注销会话。"
 
 #: ../data/system.ui.h:16
 msgid "User switching"
-msgstr "Cambiare utente"
+msgstr "用户切换"
 
 #: ../data/system.ui.h:17
 msgid "Disable fast user switching."
-msgstr "Disabilita la funzione per il cambio rapido di utente"
+msgstr "禁用快速用户切换。"
 
 #: ../data/system.ui.h:18
 msgid "Printing"
-msgstr "Stampa"
+msgstr "打印"
 
 #: ../data/system.ui.h:19
 msgid "Prevent user access to the system's printers and print setup."
 msgstr ""
-"Impedisce all'utente l'accesso alle stampanti di sistema e la modifica delle "
-"impostazioni di stampa"
 
 #: ../data/system.ui.h:20
 msgid "Restore the default configurations for Security settings"
-msgstr ""
-"Rispristina la configurazione predefinita delle impostazioni di sicurezza"
+msgstr "恢复安全设置的默认配置"
 
 #: ../data/system.ui.h:22
 msgid "Scrollbars"
-msgstr "Barre di scorrimento"
+msgstr "滚动条"
 
 #: ../data/system.ui.h:23
 msgid "Legacy"
-msgstr "Classiche"
+msgstr "传统"
 
 #: ../data/system.ui.h:24
 msgid "Overlay "
-msgstr "Sovrapposte "
+msgstr "Overlay "
 
 #: ../data/system.ui.h:25
 msgid "Select the behaviour of the overlay scrollbars."
-msgstr "Seleziona il comportamento delle barre di scorrimento sovrapposte"
+msgstr "选择即时覆盖滚动条的行为。"
 
 #: ../data/system.ui.h:26
 msgid "Default"
-msgstr "Predefinita"
+msgstr "默认"
 
 #: ../data/system.ui.h:27
 msgid "Overlay with mouse"
-msgstr "Sovrapponi con il mouse"
+msgstr "使用鼠标覆盖"
 
 #: ../data/system.ui.h:28
 msgid "No overlay"
-msgstr "Nessuna sovrapposizione"
+msgstr "无覆盖"
 
 #: ../data/system.ui.h:29
 msgid "Behaviour:"
-msgstr "Comportamento:"
+msgstr "行为："
 
 #: ../data/system.ui.h:30
 msgid "Touch scrolling"
-msgstr "Scorrimento al tocco"
+msgstr "触摸滚动"
 
 #: ../data/system.ui.h:31
 msgid "Edge"
-msgstr "Bordo"
+msgstr "边缘"
 
 #: ../data/system.ui.h:32
 msgid "If enabled, edge scrolling is active on touchpads."
-msgstr "Se abilitato, lo scorrimento sul bordo dei touchpad è attivo."
+msgstr "如果启用，则激活触摸板上的边缘滚动。"
 
 #: ../data/system.ui.h:33
 msgid "Two-finger"
-msgstr "Due dita"
+msgstr "双指"
 
 #: ../data/system.ui.h:34
 msgid "If enabled, two-finger scrolling is active on multitouch touchpads."
-msgstr ""
-"Se abilitato, lo scorrimento con due dita sui touchpad multi-touch è attivo"
+msgstr "如果启用，则激活多点触摸板上的双指滚动。"
 
 #: ../data/system.ui.h:35
 msgid "Horizontal scrolling"
-msgstr "Scorrimento orizzontale"
+msgstr "水平滚动"
 
 #: ../unity-tweak-tool.desktop.in.h:2
 msgid "Configuration frontend for the Unity desktop environment"
-msgstr "Interfaccia per la configurazione dell'ambiente desktop Unity"
+msgstr "Unity 桌面环境配置前端"
 
 #: ../unity-tweak-tool.py:43
 msgid "Start in the Unity tab"
-msgstr "Avvia nella scheda \"Unity\""
+msgstr ""
 
 #: ../unity-tweak-tool.py:44
 msgid "Start in the WindowManager tab"
-msgstr "Avvia nella scheda \"Gestore finestre\""
+msgstr ""
 
 #: ../unity-tweak-tool.py:45
 msgid "Start in the appearance tab"
-msgstr "Avvia nella scheda \"Aspetto\""
+msgstr ""
 
 #: ../unity-tweak-tool.py:46
 msgid "Start in the system tab"
-msgstr "Avvia nella scheda \"Sistema\""
+msgstr ""
 
 #: ../unity-tweak-tool.py:47
 msgid "Reset Unity, wiping all configuration changes."
-msgstr "Ripristina Unity cancellando tutte le modifiche alla configurazione"
+msgstr ""
 
 #: ../unity-tweak-tool.py:61
 msgid ""
@@ -1429,237 +1369,219 @@ msgid ""
 "    Type yes to continue, anything else to exit.\n"
 "    "
 msgstr ""
-"\n"
-"ATTENZIONE: si sta per ripristinare la configurazione predefinita di Unity.\n"
-"    Questo comporterà la perdita dell'attuale configurazione.\n"
-"    È normale che durante l'elaborazione si verifichi lo sfarfallio dello "
-"schermo.\n"
-"    Digitare \"yes\" per continuare, qualsiasi altra cosa per annullare.\n"
-"    "
 
 #: ../unity-tweak-tool.py:67
 msgid "Do you wish to continue?"
-msgstr "Continuare?"
+msgstr "您是否想要继续？"
 
 #: ../unity-tweak-tool.py:70
 msgid "Please log out and log back in."
-msgstr "Terminare la sessione e accedere nuovamente."
+msgstr "请注销后重新登录。"
 
 #. FIXME : This is guaranteed to fail.
 #: ../data/windowmanager.ui.h:1
 msgid "Zoom"
-msgstr "Ingrandimento"
+msgstr "缩放"
 
 #: ../data/windowmanager.ui.h:2
 msgid "Enable desktop zoom?"
-msgstr "Abilita/Disabilita l'ingrandimento del desktop"
+msgstr "启用桌面缩放？"
 
 #: ../data/windowmanager.ui.h:3
 msgid "Desktop magnification:"
-msgstr "Ingrandimento del desktop:"
+msgstr "桌面放大："
 
 #: ../data/windowmanager.ui.h:4
 msgid "List of keyboard shortcuts for zoom"
-msgstr "Elenco delle scorciatoie da tastiera per l'ingrandimento del desktop"
+msgstr "缩放快捷键列表"
 
 #: ../data/windowmanager.ui.h:7
 msgid "Hardware acceleration"
-msgstr "Accelerazione hardware"
+msgstr "硬件加速"
 
 #: ../data/windowmanager.ui.h:8
 msgid "Select the level of texture rendering done by OpenGL"
-msgstr "Seleziona il livello di rendering della texture eseguito da OpenGL"
+msgstr "选择由 OpenGL 驱动的纹理渲染级别"
 
 #: ../data/windowmanager.ui.h:9
 msgid "Texture quality: "
-msgstr "Qualità della texture: "
+msgstr "纹理质量： "
 
 #: ../data/windowmanager.ui.h:10
 msgid "Fast"
-msgstr "Veloce"
+msgstr "快速"
 
 #: ../data/windowmanager.ui.h:11
 msgid "Good"
-msgstr "Buona"
+msgstr "好"
 
 #: ../data/windowmanager.ui.h:12
 msgid "Best"
-msgstr "Ottima"
+msgstr "最佳"
 
 #: ../data/windowmanager.ui.h:13
 msgid "Animations"
-msgstr "Animazioni"
+msgstr "动画"
 
 #: ../data/windowmanager.ui.h:14
 msgid "Minimize:"
-msgstr "Minimizzazione:"
+msgstr "最小化："
 
 #: ../data/windowmanager.ui.h:15
 msgid "Unminimize:"
-msgstr "Massimizzazione:"
+msgstr "取消最小化："
 
 #: ../data/windowmanager.ui.h:16
 msgid "Window Animations:"
-msgstr "Animazioni finestra:"
+msgstr "窗口动画："
 
 #: ../data/windowmanager.ui.h:17
 msgid "Keyboard shortcuts"
-msgstr "Scorciatoie da tastiera"
+msgstr "键盘快捷键"
 
 #: ../data/windowmanager.ui.h:18
 msgid "List of window manager keyboard shortcuts"
-msgstr "Elenco delle scorciatoie da tastiera per il gestore finestre"
+msgstr "窗口管理器快捷键列表"
 
 #: ../data/windowmanager.ui.h:20
 msgid "Restore default window manager settings"
-msgstr "Ripristina le impostazioni predefinite del gestore finestre"
+msgstr "恢复默认窗口管理器设置"
 
 #: ../data/windowmanager.ui.h:22
 msgid "Enable the window manager to draw multiple workspaces"
-msgstr ""
-"Abilita/DIsabilita il gestore finestre per aggiungere spazi di lavoro "
-"multipli"
+msgstr "使用窗口管理器绘制多个工作区"
 
 #: ../data/windowmanager.ui.h:23
 msgid "Workspace switcher:"
-msgstr "Selettore spazio di lavoro:"
+msgstr "工作区切换器："
 
 #: ../data/windowmanager.ui.h:24
 msgid "Select the outline colour of the current workspace in the overview"
-msgstr ""
-"Seleziona il colore del contorno per lo spazio di lavoro corrente "
-"nell'anteprima"
+msgstr "选择预览中当前工作区的外围颜色"
 
 #: ../data/windowmanager.ui.h:25
 msgid "Current workspace colour:"
-msgstr "Colore dello spazio di lavoro corrente:"
+msgstr "当前工作区颜色："
 
 #: ../data/windowmanager.ui.h:26
 msgid "Select the number of vertical workspaces"
-msgstr "Seleziona il numero degli spazi di lavoro verticali"
+msgstr "选择竖直工作区数目："
 
 #: ../data/windowmanager.ui.h:27
 msgid "Vertical workspaces:"
-msgstr "Spazi di lavoro verticali:"
+msgstr "竖直工作区："
 
 #: ../data/windowmanager.ui.h:28
 msgid "Select the number of horizontal workspaces"
-msgstr "Seleziona il numero degli spazi di lavoro orizzontali"
+msgstr "选择水平工作区数目："
 
 #: ../data/windowmanager.ui.h:29
 msgid "Horizontal workspaces:"
-msgstr "Spazi di lavoro orizzontali:"
+msgstr "水平工作区："
 
 #: ../data/windowmanager.ui.h:30
 msgid "Workspace shortcuts"
-msgstr "Scorciatoie spazio di lavoro"
+msgstr "工作区快捷方式"
 
 #: ../data/windowmanager.ui.h:31
 msgid "List of workspace management keyboard shortcuts"
-msgstr ""
-"Elenco delle scorciatoie da tastiera per la gestione degli spazi di lavoro"
+msgstr "工作区管理快捷键列表"
 
 #: ../data/windowmanager.ui.h:32
 msgid "Restore default workspace configuration"
-msgstr "Ripristina la configurazione predefinita per gli spazi di lavoro"
+msgstr "恢复默认工作区配置"
 
 #: ../data/windowmanager.ui.h:33
 msgid "Workspace Settings"
-msgstr "Impostazioni spazio di lavoro"
+msgstr "工作区设置"
 
 #: ../data/windowmanager.ui.h:34
 msgid "Enable the window spread?"
-msgstr "Abilitare l'espansione delle finestre?"
+msgstr "启用窗口铺展？"
 
 #: ../data/windowmanager.ui.h:35
 msgid "Window spread:"
-msgstr "Espansione finestre:"
+msgstr "窗口铺展："
 
 #: ../data/windowmanager.ui.h:36
 msgid "Select the space between window in the spead overview in pixels"
-msgstr ""
-"Seleziona lo spazio in pixel tra le finestre nella visualizzazione scalata"
+msgstr "选择铺展概览时窗口间距离(像素)"
 
 #: ../data/windowmanager.ui.h:37
 msgid "Spacing:"
-msgstr "Spaziatura:"
+msgstr "间距："
 
 #: ../data/windowmanager.ui.h:38
 msgid "Icons on previews"
-msgstr "Icone nell'anteprima"
+msgstr "预览图标"
 
 #: ../data/windowmanager.ui.h:39
 msgid ""
 "When enabled, show an application's icon on the window preview in the window "
 "spread"
-msgstr ""
-"Se abilitato, mostra un'icona dell'applicazione nell'anteprima delle "
-"finestre nella visualizzazione scalata"
+msgstr "启用时，将在窗口铺展里的窗口预览上显示应用程序图标"
 
 #: ../data/windowmanager.ui.h:40
 msgid "Click to access desktop"
-msgstr "Fare clic per accedere alla scrivania"
+msgstr "点击访问桌面"
 
 #: ../data/windowmanager.ui.h:41
 msgid ""
 "When enabled, clicking on the desktop in the window spread will display the "
 "desktop"
-msgstr ""
-"Se abilitato, facendo clic sul desktop nella visualizzazione scalata verrà "
-"mostrata la scrivania"
+msgstr "如果启用，点击窗口铺展中的桌面将显示桌面"
 
 #: ../data/windowmanager.ui.h:42
 msgid "Window spread shortcuts"
-msgstr "Scorciatoie per l'espansione delle finestre"
+msgstr "窗口铺展快捷键"
 
 #: ../data/windowmanager.ui.h:43
 msgid "List of window spread shortcuts"
-msgstr "Elenco di scorciatoie per l'espansione delle finestre"
+msgstr "窗口铺展快捷键列表"
 
 #: ../data/windowmanager.ui.h:44
 msgid "Restore default window spread settings"
-msgstr "Ripristina i valori predefiniti per l'espansione delle finestre"
+msgstr "恢复默认窗口铺展设置"
 
 #: ../data/windowmanager.ui.h:45
 msgid "Window spread"
-msgstr "Espansione finestre"
+msgstr "窗口铺展"
 
 #: ../data/windowmanager.ui.h:46
 msgid "Window snapping:"
-msgstr "Aggancio finestra:"
+msgstr "窗口吸附："
 
 #: ../data/windowmanager.ui.h:47
 msgid "Fill colour:"
-msgstr "Colore riempimento:"
+msgstr "填充颜色："
 
 #: ../data/windowmanager.ui.h:48
 msgid "Outline colour:"
-msgstr "Colore contorno:"
+msgstr "外围颜色："
 
 #: ../data/windowmanager.ui.h:50
 msgid "Window snapping"
-msgstr "Aggancio finestra"
+msgstr "窗口吸附"
 
 #: ../data/windowmanager.ui.h:51
 msgid "Hotcorners:"
-msgstr "Angoli attivi:"
+msgstr "热区："
 
 #: ../data/windowmanager.ui.h:53
 msgid "Focus Behaviour"
-msgstr "Comportmento focus"
+msgstr "聚焦行为"
 
 #: ../data/windowmanager.ui.h:54
 msgid "Auto-raise delay:"
-msgstr "Ritardo del sollevamento automatico:"
+msgstr "自动提升延迟："
 
 #: ../data/windowmanager.ui.h:55
 msgid "Set the delay for raising newly focused windows."
 msgstr ""
-"Imposta il ritardo per il sollevamento delle finestre che ricevono il focus"
 
 #: ../data/windowmanager.ui.h:56
 msgid "Focus mode:"
-msgstr "Modalità focus:"
+msgstr "聚焦方式："
 
 #: ../data/windowmanager.ui.h:57
 msgid ""
@@ -1668,111 +1590,102 @@ msgid ""
 "enters the window, and \"mouse\" means windows are focused when the mouse "
 "enters the window and unfocused when the mouse leaves the window."
 msgstr ""
-"Seleziona la modalità per il focus delle finestre; \"Clic\" significa che è "
-"necessario fare clic sulle finestre affinché queste ottengano il focus, "
-"\"Lento\" significa che il focus è ottenuto quando il puntatore del mouse "
-"entra nell'area della finestra, \"Mouse\" significa che il focus è ottenuto "
-"quando il puntatore del mouse entra nell'area della finestra e viene perso "
-"quando il puntatore lascia l'area."
 
 #: ../data/windowmanager.ui.h:58
 msgid "Click"
-msgstr "Clic"
+msgstr "点击"
 
 #: ../data/windowmanager.ui.h:59
 msgid "Sloppy"
-msgstr "Lento"
+msgstr "随意"
 
 #: ../data/windowmanager.ui.h:60
 msgid "Mouse"
-msgstr "Mouse"
+msgstr "鼠标"
 
 #: ../data/windowmanager.ui.h:61
 msgid "If enabled, windows that take focus will be automatically raised."
 msgstr ""
-"Se abilitato, le finestre che ottengono il focus verranno automaticamente "
-"sollevate"
 
 #: ../data/windowmanager.ui.h:62
 msgid "Auto-raise:"
-msgstr "Sollevare automaticamente:"
+msgstr "自动提升："
 
 #: ../data/windowmanager.ui.h:63
 msgid "Titlebar Actions"
-msgstr "Azioni barra del titolo"
+msgstr "标题栏操作"
 
 #: ../data/windowmanager.ui.h:64
 msgid "Double click:"
-msgstr "Doppio-clic"
+msgstr "双击："
 
 #: ../data/windowmanager.ui.h:65
 msgid "Select the titlebar's double click action."
-msgstr "Seleziona l'azione da eseguire al doppio-clic sulla barra del titolo"
+msgstr ""
 
 #: ../data/windowmanager.ui.h:66
 msgid "Toggle Shade"
-msgstr "Attiva/Disattiva sfumatura"
+msgstr "切换阴影"
 
 #: ../data/windowmanager.ui.h:67
 msgid "Maximize"
-msgstr "Massimizza"
+msgstr "最大化"
 
 #: ../data/windowmanager.ui.h:68
 msgid "Horizontal expand"
-msgstr "Espandi orizzontalmente"
+msgstr "水平扩展"
 
 #: ../data/windowmanager.ui.h:69
 msgid "Vertical expand"
-msgstr "Espandi verticalmente"
+msgstr "竖直扩展"
 
 #: ../data/windowmanager.ui.h:70
 msgid "Minimize"
-msgstr "Minimizza"
+msgstr "最小化"
 
 #: ../data/windowmanager.ui.h:71
 msgid "No action"
-msgstr "Nessuna azione"
+msgstr "无动作"
 
 #: ../data/windowmanager.ui.h:72
 msgid "Lower"
-msgstr "Abbassa"
+msgstr "降低"
 
 #: ../data/windowmanager.ui.h:73
 msgid "Menu"
-msgstr "Menù"
+msgstr "菜单"
 
 #: ../data/windowmanager.ui.h:74
 msgid "Middle click:"
-msgstr "Clic centrale:"
+msgstr "中键点击："
 
 #: ../data/windowmanager.ui.h:75
 msgid "Select the titlebar's middle click action."
 msgstr ""
-"Seleziona l'azione da eseguire al clic centrale sulla barra del titolo"
 
 #: ../data/windowmanager.ui.h:76
 msgid "Toggle shade"
-msgstr "Attiva/Disattiva sfumatura"
+msgstr "切换阴影"
 
 #: ../data/windowmanager.ui.h:77
 msgid "Right click:"
-msgstr "Clic destro:"
+msgstr "右击："
 
 #: ../data/windowmanager.ui.h:78
 msgid "Select the titlebar's right click action."
-msgstr "Seleziona l'azione da eseguire al clic destro sulla barra del titolo"
+msgstr ""
 
 #: ../data/windowmanager.ui.h:79
 msgid "Resizing"
-msgstr "Ridimensionamento"
+msgstr "调整大小"
 
 #: ../data/windowmanager.ui.h:80
 msgid "Restore the default settings for the additional options."
-msgstr "Ripristina le impostazioni predefinite per le opzioni aggiuntive"
+msgstr ""
 
 #: ../data/windowmanager.ui.h:82
 msgid "Close window"
-msgstr "Chiudi finestra"
+msgstr "关闭窗口"
 
 #: ../data/windowmanager.ui.h:83
 msgid "Alt+F4"
@@ -1780,23 +1693,23 @@ msgstr "Alt+F4"
 
 #: ../data/windowmanager.ui.h:84
 msgid "Move window"
-msgstr "Muovi finestra"
+msgstr "移动窗口"
 
 #: ../data/windowmanager.ui.h:85
 msgid "Alt+mouse button 1"
-msgstr "Alt+pulsante 1 del muose"
+msgstr "Alt+鼠标键 1"
 
 #: ../data/windowmanager.ui.h:86
 msgid "Show desktop"
-msgstr "Mostra la scrivania"
+msgstr "显示桌面"
 
 #: ../data/windowmanager.ui.h:87
 msgid "Super+D"
-msgstr "Ctrl+Super+D"
+msgstr "Super+D"
 
 #: ../data/windowmanager.ui.h:88
 msgid "Zoom in"
-msgstr "Aumenta ingrandimento"
+msgstr "放大"
 
 #: ../data/windowmanager.ui.h:89
 msgid "Super++"
@@ -1804,7 +1717,7 @@ msgstr "Super++"
 
 #: ../data/windowmanager.ui.h:90
 msgid "Zoom out"
-msgstr "Riduci ingrandimento"
+msgstr "缩小"
 
 #: ../data/windowmanager.ui.h:91
 msgid "Super+-"
@@ -1812,7 +1725,7 @@ msgstr "Super+-"
 
 #: ../data/windowmanager.ui.h:92
 msgid "Start windows spread"
-msgstr "Avvia finestre scalate"
+msgstr "启动窗口速度"
 
 #: ../data/windowmanager.ui.h:93
 msgid "Super+W"
@@ -1820,11 +1733,11 @@ msgstr "Super+W"
 
 #: ../data/windowmanager.ui.h:94
 msgid "Start windows spread for all windows"
-msgstr "Scala tutte le finestre aperte"
+msgstr ""
 
 #: ../data/windowmanager.ui.h:96
 msgid "Start workspace switcher"
-msgstr "Avvia selettore spazio di lavoro"
+msgstr ""
 
 #: ../data/windowmanager.ui.h:97
 msgid "Super+S"
@@ -1832,252 +1745,180 @@ msgstr "Super+S"
 
 #: ../data/windowmanager.ui.h:98
 msgid "Toggle Desktop"
-msgstr "Commuta desktop"
+msgstr "切换桌面"
 
 #: ../data/windowmanager.ui.h:99
 msgid "Show Workspaces"
-msgstr "Mostra spazi di lavoro"
+msgstr "显示工作区"
 
 #: ../data/windowmanager.ui.h:100
 msgid "Window Spread"
-msgstr "Espansione finestre"
+msgstr ""
 
 #: ../data/windowmanager.ui.h:101
 msgid "Spread all Windows"
-msgstr "Scala tutte le finestre"
+msgstr ""
 
 #: ../data/windowmanager.ui.h:102
 msgid "Do Nothing"
-msgstr "Nessuna azione"
+msgstr "无动作"
 
 #: ../data/windowmanager.ui.h:103
 msgid "Bottom Left Corner"
-msgstr "Angolo inferiore sinistro"
+msgstr "左下角"
 
 #: ../data/windowmanager.ui.h:104
 msgid "Bottom Half"
-msgstr "Metà inferiore"
+msgstr "下半部"
 
 #: ../data/windowmanager.ui.h:105
 msgid "Bottom Right Corner"
-msgstr "Angolo inferiore destro"
+msgstr "右下角"
 
 #: ../data/windowmanager.ui.h:106
 msgid "Left Half"
-msgstr "Metà sinistra"
+msgstr "左半部"
 
 #: ../data/windowmanager.ui.h:107
 msgid "Fill Screen"
-msgstr "Riempi schermo"
+msgstr "全屏"
 
 #: ../data/windowmanager.ui.h:108
 msgid "Right Half"
-msgstr "Metà destra"
+msgstr "右半部"
 
 #: ../data/windowmanager.ui.h:109
 msgid "Top Left Corner"
-msgstr "Angolo superiore sinistro"
+msgstr "左上角"
 
 #: ../data/windowmanager.ui.h:110
 msgid "Top Half"
-msgstr "Metà superiore"
+msgstr "上半部"
 
 #: ../data/windowmanager.ui.h:111
 msgid "Top Right Corner"
-msgstr "Angolo superiore destro"
-
-#~ msgid ""
-#~ "When enabled, screen updates are performed when the monitor is in vertical "
-#~ "blank mode."
-#~ msgstr ""
-#~ "Se abilitato, gli aggiornamenti dello schermo saranno eseguiti quando il "
-#~ "monitor è in modalità VBlank"
-
-#~ msgid "Random"
-#~ msgstr "Casuale"
-
-#~ msgid "Curved Fold"
-#~ msgstr "Ripiegatura curva"
-
-#~ msgid "Fade"
-#~ msgstr "Dissolvenza"
-
-#~ msgid "Glide 1"
-#~ msgstr "Planata 1"
-
-#~ msgid "Glide 2"
-#~ msgstr "Planata 2"
-
-#~ msgid "Horizontal Folds"
-#~ msgstr "Ripiegatura orizzontale"
-
-#~ msgid "Magic Lamp"
-#~ msgstr "Lampada magica"
-
-#~ msgid "Magic Lamp Wavy"
-#~ msgstr "Lampada magica ondulata"
-
-#~ msgid "Sidekick"
-#~ msgstr "Vortice"
+msgstr "右上角"
 
 #~ msgid "Use the default window button layout."
-#~ msgstr "Usa la disposizione predefinita per i pulsanti della finestra"
+#~ msgstr "使用默认窗口按钮布局。"
 
 #~ msgid "Layout:"
-#~ msgstr "Disposizione:"
-
-#~ msgid "Close, minimize, window title"
-#~ msgstr "Chiudi, minimizza, titolo della finestra"
-
-#~ msgid "Current layout"
-#~ msgstr "Dispozione attuale"
-
-#~ msgid "Select a custom window controls layout."
-#~ msgstr ""
-#~ "Seelziona una disposizione personalizzata per i pulsanti della finestra"
-
-#~ msgid "Close, maximize, window title"
-#~ msgstr "Chiudi, massimizza, titolo della finestra"
-
-#~ msgid "Close button only"
-#~ msgstr "Solo pulsante «Chiudi»"
-
-#~ msgid "Use a custom window button layout."
-#~ msgstr "Usa una disposizione personalizzata per i pulsanti della finestra"
+#~ msgstr "布局："
 
 #~ msgid "Close, window title, maximize"
-#~ msgstr "Chiudi, titolo della finestra, massimizza"
+#~ msgstr "关闭，窗口标题，最大化"
 
-#~ msgid "Transparency:"
-#~ msgstr "Trasparenza:"
+#~ msgid "Close, minimize, window title"
+#~ msgstr "关闭，最小化，窗口标题"
 
-#~ msgid "Enable launcher transparency?"
-#~ msgstr "Abilita la trasparenza del Launcher"
+#~ msgid "Current layout"
+#~ msgstr "当前布局"
 
-#~ msgid "Enable transparency for the panel?"
-#~ msgstr "Abilita la trasparenza del pannello"
+#~ msgid "Close, maximize, window title"
+#~ msgstr "关闭，最大化，窗口标题"
+
+#~ msgid "Close button only"
+#~ msgstr "仅关闭按钮"
+
+#~ msgid "Use a custom window button layout."
+#~ msgstr "使用一个自定义的窗口按钮布局。"
+
+#~ msgid "Custom"
+#~ msgstr "自定义"
 
 #~ msgid "Update display during VBlank"
-#~ msgstr "Aggiornare lo schermo durante il VBlank"
+#~ msgstr "VBlank 期间更新显示"
 
-#~ msgid "Show the settings for window spread behaviour"
-#~ msgstr "Mostra le impostazioni per l'espansione delle finestre"
+#~ msgid "Glide 1"
+#~ msgstr "滑动特效1"
 
-#~ msgid "Preauthorized domains:"
-#~ msgstr "Domini pre-autorizzatati:"
+#~ msgid "Random"
+#~ msgstr "随机"
 
-#~ msgid "Show the Unity Panel settings"
-#~ msgstr "Mostra le impostazioni per il pannello di Unity"
+#~ msgid "Fade"
+#~ msgstr "淡入淡出"
 
-#~ msgid "Show the Unity Dash settings"
-#~ msgstr "Mostra le impostazioni per la Dash di Unity"
+#~ msgid "Magic Lamp"
+#~ msgstr "神灯特效"
 
-#~ msgid "Show the Unity launcher settings"
-#~ msgstr "Mostra le impostazioni per il Launche di Unity"
+#~ msgid "Glide 2"
+#~ msgstr "滑动特效2"
 
-#~ msgid "Show the settings for the security."
-#~ msgstr "Mostra le impostazioni per la sicurezza."
+#~ msgid "Horizontal Folds"
+#~ msgstr "水平折叠"
 
-#~ msgid "Show the settings for the workspace switcher"
-#~ msgstr "Mostra le impostazioni per il selettore dello spazio di lavoro"
+#~ msgid "Select a custom window controls layout."
+#~ msgstr "选择一个自定义的窗口控件布局。"
 
-#~ msgid "Show the general settings for the window manager"
-#~ msgstr "Mostra le impostazioni generiche per il gestore finestre"
+#~ msgid "Magic Lamp Wavy"
+#~ msgstr "波浪神灯特效"
 
-#~ msgid "Show the Unity Switcher settings"
-#~ msgstr "Mostra le impostazioni per il selettore di Unity"
+#~ msgid "Fade Dash & Slide"
+#~ msgstr "淡出Dash & 滑动"
 
-#~ msgid "Show the additional Unity settings"
-#~ msgstr "Mostra le impostazioni aggiuntive di Unity"
+#~ msgid "Fade & slide"
+#~ msgstr "淡出 & 滑动"
 
-#~ msgid "Show the settings for the icon themes"
-#~ msgstr "Mostra le impostazioni per i temi delle icone"
+#~ msgid "Transparency:"
+#~ msgstr "透明度:"
 
-#~ msgid "Show the settings for the cursor themes"
-#~ msgstr "Mostra le impostazioni per i temi del puntatore"
+#~ msgid "Enable launcher transparency?"
+#~ msgstr "启用启动器透明吗？"
 
-#~ msgid "Show the settings for the global system themes"
-#~ msgstr "Mostra le impostazioni per i temi dell'intero sistema"
-
-#~ msgid "Show the additional settings pane."
-#~ msgstr "Mostra il pannello delle impostazioni aggiuntive"
-
-#~ msgid "Show the settings for the desktop icons"
-#~ msgstr "Mostra le impostazioni per le icone della scrivania"
-
-#~ msgid "Show the settings for the scrolling."
-#~ msgstr "Mostra le impostazioni per lo scorrimento della finestra"
-
-#~ msgid "Show the settings for the system-wide fonts"
-#~ msgstr "Mostra le impostazioni per i tipi di carattere dell'intero sistema"
-
-#~ msgid "Show a shortcut to \"Trash\" on the desktop"
-#~ msgstr "Mostra sulla scrivania un collegamento al cestino"
-
-#~ msgid "Icons on desktop:"
-#~ msgstr "Icone sulla scrivania:"
-
-#~ msgid "Show a shortcut to &quot;Home Folder&quot; on the desktop"
-#~ msgstr "Mostra sulla scrivania un collegamento alla cartella «Home»"
-
-#~ msgid "Show a shortcut to \"Home Folder\" on the desktop"
-#~ msgstr "Mostra sulla scrivania un collegamento alla cartella «Home»"
-
-#~ msgid "A list of icons to display on the desktop"
-#~ msgstr "Un elenco di icone da visualizzare sulla scrivania"
-
-#~ msgid "Display:"
-#~ msgstr "Visualizza:"
-
-#~ msgid "Show a shortcut to &quot;Trash&quot; on the desktop"
-#~ msgstr "Mostra sulla scrivania un collegamento al cestino"
-
-#~ msgid "Show a shortcut to &quot;Network&quot; on the desktop"
-#~ msgstr "Mostra sulla scrivania un collegamento alle risorse di rete"
-
-#~ msgid "Show a shortcut to \"Network\" on the desktop"
-#~ msgstr "Mostra sulla scrivania un collegamento alle risorse di rete"
-
-#~ msgid "Show a shortcut to &quot;Devices&quot; on the desktop"
-#~ msgstr "Mostra sulla scrivania un collegamento ai dispositivi montati"
-
-#~ msgid "Show a shortcut to \"Devices\" on the desktop"
-#~ msgstr "Mostra sulla scrivania un collegamento ai dispositivi montati"
-
-#~ msgid "Proceed"
-#~ msgstr "Procedi"
-
-#~ msgid "Cancel"
-#~ msgstr "Annulla"
-
-#~ msgid ""
-#~ "This will reset all your Unity settings.\n"
-#~ "Are you sure you want to proceed?"
-#~ msgstr ""
-#~ "Questo ripristinerà tutte le impostazioni di Unity.\n"
-#~ "Continuare?"
-
-#~ msgid "Reset Unity settings?"
-#~ msgstr "Ripristinare le impostazioni di Unity?"
-
-#~ msgid "Show the settings for window snapping behaviour"
-#~ msgstr ""
-#~ "Mostra le impostazioni del comportamento per l'aggancio delle finestre"
-
-#~ msgid "Show the settings for hotcorner behaviour"
-#~ msgstr "Mostra le impostazioni per il comportamento degli angoli attivi"
+#~ msgid "Enable transparency for the panel?"
+#~ msgstr "启用面板透明吗？"
 
 #~ msgid ""
 #~ "Enable prompts for webapp integration when visitiing supported websites?"
-#~ msgstr ""
-#~ "Indica se abilitare gli avvisi per l'integrazione delle applicazioni web "
-#~ "quando vengono visitati siti web supportati"
+#~ msgstr "当访问支持 web 应用集成的网站时启用提示吗？"
 
-#~ msgid "Fade Dash & Slide"
-#~ msgstr "Dissolvenza della Dash e scorrimento"
+#~ msgid "Curved Fold"
+#~ msgstr "弯折特效"
 
-#~ msgid "Fade & slide"
-#~ msgstr "Dissolvenza e scorrimento"
+#~ msgid "Preauthorized domains:"
+#~ msgstr "预授权的域:"
 
-#~ msgid "Custom"
-#~ msgstr "Personalizzata"
+#~ msgid "Sidekick"
+#~ msgstr "插袋特效"
+
+#~ msgid "Proceed"
+#~ msgstr "继续"
+
+#~ msgid "Cancel"
+#~ msgstr "取消"
+
+#~ msgid "Display:"
+#~ msgstr "显示："
+
+#~ msgid "Show the Unity launcher settings"
+#~ msgstr "显示 Unity 启动器设置"
+
+#~ msgid "Show the settings for the workspace switcher"
+#~ msgstr "显示工作区切换器设置"
+
+#~ msgid "Show the general settings for the window manager"
+#~ msgstr "显示窗口管理器常规设置"
+
+#~ msgid "Show the Unity Panel settings"
+#~ msgstr "显示 Unity 面板设置"
+
+#~ msgid "Show the settings for the global system themes"
+#~ msgstr "显示全局系统主题设置"
+
+#~ msgid "Show the settings for the scrolling."
+#~ msgstr "显示滚动设置。"
+
+#~ msgid "Show the settings for the icon themes"
+#~ msgstr "显示图标主题设置"
+
+#~ msgid "Show the settings for the cursor themes"
+#~ msgstr "显示光标主题设置"
+
+#~ msgid "Show the settings for the desktop icons"
+#~ msgstr "显示桌面图标设置"
+
+#~ msgid "Reset Unity settings?"
+#~ msgstr "重置 Unity 设置？"
+
+#~ msgid "Show the settings for the system-wide fonts"
+#~ msgstr "显示系统字体设置"

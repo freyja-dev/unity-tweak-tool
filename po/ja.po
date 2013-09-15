@@ -1,16 +1,16 @@
-# Italian translation for mechanig
+# Japanese translation for unity-tweak-tool
 # Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
-# This file is distributed under the same license as the mechanig package.
+# This file is distributed under the same license as the unity-tweak-tool package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: mechanig\n"
+"Project-Id-Version: unity-tweak-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2013-09-15 20:49+0530\n"
-"PO-Revision-Date: 2013-08-09 15:20+0000\n"
-"Last-Translator: Claudio Arseni <claudio.arseni@gmail.com>\n"
-"Language-Team: Italian <it@li.org>\n"
+"PO-Revision-Date: 2013-07-30 13:48+0000\n"
+"Last-Translator: ub <xenolith0bytetestcomgreen@gmail.com>\n"
+"Language-Team: Japanese <ja@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,27 +19,27 @@ msgstr ""
 
 #: ../UnityTweakTool/utils/unityreset.py:41
 msgid "Initialising Unity reset"
-msgstr "Inizializzazione del rirpristino di Unity"
+msgstr "Unityを初期化"
 
 #: ../UnityTweakTool/utils/unityreset.py:42
 msgid "Killing Unity and Compiz"
-msgstr "Unity è Compiz vengono terminati"
+msgstr "UnityとCompizをkillする"
 
 #: ../UnityTweakTool/utils/unityreset.py:45
 msgid "Resetting compiz plugins"
-msgstr "Ripristino dei plugin di Compiz"
+msgstr "Compizプラグインをリセット"
 
 #: ../UnityTweakTool/utils/unityreset.py:47
 msgid "Resetting more compiz plugins"
-msgstr "Ripristino di ulteriori plugin di Compiz"
+msgstr "さらにCompizプラグインをリセット"
 
 #: ../UnityTweakTool/utils/unityreset.py:49
 msgid "Resetting Unity settings"
-msgstr "Ripristino delle impostazioni di Unity"
+msgstr "Unityの設定をリセット"
 
 #: ../UnityTweakTool/utils/unityreset.py:51
 msgid "Reset complete. Reloading unity"
-msgstr "Ripristino completato. Aggiornamento di Unity"
+msgstr "リセット完了、Unityを再起動"
 
 #. ! /usr/bin/env python3
 #: ../data/errordialog.ui.h:1
@@ -52,337 +52,320 @@ msgstr ""
 
 #: ../data/appearance.ui.h:1
 msgid "Available themes"
-msgstr "Temi disponibili"
+msgstr "利用可能なテーマ"
 
 #: ../data/appearance.ui.h:2
 msgid "List of GTK Themes"
-msgstr "Elenco di temi GTK"
+msgstr "GTKテーマのリスト"
 
 #: ../data/appearance.ui.h:3
 msgid "GTK Theme"
-msgstr "Tema GTK"
+msgstr "GTKテーマ"
 
 #: ../data/appearance.ui.h:4
 msgid "List of Window decoration themes"
-msgstr "Elenco di temi per la decorazione delle finetsre"
+msgstr "ウィンドウ装飾テーマのリスト"
 
 #: ../data/appearance.ui.h:5
 msgid "Window decoration theme"
-msgstr "Tema decorazione finestre"
+msgstr ""
 
 #: ../data/appearance.ui.h:6 ../data/unity.ui.h:83 ../data/system.ui.h:8
 #: ../data/windowmanager.ui.h:19
 msgid "Restore defaults"
-msgstr "Ripristina valori predefiniti"
+msgstr "デフォルトに戻す"
 
 #: ../data/appearance.ui.h:7
 msgid "Restore system's default theme configurations"
-msgstr "Ripristina il tema del sistema alla configurazione predefinita"
+msgstr "テーマの設定をデフォルトに戻します"
 
 #: ../data/appearance.ui.h:8 ../data/overview.ui.h:18
 #: ../data/unitytweak.ui.h:17
 msgid "Theme"
-msgstr "Tema"
+msgstr ""
 
 #: ../data/appearance.ui.h:9
 msgid "List of icon themes"
-msgstr "Elenco di temi delle icone"
+msgstr "アイコンテーマのリスト"
 
 #: ../data/appearance.ui.h:10
 msgid "Icon theme"
-msgstr "Tema icone"
+msgstr "アイコンテーマ"
 
 #: ../data/appearance.ui.h:11
 msgid "Restore system's default icon theme configurations"
-msgstr "Ripristina il tema delle icone alla configurazione predefinita"
+msgstr "デフォルトのアイコンテーマに戻します"
 
 #: ../data/appearance.ui.h:12 ../data/overview.ui.h:19 ../data/unity.ui.h:64
 #: ../data/unitytweak.ui.h:18
 msgid "Icons"
-msgstr "Icone"
+msgstr ""
 
 #: ../data/appearance.ui.h:13
 msgid "List of cursor themes"
-msgstr "Elenco temi del puntatore"
+msgstr "カーソルテーマのリスト"
 
 #: ../data/appearance.ui.h:14
 msgid "Cursor Theme"
-msgstr "Tema puntatore"
+msgstr "カーソルテーマ"
 
 #: ../data/appearance.ui.h:15
 msgid "Preferences"
-msgstr "Preferenze"
+msgstr "追加設定"
 
 #: ../data/appearance.ui.h:16
 msgid "Use large cursors"
-msgstr "Usare cursori grandi"
+msgstr "大きなカーソルを使う"
 
 #: ../data/appearance.ui.h:17
 msgid "If enabled, the system will use a larger cursor."
-msgstr "Se abilitato, il sistema userà un cursore di grandi dimensioni"
+msgstr "有効なら、システムはより大きなカーソルを使います。"
 
 #: ../data/appearance.ui.h:18
 msgid "Restore system's default cursor theme configurations"
-msgstr "Ripristina il tema del puntatore alla configurazione predefinita"
+msgstr "カーソルテーマをデフォルトに戻します"
 
 #: ../data/appearance.ui.h:19 ../data/unitytweak.ui.h:19
 msgid "Cursor"
-msgstr "Puntatore"
+msgstr ""
 
 #: ../data/appearance.ui.h:20 ../data/overview.ui.h:9 ../data/unity.ui.h:86
 #: ../data/unitytweak.ui.h:11 ../data/windowmanager.ui.h:21
 msgid "General"
-msgstr "Generali"
+msgstr ""
 
 #: ../data/appearance.ui.h:21
 msgid "Select the default font for all applications."
-msgstr "Seleziona il tipo di carattere predefinito per tutte le applicazioni"
+msgstr "全てのアプリケーションのデフォルトのフォントを選択"
 
 #: ../data/appearance.ui.h:22
 msgid "Default font:"
-msgstr "Tipo do carattere predefinito:"
+msgstr "デフォルト:"
 
 #: ../data/appearance.ui.h:23
 msgid "Select the default font used for reading documents."
-msgstr ""
-"Seleziona il tipo di carattere predefinito usato per la lettura dei documenti"
+msgstr "ドキュメントに使うフォントを選択します。"
 
 #: ../data/appearance.ui.h:24
 msgid "Document font:"
-msgstr "Tipo di carattere documenti:"
+msgstr "ドキュメント:"
 
 #: ../data/appearance.ui.h:25
 msgid "Select the default monospace font."
-msgstr "Seleziona il tipo di carattere a spaziatura fissa"
+msgstr "モノスペース(固定幅)フォントを選択します。"
 
 #: ../data/appearance.ui.h:26
 msgid "Monospace font:"
-msgstr "Tipo di carattere a spaziatura fissa:"
+msgstr "モノスペース:"
 
 #: ../data/appearance.ui.h:27
 msgid "Select the default font for the window titlebar."
-msgstr "Seleziona il tipo carattere predefinito per la barra del titolo"
+msgstr "ウィンドウのタイトルバーに使うフォントを選択します。"
 
 #: ../data/appearance.ui.h:28
 msgid "Window title font:"
-msgstr "Tipo di carattere barra del titolo:"
+msgstr "ウィンドウタイトルのフォント:"
 
 #: ../data/appearance.ui.h:29 ../data/overview.ui.h:17 ../data/unity.ui.h:49
 #: ../data/unitytweak.ui.h:16 ../unity-tweak-tool.desktop.in.h:5
 msgid "Appearance"
-msgstr "Aspetto"
+msgstr ""
 
 #: ../data/appearance.ui.h:30
 msgid "Select the type of antialiasing used to render fonts."
-msgstr ""
-"Seleziona il tipo di antialising usato per la resa a schermo dei caratteri"
+msgstr "フォントの補正を行うアンチエイリアスの種類を選択します。"
 
 #: ../data/appearance.ui.h:31
 msgid "Antialiasing:"
-msgstr "Antialiasing:"
+msgstr "アンチエイリアス:"
 
 #: ../data/appearance.ui.h:32
 msgid "None"
-msgstr "Nessuno"
+msgstr "なし"
 
 #: ../data/appearance.ui.h:33
 msgid "Grayscale"
-msgstr "Scala di grigi"
+msgstr "白黒(Grayscale)"
 
 #: ../data/appearance.ui.h:34
 msgid "RGBA"
-msgstr "RGBA"
+msgstr "カラー(RGBA)"
 
 #: ../data/appearance.ui.h:35
 msgid "Select the type of hinting to use when rendering fonts"
-msgstr ""
-"Seleziona l'approssimazione (hinting) da usare per il render dei caratteri"
+msgstr "フォントの補正を行うヒンティングの種類を選択します。"
 
 #: ../data/appearance.ui.h:36
 msgid "Slight"
-msgstr "Leggera"
+msgstr "小"
 
 #: ../data/appearance.ui.h:37
 msgid "Medium"
-msgstr "Media"
+msgstr "中"
 
 #: ../data/appearance.ui.h:38
 msgid "Full"
-msgstr "Completa"
+msgstr "大"
 
 #: ../data/appearance.ui.h:39
 msgid "Hinting:"
-msgstr "Approssimazione:"
+msgstr "ヒンティング:"
 
 #: ../data/appearance.ui.h:40
 msgid ""
 "Select the factor used to enlarge or reduce text display, without changing "
 "font size."
-msgstr ""
-"Seleziona il fattore usato per aumentare o diminuire la dimensione del testo "
-"visualizzato, senza cambiare la dimensione del tipo di carattere."
+msgstr "フォントサイズを変更せずにテキスト表示を拡大・縮小する倍率を指定"
 
 #: ../data/appearance.ui.h:41
 msgid "Text scaling factor:"
-msgstr "Fattore di scala del testo:"
+msgstr "テキスト倍率:"
 
 #: ../data/appearance.ui.h:42
 msgid "Restore system's default font configurations"
-msgstr ""
-"Ripristina il tipo di carattere del sistema alla configurazione predefinita"
+msgstr "フォントの設定をデフォルトに戻します"
 
 #: ../data/appearance.ui.h:43 ../data/overview.ui.h:21
 #: ../data/unitytweak.ui.h:20
 msgid "Fonts"
-msgstr "Tipi di carattere"
+msgstr ""
 
 #: ../data/appearance.ui.h:44
 msgid "Layout"
-msgstr "Disposizione"
+msgstr "レイアウト"
 
 #: ../data/appearance.ui.h:45
 msgid "Left"
-msgstr "A sinistra"
+msgstr "左"
 
 #: ../data/appearance.ui.h:46
 msgid "Align the window controls to the left side of the window."
-msgstr "Allinea i pulsanti della finestra sul lato sinistro"
+msgstr "ウィンドウ操作を左に配置します。"
 
 #: ../data/appearance.ui.h:47
 msgid "Right"
-msgstr "A destra"
+msgstr "右"
 
 #: ../data/appearance.ui.h:48
 msgid "Align the window controls to the right side of the window."
-msgstr "Allinea i pulsanti della finestra sul lato desto"
+msgstr "ウィンドウ操作を右に配置します。"
 
 #: ../data/appearance.ui.h:49
 msgid "Alignment:"
-msgstr "Allineamento:"
+msgstr "配置:"
 
 #: ../data/appearance.ui.h:50
 msgid "Show menu button"
-msgstr "Mostrare pulsante del menù"
+msgstr "メニューボタンを表示"
 
 #: ../data/appearance.ui.h:51
 msgid "If enabled, show the window menu in the titlebar."
-msgstr "Se abilitato, mostra il menù della finestra nella barra del titolo"
+msgstr "有効なら、タイトルバーにウインドウメニューを表示します。"
 
 #: ../data/appearance.ui.h:52
 msgid "Restore Defaults"
-msgstr "Ripristina valori predefiniti"
+msgstr "デフォルトに戻す"
 
 #: ../data/appearance.ui.h:53
 msgid "Restore default window controls settings."
-msgstr ""
-"Ripristina le impostazioni predefinite per i controlli della finestra"
+msgstr "ウィンドウ操作の設定をデフォルトに戻します。"
 
 #: ../data/appearance.ui.h:54
 msgid "Window Controls"
-msgstr "Controlli della finestra"
+msgstr ""
 
 #: ../data/overview.ui.h:1 ../data/unitytweak.ui.h:3
 #: ../unity-tweak-tool.desktop.in.h:3
 msgid "Unity"
-msgstr "Unity"
+msgstr ""
 
 #: ../data/overview.ui.h:2 ../data/unity.ui.h:85 ../data/unitytweak.ui.h:4
 msgid "Launcher"
-msgstr "Launcher"
+msgstr ""
 
 #: ../data/overview.ui.h:3 ../data/unity.ui.h:110 ../data/unitytweak.ui.h:5
 msgid "Search"
-msgstr "Ricerca"
+msgstr ""
 
 #: ../data/overview.ui.h:4 ../data/unity.ui.h:154 ../data/unitytweak.ui.h:6
 msgid "Panel"
-msgstr "Pannello"
+msgstr ""
 
 #: ../data/overview.ui.h:5 ../data/unity.ui.h:171 ../data/unitytweak.ui.h:7
 msgid "Switcher"
-msgstr "Selettore"
+msgstr ""
 
 #: ../data/overview.ui.h:6 ../data/unity.ui.h:178 ../data/unitytweak.ui.h:8
 msgid "Web Apps"
-msgstr "Applicazioni web"
+msgstr ""
 
 #: ../data/overview.ui.h:7 ../data/unity.ui.h:192 ../data/unitytweak.ui.h:9
 #: ../data/windowmanager.ui.h:81
 msgid "Additional"
-msgstr "Impostazioni aggiuntive"
+msgstr ""
 
 #: ../data/overview.ui.h:8 ../data/unitytweak.ui.h:10
 #: ../unity-tweak-tool.desktop.in.h:4
 msgid "Window Manager"
-msgstr "Gestore finestre"
+msgstr ""
 
 #: ../data/overview.ui.h:10
 msgid ""
 "Workspace\n"
 "Settings"
 msgstr ""
-"Impostazioni\n"
-"spazio di lavoro"
 
 #: ../data/overview.ui.h:12
 msgid ""
 "Window\n"
 "Spread"
 msgstr ""
-"Scalatura\n"
-"finestre"
 
 #: ../data/overview.ui.h:14
 msgid ""
 "Window\n"
 "Snapping"
 msgstr ""
-"Aggancio\n"
-"finestre"
 
 #: ../data/overview.ui.h:16 ../data/unitytweak.ui.h:15
 #: ../data/windowmanager.ui.h:52
 msgid "Hotcorners"
-msgstr "Angoli attivi"
+msgstr ""
 
 #: ../data/overview.ui.h:20
 msgid "Cursors"
-msgstr "Puntatori"
+msgstr ""
 
 #: ../data/overview.ui.h:22
 msgid ""
 "Window\n"
 "Controls"
 msgstr ""
-"Controlli\n"
-"finestra"
 
 #: ../data/overview.ui.h:24 ../data/unitytweak.ui.h:22
 #: ../unity-tweak-tool.desktop.in.h:6
 msgid "System"
-msgstr "Sistema"
+msgstr ""
 
 #: ../data/overview.ui.h:25
 msgid ""
 "Desktop\n"
 "Icons"
 msgstr ""
-"Icone della\n"
-"scrivania"
 
 #: ../data/overview.ui.h:27 ../data/unitytweak.ui.h:24 ../data/system.ui.h:21
 msgid "Security"
-msgstr "Sicurezza"
+msgstr ""
 
 #: ../data/overview.ui.h:28 ../data/unitytweak.ui.h:25 ../data/system.ui.h:36
 msgid "Scrolling"
-msgstr "Scorrimento"
+msgstr ""
 
 #. ----- END: Additional -----
 #. ! /usr/bin/env python3
 #: ../data/unity.ui.h:1
 msgid "Invoke HUD"
-msgstr "Richiama HUD"
+msgstr "HUDの呼び出し"
 
 #: ../data/unity.ui.h:2
 msgid "Super+H"
@@ -390,7 +373,7 @@ msgstr "Super+H"
 
 #: ../data/unity.ui.h:3
 msgid "Show the launcher"
-msgstr "Mostra il Launcher"
+msgstr "ランチャー表示"
 
 #: ../data/unity.ui.h:4
 msgid "Super+E"
@@ -398,7 +381,7 @@ msgstr "Super+E"
 
 #: ../data/unity.ui.h:5
 msgid "Execute command"
-msgstr "Esegui un comando"
+msgstr "コマンド実行"
 
 #: ../data/unity.ui.h:6
 msgid "Super+M"
@@ -406,7 +389,7 @@ msgstr "Super+M"
 
 #: ../data/unity.ui.h:7
 msgid "Put keyboard focus on the launcher"
-msgstr "Sposta il focus della tastiera sul Launcher"
+msgstr "ランチャーをキーボード操作モードにする"
 
 #: ../data/unity.ui.h:8
 msgid "Super+A"
@@ -414,7 +397,7 @@ msgstr "Super+A"
 
 #: ../data/unity.ui.h:9
 msgid "Open the first panel menu"
-msgstr "Apri il primo menù del pannello"
+msgstr "パネルの先頭のメニューを開く"
 
 #: ../data/unity.ui.h:10
 msgid "Super+N"
@@ -422,19 +405,19 @@ msgstr "Super+N"
 
 #: ../data/unity.ui.h:11
 msgid "Start switcher"
-msgstr "Avvia il selettore"
+msgstr "スイッチャーの起動"
 
 #: ../data/unity.ui.h:12
 msgid "Super+Tab"
-msgstr "Alt"
+msgstr "Super+Tab"
 
 #: ../data/unity.ui.h:13
 msgid "Start switcher in reverse"
-msgstr "Avvia il selettore in senso inverso"
+msgstr ""
 
 #: ../data/unity.ui.h:14
 msgid "Shift+Super+Tab"
-msgstr "Maiusc+Super+Tab"
+msgstr "Shift+Super+Tab"
 
 #: ../data/unity.ui.h:15
 msgid "Alt+Tab"
@@ -442,473 +425,460 @@ msgstr "Alt+Tab"
 
 #: ../data/unity.ui.h:16
 msgid "Shift+Alt+Tab"
-msgstr "Maiusc+Alt+Tab"
+msgstr "Shift+Alt+Tab"
 
 #: ../data/unity.ui.h:17
 msgid "Start switcher for all workspaces"
-msgstr "Avvia il selettore per tutti gli spazi di lavoro"
+msgstr "全ワークスペースでスイッチャーを起動"
 
 #: ../data/unity.ui.h:18
 msgid "Ctrl+Super+Alt+Tab"
-msgstr "Ctrl+Alt+Tab"
+msgstr "Ctrl+Super+Alt+Tab"
 
 #: ../data/unity.ui.h:19
 msgid "Start switcher for all workspaces in reverse"
-msgstr "Avvia il selettore in senso inverso per tutti gli spazi di lavoro"
+msgstr ""
 
 #: ../data/unity.ui.h:20
 msgid "Shift+Ctrl+Super+Alt+Tab"
-msgstr "Maiusc+Ctrl+Super+Alt+Tab"
+msgstr "Shift+Ctrl+Super+Alt+Tab"
 
 #: ../data/unity.ui.h:21
 msgid "Go right in the switcher"
-msgstr "Va a destra nel selettore"
+msgstr "スイッチャー内で右に移動"
 
 #: ../data/unity.ui.h:22
 msgid "Alt+Right"
-msgstr "Ctrl+Alt+→"
+msgstr "Alt+Right"
 
 #: ../data/unity.ui.h:23
 msgid "Go left in the switcher"
-msgstr "Va a sinistra nel selettore"
+msgstr "スイッチャー内で左に移動"
 
 #: ../data/unity.ui.h:24
 msgid "Alt+Left"
-msgstr "Ctrl+Alt+←"
+msgstr "Alt+Left"
 
 #: ../data/unity.ui.h:25
 msgid "Expose windows in the switcher"
-msgstr "Mostra le finestre nel selettore"
+msgstr "スイッチャーの中でウィンドウを表示"
 
 #: ../data/unity.ui.h:26
 msgid "Alt+Down"
-msgstr "Ctrl+Alt+↓"
+msgstr "Alt+Down"
 
 #: ../data/unity.ui.h:27
 msgid "Collapse windows in the switcher"
-msgstr "Contrai finestre nel selettore"
+msgstr "スイッチャーのウィンドウを戻す"
 
 #: ../data/unity.ui.h:28
 msgid "Alt+Up"
-msgstr "Ctrl+Alt+↑"
+msgstr "Alt+Up"
 
 #: ../data/unity.ui.h:29
 msgid "Flip through windows in the switcher"
-msgstr "Scorre tra le finestre del selettore"
+msgstr "スイッチャーのウィンドウをフリップ"
 
 #: ../data/unity.ui.h:30 ../data/windowmanager.ui.h:95
 msgid "Disabled"
-msgstr "Disabilitato"
+msgstr "無効"
 
 #: ../data/unity.ui.h:31
 msgid "Flip through windows in the switcher backwards"
-msgstr "Scorre tra le finestre del selettore all'indietro"
+msgstr "スイッチャーのウィンドウを逆にフリップ"
 
 #: ../data/unity.ui.h:32 ../data/windowmanager.ui.h:49
 msgid "Behaviour"
-msgstr "Comportamento"
+msgstr "動作"
 
 #: ../data/unity.ui.h:33
 msgid "Should the launcher be hidden?"
-msgstr "Scomparsa automatica del Launcher"
+msgstr "ランチャーを隠しますか?"
 
 #: ../data/unity.ui.h:34
 msgid "Auto-hide:"
-msgstr "Scomparsa automatica:"
+msgstr "自動的に隠す:"
 
 #: ../data/unity.ui.h:35
 msgid "Select the auto-hide animation of the launcher."
-msgstr "Seleziona l'animazione per la scomparsa automatica del Launcher"
+msgstr "ランチャーを自動的に隠すアニメーションを選択します。"
 
 #: ../data/unity.ui.h:36
 msgid "Fade Dash and slide"
-msgstr "Dissolvenza della Dash e scorrimento"
+msgstr "Dashのフェードとスライド"
 
 #: ../data/unity.ui.h:37
 msgid "Slide only"
-msgstr "Solo scorrimento"
+msgstr "スライド"
 
 #: ../data/unity.ui.h:38
 msgid "Fade only"
-msgstr "Solo dissolvenza"
+msgstr "フェード"
 
 #: ../data/unity.ui.h:39
 msgid "Fade and slide"
-msgstr "Dissolvenza e scorrimento"
+msgstr "フェードとスライド"
 
 #: ../data/unity.ui.h:40
 msgid "Auto-hide animation:"
-msgstr "Animazione scomparsa automatica:"
+msgstr "自動的に隠すアニメーション:"
 
 #: ../data/unity.ui.h:41
 msgid ""
 "Select the option to reveal the dash with the mouse, when auto-hide is "
 "enabled."
-msgstr ""
-"Seleziona l'opzione per visualizzare la Dash usando il mouse quando è attiva "
-"la scomparsa automatica"
+msgstr "自動的に隠す設定でDashを表示するためにマウスを移動させる場所を選択します。"
 
 #: ../data/unity.ui.h:42
 msgid "Reveal location:"
-msgstr "Posizione per mostrare:"
+msgstr "マウスを移動する場所:"
 
 #: ../data/unity.ui.h:43
 msgid "Reveal sensitivity:"
-msgstr "Sensibilità area per mostrare:"
+msgstr "表示感度:"
 
 #: ../data/unity.ui.h:44
 msgid "How much pointer \"pressure\" is required to reveal the launcher."
-msgstr "Quanta pressione il mouse deve fare per mostrare il Launcher"
+msgstr "ランチャーを表示するのにポインタを押し込む量。"
 
 #: ../data/unity.ui.h:45
 msgid "Left side"
-msgstr "Bordo sinistro"
+msgstr "左端"
 
 #: ../data/unity.ui.h:46
 msgid ""
 "When in auto-hide mode the left edge of the current workspace triggers the "
 "launcher."
-msgstr ""
-"In modalità a scomparsa automatica, il Launcher viene mostrato quando il "
-"puntatore si sposta sul bordo sinistro"
+msgstr "自動的に隠す設定で画面左端をランチャーの表示のトリガにします。"
 
 #: ../data/unity.ui.h:47
 msgid "Top left corner"
-msgstr "Angolo superiore sinistro"
+msgstr "左上の端"
 
 #: ../data/unity.ui.h:48
 msgid ""
 "When in auto-hide mode the top left corner of the current workspace triggers "
 "the launcher."
-msgstr ""
-"In modalità a scomparsa automatica, il Launcher viene mostrato quando il "
-"puntatore si sposta sull'angolo superiore sinistro"
+msgstr "自動的に隠す設定で画面左上端をランチャーの表示のトリガにします。"
 
 #: ../data/unity.ui.h:50
 msgid "Select the level of the transparency of the launcher"
-msgstr "Seleziona il livello di trasparenza del Launcher"
+msgstr "ランチャーの透過度を設定します"
 
 #: ../data/unity.ui.h:51
 msgid "Transparency level:"
-msgstr "Livello trasparenza:"
+msgstr "透過度:"
 
 #: ../data/unity.ui.h:52
 msgid "How transparent the launcher will be."
-msgstr "Imposta il livello di trasparenza del Launcher"
+msgstr "どの程度透過させますか"
 
 #: ../data/unity.ui.h:53
 msgid "Based on wallpaper"
-msgstr "Basato sullo sfondo"
+msgstr "壁紙の色による"
 
 #: ../data/unity.ui.h:54
 msgid "If selected, the launcher colour is based on the desktop background"
-msgstr ""
-"Se selezionato, il colore da Launcher sarà basato sullo sfondo della "
-"scrivania"
+msgstr "この設定では壁紙の色によりランチャーを透過します"
 
 #: ../data/unity.ui.h:55
 msgid "Colour:"
-msgstr "Colore:"
+msgstr "色:"
 
 #: ../data/unity.ui.h:56
 msgid "Visibility:"
-msgstr "Visibilità:"
+msgstr "表示 :"
 
 #: ../data/unity.ui.h:57
 msgid "Custom:"
-msgstr "Personalizzato:"
+msgstr "カスタム："
 
 #: ../data/unity.ui.h:58
 msgid "If selected, the launcher will be the colour chosen by the user"
-msgstr "Se selezionato, il colore da Launcher sarà quello scelto dall'utente"
+msgstr "この設定では選んだ色でランチャーを透過します"
 
 #: ../data/unity.ui.h:59
 msgid "All desktops"
-msgstr "Tutte le scrivanie"
+msgstr "すべてのデスクトップ"
 
 #: ../data/unity.ui.h:60
 msgid "If selected, the launcher is visible on all desktops."
-msgstr "Se selezionato, il Launcher sarà visibile su tutte le scrivanie"
+msgstr "この設定ではすべてのデスクトップにランチャーを表示します"
 
 #: ../data/unity.ui.h:61
 msgid "If selected, the launcher is visible on all desktops"
-msgstr "Se selezionato, il Launcher sarà visibile su tutte le scrivanie"
+msgstr "この設定ではすべてのデスクトップにランチャーを表示します"
 
 #: ../data/unity.ui.h:62
 msgid "Primary desktop"
-msgstr "Scrivania principale"
+msgstr "プライマリー・デスクトップ"
 
 #: ../data/unity.ui.h:63
 msgid "If selected, the launcher is visible on the primary desktop"
-msgstr "Se selezionato, il Launcher sarà visibile sulla scrivania principale"
+msgstr "この設定ではランチャーはプライマリー・デスクトップに表示します"
 
 #: ../data/unity.ui.h:65
 msgid "Icon size:"
-msgstr "Dimensione icone:"
+msgstr "アイコンサイズ:"
 
 #: ../data/unity.ui.h:66
 msgid "Select the animation used for launching an application."
-msgstr "Seleziona l'animazione usata all'avvio delle applicazioni"
+msgstr "アプリを起動した時のアニメーションを選択します。"
 
 #: ../data/unity.ui.h:67
 msgid "No animation"
-msgstr "Nessuna animazione"
+msgstr "なし"
 
 #: ../data/unity.ui.h:68
 msgid "Pulse"
-msgstr "Pulsazione"
+msgstr "パルス(Pulse)"
 
 #: ../data/unity.ui.h:69
 msgid "Blink"
-msgstr "Lampeggiamento"
+msgstr "ブリンク(Blink)"
 
 #: ../data/unity.ui.h:70
 msgid "Select the animation used for an urgent notification on the launcher"
-msgstr "Seleziona l'animazione usata nel Launcher per le notifiche urgenti"
+msgstr "ランチャーの通知アニメーションを選択します。"
 
 #: ../data/unity.ui.h:71
 msgid "Wiggle"
-msgstr "Scuotimento"
+msgstr "ウィグル(Wiggle)"
 
 #: ../data/unity.ui.h:72
 msgid "Launch animation:"
-msgstr "Animazione all'avvio:"
+msgstr "起動時のアニメーション:"
 
 #: ../data/unity.ui.h:73
 msgid "Urgent animation:"
-msgstr "Animazione d'urgenza:"
+msgstr "通知アニメーション:"
 
 #: ../data/unity.ui.h:74
 msgid "Select how the icons are coloured on the launcher"
-msgstr "Seleziona la colorazione delle icone nel Launcher"
+msgstr "ランチャーのアイコンの色のつけ方を選択します"
 
 #: ../data/unity.ui.h:75
 msgid "All applications"
-msgstr "Tutte le applicazioni"
+msgstr "全アプリケーション"
 
 #: ../data/unity.ui.h:76
 msgid "Open applications only"
-msgstr "Solo applicazioni aperte"
+msgstr "開いているアプリケーション"
 
 #: ../data/unity.ui.h:77
 msgid "No colouring"
-msgstr "Nessuna colorazione"
+msgstr "なし"
 
 #: ../data/unity.ui.h:78
 msgid "Coloured edges"
-msgstr "Bordi colorati"
+msgstr "エッジのカラー"
 
 #: ../data/unity.ui.h:79
 msgid "Alternated for each workspace"
-msgstr "Alternato per ogni spazio di lavoro"
+msgstr "ワークスペースにより変える"
 
 #: ../data/unity.ui.h:80
 msgid "Icon backgrounds:"
-msgstr "Sfondo delle icone:"
+msgstr "アイコンの背景:"
 
 #: ../data/unity.ui.h:81
 msgid "\"Show Desktop\" icon:"
-msgstr "Icona «Mostra la scrivania»:"
+msgstr "デスクトップの表示 アイコン:"
 
 #: ../data/unity.ui.h:82
 msgid "Select the size of the icons on the launcher"
-msgstr "Seleziona la dimensione delle icone nel Launcher"
+msgstr "この設定ではランチャーはプライマリー・デスクトップに表示します"
 
 #: ../data/unity.ui.h:84
 msgid "Restore default Unity launcher settings."
-msgstr "Ripristina le impostazioni predefinite del Launcher di Unity"
+msgstr "ランチャーの設定をデフォルトに戻します。"
 
 #: ../data/unity.ui.h:87
 msgid "Background blur:"
-msgstr "Sfocatura sfondo:"
+msgstr "背景のブラー:"
 
 #: ../data/unity.ui.h:88
 msgid "Enable dash blur?"
-msgstr "Abilita la sfocatura della Dash"
+msgstr "ブラー(ぼかし)を使いますか?"
 
 #: ../data/unity.ui.h:89
 msgid "Select the type of blur in the dash"
-msgstr "Seleziona il tipo di sfocatura della Dash"
+msgstr "Dashで使うブラー(ぼかし)の種類を選択します"
 
 #: ../data/unity.ui.h:90
 msgid "Blur type:"
-msgstr "Tipo di sfocatura:"
+msgstr "ブラーの種類:"
 
 #: ../data/unity.ui.h:91
 msgid "Active"
-msgstr "Attiva"
+msgstr "アクティブ"
 
 #: ../data/unity.ui.h:92
 msgid "Use a dynamic blur in the dash."
-msgstr "Una una sfocatura dinamica nella Dash"
+msgstr "Dashで動的ブラーを使う。"
 
 #: ../data/unity.ui.h:93
 msgid "Static"
-msgstr "Statica"
+msgstr "スタティック"
 
 #: ../data/unity.ui.h:94
 msgid "Use a static blur in the dash, uses less resources."
-msgstr "Una una sfocatura statica nella Dash. Usa meno risorse"
+msgstr "Dashで静的ブラーを使うと少ないリソースで済みます。"
 
 #: ../data/unity.ui.h:95
 msgid "Search online sources"
-msgstr "Eseguire ricerche online"
+msgstr "オンラインも検索"
 
 #: ../data/unity.ui.h:96
 msgid "If enabled, the dash will get suggestions from online sources."
-msgstr ""
-"Se abilitato, quando si eseguono ricerche dalla Dash, verranno mostrati "
-"suggerimenti da risorse online"
+msgstr "有効ならDashはオンラインソースも調べます。"
 
 #: ../data/unity.ui.h:97
 msgid "Applications"
-msgstr "Applicazioni"
+msgstr "アプリケーション"
 
 #: ../data/unity.ui.h:98
 msgid "Show \"Recently Used\" applications"
-msgstr "Mostrare «Usate di recente»"
+msgstr "最近使ったアプリの表示"
 
 #: ../data/unity.ui.h:99
 msgid "If enabled, show recently used applications in the Dash."
-msgstr "Se abilitato, mostra nella Dash le applicazioni usate di recente"
+msgstr "有効なら最近使ったアプリをDashに表示します。"
 
 #: ../data/unity.ui.h:100
 msgid "Show \"More Suggestions\""
-msgstr "Mostrare «Altri suggerimenti»"
+msgstr "さらに提案の表示"
 
 #: ../data/unity.ui.h:101
 msgid "If enabled, show applications available for download in the Dash."
-msgstr ""
-"Se abilitato, mostra nella Dash le applicazioni che possono essere scaricate"
+msgstr "有効ならダウンロード可能なアプリケーションをDashに表示します。"
 
 #: ../data/unity.ui.h:102
 msgid "Files"
-msgstr "File"
+msgstr "ファイルの検索"
 
 #: ../data/unity.ui.h:103
 msgid "Enable search of your files"
-msgstr "Abilitare la ricerca dei file"
+msgstr "すべてのファイルを検索"
 
 #: ../data/unity.ui.h:104
 msgid ""
 "If enabled, allow searches to find your files that aren&apos;t logged."
-msgstr "Se abilitato, consente la ricerca di file che non sono registrati"
+msgstr "有効なら使ったことのないファイルも検索します。"
 
 #: ../data/unity.ui.h:105
 msgid "If enabled, allow searches to find your files that aren't logged."
-msgstr "Se abilitato, consente la ricerca di file che non sono registrati"
+msgstr "有効なら使用していないファイルも検索します。"
 
 #: ../data/unity.ui.h:106
 msgid "Run Command"
-msgstr "Esecuzione comandi"
+msgstr "コマンドの実行"
 
 #: ../data/unity.ui.h:107
 msgid "Clear History"
-msgstr "Pulisci cronologia"
+msgstr "履歴を消去"
 
 #: ../data/unity.ui.h:108
 msgid "Clear ALT+F2 command history."
-msgstr "Pulisce la cronologia del comando Alt+F2"
+msgstr "のコマンド履歴を消去します。"
 
 #: ../data/unity.ui.h:109
 msgid "Restore the default Dash settings."
-msgstr "Ripristina le impostazioni predefinite della Dash"
+msgstr "Dashの設定をデフォルトに戻します。"
 
 #: ../data/unity.ui.h:111
 msgid "Menu visible for:"
-msgstr "Menù visibile per:"
+msgstr "起動時にメニューを表示:"
 
 #: ../data/unity.ui.h:112
 msgid ""
 "Select how long the application menu is visible when an application is first "
 "opened"
-msgstr ""
-"Seleziona il tempo di visualizzazione del menù quando un'applicazione viene "
-"avviata per la prima volta"
+msgstr "アプリがスタートした時にメニューを表示する時間"
 
 #: ../data/unity.ui.h:113
 msgid "seconds"
-msgstr "secondi"
+msgstr "秒"
 
 #: ../data/unity.ui.h:114
 msgid "Set the level of transparency for the panel."
-msgstr "Imposta il livello di trasparenza del pannello"
+msgstr "パネルの透過度を設定します。"
 
 #: ../data/unity.ui.h:115
 msgid "Opaque panel for maximized windows"
-msgstr "Pannello opaco per le finestre massimizzate"
+msgstr "ウィンドウ最大化時パネルを不透明"
 
 #: ../data/unity.ui.h:116
 msgid "If selected, the panel will be opaque for maximized windows"
-msgstr "Se abilitato, il pannello sarà opaco per le finestre massimizzate"
+msgstr "有効ならウィンドウを最大化した時にパネルは不透明にします"
 
 #: ../data/unity.ui.h:117
 msgid "Indicators"
-msgstr "Indicatori"
+msgstr "インジケーター"
 
 #: ../data/unity.ui.h:118
 msgid "Date & time"
-msgstr "Data e ora"
+msgstr "日付と時間"
 
 #: ../data/unity.ui.h:119
 msgid "If enabled, the date &amp; time indicator will be visible."
-msgstr "Se abilitato, l'indicatore data e ora sarà visibile"
+msgstr "有効なら日付と時間を表示します。"
 
 #: ../data/unity.ui.h:120
 msgid "If enabled, the date & time indicator will be visible."
-msgstr "Se abilitato, l'indicatore data e ora sarà visibile"
+msgstr "有効なら日付と時間を表示します。"
 
 #: ../data/unity.ui.h:121
 msgid "12-hour time"
-msgstr "Formato 12 ore"
+msgstr "12時間制"
 
 #: ../data/unity.ui.h:122
 msgid "Have the clock use 12-hour time."
-msgstr "Verrà usato l'orologio nel formato 12 ore"
+msgstr "12時間制を使います。"
 
 #: ../data/unity.ui.h:123
 msgid "24-hour time"
-msgstr "Formato 24 ore"
+msgstr "24時間制"
 
 #: ../data/unity.ui.h:124
 msgid "Have the clock use 24-hour time."
-msgstr "Verrà usato l'orologio nel formato 24 ore"
+msgstr "24時間制を使います。"
 
 #: ../data/unity.ui.h:125
 msgid "Seconds"
-msgstr "Secondi"
+msgstr "秒の表示"
 
 #: ../data/unity.ui.h:126
 msgid "If enabled, the clock will display seconds."
-msgstr "Se abilitato, l'orologio mostrerà i secondi"
+msgstr "有効なら秒を表示します。"
 
 #: ../data/unity.ui.h:127
 msgid "Date"
-msgstr "Data"
+msgstr "日付"
 
 #: ../data/unity.ui.h:128
 msgid "If enabled, the month and day will be visible in the panel."
-msgstr "Se abilitato, il mese e il giorno saranno visibili nel pannello"
+msgstr "有効なら月日を表示します。"
 
 #: ../data/unity.ui.h:129
 msgid "Weekday"
-msgstr "Giorno della settimana"
+msgstr "曜日"
 
 #: ../data/unity.ui.h:130
 msgid "If enabled, the day of the week will be visible in the panel."
-msgstr "Se abilitato, il giorno della settimana sarà visibile nel pannello"
+msgstr "有効なら曜日を表示します。"
 
 #: ../data/unity.ui.h:131
 msgid "Include:"
-msgstr "Includere:"
+msgstr "メニュー設定:"
 
 #: ../data/unity.ui.h:132
 msgid "Calendar"
-msgstr "Calendario"
+msgstr "カレンダー"
 
 #: ../data/unity.ui.h:133
 msgid "If enabled, the calendar will be visible in the indicator menu."
-msgstr "Se abilitato, il calendario sarà visibile nel pannello"
+msgstr "有効ならインジケーターのメニューにカレンダーを表示します。"
 
 #: ../data/unity.ui.h:134
 msgid "Bluetooth"
@@ -916,179 +886,161 @@ msgstr "Bluetooth"
 
 #: ../data/unity.ui.h:135
 msgid "If enabled, the bluetooth indicator is visible in the panel."
-msgstr "Se abilitato, l'indicatore Bluetooth sarà visibile nel pannello"
+msgstr "有効ならbluetoothインジケーターを表示します。"
 
 #: ../data/unity.ui.h:136
 msgid "Power"
-msgstr "Alimentazione"
+msgstr "電源"
 
 #: ../data/unity.ui.h:137
 msgid "If enabled, show the power menu in the panel."
-msgstr "Se abilitato, mostra nel pannello il menù relativo all'alimentazione"
+msgstr "有効なら電源を表示します。"
 
 #: ../data/unity.ui.h:138
 msgid "Visible when charging or discharging"
-msgstr "Visibile quando la bateria è in carica/in uso"
+msgstr "充放電中は表示"
 
 #: ../data/unity.ui.h:139
 msgid ""
 "Set the power indicator to be visible when charging or discharging power."
-msgstr ""
-"Imposta l'indicatore dell'alimentazione per essere visibile quando la "
-"batteria è in carica/in uso"
+msgstr "充電/放電中のみインジケーター表示します。"
 
 #: ../data/unity.ui.h:140
 msgid "Always visible"
-msgstr "Sempre visibile"
+msgstr "常に表示する"
 
 #: ../data/unity.ui.h:141
 msgid "Set the power indicator to be always visible."
-msgstr "Imposta l'indicatore dell'alimentazione per essere sempre visibile"
+msgstr "常に電源インジケーターを表示します。"
 
 #: ../data/unity.ui.h:142
 msgid "Display remaining battery life"
-msgstr "Mostrare il tempo nella barra dei menù"
+msgstr "バッテリー残り時間の表示"
 
 #: ../data/unity.ui.h:143
 msgid "If enabled, show the remaining battery life in the power indicator."
-msgstr ""
-"Se abilitato, mostra nell'indicatore dell'alimentazione il tempo residuo "
-"della batteria"
+msgstr "有効なら電源インジケーターにバッテリー残り時間を表示します。"
 
 #: ../data/unity.ui.h:144
 msgid "Volume"
-msgstr "Audio"
+msgstr "ボリューム"
 
 #: ../data/unity.ui.h:145
 msgid "If enabled, show the sound menu in the panel."
-msgstr "Se abilitato mostra il menù audio nel pannello"
+msgstr "有効ならパネルにサウンドメニューを表示します。"
 
 #: ../data/unity.ui.h:146
 msgid "Default player:"
-msgstr "Riproduttore predefinito:"
+msgstr "標準のプレーヤー:"
 
 #: ../data/unity.ui.h:147
 msgid ""
 "Select which of the installed audio players is default in the sound menu."
-msgstr ""
-"Seleziona quale, tra quelli installati, sarà il riproduttore multimediale "
-"predefinito nel menù audio"
+msgstr "デフォルトにするプレーヤーを選択します。"
 
 #: ../data/unity.ui.h:148
 msgid "Notifications when scrolling"
-msgstr "Notificare durante lo scorrimento"
+msgstr "音量調整でボリューム表示"
 
 #: ../data/unity.ui.h:149
 msgid ""
 "When using scrolling to change the volume, show on-screen notifications."
-msgstr ""
-"Quando viene usato lo scorrimento per modificare il volume, viene mostrata "
-"una notifica sullo schermo"
+msgstr "スクロールで音量を変えるときに画面に通知を表示します。"
 
 #: ../data/unity.ui.h:150
 msgid "Show my name"
-msgstr "Mostrare il proprio nome"
+msgstr "ユーザー名の表示"
 
 #: ../data/unity.ui.h:151
 msgid "If enabled, show the user&apos;s real name in the panel."
-msgstr "Se abilitato, viene mostrato nel pannello il vero nome dell'utente"
+msgstr "有効ならユーザー情報をパネルに表示します。"
 
 #: ../data/unity.ui.h:152
 msgid "If enabled, show the user's real name in the panel."
-msgstr "Se abilitato, viene mostrato nel pannello il vero nome dell'utente"
+msgstr "有効ならユーザー情報をパネルに表示します。"
 
 #: ../data/unity.ui.h:153
 msgid "Restore the default Unity panel settings."
-msgstr "Ripristina le impostazioni predefinite del pannello di Unity"
+msgstr "パネル設定をデフォルトに戻します。"
 
 #: ../data/unity.ui.h:155
 msgid "Switch between windows on all workspaces"
-msgstr "Passare da una finestra all'altra in tutti gli spazi di lavoro"
+msgstr "全ワークスペースのウィンドウの切り替え"
 
 #: ../data/unity.ui.h:156
 msgid ""
 "If enabled, the window switcher cycles through all windows on all workspaces"
-msgstr ""
-"Se abilitato, il selettore mostrerà tutte le finestre presenti in tutti gli "
-"spazi di lavoro"
+msgstr "有効ならスイッチャーは全ウィンドウを切り替えます"
 
 #: ../data/unity.ui.h:157
 msgid "Display \"Show Desktop\" icon"
-msgstr "Mostra l'icona «Mostra la scrivania»"
+msgstr "デスクトップ表示のアイコン"
 
 #: ../data/unity.ui.h:158
 msgid ""
 "If enabled, show the &quot;Show Desktop&quot; option in the window switcher"
-msgstr ""
-"Se abilitato, aggiunge al selettore finestre l'opzione per mostrare la "
-"Scrivania"
+msgstr "有効ならデスクトップ表示をスイッチャーに表示します"
 
 #: ../data/unity.ui.h:159
 msgid "If enabled, show the \"Show Desktop\" option in the window switcher"
-msgstr ""
-"Se abilitato, aggiunge al selettore finestre l'opzione per mostrare la "
-"Scrivania"
+msgstr "有効ならデスクトップ表示アイコンをスイッチャーに表示します"
 
 #: ../data/unity.ui.h:160
 msgid "Automatically expose windows"
-msgstr "Mostrare le finestre automaticamente"
+msgstr "自動ウィンドウ一覧表示"
 
 #: ../data/unity.ui.h:161
 msgid "If enabled, the window switcher will expose minimized windows"
-msgstr "Se abilitato, il selettore mostrerà le finestre minimizzate"
+msgstr "有効ならスイッチャで選んだアプリのウィンドウ一覧を表示します"
 
 #: ../data/unity.ui.h:162
 msgid "Switch between minimized windows"
-msgstr "Passare da una finestra all'altra tra quelle minimizzate"
+msgstr "最小化されたウィンドウの切り替え"
 
 #: ../data/unity.ui.h:163
 msgid "If enabled, the window switcher will switch through minimized windows"
-msgstr ""
-"Se abilitato, il selettore passerà da una finestra all'altra, solo tra "
-"quelle minimizzate"
+msgstr "有効なら最小化されたウィンドウも表示します"
 
 #: ../data/unity.ui.h:164
 msgid "Window switching shortcuts"
-msgstr "Scorciatoie selettore finestre"
+msgstr "ウィンドウ切り替えショートカット"
 
 #: ../data/unity.ui.h:165
 msgid "Window switcher shortcuts"
-msgstr "Scorciatoie per il selettore finestre"
+msgstr "ウィンドウスイッチャー・ショートカット"
 
 #: ../data/unity.ui.h:166 ../data/windowmanager.ui.h:5
 msgid "Title"
-msgstr "Titolo"
+msgstr "タイトル"
 
 #: ../data/unity.ui.h:167 ../data/windowmanager.ui.h:6
 msgid "Accelerator"
-msgstr "Acceleratore"
+msgstr "アクセラレータ"
 
 #: ../data/unity.ui.h:168
 msgid "Launcher switching shortcuts"
-msgstr "Scorciatoie selettore Launcher"
+msgstr "ランチャー切り替えショートカット"
 
 #: ../data/unity.ui.h:169
 msgid "Launcher switcher shortcuts"
-msgstr "Scorciatoie per il selettore del Launcher"
+msgstr "ランチャースイッチャー・ショートカット"
 
 #: ../data/unity.ui.h:170
 msgid "Restore the default window switcher settings."
-msgstr "Ripristina le impostazioni predefinite del selettore di finestre"
+msgstr "ウィンドウスイッチャーの設定をデフォルトに戻します。"
 
 #: ../data/unity.ui.h:172
 msgid ""
 "Enable prompts for webapp integration when visiting supported websites?"
-msgstr ""
-"Indica se abilitare gli avvisi per l'integrazione delle applicazioni web "
-"quando vengono visitati siti web supportati"
+msgstr "有効ならサポートしているウェブサイトを訪れた時にWebappのインストールを促します。"
 
 #: ../data/unity.ui.h:173
 msgid "Integration prompts:"
-msgstr "Abilitare avvisi di integrazione:"
+msgstr "Webappのインストール:"
 
 #: ../data/unity.ui.h:174
 msgid "Preauthorized domains"
-msgstr "Domini pre-autorizzati:"
+msgstr "公認ドメイン"
 
 #: ../data/unity.ui.h:175
 msgid "Amazon"
@@ -1100,8 +1052,7 @@ msgstr "Ubuntu One"
 
 #: ../data/unity.ui.h:177
 msgid "Restore the default Unity Webapps settings."
-msgstr ""
-"Ripristina le impostazioni predefinite per le applicazioni web di Unity"
+msgstr "ウェブアプリの設定をデフォルトに戻します。"
 
 #: ../data/unity.ui.h:179
 msgid "HUD"
@@ -1109,65 +1060,56 @@ msgstr "HUD"
 
 #: ../data/unity.ui.h:180
 msgid "Remember previous commands"
-msgstr "Memorizzare comandi usati"
+msgstr "コマンドを記憶する"
 
 #: ../data/unity.ui.h:181
 msgid ""
 "If enabled, the HUD will remember previously executed entries and sort them "
 "by frequently used."
-msgstr ""
-"Se abilitato, HUD memorizzerà i comandi eseguiti in precedenza e li "
-"elencherà in base alla frequenza di utilizzo"
+msgstr "有効ならHUDは以前に使ったコマンドを回数が多い順に表示します。"
 
 #: ../data/unity.ui.h:182
 msgid "Keyboard Shortcuts"
-msgstr "Scorciatoie da tastiera"
+msgstr "ショートカットキー"
 
 #: ../data/unity.ui.h:183
 msgid "Hold Super for keyboard shortcuts"
-msgstr "Tenere premuto «Super» per le scorciatoie da tastiera"
+msgstr "Super長押しでショートカットを表示"
 
 #: ../data/unity.ui.h:184
 msgid ""
 "When enabled, pressing the Super key displays an overlay of all Unity "
 "keyboard shortcuts"
-msgstr ""
-"Quando abilitato, premendo il tasto «Super» verrà mostrata una finestra che "
-"elenca tutte le scorciatoie da tastiera di Unity"
+msgstr "Superキーを長押しした時にUnityのショートカットキーを表示します"
 
 #: ../data/unity.ui.h:185
 msgid "List of Unity keyboard shortcuts"
-msgstr "Elenco di scorciatoie da tastiera per Unity"
+msgstr "Unityのショートカット一覧"
 
 #: ../data/unity.ui.h:186
 msgid "Notifications"
-msgstr "Notifiche"
+msgstr "通知"
 
 #: ../data/unity.ui.h:187
 msgid "All displays"
-msgstr "Tutti i monitor"
+msgstr "全ディスプレイ"
 
 #: ../data/unity.ui.h:188
 msgid "For multiple displays, notifications are visible on all of them."
-msgstr ""
-"Se si usano monitor multipli, le notifiche verranno visualizzate su tutti i "
-"monitor"
+msgstr "マルチディスプレイで通知をすべてに表示します。"
 
 #: ../data/unity.ui.h:189
 msgid "Active display"
-msgstr "Monitor in uso"
+msgstr "使用中のディスプレイ"
 
 #: ../data/unity.ui.h:190
 msgid ""
 "For multiple displays, notifications are visible on the active display."
-msgstr ""
-"Se si usano monitor multipli, le notifiche verranno visualizzate solo sul "
-"monitor attivo"
+msgstr "マルチディスプレイで通知は使用中のディスプレイに行います。"
 
 #: ../data/unity.ui.h:191
 msgid "Restore the default Unity keyboard shortcut settings."
-msgstr ""
-"Ripristina le impostazioni predefinite delle scorciatoie da tastiera di Unity"
+msgstr "ショートカットの設定をデフォルトに戻します。"
 
 #: ../data/about.ui.h:1
 msgid "Copyright © 2013 Freyja Development team"
@@ -1176,12 +1118,11 @@ msgstr "Copyright © 2013 Freyja Development team"
 #: ../data/about.ui.h:2
 msgid ""
 "Unity Tweak Tool is a settings manager intended to be used with Ubuntu Unity."
-msgstr ""
-"Uniy Tweak Tool è un gestore delle impostazioni creato per Ubuntu Unity"
+msgstr "Unity Tweak ToolはUbuntu Unityの設定の管理をします。"
 
 #: ../data/about.ui.h:3
 msgid "Unity Tweak Tool on Launchpad"
-msgstr "Unity Tweak Tool su Launchpad"
+msgstr "Unity Tweak Tool on Launchpad"
 
 #: ../data/about.ui.h:4
 msgid "GPL3"
@@ -1193,35 +1134,35 @@ msgstr "Unity Tweak Tool"
 
 #: ../data/unitytweak.ui.h:2
 msgid "_File"
-msgstr "_File"
+msgstr ""
 
 #: ../data/unitytweak.ui.h:12
 msgid "Workspace settings"
-msgstr "Impostazioni spazio di lavoro"
+msgstr ""
 
 #: ../data/unitytweak.ui.h:13
 msgid "Windows spread"
-msgstr "Scalatura finestre"
+msgstr "ウィンドウスプレッド"
 
 #: ../data/unitytweak.ui.h:14
 msgid "Windows snapping"
-msgstr "Aggancio finestre"
+msgstr "ウィンドウスナップ"
 
 #: ../data/unitytweak.ui.h:21
 msgid "Window controls"
-msgstr "Controlli finestra"
+msgstr "ウィンドウの操作"
 
 #: ../data/unitytweak.ui.h:23 ../data/system.ui.h:10
 msgid "Desktop Icons"
-msgstr "Icone della scrivania"
+msgstr ""
 
 #: ../data/unitytweak.ui.h:26
 msgid "_Help"
-msgstr "A_iuto"
+msgstr ""
 
 #: ../data/unitytweak.ui.h:27
 msgid " Overview"
-msgstr " Panoramica"
+msgstr ""
 
 #. !/usr/bin/env python3
 #. -*- coding: utf-8 -*-
@@ -1257,168 +1198,163 @@ msgstr " Panoramica"
 #. ! /usr/bin/env python3
 #: ../data/filechooser-theme.ui.h:1
 msgid "Choose a Theme file to install"
-msgstr "Seleziona un tema da installare"
+msgstr "インストールするテーマを選択します"
 
 #: ../data/filechooser-theme.ui.h:2
 msgid "Install Theme"
-msgstr "Installa tema"
+msgstr "テーマのインストール"
 
 #: ../data/system.ui.h:1
 msgid "Items to display:"
-msgstr "Oggetti da visualizzare:"
+msgstr "表示するアイテム:"
 
 #: ../data/system.ui.h:2
 msgid "Home Folder"
-msgstr "Cartella home"
+msgstr "ホーム・フォルダー"
 
 #: ../data/system.ui.h:3
 msgid "Network"
-msgstr "Rete"
+msgstr "ネットワーク"
 
 #: ../data/system.ui.h:4
 msgid "Rubbish Bin"
-msgstr "Cestino"
+msgstr "ゴミ箱"
 
 #: ../data/system.ui.h:5
 msgid "Trash"
-msgstr "Cestino"
+msgstr "ゴミ箱"
 
 #: ../data/system.ui.h:6
 msgid "Mounted Devices"
-msgstr "Dispositivi montati"
+msgstr "マウントされたデバイス"
 
 #: ../data/system.ui.h:7
 msgid "Devices"
-msgstr "Dispositivi"
+msgstr "デバイス"
 
 #: ../data/system.ui.h:9
 msgid "Restore the default configurations for Desktop icons"
-msgstr ""
-"Ripristina la configurazione predefinita per le icone della scrivania"
+msgstr "デスクトップ・アイコンの設定をデフォルトに戻します"
 
 #: ../data/system.ui.h:11
 msgid "Enhance system security by disabling:"
-msgstr "Migliorare la sicurezza del sistema disabilitando:"
+msgstr "無効にしてセキュリティを高める:"
 
 #: ../data/system.ui.h:12
 msgid "Desktop lock"
-msgstr "Bloccare il desktop"
+msgstr "デスクトップのロック"
 
 #: ../data/system.ui.h:13
 msgid "Disable the desktop lock screen."
-msgstr "Disabilita la schermata di blocco del desktop"
+msgstr "デスクトップのスクリーンロックを無効にします。"
 
 #: ../data/system.ui.h:14
 msgid "User log out"
-msgstr "Terminare sessione utente"
+msgstr "ユーザーログアウト"
 
 #: ../data/system.ui.h:15
 msgid "Disable session log out."
-msgstr "Disabilita la funzione per terminare la sessione"
+msgstr "ログアウトを無効にします。"
 
 #: ../data/system.ui.h:16
 msgid "User switching"
-msgstr "Cambiare utente"
+msgstr "ユーザーアカウントの切り替え"
 
 #: ../data/system.ui.h:17
 msgid "Disable fast user switching."
-msgstr "Disabilita la funzione per il cambio rapido di utente"
+msgstr "ユーザーの切り替えを無効にします。"
 
 #: ../data/system.ui.h:18
 msgid "Printing"
-msgstr "Stampa"
+msgstr "印刷"
 
 #: ../data/system.ui.h:19
 msgid "Prevent user access to the system's printers and print setup."
-msgstr ""
-"Impedisce all'utente l'accesso alle stampanti di sistema e la modifica delle "
-"impostazioni di stampa"
+msgstr "ユーザーの印刷とプリンターの追加を禁止します。"
 
 #: ../data/system.ui.h:20
 msgid "Restore the default configurations for Security settings"
-msgstr ""
-"Rispristina la configurazione predefinita delle impostazioni di sicurezza"
+msgstr "セキュリティ設定をデフォルトに戻します"
 
 #: ../data/system.ui.h:22
 msgid "Scrollbars"
-msgstr "Barre di scorrimento"
+msgstr "スクロールバー"
 
 #: ../data/system.ui.h:23
 msgid "Legacy"
-msgstr "Classiche"
+msgstr "昔のスクロールバー"
 
 #: ../data/system.ui.h:24
 msgid "Overlay "
-msgstr "Sovrapposte "
+msgstr "オーバーレイ "
 
 #: ../data/system.ui.h:25
 msgid "Select the behaviour of the overlay scrollbars."
-msgstr "Seleziona il comportamento delle barre di scorrimento sovrapposte"
+msgstr "オーバーレイスクロールバーの動作を選択します。"
 
 #: ../data/system.ui.h:26
 msgid "Default"
-msgstr "Predefinita"
+msgstr "デフォルト（自動）"
 
 #: ../data/system.ui.h:27
 msgid "Overlay with mouse"
-msgstr "Sovrapponi con il mouse"
+msgstr "マウスでオーバーレイ"
 
 #: ../data/system.ui.h:28
 msgid "No overlay"
-msgstr "Nessuna sovrapposizione"
+msgstr "オーバーレイ無し"
 
 #: ../data/system.ui.h:29
 msgid "Behaviour:"
-msgstr "Comportamento:"
+msgstr "動作:"
 
 #: ../data/system.ui.h:30
 msgid "Touch scrolling"
-msgstr "Scorrimento al tocco"
+msgstr "タッチスクロール"
 
 #: ../data/system.ui.h:31
 msgid "Edge"
-msgstr "Bordo"
+msgstr "エッジ"
 
 #: ../data/system.ui.h:32
 msgid "If enabled, edge scrolling is active on touchpads."
-msgstr "Se abilitato, lo scorrimento sul bordo dei touchpad è attivo."
+msgstr "有効ならタッチパッドのエッジでスクロールします。"
 
 #: ../data/system.ui.h:33
 msgid "Two-finger"
-msgstr "Due dita"
+msgstr "2本指"
 
 #: ../data/system.ui.h:34
 msgid "If enabled, two-finger scrolling is active on multitouch touchpads."
-msgstr ""
-"Se abilitato, lo scorrimento con due dita sui touchpad multi-touch è attivo"
+msgstr "有効ならタッチパッドの二本指スクロールを可能にします。"
 
 #: ../data/system.ui.h:35
 msgid "Horizontal scrolling"
-msgstr "Scorrimento orizzontale"
+msgstr "水平方向のスクロール"
 
 #: ../unity-tweak-tool.desktop.in.h:2
 msgid "Configuration frontend for the Unity desktop environment"
-msgstr "Interfaccia per la configurazione dell'ambiente desktop Unity"
+msgstr "Unityデスクトップ環境のための設定フロントエンド"
 
 #: ../unity-tweak-tool.py:43
 msgid "Start in the Unity tab"
-msgstr "Avvia nella scheda \"Unity\""
+msgstr "Unityタブでスタート"
 
 #: ../unity-tweak-tool.py:44
 msgid "Start in the WindowManager tab"
-msgstr "Avvia nella scheda \"Gestore finestre\""
+msgstr "WindowManagerタブでスタート"
 
 #: ../unity-tweak-tool.py:45
 msgid "Start in the appearance tab"
-msgstr "Avvia nella scheda \"Aspetto\""
+msgstr "appearanceタブでスタート"
 
 #: ../unity-tweak-tool.py:46
 msgid "Start in the system tab"
-msgstr "Avvia nella scheda \"Sistema\""
+msgstr "systemタブでスタート"
 
 #: ../unity-tweak-tool.py:47
 msgid "Reset Unity, wiping all configuration changes."
-msgstr "Ripristina Unity cancellando tutte le modifiche alla configurazione"
+msgstr "すべての変更を消してUnityをリセットします。"
 
 #: ../unity-tweak-tool.py:61
 msgid ""
@@ -1430,236 +1366,224 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"ATTENZIONE: si sta per ripristinare la configurazione predefinita di Unity.\n"
-"    Questo comporterà la perdita dell'attuale configurazione.\n"
-"    È normale che durante l'elaborazione si verifichi lo sfarfallio dello "
-"schermo.\n"
-"    Digitare \"yes\" per continuare, qualsiasi altra cosa per annullare.\n"
+"警告: Unityの設定をデフォルトにリセットしようとしています。\n"
+"     設定は失われます。\n"
+"     リセットのあいだに画面がちらつくことがあります。\n"
+"     yesで続行、それ以外は中止します。\n"
 "    "
 
 #: ../unity-tweak-tool.py:67
 msgid "Do you wish to continue?"
-msgstr "Continuare?"
+msgstr "続行しますか?"
 
 #: ../unity-tweak-tool.py:70
 msgid "Please log out and log back in."
-msgstr "Terminare la sessione e accedere nuovamente."
+msgstr "一度ログアウトしてログインしてください。"
 
 #. FIXME : This is guaranteed to fail.
 #: ../data/windowmanager.ui.h:1
 msgid "Zoom"
-msgstr "Ingrandimento"
+msgstr "ズーム"
 
 #: ../data/windowmanager.ui.h:2
 msgid "Enable desktop zoom?"
-msgstr "Abilita/Disabilita l'ingrandimento del desktop"
+msgstr "デスクトップのズームを有効にしますか?"
 
 #: ../data/windowmanager.ui.h:3
 msgid "Desktop magnification:"
-msgstr "Ingrandimento del desktop:"
+msgstr "デスクトップのズーム:"
 
 #: ../data/windowmanager.ui.h:4
 msgid "List of keyboard shortcuts for zoom"
-msgstr "Elenco delle scorciatoie da tastiera per l'ingrandimento del desktop"
+msgstr "ズームのショートカット"
 
 #: ../data/windowmanager.ui.h:7
 msgid "Hardware acceleration"
-msgstr "Accelerazione hardware"
+msgstr "ハードウェアアクセラレーション"
 
 #: ../data/windowmanager.ui.h:8
 msgid "Select the level of texture rendering done by OpenGL"
-msgstr "Seleziona il livello di rendering della texture eseguito da OpenGL"
+msgstr "OpenGLがテクスチャ・レンダリングを行うレベルを設定します。"
 
 #: ../data/windowmanager.ui.h:9
 msgid "Texture quality: "
-msgstr "Qualità della texture: "
+msgstr "テクスチャの質: "
 
 #: ../data/windowmanager.ui.h:10
 msgid "Fast"
-msgstr "Veloce"
+msgstr "速い"
 
 #: ../data/windowmanager.ui.h:11
 msgid "Good"
-msgstr "Buona"
+msgstr "良"
 
 #: ../data/windowmanager.ui.h:12
 msgid "Best"
-msgstr "Ottima"
+msgstr "最良"
 
 #: ../data/windowmanager.ui.h:13
 msgid "Animations"
-msgstr "Animazioni"
+msgstr "ウィンドウのアニメーション"
 
 #: ../data/windowmanager.ui.h:14
 msgid "Minimize:"
-msgstr "Minimizzazione:"
+msgstr "最小化:"
 
 #: ../data/windowmanager.ui.h:15
 msgid "Unminimize:"
-msgstr "Massimizzazione:"
+msgstr "復元:"
 
 #: ../data/windowmanager.ui.h:16
 msgid "Window Animations:"
-msgstr "Animazioni finestra:"
+msgstr "ウィンドウアニメーション:"
 
 #: ../data/windowmanager.ui.h:17
 msgid "Keyboard shortcuts"
-msgstr "Scorciatoie da tastiera"
+msgstr "ショートカット"
 
 #: ../data/windowmanager.ui.h:18
 msgid "List of window manager keyboard shortcuts"
-msgstr "Elenco delle scorciatoie da tastiera per il gestore finestre"
+msgstr "ウィンドウ・マネージャーのショートカットリスト"
 
 #: ../data/windowmanager.ui.h:20
 msgid "Restore default window manager settings"
-msgstr "Ripristina le impostazioni predefinite del gestore finestre"
+msgstr "ウィンドウ・マネージャーの設定をデフォルトに戻します"
 
 #: ../data/windowmanager.ui.h:22
 msgid "Enable the window manager to draw multiple workspaces"
-msgstr ""
-"Abilita/DIsabilita il gestore finestre per aggiungere spazi di lavoro "
-"multipli"
+msgstr "有効にすると複数のワークスペースが使えます"
 
 #: ../data/windowmanager.ui.h:23
 msgid "Workspace switcher:"
-msgstr "Selettore spazio di lavoro:"
+msgstr "ワークスペーススイッチャー"
 
 #: ../data/windowmanager.ui.h:24
 msgid "Select the outline colour of the current workspace in the overview"
-msgstr ""
-"Seleziona il colore del contorno per lo spazio di lavoro corrente "
-"nell'anteprima"
+msgstr "現在のワークスペースを表示する外枠の色を選択します"
 
 #: ../data/windowmanager.ui.h:25
 msgid "Current workspace colour:"
-msgstr "Colore dello spazio di lavoro corrente:"
+msgstr "現在のワークスペースの色:"
 
 #: ../data/windowmanager.ui.h:26
 msgid "Select the number of vertical workspaces"
-msgstr "Seleziona il numero degli spazi di lavoro verticali"
+msgstr "縦方向のワークスペースの数を選択します"
 
 #: ../data/windowmanager.ui.h:27
 msgid "Vertical workspaces:"
-msgstr "Spazi di lavoro verticali:"
+msgstr "垂直ワークスペース:"
 
 #: ../data/windowmanager.ui.h:28
 msgid "Select the number of horizontal workspaces"
-msgstr "Seleziona il numero degli spazi di lavoro orizzontali"
+msgstr "横方向のワークスペースの数を選択します"
 
 #: ../data/windowmanager.ui.h:29
 msgid "Horizontal workspaces:"
-msgstr "Spazi di lavoro orizzontali:"
+msgstr "水平ワークスペース:"
 
 #: ../data/windowmanager.ui.h:30
 msgid "Workspace shortcuts"
-msgstr "Scorciatoie spazio di lavoro"
+msgstr "ワークスペースのショートカット"
 
 #: ../data/windowmanager.ui.h:31
 msgid "List of workspace management keyboard shortcuts"
-msgstr ""
-"Elenco delle scorciatoie da tastiera per la gestione degli spazi di lavoro"
+msgstr "ワークスペースのショートカットリスト"
 
 #: ../data/windowmanager.ui.h:32
 msgid "Restore default workspace configuration"
-msgstr "Ripristina la configurazione predefinita per gli spazi di lavoro"
+msgstr "ワークスペースの設定をデフォルトに戻します"
 
 #: ../data/windowmanager.ui.h:33
 msgid "Workspace Settings"
-msgstr "Impostazioni spazio di lavoro"
+msgstr ""
 
 #: ../data/windowmanager.ui.h:34
 msgid "Enable the window spread?"
-msgstr "Abilitare l'espansione delle finestre?"
+msgstr "ウィンドウスプレッドを有効にしますか?"
 
 #: ../data/windowmanager.ui.h:35
 msgid "Window spread:"
-msgstr "Espansione finestre:"
+msgstr "ウィンドウスプレッド:"
 
 #: ../data/windowmanager.ui.h:36
 msgid "Select the space between window in the spead overview in pixels"
-msgstr ""
-"Seleziona lo spazio in pixel tra le finestre nella visualizzazione scalata"
+msgstr "ウィンドウ間のスペースをピクセルで指定します"
 
 #: ../data/windowmanager.ui.h:37
 msgid "Spacing:"
-msgstr "Spaziatura:"
+msgstr "スペース:"
 
 #: ../data/windowmanager.ui.h:38
 msgid "Icons on previews"
-msgstr "Icone nell'anteprima"
+msgstr "プレビューのアイコン"
 
 #: ../data/windowmanager.ui.h:39
 msgid ""
 "When enabled, show an application's icon on the window preview in the window "
 "spread"
-msgstr ""
-"Se abilitato, mostra un'icona dell'applicazione nell'anteprima delle "
-"finestre nella visualizzazione scalata"
+msgstr "有効にするとウィンドウにアプリケーションアイコンを表示します"
 
 #: ../data/windowmanager.ui.h:40
 msgid "Click to access desktop"
-msgstr "Fare clic per accedere alla scrivania"
+msgstr "クリックでデスクトップを表示"
 
 #: ../data/windowmanager.ui.h:41
 msgid ""
 "When enabled, clicking on the desktop in the window spread will display the "
 "desktop"
-msgstr ""
-"Se abilitato, facendo clic sul desktop nella visualizzazione scalata verrà "
-"mostrata la scrivania"
+msgstr "有効にするとウィンドウのない場所のクリックで全ウィンドウが非表示になります"
 
 #: ../data/windowmanager.ui.h:42
 msgid "Window spread shortcuts"
-msgstr "Scorciatoie per l'espansione delle finestre"
+msgstr "ウィンドウスプレッド・ショートカット"
 
 #: ../data/windowmanager.ui.h:43
 msgid "List of window spread shortcuts"
-msgstr "Elenco di scorciatoie per l'espansione delle finestre"
+msgstr "ウィンドウスプレッド・ショートカットのリスト"
 
 #: ../data/windowmanager.ui.h:44
 msgid "Restore default window spread settings"
-msgstr "Ripristina i valori predefiniti per l'espansione delle finestre"
+msgstr "ウィンドウスプレッド設定をデフォルトに戻します"
 
 #: ../data/windowmanager.ui.h:45
 msgid "Window spread"
-msgstr "Espansione finestre"
+msgstr ""
 
 #: ../data/windowmanager.ui.h:46
 msgid "Window snapping:"
-msgstr "Aggancio finestra:"
+msgstr "ウィンドウスナップ:"
 
 #: ../data/windowmanager.ui.h:47
 msgid "Fill colour:"
-msgstr "Colore riempimento:"
+msgstr "内側の色:"
 
 #: ../data/windowmanager.ui.h:48
 msgid "Outline colour:"
-msgstr "Colore contorno:"
+msgstr "外枠の色:"
 
 #: ../data/windowmanager.ui.h:50
 msgid "Window snapping"
-msgstr "Aggancio finestra"
+msgstr ""
 
 #: ../data/windowmanager.ui.h:51
 msgid "Hotcorners:"
-msgstr "Angoli attivi:"
+msgstr "ホットコーナー:"
 
 #: ../data/windowmanager.ui.h:53
 msgid "Focus Behaviour"
-msgstr "Comportmento focus"
+msgstr "フォーカス動作"
 
 #: ../data/windowmanager.ui.h:54
 msgid "Auto-raise delay:"
-msgstr "Ritardo del sollevamento automatico:"
+msgstr "最前面にするディレイ:"
 
 #: ../data/windowmanager.ui.h:55
 msgid "Set the delay for raising newly focused windows."
-msgstr ""
-"Imposta il ritardo per il sollevamento delle finestre che ricevono il focus"
+msgstr "最前面にするディレイを設定します。"
 
 #: ../data/windowmanager.ui.h:56
 msgid "Focus mode:"
-msgstr "Modalità focus:"
+msgstr "フォーカスモード:"
 
 #: ../data/windowmanager.ui.h:57
 msgid ""
@@ -1668,111 +1592,104 @@ msgid ""
 "enters the window, and \"mouse\" means windows are focused when the mouse "
 "enters the window and unfocused when the mouse leaves the window."
 msgstr ""
-"Seleziona la modalità per il focus delle finestre; \"Clic\" significa che è "
-"necessario fare clic sulle finestre affinché queste ottengano il focus, "
-"\"Lento\" significa che il focus è ottenuto quando il puntatore del mouse "
-"entra nell'area della finestra, \"Mouse\" significa che il focus è ottenuto "
-"quando il puntatore del mouse entra nell'area della finestra e viene perso "
-"quando il puntatore lascia l'area."
+"フォーカスモードの選択; "
+"クリックはウィンドウをクリック、スロッピーはマウスがウィンドウに入ると切り替え、マウスはマウスがウィンドウ上にあるときだけフォーカスします。"
 
 #: ../data/windowmanager.ui.h:58
 msgid "Click"
-msgstr "Clic"
+msgstr "クリック(Click)"
 
 #: ../data/windowmanager.ui.h:59
 msgid "Sloppy"
-msgstr "Lento"
+msgstr "スロッピー(Sloppy)"
 
 #: ../data/windowmanager.ui.h:60
 msgid "Mouse"
-msgstr "Mouse"
+msgstr "マウス(Mouse)"
 
 #: ../data/windowmanager.ui.h:61
 msgid "If enabled, windows that take focus will be automatically raised."
-msgstr ""
-"Se abilitato, le finestre che ottengono il focus verranno automaticamente "
-"sollevate"
+msgstr "有効ならウィンドウを自動的に最前面にします。"
 
 #: ../data/windowmanager.ui.h:62
 msgid "Auto-raise:"
-msgstr "Sollevare automaticamente:"
+msgstr "自動的に最前面:"
 
 #: ../data/windowmanager.ui.h:63
 msgid "Titlebar Actions"
-msgstr "Azioni barra del titolo"
+msgstr "タイトルバーでの操作"
 
 #: ../data/windowmanager.ui.h:64
 msgid "Double click:"
-msgstr "Doppio-clic"
+msgstr "ダブルクリック:"
 
 #: ../data/windowmanager.ui.h:65
 msgid "Select the titlebar's double click action."
-msgstr "Seleziona l'azione da eseguire al doppio-clic sulla barra del titolo"
+msgstr "タイトルバーでのダブルクリックの動作を選択します。"
 
 #: ../data/windowmanager.ui.h:66
 msgid "Toggle Shade"
-msgstr "Attiva/Disattiva sfumatura"
+msgstr "シェード"
 
 #: ../data/windowmanager.ui.h:67
 msgid "Maximize"
-msgstr "Massimizza"
+msgstr "最大化"
 
 #: ../data/windowmanager.ui.h:68
 msgid "Horizontal expand"
-msgstr "Espandi orizzontalmente"
+msgstr "横に拡大"
 
 #: ../data/windowmanager.ui.h:69
 msgid "Vertical expand"
-msgstr "Espandi verticalmente"
+msgstr "縦に拡大"
 
 #: ../data/windowmanager.ui.h:70
 msgid "Minimize"
-msgstr "Minimizza"
+msgstr "最小化"
 
 #: ../data/windowmanager.ui.h:71
 msgid "No action"
-msgstr "Nessuna azione"
+msgstr "何もしない"
 
 #: ../data/windowmanager.ui.h:72
 msgid "Lower"
-msgstr "Abbassa"
+msgstr "背面に移動"
 
 #: ../data/windowmanager.ui.h:73
 msgid "Menu"
-msgstr "Menù"
+msgstr "メニュー表示"
 
 #: ../data/windowmanager.ui.h:74
 msgid "Middle click:"
-msgstr "Clic centrale:"
+msgstr "中クリック:"
 
 #: ../data/windowmanager.ui.h:75
 msgid "Select the titlebar's middle click action."
-msgstr ""
-"Seleziona l'azione da eseguire al clic centrale sulla barra del titolo"
+msgstr "タイトルバーでの中クリックの動作を選択します。"
 
 #: ../data/windowmanager.ui.h:76
 msgid "Toggle shade"
-msgstr "Attiva/Disattiva sfumatura"
+msgstr "シェード"
 
 #: ../data/windowmanager.ui.h:77
 msgid "Right click:"
-msgstr "Clic destro:"
+msgstr "右クリック:"
 
 #: ../data/windowmanager.ui.h:78
 msgid "Select the titlebar's right click action."
-msgstr "Seleziona l'azione da eseguire al clic destro sulla barra del titolo"
+msgstr "タイトルバーでの右クリックの動作を選択します。"
 
 #: ../data/windowmanager.ui.h:79
 msgid "Resizing"
-msgstr "Ridimensionamento"
+msgstr "サイズの変更"
 
 #: ../data/windowmanager.ui.h:80
 msgid "Restore the default settings for the additional options."
-msgstr "Ripristina le impostazioni predefinite per le opzioni aggiuntive"
+msgstr "additionalの設定をデフォルトに戻します。"
 
 #: ../data/windowmanager.ui.h:82
 msgid "Close window"
-msgstr "Chiudi finestra"
+msgstr "ウィンドウを閉じる"
 
 #: ../data/windowmanager.ui.h:83
 msgid "Alt+F4"
@@ -1780,23 +1697,23 @@ msgstr "Alt+F4"
 
 #: ../data/windowmanager.ui.h:84
 msgid "Move window"
-msgstr "Muovi finestra"
+msgstr "ウィンドウの移動"
 
 #: ../data/windowmanager.ui.h:85
 msgid "Alt+mouse button 1"
-msgstr "Alt+pulsante 1 del muose"
+msgstr "Alt+マウスボタン 1"
 
 #: ../data/windowmanager.ui.h:86
 msgid "Show desktop"
-msgstr "Mostra la scrivania"
+msgstr "デスクトップの表示"
 
 #: ../data/windowmanager.ui.h:87
 msgid "Super+D"
-msgstr "Ctrl+Super+D"
+msgstr "Super+D"
 
 #: ../data/windowmanager.ui.h:88
 msgid "Zoom in"
-msgstr "Aumenta ingrandimento"
+msgstr "ズームイン"
 
 #: ../data/windowmanager.ui.h:89
 msgid "Super++"
@@ -1804,7 +1721,7 @@ msgstr "Super++"
 
 #: ../data/windowmanager.ui.h:90
 msgid "Zoom out"
-msgstr "Riduci ingrandimento"
+msgstr "ズームアウト"
 
 #: ../data/windowmanager.ui.h:91
 msgid "Super+-"
@@ -1812,7 +1729,7 @@ msgstr "Super+-"
 
 #: ../data/windowmanager.ui.h:92
 msgid "Start windows spread"
-msgstr "Avvia finestre scalate"
+msgstr "ウィンドウスプレッド"
 
 #: ../data/windowmanager.ui.h:93
 msgid "Super+W"
@@ -1820,11 +1737,11 @@ msgstr "Super+W"
 
 #: ../data/windowmanager.ui.h:94
 msgid "Start windows spread for all windows"
-msgstr "Scala tutte le finestre aperte"
+msgstr "全ウィンドウのスプレッド"
 
 #: ../data/windowmanager.ui.h:96
 msgid "Start workspace switcher"
-msgstr "Avvia selettore spazio di lavoro"
+msgstr "ワークスペーススイッチャーの起動"
 
 #: ../data/windowmanager.ui.h:97
 msgid "Super+S"
@@ -1832,252 +1749,244 @@ msgstr "Super+S"
 
 #: ../data/windowmanager.ui.h:98
 msgid "Toggle Desktop"
-msgstr "Commuta desktop"
+msgstr "デスクトップの切り替え"
 
 #: ../data/windowmanager.ui.h:99
 msgid "Show Workspaces"
-msgstr "Mostra spazi di lavoro"
+msgstr "ワークスペースを表示する"
 
 #: ../data/windowmanager.ui.h:100
 msgid "Window Spread"
-msgstr "Espansione finestre"
+msgstr "ウィンドウスプレッド"
 
 #: ../data/windowmanager.ui.h:101
 msgid "Spread all Windows"
-msgstr "Scala tutte le finestre"
+msgstr "全ウィンドウのスプレッド"
 
 #: ../data/windowmanager.ui.h:102
 msgid "Do Nothing"
-msgstr "Nessuna azione"
+msgstr "何もしない"
 
 #: ../data/windowmanager.ui.h:103
 msgid "Bottom Left Corner"
-msgstr "Angolo inferiore sinistro"
+msgstr "左下コーナー"
 
 #: ../data/windowmanager.ui.h:104
 msgid "Bottom Half"
-msgstr "Metà inferiore"
+msgstr "下半分"
 
 #: ../data/windowmanager.ui.h:105
 msgid "Bottom Right Corner"
-msgstr "Angolo inferiore destro"
+msgstr "右下コーナー"
 
 #: ../data/windowmanager.ui.h:106
 msgid "Left Half"
-msgstr "Metà sinistra"
+msgstr "左半分"
 
 #: ../data/windowmanager.ui.h:107
 msgid "Fill Screen"
-msgstr "Riempi schermo"
+msgstr "フルスクリーン"
 
 #: ../data/windowmanager.ui.h:108
 msgid "Right Half"
-msgstr "Metà destra"
+msgstr "右半分"
 
 #: ../data/windowmanager.ui.h:109
 msgid "Top Left Corner"
-msgstr "Angolo superiore sinistro"
+msgstr "左上コーナー"
 
 #: ../data/windowmanager.ui.h:110
 msgid "Top Half"
-msgstr "Metà superiore"
+msgstr "上半分"
 
 #: ../data/windowmanager.ui.h:111
 msgid "Top Right Corner"
-msgstr "Angolo superiore destro"
+msgstr "右上コーナー"
+
+#~ msgid "Layout:"
+#~ msgstr "レイアウト:"
+
+#~ msgid "Custom"
+#~ msgstr "カスタム"
+
+#~ msgid "Close, window title, maximize"
+#~ msgstr "閉じる、ウインドウタイトル、最大化"
+
+#~ msgid "Close, minimize, window title"
+#~ msgstr "閉じる、最小化、ウインドウタイトル"
+
+#~ msgid "Current layout"
+#~ msgstr "現在のレイアウト"
+
+#~ msgid "Close, maximize, window title"
+#~ msgstr "閉じる、最大化、ウインドウタイトル"
+
+#~ msgid "Close button only"
+#~ msgstr "閉じるボタンのみ"
 
 #~ msgid ""
 #~ "When enabled, screen updates are performed when the monitor is in vertical "
 #~ "blank mode."
-#~ msgstr ""
-#~ "Se abilitato, gli aggiornamenti dello schermo saranno eseguiti quando il "
-#~ "monitor è in modalità VBlank"
-
-#~ msgid "Random"
-#~ msgstr "Casuale"
-
-#~ msgid "Curved Fold"
-#~ msgstr "Ripiegatura curva"
-
-#~ msgid "Fade"
-#~ msgstr "Dissolvenza"
-
-#~ msgid "Glide 1"
-#~ msgstr "Planata 1"
-
-#~ msgid "Glide 2"
-#~ msgstr "Planata 2"
-
-#~ msgid "Horizontal Folds"
-#~ msgstr "Ripiegatura orizzontale"
-
-#~ msgid "Magic Lamp"
-#~ msgstr "Lampada magica"
-
-#~ msgid "Magic Lamp Wavy"
-#~ msgstr "Lampada magica ondulata"
-
-#~ msgid "Sidekick"
-#~ msgstr "Vortice"
-
-#~ msgid "Use the default window button layout."
-#~ msgstr "Usa la disposizione predefinita per i pulsanti della finestra"
-
-#~ msgid "Layout:"
-#~ msgstr "Disposizione:"
-
-#~ msgid "Close, minimize, window title"
-#~ msgstr "Chiudi, minimizza, titolo della finestra"
-
-#~ msgid "Current layout"
-#~ msgstr "Dispozione attuale"
-
-#~ msgid "Select a custom window controls layout."
-#~ msgstr ""
-#~ "Seelziona una disposizione personalizzata per i pulsanti della finestra"
-
-#~ msgid "Close, maximize, window title"
-#~ msgstr "Chiudi, massimizza, titolo della finestra"
-
-#~ msgid "Close button only"
-#~ msgstr "Solo pulsante «Chiudi»"
-
-#~ msgid "Use a custom window button layout."
-#~ msgstr "Usa una disposizione personalizzata per i pulsanti della finestra"
-
-#~ msgid "Close, window title, maximize"
-#~ msgstr "Chiudi, titolo della finestra, massimizza"
-
-#~ msgid "Transparency:"
-#~ msgstr "Trasparenza:"
-
-#~ msgid "Enable launcher transparency?"
-#~ msgstr "Abilita la trasparenza del Launcher"
-
-#~ msgid "Enable transparency for the panel?"
-#~ msgstr "Abilita la trasparenza del pannello"
+#~ msgstr "有効ならモニターが垂直ブランクモードの時に画面が更新されます。"
 
 #~ msgid "Update display during VBlank"
-#~ msgstr "Aggiornare lo schermo durante il VBlank"
+#~ msgstr "垂直ブランク同期"
 
-#~ msgid "Show the settings for window spread behaviour"
-#~ msgstr "Mostra le impostazioni per l'espansione delle finestre"
+#~ msgid "Sidekick"
+#~ msgstr "サイドキック"
 
-#~ msgid "Preauthorized domains:"
-#~ msgstr "Domini pre-autorizzatati:"
+#~ msgid "Magic Lamp"
+#~ msgstr "魔法のランプ"
 
-#~ msgid "Show the Unity Panel settings"
-#~ msgstr "Mostra le impostazioni per il pannello di Unity"
+#~ msgid "Magic Lamp Wavy"
+#~ msgstr "ウェーブした魔法のランプ"
+
+#~ msgid "Random"
+#~ msgstr "ランダム"
+
+#~ msgid "Curved Fold"
+#~ msgstr "折り曲げ"
+
+#~ msgid "Fade"
+#~ msgstr "フェード"
+
+#~ msgid "Glide 1"
+#~ msgstr "滑空(Glide) 1"
+
+#~ msgid "Glide 2"
+#~ msgstr "滑空(Glide) 2"
+
+#~ msgid "Horizontal Folds"
+#~ msgstr "水平の折りたたみ"
 
 #~ msgid "Show the Unity Dash settings"
-#~ msgstr "Mostra le impostazioni per la Dash di Unity"
+#~ msgstr "Dashの設定"
 
 #~ msgid "Show the Unity launcher settings"
-#~ msgstr "Mostra le impostazioni per il Launche di Unity"
+#~ msgstr "ランチャーの設定"
 
 #~ msgid "Show the settings for the security."
-#~ msgstr "Mostra le impostazioni per la sicurezza."
+#~ msgstr "セキュリティの設定"
+
+#~ msgid "Show the settings for window spread behaviour"
+#~ msgstr "ウィンドウスプレッドの設定"
 
 #~ msgid "Show the settings for the workspace switcher"
-#~ msgstr "Mostra le impostazioni per il selettore dello spazio di lavoro"
+#~ msgstr "ワークスペースの設定"
 
 #~ msgid "Show the general settings for the window manager"
-#~ msgstr "Mostra le impostazioni generiche per il gestore finestre"
-
-#~ msgid "Show the Unity Switcher settings"
-#~ msgstr "Mostra le impostazioni per il selettore di Unity"
+#~ msgstr "全般の設定"
 
 #~ msgid "Show the additional Unity settings"
-#~ msgstr "Mostra le impostazioni aggiuntive di Unity"
+#~ msgstr "その他の設定"
 
-#~ msgid "Show the settings for the icon themes"
-#~ msgstr "Mostra le impostazioni per i temi delle icone"
+#~ msgid "Show the Unity Panel settings"
+#~ msgstr "パネルの設定"
 
-#~ msgid "Show the settings for the cursor themes"
-#~ msgstr "Mostra le impostazioni per i temi del puntatore"
+#~ msgid "Show the Unity Switcher settings"
+#~ msgstr "スイッチャーの設定"
 
-#~ msgid "Show the settings for the global system themes"
-#~ msgstr "Mostra le impostazioni per i temi dell'intero sistema"
+#~ msgid "Show the settings for window snapping behaviour"
+#~ msgstr "ウィンドウスナップの設定"
+
+#~ msgid "Show the settings for hotcorner behaviour"
+#~ msgstr "ホットコーナーの設定"
 
 #~ msgid "Show the additional settings pane."
-#~ msgstr "Mostra il pannello delle impostazioni aggiuntive"
+#~ msgstr "その他の設定"
 
-#~ msgid "Show the settings for the desktop icons"
-#~ msgstr "Mostra le impostazioni per le icone della scrivania"
-
-#~ msgid "Show the settings for the scrolling."
-#~ msgstr "Mostra le impostazioni per lo scorrimento della finestra"
+#~ msgid "Show the settings for the global system themes"
+#~ msgstr "全体的なテーマの設定"
 
 #~ msgid "Show the settings for the system-wide fonts"
-#~ msgstr "Mostra le impostazioni per i tipi di carattere dell'intero sistema"
+#~ msgstr "システムフォントの設定"
 
-#~ msgid "Show a shortcut to \"Trash\" on the desktop"
-#~ msgstr "Mostra sulla scrivania un collegamento al cestino"
+#~ msgid "Show the settings for the scrolling."
+#~ msgstr "スクロールの設定"
 
-#~ msgid "Icons on desktop:"
-#~ msgstr "Icone sulla scrivania:"
+#~ msgid "Show the settings for the icon themes"
+#~ msgstr "アイコンテーマの設定"
 
-#~ msgid "Show a shortcut to &quot;Home Folder&quot; on the desktop"
-#~ msgstr "Mostra sulla scrivania un collegamento alla cartella «Home»"
+#~ msgid "Show the settings for the cursor themes"
+#~ msgstr "カーソルテーマの設定"
 
-#~ msgid "Show a shortcut to \"Home Folder\" on the desktop"
-#~ msgstr "Mostra sulla scrivania un collegamento alla cartella «Home»"
+#~ msgid "Show the settings for the desktop icons"
+#~ msgstr "デスクトップアイコンの設定"
 
-#~ msgid "A list of icons to display on the desktop"
-#~ msgstr "Un elenco di icone da visualizzare sulla scrivania"
+#~ msgid "Fade Dash & Slide"
+#~ msgstr "Dashのフェードとスライド"
 
-#~ msgid "Display:"
-#~ msgstr "Visualizza:"
+#~ msgid "Fade & slide"
+#~ msgstr "フェードとスライド"
 
-#~ msgid "Show a shortcut to &quot;Trash&quot; on the desktop"
-#~ msgstr "Mostra sulla scrivania un collegamento al cestino"
+#~ msgid "Transparency:"
+#~ msgstr "透過:"
 
-#~ msgid "Show a shortcut to &quot;Network&quot; on the desktop"
-#~ msgstr "Mostra sulla scrivania un collegamento alle risorse di rete"
+#~ msgid "Enable launcher transparency?"
+#~ msgstr "ランチャーを透過しますか?"
 
-#~ msgid "Show a shortcut to \"Network\" on the desktop"
-#~ msgstr "Mostra sulla scrivania un collegamento alle risorse di rete"
+#~ msgid "Enable transparency for the panel?"
+#~ msgstr "パネルを透過しますか?"
 
-#~ msgid "Show a shortcut to &quot;Devices&quot; on the desktop"
-#~ msgstr "Mostra sulla scrivania un collegamento ai dispositivi montati"
+#~ msgid ""
+#~ "Enable prompts for webapp integration when visitiing supported websites?"
+#~ msgstr "有効ならサポートしているウェブサイトを訪れた時にWebappのインストールを促します。"
 
-#~ msgid "Show a shortcut to \"Devices\" on the desktop"
-#~ msgstr "Mostra sulla scrivania un collegamento ai dispositivi montati"
+#~ msgid "Preauthorized domains:"
+#~ msgstr "公認ドメイン:"
 
 #~ msgid "Proceed"
-#~ msgstr "Procedi"
+#~ msgstr "次へ"
 
 #~ msgid "Cancel"
-#~ msgstr "Annulla"
+#~ msgstr "キャンセル"
 
 #~ msgid ""
 #~ "This will reset all your Unity settings.\n"
 #~ "Are you sure you want to proceed?"
-#~ msgstr ""
-#~ "Questo ripristinerà tutte le impostazioni di Unity.\n"
-#~ "Continuare?"
+#~ msgstr "本当にUnityのすべての設定をリセットしますか?"
 
 #~ msgid "Reset Unity settings?"
-#~ msgstr "Ripristinare le impostazioni di Unity?"
+#~ msgstr "Unityの設定をリセットしますか?"
 
-#~ msgid "Show the settings for window snapping behaviour"
-#~ msgstr ""
-#~ "Mostra le impostazioni del comportamento per l'aggancio delle finestre"
+#~ msgid "Select a custom window controls layout."
+#~ msgstr "配置を選択します。"
 
-#~ msgid "Show the settings for hotcorner behaviour"
-#~ msgstr "Mostra le impostazioni per il comportamento degli angoli attivi"
+#~ msgid "Use the default window button layout."
+#~ msgstr "デフォルトのボタン配置を使います。"
 
-#~ msgid ""
-#~ "Enable prompts for webapp integration when visitiing supported websites?"
-#~ msgstr ""
-#~ "Indica se abilitare gli avvisi per l'integrazione delle applicazioni web "
-#~ "quando vengono visitati siti web supportati"
+#~ msgid "Use a custom window button layout."
+#~ msgstr "カスタムのボタン配置を使います。"
 
-#~ msgid "Fade Dash & Slide"
-#~ msgstr "Dissolvenza della Dash e scorrimento"
+#~ msgid "Icons on desktop:"
+#~ msgstr "デスクトップ・アイコン:"
 
-#~ msgid "Fade & slide"
-#~ msgstr "Dissolvenza e scorrimento"
+#~ msgid "Show a shortcut to \"Trash\" on the desktop"
+#~ msgstr "ゴミ箱を表示"
 
-#~ msgid "Custom"
-#~ msgstr "Personalizzata"
+#~ msgid "Show a shortcut to &quot;Devices&quot; on the desktop"
+#~ msgstr "デバイスを表示"
+
+#~ msgid "Show a shortcut to &quot;Home Folder&quot; on the desktop"
+#~ msgstr "ホームアイコンを表示"
+
+#~ msgid "Show a shortcut to \"Home Folder\" on the desktop"
+#~ msgstr "ホームアイコンを表示"
+
+#~ msgid "A list of icons to display on the desktop"
+#~ msgstr "デスクトップアイコンのリスト"
+
+#~ msgid "Display:"
+#~ msgstr "表示:"
+
+#~ msgid "Show a shortcut to &quot;Trash&quot; on the desktop"
+#~ msgstr "ゴミ箱を表示"
+
+#~ msgid "Show a shortcut to &quot;Network&quot; on the desktop"
+#~ msgstr "ネットワークアイコンを表示"
+
+#~ msgid "Show a shortcut to \"Network\" on the desktop"
+#~ msgstr "ネットワークアイコンを表示"
+
+#~ msgid "Show a shortcut to \"Devices\" on the desktop"
+#~ msgstr "デバイスを表示"

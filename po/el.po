@@ -1,4 +1,4 @@
-# French translation for unity-tweak-tool
+# Greek translation for unity-tweak-tool
 # Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
 # This file is distributed under the same license as the unity-tweak-tool package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: unity-tweak-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2013-09-15 20:49+0530\n"
-"PO-Revision-Date: 2013-08-30 11:28+0000\n"
-"Last-Translator: Sylvie Gallet <Unknown>\n"
-"Language-Team: French <fr@li.org>\n"
+"PO-Revision-Date: 2013-05-02 13:52+0000\n"
+"Last-Translator: Nik.Th. <Unknown>\n"
+"Language-Team: Greek <el@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,27 +19,27 @@ msgstr ""
 
 #: ../UnityTweakTool/utils/unityreset.py:41
 msgid "Initialising Unity reset"
-msgstr ""
+msgstr "Αρχικοποίηση επαναφοράς Unity"
 
 #: ../UnityTweakTool/utils/unityreset.py:42
 msgid "Killing Unity and Compiz"
-msgstr ""
+msgstr "Βίαιος τερματισμός Unity και Compiz"
 
 #: ../UnityTweakTool/utils/unityreset.py:45
 msgid "Resetting compiz plugins"
-msgstr ""
+msgstr "Επαναφορά προσθέτων του compiz"
 
 #: ../UnityTweakTool/utils/unityreset.py:47
 msgid "Resetting more compiz plugins"
-msgstr ""
+msgstr "Επαναφορά περισσότερων προσθέτων του compiz"
 
 #: ../UnityTweakTool/utils/unityreset.py:49
 msgid "Resetting Unity settings"
-msgstr "Remise à zéro des réglages d'Unity"
+msgstr "Επαναφορά ρυθμίσεων Unity"
 
 #: ../UnityTweakTool/utils/unityreset.py:51
 msgid "Reset complete. Reloading unity"
-msgstr "Remise à zéro terminée. Rechargement d'Unity"
+msgstr "Η επαναφορά ολοκληρώθηκε. Επαναφόρτωση Unity"
 
 #. ! /usr/bin/env python3
 #: ../data/errordialog.ui.h:1
@@ -52,188 +52,188 @@ msgstr ""
 
 #: ../data/appearance.ui.h:1
 msgid "Available themes"
-msgstr "Thèmes disponibles"
+msgstr "Διαθέσιμα θέματα"
 
 #: ../data/appearance.ui.h:2
 msgid "List of GTK Themes"
-msgstr "Liste de thèmes GTK"
+msgstr "Λίστα θεμάτων GTK"
 
 #: ../data/appearance.ui.h:3
 msgid "GTK Theme"
-msgstr "Thème GTK"
+msgstr "Θέμα GTK"
 
 #: ../data/appearance.ui.h:4
 msgid "List of Window decoration themes"
-msgstr "Liste des thèmes de décoration de fenêtres"
+msgstr "Λίστα θεμάτων διακόσμησης παραθύρων"
 
 #: ../data/appearance.ui.h:5
 msgid "Window decoration theme"
-msgstr "Thème de décoration de fenêtre"
+msgstr "Θέμα διακόσμησης παραθύρων"
 
 #: ../data/appearance.ui.h:6 ../data/unity.ui.h:83 ../data/system.ui.h:8
 #: ../data/windowmanager.ui.h:19
 msgid "Restore defaults"
-msgstr "Restaurer les valeurs par défaut"
+msgstr "Επαναφορά προεπιλογών"
 
 #: ../data/appearance.ui.h:7
 msgid "Restore system's default theme configurations"
-msgstr "Restaurer les configurations de thème du système par défaut"
+msgstr "Επαναφορά αρχικών ρυθμίσεων θέματος"
 
 #: ../data/appearance.ui.h:8 ../data/overview.ui.h:18
 #: ../data/unitytweak.ui.h:17
 msgid "Theme"
-msgstr "Thème"
+msgstr "Θέμα"
 
 #: ../data/appearance.ui.h:9
 msgid "List of icon themes"
-msgstr "Liste des thèmes d'icônes"
+msgstr "Λίστα θεμάτων εικονιδίων"
 
 #: ../data/appearance.ui.h:10
 msgid "Icon theme"
-msgstr "Thème d'icônes"
+msgstr "Θέμα εικονιδίων"
 
 #: ../data/appearance.ui.h:11
 msgid "Restore system's default icon theme configurations"
-msgstr "Restaurer les configurations de thème d'icône du système par défaut"
+msgstr "Επαναφορά αρχικών ρυθμίσεων θέματος εικονιδίων"
 
 #: ../data/appearance.ui.h:12 ../data/overview.ui.h:19 ../data/unity.ui.h:64
 #: ../data/unitytweak.ui.h:18
 msgid "Icons"
-msgstr "Icônes"
+msgstr "Εικονίδια"
 
 #: ../data/appearance.ui.h:13
 msgid "List of cursor themes"
-msgstr "Liste des thèmes de curseurs"
+msgstr "Λίστα θεμάτων δεικτών ποντικιού"
 
 #: ../data/appearance.ui.h:14
 msgid "Cursor Theme"
-msgstr "Thème de curseur"
+msgstr "Θέμα δεικτών ποντικιού"
 
 #: ../data/appearance.ui.h:15
 msgid "Preferences"
-msgstr "Préférences"
+msgstr "Προτιμήσεις"
 
 #: ../data/appearance.ui.h:16
 msgid "Use large cursors"
-msgstr "Utiliser des curseurs larges"
+msgstr "Χρήση μεγάλων δρομέων ποντικιου"
 
 #: ../data/appearance.ui.h:17
 msgid "If enabled, the system will use a larger cursor."
-msgstr "Si activé, le système utilisera des curseurs larges."
+msgstr ""
+"Αν ενεργοποιηθεί, το σύστημα θα χρησιμοποιήσει ένα μεγαλύτερο δρομέα."
 
 #: ../data/appearance.ui.h:18
 msgid "Restore system's default cursor theme configurations"
-msgstr ""
-"Restaurer les configurations du thème de curseur du système par défaut"
+msgstr "Επαναφορά αρχικών ρυθμίσεων θέματος δρομέα"
 
 #: ../data/appearance.ui.h:19 ../data/unitytweak.ui.h:19
 msgid "Cursor"
-msgstr "Curseur"
+msgstr "Δείκτης ποντικιού"
 
 #: ../data/appearance.ui.h:20 ../data/overview.ui.h:9 ../data/unity.ui.h:86
 #: ../data/unitytweak.ui.h:11 ../data/windowmanager.ui.h:21
 msgid "General"
-msgstr "Général"
+msgstr "Γενικά"
 
 #: ../data/appearance.ui.h:21
 msgid "Select the default font for all applications."
-msgstr "Choisir la police par défaut pour toutes les applications."
+msgstr "Επιλογή προεπιλεγμένης γραμματοσειράς για όλες τις εφαρμογές."
 
 #: ../data/appearance.ui.h:22
 msgid "Default font:"
-msgstr "Police par défaut :"
+msgstr "Προεπιλεγμένη γραμματοσειρά:"
 
 #: ../data/appearance.ui.h:23
 msgid "Select the default font used for reading documents."
-msgstr "Choisir la police par défaut utilisée pour lire des documents."
+msgstr "Επιλογή προεπιλεγμένης γραμματοσειράς για ανάγνωση εγγράφων."
 
 #: ../data/appearance.ui.h:24
 msgid "Document font:"
-msgstr "Police des documents :"
+msgstr "Γραμματοσειρά εγγράφων:"
 
 #: ../data/appearance.ui.h:25
 msgid "Select the default monospace font."
-msgstr "Choisir la police à espacement fixe par défaut."
+msgstr "Επιλογή προεπιλεγμένης γραμματοσειράς σταθερού πλάτους."
 
 #: ../data/appearance.ui.h:26
 msgid "Monospace font:"
-msgstr "Police à espacement fixe :"
+msgstr "Γραμματοσειρά σταθερού πλάτους:"
 
 #: ../data/appearance.ui.h:27
 msgid "Select the default font for the window titlebar."
-msgstr "Choisir la police par défaut pour la barre de titre de fenêtre."
+msgstr "Επιλογή προεπιλεγμένης γραμματοσειράς για τη μπάρα τίτλου παραθύρου."
 
 #: ../data/appearance.ui.h:28
 msgid "Window title font:"
-msgstr "Police du titre de fenêtre :"
+msgstr "Γραμματοσειρά τίτλου παραθύρου:"
 
 #: ../data/appearance.ui.h:29 ../data/overview.ui.h:17 ../data/unity.ui.h:49
 #: ../data/unitytweak.ui.h:16 ../unity-tweak-tool.desktop.in.h:5
 msgid "Appearance"
-msgstr "Apparence"
+msgstr "Εμφάνιση"
 
 #: ../data/appearance.ui.h:30
 msgid "Select the type of antialiasing used to render fonts."
 msgstr ""
-"Sélectionner le type d'anti-crénelage utilisé pour le rendu des polices."
+"Επιλογή τύπου εξομάλυνσης που θα χρησιμοποιηθεί για τις γραμματοσειρές."
 
 #: ../data/appearance.ui.h:31
 msgid "Antialiasing:"
-msgstr "Anti-crénelage :"
+msgstr "Εξομάλυνση:"
 
 #: ../data/appearance.ui.h:32
 msgid "None"
-msgstr "Aucun"
+msgstr "Κανένα"
 
 #: ../data/appearance.ui.h:33
 msgid "Grayscale"
-msgstr "Niveaux de gris"
+msgstr "Κλίμακα του γκρι"
 
 #: ../data/appearance.ui.h:34
 msgid "RGBA"
-msgstr "RVB / Alpha"
+msgstr "RGBA"
 
 #: ../data/appearance.ui.h:35
 msgid "Select the type of hinting to use when rendering fonts"
 msgstr ""
-"Sélectionner le type de « hinting » utilisé pour le rendu des polices."
+"Επιλέξτε τον τύπο υπόδειξης προς χρήση κατά τη δημιουργία γραμματοσειρών"
 
 #: ../data/appearance.ui.h:36
 msgid "Slight"
-msgstr "Léger"
+msgstr "Ελαφρύς"
 
 #: ../data/appearance.ui.h:37
 msgid "Medium"
-msgstr "Moyen"
+msgstr "Μέτριος"
 
 #: ../data/appearance.ui.h:38
 msgid "Full"
-msgstr "Complet"
+msgstr "Πλήρης"
 
 #: ../data/appearance.ui.h:39
 msgid "Hinting:"
-msgstr ""
+msgstr "Υπόδειξη:"
 
 #: ../data/appearance.ui.h:40
 msgid ""
 "Select the factor used to enlarge or reduce text display, without changing "
 "font size."
 msgstr ""
-"Choisir le facteur utilisé pour agrandir ou réduire l'affichage du texte, "
-"sans changer la taille de police."
+"Επιλέξτε τον συντελεστή που θα χρησιμοποιηθεί για μεγέθυνση ή σμίκρυνση της "
+"εμφάνισης κειμένου, χωρίς να αλλαχθεί το μέγεθος της γραμματοσειράς."
 
 #: ../data/appearance.ui.h:41
 msgid "Text scaling factor:"
-msgstr "Facteur de mise à l'échelle du texte :"
+msgstr "Συντελεστής κλιμάκωσης κειμένου:"
 
 #: ../data/appearance.ui.h:42
 msgid "Restore system's default font configurations"
-msgstr "Restaure les configurations de la police du système par défaut"
+msgstr "Επαναφορά αρχικών ρυθμίσεων γραμματοσειρών"
 
 #: ../data/appearance.ui.h:43 ../data/overview.ui.h:21
 #: ../data/unitytweak.ui.h:20
 msgid "Fonts"
-msgstr "Polices de caractères"
+msgstr "Γραμματοσειρές"
 
 #: ../data/appearance.ui.h:44
 msgid "Layout"
@@ -241,43 +241,46 @@ msgstr ""
 
 #: ../data/appearance.ui.h:45
 msgid "Left"
-msgstr "À gauche"
+msgstr "Αριστερά"
 
 #: ../data/appearance.ui.h:46
 msgid "Align the window controls to the left side of the window."
-msgstr "Aligne les contrôles de fenêtre du côté gauche de celle-ci."
+msgstr ""
+"Ευθυγράμμιση των στοιχείων ελέγχου παραθύρων στην αριστερή πλευρά του "
+"παραθύρου."
 
 #: ../data/appearance.ui.h:47
 msgid "Right"
-msgstr "À droite"
+msgstr "Δεξιά"
 
 #: ../data/appearance.ui.h:48
 msgid "Align the window controls to the right side of the window."
-msgstr "Aligne les contrôles de fenêtre du côté droit de celle-ci."
+msgstr ""
+"Ευθυγράμμιση των στοιχείων ελέγχου παραθύρων στην δεξιά πλευρά του παραθύρου."
 
 #: ../data/appearance.ui.h:49
 msgid "Alignment:"
-msgstr "Alignement :"
+msgstr "Ευθυγράμμιση:"
 
 #: ../data/appearance.ui.h:50
 msgid "Show menu button"
-msgstr "Afficher le bouton de menu"
+msgstr "Εμφάνιση πλήκτρου μενού"
 
 #: ../data/appearance.ui.h:51
 msgid "If enabled, show the window menu in the titlebar."
-msgstr "Si activé, affiche le menu de la fenêtre dans la barre de titre."
+msgstr "Αν ενεργοποιηθεί, δείχνει το μενού παραθύρου στη μπάρα τίτλου."
 
 #: ../data/appearance.ui.h:52
 msgid "Restore Defaults"
-msgstr "Restaurer les valeurs par défaut"
+msgstr "Επαναφορά των προεπιλογών"
 
 #: ../data/appearance.ui.h:53
 msgid "Restore default window controls settings."
-msgstr "Restaure les paramètres par défaut des contrôles de fenêtre."
+msgstr "Επαναφορά προεπιλεγμένων ρυθμίσεων στοιχείων ελέγχου παραθύρων."
 
 #: ../data/appearance.ui.h:54
 msgid "Window Controls"
-msgstr "Contrôles de fenêtre"
+msgstr "Στοιχεία ελέγχου παραθύρου"
 
 #: ../data/overview.ui.h:1 ../data/unitytweak.ui.h:3
 #: ../unity-tweak-tool.desktop.in.h:3
@@ -286,58 +289,62 @@ msgstr "Unity"
 
 #: ../data/overview.ui.h:2 ../data/unity.ui.h:85 ../data/unitytweak.ui.h:4
 msgid "Launcher"
-msgstr "Lanceur"
+msgstr "Εκκινητής"
 
 #: ../data/overview.ui.h:3 ../data/unity.ui.h:110 ../data/unitytweak.ui.h:5
 msgid "Search"
-msgstr "Rechercher"
+msgstr "Αναζήτηση"
 
 #: ../data/overview.ui.h:4 ../data/unity.ui.h:154 ../data/unitytweak.ui.h:6
 msgid "Panel"
-msgstr "Barre de menu"
+msgstr "Πίνακας"
 
 #: ../data/overview.ui.h:5 ../data/unity.ui.h:171 ../data/unitytweak.ui.h:7
 msgid "Switcher"
-msgstr "Sélecteur"
+msgstr "Εναλλάκτης"
 
 #: ../data/overview.ui.h:6 ../data/unity.ui.h:178 ../data/unitytweak.ui.h:8
 msgid "Web Apps"
-msgstr "Web Apps"
+msgstr "Εφαρμογές διαδικτύου"
 
 #: ../data/overview.ui.h:7 ../data/unity.ui.h:192 ../data/unitytweak.ui.h:9
 #: ../data/windowmanager.ui.h:81
 msgid "Additional"
-msgstr "Supplémentaire"
+msgstr "Επιπρόσθετα"
 
 #: ../data/overview.ui.h:8 ../data/unitytweak.ui.h:10
 #: ../unity-tweak-tool.desktop.in.h:4
 msgid "Window Manager"
-msgstr "Gestionnaire de fenêtre"
+msgstr "Διαχειριστής παραθύρων"
 
 #: ../data/overview.ui.h:10
 msgid ""
 "Workspace\n"
 "Settings"
 msgstr ""
-"Paramètres de\n"
-"l'espace de travail"
+"Ρυθμίσεις\n"
+"χώρων εργασίας"
 
 #: ../data/overview.ui.h:12
 msgid ""
 "Window\n"
 "Spread"
 msgstr ""
+"Έκταση\n"
+"παραθύρων"
 
 #: ../data/overview.ui.h:14
 msgid ""
 "Window\n"
 "Snapping"
 msgstr ""
+"Αρπαγή\n"
+"Παραθύρου"
 
 #: ../data/overview.ui.h:16 ../data/unitytweak.ui.h:15
 #: ../data/windowmanager.ui.h:52
 msgid "Hotcorners"
-msgstr "Coins actifs"
+msgstr "Ενεργές γωνίες"
 
 #: ../data/overview.ui.h:20
 msgid "Cursors"
@@ -348,13 +355,13 @@ msgid ""
 "Window\n"
 "Controls"
 msgstr ""
-"Contrôles de\n"
-"fenêtre"
+"Έλεγχοι\n"
+"παραθύρων"
 
 #: ../data/overview.ui.h:24 ../data/unitytweak.ui.h:22
 #: ../unity-tweak-tool.desktop.in.h:6
 msgid "System"
-msgstr "Système"
+msgstr "Σύστημα"
 
 #: ../data/overview.ui.h:25
 msgid ""
@@ -364,17 +371,17 @@ msgstr ""
 
 #: ../data/overview.ui.h:27 ../data/unitytweak.ui.h:24 ../data/system.ui.h:21
 msgid "Security"
-msgstr "Sécurité"
+msgstr "Ασφάλεια"
 
 #: ../data/overview.ui.h:28 ../data/unitytweak.ui.h:25 ../data/system.ui.h:36
 msgid "Scrolling"
-msgstr "Défilement"
+msgstr "Κύλιση"
 
 #. ----- END: Additional -----
 #. ! /usr/bin/env python3
 #: ../data/unity.ui.h:1
 msgid "Invoke HUD"
-msgstr "Invoquer l'affichage tête haute"
+msgstr "Κλήση του HUD"
 
 #: ../data/unity.ui.h:2
 msgid "Super+H"
@@ -382,7 +389,7 @@ msgstr "Super+H"
 
 #: ../data/unity.ui.h:3
 msgid "Show the launcher"
-msgstr "Montrer le lanceur"
+msgstr "Εμφάνιση του εκκινητή"
 
 #: ../data/unity.ui.h:4
 msgid "Super+E"
@@ -390,7 +397,7 @@ msgstr "Super+E"
 
 #: ../data/unity.ui.h:5
 msgid "Execute command"
-msgstr "Exécuter une commande"
+msgstr "Εκτέλεση εντολής"
 
 #: ../data/unity.ui.h:6
 msgid "Super+M"
@@ -398,7 +405,7 @@ msgstr "Super+M"
 
 #: ../data/unity.ui.h:7
 msgid "Put keyboard focus on the launcher"
-msgstr "Placer le focus clavier sur le lanceur"
+msgstr "Εστίαση του πληκτρολογίου στον εκκινητή"
 
 #: ../data/unity.ui.h:8
 msgid "Super+A"
@@ -406,7 +413,7 @@ msgstr "Super+A"
 
 #: ../data/unity.ui.h:9
 msgid "Open the first panel menu"
-msgstr "Ouvriri le premier menu de la barre de menu"
+msgstr "Άνοιγμα του πρώτου μενού στον πίνακα"
 
 #: ../data/unity.ui.h:10
 msgid "Super+N"
@@ -414,7 +421,7 @@ msgstr "Super+N"
 
 #: ../data/unity.ui.h:11
 msgid "Start switcher"
-msgstr "Lancer le sélecteur"
+msgstr "Έναρξη εναλλάκτη"
 
 #: ../data/unity.ui.h:12
 msgid "Super+Tab"
@@ -422,11 +429,11 @@ msgstr "Super+Tab"
 
 #: ../data/unity.ui.h:13
 msgid "Start switcher in reverse"
-msgstr "Lancer le sélecteur inversé"
+msgstr "Έναρξη εναλλάκτη αντίστροφα"
 
 #: ../data/unity.ui.h:14
 msgid "Shift+Super+Tab"
-msgstr "Maj+Super+Tab"
+msgstr "Shift+Super+Tab"
 
 #: ../data/unity.ui.h:15
 msgid "Alt+Tab"
@@ -434,11 +441,11 @@ msgstr "Alt+Tab"
 
 #: ../data/unity.ui.h:16
 msgid "Shift+Alt+Tab"
-msgstr "Maj+Alt+Tab"
+msgstr "Shift+Alt+Tab"
 
 #: ../data/unity.ui.h:17
 msgid "Start switcher for all workspaces"
-msgstr "Lancer le sélecteur pour tous les espaces de travail"
+msgstr "Έναρξη εναλλάκτη για όλους τους χώρους εργασίας"
 
 #: ../data/unity.ui.h:18
 msgid "Ctrl+Super+Alt+Tab"
@@ -446,71 +453,71 @@ msgstr "Ctrl+Super+Alt+Tab"
 
 #: ../data/unity.ui.h:19
 msgid "Start switcher for all workspaces in reverse"
-msgstr "Lancer le sélecteur pour tous les espaces de travail inversé"
+msgstr "Έναρξη εναλλάκτη για όλους τους χώρους εργασίας αντίστροφα"
 
 #: ../data/unity.ui.h:20
 msgid "Shift+Ctrl+Super+Alt+Tab"
-msgstr "Maj+Ctrl+Super+Alt+Tab"
+msgstr "Shift+Ctrl+Super+Alt+Tab"
 
 #: ../data/unity.ui.h:21
 msgid "Go right in the switcher"
-msgstr "Aller à droite dans le sélecteur de fenêtre"
+msgstr "Δεξιά στον εναλλάκτη"
 
 #: ../data/unity.ui.h:22
 msgid "Alt+Right"
-msgstr "Alt+Droite"
+msgstr "Alt+δεξί βέλος"
 
 #: ../data/unity.ui.h:23
 msgid "Go left in the switcher"
-msgstr "Aller à gauche dans le sélecteur de fenêtre"
+msgstr "Αριστερά στον εναλλάκτη"
 
 #: ../data/unity.ui.h:24
 msgid "Alt+Left"
-msgstr "Alt+Gauche"
+msgstr "Alt+αριστερό βέλος"
 
 #: ../data/unity.ui.h:25
 msgid "Expose windows in the switcher"
-msgstr "Montrer les fenêtres dans le sélecteur"
+msgstr "Έκθεση παραθύρων στον εναλλάκτη"
 
 #: ../data/unity.ui.h:26
 msgid "Alt+Down"
-msgstr "Alt+Bas"
+msgstr "Alt+κάτω βέλος"
 
 #: ../data/unity.ui.h:27
 msgid "Collapse windows in the switcher"
-msgstr "Rabattre les fenêtres dans le sélecteur"
+msgstr "Σύμπτυξη παραθύρων στον εναλλάκτη"
 
 #: ../data/unity.ui.h:28
 msgid "Alt+Up"
-msgstr "Alt+Haut"
+msgstr "Alt+πάνω βέλος"
 
 #: ../data/unity.ui.h:29
 msgid "Flip through windows in the switcher"
-msgstr "Passer d'une fenêtre à l'autre dans le sélecteur"
+msgstr "Μετακίνηση μεταξύ παραθύρων στον εναλλάκτη"
 
 #: ../data/unity.ui.h:30 ../data/windowmanager.ui.h:95
 msgid "Disabled"
-msgstr "Désactivé"
+msgstr "Απενεργοποιημένο"
 
 #: ../data/unity.ui.h:31
 msgid "Flip through windows in the switcher backwards"
-msgstr "Passer d'une fenêtre à l'autre dans le sélecteur en sens inverse"
+msgstr "Μετακίνηση μεταξύ παραθύρων στον εναλλάκτη αντίστροφα"
 
 #: ../data/unity.ui.h:32 ../data/windowmanager.ui.h:49
 msgid "Behaviour"
-msgstr "Comportement"
+msgstr "Συμπεριφορά"
 
 #: ../data/unity.ui.h:33
 msgid "Should the launcher be hidden?"
-msgstr "Le lanceur doit-il être caché ?"
+msgstr "Πρέπει ο εκκινητής να είναι κρυμμένος ;"
 
 #: ../data/unity.ui.h:34
 msgid "Auto-hide:"
-msgstr "Masquer automatiquement :"
+msgstr "Αυτόματη απόκρυψη:"
 
 #: ../data/unity.ui.h:35
 msgid "Select the auto-hide animation of the launcher."
-msgstr "Sélectionner l'animation  du masquage automatique du lanceur."
+msgstr "Επιλέξτε το εφέ της αυτόματης απόκρυψης του εκκινητή."
 
 #: ../data/unity.ui.h:36
 msgid "Fade Dash and slide"
@@ -518,11 +525,11 @@ msgstr ""
 
 #: ../data/unity.ui.h:37
 msgid "Slide only"
-msgstr "Glisser seulement"
+msgstr "Ολίσθηση μόνο"
 
 #: ../data/unity.ui.h:38
 msgid "Fade only"
-msgstr "Fondu uniquement"
+msgstr "Σβήσιμο μόνο"
 
 #: ../data/unity.ui.h:39
 msgid "Fade and slide"
@@ -530,263 +537,263 @@ msgstr ""
 
 #: ../data/unity.ui.h:40
 msgid "Auto-hide animation:"
-msgstr "Animation de masquage automatique :"
+msgstr "Εφέ αυτόματης απόκρυψης:"
 
 #: ../data/unity.ui.h:41
 msgid ""
 "Select the option to reveal the dash with the mouse, when auto-hide is "
 "enabled."
 msgstr ""
-"Choisir l'option pour faire apparaître le tableau de bord avec la souris, "
-"quand le masquage automatique est activé."
+"Επιλέξτε πως θα εμφανίζεται το dash με το ποντίκι, όταν η αυτόματη απόκρυψη "
+"είναι ενεργοποιημένη."
 
 #: ../data/unity.ui.h:42
 msgid "Reveal location:"
-msgstr ""
+msgstr "Θέση αποκάλυψης:"
 
 #: ../data/unity.ui.h:43
 msgid "Reveal sensitivity:"
-msgstr "Niveau de sensibilité :"
+msgstr "Ευαισθησία αποκάλυψης:"
 
 #: ../data/unity.ui.h:44
 msgid "How much pointer \"pressure\" is required to reveal the launcher."
-msgstr "Niveau de « pression » nécessaire pour faire apparaître le lanceur"
+msgstr ""
+"Πόση \"πίεση\" στον κέρσορα του ποντικιού θα χρειαστεί για να αποκαλυφθεί ο "
+"εκκινητής."
 
 #: ../data/unity.ui.h:45
 msgid "Left side"
-msgstr "Côté gauche"
+msgstr "Αριστερή πλευρά"
 
 #: ../data/unity.ui.h:46
 msgid ""
 "When in auto-hide mode the left edge of the current workspace triggers the "
 "launcher."
 msgstr ""
-"En mode masquage automatique, le bord gauche de l'espace de travail courant "
-"fait apparaître le lanceur."
+"Όταν βρίσκεται στην αυτόματη απόκρυψη, το αριστερό άκρο της τρέχουσας "
+"επιφάνειας εργασίας ενεργοποιεί τον εκκινητή."
 
 #: ../data/unity.ui.h:47
 msgid "Top left corner"
-msgstr "Coin supérieur gauche"
+msgstr "Πάνω αριστερή γωνία"
 
 #: ../data/unity.ui.h:48
 msgid ""
 "When in auto-hide mode the top left corner of the current workspace triggers "
 "the launcher."
 msgstr ""
-"En mode masquage automatique, le coin supérieur gauche de l'espace de "
-"travail courant fait apparaître le lanceur."
+"Όταν βρίσκεται στην αυτόματη απόκρυψη, η αριστερή πάνω γωνία της τρέχουσας "
+"επιφάνειας εργασίας ενεργοποιεί τον εκκινητή."
 
 #: ../data/unity.ui.h:50
 msgid "Select the level of the transparency of the launcher"
-msgstr "Choisir le niveau de transparence du lanceur"
+msgstr "Επιλέξτε το επίπεδο διαφάνειας του εκκινητή"
 
 #: ../data/unity.ui.h:51
 msgid "Transparency level:"
-msgstr "Niveau de transparence :"
+msgstr "Επίπεδο διαφάνειας:"
 
 #: ../data/unity.ui.h:52
 msgid "How transparent the launcher will be."
-msgstr "À quel point le lanceur sera transparent."
+msgstr "Πόσο διάφανος θα είναι ο εκκινητής."
 
 #: ../data/unity.ui.h:53
 msgid "Based on wallpaper"
-msgstr "Basé sur le fond d'écran"
+msgstr "Βασισμένο στην ταπετσαρία"
 
 #: ../data/unity.ui.h:54
 msgid "If selected, the launcher colour is based on the desktop background"
 msgstr ""
-"Si sélectionné, la couleur de la barre de lanceurs se base sur le fond "
-"d'écran."
+"Αν επιλεγεί, το χρώμα του εκκινητή βασίζεται στο φόντο της επιφάνειας "
+"εργασίας"
 
 #: ../data/unity.ui.h:55
 msgid "Colour:"
-msgstr "Couleur :"
+msgstr "Χρώμα:"
 
 #: ../data/unity.ui.h:56
 msgid "Visibility:"
-msgstr "Visibilité :"
+msgstr "Ορατότητα:"
 
 #: ../data/unity.ui.h:57
 msgid "Custom:"
-msgstr "Personnalisée :"
+msgstr "Προσαρμοσμένο:"
 
 #: ../data/unity.ui.h:58
 msgid "If selected, the launcher will be the colour chosen by the user"
-msgstr ""
-"Si sélectionné, le lanceur sera de la couleur choisie par l'utilisateur"
+msgstr "Αν επιλεγεί, ο εκκινητής θα έχει το χρώμα που θα επιλέξει ο χρήστης"
 
 #: ../data/unity.ui.h:59
 msgid "All desktops"
-msgstr "Tous les bureaux"
+msgstr "All desktops"
 
 #: ../data/unity.ui.h:60
 msgid "If selected, the launcher is visible on all desktops."
-msgstr "Si sélectionné, le lanceur est visible sur tous les bureaux."
+msgstr ""
+"Αν επιλεγεί, ο εκκινητής θα είναι ορατός σε όλες τις επιφάνειες εργασίας."
 
 #: ../data/unity.ui.h:61
 msgid "If selected, the launcher is visible on all desktops"
-msgstr "Si sélectionné, le lanceur est visible sur tous les bureaux."
+msgstr ""
+"Αν επιλεγεί, ο εκκινητής θα είναι ορατός σε όλες τις επιφάνειες εργασίας"
 
 #: ../data/unity.ui.h:62
 msgid "Primary desktop"
-msgstr "Bureau principal"
+msgstr "Πρωτεύουσα επιφάνεια εργασίας"
 
 #: ../data/unity.ui.h:63
 msgid "If selected, the launcher is visible on the primary desktop"
-msgstr "Si sélectionné, le lanceur est visible sur le bureau principal"
+msgstr ""
+"Αν επιλεγεί, ο εκκινητής θα είναι ορατός στην πρωτεύουσα επιφάνεια εργασίας"
 
 #: ../data/unity.ui.h:65
 msgid "Icon size:"
-msgstr "Taille des icônes :"
+msgstr "Μέγεθος εικονιδίων:"
 
 #: ../data/unity.ui.h:66
 msgid "Select the animation used for launching an application."
-msgstr "Choisir l'animation utilisée au lancement d'une application."
+msgstr "Επιλέξτε το εφέ που θα χρησιμοποιείται όταν εκκινείτε μια εφαρμογή."
 
 #: ../data/unity.ui.h:67
 msgid "No animation"
-msgstr "Pas d'animation"
+msgstr "Χωρίς εφέ"
 
 #: ../data/unity.ui.h:68
 msgid "Pulse"
-msgstr "Battement"
+msgstr "Παλμός"
 
 #: ../data/unity.ui.h:69
 msgid "Blink"
-msgstr "Clignotement"
+msgstr "Αναβόσβημα"
 
 #: ../data/unity.ui.h:70
 msgid "Select the animation used for an urgent notification on the launcher"
 msgstr ""
-"Choisir l'animation utilisée pour une notification urgente sur le lanceur"
+"Επιλέξτε το εφέ που θα χρησιμοποιείται για μια επείγουσα ειδοποίηση στον "
+"εκκινητή"
 
 #: ../data/unity.ui.h:71
 msgid "Wiggle"
-msgstr "Oscillation"
+msgstr "Ταρακούνημα"
 
 #: ../data/unity.ui.h:72
 msgid "Launch animation:"
-msgstr "Animation au lancement :"
+msgstr "Εφέ εκκίνησης:"
 
 #: ../data/unity.ui.h:73
 msgid "Urgent animation:"
-msgstr "Animation en cas d'urgence :"
+msgstr "Εφέ επείγουσας ειδοποίησης:"
 
 #: ../data/unity.ui.h:74
 msgid "Select how the icons are coloured on the launcher"
-msgstr "Choisir la coloration des icônes de la barre de lanceurs"
+msgstr "Επιλέξτε πως θα είναι χρωματισμένα τα εικονίδια στον εκκινητή"
 
 #: ../data/unity.ui.h:75
 msgid "All applications"
-msgstr "Toutes les applications"
+msgstr "Όλες οι εφαρμογές"
 
 #: ../data/unity.ui.h:76
 msgid "Open applications only"
-msgstr "Ouvrir les applications seulement"
+msgstr "Οι ανοιχτές εφαρμογές μόνο"
 
 #: ../data/unity.ui.h:77
 msgid "No colouring"
-msgstr "Pas de coloration"
+msgstr "Χωρίς χρώμα"
 
 #: ../data/unity.ui.h:78
 msgid "Coloured edges"
-msgstr "Bords colorés"
+msgstr "Χρωματιστά άκρα"
 
 #: ../data/unity.ui.h:79
 msgid "Alternated for each workspace"
-msgstr "Différent pour chaque espace de travail"
+msgstr "Διαφορετικά για κάθε επιφάνεια εργασίας"
 
 #: ../data/unity.ui.h:80
 msgid "Icon backgrounds:"
-msgstr "Arrière-plan des icônes :"
+msgstr "Φόντο εικονιδίων:"
 
 #: ../data/unity.ui.h:81
 msgid "\"Show Desktop\" icon:"
-msgstr "Icône « Afficher le bureau » :"
+msgstr "Εικονίδιο «Εμφάνιση επιφανείας εργασίας»:"
 
 #: ../data/unity.ui.h:82
 msgid "Select the size of the icons on the launcher"
-msgstr "Choisir la taille des icônes du lanceur"
+msgstr "Επιλέξτε το μέγεθος των εικονιδίων του εκκινητή"
 
 #: ../data/unity.ui.h:84
 msgid "Restore default Unity launcher settings."
-msgstr "Restaurer les valeurs par défaut du lanceur Unity."
+msgstr "Επαναφορά του εκκινητή στις αρχικές ρυθμίσεις."
 
 #: ../data/unity.ui.h:87
 msgid "Background blur:"
-msgstr "Flou de l'arrière-plan :"
+msgstr "Θόλωμα φόντου:"
 
 #: ../data/unity.ui.h:88
 msgid "Enable dash blur?"
-msgstr "Activer le flou dans le tableau de bord ?"
+msgstr "Ενεργοποίηση θολώματος του dash ;"
 
 #: ../data/unity.ui.h:89
 msgid "Select the type of blur in the dash"
-msgstr "Choisir le type de flou dans le tableau de bord"
+msgstr "Επιλέξτε τον τύπο θολώματος του dash"
 
 #: ../data/unity.ui.h:90
 msgid "Blur type:"
-msgstr "Type de flou :"
+msgstr "Τύπος θολώματος:"
 
 #: ../data/unity.ui.h:91
 msgid "Active"
-msgstr "Actif"
+msgstr "Ενεργό"
 
 #: ../data/unity.ui.h:92
 msgid "Use a dynamic blur in the dash."
-msgstr "Utiliser le flou dynamique dans le tableau de bord."
+msgstr "Χρήση δυναμικού θολώματος του dash."
 
 #: ../data/unity.ui.h:93
 msgid "Static"
-msgstr "Statique"
+msgstr "Στατικό"
 
 #: ../data/unity.ui.h:94
 msgid "Use a static blur in the dash, uses less resources."
-msgstr ""
-"Utiliser le flou statique dans le tableau de bord (utilise moins de "
-"ressources)."
+msgstr "Χρήση στατικού θολώματος του dash, χρησιμοποιεί λιγότερους πόρους."
 
 #: ../data/unity.ui.h:95
 msgid "Search online sources"
-msgstr "Chercher des sources sur Internet"
+msgstr "Αναζήτηση στις πηγές διαδικτύου"
 
 #: ../data/unity.ui.h:96
 msgid "If enabled, the dash will get suggestions from online sources."
 msgstr ""
-"Si sélectionné, le tableau de bord recevra des suggestions de la part de "
-"sources internet."
+"Αν ενεργοποιηθεί, το dash θα δέχεται προτάσεις από πηγές στο διαδίκτυο."
 
 #: ../data/unity.ui.h:97
 msgid "Applications"
-msgstr "Applications"
+msgstr "Εφαρμογές"
 
 #: ../data/unity.ui.h:98
 msgid "Show \"Recently Used\" applications"
-msgstr "Montrer les applications « Récemment utilisées »"
+msgstr "Προβολή των εφαρμογών που «Χρησιμοποιήθηκαν πρόσφατα»"
 
 #: ../data/unity.ui.h:99
 msgid "If enabled, show recently used applications in the Dash."
 msgstr ""
-"Si activé, montre dans le tableau de bord les application récemment "
-"utilisées."
+"Αν ενεργοποιηθεί, δείχνει στο Dash τις πρόσφατα χρησιμοποιημένες εφαρμογές."
 
 #: ../data/unity.ui.h:100
 msgid "Show \"More Suggestions\""
-msgstr "Montrer « Plus de Suggestions »"
+msgstr "Δείξε \"Περισσότερες Προτάσεις\""
 
 #: ../data/unity.ui.h:101
 msgid "If enabled, show applications available for download in the Dash."
 msgstr ""
-"Si activé, affiche dans le tableau de bord des applications disponibles au "
-"téléchargement."
+"Αν ενεργοποιηθεί, δείχνει στο Dash τις διαθέσιμες για λήψη εφαρμογές."
 
 #: ../data/unity.ui.h:102
 msgid "Files"
-msgstr "Fichiers"
+msgstr "Αρχεία"
 
 #: ../data/unity.ui.h:103
 msgid "Enable search of your files"
-msgstr "Autorise la recherche de vos fichiers"
+msgstr "Ενεργοποίηση αναζήτησης των αρχείων σας"
 
 #: ../data/unity.ui.h:104
 msgid ""
@@ -796,121 +803,122 @@ msgstr ""
 #: ../data/unity.ui.h:105
 msgid "If enabled, allow searches to find your files that aren't logged."
 msgstr ""
-"Si activé, permet la recherche de fichiers dont l'activité n'est pas "
-"enregistrée."
+"Αν ενεργοποιηθεί, επιτρέπει στην αναζήτηση να εντοπίσει τα αρχεία σας που "
+"δεν έχουν καταγραφεί."
 
 #: ../data/unity.ui.h:106
 msgid "Run Command"
-msgstr "Exécuter une commande"
+msgstr "Εκτέλεση εντολής"
 
 #: ../data/unity.ui.h:107
 msgid "Clear History"
-msgstr "Effacer l'historique"
+msgstr "Εκκαθάριση ιστορικού"
 
 #: ../data/unity.ui.h:108
 msgid "Clear ALT+F2 command history."
-msgstr "Effacer l'historique des commandes ALT+F2"
+msgstr "Εκκαθάριση του ιστορικού εντολών ALT+F2."
 
 #: ../data/unity.ui.h:109
 msgid "Restore the default Dash settings."
-msgstr "Restaurer les paramètres par défaut du tableau de bord."
+msgstr "Επαναφορά των αρχικών ρυθμίσεων του Dash."
 
 #: ../data/unity.ui.h:111
 msgid "Menu visible for:"
-msgstr "Menu visible pendant :"
+msgstr "Εμφάνιση μενού για:"
 
 #: ../data/unity.ui.h:112
 msgid ""
 "Select how long the application menu is visible when an application is first "
 "opened"
 msgstr ""
-"Choix de la durée d'affichage du menu d'une application lorsque elle est "
-"ouverte pour la première fois."
+"Επιλέξτε για πόσο θα είναι ορατό το μενού μιας εφαρμογής όταν αυτή "
+"εκκινείται για πρώτη φορά"
 
 #: ../data/unity.ui.h:113
 msgid "seconds"
-msgstr "secondes"
+msgstr "δευτερόλεπτα"
 
 #: ../data/unity.ui.h:114
 msgid "Set the level of transparency for the panel."
-msgstr "Paramètre le niveau de transparence de la barre de menu."
+msgstr "Ορίστε το επίπεδο διαφάνειας του πάνελ."
 
 #: ../data/unity.ui.h:115
 msgid "Opaque panel for maximized windows"
-msgstr "Barre de menu opaque pour des fenêtres maximisées"
+msgstr "Αδιαφανές πάνελ για τα μεγιστοποιημένα παράθυρα"
 
 #: ../data/unity.ui.h:116
 msgid "If selected, the panel will be opaque for maximized windows"
 msgstr ""
-"Si sélectionné, la barre de menu sera opaque pour les fenêtres maximisées"
+"Αν επιλεγεί, το πάνελ θα είναι αδιαφανές για τα μεγιστοποιημένα παράθυρα"
 
 #: ../data/unity.ui.h:117
 msgid "Indicators"
-msgstr "Indicateurs"
+msgstr "Δείκτες"
 
 #: ../data/unity.ui.h:118
 msgid "Date & time"
-msgstr "Date et heure"
+msgstr "Ημερομηνία & ώρα"
 
 #: ../data/unity.ui.h:119
 msgid "If enabled, the date &amp; time indicator will be visible."
-msgstr "Si activé, l'indicateur de date et d'heure sera visible."
+msgstr "Αν ενεργοποιηθεί, ο δείκτης ημερομηνίας &amp; ώρας θα είναι ορατός."
 
 #: ../data/unity.ui.h:120
 msgid "If enabled, the date & time indicator will be visible."
-msgstr "Si activé, l'indicateur de date et d'heure sera visible."
+msgstr "Αν ενεργοποιηθεί, ο δείκτης ημερομηνίας & ώρας θα είναι ορατός."
 
 #: ../data/unity.ui.h:121
 msgid "12-hour time"
-msgstr "Sur 12 heures"
+msgstr "12-ωρη ώρα"
 
 #: ../data/unity.ui.h:122
 msgid "Have the clock use 12-hour time."
-msgstr "Faire afficher l'horloge sur 12 heures."
+msgstr "Το ρολόι να χρησιμοποιεί 12-ωρη μορφή ώρας."
 
 #: ../data/unity.ui.h:123
 msgid "24-hour time"
-msgstr "Sur 24 heures"
+msgstr "24-ωρη ώρα"
 
 #: ../data/unity.ui.h:124
 msgid "Have the clock use 24-hour time."
-msgstr "Faire afficher l'horloge sur 24 heures."
+msgstr "Το ρολόι να χρησιμοποιεί 24-ωρη μορφή ώρας."
 
 #: ../data/unity.ui.h:125
 msgid "Seconds"
-msgstr "Secondes"
+msgstr "Δευτερόλεπτα"
 
 #: ../data/unity.ui.h:126
 msgid "If enabled, the clock will display seconds."
-msgstr "Si activé, l'horloge affichera les secondes."
+msgstr "Αν ενεργοποιηθεί, το ρολόι θα δείχνει τα δευτερόλεπτα."
 
 #: ../data/unity.ui.h:127
 msgid "Date"
-msgstr "Date"
+msgstr "Ημερομηνία"
 
 #: ../data/unity.ui.h:128
 msgid "If enabled, the month and day will be visible in the panel."
-msgstr "Si activé, le mois et le jour seront visible dans la barre de menu."
+msgstr "Αν ενεργοποιηθεί, ο μήνας και η ημέρα θα είναι ορατά στο πάνελ."
 
 #: ../data/unity.ui.h:129
 msgid "Weekday"
-msgstr "Jour de la semaine"
+msgstr "Ημέρα"
 
 #: ../data/unity.ui.h:130
 msgid "If enabled, the day of the week will be visible in the panel."
-msgstr "Si activé, le jour de la semaine sera visible dans la barre de menu."
+msgstr "Αν ενεργοποιηθεί, η ημέρα της εβδομάδας θα είναι ορατή στο πάνελ."
 
 #: ../data/unity.ui.h:131
 msgid "Include:"
-msgstr "Inclure :"
+msgstr "Να συμπεριλαμβάνονται:"
 
 #: ../data/unity.ui.h:132
 msgid "Calendar"
-msgstr "Calendrier"
+msgstr "Ημερολόγιο"
 
 #: ../data/unity.ui.h:133
 msgid "If enabled, the calendar will be visible in the indicator menu."
-msgstr "Si activé, le calendrier sera visible dans la barre de menu."
+msgstr ""
+"Αν ενεργοποιηθεί, το ημερολόγιο θα είναι ορατό στον μενού του δείκτη."
 
 #: ../data/unity.ui.h:134
 msgid "Bluetooth"
@@ -918,109 +926,104 @@ msgstr "Bluetooth"
 
 #: ../data/unity.ui.h:135
 msgid "If enabled, the bluetooth indicator is visible in the panel."
-msgstr ""
-"Si activé, l'indicateur Bluetooth sera visible dans la barre de menu."
+msgstr "Αν ενεργοποιηθεί, ο δείκτης του bluetooth θα είναι ορατός στο πάνελ."
 
 #: ../data/unity.ui.h:136
 msgid "Power"
-msgstr "Énergie"
+msgstr "Ενέργεια"
 
 #: ../data/unity.ui.h:137
 msgid "If enabled, show the power menu in the panel."
-msgstr ""
-"Si activé, affiche le menu de gestion de l'énergie dans la barre de menu."
+msgstr "Αν ενεργοποιηθεί, δείχνει το μενού ενέργειας στο πάνελ."
 
 #: ../data/unity.ui.h:138
 msgid "Visible when charging or discharging"
-msgstr "Visible en charge et en décharge"
+msgstr "Ορατό όταν φορτίζει ή αποφορτίζει"
 
 #: ../data/unity.ui.h:139
 msgid ""
 "Set the power indicator to be visible when charging or discharging power."
 msgstr ""
-"Paramétre l'indicateur d'énergie pour être visible lors de la charge et de "
-"la décharge."
+"Ορίστε τον δείκτη ενέργειας ώστε να είναι ορατός όταν φορτίζει ή αποφορτίζει."
 
 #: ../data/unity.ui.h:140
 msgid "Always visible"
-msgstr "Toujours visible"
+msgstr "Πάντα ορατός"
 
 #: ../data/unity.ui.h:141
 msgid "Set the power indicator to be always visible."
-msgstr "Paramètre l'indicateur d'énergie pour être toujours visible."
+msgstr "Ορίστε τον δείκτη ενέργειας ώστε να είναι πάντα ορατός."
 
 #: ../data/unity.ui.h:142
 msgid "Display remaining battery life"
-msgstr "Afficher la durée de vie restante de la batterie"
+msgstr "Εμφάνιση της εναπομένουσας ενέργειας μπαταρίας"
 
 #: ../data/unity.ui.h:143
 msgid "If enabled, show the remaining battery life in the power indicator."
 msgstr ""
-"Si activé, affiche la durée de vie restante de la batterie dans l'indicateur "
-"d'énergie."
+"Αν ενεργοποιηθεί, δείχνει την εναπομένουσα ενέργεια μπαταρίας στον δείκτη "
+"ισχύς."
 
 #: ../data/unity.ui.h:144
 msgid "Volume"
-msgstr "Volume"
+msgstr "Ένταση"
 
 #: ../data/unity.ui.h:145
 msgid "If enabled, show the sound menu in the panel."
-msgstr "Si activé, affiche le menu du son dans la barre de menu."
+msgstr "Αν ενεργοποιηθεί, δείχνει το μενού ήχου στο πάνελ."
 
 #: ../data/unity.ui.h:146
 msgid "Default player:"
-msgstr "Lecteur par défaut :"
+msgstr "Προεπιλεγμένο πρόγραμμα αναπαραγωγής:"
 
 #: ../data/unity.ui.h:147
 msgid ""
 "Select which of the installed audio players is default in the sound menu."
 msgstr ""
-"Choisi lequel des lecteurs audio installés sera par défaut dans le menu de "
-"son."
+"Επιλέξτε ποιο από τα εγκατεστημένα προγράμματα αναπαραγωγής θα είναι το "
+"προεπιλεγμένο στο μενού του ήχου."
 
 #: ../data/unity.ui.h:148
 msgid "Notifications when scrolling"
-msgstr "Notifications lors des défilements"
+msgstr "Ειδοποιήσεις όταν κάνετε κύλιση"
 
 #: ../data/unity.ui.h:149
 msgid ""
 "When using scrolling to change the volume, show on-screen notifications."
 msgstr ""
-"Lors de l'utilisation du défilement pour changer le volume, affiche une "
-"notification sur l'écran."
+"Όταν κάνετε κύλιση για να αλλάξετε την ένταση, να προβάλλονται ειδοποιήσεις "
+"στην οθόνη."
 
 #: ../data/unity.ui.h:150
 msgid "Show my name"
-msgstr "Afficher mon nom"
+msgstr "Εμφάνιση του ονόματος μου"
 
 #: ../data/unity.ui.h:151
 msgid "If enabled, show the user&apos;s real name in the panel."
-msgstr ""
-"Si activé, affiche le non réel de l'utilisateur dans la barre de menu."
+msgstr "Αν ενεργοποιηθεί, εμφανίζει το αληθινό όνομα του χρήστη στο πάνελ."
 
 #: ../data/unity.ui.h:152
 msgid "If enabled, show the user's real name in the panel."
-msgstr ""
-"Si activé, affiche le non réel de l'utilisateur dans la barre de menu."
+msgstr "Αν ενεργοποιηθεί, εμφανίζει το αληθινό όνομα του χρήστη στο πάνελ."
 
 #: ../data/unity.ui.h:153
 msgid "Restore the default Unity panel settings."
-msgstr "Restaurer les valeurs de la barre de menu Unity par défaut."
+msgstr "Επαναφορά των αρχικών ρυθμίσεων του πάνελ του Unity."
 
 #: ../data/unity.ui.h:155
 msgid "Switch between windows on all workspaces"
-msgstr "Basculer entre les fenêtres pour tous les espaces de travail"
+msgstr "Εναλλαγή μεταξύ παραθύρων σε όλες τις επιφάνειες εργασίας"
 
 #: ../data/unity.ui.h:156
 msgid ""
 "If enabled, the window switcher cycles through all windows on all workspaces"
 msgstr ""
-"Si activé, le sélecteur de fenêtres fera défiler toutes les fenêtres de tous "
-"les espaces de travail"
+"Αν ενεργοποιηθεί, ο εναλλάκτης παραθύρων μετακινείται κυκλικά σε όλες τις "
+"επιφάνειες εργασίας"
 
 #: ../data/unity.ui.h:157
 msgid "Display \"Show Desktop\" icon"
-msgstr "Afficher l'icône « Afficher le bureau »"
+msgstr "Εμφάνισε το εικονίδιο \"Εμφάνιση Επιφάνειας Εργασίας\""
 
 #: ../data/unity.ui.h:158
 msgid ""
@@ -1030,50 +1033,56 @@ msgstr ""
 #: ../data/unity.ui.h:159
 msgid "If enabled, show the \"Show Desktop\" option in the window switcher"
 msgstr ""
+"Αν ενεργοποιηθεί, δείχνει την επιλογή \"Εμφάνιση επιφάνειας εργασίας\" στον "
+"εναλλάκτη παραθύρων"
 
 #: ../data/unity.ui.h:160
 msgid "Automatically expose windows"
-msgstr "Expose les fenêtres automatiquement"
+msgstr "Αυτόματη έκθεση παραθύρων"
 
 #: ../data/unity.ui.h:161
 msgid "If enabled, the window switcher will expose minimized windows"
-msgstr "Si activé, le sélecteur exposera les fenêtres minimisées"
+msgstr ""
+"Αν ενεργοποιηθεί, ο εναλλάκτης παραθύρων θα εκθέτει τα ελαχιστοποιημένα "
+"παράθυρα"
 
 #: ../data/unity.ui.h:162
 msgid "Switch between minimized windows"
-msgstr "Basculer entre les fenêtres minimisées"
+msgstr "Εναλλαγή μεταξύ ελαχιστοποιημένων παραθύρων"
 
 #: ../data/unity.ui.h:163
 msgid "If enabled, the window switcher will switch through minimized windows"
-msgstr "Si activé, le sélecteur alternera entre les fenêtres minimisées"
+msgstr ""
+"Αν ενεργοποιηθεί, ο εναλλάκτης παραθύρων θα εναλλάσσει μεταξύ των "
+"ελαχιστοποιημένων παραθύρων"
 
 #: ../data/unity.ui.h:164
 msgid "Window switching shortcuts"
-msgstr "Raccourcis de basculement des fenêtres"
+msgstr "Συντομεύσεις για την εναλλαγή παραθύρων"
 
 #: ../data/unity.ui.h:165
 msgid "Window switcher shortcuts"
-msgstr "Raccourcis du sélecteur de fenêtre"
+msgstr "Συντομεύσεις εναλλάκτη παραθύρων"
 
 #: ../data/unity.ui.h:166 ../data/windowmanager.ui.h:5
 msgid "Title"
-msgstr "Titre"
+msgstr "Τίτλος"
 
 #: ../data/unity.ui.h:167 ../data/windowmanager.ui.h:6
 msgid "Accelerator"
-msgstr "Accélérateur"
+msgstr "Συντόμευση επιτάχυνσης"
 
 #: ../data/unity.ui.h:168
 msgid "Launcher switching shortcuts"
-msgstr "Raccourcis de sélection du lanceur"
+msgstr "Συντομεύσεις για την εναλλαγή του εκκινητή"
 
 #: ../data/unity.ui.h:169
 msgid "Launcher switcher shortcuts"
-msgstr ""
+msgstr "Συντομεύσεις για τη λειτουργία εναλλαγής του εκκινητή"
 
 #: ../data/unity.ui.h:170
 msgid "Restore the default window switcher settings."
-msgstr "Restaurer les paramètres par défaut du sélecteur de fenêtre."
+msgstr "Επαναφορά αρχικών ρυθμίσεων για τον εναλλάκτη παραθύρων."
 
 #: ../data/unity.ui.h:172
 msgid ""
@@ -1082,7 +1091,7 @@ msgstr ""
 
 #: ../data/unity.ui.h:173
 msgid "Integration prompts:"
-msgstr "Invites d'intégration :"
+msgstr "Προτροπές ενσωμάτωσης:"
 
 #: ../data/unity.ui.h:174
 msgid "Preauthorized domains"
@@ -1098,87 +1107,84 @@ msgstr "Ubuntu One"
 
 #: ../data/unity.ui.h:177
 msgid "Restore the default Unity Webapps settings."
-msgstr "Restaurer les valeurs par défaut d'Unity Webapps."
+msgstr "Επαναφορά αρχικών ρυθμίσεων των διαδικτυακών εφαρμογών του Unity."
 
 #: ../data/unity.ui.h:179
 msgid "HUD"
-msgstr "ATH"
+msgstr "HUD"
 
 #: ../data/unity.ui.h:180
 msgid "Remember previous commands"
-msgstr "Se souvenir des commandes précédentes"
+msgstr "Απομνημόνευση προηγούμενων εντολών"
 
 #: ../data/unity.ui.h:181
 msgid ""
 "If enabled, the HUD will remember previously executed entries and sort them "
 "by frequently used."
 msgstr ""
-"Si activé, l'ATH se souviendra des commandes saisies précédemment et les "
-"triera selon leur fréquence d'utilisation."
+"Αν ενεργοποιηθεί, το HUD θα θυμάται τις εντολές που έχετε εκτελέσει και θα "
+"τις εμφανίζει κατά συχνότητα χρήσης."
 
 #: ../data/unity.ui.h:182
 msgid "Keyboard Shortcuts"
-msgstr "Raccourcis clavier"
+msgstr "Συντομεύσεις πληκτρολογίου"
 
 #: ../data/unity.ui.h:183
 msgid "Hold Super for keyboard shortcuts"
-msgstr "Maintenir la touche Super pour les raccourcis claviers"
+msgstr "Κρατήστε πατημένο το πλήκτρο Super για εμφάνιση των συντομεύσεων"
 
 #: ../data/unity.ui.h:184
 msgid ""
 "When enabled, pressing the Super key displays an overlay of all Unity "
 "keyboard shortcuts"
 msgstr ""
-"Si activé, presser la touche Super affiche tous les raccourcis claviers "
-"d'Unity en surimpression"
+"Όταν ενεργοποιηθεί, πατώντας το πλήκτρο Super εμφανίζει έναν πίνακα με όλες "
+"τις συντομεύσεις πληκτρολογίου για το Unity"
 
 #: ../data/unity.ui.h:185
 msgid "List of Unity keyboard shortcuts"
-msgstr "Liste des raccourcis claviers d'Unity"
+msgstr "Λίστα με τις συντομεύσεις πληκτρολογίου για το Unity"
 
 #: ../data/unity.ui.h:186
 msgid "Notifications"
-msgstr "Notifications"
+msgstr "Ειδοποιήσεις"
 
 #: ../data/unity.ui.h:187
 msgid "All displays"
-msgstr "Tous les affichages"
+msgstr "Όλες οι οθόνες"
 
 #: ../data/unity.ui.h:188
 msgid "For multiple displays, notifications are visible on all of them."
-msgstr ""
-"Pour les affichages multiples, les notifications sont visibles sur tous."
+msgstr "Για πολλαπλές οθόνες, οι ειδοποιήσεις είναι ορατές σε όλες."
 
 #: ../data/unity.ui.h:189
 msgid "Active display"
-msgstr "Affichage actif"
+msgstr "Ενεργή οθόνη"
 
 #: ../data/unity.ui.h:190
 msgid ""
 "For multiple displays, notifications are visible on the active display."
 msgstr ""
-"Pour les affichages multiples, les notifications sont visibles sur "
-"l'affichage actif."
+"Για πολλαπλές οθόνες, οι ειδοποιήσεις είναι ορατές στην ενεργή οθόνη."
 
 #: ../data/unity.ui.h:191
 msgid "Restore the default Unity keyboard shortcut settings."
-msgstr ""
-"Restaurer les valeurs par défaut pour les raccourcis claviers d'Unity"
+msgstr "Επαναφορά αρχικών ρυθμίσεων συντομεύσεων πληκτρολογίου Unity."
 
 #: ../data/about.ui.h:1
 msgid "Copyright © 2013 Freyja Development team"
-msgstr "Copyright © 2013 Équipe de développement Freyja"
+msgstr "Copyright © 2013 Freyja Development team"
 
 #: ../data/about.ui.h:2
 msgid ""
 "Unity Tweak Tool is a settings manager intended to be used with Ubuntu Unity."
 msgstr ""
-"Unity Tweak Tool est un gestionnaire de paramètres conçu pour être utilisé "
-"avec l'environnement Unity d'Ubuntu."
+"Το εργαλείο Unity Tweak Tool είναι ένας διαχειριστής ρυθμίσεων με σκοπό να "
+"χρησιμοποιείται με το Ubuntu Unity."
 
 #: ../data/about.ui.h:3
 msgid "Unity Tweak Tool on Launchpad"
-msgstr "Unity Tweak Tool sur Launchpad"
+msgstr "Το Unity Tweak Tool  στο Launchpad"
 
 #: ../data/about.ui.h:4
 msgid "GPL3"
@@ -1190,35 +1196,35 @@ msgstr "Unity Tweak Tool"
 
 #: ../data/unitytweak.ui.h:2
 msgid "_File"
-msgstr "_Fichier"
+msgstr "_Αρχείο"
 
 #: ../data/unitytweak.ui.h:12
 msgid "Workspace settings"
-msgstr "Paramètres de l'espace de travail"
+msgstr "Ρυθμίσεις χώρων εργασίας"
 
 #: ../data/unitytweak.ui.h:13
 msgid "Windows spread"
-msgstr ""
+msgstr "Έκταση παραθύρων"
 
 #: ../data/unitytweak.ui.h:14
 msgid "Windows snapping"
-msgstr ""
+msgstr "Αρπαγή παραθύρων"
 
 #: ../data/unitytweak.ui.h:21
 msgid "Window controls"
-msgstr "Contrôles de fenêtre"
+msgstr "Στοιχεία ελέγχου παραθύρου"
 
 #: ../data/unitytweak.ui.h:23 ../data/system.ui.h:10
 msgid "Desktop Icons"
-msgstr "Icônes du bureau"
+msgstr "Εικονίδια επιφάνειας εργασίας"
 
 #: ../data/unitytweak.ui.h:26
 msgid "_Help"
-msgstr "_Aide"
+msgstr "_Βοήθεια"
 
 #: ../data/unitytweak.ui.h:27
 msgid " Overview"
-msgstr " Vue d'ensemble"
+msgstr " Επισκόπηση"
 
 #. !/usr/bin/env python3
 #. -*- coding: utf-8 -*-
@@ -1254,27 +1260,27 @@ msgstr " Vue d'ensemble"
 #. ! /usr/bin/env python3
 #: ../data/filechooser-theme.ui.h:1
 msgid "Choose a Theme file to install"
-msgstr "Choisissez un fichier de thème à installer"
+msgstr "Επιλέξτε ένα αρχείο θέματος για εγκατάσταση"
 
 #: ../data/filechooser-theme.ui.h:2
 msgid "Install Theme"
-msgstr "Installer le thème"
+msgstr "Εγκατάσταση θέματος"
 
 #: ../data/system.ui.h:1
 msgid "Items to display:"
-msgstr "Éléments à afficher:"
+msgstr ""
 
 #: ../data/system.ui.h:2
 msgid "Home Folder"
-msgstr "Dossier personnel"
+msgstr "Προσωπικός φάκελος"
 
 #: ../data/system.ui.h:3
 msgid "Network"
-msgstr "Réseau"
+msgstr "Δίκτυο"
 
 #: ../data/system.ui.h:4
 msgid "Rubbish Bin"
-msgstr "Corbeille"
+msgstr "Απορρίμματα"
 
 #: ../data/system.ui.h:5
 msgid "Trash"
@@ -1286,133 +1292,136 @@ msgstr ""
 
 #: ../data/system.ui.h:7
 msgid "Devices"
-msgstr "Périphériques"
+msgstr ""
 
 #: ../data/system.ui.h:9
 msgid "Restore the default configurations for Desktop icons"
-msgstr "Restaurer les valeurs par défaut pour les icônes du bureau"
+msgstr "Επαναφορά αρχικών ρυθμίσεων για τα εικονίδια της επιφάνειας εργασίας"
 
 #: ../data/system.ui.h:11
 msgid "Enhance system security by disabling:"
-msgstr "Améliorer la sécurité du système en désactivant:"
+msgstr "Ενισχύστε την ασφάλεια του συστήματος απενεργοποιώντας:"
 
 #: ../data/system.ui.h:12
 msgid "Desktop lock"
-msgstr "Verrouillage du bureau"
+msgstr "Κλείδωμα επιφάνειας εργασίας"
 
 #: ../data/system.ui.h:13
 msgid "Disable the desktop lock screen."
-msgstr "Désactive l'écran de verrouillage du bureau."
+msgstr "Απενεργοποίηση κλειδώματος επιφάνειας εργασίας."
 
 #: ../data/system.ui.h:14
 msgid "User log out"
-msgstr "Fermer la session"
+msgstr "Αποσύνδεση χρήστη"
 
 #: ../data/system.ui.h:15
 msgid "Disable session log out."
-msgstr "Désactive le menu de fermeture de session."
+msgstr "Απενεργοποίηση αποσύνδεσης συνεδρίας."
 
 #: ../data/system.ui.h:16
 msgid "User switching"
-msgstr "Changer de session"
+msgstr "Εναλλαγή χρήστη"
 
 #: ../data/system.ui.h:17
 msgid "Disable fast user switching."
-msgstr "Désactive le menu de changement rapide d'utilisateur."
+msgstr "Απενεργοποίηση γρήγορης εναλλαγής χρήστη."
 
 #: ../data/system.ui.h:18
 msgid "Printing"
-msgstr "Impression"
+msgstr "Εκτύπωση"
 
 #: ../data/system.ui.h:19
 msgid "Prevent user access to the system's printers and print setup."
 msgstr ""
+"Αποτροπή πρόσβασης χρήστη στους εκτυπωτές του συστήματος και στην ρύθμιση "
+"εκτύπωσης."
 
 #: ../data/system.ui.h:20
 msgid "Restore the default configurations for Security settings"
-msgstr "Restaurer les valeurs par défaut pour les paramètres de sécurités"
+msgstr "Επαναφορά αρχικών ρυθμίσεων για τις ρυθμίσεις ασφαλείας"
 
 #: ../data/system.ui.h:22
 msgid "Scrollbars"
-msgstr "Barres de défilement"
+msgstr "Γραμμές κύλισης"
 
 #: ../data/system.ui.h:23
 msgid "Legacy"
-msgstr "Ancien"
+msgstr "Παλαιού τύπου"
 
 #: ../data/system.ui.h:24
 msgid "Overlay "
-msgstr "Recouvrement "
+msgstr "Επικάλυψη "
 
 #: ../data/system.ui.h:25
 msgid "Select the behaviour of the overlay scrollbars."
-msgstr ""
+msgstr "Επιλογή συμπεριφοράς επικαλυπτόμενων μπαρών κύλισης"
 
 #: ../data/system.ui.h:26
 msgid "Default"
-msgstr "Défaut"
+msgstr "Προεπιλογή"
 
 #: ../data/system.ui.h:27
 msgid "Overlay with mouse"
-msgstr ""
+msgstr "Επικάλυψη με το ποντίκι"
 
 #: ../data/system.ui.h:28
 msgid "No overlay"
-msgstr "Sans recouvrement"
+msgstr "Χωρίς επικάλυψη"
 
 #: ../data/system.ui.h:29
 msgid "Behaviour:"
-msgstr "Comportement :"
+msgstr "Συμπεριφορά:"
 
 #: ../data/system.ui.h:30
 msgid "Touch scrolling"
-msgstr "Défilement tactile"
+msgstr "Κύλιση αφής"
 
 #: ../data/system.ui.h:31
 msgid "Edge"
-msgstr "Bord"
+msgstr "Ακμή"
 
 #: ../data/system.ui.h:32
 msgid "If enabled, edge scrolling is active on touchpads."
-msgstr "Si activé, le défilement au bord est actif sur les pavés tactiles."
+msgstr ""
+"Αν ενεργοποιηθεί, η πλευρική κύλιση θα είναι ενεργή στις επιφάνειες αφής."
 
 #: ../data/system.ui.h:33
 msgid "Two-finger"
-msgstr "À deux doigts"
+msgstr "Δύο δακτύλων"
 
 #: ../data/system.ui.h:34
 msgid "If enabled, two-finger scrolling is active on multitouch touchpads."
 msgstr ""
-"Si activé, le défilement à deux doigts est actif sur les pavés tactiles "
-"multipoints."
+"Αν ενεργοποιηθεί, η κύλιση με δυο δάκτυλα είναι ενεργή σε επιφάνειες αφής "
+"που υποστηρίζουν την λειτουργία."
 
 #: ../data/system.ui.h:35
 msgid "Horizontal scrolling"
-msgstr "Défilement horizontal"
+msgstr "Οριζόντια κύλιση"
 
 #: ../unity-tweak-tool.desktop.in.h:2
 msgid "Configuration frontend for the Unity desktop environment"
-msgstr "Interface de configuration pour l'environnement de bureau Unity"
+msgstr "Διεπαφή για τη ρύθμιση του περιβάλλοντος εργασίας Unity"
 
 #: ../unity-tweak-tool.py:43
 msgid "Start in the Unity tab"
-msgstr ""
+msgstr "Εκκίνηση στην καρτέλα Unity"
 
 #: ../unity-tweak-tool.py:44
 msgid "Start in the WindowManager tab"
-msgstr ""
+msgstr "Εκκίνηση στην καρτέλα Διαχειριστής Παραθύρων"
 
 #: ../unity-tweak-tool.py:45
 msgid "Start in the appearance tab"
-msgstr ""
+msgstr "Εκκίνηση στην καρτέλα Εμφάνιση"
 
 #: ../unity-tweak-tool.py:46
 msgid "Start in the system tab"
-msgstr ""
+msgstr "Εκκίνηση στην καρτέλα Σύστημα"
 
 #: ../unity-tweak-tool.py:47
 msgid "Reset Unity, wiping all configuration changes."
-msgstr ""
+msgstr "Επαναφορά Unity, διαγράφει όλες τις αλλαγές στις ρυθμίσεις."
 
 #: ../unity-tweak-tool.py:61
 msgid ""
@@ -1423,74 +1432,67 @@ msgid ""
 "    Type yes to continue, anything else to exit.\n"
 "    "
 msgstr ""
-"\n"
-"ATTENTION : Vous vous apprêtez à restaurez la configuration par défaut "
-"d'Unity.\n"
-"    Cette opération effacera votre configuration actuelle.\n"
-"    Il est normal que votre bureau scintille durant le processus.\n"
-"    Tapez yes pour continuer, n'importe quoi d'autre pour quitter.\n"
-"    "
 
 #: ../unity-tweak-tool.py:67
 msgid "Do you wish to continue?"
-msgstr ""
+msgstr "Θέλετε να συνεχίσετε;"
 
 #: ../unity-tweak-tool.py:70
 msgid "Please log out and log back in."
-msgstr ""
+msgstr "Παρακαλώ αποσυνδεθείτε και συνδεθείτε ξανά."
 
 #. FIXME : This is guaranteed to fail.
 #: ../data/windowmanager.ui.h:1
 msgid "Zoom"
-msgstr "Zoom"
+msgstr "Μεγέθυνση"
 
 #: ../data/windowmanager.ui.h:2
 msgid "Enable desktop zoom?"
-msgstr "Activer le zoom du bureau ?"
+msgstr "Ενεργοποίηση της λειτουργίας μεγέθυνσης της επιφάνειας εργασίας;"
 
 #: ../data/windowmanager.ui.h:3
 msgid "Desktop magnification:"
-msgstr "Agrandissement du bureau :"
+msgstr "Μεγέθυνση επιφάνειας εργασίας:"
 
 #: ../data/windowmanager.ui.h:4
 msgid "List of keyboard shortcuts for zoom"
-msgstr "Liste des raccourcis claviers pour le zoom"
+msgstr "Λίστα των συντομεύσεων πληκτρολογίου για τη μεγέθυνση"
 
 #: ../data/windowmanager.ui.h:7
 msgid "Hardware acceleration"
-msgstr "Accélération matérielle"
+msgstr "Επιτάχυνση υλικού"
 
 #: ../data/windowmanager.ui.h:8
 msgid "Select the level of texture rendering done by OpenGL"
-msgstr "Choisir le niveau de rendu de texture effectué par OpenGL"
+msgstr "Επιλέξτε το επίπεδο απόδοσης υφών μέσω του OpenGL"
 
 #: ../data/windowmanager.ui.h:9
 msgid "Texture quality: "
-msgstr "Qualité des textures : "
+msgstr "Ποιότητα υφών "
 
 #: ../data/windowmanager.ui.h:10
 msgid "Fast"
-msgstr "Rapide"
+msgstr "Γρήγορη"
 
 #: ../data/windowmanager.ui.h:11
 msgid "Good"
-msgstr "Bonne"
+msgstr "Καλή"
 
 #: ../data/windowmanager.ui.h:12
 msgid "Best"
-msgstr "Meilleur"
+msgstr "Βέλτιστη"
 
 #: ../data/windowmanager.ui.h:13
 msgid "Animations"
-msgstr "Animations"
+msgstr "Κινούμενες εικόνες"
 
 #: ../data/windowmanager.ui.h:14
 msgid "Minimize:"
-msgstr "Minimiser :"
+msgstr "Ελαχιστοποίηση:"
 
 #: ../data/windowmanager.ui.h:15
 msgid "Unminimize:"
-msgstr "Dé-minimiser"
+msgstr "Άρση ελαχιστοποίησης:"
 
 #: ../data/windowmanager.ui.h:16
 msgid "Window Animations:"
@@ -1498,153 +1500,163 @@ msgstr ""
 
 #: ../data/windowmanager.ui.h:17
 msgid "Keyboard shortcuts"
-msgstr "Raccourcis clavier"
+msgstr "Συντομεύσεις πληκτρολογίου"
 
 #: ../data/windowmanager.ui.h:18
 msgid "List of window manager keyboard shortcuts"
-msgstr "Liste des raccourcis clavier de gestion de fenêtre"
+msgstr "Λίστα συντομεύσεων πληκτρολογίου διαχειριστή παραθύρων"
 
 #: ../data/windowmanager.ui.h:20
 msgid "Restore default window manager settings"
-msgstr "Restaurer les valeurs par défaut du gestionnaire de fenêtre"
+msgstr "Επαναφορά προκαθορισμένων ρυθμίσεων στον διαχειριστή παραθύρων"
 
 #: ../data/windowmanager.ui.h:22
 msgid "Enable the window manager to draw multiple workspaces"
 msgstr ""
+"Ενεργοποίηση της δυνατότητας του διαχειριστή παραθύρων να σχεδιάζει "
+"πολλαπλούς χώρους εργασίας"
 
 #: ../data/windowmanager.ui.h:23
 msgid "Workspace switcher:"
-msgstr "Sélecteur d'espace de travail :"
+msgstr "Εναλλάκτης χώρων εργασίας"
 
 #: ../data/windowmanager.ui.h:24
 msgid "Select the outline colour of the current workspace in the overview"
 msgstr ""
-"Sélectionner la couleur de contour de l'espace de travail courant dans "
-"l'aperçu"
+"Επιλογή του χρώματος περιγράμματος του τρέχοντος χώρου εργασίας κατά την "
+"επισκόπηση"
 
 #: ../data/windowmanager.ui.h:25
 msgid "Current workspace colour:"
-msgstr "Couleur de l'espace de travail courant :"
+msgstr "Χρώμα τρέχοντος χώρου εργασίας:"
 
 #: ../data/windowmanager.ui.h:26
 msgid "Select the number of vertical workspaces"
-msgstr "Choisir le nombre d'espaces de travail verticaux"
+msgstr "Επιλογή του πλήθους κατακόρυφων χώρων εργασίας"
 
 #: ../data/windowmanager.ui.h:27
 msgid "Vertical workspaces:"
-msgstr "Espaces de travail verticaux :"
+msgstr "Κατακόρυφοι χώροι εργασίας:"
 
 #: ../data/windowmanager.ui.h:28
 msgid "Select the number of horizontal workspaces"
-msgstr "Choisir le nombre d'espaces de travail horizontaux"
+msgstr "Επιλογή του αριθμού οριζόντιων χώρων εργασίας"
 
 #: ../data/windowmanager.ui.h:29
 msgid "Horizontal workspaces:"
-msgstr "Espaces de travail horizontaux :"
+msgstr "Οριζόντιοι χώροι εργασίας:"
 
 #: ../data/windowmanager.ui.h:30
 msgid "Workspace shortcuts"
-msgstr "Raccourcis pour l'espace de travail"
+msgstr "Συντομεύσεις χώρων εργασίας"
 
 #: ../data/windowmanager.ui.h:31
 msgid "List of workspace management keyboard shortcuts"
-msgstr "Liste de raccourcis claviers de gestion de l'espace de travail"
+msgstr "Λίστα συντομεύσεων πληκτρολογίου διαχείρισης χώρων εργασίας"
 
 #: ../data/windowmanager.ui.h:32
 msgid "Restore default workspace configuration"
-msgstr "Restaurer les valeurs par défaut de l'espace de travail"
+msgstr "Επαναφορά προεπιλεγμένων ρυθμίσεων χώρων εργασίας"
 
 #: ../data/windowmanager.ui.h:33
 msgid "Workspace Settings"
-msgstr "Paramètres de l'espace de travail"
+msgstr "Ρυθμίσεις χώρων εργασίας"
 
 #: ../data/windowmanager.ui.h:34
 msgid "Enable the window spread?"
-msgstr ""
+msgstr "Ενεργοποίηση της έκτασης παραθύρων;"
 
 #: ../data/windowmanager.ui.h:35
 msgid "Window spread:"
-msgstr ""
+msgstr "Έκταση παραθύρων:"
 
 #: ../data/windowmanager.ui.h:36
 msgid "Select the space between window in the spead overview in pixels"
 msgstr ""
+"Επιλέξτε το διάστημα μεταξύ παραθύρων στην επισκόπηση έκτασης σε "
+"εικονοστοιχεία (pixels)"
 
 #: ../data/windowmanager.ui.h:37
 msgid "Spacing:"
-msgstr "Espacement :"
+msgstr "Απόσταση:"
 
 #: ../data/windowmanager.ui.h:38
 msgid "Icons on previews"
-msgstr ""
+msgstr "Προεπισκόπηση εικονιδίων"
 
 #: ../data/windowmanager.ui.h:39
 msgid ""
 "When enabled, show an application's icon on the window preview in the window "
 "spread"
 msgstr ""
+"Όταν είναι ενεργοποιημένο, δείχνει το εικονίδιο μιας εφαρμογής στην "
+"προεπισκόπηση του παραθύρου κατά την έκταση παραθύρων"
 
 #: ../data/windowmanager.ui.h:40
 msgid "Click to access desktop"
-msgstr "Cliquer pour accéder au bureau"
+msgstr "Κλικ για πρόσβαση στην επιφάνεια εργασίας"
 
 #: ../data/windowmanager.ui.h:41
 msgid ""
 "When enabled, clicking on the desktop in the window spread will display the "
 "desktop"
 msgstr ""
+"Όταν είναι ενεργοποιημένο, κάνοντας κλικ στην επιφάνεια εργασίας κατά την "
+"έκταση παραθύρων θα προβληθεί η επιφάνεια εργασίας."
 
 #: ../data/windowmanager.ui.h:42
 msgid "Window spread shortcuts"
-msgstr ""
+msgstr "Συντομεύσεις έκτασης παραθύρων"
 
 #: ../data/windowmanager.ui.h:43
 msgid "List of window spread shortcuts"
-msgstr ""
+msgstr "Λίστα συντομεύσεων έκτασης παραθύρων"
 
 #: ../data/windowmanager.ui.h:44
 msgid "Restore default window spread settings"
-msgstr ""
+msgstr "Αποκατάσταση προεπιλεγμένων ρυθμίσεων έκτασης παραθύρων"
 
 #: ../data/windowmanager.ui.h:45
 msgid "Window spread"
-msgstr ""
+msgstr "Έκταση παραθύρων"
 
 #: ../data/windowmanager.ui.h:46
 msgid "Window snapping:"
-msgstr ""
+msgstr "Αρπαγή παραθύρου:"
 
 #: ../data/windowmanager.ui.h:47
 msgid "Fill colour:"
-msgstr "Couleur de remplissage :"
+msgstr "Χρώμα γεμίσματος:"
 
 #: ../data/windowmanager.ui.h:48
 msgid "Outline colour:"
-msgstr "Couleur de contour :"
+msgstr "Χρώμα περιγράμματος"
 
 #: ../data/windowmanager.ui.h:50
 msgid "Window snapping"
-msgstr ""
+msgstr "Αρπαγή παραθύρου"
 
 #: ../data/windowmanager.ui.h:51
 msgid "Hotcorners:"
-msgstr "Coins actifs :"
+msgstr "Ενεργές γωνίες:"
 
 #: ../data/windowmanager.ui.h:53
 msgid "Focus Behaviour"
-msgstr ""
+msgstr "Συμπεριφορά εστίασης"
 
 #: ../data/windowmanager.ui.h:54
 msgid "Auto-raise delay:"
-msgstr ""
+msgstr "Καθυστέρηση αυτόματης ύψωσης:"
 
 #: ../data/windowmanager.ui.h:55
 msgid "Set the delay for raising newly focused windows."
 msgstr ""
+"Ρυθμίστε την καθυστέρηση για την ανασήκωση των προσφάτως εστιασμένων "
+"παραθύρων."
 
 #: ../data/windowmanager.ui.h:56
 msgid "Focus mode:"
-msgstr ""
+msgstr "Λειτουργία εστίασης:"
 
 #: ../data/windowmanager.ui.h:57
 msgid ""
@@ -1653,102 +1665,110 @@ msgid ""
 "enters the window, and \"mouse\" means windows are focused when the mouse "
 "enters the window and unfocused when the mouse leaves the window."
 msgstr ""
+"Επιλέξτε τη λειτουργία εστίασης παραθύρου. «Κλικ» σημαίνει πως για να "
+"εστιαστούν τα παράθυρα πρέπει να γίνει κλικ επάνω τους, «άτσαλη» σημαίνει "
+"πως τα παράθυρα εστιάζονται όταν το ποντίκι εισέρχεται στα παράθυρα και "
+"«ποντίκι» σημαίνει πως τα παράθυρα εστιάζονται όταν το ποντίκι εισέρχεται "
+"στα παράθυρα και χάνουν την εστίαση όταν το ποντίκι τα εγκαταλείπει."
 
 #: ../data/windowmanager.ui.h:58
 msgid "Click"
-msgstr "Cliquer"
+msgstr "Κλικ"
 
 #: ../data/windowmanager.ui.h:59
 msgid "Sloppy"
-msgstr ""
+msgstr "Άτσαλη"
 
 #: ../data/windowmanager.ui.h:60
 msgid "Mouse"
-msgstr "Souris"
+msgstr "Ποντίκι"
 
 #: ../data/windowmanager.ui.h:61
 msgid "If enabled, windows that take focus will be automatically raised."
 msgstr ""
+"Αν είναι ενεργοποιημένο, τα παράθυρα που αποκτούν εστίαση, ανασηκώνονται "
+"αυτόματα."
 
 #: ../data/windowmanager.ui.h:62
 msgid "Auto-raise:"
-msgstr ""
+msgstr "Αυτόματη ανασήκωση:"
 
 #: ../data/windowmanager.ui.h:63
 msgid "Titlebar Actions"
-msgstr "Actions de la barre de titre"
+msgstr "Ενέργειες μπάρας τίτλου:"
 
 #: ../data/windowmanager.ui.h:64
 msgid "Double click:"
-msgstr "Double-clic :"
+msgstr "Διπλό κλικ:"
 
 #: ../data/windowmanager.ui.h:65
 msgid "Select the titlebar's double click action."
-msgstr ""
+msgstr "Επιλέξτε την ενέργεια της μπάρας τίτλου για το διπλό κλικ."
 
 #: ../data/windowmanager.ui.h:66
 msgid "Toggle Shade"
-msgstr ""
+msgstr "Εναλλαγή σκίασης"
 
 #: ../data/windowmanager.ui.h:67
 msgid "Maximize"
-msgstr "Maximiser"
+msgstr "Μεγιστοποίηση"
 
 #: ../data/windowmanager.ui.h:68
 msgid "Horizontal expand"
-msgstr ""
+msgstr "Οριζόντια έκταση"
 
 #: ../data/windowmanager.ui.h:69
 msgid "Vertical expand"
-msgstr ""
+msgstr "Κατακόρυφη έκταση"
 
 #: ../data/windowmanager.ui.h:70
 msgid "Minimize"
-msgstr "Minimiser"
+msgstr "Ελαχιστοποίηση"
 
 #: ../data/windowmanager.ui.h:71
 msgid "No action"
-msgstr "Aucune action"
+msgstr "Καμία ενέργεια"
 
 #: ../data/windowmanager.ui.h:72
 msgid "Lower"
-msgstr ""
+msgstr "Βύθιση"
 
 #: ../data/windowmanager.ui.h:73
 msgid "Menu"
-msgstr "Menu"
+msgstr "Μενού"
 
 #: ../data/windowmanager.ui.h:74
 msgid "Middle click:"
-msgstr "Clic du milieu"
+msgstr "Μεσαίο κλικ:"
 
 #: ../data/windowmanager.ui.h:75
 msgid "Select the titlebar's middle click action."
-msgstr "Choisir l'action d'un clic-milieu sur la barre de titre."
+msgstr "Επιλέξτε την ενέργεια της μπάρας τίτλου για το μεσαίο κλικ."
 
 #: ../data/windowmanager.ui.h:76
 msgid "Toggle shade"
-msgstr ""
+msgstr "Εναλλαγή σκίασης"
 
 #: ../data/windowmanager.ui.h:77
 msgid "Right click:"
-msgstr "Clic droit :"
+msgstr "Δεξί κλικ:"
 
 #: ../data/windowmanager.ui.h:78
 msgid "Select the titlebar's right click action."
-msgstr "Choisir l'action d'un clic-droit sur la barre de titre."
+msgstr "Επιλέξτε την ενέργεια της μπάρας τίτλου για το δεξί κλικ."
 
 #: ../data/windowmanager.ui.h:79
 msgid "Resizing"
-msgstr "Redimensionnement"
+msgstr "Αλλαγή διαστάσεων"
 
 #: ../data/windowmanager.ui.h:80
 msgid "Restore the default settings for the additional options."
-msgstr "Restaurer les valeurs par défaut pour les options supplémentaires."
+msgstr ""
+"Επαναφορά των προεπιλεγμένων ρυθμίσεων για τις επιπρόσθετες επιλογές."
 
 #: ../data/windowmanager.ui.h:82
 msgid "Close window"
-msgstr "Fermer la fenêtre"
+msgstr "Κλείσιμο παραθύρου"
 
 #: ../data/windowmanager.ui.h:83
 msgid "Alt+F4"
@@ -1756,15 +1776,15 @@ msgstr "Alt+F4"
 
 #: ../data/windowmanager.ui.h:84
 msgid "Move window"
-msgstr "Déplacer la fenêtre"
+msgstr "Μετακίνηση παραθύρου"
 
 #: ../data/windowmanager.ui.h:85
 msgid "Alt+mouse button 1"
-msgstr "Alt+bouton 1 de la souris"
+msgstr "Alt+πλήκτρο ποντικιού 1"
 
 #: ../data/windowmanager.ui.h:86
 msgid "Show desktop"
-msgstr "Afficher le bureau"
+msgstr "Εμφάνιση επιφάνειας εργασίας"
 
 #: ../data/windowmanager.ui.h:87
 msgid "Super+D"
@@ -1772,7 +1792,7 @@ msgstr "Super+D"
 
 #: ../data/windowmanager.ui.h:88
 msgid "Zoom in"
-msgstr "Zoom avant"
+msgstr "Μεγέθυνση"
 
 #: ../data/windowmanager.ui.h:89
 msgid "Super++"
@@ -1780,7 +1800,7 @@ msgstr "Super++"
 
 #: ../data/windowmanager.ui.h:90
 msgid "Zoom out"
-msgstr "Zoom arrière"
+msgstr "Σμίκρυνση"
 
 #: ../data/windowmanager.ui.h:91
 msgid "Super+-"
@@ -1788,7 +1808,7 @@ msgstr "Super+-"
 
 #: ../data/windowmanager.ui.h:92
 msgid "Start windows spread"
-msgstr ""
+msgstr "Εκκίνηση έκτασης παραθύρων"
 
 #: ../data/windowmanager.ui.h:93
 msgid "Super+W"
@@ -1796,11 +1816,11 @@ msgstr "Super+W"
 
 #: ../data/windowmanager.ui.h:94
 msgid "Start windows spread for all windows"
-msgstr ""
+msgstr "Εκκίνηση έκτασης παραθύρων για όλα τα παράθυρα"
 
 #: ../data/windowmanager.ui.h:96
 msgid "Start workspace switcher"
-msgstr "Démarrer le sélecteur d'espaces de travail"
+msgstr "Εκκίνηση εναλλάκτη επιφανειών εργασίας"
 
 #: ../data/windowmanager.ui.h:97
 msgid "Super+S"
@@ -1808,140 +1828,147 @@ msgstr "Super+S"
 
 #: ../data/windowmanager.ui.h:98
 msgid "Toggle Desktop"
-msgstr ""
+msgstr "Εναλλαγή επιφάνειας εργασίας"
 
 #: ../data/windowmanager.ui.h:99
 msgid "Show Workspaces"
-msgstr "Afficher les espaces de travail"
+msgstr "Εμφάνιση χώρων εργασίας"
 
 #: ../data/windowmanager.ui.h:100
 msgid "Window Spread"
-msgstr ""
+msgstr "Έκταση παραθύρων"
 
 #: ../data/windowmanager.ui.h:101
 msgid "Spread all Windows"
-msgstr ""
+msgstr "Έκταση όλων των παραθύρων"
 
 #: ../data/windowmanager.ui.h:102
 msgid "Do Nothing"
-msgstr "Ne rien faire"
+msgstr "Καμία ενέργεια"
 
 #: ../data/windowmanager.ui.h:103
 msgid "Bottom Left Corner"
-msgstr "Coin inférieur gauche"
+msgstr "Κάτω αριστερή γωνία"
 
 #: ../data/windowmanager.ui.h:104
 msgid "Bottom Half"
-msgstr "Moitié inférieure"
+msgstr "Μέση κάτω μέρους"
 
 #: ../data/windowmanager.ui.h:105
 msgid "Bottom Right Corner"
-msgstr "Coin inférieur droit"
+msgstr "Κάτω δεξιά γωνία"
 
 #: ../data/windowmanager.ui.h:106
 msgid "Left Half"
-msgstr "Moitié gauche"
+msgstr "Μέση αριστερής μεριάς"
 
 #: ../data/windowmanager.ui.h:107
 msgid "Fill Screen"
-msgstr "Remplir l'écran"
+msgstr "Γέμισμα οθόνης"
 
 #: ../data/windowmanager.ui.h:108
 msgid "Right Half"
-msgstr "Moitié droite"
+msgstr "Μέση δεξιάς μεριάς"
 
 #: ../data/windowmanager.ui.h:109
 msgid "Top Left Corner"
-msgstr "Coin supérieur gauche"
+msgstr "Πάνω αριστερή γωνία"
 
 #: ../data/windowmanager.ui.h:110
 msgid "Top Half"
-msgstr "Moitié supérieure"
+msgstr "Μέση επάνω μέρους"
 
 #: ../data/windowmanager.ui.h:111
 msgid "Top Right Corner"
-msgstr "Coin supérieur droit"
-
-#~ msgid "Layout:"
-#~ msgstr "Agencement :"
-
-#~ msgid "Sidekick"
-#~ msgstr "Renversement"
+msgstr "Πάνω δεξιά γωνία"
 
 #~ msgid "Magic Lamp"
-#~ msgstr "Lampe Magique"
-
-#~ msgid "Glide 2"
-#~ msgstr "Glissement 2"
-
-#~ msgid "Horizontal Folds"
-#~ msgstr "Plis Horizontaux"
+#~ msgstr "Μαγικό λυχνάρι"
 
 #~ msgid "Random"
-#~ msgstr "Aléatoire"
-
-#~ msgid "Fade & slide"
-#~ msgstr "Fondu et glissement"
-
-#~ msgid "Fade Dash & Slide"
-#~ msgstr "Fondu du tableau de bord et glissement"
-
-#~ msgid "Transparency:"
-#~ msgstr "Transparence :"
-
-#~ msgid "Enable launcher transparency?"
-#~ msgstr "Activer la transparence du lanceur ?"
-
-#~ msgid "Current layout"
-#~ msgstr "Disposition actuelle"
-
-#~ msgid "Use the default window button layout."
-#~ msgstr "Utiliser la disposition par défaut des boutons de fenêtre."
-
-#~ msgid "Custom"
-#~ msgstr "Personnalisée"
-
-#~ msgid "Use a custom window button layout."
-#~ msgstr "Utiliser une disposition personnalisée des boutons de fenêtre."
-
-#~ msgid "Close, window title, maximize"
-#~ msgstr "fermer, titre de la fenêtre, maximiser"
-
-#~ msgid "Close, minimize, window title"
-#~ msgstr "fermer, minimiser, titre de la fenêtre"
-
-#~ msgid "Close, maximize, window title"
-#~ msgstr "fermer, maximiser, titre de la fenêtre"
-
-#~ msgid "Close button only"
-#~ msgstr "Seulement le bouton de fermeture"
-
-#~ msgid "Preauthorized domains:"
-#~ msgstr "Domaines pré-autorisés :"
-
-#~ msgid "Enable transparency for the panel?"
-#~ msgstr "Activer la transparence de la barre de menu ?"
-
-#~ msgid "Select a custom window controls layout."
-#~ msgstr "Choisir une disposition personnalisée des contrôles de fenêtre."
-
-#~ msgid "Update display during VBlank"
-#~ msgstr "Mettre à jour l'affichage durant VBlank"
-
-#~ msgid "Magic Lamp Wavy"
-#~ msgstr "Ondulation « Lampe magique »"
+#~ msgstr "Τυχαίο"
 
 #~ msgid "Curved Fold"
-#~ msgstr "Pli courbé"
-
-#~ msgid "Fade"
-#~ msgstr "Fondu"
+#~ msgstr "Καμπυλωτή Πτυχή"
 
 #~ msgid "Glide 1"
-#~ msgstr "Glissement 1"
+#~ msgstr "Ολίσθηση 1"
+
+#~ msgid "Glide 2"
+#~ msgstr "Ολίσθηση 2"
+
+#~ msgid "Horizontal Folds"
+#~ msgstr "Οριζόντιες Πτυχές"
+
+#~ msgid "Sidekick"
+#~ msgstr "Πλαινό Χτύπημα"
+
+#~ msgid ""
+#~ "When enabled, screen updates are performed when the monitor is in vertical "
+#~ "blank mode."
+#~ msgstr ""
+#~ "Όταν είναι ενεργοποιημένο, οι ανανεώσεις της οθόνης γίνονται όταν η οθόνη "
+#~ "βρίσκεται σε λειτουργία vertical blank."
+
+#~ msgid "Update display during VBlank"
+#~ msgstr "Ανανέωση της οθόνης κατά τη διάρκεια του VBlank"
+
+#~ msgid "Fade"
+#~ msgstr "Ξεθώριασμα"
+
+#~ msgid "Magic Lamp Wavy"
+#~ msgstr "Κυματιστό μαγικό λυχνάρι"
+
+#~ msgid "Fade Dash & Slide"
+#~ msgstr "Σβήσιμο του Dash & Ολίσθηση"
+
+#~ msgid "Fade & slide"
+#~ msgstr "Σβήσιμο & ολίσθηση"
+
+#~ msgid "Transparency:"
+#~ msgstr "Διαφάνεια:"
+
+#~ msgid "Enable transparency for the panel?"
+#~ msgstr "Ενεργοποίηση διαφάνειας για το πάνελ;"
+
+#~ msgid "Layout:"
+#~ msgstr "Διάταξη:"
+
+#~ msgid "Close, window title, maximize"
+#~ msgstr "Κλείσιμο, τίτλος παραθύρου, μεγιστοποίηση"
+
+#~ msgid "Close, minimize, window title"
+#~ msgstr "Κλείσιμο, ελαχιστοποίηση, τίτλος παραθύρου"
+
+#~ msgid "Close, maximize, window title"
+#~ msgstr "Κλείσιμο, μεγιστοποίηση, τίτλος παραθύρου"
+
+#~ msgid "Close button only"
+#~ msgstr "Πλήκτρο κλεισίματος μόνο"
+
+#~ msgid "Enable launcher transparency?"
+#~ msgstr "Ενεργοποίηση της διαφάνειας του εκκινητή;"
+
+#~ msgid "Preauthorized domains:"
+#~ msgstr "Προεγκεκριμένες σελίδες:"
 
 #~ msgid ""
 #~ "Enable prompts for webapp integration when visitiing supported websites?"
 #~ msgstr ""
-#~ "Activer les invites d'intégration d'applications Web lors de la visite de "
-#~ "sites les prenant en charge ?"
+#~ "Ενεργοποίηση της προτροπής για την ενσωμάτωση των διαδικτυακών εφαρμογών "
+#~ "όταν επισκέπτεστε υποστηριζόμενες ιστοσελίδες;"
+
+#~ msgid "Use the default window button layout."
+#~ msgstr "Χρήση της προεπιλεγμένης διάταξης κουμπιών παραθύρων"
+
+#~ msgid "Custom"
+#~ msgstr "Σε προσαρμογή"
+
+#~ msgid "Use a custom window button layout."
+#~ msgstr "Χρήση προσαρμοσμένης διάταξης κουμπιών παραθύρων."
+
+#~ msgid "Current layout"
+#~ msgstr "Τρέχουσα διάταξη"
+
+#~ msgid "Select a custom window controls layout."
+#~ msgstr "Επιλογή προσαρμοσμένης διάταξης κουμπιών παραθύρων."
