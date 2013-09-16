@@ -1,7 +1,7 @@
 unity-tweak-tool (0.0.5) saucy; urgency=low
 
   [ J Phani Mahesh ]
-  * New upstream release (LP: #???????)
+  * New upstream release (LP: #1226059)
     - New application icon 
     - Show error dialog when schemas are missing instead of crashing
     - Trigger new build of pot files
@@ -29,7 +29,7 @@ unity-tweak-tool (0.0.5) saucy; urgency=low
   * UnityTweakTool/section/sphagetti/compiz.py
     - Fix TypeError in color_to_hash() (LP: #1166884)
 
- -- Barneedhar Vigneshwar <barneedhar@ubuntu.com>  Tue, 09 Apr 2013 19:55:14 +0530
+ -- Barneedhar Vigneshwar <barneedhar@ubuntu.com>  Mon, 16 Sep 2013 19:34:38 +0530
 
 unity-tweak-tool (0.0.4) raring; urgency=medium
 
