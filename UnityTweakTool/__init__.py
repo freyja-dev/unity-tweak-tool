@@ -55,10 +55,9 @@ try:
     _fh.setFormatter(_formatter)
     logger.addHandler(_fh)
     del _fh
+    del _formatter
 except Exception:
     print('Unable to open {LOGFILE} for writing.'.format(LOGFILE=LOGFILE),file=sys.stderr)
-
-del _formatter
 
 
 ##########################################################################
