@@ -102,22 +102,6 @@
         <col id="1" translatable="yes">Shift+Ctrl+Super+Alt+Tab</col>
       </row>
       <row>
-        <col id="0" translatable="yes">Go right in the switcher</col>
-        <col id="1" translatable="yes">Alt+Right</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">Go left in the switcher</col>
-        <col id="1" translatable="yes">Alt+Left</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">Expose windows in the switcher</col>
-        <col id="1" translatable="yes">Alt+Down</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">Collapse windows in the switcher</col>
-        <col id="1" translatable="yes">Alt+Up</col>
-      </row>
-      <row>
         <col id="0" translatable="yes">Flip through windows in the switcher</col>
         <col id="1" translatable="yes">Disabled</col>
       </row>

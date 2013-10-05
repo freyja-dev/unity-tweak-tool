@@ -116,24 +116,8 @@ class Unitysettings ():
         iter_alt_tab_prev_all = model.iter_next(iter_alt_tab_forward_all)
         model.set_value(iter_alt_tab_prev_all, 1, alt_tab_prev_all)
 
-        alt_tab_right = gsettings.unityshell.get_string('alt-tab-right')
-        iter_alt_tab_right = model.iter_next(iter_alt_tab_prev_all)
-        model.set_value(iter_alt_tab_right, 1, alt_tab_right)
-
-        alt_tab_left = gsettings.unityshell.get_string('alt-tab-left')
-        iter_alt_tab_left = model.iter_next(iter_alt_tab_right)
-        model.set_value(iter_alt_tab_left, 1, alt_tab_left)
-
-        alt_tab_detail_start = gsettings.unityshell.get_string('alt-tab-detail-start')
-        iter_alt_tab_detail_start = model.iter_next(iter_alt_tab_left)
-        model.set_value(iter_alt_tab_detail_start, 1, alt_tab_detail_start)
-
-        alt_tab_detail_stop = gsettings.unityshell.get_string('alt-tab-detail-stop')
-        iter_alt_tab_detail_stop = model.iter_next(iter_alt_tab_detail_start)
-        model.set_value(iter_alt_tab_detail_stop, 1, alt_tab_detail_stop)
-
         alt_tab_next_window = gsettings.unityshell.get_string('alt-tab-next-window')
-        iter_alt_tab_next_window = model.iter_next(iter_alt_tab_detail_stop)
+        iter_alt_tab_next_window = model.iter_next(iter_alt_tab_prev_all)
         model.set_value(iter_alt_tab_next_window, 1, alt_tab_next_window)
 
         alt_tab_prev_window = gsettings.unityshell.get_string('alt-tab-prev-window')
@@ -268,16 +252,8 @@ class Unitysettings ():
         elif path == '3':
             gsettings.unityshell.set_string('alt-tab-prev-all', accel)
         elif path == '4':
-            gsettings.unityshell.set_string('alt-tab-right', accel)
-        elif path == '5':
-            gsettings.unityshell.set_string('alt-tab-left', accel)
-        elif path == '6':
-            gsettings.unityshell.set_string('alt-tab-detail-start', accel)
-        elif path == '7':
-            gsettings.unityshell.set_string('alt-tab-detail-stop', accel)
-        elif path == '8':
             gsettings.unityshell.set_string('alt-tab-next-window', accel)
-        elif path == '9':
+        elif path == '5':
             gsettings.unityshell.set_string('alt-tab-prev-window', accel)
 
     def on_craccel_unity_switcher_windows_accel_cleared(self, craccel, path, model = None):
@@ -293,16 +269,8 @@ class Unitysettings ():
         elif path == '3':
             gsettings.unityshell.set_string('alt-tab-prev-all', 'Disabled')
         elif path == '4':
-            gsettings.unityshell.set_string('alt-tab-right', 'Disabled')
-        elif path == '5':
-            gsettings.unityshell.set_string('alt-tab-left', 'Disabled')
-        elif path == '6':
-            gsettings.unityshell.set_string('alt-tab-detail-start', 'Disabled')
-        elif path == '7':
-            gsettings.unityshell.set_string('alt-tab-detail-stop', 'Disabled')
-        elif path == '8':
             gsettings.unityshell.set_string('alt-tab-next-window', 'Disabled')
-        elif path == '9':
+        elif path == '5':
             gsettings.unityshell.set_string('alt-tab-prev-window', 'Disabled')
 
     # keyboard widgets in unity-launcher-switcher
@@ -333,10 +301,6 @@ class Unitysettings ():
         gsettings.unityshell.reset('alt-tab-prev')
         gsettings.unityshell.reset('alt-tab-forward-all')
         gsettings.unityshell.reset('alt-tab-prev-all')
-        gsettings.unityshell.reset('alt-tab-right')
-        gsettings.unityshell.reset('alt-tab-left')
-        gsettings.unityshell.reset('alt-tab-detail-start')
-        gsettings.unityshell.reset('alt-tab-detail-stop')
         gsettings.unityshell.reset('alt-tab-next-window')
         gsettings.unityshell.reset('alt-tab-prev-window')
         gsettings.unityshell.reset('launcher-switcher-forward')
