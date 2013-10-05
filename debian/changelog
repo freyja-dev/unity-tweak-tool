@@ -1,7 +1,8 @@
 unity-tweak-tool (0.0.6) saucy; urgency=high
 
   [ Barneedhar Vigneshwar]
-  * New upstream bug-fix only release
+  * New upstream bug-fix only release (LP: #1235752)
+    - Trigger new build of pot files
   * UnityTweakTool/section/spaghetti/unity.py
     - unity-tweak-tool crashed with signal 5 in g_settings_get_value() (LP: #1235432)
 
