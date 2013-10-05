@@ -2,8 +2,12 @@ unity-tweak-tool (0.0.6) saucy; urgency=high
 
   [ Barneedhar Vigneshwar]
   * New upstream bug-fix only release
+  * UnityTweakTool/section/spaghetti/unity.py
     - unity-tweak-tool crashed with signal 5 in g_settings_get_value() (LP: #1235432)
-    
+
+  [ J Phani Mahesh]
+  * UnityTweakTool/__init__.py
+    - Fix NameError: name '_formatter' is not defined (LP: #1232515)
 
  -- Barneedhar Vigneshwar <barneedhar@ubuntu.com>  Sat, 05 Oct 2013 22:45:24 +0530
 
