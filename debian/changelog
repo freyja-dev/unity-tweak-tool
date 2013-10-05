@@ -1,3 +1,12 @@
+unity-tweak-tool (0.0.6) saucy; urgency=high
+
+  [ Barneedhar Vigneshwar]
+  * New upstream bug-fix only release
+    - unity-tweak-tool crashed with signal 5 in g_settings_get_value() (LP: #1235432)
+    
+
+ -- Barneedhar Vigneshwar <barneedhar@ubuntu.com>  Sat, 05 Oct 2013 22:45:24 +0530
+
 unity-tweak-tool (0.0.5) saucy; urgency=low
 
   [ J Phani Mahesh ]
