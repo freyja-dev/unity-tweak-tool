@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-15 23:01+0530\n"
+"POT-Creation-Date: 2013-10-06 00:16+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,1097 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../data/system.ui.h:1
-msgid "Items to display:"
+#: ../data/filechooser-theme.ui.h:1
+msgid "Choose a Theme file to install"
 msgstr ""
 
-#: ../data/system.ui.h:2
-msgid "Home Folder"
+#: ../data/filechooser-theme.ui.h:2
+msgid "Install Theme"
 msgstr ""
 
-#: ../data/system.ui.h:3
-msgid "Network"
-msgstr ""
-
-#: ../data/system.ui.h:4
-msgid "Rubbish Bin"
-msgstr ""
-
-#: ../data/system.ui.h:5
-msgid "Trash"
-msgstr ""
-
-#: ../data/system.ui.h:6
-msgid "Mounted Devices"
-msgstr ""
-
-#: ../data/system.ui.h:7
-msgid "Devices"
-msgstr ""
-
-#: ../data/system.ui.h:8 ../data/unity.ui.h:83 ../data/windowmanager.ui.h:19
-#: ../data/appearance.ui.h:6
-msgid "Restore defaults"
-msgstr ""
-
-#: ../data/system.ui.h:9
-msgid "Restore the default configurations for Desktop icons"
-msgstr ""
-
-#: ../data/system.ui.h:10 ../data/unitytweak.ui.h:23
-msgid "Desktop Icons"
-msgstr ""
-
-#: ../data/system.ui.h:11
-msgid "Enhance system security by disabling:"
-msgstr ""
-
-#: ../data/system.ui.h:12
-msgid "Desktop lock"
-msgstr ""
-
-#: ../data/system.ui.h:13
-msgid "Disable the desktop lock screen."
-msgstr ""
-
-#: ../data/system.ui.h:14
-msgid "User log out"
-msgstr ""
-
-#: ../data/system.ui.h:15
-msgid "Disable session log out."
-msgstr ""
-
-#: ../data/system.ui.h:16
-msgid "User switching"
-msgstr ""
-
-#: ../data/system.ui.h:17
-msgid "Disable fast user switching."
-msgstr ""
-
-#: ../data/system.ui.h:18
-msgid "Printing"
-msgstr ""
-
-#: ../data/system.ui.h:19
-msgid "Prevent user access to the system's printers and print setup."
-msgstr ""
-
-#: ../data/system.ui.h:20
-msgid "Restore the default configurations for Security settings"
-msgstr ""
-
-#: ../data/system.ui.h:21 ../data/overview.ui.h:27 ../data/unitytweak.ui.h:24
-msgid "Security"
-msgstr ""
-
-#: ../data/system.ui.h:22
-msgid "Scrollbars"
-msgstr ""
-
-#: ../data/system.ui.h:23
-msgid "Legacy"
-msgstr ""
-
-#: ../data/system.ui.h:24
-msgid "Overlay "
-msgstr ""
-
-#: ../data/system.ui.h:25
-msgid "Select the behaviour of the overlay scrollbars."
-msgstr ""
-
-#: ../data/system.ui.h:26
-msgid "Default"
-msgstr ""
-
-#: ../data/system.ui.h:27
-msgid "Overlay with mouse"
-msgstr ""
-
-#: ../data/system.ui.h:28
-msgid "No overlay"
-msgstr ""
-
-#: ../data/system.ui.h:29
-msgid "Behaviour:"
-msgstr ""
-
-#: ../data/system.ui.h:30
-msgid "Touch scrolling"
-msgstr ""
-
-#: ../data/system.ui.h:31
-msgid "Edge"
-msgstr ""
-
-#: ../data/system.ui.h:32
-msgid "If enabled, edge scrolling is active on touchpads."
-msgstr ""
-
-#: ../data/system.ui.h:33
-msgid "Two-finger"
-msgstr ""
-
-#: ../data/system.ui.h:34
-msgid "If enabled, two-finger scrolling is active on multitouch touchpads."
-msgstr ""
-
-#: ../data/system.ui.h:35
-msgid "Horizontal scrolling"
-msgstr ""
-
-#: ../data/system.ui.h:36 ../data/overview.ui.h:28 ../data/unitytweak.ui.h:25
-msgid "Scrolling"
-msgstr ""
-
-#: ../data/overview.ui.h:1 ../unity-tweak-tool.desktop.in.h:3
-#: ../data/unitytweak.ui.h:3
-msgid "Unity"
-msgstr ""
-
-#: ../data/overview.ui.h:2 ../data/unity.ui.h:85 ../data/unitytweak.ui.h:4
-msgid "Launcher"
-msgstr ""
-
-#: ../data/overview.ui.h:3 ../data/unity.ui.h:110 ../data/unitytweak.ui.h:5
-msgid "Search"
-msgstr ""
-
-#: ../data/overview.ui.h:4 ../data/unity.ui.h:154 ../data/unitytweak.ui.h:6
-msgid "Panel"
-msgstr ""
-
-#: ../data/overview.ui.h:5 ../data/unity.ui.h:171 ../data/unitytweak.ui.h:7
-msgid "Switcher"
-msgstr ""
-
-#: ../data/overview.ui.h:6 ../data/unity.ui.h:178 ../data/unitytweak.ui.h:8
-msgid "Web Apps"
-msgstr ""
-
-#: ../data/overview.ui.h:7 ../data/unity.ui.h:192
-#: ../data/windowmanager.ui.h:81 ../data/unitytweak.ui.h:9
-msgid "Additional"
-msgstr ""
-
-#: ../data/overview.ui.h:8 ../unity-tweak-tool.desktop.in.h:4
-#: ../data/unitytweak.ui.h:10
-msgid "Window Manager"
-msgstr ""
-
-#: ../data/overview.ui.h:9 ../data/unity.ui.h:86 ../data/windowmanager.ui.h:21
-#: ../data/appearance.ui.h:20 ../data/unitytweak.ui.h:11
-msgid "General"
-msgstr ""
-
-#: ../data/overview.ui.h:10
-msgid ""
-"Workspace\n"
-"Settings"
-msgstr ""
-
-#: ../data/overview.ui.h:12
-msgid ""
-"Window\n"
-"Spread"
-msgstr ""
-
-#: ../data/overview.ui.h:14
-msgid ""
-"Window\n"
-"Snapping"
-msgstr ""
-
-#: ../data/overview.ui.h:16 ../data/windowmanager.ui.h:52
-#: ../data/unitytweak.ui.h:15
-msgid "Hotcorners"
-msgstr ""
-
-#: ../data/overview.ui.h:17 ../data/unity.ui.h:49
-#: ../unity-tweak-tool.desktop.in.h:5 ../data/appearance.ui.h:29
-#: ../data/unitytweak.ui.h:16
-msgid "Appearance"
-msgstr ""
-
-#: ../data/overview.ui.h:18 ../data/appearance.ui.h:8
-#: ../data/unitytweak.ui.h:17
-msgid "Theme"
-msgstr ""
-
-#: ../data/overview.ui.h:19 ../data/unity.ui.h:64 ../data/appearance.ui.h:12
-#: ../data/unitytweak.ui.h:18
-msgid "Icons"
-msgstr ""
-
-#: ../data/overview.ui.h:20
-msgid "Cursors"
-msgstr ""
-
-#: ../data/overview.ui.h:21 ../data/appearance.ui.h:43
-#: ../data/unitytweak.ui.h:20
-msgid "Fonts"
-msgstr ""
-
-#: ../data/overview.ui.h:22
-msgid ""
-"Window\n"
-"Controls"
-msgstr ""
-
-#: ../data/overview.ui.h:24 ../unity-tweak-tool.desktop.in.h:6
-#: ../data/unitytweak.ui.h:22
-msgid "System"
-msgstr ""
-
-#: ../data/overview.ui.h:25
-msgid ""
-"Desktop\n"
-"Icons"
-msgstr ""
-
-#: ../UnityTweakTool/utils/unityreset.py:41
-msgid "Initialising Unity reset"
-msgstr ""
-
-#: ../UnityTweakTool/utils/unityreset.py:42
-msgid "Killing Unity and Compiz"
-msgstr ""
-
-#: ../UnityTweakTool/utils/unityreset.py:45
-msgid "Resetting compiz plugins"
-msgstr ""
-
-#: ../UnityTweakTool/utils/unityreset.py:47
-msgid "Resetting more compiz plugins"
-msgstr ""
-
-#: ../UnityTweakTool/utils/unityreset.py:49
-msgid "Resetting Unity settings"
-msgstr ""
-
-#: ../UnityTweakTool/utils/unityreset.py:51
-msgid "Reset complete. Reloading unity"
-msgstr ""
-
-#. XXX : Temporary fix to prevent random attributeerrors.
-#: ../data/errordialog.ui.h:1
-msgid "Schemas missing"
-msgstr ""
-
-#: ../data/errordialog.ui.h:2
-msgid "The following schema is missing"
-msgstr ""
-
-#: ../data/about.ui.h:1
-msgid "Copyright © 2013 Freyja Development team"
-msgstr ""
-
-#: ../data/about.ui.h:2
-msgid ""
-"Unity Tweak Tool is a settings manager intended to be used with Ubuntu Unity."
-msgstr ""
-
-#: ../data/about.ui.h:3
-msgid "Unity Tweak Tool on Launchpad"
-msgstr ""
-
-#: ../data/about.ui.h:4
-msgid "GPL3"
-msgstr ""
-
-#: ../data/unity.ui.h:1
-msgid "Invoke HUD"
-msgstr ""
-
-#: ../data/unity.ui.h:2
-msgid "Super+H"
-msgstr ""
-
-#: ../data/unity.ui.h:3
-msgid "Show the launcher"
-msgstr ""
-
-#: ../data/unity.ui.h:4
-msgid "Super+E"
-msgstr ""
-
-#: ../data/unity.ui.h:5
-msgid "Execute command"
-msgstr ""
-
-#: ../data/unity.ui.h:6
-msgid "Super+M"
-msgstr ""
-
-#: ../data/unity.ui.h:7
-msgid "Put keyboard focus on the launcher"
-msgstr ""
-
-#: ../data/unity.ui.h:8
-msgid "Super+A"
-msgstr ""
-
-#: ../data/unity.ui.h:9
-msgid "Open the first panel menu"
-msgstr ""
-
-#: ../data/unity.ui.h:10
-msgid "Super+N"
-msgstr ""
-
-#: ../data/unity.ui.h:11
-msgid "Start switcher"
-msgstr ""
-
-#: ../data/unity.ui.h:12
-msgid "Super+Tab"
-msgstr ""
-
-#: ../data/unity.ui.h:13
-msgid "Start switcher in reverse"
-msgstr ""
-
-#: ../data/unity.ui.h:14
-msgid "Shift+Super+Tab"
-msgstr ""
-
-#: ../data/unity.ui.h:15
-msgid "Alt+Tab"
-msgstr ""
-
-#: ../data/unity.ui.h:16
-msgid "Shift+Alt+Tab"
-msgstr ""
-
-#: ../data/unity.ui.h:17
-msgid "Start switcher for all workspaces"
-msgstr ""
-
-#: ../data/unity.ui.h:18
-msgid "Ctrl+Super+Alt+Tab"
-msgstr ""
-
-#: ../data/unity.ui.h:19
-msgid "Start switcher for all workspaces in reverse"
-msgstr ""
-
-#: ../data/unity.ui.h:20
-msgid "Shift+Ctrl+Super+Alt+Tab"
-msgstr ""
-
-#: ../data/unity.ui.h:21
-msgid "Go right in the switcher"
-msgstr ""
-
-#: ../data/unity.ui.h:22
-msgid "Alt+Right"
-msgstr ""
-
-#: ../data/unity.ui.h:23
-msgid "Go left in the switcher"
-msgstr ""
-
-#: ../data/unity.ui.h:24
-msgid "Alt+Left"
-msgstr ""
-
-#: ../data/unity.ui.h:25
-msgid "Expose windows in the switcher"
-msgstr ""
-
-#: ../data/unity.ui.h:26
-msgid "Alt+Down"
-msgstr ""
-
-#: ../data/unity.ui.h:27
-msgid "Collapse windows in the switcher"
-msgstr ""
-
-#: ../data/unity.ui.h:28
-msgid "Alt+Up"
-msgstr ""
-
-#: ../data/unity.ui.h:29
-msgid "Flip through windows in the switcher"
-msgstr ""
-
-#: ../data/unity.ui.h:30 ../data/windowmanager.ui.h:95
-msgid "Disabled"
-msgstr ""
-
-#: ../data/unity.ui.h:31
-msgid "Flip through windows in the switcher backwards"
-msgstr ""
-
-#: ../data/unity.ui.h:32 ../data/windowmanager.ui.h:49
-msgid "Behaviour"
-msgstr ""
-
-#: ../data/unity.ui.h:33
-msgid "Should the launcher be hidden?"
-msgstr ""
-
-#: ../data/unity.ui.h:34
-msgid "Auto-hide:"
-msgstr ""
-
-#: ../data/unity.ui.h:35
-msgid "Select the auto-hide animation of the launcher."
-msgstr ""
-
-#: ../data/unity.ui.h:36
-msgid "Fade Dash and slide"
-msgstr ""
-
-#: ../data/unity.ui.h:37
-msgid "Slide only"
-msgstr ""
-
-#: ../data/unity.ui.h:38
-msgid "Fade only"
-msgstr ""
-
-#: ../data/unity.ui.h:39
-msgid "Fade and slide"
-msgstr ""
-
-#: ../data/unity.ui.h:40
-msgid "Auto-hide animation:"
-msgstr ""
-
-#: ../data/unity.ui.h:41
-msgid ""
-"Select the option to reveal the dash with the mouse, when auto-hide is "
-"enabled."
-msgstr ""
-
-#: ../data/unity.ui.h:42
-msgid "Reveal location:"
-msgstr ""
-
-#: ../data/unity.ui.h:43
-msgid "Reveal sensitivity:"
-msgstr ""
-
-#: ../data/unity.ui.h:44
-msgid "How much pointer \"pressure\" is required to reveal the launcher."
-msgstr ""
-
-#: ../data/unity.ui.h:45
-msgid "Left side"
-msgstr ""
-
-#: ../data/unity.ui.h:46
-msgid ""
-"When in auto-hide mode the left edge of the current workspace triggers the "
-"launcher."
-msgstr ""
-
-#: ../data/unity.ui.h:47
-msgid "Top left corner"
-msgstr ""
-
-#: ../data/unity.ui.h:48
-msgid ""
-"When in auto-hide mode the top left corner of the current workspace triggers "
-"the launcher."
-msgstr ""
-
-#: ../data/unity.ui.h:50
-msgid "Select the level of the transparency of the launcher"
-msgstr ""
-
-#: ../data/unity.ui.h:51
-msgid "Transparency level:"
-msgstr ""
-
-#: ../data/unity.ui.h:52
-msgid "How transparent the launcher will be."
-msgstr ""
-
-#: ../data/unity.ui.h:53
-msgid "Based on wallpaper"
-msgstr ""
-
-#: ../data/unity.ui.h:54
-msgid "If selected, the launcher colour is based on the desktop background"
-msgstr ""
-
-#: ../data/unity.ui.h:55
-msgid "Colour:"
-msgstr ""
-
-#: ../data/unity.ui.h:56
-msgid "Visibility:"
-msgstr ""
-
-#: ../data/unity.ui.h:57
-msgid "Custom:"
-msgstr ""
-
-#: ../data/unity.ui.h:58
-msgid "If selected, the launcher will be the colour chosen by the user"
-msgstr ""
-
-#: ../data/unity.ui.h:59
-msgid "All desktops"
-msgstr ""
-
-#: ../data/unity.ui.h:60
-msgid "If selected, the launcher is visible on all desktops."
-msgstr ""
-
-#: ../data/unity.ui.h:61
-msgid "If selected, the launcher is visible on all desktops"
-msgstr ""
-
-#: ../data/unity.ui.h:62
-msgid "Primary desktop"
-msgstr ""
-
-#: ../data/unity.ui.h:63
-msgid "If selected, the launcher is visible on the primary desktop"
-msgstr ""
-
-#: ../data/unity.ui.h:65
-msgid "Icon size:"
-msgstr ""
-
-#: ../data/unity.ui.h:66
-msgid "Select the animation used for launching an application."
-msgstr ""
-
-#: ../data/unity.ui.h:67
-msgid "No animation"
-msgstr ""
-
-#: ../data/unity.ui.h:68
-msgid "Pulse"
-msgstr ""
-
-#: ../data/unity.ui.h:69
-msgid "Blink"
-msgstr ""
-
-#: ../data/unity.ui.h:70
-msgid "Select the animation used for an urgent notification on the launcher"
-msgstr ""
-
-#: ../data/unity.ui.h:71
-msgid "Wiggle"
-msgstr ""
-
-#: ../data/unity.ui.h:72
-msgid "Launch animation:"
-msgstr ""
-
-#: ../data/unity.ui.h:73
-msgid "Urgent animation:"
-msgstr ""
-
-#: ../data/unity.ui.h:74
-msgid "Select how the icons are coloured on the launcher"
-msgstr ""
-
-#: ../data/unity.ui.h:75
-msgid "All applications"
-msgstr ""
-
-#: ../data/unity.ui.h:76
-msgid "Open applications only"
-msgstr ""
-
-#: ../data/unity.ui.h:77
-msgid "No colouring"
-msgstr ""
-
-#: ../data/unity.ui.h:78
-msgid "Coloured edges"
-msgstr ""
-
-#: ../data/unity.ui.h:79
-msgid "Alternated for each workspace"
-msgstr ""
-
-#: ../data/unity.ui.h:80
-msgid "Icon backgrounds:"
-msgstr ""
-
-#: ../data/unity.ui.h:81
-msgid "\"Show Desktop\" icon:"
-msgstr ""
-
-#: ../data/unity.ui.h:82
-msgid "Select the size of the icons on the launcher"
-msgstr ""
-
-#: ../data/unity.ui.h:84
-msgid "Restore default Unity launcher settings."
-msgstr ""
-
-#: ../data/unity.ui.h:87
-msgid "Background blur:"
-msgstr ""
-
-#: ../data/unity.ui.h:88
-msgid "Enable dash blur?"
-msgstr ""
-
-#: ../data/unity.ui.h:89
-msgid "Select the type of blur in the dash"
-msgstr ""
-
-#: ../data/unity.ui.h:90
-msgid "Blur type:"
-msgstr ""
-
-#: ../data/unity.ui.h:91
-msgid "Active"
-msgstr ""
-
-#: ../data/unity.ui.h:92
-msgid "Use a dynamic blur in the dash."
-msgstr ""
-
-#: ../data/unity.ui.h:93
-msgid "Static"
-msgstr ""
-
-#: ../data/unity.ui.h:94
-msgid "Use a static blur in the dash, uses less resources."
-msgstr ""
-
-#: ../data/unity.ui.h:95
-msgid "Search online sources"
-msgstr ""
-
-#: ../data/unity.ui.h:96
-msgid "If enabled, the dash will get suggestions from online sources."
-msgstr ""
-
-#: ../data/unity.ui.h:97
-msgid "Applications"
-msgstr ""
-
-#: ../data/unity.ui.h:98
-msgid "Show \"Recently Used\" applications"
-msgstr ""
-
-#: ../data/unity.ui.h:99
-msgid "If enabled, show recently used applications in the Dash."
-msgstr ""
-
-#: ../data/unity.ui.h:100
-msgid "Show \"More Suggestions\""
-msgstr ""
-
-#: ../data/unity.ui.h:101
-msgid "If enabled, show applications available for download in the Dash."
-msgstr ""
-
-#: ../data/unity.ui.h:102
-msgid "Files"
-msgstr ""
-
-#: ../data/unity.ui.h:103
-msgid "Enable search of your files"
-msgstr ""
-
-#: ../data/unity.ui.h:104
-msgid "If enabled, allow searches to find your files that aren&apos;t logged."
-msgstr ""
-
-#: ../data/unity.ui.h:105
-msgid "If enabled, allow searches to find your files that aren't logged."
-msgstr ""
-
-#: ../data/unity.ui.h:106
-msgid "Run Command"
-msgstr ""
-
-#: ../data/unity.ui.h:107
-msgid "Clear History"
-msgstr ""
-
-#: ../data/unity.ui.h:108
-msgid "Clear ALT+F2 command history."
-msgstr ""
-
-#: ../data/unity.ui.h:109
-msgid "Restore the default Dash settings."
-msgstr ""
-
-#: ../data/unity.ui.h:111
-msgid "Menu visible for:"
-msgstr ""
-
-#: ../data/unity.ui.h:112
-msgid ""
-"Select how long the application menu is visible when an application is first "
-"opened"
-msgstr ""
-
-#: ../data/unity.ui.h:113
-msgid "seconds"
-msgstr ""
-
-#: ../data/unity.ui.h:114
-msgid "Set the level of transparency for the panel."
-msgstr ""
-
-#: ../data/unity.ui.h:115
-msgid "Opaque panel for maximized windows"
-msgstr ""
-
-#: ../data/unity.ui.h:116
-msgid "If selected, the panel will be opaque for maximized windows"
-msgstr ""
-
-#: ../data/unity.ui.h:117
-msgid "Indicators"
-msgstr ""
-
-#: ../data/unity.ui.h:118
-msgid "Date & time"
-msgstr ""
-
-#: ../data/unity.ui.h:119
-msgid "If enabled, the date &amp; time indicator will be visible."
-msgstr ""
-
-#: ../data/unity.ui.h:120
-msgid "If enabled, the date & time indicator will be visible."
-msgstr ""
-
-#: ../data/unity.ui.h:121
-msgid "12-hour time"
-msgstr ""
-
-#: ../data/unity.ui.h:122
-msgid "Have the clock use 12-hour time."
-msgstr ""
-
-#: ../data/unity.ui.h:123
-msgid "24-hour time"
-msgstr ""
-
-#: ../data/unity.ui.h:124
-msgid "Have the clock use 24-hour time."
-msgstr ""
-
-#: ../data/unity.ui.h:125
-msgid "Seconds"
-msgstr ""
-
-#: ../data/unity.ui.h:126
-msgid "If enabled, the clock will display seconds."
-msgstr ""
-
-#: ../data/unity.ui.h:127
-msgid "Date"
-msgstr ""
-
-#: ../data/unity.ui.h:128
-msgid "If enabled, the month and day will be visible in the panel."
-msgstr ""
-
-#: ../data/unity.ui.h:129
-msgid "Weekday"
-msgstr ""
-
-#: ../data/unity.ui.h:130
-msgid "If enabled, the day of the week will be visible in the panel."
-msgstr ""
-
-#: ../data/unity.ui.h:131
-msgid "Include:"
-msgstr ""
-
-#: ../data/unity.ui.h:132
-msgid "Calendar"
-msgstr ""
-
-#: ../data/unity.ui.h:133
-msgid "If enabled, the calendar will be visible in the indicator menu."
-msgstr ""
-
-#: ../data/unity.ui.h:134
-msgid "Bluetooth"
-msgstr ""
-
-#: ../data/unity.ui.h:135
-msgid "If enabled, the bluetooth indicator is visible in the panel."
-msgstr ""
-
-#: ../data/unity.ui.h:136
-msgid "Power"
-msgstr ""
-
-#: ../data/unity.ui.h:137
-msgid "If enabled, show the power menu in the panel."
-msgstr ""
-
-#: ../data/unity.ui.h:138
-msgid "Visible when charging or discharging"
-msgstr ""
-
-#: ../data/unity.ui.h:139
-msgid ""
-"Set the power indicator to be visible when charging or discharging power."
-msgstr ""
-
-#: ../data/unity.ui.h:140
-msgid "Always visible"
-msgstr ""
-
-#: ../data/unity.ui.h:141
-msgid "Set the power indicator to be always visible."
-msgstr ""
-
-#: ../data/unity.ui.h:142
-msgid "Display remaining battery life"
-msgstr ""
-
-#: ../data/unity.ui.h:143
-msgid "If enabled, show the remaining battery life in the power indicator."
-msgstr ""
-
-#: ../data/unity.ui.h:144
-msgid "Volume"
-msgstr ""
-
-#: ../data/unity.ui.h:145
-msgid "If enabled, show the sound menu in the panel."
-msgstr ""
-
-#: ../data/unity.ui.h:146
-msgid "Default player:"
-msgstr ""
-
-#: ../data/unity.ui.h:147
-msgid ""
-"Select which of the installed audio players is default in the sound menu."
-msgstr ""
-
-#: ../data/unity.ui.h:148
-msgid "Notifications when scrolling"
-msgstr ""
-
-#: ../data/unity.ui.h:149
-msgid ""
-"When using scrolling to change the volume, show on-screen notifications."
-msgstr ""
-
-#: ../data/unity.ui.h:150
-msgid "Show my name"
-msgstr ""
-
-#: ../data/unity.ui.h:151
-msgid "If enabled, show the user&apos;s real name in the panel."
-msgstr ""
-
-#: ../data/unity.ui.h:152
-msgid "If enabled, show the user's real name in the panel."
-msgstr ""
-
-#: ../data/unity.ui.h:153
-msgid "Restore the default Unity panel settings."
-msgstr ""
-
-#: ../data/unity.ui.h:155
-msgid "Switch between windows on all workspaces"
-msgstr ""
-
-#: ../data/unity.ui.h:156
-msgid ""
-"If enabled, the window switcher cycles through all windows on all workspaces"
-msgstr ""
-
-#: ../data/unity.ui.h:157
-msgid "Display \"Show Desktop\" icon"
-msgstr ""
-
-#: ../data/unity.ui.h:158
-msgid ""
-"If enabled, show the &quot;Show Desktop&quot; option in the window switcher"
-msgstr ""
-
-#: ../data/unity.ui.h:159
-msgid "If enabled, show the \"Show Desktop\" option in the window switcher"
-msgstr ""
-
-#: ../data/unity.ui.h:160
-msgid "Automatically expose windows"
-msgstr ""
-
-#: ../data/unity.ui.h:161
-msgid "If enabled, the window switcher will expose minimized windows"
-msgstr ""
-
-#: ../data/unity.ui.h:162
-msgid "Switch between minimized windows"
-msgstr ""
-
-#: ../data/unity.ui.h:163
-msgid "If enabled, the window switcher will switch through minimized windows"
-msgstr ""
-
-#: ../data/unity.ui.h:164
-msgid "Window switching shortcuts"
-msgstr ""
-
-#: ../data/unity.ui.h:165
-msgid "Window switcher shortcuts"
-msgstr ""
-
-#: ../data/unity.ui.h:166 ../data/windowmanager.ui.h:5
-msgid "Title"
-msgstr ""
-
-#: ../data/unity.ui.h:167 ../data/windowmanager.ui.h:6
-msgid "Accelerator"
-msgstr ""
-
-#: ../data/unity.ui.h:168
-msgid "Launcher switching shortcuts"
-msgstr ""
-
-#: ../data/unity.ui.h:169
-msgid "Launcher switcher shortcuts"
-msgstr ""
-
-#: ../data/unity.ui.h:170
-msgid "Restore the default window switcher settings."
-msgstr ""
-
-#: ../data/unity.ui.h:172
-msgid "Enable prompts for webapp integration when visiting supported websites?"
-msgstr ""
-
-#: ../data/unity.ui.h:173
-msgid "Integration prompts:"
-msgstr ""
-
-#: ../data/unity.ui.h:174
-msgid "Preauthorized domains"
-msgstr ""
-
-#: ../data/unity.ui.h:175
-msgid "Amazon"
-msgstr ""
-
-#: ../data/unity.ui.h:176
-msgid "Ubuntu One"
-msgstr ""
-
-#: ../data/unity.ui.h:177
-msgid "Restore the default Unity Webapps settings."
-msgstr ""
-
-#: ../data/unity.ui.h:179
-msgid "HUD"
-msgstr ""
-
-#: ../data/unity.ui.h:180
-msgid "Remember previous commands"
-msgstr ""
-
-#: ../data/unity.ui.h:181
-msgid ""
-"If enabled, the HUD will remember previously executed entries and sort them "
-"by frequently used."
-msgstr ""
-
-#: ../data/unity.ui.h:182
-msgid "Keyboard Shortcuts"
-msgstr ""
-
-#: ../data/unity.ui.h:183
-msgid "Hold Super for keyboard shortcuts"
-msgstr ""
-
-#: ../data/unity.ui.h:184
-msgid ""
-"When enabled, pressing the Super key displays an overlay of all Unity "
-"keyboard shortcuts"
-msgstr ""
-
-#: ../data/unity.ui.h:185
-msgid "List of Unity keyboard shortcuts"
-msgstr ""
-
-#: ../data/unity.ui.h:186
-msgid "Notifications"
-msgstr ""
-
-#: ../data/unity.ui.h:187
-msgid "All displays"
-msgstr ""
-
-#: ../data/unity.ui.h:188
-msgid "For multiple displays, notifications are visible on all of them."
-msgstr ""
-
-#: ../data/unity.ui.h:189
-msgid "Active display"
-msgstr ""
-
-#: ../data/unity.ui.h:190
-msgid "For multiple displays, notifications are visible on the active display."
-msgstr ""
-
-#: ../data/unity.ui.h:191
-msgid "Restore the default Unity keyboard shortcut settings."
-msgstr ""
-
-#: ../unity-tweak-tool.py:43
-msgid "Start in the Unity tab"
-msgstr ""
-
-#: ../unity-tweak-tool.py:44
-msgid "Start in the WindowManager tab"
-msgstr ""
-
-#: ../unity-tweak-tool.py:45
-msgid "Start in the appearance tab"
-msgstr ""
-
-#: ../unity-tweak-tool.py:46
-msgid "Start in the system tab"
-msgstr ""
-
-#: ../unity-tweak-tool.py:47
-msgid "Reset Unity, wiping all configuration changes."
-msgstr ""
-
-#: ../unity-tweak-tool.py:61
-msgid ""
-"\n"
-"WARNING: You are about to reset Unity to its default configuration.\n"
-"    This will result in loss of configuration.\n"
-"    It is normal for your desktop to flicker during the process.\n"
-"    Type yes to continue, anything else to exit.\n"
-"    "
-msgstr ""
-
-#: ../unity-tweak-tool.py:67
-msgid "Do you wish to continue?"
-msgstr ""
-
-#: ../unity-tweak-tool.py:70
-msgid "Please log out and log back in."
-msgstr ""
-
-#: ../unity-tweak-tool.desktop.in.h:1 ../data/unitytweak.ui.h:1
-msgid "Unity Tweak Tool"
-msgstr ""
-
-#: ../unity-tweak-tool.desktop.in.h:2
-msgid "Configuration frontend for the Unity desktop environment"
-msgstr ""
-
+#. FIXME : This is guaranteed to fail.
 #: ../data/windowmanager.ui.h:1
 msgid "Zoom"
 msgstr ""
@@ -1122,6 +40,14 @@ msgstr ""
 
 #: ../data/windowmanager.ui.h:4
 msgid "List of keyboard shortcuts for zoom"
+msgstr ""
+
+#: ../data/windowmanager.ui.h:5 ../data/unity.ui.h:158
+msgid "Title"
+msgstr ""
+
+#: ../data/windowmanager.ui.h:6 ../data/unity.ui.h:159
+msgid "Accelerator"
 msgstr ""
 
 #: ../data/windowmanager.ui.h:7
@@ -1172,8 +98,18 @@ msgstr ""
 msgid "List of window manager keyboard shortcuts"
 msgstr ""
 
+#: ../data/windowmanager.ui.h:19 ../data/system.ui.h:8 ../data/unity.ui.h:75
+#: ../data/appearance.ui.h:6
+msgid "Restore defaults"
+msgstr ""
+
 #: ../data/windowmanager.ui.h:20
 msgid "Restore default window manager settings"
+msgstr ""
+
+#: ../data/windowmanager.ui.h:21 ../data/unitytweak.ui.h:11
+#: ../data/unity.ui.h:78 ../data/overview.ui.h:9 ../data/appearance.ui.h:20
+msgid "General"
 msgstr ""
 
 #: ../data/windowmanager.ui.h:22
@@ -1288,12 +224,21 @@ msgstr ""
 msgid "Outline colour:"
 msgstr ""
 
+#: ../data/windowmanager.ui.h:49 ../data/unity.ui.h:24
+msgid "Behaviour"
+msgstr ""
+
 #: ../data/windowmanager.ui.h:50
 msgid "Window snapping"
 msgstr ""
 
 #: ../data/windowmanager.ui.h:51
 msgid "Hotcorners:"
+msgstr ""
+
+#: ../data/windowmanager.ui.h:52 ../data/unitytweak.ui.h:15
+#: ../data/overview.ui.h:16
+msgid "Hotcorners"
 msgstr ""
 
 #: ../data/windowmanager.ui.h:53
@@ -1412,6 +357,11 @@ msgstr ""
 msgid "Restore the default settings for the additional options."
 msgstr ""
 
+#: ../data/windowmanager.ui.h:81 ../data/unitytweak.ui.h:9
+#: ../data/unity.ui.h:184 ../data/overview.ui.h:7
+msgid "Additional"
+msgstr ""
+
 #: ../data/windowmanager.ui.h:82
 msgid "Close window"
 msgstr ""
@@ -1462,6 +412,10 @@ msgstr ""
 
 #: ../data/windowmanager.ui.h:94
 msgid "Start windows spread for all windows"
+msgstr ""
+
+#: ../data/windowmanager.ui.h:95 ../data/unity.ui.h:22
+msgid "Disabled"
 msgstr ""
 
 #: ../data/windowmanager.ui.h:96
@@ -1528,12 +482,1058 @@ msgstr ""
 msgid "Top Right Corner"
 msgstr ""
 
-#: ../data/filechooser-theme.ui.h:1
-msgid "Choose a Theme file to install"
+#: ../data/system.ui.h:1
+msgid "Items to display:"
 msgstr ""
 
-#: ../data/filechooser-theme.ui.h:2
-msgid "Install Theme"
+#: ../data/system.ui.h:2
+msgid "Home Folder"
+msgstr ""
+
+#: ../data/system.ui.h:3
+msgid "Network"
+msgstr ""
+
+#: ../data/system.ui.h:4
+msgid "Rubbish Bin"
+msgstr ""
+
+#: ../data/system.ui.h:5
+msgid "Trash"
+msgstr ""
+
+#: ../data/system.ui.h:6
+msgid "Mounted Devices"
+msgstr ""
+
+#: ../data/system.ui.h:7
+msgid "Devices"
+msgstr ""
+
+#: ../data/system.ui.h:9
+msgid "Restore the default configurations for Desktop icons"
+msgstr ""
+
+#: ../data/system.ui.h:10 ../data/unitytweak.ui.h:23
+msgid "Desktop Icons"
+msgstr ""
+
+#: ../data/system.ui.h:11
+msgid "Enhance system security by disabling:"
+msgstr ""
+
+#: ../data/system.ui.h:12
+msgid "Desktop lock"
+msgstr ""
+
+#: ../data/system.ui.h:13
+msgid "Disable the desktop lock screen."
+msgstr ""
+
+#: ../data/system.ui.h:14
+msgid "User log out"
+msgstr ""
+
+#: ../data/system.ui.h:15
+msgid "Disable session log out."
+msgstr ""
+
+#: ../data/system.ui.h:16
+msgid "User switching"
+msgstr ""
+
+#: ../data/system.ui.h:17
+msgid "Disable fast user switching."
+msgstr ""
+
+#: ../data/system.ui.h:18
+msgid "Printing"
+msgstr ""
+
+#: ../data/system.ui.h:19
+msgid "Prevent user access to the system's printers and print setup."
+msgstr ""
+
+#: ../data/system.ui.h:20
+msgid "Restore the default configurations for Security settings"
+msgstr ""
+
+#: ../data/system.ui.h:21 ../data/unitytweak.ui.h:24 ../data/overview.ui.h:27
+msgid "Security"
+msgstr ""
+
+#: ../data/system.ui.h:22
+msgid "Scrollbars"
+msgstr ""
+
+#: ../data/system.ui.h:23
+msgid "Legacy"
+msgstr ""
+
+#: ../data/system.ui.h:24
+msgid "Overlay "
+msgstr ""
+
+#: ../data/system.ui.h:25
+msgid "Select the behaviour of the overlay scrollbars."
+msgstr ""
+
+#: ../data/system.ui.h:26
+msgid "Default"
+msgstr ""
+
+#: ../data/system.ui.h:27
+msgid "Overlay with mouse"
+msgstr ""
+
+#: ../data/system.ui.h:28
+msgid "No overlay"
+msgstr ""
+
+#: ../data/system.ui.h:29
+msgid "Behaviour:"
+msgstr ""
+
+#: ../data/system.ui.h:30
+msgid "Touch scrolling"
+msgstr ""
+
+#: ../data/system.ui.h:31
+msgid "Edge"
+msgstr ""
+
+#: ../data/system.ui.h:32
+msgid "If enabled, edge scrolling is active on touchpads."
+msgstr ""
+
+#: ../data/system.ui.h:33
+msgid "Two-finger"
+msgstr ""
+
+#: ../data/system.ui.h:34
+msgid "If enabled, two-finger scrolling is active on multitouch touchpads."
+msgstr ""
+
+#: ../data/system.ui.h:35
+msgid "Horizontal scrolling"
+msgstr ""
+
+#: ../data/system.ui.h:36 ../data/unitytweak.ui.h:25 ../data/overview.ui.h:28
+msgid "Scrolling"
+msgstr ""
+
+#: ../unity-tweak-tool.desktop.in.h:1 ../data/unitytweak.ui.h:1
+msgid "Unity Tweak Tool"
+msgstr ""
+
+#: ../unity-tweak-tool.desktop.in.h:2
+msgid "Configuration frontend for the Unity desktop environment"
+msgstr ""
+
+#. ! /usr/bin/env python3
+#: ../unity-tweak-tool.desktop.in.h:3 ../data/unitytweak.ui.h:3
+#: ../data/overview.ui.h:1
+msgid "Unity"
+msgstr ""
+
+#: ../unity-tweak-tool.desktop.in.h:4 ../data/unitytweak.ui.h:10
+#: ../data/overview.ui.h:8
+msgid "Window Manager"
+msgstr ""
+
+#: ../unity-tweak-tool.desktop.in.h:5 ../data/unitytweak.ui.h:16
+#: ../data/unity.ui.h:41 ../data/overview.ui.h:17 ../data/appearance.ui.h:29
+msgid "Appearance"
+msgstr ""
+
+#: ../unity-tweak-tool.desktop.in.h:6 ../data/unitytweak.ui.h:22
+#: ../data/overview.ui.h:24
+msgid "System"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:2
+msgid "_File"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:4 ../data/unity.ui.h:77 ../data/overview.ui.h:2
+msgid "Launcher"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:5 ../data/unity.ui.h:102 ../data/overview.ui.h:3
+msgid "Search"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:6 ../data/unity.ui.h:146 ../data/overview.ui.h:4
+msgid "Panel"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:7 ../data/unity.ui.h:163 ../data/overview.ui.h:5
+msgid "Switcher"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:8 ../data/unity.ui.h:170 ../data/overview.ui.h:6
+msgid "Web Apps"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:12
+msgid "Workspace settings"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:13
+msgid "Windows spread"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:14
+msgid "Windows snapping"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:17 ../data/overview.ui.h:18
+#: ../data/appearance.ui.h:8
+msgid "Theme"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:18 ../data/unity.ui.h:56 ../data/overview.ui.h:19
+#: ../data/appearance.ui.h:12
+msgid "Icons"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:19 ../data/appearance.ui.h:19
+msgid "Cursor"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:20 ../data/overview.ui.h:21
+#: ../data/appearance.ui.h:43
+msgid "Fonts"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:21
+msgid "Window controls"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:26
+msgid "_Help"
+msgstr ""
+
+#: ../data/unitytweak.ui.h:27
+msgid " Overview"
+msgstr ""
+
+#: ../data/unity.ui.h:1
+msgid "Invoke HUD"
+msgstr ""
+
+#: ../data/unity.ui.h:2
+msgid "Super+H"
+msgstr ""
+
+#: ../data/unity.ui.h:3
+msgid "Show the launcher"
+msgstr ""
+
+#: ../data/unity.ui.h:4
+msgid "Super+E"
+msgstr ""
+
+#: ../data/unity.ui.h:5
+msgid "Execute command"
+msgstr ""
+
+#: ../data/unity.ui.h:6
+msgid "Super+M"
+msgstr ""
+
+#: ../data/unity.ui.h:7
+msgid "Put keyboard focus on the launcher"
+msgstr ""
+
+#: ../data/unity.ui.h:8
+msgid "Super+A"
+msgstr ""
+
+#: ../data/unity.ui.h:9
+msgid "Open the first panel menu"
+msgstr ""
+
+#: ../data/unity.ui.h:10
+msgid "Super+N"
+msgstr ""
+
+#: ../data/unity.ui.h:11
+msgid "Start switcher"
+msgstr ""
+
+#: ../data/unity.ui.h:12
+msgid "Super+Tab"
+msgstr ""
+
+#: ../data/unity.ui.h:13
+msgid "Start switcher in reverse"
+msgstr ""
+
+#: ../data/unity.ui.h:14
+msgid "Shift+Super+Tab"
+msgstr ""
+
+#: ../data/unity.ui.h:15
+msgid "Alt+Tab"
+msgstr ""
+
+#: ../data/unity.ui.h:16
+msgid "Shift+Alt+Tab"
+msgstr ""
+
+#: ../data/unity.ui.h:17
+msgid "Start switcher for all workspaces"
+msgstr ""
+
+#: ../data/unity.ui.h:18
+msgid "Ctrl+Super+Alt+Tab"
+msgstr ""
+
+#: ../data/unity.ui.h:19
+msgid "Start switcher for all workspaces in reverse"
+msgstr ""
+
+#: ../data/unity.ui.h:20
+msgid "Shift+Ctrl+Super+Alt+Tab"
+msgstr ""
+
+#: ../data/unity.ui.h:21
+msgid "Flip through windows in the switcher"
+msgstr ""
+
+#: ../data/unity.ui.h:23
+msgid "Flip through windows in the switcher backwards"
+msgstr ""
+
+#: ../data/unity.ui.h:25
+msgid "Should the launcher be hidden?"
+msgstr ""
+
+#: ../data/unity.ui.h:26
+msgid "Auto-hide:"
+msgstr ""
+
+#: ../data/unity.ui.h:27
+msgid "Select the auto-hide animation of the launcher."
+msgstr ""
+
+#: ../data/unity.ui.h:28
+msgid "Fade Dash and slide"
+msgstr ""
+
+#: ../data/unity.ui.h:29
+msgid "Slide only"
+msgstr ""
+
+#: ../data/unity.ui.h:30
+msgid "Fade only"
+msgstr ""
+
+#: ../data/unity.ui.h:31
+msgid "Fade and slide"
+msgstr ""
+
+#: ../data/unity.ui.h:32
+msgid "Auto-hide animation:"
+msgstr ""
+
+#: ../data/unity.ui.h:33
+msgid ""
+"Select the option to reveal the dash with the mouse, when auto-hide is "
+"enabled."
+msgstr ""
+
+#: ../data/unity.ui.h:34
+msgid "Reveal location:"
+msgstr ""
+
+#: ../data/unity.ui.h:35
+msgid "Reveal sensitivity:"
+msgstr ""
+
+#: ../data/unity.ui.h:36
+msgid "How much pointer \"pressure\" is required to reveal the launcher."
+msgstr ""
+
+#: ../data/unity.ui.h:37
+msgid "Left side"
+msgstr ""
+
+#: ../data/unity.ui.h:38
+msgid ""
+"When in auto-hide mode the left edge of the current workspace triggers the "
+"launcher."
+msgstr ""
+
+#: ../data/unity.ui.h:39
+msgid "Top left corner"
+msgstr ""
+
+#: ../data/unity.ui.h:40
+msgid ""
+"When in auto-hide mode the top left corner of the current workspace triggers "
+"the launcher."
+msgstr ""
+
+#: ../data/unity.ui.h:42
+msgid "Select the level of the transparency of the launcher"
+msgstr ""
+
+#: ../data/unity.ui.h:43
+msgid "Transparency level:"
+msgstr ""
+
+#: ../data/unity.ui.h:44
+msgid "How transparent the launcher will be."
+msgstr ""
+
+#: ../data/unity.ui.h:45
+msgid "Based on wallpaper"
+msgstr ""
+
+#: ../data/unity.ui.h:46
+msgid "If selected, the launcher colour is based on the desktop background"
+msgstr ""
+
+#: ../data/unity.ui.h:47
+msgid "Colour:"
+msgstr ""
+
+#: ../data/unity.ui.h:48
+msgid "Visibility:"
+msgstr ""
+
+#: ../data/unity.ui.h:49
+msgid "Custom:"
+msgstr ""
+
+#: ../data/unity.ui.h:50
+msgid "If selected, the launcher will be the colour chosen by the user"
+msgstr ""
+
+#: ../data/unity.ui.h:51
+msgid "All desktops"
+msgstr ""
+
+#: ../data/unity.ui.h:52
+msgid "If selected, the launcher is visible on all desktops."
+msgstr ""
+
+#: ../data/unity.ui.h:53
+msgid "If selected, the launcher is visible on all desktops"
+msgstr ""
+
+#: ../data/unity.ui.h:54
+msgid "Primary desktop"
+msgstr ""
+
+#: ../data/unity.ui.h:55
+msgid "If selected, the launcher is visible on the primary desktop"
+msgstr ""
+
+#: ../data/unity.ui.h:57
+msgid "Icon size:"
+msgstr ""
+
+#: ../data/unity.ui.h:58
+msgid "Select the animation used for launching an application."
+msgstr ""
+
+#: ../data/unity.ui.h:59
+msgid "No animation"
+msgstr ""
+
+#: ../data/unity.ui.h:60
+msgid "Pulse"
+msgstr ""
+
+#: ../data/unity.ui.h:61
+msgid "Blink"
+msgstr ""
+
+#: ../data/unity.ui.h:62
+msgid "Select the animation used for an urgent notification on the launcher"
+msgstr ""
+
+#: ../data/unity.ui.h:63
+msgid "Wiggle"
+msgstr ""
+
+#: ../data/unity.ui.h:64
+msgid "Launch animation:"
+msgstr ""
+
+#: ../data/unity.ui.h:65
+msgid "Urgent animation:"
+msgstr ""
+
+#: ../data/unity.ui.h:66
+msgid "Select how the icons are coloured on the launcher"
+msgstr ""
+
+#: ../data/unity.ui.h:67
+msgid "All applications"
+msgstr ""
+
+#: ../data/unity.ui.h:68
+msgid "Open applications only"
+msgstr ""
+
+#: ../data/unity.ui.h:69
+msgid "No colouring"
+msgstr ""
+
+#: ../data/unity.ui.h:70
+msgid "Coloured edges"
+msgstr ""
+
+#: ../data/unity.ui.h:71
+msgid "Alternated for each workspace"
+msgstr ""
+
+#: ../data/unity.ui.h:72
+msgid "Icon backgrounds:"
+msgstr ""
+
+#: ../data/unity.ui.h:73
+msgid "\"Show Desktop\" icon:"
+msgstr ""
+
+#: ../data/unity.ui.h:74
+msgid "Select the size of the icons on the launcher"
+msgstr ""
+
+#: ../data/unity.ui.h:76
+msgid "Restore default Unity launcher settings."
+msgstr ""
+
+#: ../data/unity.ui.h:79
+msgid "Background blur:"
+msgstr ""
+
+#: ../data/unity.ui.h:80
+msgid "Enable dash blur?"
+msgstr ""
+
+#: ../data/unity.ui.h:81
+msgid "Select the type of blur in the dash"
+msgstr ""
+
+#: ../data/unity.ui.h:82
+msgid "Blur type:"
+msgstr ""
+
+#: ../data/unity.ui.h:83
+msgid "Active"
+msgstr ""
+
+#: ../data/unity.ui.h:84
+msgid "Use a dynamic blur in the dash."
+msgstr ""
+
+#: ../data/unity.ui.h:85
+msgid "Static"
+msgstr ""
+
+#: ../data/unity.ui.h:86
+msgid "Use a static blur in the dash, uses less resources."
+msgstr ""
+
+#: ../data/unity.ui.h:87
+msgid "Search online sources"
+msgstr ""
+
+#: ../data/unity.ui.h:88
+msgid "If enabled, the dash will get suggestions from online sources."
+msgstr ""
+
+#: ../data/unity.ui.h:89
+msgid "Applications"
+msgstr ""
+
+#: ../data/unity.ui.h:90
+msgid "Show \"Recently Used\" applications"
+msgstr ""
+
+#: ../data/unity.ui.h:91
+msgid "If enabled, show recently used applications in the Dash."
+msgstr ""
+
+#: ../data/unity.ui.h:92
+msgid "Show \"More Suggestions\""
+msgstr ""
+
+#: ../data/unity.ui.h:93
+msgid "If enabled, show applications available for download in the Dash."
+msgstr ""
+
+#: ../data/unity.ui.h:94
+msgid "Files"
+msgstr ""
+
+#: ../data/unity.ui.h:95
+msgid "Enable search of your files"
+msgstr ""
+
+#: ../data/unity.ui.h:96
+msgid "If enabled, allow searches to find your files that aren&apos;t logged."
+msgstr ""
+
+#: ../data/unity.ui.h:97
+msgid "If enabled, allow searches to find your files that aren't logged."
+msgstr ""
+
+#: ../data/unity.ui.h:98
+msgid "Run Command"
+msgstr ""
+
+#: ../data/unity.ui.h:99
+msgid "Clear History"
+msgstr ""
+
+#: ../data/unity.ui.h:100
+msgid "Clear ALT+F2 command history."
+msgstr ""
+
+#: ../data/unity.ui.h:101
+msgid "Restore the default Dash settings."
+msgstr ""
+
+#: ../data/unity.ui.h:103
+msgid "Menu visible for:"
+msgstr ""
+
+#: ../data/unity.ui.h:104
+msgid ""
+"Select how long the application menu is visible when an application is first "
+"opened"
+msgstr ""
+
+#: ../data/unity.ui.h:105
+msgid "seconds"
+msgstr ""
+
+#: ../data/unity.ui.h:106
+msgid "Set the level of transparency for the panel."
+msgstr ""
+
+#: ../data/unity.ui.h:107
+msgid "Opaque panel for maximized windows"
+msgstr ""
+
+#: ../data/unity.ui.h:108
+msgid "If selected, the panel will be opaque for maximized windows"
+msgstr ""
+
+#: ../data/unity.ui.h:109
+msgid "Indicators"
+msgstr ""
+
+#: ../data/unity.ui.h:110
+msgid "Date & time"
+msgstr ""
+
+#: ../data/unity.ui.h:111
+msgid "If enabled, the date &amp; time indicator will be visible."
+msgstr ""
+
+#: ../data/unity.ui.h:112
+msgid "If enabled, the date & time indicator will be visible."
+msgstr ""
+
+#: ../data/unity.ui.h:113
+msgid "12-hour time"
+msgstr ""
+
+#: ../data/unity.ui.h:114
+msgid "Have the clock use 12-hour time."
+msgstr ""
+
+#: ../data/unity.ui.h:115
+msgid "24-hour time"
+msgstr ""
+
+#: ../data/unity.ui.h:116
+msgid "Have the clock use 24-hour time."
+msgstr ""
+
+#: ../data/unity.ui.h:117
+msgid "Seconds"
+msgstr ""
+
+#: ../data/unity.ui.h:118
+msgid "If enabled, the clock will display seconds."
+msgstr ""
+
+#: ../data/unity.ui.h:119
+msgid "Date"
+msgstr ""
+
+#: ../data/unity.ui.h:120
+msgid "If enabled, the month and day will be visible in the panel."
+msgstr ""
+
+#: ../data/unity.ui.h:121
+msgid "Weekday"
+msgstr ""
+
+#: ../data/unity.ui.h:122
+msgid "If enabled, the day of the week will be visible in the panel."
+msgstr ""
+
+#: ../data/unity.ui.h:123
+msgid "Include:"
+msgstr ""
+
+#: ../data/unity.ui.h:124
+msgid "Calendar"
+msgstr ""
+
+#: ../data/unity.ui.h:125
+msgid "If enabled, the calendar will be visible in the indicator menu."
+msgstr ""
+
+#: ../data/unity.ui.h:126
+msgid "Bluetooth"
+msgstr ""
+
+#: ../data/unity.ui.h:127
+msgid "If enabled, the bluetooth indicator is visible in the panel."
+msgstr ""
+
+#: ../data/unity.ui.h:128
+msgid "Power"
+msgstr ""
+
+#: ../data/unity.ui.h:129
+msgid "If enabled, show the power menu in the panel."
+msgstr ""
+
+#: ../data/unity.ui.h:130
+msgid "Visible when charging or discharging"
+msgstr ""
+
+#: ../data/unity.ui.h:131
+msgid ""
+"Set the power indicator to be visible when charging or discharging power."
+msgstr ""
+
+#: ../data/unity.ui.h:132
+msgid "Always visible"
+msgstr ""
+
+#: ../data/unity.ui.h:133
+msgid "Set the power indicator to be always visible."
+msgstr ""
+
+#: ../data/unity.ui.h:134
+msgid "Display remaining battery life"
+msgstr ""
+
+#: ../data/unity.ui.h:135
+msgid "If enabled, show the remaining battery life in the power indicator."
+msgstr ""
+
+#: ../data/unity.ui.h:136
+msgid "Volume"
+msgstr ""
+
+#: ../data/unity.ui.h:137
+msgid "If enabled, show the sound menu in the panel."
+msgstr ""
+
+#: ../data/unity.ui.h:138
+msgid "Default player:"
+msgstr ""
+
+#: ../data/unity.ui.h:139
+msgid ""
+"Select which of the installed audio players is default in the sound menu."
+msgstr ""
+
+#: ../data/unity.ui.h:140
+msgid "Notifications when scrolling"
+msgstr ""
+
+#: ../data/unity.ui.h:141
+msgid ""
+"When using scrolling to change the volume, show on-screen notifications."
+msgstr ""
+
+#: ../data/unity.ui.h:142
+msgid "Show my name"
+msgstr ""
+
+#: ../data/unity.ui.h:143
+msgid "If enabled, show the user&apos;s real name in the panel."
+msgstr ""
+
+#: ../data/unity.ui.h:144
+msgid "If enabled, show the user's real name in the panel."
+msgstr ""
+
+#: ../data/unity.ui.h:145
+msgid "Restore the default Unity panel settings."
+msgstr ""
+
+#: ../data/unity.ui.h:147
+msgid "Switch between windows on all workspaces"
+msgstr ""
+
+#: ../data/unity.ui.h:148
+msgid ""
+"If enabled, the window switcher cycles through all windows on all workspaces"
+msgstr ""
+
+#: ../data/unity.ui.h:149
+msgid "Display \"Show Desktop\" icon"
+msgstr ""
+
+#: ../data/unity.ui.h:150
+msgid ""
+"If enabled, show the &quot;Show Desktop&quot; option in the window switcher"
+msgstr ""
+
+#: ../data/unity.ui.h:151
+msgid "If enabled, show the \"Show Desktop\" option in the window switcher"
+msgstr ""
+
+#: ../data/unity.ui.h:152
+msgid "Automatically expose windows"
+msgstr ""
+
+#: ../data/unity.ui.h:153
+msgid "If enabled, the window switcher will expose minimized windows"
+msgstr ""
+
+#: ../data/unity.ui.h:154
+msgid "Switch between minimized windows"
+msgstr ""
+
+#: ../data/unity.ui.h:155
+msgid "If enabled, the window switcher will switch through minimized windows"
+msgstr ""
+
+#: ../data/unity.ui.h:156
+msgid "Window switching shortcuts"
+msgstr ""
+
+#: ../data/unity.ui.h:157
+msgid "Window switcher shortcuts"
+msgstr ""
+
+#: ../data/unity.ui.h:160
+msgid "Launcher switching shortcuts"
+msgstr ""
+
+#: ../data/unity.ui.h:161
+msgid "Launcher switcher shortcuts"
+msgstr ""
+
+#: ../data/unity.ui.h:162
+msgid "Restore the default window switcher settings."
+msgstr ""
+
+#: ../data/unity.ui.h:164
+msgid "Enable prompts for webapp integration when visiting supported websites?"
+msgstr ""
+
+#: ../data/unity.ui.h:165
+msgid "Integration prompts:"
+msgstr ""
+
+#: ../data/unity.ui.h:166
+msgid "Preauthorized domains"
+msgstr ""
+
+#: ../data/unity.ui.h:167
+msgid "Amazon"
+msgstr ""
+
+#: ../data/unity.ui.h:168
+msgid "Ubuntu One"
+msgstr ""
+
+#: ../data/unity.ui.h:169
+msgid "Restore the default Unity Webapps settings."
+msgstr ""
+
+#: ../data/unity.ui.h:171
+msgid "HUD"
+msgstr ""
+
+#: ../data/unity.ui.h:172
+msgid "Remember previous commands"
+msgstr ""
+
+#: ../data/unity.ui.h:173
+msgid ""
+"If enabled, the HUD will remember previously executed entries and sort them "
+"by frequently used."
+msgstr ""
+
+#: ../data/unity.ui.h:174
+msgid "Keyboard Shortcuts"
+msgstr ""
+
+#: ../data/unity.ui.h:175
+msgid "Hold Super for keyboard shortcuts"
+msgstr ""
+
+#: ../data/unity.ui.h:176
+msgid ""
+"When enabled, pressing the Super key displays an overlay of all Unity "
+"keyboard shortcuts"
+msgstr ""
+
+#: ../data/unity.ui.h:177
+msgid "List of Unity keyboard shortcuts"
+msgstr ""
+
+#: ../data/unity.ui.h:178
+msgid "Notifications"
+msgstr ""
+
+#: ../data/unity.ui.h:179
+msgid "All displays"
+msgstr ""
+
+#: ../data/unity.ui.h:180
+msgid "For multiple displays, notifications are visible on all of them."
+msgstr ""
+
+#: ../data/unity.ui.h:181
+msgid "Active display"
+msgstr ""
+
+#: ../data/unity.ui.h:182
+msgid "For multiple displays, notifications are visible on the active display."
+msgstr ""
+
+#: ../data/unity.ui.h:183
+msgid "Restore the default Unity keyboard shortcut settings."
+msgstr ""
+
+#: ../data/overview.ui.h:10
+msgid ""
+"Workspace\n"
+"Settings"
+msgstr ""
+
+#: ../data/overview.ui.h:12
+msgid ""
+"Window\n"
+"Spread"
+msgstr ""
+
+#: ../data/overview.ui.h:14
+msgid ""
+"Window\n"
+"Snapping"
+msgstr ""
+
+#: ../data/overview.ui.h:20
+msgid "Cursors"
+msgstr ""
+
+#: ../data/overview.ui.h:22
+msgid ""
+"Window\n"
+"Controls"
+msgstr ""
+
+#: ../data/overview.ui.h:25
+msgid ""
+"Desktop\n"
+"Icons"
+msgstr ""
+
+#: ../data/errordialog.ui.h:1
+msgid "Schemas missing"
+msgstr ""
+
+#: ../data/errordialog.ui.h:2
+msgid "The following schema is missing"
+msgstr ""
+
+#: ../UnityTweakTool/utils/unityreset.py:41
+msgid "Initialising Unity reset"
+msgstr ""
+
+#: ../UnityTweakTool/utils/unityreset.py:42
+msgid "Killing Unity and Compiz"
+msgstr ""
+
+#: ../UnityTweakTool/utils/unityreset.py:45
+msgid "Resetting compiz plugins"
+msgstr ""
+
+#: ../UnityTweakTool/utils/unityreset.py:47
+msgid "Resetting more compiz plugins"
+msgstr ""
+
+#: ../UnityTweakTool/utils/unityreset.py:49
+msgid "Resetting Unity settings"
+msgstr ""
+
+#: ../UnityTweakTool/utils/unityreset.py:51
+msgid "Reset complete. Reloading unity"
+msgstr ""
+
+#: ../data/about.ui.h:1
+msgid "Copyright © 2013 Freyja Development team"
+msgstr ""
+
+#: ../data/about.ui.h:2
+msgid ""
+"Unity Tweak Tool is a settings manager intended to be used with Ubuntu Unity."
+msgstr ""
+
+#: ../data/about.ui.h:3
+msgid "Unity Tweak Tool on Launchpad"
+msgstr ""
+
+#: ../data/about.ui.h:4
+msgid "GPL3"
+msgstr ""
+
+#: ../unity-tweak-tool.py:43
+msgid "Start in the Unity tab"
+msgstr ""
+
+#: ../unity-tweak-tool.py:44
+msgid "Start in the WindowManager tab"
+msgstr ""
+
+#: ../unity-tweak-tool.py:45
+msgid "Start in the appearance tab"
+msgstr ""
+
+#: ../unity-tweak-tool.py:46
+msgid "Start in the system tab"
+msgstr ""
+
+#: ../unity-tweak-tool.py:47
+msgid "Reset Unity, wiping all configuration changes."
+msgstr ""
+
+#: ../unity-tweak-tool.py:61
+msgid ""
+"\n"
+"WARNING: You are about to reset Unity to its default configuration.\n"
+"    This will result in loss of configuration.\n"
+"    It is normal for your desktop to flicker during the process.\n"
+"    Type yes to continue, anything else to exit.\n"
+"    "
+msgstr ""
+
+#: ../unity-tweak-tool.py:67
+msgid "Do you wish to continue?"
+msgstr ""
+
+#: ../unity-tweak-tool.py:70
+msgid "Please log out and log back in."
 msgstr ""
 
 #: ../data/appearance.ui.h:1
@@ -1594,10 +1594,6 @@ msgstr ""
 
 #: ../data/appearance.ui.h:18
 msgid "Restore system's default cursor theme configurations"
-msgstr ""
-
-#: ../data/appearance.ui.h:19 ../data/unitytweak.ui.h:19
-msgid "Cursor"
 msgstr ""
 
 #: ../data/appearance.ui.h:21
@@ -1728,32 +1724,4 @@ msgstr ""
 
 #: ../data/appearance.ui.h:54
 msgid "Window Controls"
-msgstr ""
-
-#: ../data/unitytweak.ui.h:2
-msgid "_File"
-msgstr ""
-
-#: ../data/unitytweak.ui.h:12
-msgid "Workspace settings"
-msgstr ""
-
-#: ../data/unitytweak.ui.h:13
-msgid "Windows spread"
-msgstr ""
-
-#: ../data/unitytweak.ui.h:14
-msgid "Windows snapping"
-msgstr ""
-
-#: ../data/unitytweak.ui.h:21
-msgid "Window controls"
-msgstr ""
-
-#: ../data/unitytweak.ui.h:26
-msgid "_Help"
-msgstr ""
-
-#: ../data/unitytweak.ui.h:27
-msgid " Overview"
 msgstr ""
