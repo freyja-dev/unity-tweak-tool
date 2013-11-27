@@ -31,6 +31,7 @@
 
 import argparse
 import UnityTweakTool
+import os
 
 import gettext
 gettext.bindtextdomain('unity-tweak-tool')
@@ -47,6 +48,12 @@ optgrp.add_argument('-s', '--system', help=_('Start in the system tab'), action=
 optgrp.add_argument('--reset-unity', help=_('Reset Unity, wiping all configuration changes.'), action='store_true')
 
 
+# DBUS crashes if DISPLAY is not set.
+# https://errors.ubuntu.com/problem/5ce3e25dca09d233db038f04e57e179dda28ec9b
+# Make a safe bet that it is :0.
+# If you have multi display/ ssh -X, you can prolly debug if there's an issue.
+if "DISPLAY" not in os.environ:
+    os.environ["DISPLAY"] = ":0"
 
 args=parser.parse_args()
 if args.unity:
