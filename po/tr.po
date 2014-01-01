@@ -7,1231 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: unity-tweak-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2013-09-15 20:49+0530\n"
-"PO-Revision-Date: 2013-08-03 21:39+0000\n"
-"Last-Translator: İbrahim Çelik <ibrahimcelik89@gmail.com>\n"
+"POT-Creation-Date: 2013-10-06 00:16+0530\n"
+"PO-Revision-Date: 2013-10-21 05:50+0000\n"
+"Last-Translator: Emre AYTAÇ <Unknown>\n"
 "Language-Team: Turkish <tr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-09-15 17:16+0000\n"
-"X-Generator: Launchpad (build 16761)\n"
+"X-Launchpad-Export-Date: 2014-01-01 14:04+0000\n"
+"X-Generator: Launchpad (build 16877)\n"
 
-#: ../UnityTweakTool/utils/unityreset.py:41
-msgid "Initialising Unity reset"
-msgstr "Unity sıfırlama başlatılıyor"
-
-#: ../UnityTweakTool/utils/unityreset.py:42
-msgid "Killing Unity and Compiz"
-msgstr "Unity ve Compiz sonlandırılıyor"
-
-#: ../UnityTweakTool/utils/unityreset.py:45
-msgid "Resetting compiz plugins"
-msgstr "Compiz eklentileri sıfırlanıyor"
-
-#: ../UnityTweakTool/utils/unityreset.py:47
-msgid "Resetting more compiz plugins"
-msgstr "Daha fazla compiz eklentisi sıfırlanıyor"
-
-#: ../UnityTweakTool/utils/unityreset.py:49
-msgid "Resetting Unity settings"
-msgstr "Unity ayarları sıfırlanıyor"
-
-#: ../UnityTweakTool/utils/unityreset.py:51
-msgid "Reset complete. Reloading unity"
-msgstr "Sıfırlama tamamlandı. Unity tekrar yükleniyor"
-
-#. ! /usr/bin/env python3
-#: ../data/errordialog.ui.h:1
-msgid "Schemas missing"
-msgstr ""
-
-#: ../data/errordialog.ui.h:2
-msgid "The following schema is missing"
-msgstr ""
-
-#: ../data/appearance.ui.h:1
-msgid "Available themes"
-msgstr "Kullanılabilir temalar"
-
-#: ../data/appearance.ui.h:2
-msgid "List of GTK Themes"
-msgstr "GTK Temaları Listesi"
-
-#: ../data/appearance.ui.h:3
-msgid "GTK Theme"
-msgstr "GTK Teması"
-
-#: ../data/appearance.ui.h:4
-msgid "List of Window decoration themes"
-msgstr "Pencere süsleme temaları listesi"
-
-#: ../data/appearance.ui.h:5
-msgid "Window decoration theme"
-msgstr "Pencere süsleme teması"
-
-#: ../data/appearance.ui.h:6 ../data/unity.ui.h:83 ../data/system.ui.h:8
-#: ../data/windowmanager.ui.h:19
-msgid "Restore defaults"
-msgstr "Varsayılanları yükle"
-
-#: ../data/appearance.ui.h:7
-msgid "Restore system's default theme configurations"
-msgstr "Sistemin varsayılan tema yapılandırmasını yükle"
-
-#: ../data/appearance.ui.h:8 ../data/overview.ui.h:18
-#: ../data/unitytweak.ui.h:17
-msgid "Theme"
-msgstr "Tema"
-
-#: ../data/appearance.ui.h:9
-msgid "List of icon themes"
-msgstr "Simge temaları listesi"
-
-#: ../data/appearance.ui.h:10
-msgid "Icon theme"
-msgstr "Simge teması"
-
-#: ../data/appearance.ui.h:11
-msgid "Restore system's default icon theme configurations"
-msgstr "Sistemin varsayılan simge teması yapılandırmasını yükle"
-
-#: ../data/appearance.ui.h:12 ../data/overview.ui.h:19 ../data/unity.ui.h:64
-#: ../data/unitytweak.ui.h:18
-msgid "Icons"
-msgstr "Simgeler"
-
-#: ../data/appearance.ui.h:13
-msgid "List of cursor themes"
-msgstr "İmleç temaları listesi"
-
-#: ../data/appearance.ui.h:14
-msgid "Cursor Theme"
-msgstr "İmleç Teması"
-
-#: ../data/appearance.ui.h:15
-msgid "Preferences"
-msgstr "Tercihler"
-
-#: ../data/appearance.ui.h:16
-msgid "Use large cursors"
-msgstr "Büyük imleçler kullan"
-
-#: ../data/appearance.ui.h:17
-msgid "If enabled, the system will use a larger cursor."
-msgstr "Eğer etkinleştirilmişse sistem büyük imleçler kullanacaktır."
-
-#: ../data/appearance.ui.h:18
-msgid "Restore system's default cursor theme configurations"
-msgstr "Sistemin varsayılan imleç teması yapılandırmasını yükle"
-
-#: ../data/appearance.ui.h:19 ../data/unitytweak.ui.h:19
-msgid "Cursor"
-msgstr "İmleç"
-
-#: ../data/appearance.ui.h:20 ../data/overview.ui.h:9 ../data/unity.ui.h:86
-#: ../data/unitytweak.ui.h:11 ../data/windowmanager.ui.h:21
-msgid "General"
-msgstr "Genel"
-
-#: ../data/appearance.ui.h:21
-msgid "Select the default font for all applications."
-msgstr "Tüm uygulamalar için varsayılan yazıtipini seçin."
-
-#: ../data/appearance.ui.h:22
-msgid "Default font:"
-msgstr "Varsayılan yazıtipi:"
-
-#: ../data/appearance.ui.h:23
-msgid "Select the default font used for reading documents."
-msgstr "Belge okumada kullanılacak varsayılan yazı tipini seçin"
-
-#: ../data/appearance.ui.h:24
-msgid "Document font:"
-msgstr "Belge yazıtipi:"
-
-#: ../data/appearance.ui.h:25
-msgid "Select the default monospace font."
-msgstr "Varsayılan tek aralıklı yazı tipini seçin."
-
-#: ../data/appearance.ui.h:26
-msgid "Monospace font:"
-msgstr "Eş aralıklı yazı tipi:"
-
-#: ../data/appearance.ui.h:27
-msgid "Select the default font for the window titlebar."
-msgstr "Pencere başlık çubuğu için varsayılan yazıtipini seçin."
-
-#: ../data/appearance.ui.h:28
-msgid "Window title font:"
-msgstr "Pencere başlığı yazıtipi:"
-
-#: ../data/appearance.ui.h:29 ../data/overview.ui.h:17 ../data/unity.ui.h:49
-#: ../data/unitytweak.ui.h:16 ../unity-tweak-tool.desktop.in.h:5
-msgid "Appearance"
-msgstr "Görünüm"
-
-#: ../data/appearance.ui.h:30
-msgid "Select the type of antialiasing used to render fonts."
-msgstr ""
-
-#: ../data/appearance.ui.h:31
-msgid "Antialiasing:"
-msgstr ""
-
-#: ../data/appearance.ui.h:32
-msgid "None"
-msgstr "Hiçbiri"
-
-#: ../data/appearance.ui.h:33
-msgid "Grayscale"
-msgstr ""
-
-#: ../data/appearance.ui.h:34
-msgid "RGBA"
-msgstr ""
-
-#: ../data/appearance.ui.h:35
-msgid "Select the type of hinting to use when rendering fonts"
-msgstr ""
-
-#: ../data/appearance.ui.h:36
-msgid "Slight"
-msgstr ""
-
-#: ../data/appearance.ui.h:37
-msgid "Medium"
-msgstr ""
-
-#: ../data/appearance.ui.h:38
-msgid "Full"
-msgstr ""
-
-#: ../data/appearance.ui.h:39
-msgid "Hinting:"
-msgstr ""
-
-#: ../data/appearance.ui.h:40
-msgid ""
-"Select the factor used to enlarge or reduce text display, without changing "
-"font size."
-msgstr ""
-
-#: ../data/appearance.ui.h:41
-msgid "Text scaling factor:"
-msgstr ""
-
-#: ../data/appearance.ui.h:42
-msgid "Restore system's default font configurations"
-msgstr "Sistemin varsayılan yazıtipi yapılandırmasını geri yükle"
-
-#: ../data/appearance.ui.h:43 ../data/overview.ui.h:21
-#: ../data/unitytweak.ui.h:20
-msgid "Fonts"
-msgstr "Yazıtipleri"
-
-#: ../data/appearance.ui.h:44
-msgid "Layout"
-msgstr ""
-
-#: ../data/appearance.ui.h:45
-msgid "Left"
-msgstr "Solda"
-
-#: ../data/appearance.ui.h:46
-msgid "Align the window controls to the left side of the window."
-msgstr "Pencere denetimlerini pencerenin sol tarafına yerleştir."
-
-#: ../data/appearance.ui.h:47
-msgid "Right"
-msgstr "Sağda"
-
-#: ../data/appearance.ui.h:48
-msgid "Align the window controls to the right side of the window."
-msgstr "Pencere denetimlerini pencerenin sağına hizala."
-
-#: ../data/appearance.ui.h:49
-msgid "Alignment:"
-msgstr "Hizalama:"
-
-#: ../data/appearance.ui.h:50
-msgid "Show menu button"
-msgstr "Menü düğmesini göster"
-
-#: ../data/appearance.ui.h:51
-msgid "If enabled, show the window menu in the titlebar."
-msgstr "Eğer etkinse, başlık çubuğunda pencere menüsünü gösterir."
-
-#: ../data/appearance.ui.h:52
-msgid "Restore Defaults"
-msgstr "Varsayılanları Geri Yükle"
-
-#: ../data/appearance.ui.h:53
-msgid "Restore default window controls settings."
-msgstr "Varsayılan pencere denetimleri ayarlarını yükle."
-
-#: ../data/appearance.ui.h:54
-msgid "Window Controls"
-msgstr "Pencere Denetimleri"
-
-#: ../data/overview.ui.h:1 ../data/unitytweak.ui.h:3
-#: ../unity-tweak-tool.desktop.in.h:3
-msgid "Unity"
-msgstr "Unity"
-
-#: ../data/overview.ui.h:2 ../data/unity.ui.h:85 ../data/unitytweak.ui.h:4
-msgid "Launcher"
-msgstr "Başlatıcı"
-
-#: ../data/overview.ui.h:3 ../data/unity.ui.h:110 ../data/unitytweak.ui.h:5
-msgid "Search"
-msgstr "Arama"
-
-#: ../data/overview.ui.h:4 ../data/unity.ui.h:154 ../data/unitytweak.ui.h:6
-msgid "Panel"
-msgstr "Panel"
-
-#: ../data/overview.ui.h:5 ../data/unity.ui.h:171 ../data/unitytweak.ui.h:7
-msgid "Switcher"
-msgstr "Değiştirici"
-
-#: ../data/overview.ui.h:6 ../data/unity.ui.h:178 ../data/unitytweak.ui.h:8
-msgid "Web Apps"
-msgstr "Web Uygulamaları"
-
-#: ../data/overview.ui.h:7 ../data/unity.ui.h:192 ../data/unitytweak.ui.h:9
-#: ../data/windowmanager.ui.h:81
-msgid "Additional"
-msgstr "Ek Ayarlar"
-
-#: ../data/overview.ui.h:8 ../data/unitytweak.ui.h:10
-#: ../unity-tweak-tool.desktop.in.h:4
-msgid "Window Manager"
-msgstr "Pencere Yöneticisi"
-
-#: ../data/overview.ui.h:10
-msgid ""
-"Workspace\n"
-"Settings"
-msgstr ""
-"Çalışma Alanı\n"
-"Ayarları"
-
-#: ../data/overview.ui.h:12
-msgid ""
-"Window\n"
-"Spread"
-msgstr ""
-"Pencere\n"
-"Dağıtımı"
-
-#: ../data/overview.ui.h:14
-msgid ""
-"Window\n"
-"Snapping"
-msgstr ""
-"Pencere\n"
-"Tutturma"
-
-#: ../data/overview.ui.h:16 ../data/unitytweak.ui.h:15
-#: ../data/windowmanager.ui.h:52
-msgid "Hotcorners"
-msgstr "Etkin Köşeler"
-
-#: ../data/overview.ui.h:20
-msgid "Cursors"
-msgstr "İmleçler"
-
-#: ../data/overview.ui.h:22
-msgid ""
-"Window\n"
-"Controls"
-msgstr ""
-"Pencere\n"
-"Denetimleri"
-
-#: ../data/overview.ui.h:24 ../data/unitytweak.ui.h:22
-#: ../unity-tweak-tool.desktop.in.h:6
-msgid "System"
-msgstr "Sistem"
-
-#: ../data/overview.ui.h:25
-msgid ""
-"Desktop\n"
-"Icons"
-msgstr ""
-"Masaüstü\n"
-"Simgeleri"
-
-#: ../data/overview.ui.h:27 ../data/unitytweak.ui.h:24 ../data/system.ui.h:21
-msgid "Security"
-msgstr "Güvenlik"
-
-#: ../data/overview.ui.h:28 ../data/unitytweak.ui.h:25 ../data/system.ui.h:36
-msgid "Scrolling"
-msgstr "Kaydırma"
-
-#. ----- END: Additional -----
-#. ! /usr/bin/env python3
-#: ../data/unity.ui.h:1
-msgid "Invoke HUD"
-msgstr ""
-
-#: ../data/unity.ui.h:2
-msgid "Super+H"
-msgstr "Süper+H"
-
-#: ../data/unity.ui.h:3
-msgid "Show the launcher"
-msgstr "Başlatıcıyı göster"
-
-#: ../data/unity.ui.h:4
-msgid "Super+E"
-msgstr "Süper+E"
-
-#: ../data/unity.ui.h:5
-msgid "Execute command"
-msgstr ""
-
-#: ../data/unity.ui.h:6
-msgid "Super+M"
-msgstr "Süper+M"
-
-#: ../data/unity.ui.h:7
-msgid "Put keyboard focus on the launcher"
-msgstr ""
-
-#: ../data/unity.ui.h:8
-msgid "Super+A"
-msgstr "Süper+A"
-
-#: ../data/unity.ui.h:9
-msgid "Open the first panel menu"
-msgstr "İlk panel menüsünü aç"
-
-#: ../data/unity.ui.h:10
-msgid "Super+N"
-msgstr "Süper+N"
-
-#: ../data/unity.ui.h:11
-msgid "Start switcher"
-msgstr "Değiştiriciyi başlat"
-
-#: ../data/unity.ui.h:12
-msgid "Super+Tab"
-msgstr "Süper+Tab"
-
-#: ../data/unity.ui.h:13
-msgid "Start switcher in reverse"
-msgstr "Değiştiriciyi ters yönde başlat"
-
-#: ../data/unity.ui.h:14
-msgid "Shift+Super+Tab"
-msgstr "Shift+Süper+Tab"
-
-#: ../data/unity.ui.h:15
-msgid "Alt+Tab"
-msgstr "Alt+Tab"
-
-#: ../data/unity.ui.h:16
-msgid "Shift+Alt+Tab"
-msgstr "Shift+Alt+Tab"
-
-#: ../data/unity.ui.h:17
-msgid "Start switcher for all workspaces"
-msgstr "Tüm çalışma alanları için değiştiriciyi başlat"
-
-#: ../data/unity.ui.h:18
-msgid "Ctrl+Super+Alt+Tab"
-msgstr "Ctrl+Süper+Alt+Tab"
-
-#: ../data/unity.ui.h:19
-msgid "Start switcher for all workspaces in reverse"
-msgstr "Tüm çalışma alanları için değiştiriciyi ters yönde başlat"
-
-#: ../data/unity.ui.h:20
-msgid "Shift+Ctrl+Super+Alt+Tab"
-msgstr "Shift+Ctrl+Süper+Alt+Tab"
-
-#: ../data/unity.ui.h:21
-msgid "Go right in the switcher"
-msgstr "Değiştiricide sağa git"
-
-#: ../data/unity.ui.h:22
-msgid "Alt+Right"
-msgstr "Alt+Sağ"
-
-#: ../data/unity.ui.h:23
-msgid "Go left in the switcher"
-msgstr "Değiştiricide sola git"
-
-#: ../data/unity.ui.h:24
-msgid "Alt+Left"
-msgstr "Alt+Sol"
-
-#: ../data/unity.ui.h:25
-msgid "Expose windows in the switcher"
-msgstr "Değiştiricide pencereyi göster"
-
-#: ../data/unity.ui.h:26
-msgid "Alt+Down"
-msgstr "Alt+Aşağı"
-
-#: ../data/unity.ui.h:27
-msgid "Collapse windows in the switcher"
-msgstr ""
-
-#: ../data/unity.ui.h:28
-msgid "Alt+Up"
-msgstr "Alt+Yukarı"
-
-#: ../data/unity.ui.h:29
-msgid "Flip through windows in the switcher"
-msgstr ""
-
-#: ../data/unity.ui.h:30 ../data/windowmanager.ui.h:95
-msgid "Disabled"
-msgstr "Devre Dışı"
-
-#: ../data/unity.ui.h:31
-msgid "Flip through windows in the switcher backwards"
-msgstr ""
-
-#: ../data/unity.ui.h:32 ../data/windowmanager.ui.h:49
-msgid "Behaviour"
-msgstr "Davranış"
-
-#: ../data/unity.ui.h:33
-msgid "Should the launcher be hidden?"
-msgstr "Başlatıcı gizlensin mi?"
-
-#: ../data/unity.ui.h:34
-msgid "Auto-hide:"
-msgstr "Otomatik gizle:"
-
-#: ../data/unity.ui.h:35
-msgid "Select the auto-hide animation of the launcher."
-msgstr "Başlatıcının otomatik gizlenme canlandırmasını seçin."
-
-#: ../data/unity.ui.h:36
-msgid "Fade Dash and slide"
-msgstr ""
-
-#: ../data/unity.ui.h:37
-msgid "Slide only"
-msgstr ""
-
-#: ../data/unity.ui.h:38
-msgid "Fade only"
-msgstr ""
-
-#: ../data/unity.ui.h:39
-msgid "Fade and slide"
-msgstr ""
-
-#: ../data/unity.ui.h:40
-msgid "Auto-hide animation:"
-msgstr ""
-
-#: ../data/unity.ui.h:41
-msgid ""
-"Select the option to reveal the dash with the mouse, when auto-hide is "
-"enabled."
-msgstr ""
-"Otomatik gizleme açıkken, fareyle Ana Seçkeyi ortaya çıkarma yolunu seçin."
-
-#: ../data/unity.ui.h:42
-msgid "Reveal location:"
-msgstr "Ortaya çıkış konumu"
-
-#: ../data/unity.ui.h:43
-msgid "Reveal sensitivity:"
-msgstr "Ortaya çıkış hassasiyeti:"
-
-#: ../data/unity.ui.h:44
-msgid "How much pointer \"pressure\" is required to reveal the launcher."
-msgstr "Başlatıcıyı ortaya çıkarmak için gereken işaretçi \"baskısı\"."
-
-#: ../data/unity.ui.h:45
-msgid "Left side"
-msgstr "Sol yan"
-
-#: ../data/unity.ui.h:46
-msgid ""
-"When in auto-hide mode the left edge of the current workspace triggers the "
-"launcher."
-msgstr ""
-"Otomatik gizleme modundayken kullanılan çalışma alanının sol kenarı "
-"başlatıcıyı tetikler."
-
-#: ../data/unity.ui.h:47
-msgid "Top left corner"
-msgstr "Sol üst köşe"
-
-#: ../data/unity.ui.h:48
-msgid ""
-"When in auto-hide mode the top left corner of the current workspace triggers "
-"the launcher."
-msgstr ""
-"Otomatik gizleme modundayken kullanılan çalışma alanının sol üst köşesi "
-"başlatıcıyı tetikler."
-
-#: ../data/unity.ui.h:50
-msgid "Select the level of the transparency of the launcher"
-msgstr "Başlatıcı şeffaflığı seviyesini seçin"
-
-#: ../data/unity.ui.h:51
-msgid "Transparency level:"
-msgstr "Şeffaflık seviyesi:"
-
-#: ../data/unity.ui.h:52
-msgid "How transparent the launcher will be."
-msgstr "Başlatıcının şeffaflık oranı."
-
-#: ../data/unity.ui.h:53
-msgid "Based on wallpaper"
-msgstr "Duvarkağıdından"
-
-#: ../data/unity.ui.h:54
-msgid "If selected, the launcher colour is based on the desktop background"
-msgstr "Eğer seçiliyse başlatıcı rengi masaüstü artalanından gelecektir"
-
-#: ../data/unity.ui.h:55
-msgid "Colour:"
-msgstr "Renk:"
-
-#: ../data/unity.ui.h:56
-msgid "Visibility:"
-msgstr "Görünürlük:"
-
-#: ../data/unity.ui.h:57
-msgid "Custom:"
-msgstr "Özel:"
-
-#: ../data/unity.ui.h:58
-msgid "If selected, the launcher will be the colour chosen by the user"
-msgstr "Eğer seçiliyse başlatıcı rengi kullanıcı tarafından seçilecektir"
-
-#: ../data/unity.ui.h:59
-msgid "All desktops"
-msgstr "Tüm masaüstleri"
-
-#: ../data/unity.ui.h:60
-msgid "If selected, the launcher is visible on all desktops."
-msgstr "Eğer seçiliyse başlatıcı tüm masaüstlerinde görünecek."
-
-#: ../data/unity.ui.h:61
-msgid "If selected, the launcher is visible on all desktops"
-msgstr "Eğer seçiliyse başlatıcı tüm masaüstlerinde görünecek."
-
-#: ../data/unity.ui.h:62
-msgid "Primary desktop"
-msgstr "Birincil masaüstü"
-
-#: ../data/unity.ui.h:63
-msgid "If selected, the launcher is visible on the primary desktop"
-msgstr "Eğer seçiliyse başlatıcı birincil masaüstünde görünecek."
-
-#: ../data/unity.ui.h:65
-msgid "Icon size:"
-msgstr "Simge boyutu:"
-
-#: ../data/unity.ui.h:66
-msgid "Select the animation used for launching an application."
-msgstr "Bir uygulama başlatılırken kullanılan canlandırmayı seçin."
-
-#: ../data/unity.ui.h:67
-msgid "No animation"
-msgstr "Canlandırma yok"
-
-#: ../data/unity.ui.h:68
-msgid "Pulse"
-msgstr "Titreşim"
-
-#: ../data/unity.ui.h:69
-msgid "Blink"
-msgstr "Yanıp sönme"
-
-#: ../data/unity.ui.h:70
-msgid "Select the animation used for an urgent notification on the launcher"
-msgstr ""
-"Başlatıcıdaki acil bildirimi için kullanılacak olan canlandırmayı seçin"
-
-#: ../data/unity.ui.h:71
-msgid "Wiggle"
-msgstr "Kıpırdama"
-
-#: ../data/unity.ui.h:72
-msgid "Launch animation:"
-msgstr "Başlatma canlandırması:"
-
-#: ../data/unity.ui.h:73
-msgid "Urgent animation:"
-msgstr "Acil canlandırması:"
-
-#: ../data/unity.ui.h:74
-msgid "Select how the icons are coloured on the launcher"
-msgstr "Simgelerin başlatıcıda nasıl renklendirileceğini seçin"
-
-#: ../data/unity.ui.h:75
-msgid "All applications"
-msgstr "Tüm uygulamalar"
-
-#: ../data/unity.ui.h:76
-msgid "Open applications only"
-msgstr "Sadece uygulamaları aç"
-
-#: ../data/unity.ui.h:77
-msgid "No colouring"
-msgstr "Renklendirme yok"
-
-#: ../data/unity.ui.h:78
-msgid "Coloured edges"
-msgstr "Renklendirilmiş köşeler"
-
-#: ../data/unity.ui.h:79
-msgid "Alternated for each workspace"
-msgstr "Her çalışma alanı için değişik"
-
-#: ../data/unity.ui.h:80
-msgid "Icon backgrounds:"
-msgstr "Simge artalanları:"
-
-#: ../data/unity.ui.h:81
-msgid "\"Show Desktop\" icon:"
-msgstr "\"Masaüstünü Göster\" simgesi:"
-
-#: ../data/unity.ui.h:82
-msgid "Select the size of the icons on the launcher"
-msgstr "Başlatıcıdaki simgelerin büyüklüğünü seçin"
-
-#: ../data/unity.ui.h:84
-msgid "Restore default Unity launcher settings."
-msgstr "Varsayılan Unity başlatıcı ayarlarını geri yükle."
-
-#: ../data/unity.ui.h:87
-msgid "Background blur:"
-msgstr "Artalan bulanıklığı:"
-
-#: ../data/unity.ui.h:88
-msgid "Enable dash blur?"
-msgstr "Ana Seçke bulanıklığı etkinleştirilsin mi?"
-
-#: ../data/unity.ui.h:89
-msgid "Select the type of blur in the dash"
-msgstr "Ana Seçke bulanıklığının türünü seçin"
-
-#: ../data/unity.ui.h:90
-msgid "Blur type:"
-msgstr "Bulanıklık türü:"
-
-#: ../data/unity.ui.h:91
-msgid "Active"
-msgstr "Etkin"
-
-#: ../data/unity.ui.h:92
-msgid "Use a dynamic blur in the dash."
-msgstr "Ana Seçkede etkin bir bulanıklık kullan"
-
-#: ../data/unity.ui.h:93
-msgid "Static"
-msgstr "Durağan"
-
-#: ../data/unity.ui.h:94
-msgid "Use a static blur in the dash, uses less resources."
-msgstr "Ana Seçkede durağan bir bulanıklık kullan, daha az kaynak tüketir."
-
-#: ../data/unity.ui.h:95
-msgid "Search online sources"
-msgstr "Çevrimiçi kaynakları ara"
-
-#: ../data/unity.ui.h:96
-msgid "If enabled, the dash will get suggestions from online sources."
-msgstr ""
-"Eğer etkinleştirilmişse ana seçke çevrimiçi kaynaklardan da öneriler getirir."
-
-#: ../data/unity.ui.h:97
-msgid "Applications"
-msgstr "Uygulamalar"
-
-#: ../data/unity.ui.h:98
-msgid "Show \"Recently Used\" applications"
-msgstr "\"Yakında Kullanılan\" uygulamaları göster"
-
-#: ../data/unity.ui.h:99
-msgid "If enabled, show recently used applications in the Dash."
-msgstr ""
-"Eğer etkinleştirilmişse Ana Seçkede yakında kullanılan uygulamaları kullan."
-
-#: ../data/unity.ui.h:100
-msgid "Show \"More Suggestions\""
-msgstr "\"Daha Fazla Öneri\" Göster"
-
-#: ../data/unity.ui.h:101
-msgid "If enabled, show applications available for download in the Dash."
-msgstr ""
-"Eğer etkinleştirilmişse Ana Seçkede indirilebilecek olan uygulamaları "
-"gösterir."
-
-#: ../data/unity.ui.h:102
-msgid "Files"
-msgstr "Dosyalar"
-
-#: ../data/unity.ui.h:103
-msgid "Enable search of your files"
-msgstr "Dosya aramayı etkinleştirin"
-
-#: ../data/unity.ui.h:104
-msgid ""
-"If enabled, allow searches to find your files that aren&apos;t logged."
-msgstr ""
-
-#: ../data/unity.ui.h:105
-msgid "If enabled, allow searches to find your files that aren't logged."
-msgstr ""
-"Etkinleştirilirse kayıt altına alınmamış dosyalarınızın bulunmasına izin "
-"verir."
-
-#: ../data/unity.ui.h:106
-msgid "Run Command"
-msgstr ""
-
-#: ../data/unity.ui.h:107
-msgid "Clear History"
-msgstr "Geçmişi Temizle"
-
-#: ../data/unity.ui.h:108
-msgid "Clear ALT+F2 command history."
-msgstr ""
-
-#: ../data/unity.ui.h:109
-msgid "Restore the default Dash settings."
-msgstr "Varsayılan Ana Seçke ayarlarını yükle."
-
-#: ../data/unity.ui.h:111
-msgid "Menu visible for:"
-msgstr "Menü şunun için görünür:"
-
-#: ../data/unity.ui.h:112
-msgid ""
-"Select how long the application menu is visible when an application is first "
-"opened"
-msgstr ""
-"Bir uygulama ilk açıldığında uygulama menüsünün ne kadar süre görünür "
-"olacağını seçin"
-
-#: ../data/unity.ui.h:113
-msgid "seconds"
-msgstr "saniye"
-
-#: ../data/unity.ui.h:114
-msgid "Set the level of transparency for the panel."
-msgstr "Panel şeffaflığı seviyesini ayarlayın."
-
-#: ../data/unity.ui.h:115
-msgid "Opaque panel for maximized windows"
-msgstr "Tam ekran için mat panel"
-
-#: ../data/unity.ui.h:116
-msgid "If selected, the panel will be opaque for maximized windows"
-msgstr "Seçiliyse tam ekran kipinde panel mat olacaktır"
-
-#: ../data/unity.ui.h:117
-msgid "Indicators"
-msgstr "Göstergeler"
-
-#: ../data/unity.ui.h:118
-msgid "Date & time"
-msgstr "Tarih & saat"
-
-#: ../data/unity.ui.h:119
-msgid "If enabled, the date &amp; time indicator will be visible."
-msgstr "Etkinleştirilmişse tarih & saat göstergesi görünür olacaktır."
-
-#: ../data/unity.ui.h:120
-msgid "If enabled, the date & time indicator will be visible."
-msgstr "Etkinleştirilmişse tarih & saat göstergesi görünür olacaktır."
-
-#: ../data/unity.ui.h:121
-msgid "12-hour time"
-msgstr "12 saatlik zaman"
-
-#: ../data/unity.ui.h:122
-msgid "Have the clock use 12-hour time."
-msgstr "Saat 12'lik zamanı kullanır."
-
-#: ../data/unity.ui.h:123
-msgid "24-hour time"
-msgstr "24 saatlik zaman"
-
-#: ../data/unity.ui.h:124
-msgid "Have the clock use 24-hour time."
-msgstr "Saat 24'lü zamanı kullanır."
-
-#: ../data/unity.ui.h:125
-msgid "Seconds"
-msgstr "Saniye"
-
-#: ../data/unity.ui.h:126
-msgid "If enabled, the clock will display seconds."
-msgstr "Etkinse saat saniyeyi de gösterecektir."
-
-#: ../data/unity.ui.h:127
-msgid "Date"
-msgstr "Tarih"
-
-#: ../data/unity.ui.h:128
-msgid "If enabled, the month and day will be visible in the panel."
-msgstr "Etkinse panelde ay ve ayın kaçıncı günü olduğu görüntülenecektir."
-
-#: ../data/unity.ui.h:129
-msgid "Weekday"
-msgstr "Gün"
-
-#: ../data/unity.ui.h:130
-msgid "If enabled, the day of the week will be visible in the panel."
-msgstr "Etkinse panelde gün de gösterilecektir."
-
-#: ../data/unity.ui.h:131
-msgid "Include:"
-msgstr "Ekle:"
-
-#: ../data/unity.ui.h:132
-msgid "Calendar"
-msgstr "Takvim"
-
-#: ../data/unity.ui.h:133
-msgid "If enabled, the calendar will be visible in the indicator menu."
-msgstr "Etkinse takvim gösterge menüsünde görüntülenecektir."
-
-#: ../data/unity.ui.h:134
-msgid "Bluetooth"
-msgstr "Bluetooth"
-
-#: ../data/unity.ui.h:135
-msgid "If enabled, the bluetooth indicator is visible in the panel."
-msgstr "Etkinse bluetooth göstergesi panelde görüntülenecektir."
-
-#: ../data/unity.ui.h:136
-msgid "Power"
-msgstr "Güç"
-
-#: ../data/unity.ui.h:137
-msgid "If enabled, show the power menu in the panel."
-msgstr "Etkinse güç menüsü panelde gösterilir."
-
-#: ../data/unity.ui.h:138
-msgid "Visible when charging or discharging"
-msgstr "Dolarken veya boşalırken göster"
-
-#: ../data/unity.ui.h:139
-msgid ""
-"Set the power indicator to be visible when charging or discharging power."
-msgstr ""
-"Pil dolarken veya boşalırken gösterilecek olan güç göstergesini ayarlayın."
-
-#: ../data/unity.ui.h:140
-msgid "Always visible"
-msgstr "Her zaman görünür"
-
-#: ../data/unity.ui.h:141
-msgid "Set the power indicator to be always visible."
-msgstr "Güç göstergesi sürekli görünür olsun."
-
-#: ../data/unity.ui.h:142
-msgid "Display remaining battery life"
-msgstr "Kalan pil ömrünü görüntüle"
-
-#: ../data/unity.ui.h:143
-msgid "If enabled, show the remaining battery life in the power indicator."
-msgstr "Etkinleştirilirse, kalan pil ömrünü güç göstergesinde gösterir."
-
-#: ../data/unity.ui.h:144
-msgid "Volume"
-msgstr "Sesi Düzeyi"
-
-#: ../data/unity.ui.h:145
-msgid "If enabled, show the sound menu in the panel."
-msgstr "Etkinleştirilise, ses menüsünü panelde gösterir."
-
-#: ../data/unity.ui.h:146
-msgid "Default player:"
-msgstr "Varsayılan oynatıcı:"
-
-#: ../data/unity.ui.h:147
-msgid ""
-"Select which of the installed audio players is default in the sound menu."
-msgstr ""
-"Kurulu  ses oynatıcılarından hangisinin ses menüsünde varsayılan olacağını "
-"seçin."
-
-#: ../data/unity.ui.h:148
-msgid "Notifications when scrolling"
-msgstr "Kaydırma bildirimleri"
-
-#: ../data/unity.ui.h:149
-msgid ""
-"When using scrolling to change the volume, show on-screen notifications."
-msgstr ""
-"Sesi değiştirmek için kaydırmayı kullanırken ekran bildirimlerin göster."
-
-#: ../data/unity.ui.h:150
-msgid "Show my name"
-msgstr "Adımı göster"
-
-#: ../data/unity.ui.h:151
-msgid "If enabled, show the user&apos;s real name in the panel."
-msgstr "Eğer etkinleştirilmişse kullanıcı adını panelde gösterir."
-
-#: ../data/unity.ui.h:152
-msgid "If enabled, show the user's real name in the panel."
-msgstr "Etkinleştirilmişse, kullanıcının gerçek adını panelde göster."
-
-#: ../data/unity.ui.h:153
-msgid "Restore the default Unity panel settings."
-msgstr "Varsayılan Unity panel ayarlarını geri yükle."
-
-#: ../data/unity.ui.h:155
-msgid "Switch between windows on all workspaces"
-msgstr "Tüm çalışma alanlarındaki pencereler arasında geçiş yap"
-
-#: ../data/unity.ui.h:156
-msgid ""
-"If enabled, the window switcher cycles through all windows on all workspaces"
-msgstr ""
-"Etkinleştirilmişse, pencere değiştirici tüm çalışma alanlarındaki bütün "
-"pencereler arasında geçiş yapar"
-
-#: ../data/unity.ui.h:157
-msgid "Display \"Show Desktop\" icon"
-msgstr "\"Masaüstünü Göster\" simgesini göster"
-
-#: ../data/unity.ui.h:158
-msgid ""
-"If enabled, show the &quot;Show Desktop&quot; option in the window switcher"
-msgstr ""
-
-#: ../data/unity.ui.h:159
-msgid "If enabled, show the \"Show Desktop\" option in the window switcher"
-msgstr ""
-"Etkinleştirilmişse, \"Masaüstünü Göster\" seçeneğini pencere değiştiricide "
-"göster"
-
-#: ../data/unity.ui.h:160
-msgid "Automatically expose windows"
-msgstr "Pencereleri otomatik olarak ortaya çıkar"
-
-#: ../data/unity.ui.h:161
-msgid "If enabled, the window switcher will expose minimized windows"
-msgstr "Etkinse, pencere değiştirici küçültülmüş pencereleri ortaya çıkarır"
-
-#: ../data/unity.ui.h:162
-msgid "Switch between minimized windows"
-msgstr "Küçültülmüş pencereler arasında geçiş yap"
-
-#: ../data/unity.ui.h:163
-msgid "If enabled, the window switcher will switch through minimized windows"
-msgstr ""
-"Etkinleştirilmişse, pencere değiştirici küçültülmüş pencereler arasında "
-"geçiş yapar"
-
-#: ../data/unity.ui.h:164
-msgid "Window switching shortcuts"
-msgstr "Pencere değiştirme kısayolları"
-
-#: ../data/unity.ui.h:165
-msgid "Window switcher shortcuts"
-msgstr "Pencere değiştirici kısayolları"
-
-#: ../data/unity.ui.h:166 ../data/windowmanager.ui.h:5
-msgid "Title"
-msgstr "Başlık"
-
-#: ../data/unity.ui.h:167 ../data/windowmanager.ui.h:6
-msgid "Accelerator"
-msgstr "Hızlandırıcı"
-
-#: ../data/unity.ui.h:168
-msgid "Launcher switching shortcuts"
-msgstr "Başlatıcı değiştirme kısayolları"
-
-#: ../data/unity.ui.h:169
-msgid "Launcher switcher shortcuts"
-msgstr "Başlatıcı değiştirici kısayolları"
-
-#: ../data/unity.ui.h:170
-msgid "Restore the default window switcher settings."
-msgstr "Varsayılan pencere değiştirici ayarlarını geri yükle."
-
-#: ../data/unity.ui.h:172
-msgid ""
-"Enable prompts for webapp integration when visiting supported websites?"
-msgstr ""
-
-#: ../data/unity.ui.h:173
-msgid "Integration prompts:"
-msgstr "Tümleşim önerileri:"
-
-#: ../data/unity.ui.h:174
-msgid "Preauthorized domains"
-msgstr "Ön yetkilendirilmiş alanlar"
-
-#: ../data/unity.ui.h:175
-msgid "Amazon"
-msgstr "Amazon"
-
-#: ../data/unity.ui.h:176
-msgid "Ubuntu One"
-msgstr "Ubuntu One"
-
-#: ../data/unity.ui.h:177
-msgid "Restore the default Unity Webapps settings."
-msgstr "Varsayılan Unity Webapp ayarlarını geri yükle."
-
-#: ../data/unity.ui.h:179
-msgid "HUD"
-msgstr "Akıllı Seçke"
-
-#: ../data/unity.ui.h:180
-msgid "Remember previous commands"
-msgstr "Daha önceki komutları hatırla"
-
-#: ../data/unity.ui.h:181
-msgid ""
-"If enabled, the HUD will remember previously executed entries and sort them "
-"by frequently used."
-msgstr ""
-
-#: ../data/unity.ui.h:182
-msgid "Keyboard Shortcuts"
-msgstr "Klavye Kısayolları"
-
-#: ../data/unity.ui.h:183
-msgid "Hold Super for keyboard shortcuts"
-msgstr "Klavye kısayolları için Süper tuşunu basılı tutun"
-
-#: ../data/unity.ui.h:184
-msgid ""
-"When enabled, pressing the Super key displays an overlay of all Unity "
-"keyboard shortcuts"
-msgstr ""
-
-#: ../data/unity.ui.h:185
-msgid "List of Unity keyboard shortcuts"
-msgstr "Unity klavye kısayolları listesi"
-
-#: ../data/unity.ui.h:186
-msgid "Notifications"
-msgstr "Bildirimler"
-
-#: ../data/unity.ui.h:187
-msgid "All displays"
-msgstr "Tüm ekranlar"
-
-#: ../data/unity.ui.h:188
-msgid "For multiple displays, notifications are visible on all of them."
-msgstr "Çoklu ekrandayken bildirimler ekranların hepsinde görüntülenir."
-
-#: ../data/unity.ui.h:189
-msgid "Active display"
-msgstr "Etkin ekran"
-
-#: ../data/unity.ui.h:190
-msgid ""
-"For multiple displays, notifications are visible on the active display."
-msgstr "Çoklu ekrandayken bildirimler etkin olan ekranda görüntülenir."
-
-#: ../data/unity.ui.h:191
-msgid "Restore the default Unity keyboard shortcut settings."
-msgstr "Varsayılan Unity klavye kısayolu ayarlarını geri yükle."
-
-#: ../data/about.ui.h:1
-msgid "Copyright © 2013 Freyja Development team"
-msgstr "Telif Hakkı © 2013 Freyja Geliştirme takımı"
-
-#: ../data/about.ui.h:2
-msgid ""
-"Unity Tweak Tool is a settings manager intended to be used with Ubuntu Unity."
-msgstr ""
-"Unity Tweak Tool, Ubuntu Unity ile birlikte kullanılmak üzere hazırlanmış "
-"bir ayarlama yöneticisidir."
-
-#: ../data/about.ui.h:3
-msgid "Unity Tweak Tool on Launchpad"
-msgstr "Launchpad üzerinde Unity Tweak Tool"
-
-#: ../data/about.ui.h:4
-msgid "GPL3"
-msgstr "GPL3"
-
-#: ../data/unitytweak.ui.h:1 ../unity-tweak-tool.desktop.in.h:1
-msgid "Unity Tweak Tool"
-msgstr "Unity Tweak Tool"
-
-#: ../data/unitytweak.ui.h:2
-msgid "_File"
-msgstr "_Dosya"
-
-#: ../data/unitytweak.ui.h:12
-msgid "Workspace settings"
-msgstr "Çalışma alanları"
-
-#: ../data/unitytweak.ui.h:13
-msgid "Windows spread"
-msgstr "Pencere dağıtımı"
-
-#: ../data/unitytweak.ui.h:14
-msgid "Windows snapping"
-msgstr "Pencere tutturma"
-
-#: ../data/unitytweak.ui.h:21
-msgid "Window controls"
-msgstr "Pencere denetimleri"
-
-#: ../data/unitytweak.ui.h:23 ../data/system.ui.h:10
-msgid "Desktop Icons"
-msgstr "Masaüstü Simgeleri"
-
-#: ../data/unitytweak.ui.h:26
-msgid "_Help"
-msgstr "_Yardım"
-
-#: ../data/unitytweak.ui.h:27
-msgid " Overview"
-msgstr " Genel Görünüm"
-
-#. !/usr/bin/env python3
-#. -*- coding: utf-8 -*-
-#. 
-#. Team:
-#. J Phani Mahesh <phanimahesh@gmail.com>
-#. Barneedhar (jokerdino) <barneedhar@ubuntu.com>
-#. Amith KK <amithkumaran@gmail.com>
-#. Georgi Karavasilev <motorslav@gmail.com>
-#. Sam Tran <samvtran@gmail.com>
-#. Sam Hewitt <hewittsamuel@gmail.com>
-#. Angel Araya <al.arayaq@gmail.com>
-#. 
-#. Description:
-#. A One-stop configuration tool for Unity.
-#. 
-#. Legal Stuff:
-#. 
-#. This file is a part of Unity Tweak Tool
-#. 
-#. Unity Tweak Tool is free software; you can redistribute it and/or modify it under
-#. the terms of the GNU General Public License as published by the Free Software
-#. Foundation; version 3.
-#. 
-#. Unity Tweak Tool is distributed in the hope that it will be useful, but WITHOUT
-#. ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
-#. FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
-#. details.
-#. 
-#. You should have received a copy of the GNU General Public License along with
-#. this program; if not, see <https://www.gnu.org/licenses/gpl-3.0.txt>
-#. Any Unity One Sync settings should appear here.
-#. ! /usr/bin/env python3
 #: ../data/filechooser-theme.ui.h:1
 msgid "Choose a Theme file to install"
 msgstr "Yüklemek için bir Tema dosyası seçin"
@@ -1239,183 +24,6 @@ msgstr "Yüklemek için bir Tema dosyası seçin"
 #: ../data/filechooser-theme.ui.h:2
 msgid "Install Theme"
 msgstr "Tema Yükle"
-
-#: ../data/system.ui.h:1
-msgid "Items to display:"
-msgstr "Görüntülenecek ögeler:"
-
-#: ../data/system.ui.h:2
-msgid "Home Folder"
-msgstr "Ev Dizini"
-
-#: ../data/system.ui.h:3
-msgid "Network"
-msgstr "Ağ"
-
-#: ../data/system.ui.h:4
-msgid "Rubbish Bin"
-msgstr "Çöp"
-
-#: ../data/system.ui.h:5
-msgid "Trash"
-msgstr "Çöp"
-
-#: ../data/system.ui.h:6
-msgid "Mounted Devices"
-msgstr "Bağlı Aygıtlar"
-
-#: ../data/system.ui.h:7
-msgid "Devices"
-msgstr "Aygıtlar"
-
-#: ../data/system.ui.h:9
-msgid "Restore the default configurations for Desktop icons"
-msgstr "Masaüstü simgeleri varsayılan yapılandırmasını geri yükle"
-
-#: ../data/system.ui.h:11
-msgid "Enhance system security by disabling:"
-msgstr "Sistem güvenliği için şunları devre dışı bırak:"
-
-#: ../data/system.ui.h:12
-msgid "Desktop lock"
-msgstr "Masaüstü kilidi"
-
-#: ../data/system.ui.h:13
-msgid "Disable the desktop lock screen."
-msgstr "Masaüstü ekran kilidini devre dışı bırak."
-
-#: ../data/system.ui.h:14
-msgid "User log out"
-msgstr "Oturum kapatma"
-
-#: ../data/system.ui.h:15
-msgid "Disable session log out."
-msgstr "Oturum kapatmayı devre dışı bırak."
-
-#: ../data/system.ui.h:16
-msgid "User switching"
-msgstr "Kullanıcı değiştirme"
-
-#: ../data/system.ui.h:17
-msgid "Disable fast user switching."
-msgstr "Hızlı kullanıcı değiştirmeyi devre dışı bırak."
-
-#: ../data/system.ui.h:18
-msgid "Printing"
-msgstr "Yazdırma"
-
-#: ../data/system.ui.h:19
-msgid "Prevent user access to the system's printers and print setup."
-msgstr ""
-"Kullanıcıların sistem yazıcısına ve yazıcı kurulumuna erişmesini engelle."
-
-#: ../data/system.ui.h:20
-msgid "Restore the default configurations for Security settings"
-msgstr "Güvenlik ayarları için varsayılan yapılandırmayı geri yükle"
-
-#: ../data/system.ui.h:22
-msgid "Scrollbars"
-msgstr "Kaydırma çubukları"
-
-#: ../data/system.ui.h:23
-msgid "Legacy"
-msgstr ""
-
-#: ../data/system.ui.h:24
-msgid "Overlay "
-msgstr ""
-
-#: ../data/system.ui.h:25
-msgid "Select the behaviour of the overlay scrollbars."
-msgstr ""
-
-#: ../data/system.ui.h:26
-msgid "Default"
-msgstr "Varsayılan"
-
-#: ../data/system.ui.h:27
-msgid "Overlay with mouse"
-msgstr ""
-
-#: ../data/system.ui.h:28
-msgid "No overlay"
-msgstr ""
-
-#: ../data/system.ui.h:29
-msgid "Behaviour:"
-msgstr "Davranış:"
-
-#: ../data/system.ui.h:30
-msgid "Touch scrolling"
-msgstr ""
-
-#: ../data/system.ui.h:31
-msgid "Edge"
-msgstr "Kenar"
-
-#: ../data/system.ui.h:32
-msgid "If enabled, edge scrolling is active on touchpads."
-msgstr ""
-
-#: ../data/system.ui.h:33
-msgid "Two-finger"
-msgstr "Çift parmak"
-
-#: ../data/system.ui.h:34
-msgid "If enabled, two-finger scrolling is active on multitouch touchpads."
-msgstr ""
-
-#: ../data/system.ui.h:35
-msgid "Horizontal scrolling"
-msgstr "Yatay kaydırma"
-
-#: ../unity-tweak-tool.desktop.in.h:2
-msgid "Configuration frontend for the Unity desktop environment"
-msgstr ""
-
-#: ../unity-tweak-tool.py:43
-msgid "Start in the Unity tab"
-msgstr "Unity sekmesinde başlat"
-
-#: ../unity-tweak-tool.py:44
-msgid "Start in the WindowManager tab"
-msgstr "Pencere Yöneticisi sekmesinde başlat"
-
-#: ../unity-tweak-tool.py:45
-msgid "Start in the appearance tab"
-msgstr "Görünüm sekmesinde başlat"
-
-#: ../unity-tweak-tool.py:46
-msgid "Start in the system tab"
-msgstr "Sistem sekmesinde başlat"
-
-#: ../unity-tweak-tool.py:47
-msgid "Reset Unity, wiping all configuration changes."
-msgstr ""
-
-#: ../unity-tweak-tool.py:61
-msgid ""
-"\n"
-"WARNING: You are about to reset Unity to its default configuration.\n"
-"    This will result in loss of configuration.\n"
-"    It is normal for your desktop to flicker during the process.\n"
-"    Type yes to continue, anything else to exit.\n"
-"    "
-msgstr ""
-"\n"
-"UYARI: Unity'yi varsayılan yapılandırmasına geri döndürmek üzeresiniz.\n"
-"    Bu yapılandırma kaybıyla sonuçlanacaktır.\n"
-"    Süreç esnasında ekranın kırpışması normaldir.\n"
-"    Devam etmek için evet yazın, çıkmak için herhangi bir şey.\n"
-"    "
-
-#: ../unity-tweak-tool.py:67
-msgid "Do you wish to continue?"
-msgstr "Devam etmek ister misiniz?"
-
-#: ../unity-tweak-tool.py:70
-msgid "Please log out and log back in."
-msgstr "Lütfen çıkış yapıp tekrar girin."
 
 #. FIXME : This is guaranteed to fail.
 #: ../data/windowmanager.ui.h:1
@@ -1433,6 +41,14 @@ msgstr "Masaüstü büyütme"
 #: ../data/windowmanager.ui.h:4
 msgid "List of keyboard shortcuts for zoom"
 msgstr "Yakınlaşma için klavye kısayolları"
+
+#: ../data/windowmanager.ui.h:5 ../data/unity.ui.h:158
+msgid "Title"
+msgstr "Başlık"
+
+#: ../data/windowmanager.ui.h:6 ../data/unity.ui.h:159
+msgid "Accelerator"
+msgstr "Hızlandırıcı"
 
 #: ../data/windowmanager.ui.h:7
 msgid "Hardware acceleration"
@@ -1472,7 +88,7 @@ msgstr "Simge durumundan çıkarma:"
 
 #: ../data/windowmanager.ui.h:16
 msgid "Window Animations:"
-msgstr "Pencere Canlandırmaları"
+msgstr "Pencere Canlandırmaları:"
 
 #: ../data/windowmanager.ui.h:17
 msgid "Keyboard shortcuts"
@@ -1482,9 +98,19 @@ msgstr "Klavye Kısayolları"
 msgid "List of window manager keyboard shortcuts"
 msgstr "Pencere yöneticisi klavye kısayolları listesi"
 
+#: ../data/windowmanager.ui.h:19 ../data/system.ui.h:8 ../data/unity.ui.h:75
+#: ../data/appearance.ui.h:6
+msgid "Restore defaults"
+msgstr "Varsayılanları yükle"
+
 #: ../data/windowmanager.ui.h:20
 msgid "Restore default window manager settings"
 msgstr "Varsayılan pencere yöneticisi ayarlarını yükle"
+
+#: ../data/windowmanager.ui.h:21 ../data/unitytweak.ui.h:11
+#: ../data/unity.ui.h:78 ../data/overview.ui.h:9 ../data/appearance.ui.h:20
+msgid "General"
+msgstr "Genel"
 
 #: ../data/windowmanager.ui.h:22
 msgid "Enable the window manager to draw multiple workspaces"
@@ -1508,7 +134,7 @@ msgstr "Dikey çalışma alanlarının sayısını seçin"
 
 #: ../data/windowmanager.ui.h:27
 msgid "Vertical workspaces:"
-msgstr "Dikey çalışma alanları"
+msgstr "Dikey çalışma alanları:"
 
 #: ../data/windowmanager.ui.h:28
 msgid "Select the number of horizontal workspaces"
@@ -1598,6 +224,10 @@ msgstr "Rengi doldur:"
 msgid "Outline colour:"
 msgstr "Anahat rengi:"
 
+#: ../data/windowmanager.ui.h:49 ../data/unity.ui.h:24
+msgid "Behaviour"
+msgstr "Davranış"
+
 #: ../data/windowmanager.ui.h:50
 msgid "Window snapping"
 msgstr "Pencere tutturma"
@@ -1605,6 +235,11 @@ msgstr "Pencere tutturma"
 #: ../data/windowmanager.ui.h:51
 msgid "Hotcorners:"
 msgstr "Etkin Köşeler:"
+
+#: ../data/windowmanager.ui.h:52 ../data/unitytweak.ui.h:15
+#: ../data/overview.ui.h:16
+msgid "Hotcorners"
+msgstr "Etkin Köşeler"
 
 #: ../data/windowmanager.ui.h:53
 msgid "Focus Behaviour"
@@ -1722,6 +357,11 @@ msgstr "Yeniden boyutlandırma"
 msgid "Restore the default settings for the additional options."
 msgstr "Ek seçenekler için varsayılan ayarları geri yükle."
 
+#: ../data/windowmanager.ui.h:81 ../data/unitytweak.ui.h:9
+#: ../data/unity.ui.h:184 ../data/overview.ui.h:7
+msgid "Additional"
+msgstr "Ek Ayarlar"
+
 #: ../data/windowmanager.ui.h:82
 msgid "Close window"
 msgstr "Pencereyi kapat"
@@ -1773,6 +413,10 @@ msgstr "Süper+W"
 #: ../data/windowmanager.ui.h:94
 msgid "Start windows spread for all windows"
 msgstr "Tüm pencereler için pencere dağıtımını başlat"
+
+#: ../data/windowmanager.ui.h:95 ../data/unity.ui.h:22
+msgid "Disabled"
+msgstr "Devre Dışı"
 
 #: ../data/windowmanager.ui.h:96
 msgid "Start workspace switcher"
@@ -1838,162 +482,1292 @@ msgstr "Üst Yarı"
 msgid "Top Right Corner"
 msgstr "Sağ Üst Köşe"
 
-#~ msgid "Transparency:"
-#~ msgstr "Şeffaflık:"
+#: ../data/system.ui.h:1
+msgid "Items to display:"
+msgstr "Görüntülenecek ögeler:"
 
-#~ msgid "Magic Lamp"
-#~ msgstr "Sihirli Lamba"
+#: ../data/system.ui.h:2
+msgid "Home Folder"
+msgstr "Ev Dizini"
 
-#~ msgid "Magic Lamp Wavy"
-#~ msgstr "Dalgalı Sihirli Lamba"
+#: ../data/system.ui.h:3
+msgid "Network"
+msgstr "Ağ"
 
-#~ msgid "Random"
-#~ msgstr "Rastgele"
+#: ../data/system.ui.h:4
+msgid "Rubbish Bin"
+msgstr "Çöp"
 
-#~ msgid "Curved Fold"
-#~ msgstr "Eğimli Katlama"
+#: ../data/system.ui.h:5
+msgid "Trash"
+msgstr "Çöp"
 
-#~ msgid "Fade"
-#~ msgstr "Solma"
+#: ../data/system.ui.h:6
+msgid "Mounted Devices"
+msgstr "Bağlı Aygıtlar"
 
-#~ msgid "Glide 1"
-#~ msgstr "Süzülerek Kaybolma 1"
+#: ../data/system.ui.h:7
+msgid "Devices"
+msgstr "Aygıtlar"
 
-#~ msgid "Glide 2"
-#~ msgstr "Süzülerek Kaybolma 2"
+#: ../data/system.ui.h:9
+msgid "Restore the default configurations for Desktop icons"
+msgstr "Masaüstü simgeleri varsayılan yapılandırmasını geri yükle"
 
-#~ msgid "Horizontal Folds"
-#~ msgstr "Yatay Katlama"
+#: ../data/system.ui.h:10 ../data/unitytweak.ui.h:23
+msgid "Desktop Icons"
+msgstr "Masaüstü Simgeleri"
 
-#~ msgid "Use the default window button layout."
-#~ msgstr "Varsayılan pencere düğmesi yerleşimini kullan."
+#: ../data/system.ui.h:11
+msgid "Enhance system security by disabling:"
+msgstr "Sistem güvenliği için şunları devre dışı bırak:"
 
-#~ msgid "Layout:"
-#~ msgstr "Yerleşim:"
+#: ../data/system.ui.h:12
+msgid "Desktop lock"
+msgstr "Masaüstü kilidi"
 
-#~ msgid "Close, minimize, window title"
-#~ msgstr "Kapat, simge durumu, pencere başlığı"
+#: ../data/system.ui.h:13
+msgid "Disable the desktop lock screen."
+msgstr "Masaüstü ekran kilidini devre dışı bırak."
 
-#~ msgid "Current layout"
-#~ msgstr "Şu anki yerleşim"
+#: ../data/system.ui.h:14
+msgid "User log out"
+msgstr "Oturum kapatma"
 
-#~ msgid "Close, maximize, window title"
-#~ msgstr "Kapat, ekranı kapla, pencere başlığı"
+#: ../data/system.ui.h:15
+msgid "Disable session log out."
+msgstr "Oturum kapatmayı devre dışı bırak."
 
-#~ msgid "Select a custom window controls layout."
-#~ msgstr "Özel bir pencere denetimi yerleşimi seçin."
+#: ../data/system.ui.h:16
+msgid "User switching"
+msgstr "Kullanıcı değiştirme"
 
-#~ msgid "Close button only"
-#~ msgstr "Sadece kapat düğmesi"
+#: ../data/system.ui.h:17
+msgid "Disable fast user switching."
+msgstr "Hızlı kullanıcı değiştirmeyi devre dışı bırak."
 
-#~ msgid "Custom"
-#~ msgstr "Özel"
+#: ../data/system.ui.h:18
+msgid "Printing"
+msgstr "Yazdırma"
 
-#~ msgid "Use a custom window button layout."
-#~ msgstr "Özel bir pencere düğmesi yerleşimi kullanın."
+#: ../data/system.ui.h:19
+msgid "Prevent user access to the system's printers and print setup."
+msgstr ""
+"Kullanıcıların sistem yazıcısına ve yazıcı kurulumuna erişmesini engelle."
 
-#~ msgid "Close, window title, maximize"
-#~ msgstr "Kapat, pencere başlığı, ekranı kapla"
+#: ../data/system.ui.h:20
+msgid "Restore the default configurations for Security settings"
+msgstr "Güvenlik ayarları için varsayılan yapılandırmayı geri yükle"
 
-#~ msgid "Enable launcher transparency?"
-#~ msgstr "Başlatıcı şeffaflığı etkinleştirilsin mi?"
+#: ../data/system.ui.h:21 ../data/unitytweak.ui.h:24 ../data/overview.ui.h:27
+msgid "Security"
+msgstr "Güvenlik"
 
-#~ msgid "Enable transparency for the panel?"
-#~ msgstr "Panel şeffaflığı etkinleştirilsin mi?"
+#: ../data/system.ui.h:22
+msgid "Scrollbars"
+msgstr "Kaydırma çubukları"
 
-#~ msgid "Show the settings for the security."
-#~ msgstr "Güvenlik ayarlarını göster."
+#: ../data/system.ui.h:23
+msgid "Legacy"
+msgstr ""
 
-#~ msgid "Show the additional Unity settings"
-#~ msgstr "Ek Unity ayarlarını göster"
+#: ../data/system.ui.h:24
+msgid "Overlay "
+msgstr ""
 
-#~ msgid "Show the Unity Switcher settings"
-#~ msgstr "Unity Değiştirici ayarlarını göster"
+#: ../data/system.ui.h:25
+msgid "Select the behaviour of the overlay scrollbars."
+msgstr ""
 
-#~ msgid "Show the Unity Panel settings"
-#~ msgstr "Unity Panel ayarlarını göster"
+#: ../data/system.ui.h:26
+msgid "Default"
+msgstr "Varsayılan"
 
-#~ msgid "Show the Unity Dash settings"
-#~ msgstr "Unity Ana Seçke ayarlarını göster"
+#: ../data/system.ui.h:27
+msgid "Overlay with mouse"
+msgstr ""
 
-#~ msgid "Show the Unity launcher settings"
-#~ msgstr "Unity başlatıcı ayarlarını göster"
+#: ../data/system.ui.h:28
+msgid "No overlay"
+msgstr ""
 
-#~ msgid "Proceed"
-#~ msgstr "Devam et"
+#: ../data/system.ui.h:29
+msgid "Behaviour:"
+msgstr "Davranış:"
 
-#~ msgid "Cancel"
-#~ msgstr "İptal"
+#: ../data/system.ui.h:30
+msgid "Touch scrolling"
+msgstr ""
 
-#~ msgid ""
-#~ "This will reset all your Unity settings.\n"
-#~ "Are you sure you want to proceed?"
-#~ msgstr ""
-#~ "Bu tüm Unity ayarlarınızı sıfırlayacak.\n"
-#~ "Devam etmek istiyor musunuz?"
+#: ../data/system.ui.h:31
+msgid "Edge"
+msgstr "Kenar"
 
-#~ msgid "Reset Unity settings?"
-#~ msgstr "Unity ayarları sıfırlansın mı?"
+#: ../data/system.ui.h:32
+msgid "If enabled, edge scrolling is active on touchpads."
+msgstr ""
 
-#~ msgid "Icons on desktop:"
-#~ msgstr "Masaüstü simgeleri:"
+#: ../data/system.ui.h:33
+msgid "Two-finger"
+msgstr "Çift parmak"
 
-#~ msgid "Show a shortcut to \"Home Folder\" on the desktop"
-#~ msgstr "Masaüstünde \"Ev Dizini\" kısayolunu göster"
+#: ../data/system.ui.h:34
+msgid "If enabled, two-finger scrolling is active on multitouch touchpads."
+msgstr ""
 
-#~ msgid "A list of icons to display on the desktop"
-#~ msgstr "Masaüstünde görüntülenen simgelerin listesi"
+#: ../data/system.ui.h:35
+msgid "Horizontal scrolling"
+msgstr "Yatay kaydırma"
 
-#~ msgid "Show a shortcut to \"Network\" on the desktop"
-#~ msgstr "Masaüstünde \"Ağ\" kısayolunu göster"
+#: ../data/system.ui.h:36 ../data/unitytweak.ui.h:25 ../data/overview.ui.h:28
+msgid "Scrolling"
+msgstr "Kaydırma"
 
-#~ msgid "Show the settings for window spread behaviour"
-#~ msgstr "Pencere dağıtımı davranışı ayarlarını göster"
+#: ../unity-tweak-tool.desktop.in.h:1 ../data/unitytweak.ui.h:1
+msgid "Unity Tweak Tool"
+msgstr "Unity Tweak Tool"
 
-#~ msgid "Show the settings for the workspace switcher"
-#~ msgstr "Çalışma alanı değiştirici ayarlarını göster"
+#: ../unity-tweak-tool.desktop.in.h:2
+msgid "Configuration frontend for the Unity desktop environment"
+msgstr ""
 
-#~ msgid "Show the general settings for the window manager"
-#~ msgstr "Pencere yöneticisi genel ayarlarını göster"
+#. ! /usr/bin/env python3
+#: ../unity-tweak-tool.desktop.in.h:3 ../data/unitytweak.ui.h:3
+#: ../data/overview.ui.h:1
+msgid "Unity"
+msgstr "Unity"
 
-#~ msgid "Show the settings for the desktop icons"
-#~ msgstr "Masaüstü simgeleri ayarlarını göster"
+#: ../unity-tweak-tool.desktop.in.h:4 ../data/unitytweak.ui.h:10
+#: ../data/overview.ui.h:8
+msgid "Window Manager"
+msgstr "Pencere Yöneticisi"
 
-#~ msgid "Show the settings for the scrolling."
-#~ msgstr "Kaydırma ayarlarını göster."
+#: ../unity-tweak-tool.desktop.in.h:5 ../data/unitytweak.ui.h:16
+#: ../data/unity.ui.h:41 ../data/overview.ui.h:17 ../data/appearance.ui.h:29
+msgid "Appearance"
+msgstr "Görünüm"
 
-#~ msgid "Show the settings for the icon themes"
-#~ msgstr "Simge temaları ayarlarını göster"
+#: ../unity-tweak-tool.desktop.in.h:6 ../data/unitytweak.ui.h:22
+#: ../data/overview.ui.h:24
+msgid "System"
+msgstr "Sistem"
 
-#~ msgid "Show the settings for the cursor themes"
-#~ msgstr "İmleç temaları ayarlarını göster"
+#: ../data/unitytweak.ui.h:2
+msgid "_File"
+msgstr "_Dosya"
 
-#~ msgid "Show the settings for the system-wide fonts"
-#~ msgstr "Sistem geneli yazıtipleri ayarlarını göster"
+#: ../data/unitytweak.ui.h:4 ../data/unity.ui.h:77 ../data/overview.ui.h:2
+msgid "Launcher"
+msgstr "Başlatıcı"
 
-#~ msgid "Show the settings for the global system themes"
-#~ msgstr "Küresel sistem temaları ayarlarını göster"
+#: ../data/unitytweak.ui.h:5 ../data/unity.ui.h:102 ../data/overview.ui.h:3
+msgid "Search"
+msgstr "Arama"
 
-#~ msgid "Show the settings for window snapping behaviour"
-#~ msgstr "Pencere tutturma davranışı ayarlarını göster"
+#: ../data/unitytweak.ui.h:6 ../data/unity.ui.h:146 ../data/overview.ui.h:4
+msgid "Panel"
+msgstr "Panel"
 
-#~ msgid "Show the settings for hotcorner behaviour"
-#~ msgstr "Etkin köşeler davranışı ayarlarını göster"
+#: ../data/unitytweak.ui.h:7 ../data/unity.ui.h:163 ../data/overview.ui.h:5
+msgid "Switcher"
+msgstr "Değiştirici"
 
-#~ msgid "Show the additional settings pane."
-#~ msgstr "Ek ayarlar bölmesini göster."
+#: ../data/unitytweak.ui.h:8 ../data/unity.ui.h:170 ../data/overview.ui.h:6
+msgid "Web Apps"
+msgstr "Web Uygulamaları"
 
-#~ msgid "Preauthorized domains:"
-#~ msgstr "Önceden yetkilendirilmiş alanlar:"
+#: ../data/unitytweak.ui.h:12
+msgid "Workspace settings"
+msgstr "Çalışma alanları"
 
-#~ msgid ""
-#~ "Enable prompts for webapp integration when visitiing supported websites?"
-#~ msgstr ""
-#~ "Desteklenen sayfaları ziyaret ederken webapp tümleşimi için öneriler "
-#~ "etkinleştirilsin mi?"
+#: ../data/unitytweak.ui.h:13
+msgid "Windows spread"
+msgstr "Pencere dağıtımı"
 
-#~ msgid "Show a shortcut to \"Devices\" on the desktop"
-#~ msgstr "Masaüstünde \"Aygıtlar\" kısayolunu göster"
+#: ../data/unitytweak.ui.h:14
+msgid "Windows snapping"
+msgstr "Pencere tutturma"
 
-#~ msgid "Show a shortcut to \"Trash\" on the desktop"
-#~ msgstr "Masaüstünde \"Çöp\" kısayolunu göster"
+#: ../data/unitytweak.ui.h:17 ../data/overview.ui.h:18
+#: ../data/appearance.ui.h:8
+msgid "Theme"
+msgstr "Tema"
+
+#: ../data/unitytweak.ui.h:18 ../data/unity.ui.h:56 ../data/overview.ui.h:19
+#: ../data/appearance.ui.h:12
+msgid "Icons"
+msgstr "Simgeler"
+
+#: ../data/unitytweak.ui.h:19 ../data/appearance.ui.h:19
+msgid "Cursor"
+msgstr "İmleç"
+
+#: ../data/unitytweak.ui.h:20 ../data/overview.ui.h:21
+#: ../data/appearance.ui.h:43
+msgid "Fonts"
+msgstr "Yazıtipleri"
+
+#: ../data/unitytweak.ui.h:21
+msgid "Window controls"
+msgstr "Pencere denetimleri"
+
+#: ../data/unitytweak.ui.h:26
+msgid "_Help"
+msgstr "_Yardım"
+
+#: ../data/unitytweak.ui.h:27
+msgid " Overview"
+msgstr " Genel Görünüm"
+
+#: ../data/unity.ui.h:1
+msgid "Invoke HUD"
+msgstr ""
+
+#: ../data/unity.ui.h:2
+msgid "Super+H"
+msgstr "Süper+H"
+
+#: ../data/unity.ui.h:3
+msgid "Show the launcher"
+msgstr "Başlatıcıyı göster"
+
+#: ../data/unity.ui.h:4
+msgid "Super+E"
+msgstr "Süper+E"
+
+#: ../data/unity.ui.h:5
+msgid "Execute command"
+msgstr ""
+
+#: ../data/unity.ui.h:6
+msgid "Super+M"
+msgstr "Süper+M"
+
+#: ../data/unity.ui.h:7
+msgid "Put keyboard focus on the launcher"
+msgstr ""
+
+#: ../data/unity.ui.h:8
+msgid "Super+A"
+msgstr "Süper+A"
+
+#: ../data/unity.ui.h:9
+msgid "Open the first panel menu"
+msgstr "İlk panel menüsünü aç"
+
+#: ../data/unity.ui.h:10
+msgid "Super+N"
+msgstr "Süper+N"
+
+#: ../data/unity.ui.h:11
+msgid "Start switcher"
+msgstr "Değiştiriciyi başlat"
+
+#: ../data/unity.ui.h:12
+msgid "Super+Tab"
+msgstr "Süper+Tab"
+
+#: ../data/unity.ui.h:13
+msgid "Start switcher in reverse"
+msgstr "Değiştiriciyi ters yönde başlat"
+
+#: ../data/unity.ui.h:14
+msgid "Shift+Super+Tab"
+msgstr "Shift+Süper+Tab"
+
+#: ../data/unity.ui.h:15
+msgid "Alt+Tab"
+msgstr "Alt+Tab"
+
+#: ../data/unity.ui.h:16
+msgid "Shift+Alt+Tab"
+msgstr "Shift+Alt+Tab"
+
+#: ../data/unity.ui.h:17
+msgid "Start switcher for all workspaces"
+msgstr "Tüm çalışma alanları için değiştiriciyi başlat"
+
+#: ../data/unity.ui.h:18
+msgid "Ctrl+Super+Alt+Tab"
+msgstr "Ctrl+Süper+Alt+Tab"
+
+#: ../data/unity.ui.h:19
+msgid "Start switcher for all workspaces in reverse"
+msgstr "Tüm çalışma alanları için değiştiriciyi ters yönde başlat"
+
+#: ../data/unity.ui.h:20
+msgid "Shift+Ctrl+Super+Alt+Tab"
+msgstr "Shift+Ctrl+Süper+Alt+Tab"
+
+#: ../data/unity.ui.h:21
+msgid "Flip through windows in the switcher"
+msgstr ""
+
+#: ../data/unity.ui.h:23
+msgid "Flip through windows in the switcher backwards"
+msgstr ""
+
+#: ../data/unity.ui.h:25
+msgid "Should the launcher be hidden?"
+msgstr "Başlatıcı gizlensin mi?"
+
+#: ../data/unity.ui.h:26
+msgid "Auto-hide:"
+msgstr "Otomatik gizle:"
+
+#: ../data/unity.ui.h:27
+msgid "Select the auto-hide animation of the launcher."
+msgstr "Başlatıcının otomatik gizlenme canlandırmasını seçin."
+
+#: ../data/unity.ui.h:28
+msgid "Fade Dash and slide"
+msgstr ""
+
+#: ../data/unity.ui.h:29
+msgid "Slide only"
+msgstr ""
+
+#: ../data/unity.ui.h:30
+msgid "Fade only"
+msgstr ""
+
+#: ../data/unity.ui.h:31
+msgid "Fade and slide"
+msgstr ""
+
+#: ../data/unity.ui.h:32
+msgid "Auto-hide animation:"
+msgstr ""
+
+#: ../data/unity.ui.h:33
+msgid ""
+"Select the option to reveal the dash with the mouse, when auto-hide is "
+"enabled."
+msgstr ""
+"Otomatik gizleme açıkken, fareyle Ana Seçkeyi ortaya çıkarma yolunu seçin."
+
+#: ../data/unity.ui.h:34
+msgid "Reveal location:"
+msgstr "Ortaya çıkış konumu"
+
+#: ../data/unity.ui.h:35
+msgid "Reveal sensitivity:"
+msgstr "Ortaya çıkış hassasiyeti:"
+
+#: ../data/unity.ui.h:36
+msgid "How much pointer \"pressure\" is required to reveal the launcher."
+msgstr "Başlatıcıyı ortaya çıkarmak için gereken işaretçi \"baskısı\"."
+
+#: ../data/unity.ui.h:37
+msgid "Left side"
+msgstr "Sol yan"
+
+#: ../data/unity.ui.h:38
+msgid ""
+"When in auto-hide mode the left edge of the current workspace triggers the "
+"launcher."
+msgstr ""
+"Otomatik gizleme modundayken kullanılan çalışma alanının sol kenarı "
+"başlatıcıyı tetikler."
+
+#: ../data/unity.ui.h:39
+msgid "Top left corner"
+msgstr "Sol üst köşe"
+
+#: ../data/unity.ui.h:40
+msgid ""
+"When in auto-hide mode the top left corner of the current workspace triggers "
+"the launcher."
+msgstr ""
+"Otomatik gizleme modundayken kullanılan çalışma alanının sol üst köşesi "
+"başlatıcıyı tetikler."
+
+#: ../data/unity.ui.h:42
+msgid "Select the level of the transparency of the launcher"
+msgstr "Başlatıcı şeffaflığı seviyesini seçin"
+
+#: ../data/unity.ui.h:43
+msgid "Transparency level:"
+msgstr "Şeffaflık seviyesi:"
+
+#: ../data/unity.ui.h:44
+msgid "How transparent the launcher will be."
+msgstr "Başlatıcının şeffaflık oranı."
+
+#: ../data/unity.ui.h:45
+msgid "Based on wallpaper"
+msgstr "Duvarkağıdından"
+
+#: ../data/unity.ui.h:46
+msgid "If selected, the launcher colour is based on the desktop background"
+msgstr "Eğer seçiliyse başlatıcı rengi masaüstü artalanından gelecektir"
+
+#: ../data/unity.ui.h:47
+msgid "Colour:"
+msgstr "Renk:"
+
+#: ../data/unity.ui.h:48
+msgid "Visibility:"
+msgstr "Görünürlük:"
+
+#: ../data/unity.ui.h:49
+msgid "Custom:"
+msgstr "Özel:"
+
+#: ../data/unity.ui.h:50
+msgid "If selected, the launcher will be the colour chosen by the user"
+msgstr "Eğer seçiliyse başlatıcı rengi kullanıcı tarafından seçilecektir"
+
+#: ../data/unity.ui.h:51
+msgid "All desktops"
+msgstr "Tüm masaüstleri"
+
+#: ../data/unity.ui.h:52
+msgid "If selected, the launcher is visible on all desktops."
+msgstr "Eğer seçiliyse başlatıcı tüm masaüstlerinde görünecek."
+
+#: ../data/unity.ui.h:53
+msgid "If selected, the launcher is visible on all desktops"
+msgstr "Eğer seçiliyse başlatıcı tüm masaüstlerinde görünecek."
+
+#: ../data/unity.ui.h:54
+msgid "Primary desktop"
+msgstr "Birincil masaüstü"
+
+#: ../data/unity.ui.h:55
+msgid "If selected, the launcher is visible on the primary desktop"
+msgstr "Eğer seçiliyse başlatıcı birincil masaüstünde görünecek."
+
+#: ../data/unity.ui.h:57
+msgid "Icon size:"
+msgstr "Simge boyutu:"
+
+#: ../data/unity.ui.h:58
+msgid "Select the animation used for launching an application."
+msgstr "Bir uygulama başlatılırken kullanılan canlandırmayı seçin."
+
+#: ../data/unity.ui.h:59
+msgid "No animation"
+msgstr "Canlandırma yok"
+
+#: ../data/unity.ui.h:60
+msgid "Pulse"
+msgstr "Titreşim"
+
+#: ../data/unity.ui.h:61
+msgid "Blink"
+msgstr "Yanıp sönme"
+
+#: ../data/unity.ui.h:62
+msgid "Select the animation used for an urgent notification on the launcher"
+msgstr ""
+"Başlatıcıdaki acil bildirimi için kullanılacak olan canlandırmayı seçin"
+
+#: ../data/unity.ui.h:63
+msgid "Wiggle"
+msgstr "Kıpırdama"
+
+#: ../data/unity.ui.h:64
+msgid "Launch animation:"
+msgstr "Başlatma canlandırması:"
+
+#: ../data/unity.ui.h:65
+msgid "Urgent animation:"
+msgstr "Acil canlandırması:"
+
+#: ../data/unity.ui.h:66
+msgid "Select how the icons are coloured on the launcher"
+msgstr "Simgelerin başlatıcıda nasıl renklendirileceğini seçin"
+
+#: ../data/unity.ui.h:67
+msgid "All applications"
+msgstr "Tüm uygulamalar"
+
+#: ../data/unity.ui.h:68
+msgid "Open applications only"
+msgstr "Sadece uygulamaları aç"
+
+#: ../data/unity.ui.h:69
+msgid "No colouring"
+msgstr "Renklendirme yok"
+
+#: ../data/unity.ui.h:70
+msgid "Coloured edges"
+msgstr "Renklendirilmiş köşeler"
+
+#: ../data/unity.ui.h:71
+msgid "Alternated for each workspace"
+msgstr "Her çalışma alanı için değişik"
+
+#: ../data/unity.ui.h:72
+msgid "Icon backgrounds:"
+msgstr "Simge artalanları:"
+
+#: ../data/unity.ui.h:73
+msgid "\"Show Desktop\" icon:"
+msgstr "\"Masaüstünü Göster\" simgesi:"
+
+#: ../data/unity.ui.h:74
+msgid "Select the size of the icons on the launcher"
+msgstr "Başlatıcıdaki simgelerin büyüklüğünü seçin"
+
+#: ../data/unity.ui.h:76
+msgid "Restore default Unity launcher settings."
+msgstr "Varsayılan Unity başlatıcı ayarlarını geri yükle."
+
+#: ../data/unity.ui.h:79
+msgid "Background blur:"
+msgstr "Artalan bulanıklığı:"
+
+#: ../data/unity.ui.h:80
+msgid "Enable dash blur?"
+msgstr "Ana Seçke bulanıklığı etkinleştirilsin mi?"
+
+#: ../data/unity.ui.h:81
+msgid "Select the type of blur in the dash"
+msgstr "Ana Seçke bulanıklığının türünü seçin"
+
+#: ../data/unity.ui.h:82
+msgid "Blur type:"
+msgstr "Bulanıklık türü:"
+
+#: ../data/unity.ui.h:83
+msgid "Active"
+msgstr "Etkin"
+
+#: ../data/unity.ui.h:84
+msgid "Use a dynamic blur in the dash."
+msgstr "Ana Seçkede etkin bir bulanıklık kullan"
+
+#: ../data/unity.ui.h:85
+msgid "Static"
+msgstr "Durağan"
+
+#: ../data/unity.ui.h:86
+msgid "Use a static blur in the dash, uses less resources."
+msgstr "Ana Seçkede durağan bir bulanıklık kullan, daha az kaynak tüketir."
+
+#: ../data/unity.ui.h:87
+msgid "Search online sources"
+msgstr "Çevrimiçi kaynakları ara"
+
+#: ../data/unity.ui.h:88
+msgid "If enabled, the dash will get suggestions from online sources."
+msgstr ""
+"Eğer etkinleştirilmişse ana seçke çevrimiçi kaynaklardan da öneriler getirir."
+
+#: ../data/unity.ui.h:89
+msgid "Applications"
+msgstr "Uygulamalar"
+
+#: ../data/unity.ui.h:90
+msgid "Show \"Recently Used\" applications"
+msgstr "\"Yakında Kullanılan\" uygulamaları göster"
+
+#: ../data/unity.ui.h:91
+msgid "If enabled, show recently used applications in the Dash."
+msgstr ""
+"Eğer etkinleştirilmişse Ana Seçkede yakında kullanılan uygulamaları kullan."
+
+#: ../data/unity.ui.h:92
+msgid "Show \"More Suggestions\""
+msgstr "\"Daha Fazla Öneri\" Göster"
+
+#: ../data/unity.ui.h:93
+msgid "If enabled, show applications available for download in the Dash."
+msgstr ""
+"Eğer etkinleştirilmişse Ana Seçkede indirilebilecek olan uygulamaları "
+"gösterir."
+
+#: ../data/unity.ui.h:94
+msgid "Files"
+msgstr "Dosyalar"
+
+#: ../data/unity.ui.h:95
+msgid "Enable search of your files"
+msgstr "Dosya aramayı etkinleştirin"
+
+#: ../data/unity.ui.h:96
+msgid ""
+"If enabled, allow searches to find your files that aren&apos;t logged."
+msgstr ""
+
+#: ../data/unity.ui.h:97
+msgid "If enabled, allow searches to find your files that aren't logged."
+msgstr ""
+"Etkinleştirilirse kayıt altına alınmamış dosyalarınızın bulunmasına izin "
+"verir."
+
+#: ../data/unity.ui.h:98
+msgid "Run Command"
+msgstr ""
+
+#: ../data/unity.ui.h:99
+msgid "Clear History"
+msgstr "Geçmişi Temizle"
+
+#: ../data/unity.ui.h:100
+msgid "Clear ALT+F2 command history."
+msgstr ""
+
+#: ../data/unity.ui.h:101
+msgid "Restore the default Dash settings."
+msgstr "Varsayılan Ana Seçke ayarlarını yükle."
+
+#: ../data/unity.ui.h:103
+msgid "Menu visible for:"
+msgstr "Menü şunun için görünür:"
+
+#: ../data/unity.ui.h:104
+msgid ""
+"Select how long the application menu is visible when an application is first "
+"opened"
+msgstr ""
+"Bir uygulama ilk açıldığında uygulama menüsünün ne kadar süre görünür "
+"olacağını seçin"
+
+#: ../data/unity.ui.h:105
+msgid "seconds"
+msgstr "saniye"
+
+#: ../data/unity.ui.h:106
+msgid "Set the level of transparency for the panel."
+msgstr "Panel şeffaflığı seviyesini ayarlayın."
+
+#: ../data/unity.ui.h:107
+msgid "Opaque panel for maximized windows"
+msgstr "Tam ekran için mat panel"
+
+#: ../data/unity.ui.h:108
+msgid "If selected, the panel will be opaque for maximized windows"
+msgstr "Seçiliyse tam ekran kipinde panel mat olacaktır"
+
+#: ../data/unity.ui.h:109
+msgid "Indicators"
+msgstr "Göstergeler"
+
+#: ../data/unity.ui.h:110
+msgid "Date & time"
+msgstr "Tarih & saat"
+
+#: ../data/unity.ui.h:111
+msgid "If enabled, the date &amp; time indicator will be visible."
+msgstr "Etkinleştirilmişse tarih & saat göstergesi görünür olacaktır."
+
+#: ../data/unity.ui.h:112
+msgid "If enabled, the date & time indicator will be visible."
+msgstr "Etkinleştirilmişse tarih & saat göstergesi görünür olacaktır."
+
+#: ../data/unity.ui.h:113
+msgid "12-hour time"
+msgstr "12 saatlik zaman"
+
+#: ../data/unity.ui.h:114
+msgid "Have the clock use 12-hour time."
+msgstr "Saat 12'lik zamanı kullanır."
+
+#: ../data/unity.ui.h:115
+msgid "24-hour time"
+msgstr "24 saatlik zaman"
+
+#: ../data/unity.ui.h:116
+msgid "Have the clock use 24-hour time."
+msgstr "Saat 24'lü zamanı kullanır."
+
+#: ../data/unity.ui.h:117
+msgid "Seconds"
+msgstr "Saniye"
+
+#: ../data/unity.ui.h:118
+msgid "If enabled, the clock will display seconds."
+msgstr "Etkinse saat saniyeyi de gösterecektir."
+
+#: ../data/unity.ui.h:119
+msgid "Date"
+msgstr "Tarih"
+
+#: ../data/unity.ui.h:120
+msgid "If enabled, the month and day will be visible in the panel."
+msgstr "Etkinse panelde ay ve ayın kaçıncı günü olduğu görüntülenecektir."
+
+#: ../data/unity.ui.h:121
+msgid "Weekday"
+msgstr "Gün"
+
+#: ../data/unity.ui.h:122
+msgid "If enabled, the day of the week will be visible in the panel."
+msgstr "Etkinse panelde gün de gösterilecektir."
+
+#: ../data/unity.ui.h:123
+msgid "Include:"
+msgstr "Ekle:"
+
+#: ../data/unity.ui.h:124
+msgid "Calendar"
+msgstr "Takvim"
+
+#: ../data/unity.ui.h:125
+msgid "If enabled, the calendar will be visible in the indicator menu."
+msgstr "Etkinse takvim gösterge menüsünde görüntülenecektir."
+
+#: ../data/unity.ui.h:126
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: ../data/unity.ui.h:127
+msgid "If enabled, the bluetooth indicator is visible in the panel."
+msgstr "Etkinse bluetooth göstergesi panelde görüntülenecektir."
+
+#: ../data/unity.ui.h:128
+msgid "Power"
+msgstr "Güç"
+
+#: ../data/unity.ui.h:129
+msgid "If enabled, show the power menu in the panel."
+msgstr "Etkinse güç menüsü panelde gösterilir."
+
+#: ../data/unity.ui.h:130
+msgid "Visible when charging or discharging"
+msgstr "Dolarken veya boşalırken göster"
+
+#: ../data/unity.ui.h:131
+msgid ""
+"Set the power indicator to be visible when charging or discharging power."
+msgstr ""
+"Pil dolarken veya boşalırken gösterilecek olan güç göstergesini ayarlayın."
+
+#: ../data/unity.ui.h:132
+msgid "Always visible"
+msgstr "Her zaman görünür"
+
+#: ../data/unity.ui.h:133
+msgid "Set the power indicator to be always visible."
+msgstr "Güç göstergesi sürekli görünür olsun."
+
+#: ../data/unity.ui.h:134
+msgid "Display remaining battery life"
+msgstr "Kalan pil ömrünü görüntüle"
+
+#: ../data/unity.ui.h:135
+msgid "If enabled, show the remaining battery life in the power indicator."
+msgstr "Etkinleştirilirse, kalan pil ömrünü güç göstergesinde gösterir."
+
+#: ../data/unity.ui.h:136
+msgid "Volume"
+msgstr "Sesi Düzeyi"
+
+#: ../data/unity.ui.h:137
+msgid "If enabled, show the sound menu in the panel."
+msgstr "Etkinleştirilise, ses menüsünü panelde gösterir."
+
+#: ../data/unity.ui.h:138
+msgid "Default player:"
+msgstr "Varsayılan oynatıcı:"
+
+#: ../data/unity.ui.h:139
+msgid ""
+"Select which of the installed audio players is default in the sound menu."
+msgstr ""
+"Kurulu  ses oynatıcılarından hangisinin ses menüsünde varsayılan olacağını "
+"seçin."
+
+#: ../data/unity.ui.h:140
+msgid "Notifications when scrolling"
+msgstr "Kaydırma bildirimleri"
+
+#: ../data/unity.ui.h:141
+msgid ""
+"When using scrolling to change the volume, show on-screen notifications."
+msgstr ""
+"Sesi değiştirmek için kaydırmayı kullanırken ekran bildirimlerin göster."
+
+#: ../data/unity.ui.h:142
+msgid "Show my name"
+msgstr "Adımı göster"
+
+#: ../data/unity.ui.h:143
+msgid "If enabled, show the user&apos;s real name in the panel."
+msgstr "Eğer etkinleştirilmişse kullanıcı adını panelde gösterir."
+
+#: ../data/unity.ui.h:144
+msgid "If enabled, show the user's real name in the panel."
+msgstr "Etkinleştirilmişse, kullanıcının gerçek adını panelde göster."
+
+#: ../data/unity.ui.h:145
+msgid "Restore the default Unity panel settings."
+msgstr "Varsayılan Unity panel ayarlarını geri yükle."
+
+#: ../data/unity.ui.h:147
+msgid "Switch between windows on all workspaces"
+msgstr "Tüm çalışma alanlarındaki pencereler arasında geçiş yap"
+
+#: ../data/unity.ui.h:148
+msgid ""
+"If enabled, the window switcher cycles through all windows on all workspaces"
+msgstr ""
+"Etkinleştirilmişse, pencere değiştirici tüm çalışma alanlarındaki bütün "
+"pencereler arasında geçiş yapar"
+
+#: ../data/unity.ui.h:149
+msgid "Display \"Show Desktop\" icon"
+msgstr "\"Masaüstünü Göster\" simgesini göster"
+
+#: ../data/unity.ui.h:150
+msgid ""
+"If enabled, show the &quot;Show Desktop&quot; option in the window switcher"
+msgstr ""
+
+#: ../data/unity.ui.h:151
+msgid "If enabled, show the \"Show Desktop\" option in the window switcher"
+msgstr ""
+"Etkinleştirilmişse, \"Masaüstünü Göster\" seçeneğini pencere değiştiricide "
+"göster"
+
+#: ../data/unity.ui.h:152
+msgid "Automatically expose windows"
+msgstr "Pencereleri otomatik olarak ortaya çıkar"
+
+#: ../data/unity.ui.h:153
+msgid "If enabled, the window switcher will expose minimized windows"
+msgstr "Etkinse, pencere değiştirici küçültülmüş pencereleri ortaya çıkarır"
+
+#: ../data/unity.ui.h:154
+msgid "Switch between minimized windows"
+msgstr "Küçültülmüş pencereler arasında geçiş yap"
+
+#: ../data/unity.ui.h:155
+msgid "If enabled, the window switcher will switch through minimized windows"
+msgstr ""
+"Etkinleştirilmişse, pencere değiştirici küçültülmüş pencereler arasında "
+"geçiş yapar"
+
+#: ../data/unity.ui.h:156
+msgid "Window switching shortcuts"
+msgstr "Pencere değiştirme kısayolları"
+
+#: ../data/unity.ui.h:157
+msgid "Window switcher shortcuts"
+msgstr "Pencere değiştirici kısayolları"
+
+#: ../data/unity.ui.h:160
+msgid "Launcher switching shortcuts"
+msgstr "Başlatıcı değiştirme kısayolları"
+
+#: ../data/unity.ui.h:161
+msgid "Launcher switcher shortcuts"
+msgstr "Başlatıcı değiştirici kısayolları"
+
+#: ../data/unity.ui.h:162
+msgid "Restore the default window switcher settings."
+msgstr "Varsayılan pencere değiştirici ayarlarını geri yükle."
+
+#: ../data/unity.ui.h:164
+msgid ""
+"Enable prompts for webapp integration when visiting supported websites?"
+msgstr ""
+
+#: ../data/unity.ui.h:165
+msgid "Integration prompts:"
+msgstr "Tümleşim önerileri:"
+
+#: ../data/unity.ui.h:166
+msgid "Preauthorized domains"
+msgstr "Ön yetkilendirilmiş alanlar"
+
+#: ../data/unity.ui.h:167
+msgid "Amazon"
+msgstr "Amazon"
+
+#: ../data/unity.ui.h:168
+msgid "Ubuntu One"
+msgstr "Ubuntu One"
+
+#: ../data/unity.ui.h:169
+msgid "Restore the default Unity Webapps settings."
+msgstr "Varsayılan Unity Webapp ayarlarını geri yükle."
+
+#: ../data/unity.ui.h:171
+msgid "HUD"
+msgstr "Akıllı Seçke"
+
+#: ../data/unity.ui.h:172
+msgid "Remember previous commands"
+msgstr "Daha önceki komutları hatırla"
+
+#: ../data/unity.ui.h:173
+msgid ""
+"If enabled, the HUD will remember previously executed entries and sort them "
+"by frequently used."
+msgstr ""
+
+#: ../data/unity.ui.h:174
+msgid "Keyboard Shortcuts"
+msgstr "Klavye Kısayolları"
+
+#: ../data/unity.ui.h:175
+msgid "Hold Super for keyboard shortcuts"
+msgstr "Klavye kısayolları için Süper tuşunu basılı tutun"
+
+#: ../data/unity.ui.h:176
+msgid ""
+"When enabled, pressing the Super key displays an overlay of all Unity "
+"keyboard shortcuts"
+msgstr ""
+
+#: ../data/unity.ui.h:177
+msgid "List of Unity keyboard shortcuts"
+msgstr "Unity klavye kısayolları listesi"
+
+#: ../data/unity.ui.h:178
+msgid "Notifications"
+msgstr "Bildirimler"
+
+#: ../data/unity.ui.h:179
+msgid "All displays"
+msgstr "Tüm ekranlar"
+
+#: ../data/unity.ui.h:180
+msgid "For multiple displays, notifications are visible on all of them."
+msgstr "Çoklu ekrandayken bildirimler ekranların hepsinde görüntülenir."
+
+#: ../data/unity.ui.h:181
+msgid "Active display"
+msgstr "Etkin ekran"
+
+#: ../data/unity.ui.h:182
+msgid ""
+"For multiple displays, notifications are visible on the active display."
+msgstr "Çoklu ekrandayken bildirimler etkin olan ekranda görüntülenir."
+
+#: ../data/unity.ui.h:183
+msgid "Restore the default Unity keyboard shortcut settings."
+msgstr "Varsayılan Unity klavye kısayolu ayarlarını geri yükle."
+
+#: ../data/overview.ui.h:10
+msgid ""
+"Workspace\n"
+"Settings"
+msgstr ""
+"Çalışma Alanı\n"
+"Ayarları"
+
+#: ../data/overview.ui.h:12
+msgid ""
+"Window\n"
+"Spread"
+msgstr ""
+"Pencere\n"
+"Dağıtımı"
+
+#: ../data/overview.ui.h:14
+msgid ""
+"Window\n"
+"Snapping"
+msgstr ""
+"Pencere\n"
+"Tutturma"
+
+#: ../data/overview.ui.h:20
+msgid "Cursors"
+msgstr "İmleçler"
+
+#: ../data/overview.ui.h:22
+msgid ""
+"Window\n"
+"Controls"
+msgstr ""
+"Pencere\n"
+"Denetimleri"
+
+#: ../data/overview.ui.h:25
+msgid ""
+"Desktop\n"
+"Icons"
+msgstr ""
+"Masaüstü\n"
+"Simgeleri"
+
+#: ../data/errordialog.ui.h:1
+msgid "Schemas missing"
+msgstr ""
+
+#: ../data/errordialog.ui.h:2
+msgid "The following schema is missing"
+msgstr ""
+
+#: ../UnityTweakTool/utils/unityreset.py:41
+msgid "Initialising Unity reset"
+msgstr "Unity sıfırlama başlatılıyor"
+
+#: ../UnityTweakTool/utils/unityreset.py:42
+msgid "Killing Unity and Compiz"
+msgstr "Unity ve Compiz sonlandırılıyor"
+
+#: ../UnityTweakTool/utils/unityreset.py:45
+msgid "Resetting compiz plugins"
+msgstr "Compiz eklentileri sıfırlanıyor"
+
+#: ../UnityTweakTool/utils/unityreset.py:47
+msgid "Resetting more compiz plugins"
+msgstr "Daha fazla compiz eklentisi sıfırlanıyor"
+
+#: ../UnityTweakTool/utils/unityreset.py:49
+msgid "Resetting Unity settings"
+msgstr "Unity ayarları sıfırlanıyor"
+
+#: ../UnityTweakTool/utils/unityreset.py:51
+msgid "Reset complete. Reloading unity"
+msgstr "Sıfırlama tamamlandı. Unity tekrar yükleniyor"
+
+#: ../data/about.ui.h:1
+msgid "Copyright © 2013 Freyja Development team"
+msgstr "Telif Hakkı © 2013 Freyja Geliştirme takımı"
+
+#: ../data/about.ui.h:2
+msgid ""
+"Unity Tweak Tool is a settings manager intended to be used with Ubuntu Unity."
+msgstr ""
+"Unity Tweak Tool, Ubuntu Unity ile birlikte kullanılmak üzere hazırlanmış "
+"bir ayarlama yöneticisidir."
+
+#: ../data/about.ui.h:3
+msgid "Unity Tweak Tool on Launchpad"
+msgstr "Launchpad üzerinde Unity Tweak Tool"
+
+#: ../data/about.ui.h:4
+msgid "GPL3"
+msgstr "GPL3"
+
+#: ../unity-tweak-tool.py:43
+msgid "Start in the Unity tab"
+msgstr "Unity sekmesinde başlat"
+
+#: ../unity-tweak-tool.py:44
+msgid "Start in the WindowManager tab"
+msgstr "Pencere Yöneticisi sekmesinde başlat"
+
+#: ../unity-tweak-tool.py:45
+msgid "Start in the appearance tab"
+msgstr "Görünüm sekmesinde başlat"
+
+#: ../unity-tweak-tool.py:46
+msgid "Start in the system tab"
+msgstr "Sistem sekmesinde başlat"
+
+#: ../unity-tweak-tool.py:47
+msgid "Reset Unity, wiping all configuration changes."
+msgstr ""
+
+#: ../unity-tweak-tool.py:61
+msgid ""
+"\n"
+"WARNING: You are about to reset Unity to its default configuration.\n"
+"    This will result in loss of configuration.\n"
+"    It is normal for your desktop to flicker during the process.\n"
+"    Type yes to continue, anything else to exit.\n"
+"    "
+msgstr ""
+"\n"
+"UYARI: Unity'yi varsayılan yapılandırmasına geri döndürmek üzeresiniz.\n"
+"    Bu yapılandırma kaybıyla sonuçlanacaktır.\n"
+"    Süreç esnasında ekranın kırpışması normaldir.\n"
+"    Devam etmek için evet yazın, çıkmak için herhangi bir şey.\n"
+"    "
+
+#: ../unity-tweak-tool.py:67
+msgid "Do you wish to continue?"
+msgstr "Devam etmek ister misiniz?"
+
+#: ../unity-tweak-tool.py:70
+msgid "Please log out and log back in."
+msgstr "Lütfen çıkış yapıp tekrar girin."
+
+#: ../data/appearance.ui.h:1
+msgid "Available themes"
+msgstr "Kullanılabilir temalar"
+
+#: ../data/appearance.ui.h:2
+msgid "List of GTK Themes"
+msgstr "GTK Temaları Listesi"
+
+#: ../data/appearance.ui.h:3
+msgid "GTK Theme"
+msgstr "GTK Teması"
+
+#: ../data/appearance.ui.h:4
+msgid "List of Window decoration themes"
+msgstr "Pencere süsleme temaları listesi"
+
+#: ../data/appearance.ui.h:5
+msgid "Window decoration theme"
+msgstr "Pencere süsleme teması"
+
+#: ../data/appearance.ui.h:7
+msgid "Restore system's default theme configurations"
+msgstr "Sistemin varsayılan tema yapılandırmasını yükle"
+
+#: ../data/appearance.ui.h:9
+msgid "List of icon themes"
+msgstr "Simge temaları listesi"
+
+#: ../data/appearance.ui.h:10
+msgid "Icon theme"
+msgstr "Simge teması"
+
+#: ../data/appearance.ui.h:11
+msgid "Restore system's default icon theme configurations"
+msgstr "Sistemin varsayılan simge teması yapılandırmasını yükle"
+
+#: ../data/appearance.ui.h:13
+msgid "List of cursor themes"
+msgstr "İmleç temaları listesi"
+
+#: ../data/appearance.ui.h:14
+msgid "Cursor Theme"
+msgstr "İmleç Teması"
+
+#: ../data/appearance.ui.h:15
+msgid "Preferences"
+msgstr "Tercihler"
+
+#: ../data/appearance.ui.h:16
+msgid "Use large cursors"
+msgstr "Büyük imleçler kullan"
+
+#: ../data/appearance.ui.h:17
+msgid "If enabled, the system will use a larger cursor."
+msgstr "Eğer etkinleştirilmişse sistem büyük imleçler kullanacaktır."
+
+#: ../data/appearance.ui.h:18
+msgid "Restore system's default cursor theme configurations"
+msgstr "Sistemin varsayılan imleç teması yapılandırmasını yükle"
+
+#: ../data/appearance.ui.h:21
+msgid "Select the default font for all applications."
+msgstr "Tüm uygulamalar için varsayılan yazıtipini seçin."
+
+#: ../data/appearance.ui.h:22
+msgid "Default font:"
+msgstr "Varsayılan yazıtipi:"
+
+#: ../data/appearance.ui.h:23
+msgid "Select the default font used for reading documents."
+msgstr "Belge okumada kullanılacak varsayılan yazı tipini seçin"
+
+#: ../data/appearance.ui.h:24
+msgid "Document font:"
+msgstr "Belge yazıtipi:"
+
+#: ../data/appearance.ui.h:25
+msgid "Select the default monospace font."
+msgstr "Varsayılan tek aralıklı yazı tipini seçin."
+
+#: ../data/appearance.ui.h:26
+msgid "Monospace font:"
+msgstr "Eş aralıklı yazı tipi:"
+
+#: ../data/appearance.ui.h:27
+msgid "Select the default font for the window titlebar."
+msgstr "Pencere başlık çubuğu için varsayılan yazıtipini seçin."
+
+#: ../data/appearance.ui.h:28
+msgid "Window title font:"
+msgstr "Pencere başlığı yazıtipi:"
+
+#: ../data/appearance.ui.h:30
+msgid "Select the type of antialiasing used to render fonts."
+msgstr ""
+
+#: ../data/appearance.ui.h:31
+msgid "Antialiasing:"
+msgstr ""
+
+#: ../data/appearance.ui.h:32
+msgid "None"
+msgstr "Hiçbiri"
+
+#: ../data/appearance.ui.h:33
+msgid "Grayscale"
+msgstr ""
+
+#: ../data/appearance.ui.h:34
+msgid "RGBA"
+msgstr ""
+
+#: ../data/appearance.ui.h:35
+msgid "Select the type of hinting to use when rendering fonts"
+msgstr ""
+
+#: ../data/appearance.ui.h:36
+msgid "Slight"
+msgstr ""
+
+#: ../data/appearance.ui.h:37
+msgid "Medium"
+msgstr ""
+
+#: ../data/appearance.ui.h:38
+msgid "Full"
+msgstr ""
+
+#: ../data/appearance.ui.h:39
+msgid "Hinting:"
+msgstr ""
+
+#: ../data/appearance.ui.h:40
+msgid ""
+"Select the factor used to enlarge or reduce text display, without changing "
+"font size."
+msgstr ""
+
+#: ../data/appearance.ui.h:41
+msgid "Text scaling factor:"
+msgstr ""
+
+#: ../data/appearance.ui.h:42
+msgid "Restore system's default font configurations"
+msgstr "Sistemin varsayılan yazıtipi yapılandırmasını geri yükle"
+
+#: ../data/appearance.ui.h:44
+msgid "Layout"
+msgstr ""
+
+#: ../data/appearance.ui.h:45
+msgid "Left"
+msgstr "Solda"
+
+#: ../data/appearance.ui.h:46
+msgid "Align the window controls to the left side of the window."
+msgstr "Pencere denetimlerini pencerenin sol tarafına yerleştir."
+
+#: ../data/appearance.ui.h:47
+msgid "Right"
+msgstr "Sağda"
+
+#: ../data/appearance.ui.h:48
+msgid "Align the window controls to the right side of the window."
+msgstr "Pencere denetimlerini pencerenin sağına hizala."
+
+#: ../data/appearance.ui.h:49
+msgid "Alignment:"
+msgstr "Hizalama:"
+
+#: ../data/appearance.ui.h:50
+msgid "Show menu button"
+msgstr "Menü düğmesini göster"
+
+#: ../data/appearance.ui.h:51
+msgid "If enabled, show the window menu in the titlebar."
+msgstr "Eğer etkinse, başlık çubuğunda pencere menüsünü gösterir."
+
+#: ../data/appearance.ui.h:52
+msgid "Restore Defaults"
+msgstr "Varsayılanları Geri Yükle"
+
+#: ../data/appearance.ui.h:53
+msgid "Restore default window controls settings."
+msgstr "Varsayılan pencere denetimleri ayarlarını yükle."
+
+#: ../data/appearance.ui.h:54
+msgid "Window Controls"
+msgstr "Pencere Denetimleri"

@@ -1,16 +1,16 @@
-# Slovenian translation for mechanig
+# Polish translation for unity-tweak-tool
 # Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
-# This file is distributed under the same license as the mechanig package.
+# This file is distributed under the same license as the unity-tweak-tool package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: mechanig\n"
+"Project-Id-Version: unity-tweak-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2013-10-06 00:16+0530\n"
-"PO-Revision-Date: 2013-10-05 22:21+0000\n"
-"Last-Translator: Barneedhar <barneedhar@gmail.com>\n"
-"Language-Team: Slovenian <sl@li.org>\n"
+"PO-Revision-Date: 2013-12-09 21:18+0000\n"
+"Last-Translator: Stanisław Michalski <9stas.pl4@gmail.com>\n"
+"Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,245 +19,244 @@ msgstr ""
 
 #: ../data/filechooser-theme.ui.h:1
 msgid "Choose a Theme file to install"
-msgstr "Izberite temo za namestitev"
+msgstr "Wybierz pilk motywu do zainstalowania"
 
 #: ../data/filechooser-theme.ui.h:2
 msgid "Install Theme"
-msgstr "Namesti temo"
+msgstr "Zainstaluj motyw"
 
 #. FIXME : This is guaranteed to fail.
 #: ../data/windowmanager.ui.h:1
 msgid "Zoom"
-msgstr "Približanje"
+msgstr "Powiększenie"
 
 #: ../data/windowmanager.ui.h:2
 msgid "Enable desktop zoom?"
-msgstr "Ali želite omogočiti približanje namizja?"
+msgstr "Włączyć powiększenie pulpitu?"
 
 #: ../data/windowmanager.ui.h:3
 msgid "Desktop magnification:"
-msgstr "Povečava namizja:"
+msgstr "Powiększenie pulpitu:"
 
 #: ../data/windowmanager.ui.h:4
 msgid "List of keyboard shortcuts for zoom"
-msgstr "Seznam tipkovnih bližnjic za približanje"
+msgstr "Lista skrótów klawiszowych do powiększania"
 
 #: ../data/windowmanager.ui.h:5 ../data/unity.ui.h:158
 msgid "Title"
-msgstr "Naslov"
+msgstr "Tytuł"
 
 #: ../data/windowmanager.ui.h:6 ../data/unity.ui.h:159
 msgid "Accelerator"
-msgstr "Pospeševalnik"
+msgstr "Przyspieszacz"
 
 #: ../data/windowmanager.ui.h:7
 msgid "Hardware acceleration"
-msgstr "Pospeševanje strojne opreme"
+msgstr "Przyspieszanie sprzętowe"
 
 #: ../data/windowmanager.ui.h:8
 msgid "Select the level of texture rendering done by OpenGL"
-msgstr "Izberite raven izrisovanja tekstur, ki naj jih izvede OpenGL"
+msgstr "Wybierz poziom renderowanie tekstur przez OpenGL"
 
 #: ../data/windowmanager.ui.h:9
 msgid "Texture quality: "
-msgstr "Kakovost teksture: "
+msgstr "Jakość tekstur: "
 
 #: ../data/windowmanager.ui.h:10
 msgid "Fast"
-msgstr "Hitro"
+msgstr "Szybkie"
 
 #: ../data/windowmanager.ui.h:11
 msgid "Good"
-msgstr "Dobro"
+msgstr "Dobre"
 
 #: ../data/windowmanager.ui.h:12
 msgid "Best"
-msgstr "Najboljše"
+msgstr "Najlepsze"
 
 #: ../data/windowmanager.ui.h:13
 msgid "Animations"
-msgstr "Animacije"
+msgstr "Animacje"
 
 #: ../data/windowmanager.ui.h:14
 msgid "Minimize:"
-msgstr "Skrči"
+msgstr "Minimalizacja:"
 
 #: ../data/windowmanager.ui.h:15
 msgid "Unminimize:"
-msgstr "Razpni:"
+msgstr "Maksymalizacja"
 
 #: ../data/windowmanager.ui.h:16
 msgid "Window Animations:"
-msgstr "Animacije okna:"
+msgstr "Animacja Okien"
 
 #: ../data/windowmanager.ui.h:17
 msgid "Keyboard shortcuts"
-msgstr "Tipkovne bližnjice"
+msgstr "Skróty klawiszowe"
 
 #: ../data/windowmanager.ui.h:18
 msgid "List of window manager keyboard shortcuts"
-msgstr "Seznam tipkovnih bližnjic upravljalnika oken"
+msgstr "Lista skrótów klawiszowych menedżera okien"
 
 #: ../data/windowmanager.ui.h:19 ../data/system.ui.h:8 ../data/unity.ui.h:75
 #: ../data/appearance.ui.h:6
 msgid "Restore defaults"
-msgstr "Obnovi privzete nastavitve"
+msgstr "Przywróć domyślne ustawienia"
 
 #: ../data/windowmanager.ui.h:20
 msgid "Restore default window manager settings"
-msgstr "Obnovi privzete nastavitve upravljalnika oken"
+msgstr "Przywróć domyślne ustawienia menedżera okien"
 
 #: ../data/windowmanager.ui.h:21 ../data/unitytweak.ui.h:11
 #: ../data/unity.ui.h:78 ../data/overview.ui.h:9 ../data/appearance.ui.h:20
 msgid "General"
-msgstr "Splošno"
+msgstr "Ogólne"
 
 #: ../data/windowmanager.ui.h:22
 msgid "Enable the window manager to draw multiple workspaces"
-msgstr "Omogoči upravljalniku oken risanje več delovnih površin"
+msgstr "Włącz menadżer okien by ustawić wiele obszarów roboczych"
 
 #: ../data/windowmanager.ui.h:23
 msgid "Workspace switcher:"
-msgstr "Preklopnik delovnih površin:"
+msgstr "Przełącznik obszarów roboczych:"
 
 #: ../data/windowmanager.ui.h:24
 msgid "Select the outline colour of the current workspace in the overview"
-msgstr "Izberite barvo orisa trenutne delovne površine"
+msgstr "Wybierz kolor schematu aktualnego obszaru roboczego na podglądzie"
 
 #: ../data/windowmanager.ui.h:25
 msgid "Current workspace colour:"
-msgstr "Trenutna barva delovne površine:"
+msgstr "Kolor obecnego obszaru roboczego:"
 
 #: ../data/windowmanager.ui.h:26
 msgid "Select the number of vertical workspaces"
-msgstr "Izberite število navpičnih delovnih površin"
+msgstr "Wybierz liczbę obszarów roboczych w pionie"
 
 #: ../data/windowmanager.ui.h:27
 msgid "Vertical workspaces:"
-msgstr "Navpične delovne površine:"
+msgstr "Obszary robocze w pionie:"
 
 #: ../data/windowmanager.ui.h:28
 msgid "Select the number of horizontal workspaces"
-msgstr "Izberite število vodoravnih delovnih površin"
+msgstr "Wybierz liczbę obszarów roboczych w poziomie"
 
 #: ../data/windowmanager.ui.h:29
 msgid "Horizontal workspaces:"
-msgstr "Vodoravne delovne površine:"
+msgstr "Obszary robocze w poziomie:"
 
 #: ../data/windowmanager.ui.h:30
 msgid "Workspace shortcuts"
-msgstr "Bližnjice delovne površine"
+msgstr "Skróty obszarów roboczych"
 
 #: ../data/windowmanager.ui.h:31
 msgid "List of workspace management keyboard shortcuts"
-msgstr "Seznam tipkovnih bližnjic za upravljanje delovne površine"
+msgstr "Lista wszystkich skrótów klawiszowych obszarów roboczych"
 
 #: ../data/windowmanager.ui.h:32
 msgid "Restore default workspace configuration"
-msgstr "Obnovi privzete nastavitve delovne površine"
+msgstr "Przywróć ustawienia domyśne obszarów roboczych"
 
 #: ../data/windowmanager.ui.h:33
 msgid "Workspace Settings"
-msgstr "Nastavitve delovne površine"
+msgstr "Ustawienia Obszarów Roboczych"
 
 #: ../data/windowmanager.ui.h:34
 msgid "Enable the window spread?"
-msgstr "Ali želite omogočiti razporeditev okna?"
+msgstr "Włączyć rozproszenie okien?"
 
 #: ../data/windowmanager.ui.h:35
 msgid "Window spread:"
-msgstr "Razporeditev okna:"
+msgstr "Rozproszenie okien"
 
 #: ../data/windowmanager.ui.h:36
 msgid "Select the space between window in the spead overview in pixels"
-msgstr "Izberite razmik v slikovnih točkah med okni v pregledu razporeditve"
+msgstr "Określ odstęp pomiędzy oknem w widoku rozproszenia w pixelach"
 
 #: ../data/windowmanager.ui.h:37
 msgid "Spacing:"
-msgstr "Razmik:"
+msgstr "Odstęp:"
 
 #: ../data/windowmanager.ui.h:38
 msgid "Icons on previews"
-msgstr "Ikone v predogledih"
+msgstr "Ikony w podglądzie"
 
 #: ../data/windowmanager.ui.h:39
 msgid ""
 "When enabled, show an application's icon on the window preview in the window "
 "spread"
 msgstr ""
-"Ko je omogočeno, v predogledu okna pokaže ikono programa v razporeditvi okna"
+"Gdy włączone, pokaż ikonę aplikacji na podglądzie okna w rozproszeniu"
 
 #: ../data/windowmanager.ui.h:40
 msgid "Click to access desktop"
-msgstr "Kliknite za dostop do namizja"
+msgstr "Kliknij by uzyskać dostęp do pulpitu"
 
 #: ../data/windowmanager.ui.h:41
 msgid ""
 "When enabled, clicking on the desktop in the window spread will display the "
 "desktop"
-msgstr ""
-"Ko je omogočeno, bo klik na namizje v razporeditvi oken prikazal namizje."
+msgstr "Gdy włączone, klikanie na pulpit w rozproszeniu okien pokaże pulpit"
 
 #: ../data/windowmanager.ui.h:42
 msgid "Window spread shortcuts"
-msgstr "Bližnjice razporeditve okna"
+msgstr "Skrót rozproszenia okien"
 
 #: ../data/windowmanager.ui.h:43
 msgid "List of window spread shortcuts"
-msgstr "Seznam bližnjic razporeditve okna"
+msgstr "Lista skrótów rozpraszania okien"
 
 #: ../data/windowmanager.ui.h:44
 msgid "Restore default window spread settings"
-msgstr "Obnovi privzete nastavitve razporeditve okna"
+msgstr "Przywróć domyślne ustawienia rozpraszania okien"
 
 #: ../data/windowmanager.ui.h:45
 msgid "Window spread"
-msgstr "Razporeditev okna"
+msgstr "Rozproszenie okien"
 
 #: ../data/windowmanager.ui.h:46
 msgid "Window snapping:"
-msgstr "Pripenjanje oken:"
+msgstr "Przyciąganie okien"
 
 #: ../data/windowmanager.ui.h:47
 msgid "Fill colour:"
-msgstr "Barva polnila:"
+msgstr "Wypełnij kolorem"
 
 #: ../data/windowmanager.ui.h:48
 msgid "Outline colour:"
-msgstr "Barva orisa:"
+msgstr "Kolor zarysu"
 
 #: ../data/windowmanager.ui.h:49 ../data/unity.ui.h:24
 msgid "Behaviour"
-msgstr "Obnašanje"
+msgstr "Zachowanie"
 
 #: ../data/windowmanager.ui.h:50
 msgid "Window snapping"
-msgstr "Pripenjanje oken"
+msgstr "Przyciąganie okna"
 
 #: ../data/windowmanager.ui.h:51
 msgid "Hotcorners:"
-msgstr "Vroči koti:"
+msgstr "Aktywne narożniki:"
 
 #: ../data/windowmanager.ui.h:52 ../data/unitytweak.ui.h:15
 #: ../data/overview.ui.h:16
 msgid "Hotcorners"
-msgstr "Vroči koti"
+msgstr "Aktywne narożniki"
 
 #: ../data/windowmanager.ui.h:53
 msgid "Focus Behaviour"
-msgstr "Obnašanje žarišča"
+msgstr "Zachownie ogniska"
 
 #: ../data/windowmanager.ui.h:54
 msgid "Auto-raise delay:"
-msgstr "Zakasnitev samodejnega dviga:"
+msgstr "Automatyczny wzrost opóźnienia:"
 
 #: ../data/windowmanager.ui.h:55
 msgid "Set the delay for raising newly focused windows."
-msgstr "Nastavi zakasnitev dviga novih oken v žarišču."
+msgstr "Określ opóźnienie dla wzrastania nowo skupionego okna."
 
 #: ../data/windowmanager.ui.h:56
 msgid "Focus mode:"
-msgstr "Način žarišča:"
+msgstr "Tryb skupienia:"
 
 #: ../data/windowmanager.ui.h:57
 msgid ""
@@ -266,111 +265,111 @@ msgid ""
 "enters the window, and \"mouse\" means windows are focused when the mouse "
 "enters the window and unfocused when the mouse leaves the window."
 msgstr ""
-"Izberite način žarišča okna; \"klik\" pomeni, da morate klikniti na okna, da "
-"bi bila v žarišču, \"površno\" pomeni, da bodo okna v žarišču, ko miška "
-"vstopi v okno, in \"miška\" pomeni, da so okna v žarišču, ko miška vstopi v "
-"okno in niso v žarišču,  ko miška zapusti okno."
+"Wybierz tryb skupienia; \"kliknięcie\" oznacza, że okna muszą być kliknięte "
+"by mogły być skupione, \"rozciągnięcie\" oznacza, że okna są skupione kiedy "
+"myszka wchodzi wewnątrz okna, i \"mysz\" oznacza, że okna są skupione kiedy "
+"myszka wchodzi wewnątrz okna i nieskupione gdy myszka opuszcza okno."
 
 #: ../data/windowmanager.ui.h:58
 msgid "Click"
-msgstr "Klik"
+msgstr "Kliknięcie"
 
 #: ../data/windowmanager.ui.h:59
 msgid "Sloppy"
-msgstr "Površno"
+msgstr "Rozciągnięcie"
 
 #: ../data/windowmanager.ui.h:60
 msgid "Mouse"
-msgstr "Miška"
+msgstr "Mysz"
 
 #: ../data/windowmanager.ui.h:61
 msgid "If enabled, windows that take focus will be automatically raised."
-msgstr "Če je omogočeno, bodo okna, ki so v žarišču, samodejno dvignjena."
+msgstr "Gdy włączone, okna które są skupiane będą automatycznie podnoszone."
 
 #: ../data/windowmanager.ui.h:62
 msgid "Auto-raise:"
-msgstr "Samodejni dvig:"
+msgstr "Automatyczne podnoszenie"
 
 #: ../data/windowmanager.ui.h:63
 msgid "Titlebar Actions"
-msgstr "Dejanja nazivne vrstice"
+msgstr "Akcje paska tytułowego"
 
 #: ../data/windowmanager.ui.h:64
 msgid "Double click:"
-msgstr "Dvojni klik:"
+msgstr "Podwójne kliknięcie:"
 
 #: ../data/windowmanager.ui.h:65
 msgid "Select the titlebar's double click action."
-msgstr "Izberite dejanje nazivne vrstice ob dvojnem kliku."
+msgstr "Wybierz akcję paska tytułowego w czasie podwójnego kliknięcia"
 
 #: ../data/windowmanager.ui.h:66
 msgid "Toggle Shade"
-msgstr "Preklop sence"
+msgstr "Włącz cień"
 
 #: ../data/windowmanager.ui.h:67
 msgid "Maximize"
-msgstr "Razpni"
+msgstr "Maksymalizuj"
 
 #: ../data/windowmanager.ui.h:68
 msgid "Horizontal expand"
-msgstr "Razširi vodoravno"
+msgstr "Rozciągnij poziomo"
 
 #: ../data/windowmanager.ui.h:69
 msgid "Vertical expand"
-msgstr "Razširi navpično"
+msgstr "Rozciągnij pionowo"
 
 #: ../data/windowmanager.ui.h:70
 msgid "Minimize"
-msgstr "Skrči"
+msgstr "Minimalizuj"
 
 #: ../data/windowmanager.ui.h:71
 msgid "No action"
-msgstr "Brez dejanja"
+msgstr "Nic nie rób"
 
 #: ../data/windowmanager.ui.h:72
 msgid "Lower"
-msgstr "Nižje"
+msgstr "Niżej"
 
 #: ../data/windowmanager.ui.h:73
 msgid "Menu"
-msgstr "Meni"
+msgstr "Menu"
 
 #: ../data/windowmanager.ui.h:74
 msgid "Middle click:"
-msgstr "Srednji klik:"
+msgstr "Kliknięcie środkowym przyciskiem"
 
 #: ../data/windowmanager.ui.h:75
 msgid "Select the titlebar's middle click action."
-msgstr "Izberite dejanje nazivne vrstice ob srednjem kliku."
+msgstr "Wybierz akcję paska tytułowego środkowym przyciskiem"
 
 #: ../data/windowmanager.ui.h:76
 msgid "Toggle shade"
-msgstr "Preklop sence"
+msgstr "Włącz cień"
 
 #: ../data/windowmanager.ui.h:77
 msgid "Right click:"
-msgstr "Desni klik:"
+msgstr "Prawy przycisk"
 
 #: ../data/windowmanager.ui.h:78
 msgid "Select the titlebar's right click action."
-msgstr "Izberite dejanje nazivne vrstice ob desnem kliku."
+msgstr "Wybierz akcję paska tytułowego prawym przyciskiem"
 
 #: ../data/windowmanager.ui.h:79
 msgid "Resizing"
-msgstr "Spreminjanje velikosti"
+msgstr "Zmiana rozmiaru"
 
 #: ../data/windowmanager.ui.h:80
 msgid "Restore the default settings for the additional options."
-msgstr "Obnovi privzete nastavitve za dodatne možnosti."
+msgstr "Przywróć domyślne ustawienia dla dodatkowych opcji."
 
 #: ../data/windowmanager.ui.h:81 ../data/unitytweak.ui.h:9
 #: ../data/unity.ui.h:184 ../data/overview.ui.h:7
 msgid "Additional"
-msgstr "Dodatno"
+msgstr "Dodatkowe"
 
 #: ../data/windowmanager.ui.h:82
 msgid "Close window"
-msgstr "Zapri okno"
+msgstr "Zamknij okno"
 
 #: ../data/windowmanager.ui.h:83
 msgid "Alt+F4"
@@ -378,15 +377,15 @@ msgstr "Alt+F4"
 
 #: ../data/windowmanager.ui.h:84
 msgid "Move window"
-msgstr "Premakni okno"
+msgstr "Przenieś okno"
 
 #: ../data/windowmanager.ui.h:85
 msgid "Alt+mouse button 1"
-msgstr "Alt+miškin gumb 1"
+msgstr "Alt+przycisk myszy 1"
 
 #: ../data/windowmanager.ui.h:86
 msgid "Show desktop"
-msgstr "Pokaži namizje"
+msgstr "Pokaż pulpit"
 
 #: ../data/windowmanager.ui.h:87
 msgid "Super+D"
@@ -394,7 +393,7 @@ msgstr "Super+D"
 
 #: ../data/windowmanager.ui.h:88
 msgid "Zoom in"
-msgstr "Približaj"
+msgstr "Przybliż"
 
 #: ../data/windowmanager.ui.h:89
 msgid "Super++"
@@ -402,7 +401,7 @@ msgstr "Super++"
 
 #: ../data/windowmanager.ui.h:90
 msgid "Zoom out"
-msgstr "Oddalji"
+msgstr "Oddal"
 
 #: ../data/windowmanager.ui.h:91
 msgid "Super+-"
@@ -410,7 +409,7 @@ msgstr "Super+-"
 
 #: ../data/windowmanager.ui.h:92
 msgid "Start windows spread"
-msgstr "Začni razporeditev oken"
+msgstr "Rozpocznij rozproszenie okien"
 
 #: ../data/windowmanager.ui.h:93
 msgid "Super+W"
@@ -418,15 +417,15 @@ msgstr "Super+W"
 
 #: ../data/windowmanager.ui.h:94
 msgid "Start windows spread for all windows"
-msgstr "Začni razporeditev oken za vsa okna"
+msgstr "Rozpocznij rozproszenie okien dla wszystkich okien"
 
 #: ../data/windowmanager.ui.h:95 ../data/unity.ui.h:22
 msgid "Disabled"
-msgstr "Onemogočeno"
+msgstr "Wyłączony"
 
 #: ../data/windowmanager.ui.h:96
 msgid "Start workspace switcher"
-msgstr "Začni preklopnik delovnih površin"
+msgstr "Rozpocznij przełącznik obszarów roboczych"
 
 #: ../data/windowmanager.ui.h:97
 msgid "Super+S"
@@ -434,202 +433,203 @@ msgstr "Super+S"
 
 #: ../data/windowmanager.ui.h:98
 msgid "Toggle Desktop"
-msgstr "Preklop namizja"
+msgstr "Włącz pulpit"
 
 #: ../data/windowmanager.ui.h:99
 msgid "Show Workspaces"
-msgstr "Pokaži delovne površine"
+msgstr "Wyświetl obszary robocze"
 
 #: ../data/windowmanager.ui.h:100
 msgid "Window Spread"
-msgstr "Razporeditev oken"
+msgstr "Rozproszenie okien"
 
 #: ../data/windowmanager.ui.h:101
 msgid "Spread all Windows"
-msgstr "Razporedi vsa okna"
+msgstr "Rozprosz wszystkie okna"
 
 #: ../data/windowmanager.ui.h:102
 msgid "Do Nothing"
-msgstr "Ne naredi ničesar"
+msgstr "Nic nie rób"
 
 #: ../data/windowmanager.ui.h:103
 msgid "Bottom Left Corner"
-msgstr "Spodnji levi kot"
+msgstr "Lewy dolny róg"
 
 #: ../data/windowmanager.ui.h:104
 msgid "Bottom Half"
-msgstr "Spodnja polovica"
+msgstr "Dolna połowa"
 
 #: ../data/windowmanager.ui.h:105
 msgid "Bottom Right Corner"
-msgstr "Spodnji desni kot"
+msgstr "Prawy dolny róg"
 
 #: ../data/windowmanager.ui.h:106
 msgid "Left Half"
-msgstr "Leva polovica"
+msgstr "Lewa połowa"
 
 #: ../data/windowmanager.ui.h:107
 msgid "Fill Screen"
-msgstr "Zapolni zaslon"
+msgstr "Wypełnij ekran"
 
 #: ../data/windowmanager.ui.h:108
 msgid "Right Half"
-msgstr "Desna polovica"
+msgstr "Prawa połowa"
 
 #: ../data/windowmanager.ui.h:109
 msgid "Top Left Corner"
-msgstr "Zgornji levi kot"
+msgstr "Lewy górny róg"
 
 #: ../data/windowmanager.ui.h:110
 msgid "Top Half"
-msgstr "Zgornja polovica"
+msgstr "Górna połowa"
 
 #: ../data/windowmanager.ui.h:111
 msgid "Top Right Corner"
-msgstr "Zgornji desni kot"
+msgstr "Prawy górny róg"
 
 #: ../data/system.ui.h:1
 msgid "Items to display:"
-msgstr "Predmeti za prikaz:"
+msgstr "Rzeczy do wyświetlenia:"
 
 #: ../data/system.ui.h:2
 msgid "Home Folder"
-msgstr "Domača mapa"
+msgstr "Katalog domowy"
 
 #: ../data/system.ui.h:3
 msgid "Network"
-msgstr "Omrežje"
+msgstr "Sieć"
 
 #: ../data/system.ui.h:4
 msgid "Rubbish Bin"
-msgstr "Smeti"
+msgstr "Kosz"
 
 #: ../data/system.ui.h:5
 msgid "Trash"
-msgstr "Smeti"
+msgstr "Kosz"
 
 #: ../data/system.ui.h:6
 msgid "Mounted Devices"
-msgstr "Priklopljene naprave"
+msgstr "Zamontowane urządzenia"
 
 #: ../data/system.ui.h:7
 msgid "Devices"
-msgstr "Naprave"
+msgstr "Urządzenia"
 
 #: ../data/system.ui.h:9
 msgid "Restore the default configurations for Desktop icons"
-msgstr "Obnovi privzete nastavitve za ikone namizja"
+msgstr "Przywróć domyślne ustawienia konfiguracji dla ikon pulpitu"
 
 #: ../data/system.ui.h:10 ../data/unitytweak.ui.h:23
 msgid "Desktop Icons"
-msgstr "Ikone namizja"
+msgstr "Ikony pulpitu"
 
 #: ../data/system.ui.h:11
 msgid "Enhance system security by disabling:"
-msgstr "Izboljšajte varnost sistema z onemogočanjem:"
+msgstr "Podwyższ bezpieczeństwo systemu przez wyłączenie:"
 
 #: ../data/system.ui.h:12
 msgid "Desktop lock"
-msgstr "Zaklep namizja"
+msgstr "Blokada pulpitu"
 
 #: ../data/system.ui.h:13
 msgid "Disable the desktop lock screen."
-msgstr "Onemogočite zaklepanje zaslona."
+msgstr "Wyłącz ekran blokady pulpitu."
 
 #: ../data/system.ui.h:14
 msgid "User log out"
-msgstr "Odjava uporabnika"
+msgstr "Wylogowanie użytkownika"
 
 #: ../data/system.ui.h:15
 msgid "Disable session log out."
-msgstr "Onemogočite odjavo iz seje."
+msgstr "Wyłącz wylogowywanie sesji"
 
 #: ../data/system.ui.h:16
 msgid "User switching"
-msgstr "Preklop uporabnikov"
+msgstr "Przełączanie użytkowników"
 
 #: ../data/system.ui.h:17
 msgid "Disable fast user switching."
-msgstr "Onemogočite hitri preklop uporabnika."
+msgstr "Wyłącz szybkie przełączanie użytkowników"
 
 #: ../data/system.ui.h:18
 msgid "Printing"
-msgstr "Tiskanje"
+msgstr "Drukowanie"
 
 #: ../data/system.ui.h:19
 msgid "Prevent user access to the system's printers and print setup."
 msgstr ""
-"Onemogočite uporabniku dostop do tiskalnikov ter nastavitev tiskanja."
+"Nie pozwól użytkownikom na dostęp do systemowych ustawień drukowania."
 
 #: ../data/system.ui.h:20
 msgid "Restore the default configurations for Security settings"
-msgstr "Obnovi privzete nastavitve Varnosti"
+msgstr "Przywróć domyślną konfigurację ustawień bezpieczeństwa"
 
 #: ../data/system.ui.h:21 ../data/unitytweak.ui.h:24 ../data/overview.ui.h:27
 msgid "Security"
-msgstr "Varnost"
+msgstr "Bezpieczeństwo"
 
 #: ../data/system.ui.h:22
 msgid "Scrollbars"
-msgstr "Drsniki"
+msgstr "Paski przewijania"
 
 #: ../data/system.ui.h:23
 msgid "Legacy"
-msgstr "Staro obnašanje"
+msgstr "Starsze wersje"
 
 #: ../data/system.ui.h:24
 msgid "Overlay "
-msgstr "Prekrivanje "
+msgstr "Pokrycie "
 
 #: ../data/system.ui.h:25
 msgid "Select the behaviour of the overlay scrollbars."
-msgstr "Izberite obnašanje prekrivnih drsnikov"
+msgstr "Wybierz zachowanie pokrycia pasków przwijania."
 
 #: ../data/system.ui.h:26
 msgid "Default"
-msgstr "Privzeto"
+msgstr "Domyślny"
 
 #: ../data/system.ui.h:27
 msgid "Overlay with mouse"
-msgstr "Prekrivanje z miško"
+msgstr "Pokrywaj z myszą"
 
 #: ../data/system.ui.h:28
 msgid "No overlay"
-msgstr "Brez prekrivanja"
+msgstr "Bez pokrycia"
 
 #: ../data/system.ui.h:29
 msgid "Behaviour:"
-msgstr "Obnašanje:"
+msgstr "Zachowanie:"
 
 #: ../data/system.ui.h:30
 msgid "Touch scrolling"
-msgstr "Drsenje na dotik"
+msgstr "Dotykowe przewijanie"
 
 #: ../data/system.ui.h:31
 msgid "Edge"
-msgstr "Rob"
+msgstr "Krawędź"
 
 #: ../data/system.ui.h:32
 msgid "If enabled, edge scrolling is active on touchpads."
-msgstr "Če je omogočeno, je drsenje ob robu dejavno na sledilnih ploščicah."
+msgstr ""
+"Gdy włączone, krawędziowe przewijane jest aktywne na panelach dotykowych."
 
 #: ../data/system.ui.h:33
 msgid "Two-finger"
-msgstr "Dvoprstno"
+msgstr "Dwa-palce"
 
 #: ../data/system.ui.h:34
 msgid "If enabled, two-finger scrolling is active on multitouch touchpads."
 msgstr ""
-"Če je omogočeno, je dvoprstno drsenje dejavno na večprstnih sledilnih "
-"ploščicah."
+"Gdy włączone, dwupalcowe przewijanie jest aktywne na panelach dotykowych z "
+"multitouch."
 
 #: ../data/system.ui.h:35
 msgid "Horizontal scrolling"
-msgstr "Vodoravno drsenje"
+msgstr "Przewijanie poziome"
 
 #: ../data/system.ui.h:36 ../data/unitytweak.ui.h:25 ../data/overview.ui.h:28
 msgid "Scrolling"
-msgstr "Drsenje"
+msgstr "Przewijanie"
 
 #: ../unity-tweak-tool.desktop.in.h:1 ../data/unitytweak.ui.h:1
 msgid "Unity Tweak Tool"
@@ -637,7 +637,7 @@ msgstr "Unity Tweak Tool"
 
 #: ../unity-tweak-tool.desktop.in.h:2
 msgid "Configuration frontend for the Unity desktop environment"
-msgstr "Nastavitve ospredja za namizno okolje Unity"
+msgstr "Konfiguracja dostosowana do środowiska graficznego Unity"
 
 #. ! /usr/bin/env python3
 #: ../unity-tweak-tool.desktop.in.h:3 ../data/unitytweak.ui.h:3
@@ -648,88 +648,88 @@ msgstr "Unity"
 #: ../unity-tweak-tool.desktop.in.h:4 ../data/unitytweak.ui.h:10
 #: ../data/overview.ui.h:8
 msgid "Window Manager"
-msgstr "Upravljalnik oken"
+msgstr "Menedżer Okien"
 
 #: ../unity-tweak-tool.desktop.in.h:5 ../data/unitytweak.ui.h:16
 #: ../data/unity.ui.h:41 ../data/overview.ui.h:17 ../data/appearance.ui.h:29
 msgid "Appearance"
-msgstr "Videz"
+msgstr "Wygląd"
 
 #: ../unity-tweak-tool.desktop.in.h:6 ../data/unitytweak.ui.h:22
 #: ../data/overview.ui.h:24
 msgid "System"
-msgstr "Sistem"
+msgstr "System"
 
 #: ../data/unitytweak.ui.h:2
 msgid "_File"
-msgstr "_Datoteka"
+msgstr "_Plik"
 
 #: ../data/unitytweak.ui.h:4 ../data/unity.ui.h:77 ../data/overview.ui.h:2
 msgid "Launcher"
-msgstr "Zaganjalnik"
+msgstr "Panel uruchamiania"
 
 #: ../data/unitytweak.ui.h:5 ../data/unity.ui.h:102 ../data/overview.ui.h:3
 msgid "Search"
-msgstr "Iskanje"
+msgstr "Szukaj"
 
 #: ../data/unitytweak.ui.h:6 ../data/unity.ui.h:146 ../data/overview.ui.h:4
 msgid "Panel"
-msgstr "Pult"
+msgstr "Panel"
 
 #: ../data/unitytweak.ui.h:7 ../data/unity.ui.h:163 ../data/overview.ui.h:5
 msgid "Switcher"
-msgstr "Preklopnik"
+msgstr "Przełącznik"
 
 #: ../data/unitytweak.ui.h:8 ../data/unity.ui.h:170 ../data/overview.ui.h:6
 msgid "Web Apps"
-msgstr "Spletni programi"
+msgstr "Aplikacje internetowe"
 
 #: ../data/unitytweak.ui.h:12
 msgid "Workspace settings"
-msgstr "Nastavitve delovne površine"
+msgstr "Ustawienia  obszarów roboczych"
 
 #: ../data/unitytweak.ui.h:13
 msgid "Windows spread"
-msgstr "Razporeditev oken"
+msgstr "Rozproszenie okien"
 
 #: ../data/unitytweak.ui.h:14
 msgid "Windows snapping"
-msgstr "Pripenjanje oken"
+msgstr "Przyciąganie okien"
 
 #: ../data/unitytweak.ui.h:17 ../data/overview.ui.h:18
 #: ../data/appearance.ui.h:8
 msgid "Theme"
-msgstr "Tema"
+msgstr "Styl"
 
 #: ../data/unitytweak.ui.h:18 ../data/unity.ui.h:56 ../data/overview.ui.h:19
 #: ../data/appearance.ui.h:12
 msgid "Icons"
-msgstr "Ikone"
+msgstr "Ikony"
 
 #: ../data/unitytweak.ui.h:19 ../data/appearance.ui.h:19
 msgid "Cursor"
-msgstr "Kazalka"
+msgstr "Kursor"
 
 #: ../data/unitytweak.ui.h:20 ../data/overview.ui.h:21
 #: ../data/appearance.ui.h:43
 msgid "Fonts"
-msgstr "Pisave"
+msgstr "Czcionki"
 
 #: ../data/unitytweak.ui.h:21
 msgid "Window controls"
-msgstr "Nadzorniki okna"
+msgstr "Elementy sterujące okna"
 
 #: ../data/unitytweak.ui.h:26
 msgid "_Help"
-msgstr "Pomo_č"
+msgstr "_Pomoc"
 
 #: ../data/unitytweak.ui.h:27
 msgid " Overview"
-msgstr " Pregled"
+msgstr " Przegląd"
 
 #: ../data/unity.ui.h:1
 msgid "Invoke HUD"
-msgstr "Prikliči HUD"
+msgstr "Włącz HUD"
 
 #: ../data/unity.ui.h:2
 msgid "Super+H"
@@ -737,7 +737,7 @@ msgstr "Super+H"
 
 #: ../data/unity.ui.h:3
 msgid "Show the launcher"
-msgstr "Pokaži zaganjalnik"
+msgstr "Pokaż panel uruchamiania"
 
 #: ../data/unity.ui.h:4
 msgid "Super+E"
@@ -745,7 +745,7 @@ msgstr "Super+E"
 
 #: ../data/unity.ui.h:5
 msgid "Execute command"
-msgstr "Izvedi ukaz"
+msgstr "Wykonaj polecenie"
 
 #: ../data/unity.ui.h:6
 msgid "Super+M"
@@ -753,7 +753,7 @@ msgstr "Super+M"
 
 #: ../data/unity.ui.h:7
 msgid "Put keyboard focus on the launcher"
-msgstr "Postavi žarišče tipkovnice na  zaganjalnik"
+msgstr "Skup klawiaturę na panelu uruchamiania"
 
 #: ../data/unity.ui.h:8
 msgid "Super+A"
@@ -761,7 +761,7 @@ msgstr "Super+A"
 
 #: ../data/unity.ui.h:9
 msgid "Open the first panel menu"
-msgstr "Odpri meni prvega pulta"
+msgstr "Otwórz pierwsze menu panelu"
 
 #: ../data/unity.ui.h:10
 msgid "Super+N"
@@ -769,7 +769,7 @@ msgstr "Super+N"
 
 #: ../data/unity.ui.h:11
 msgid "Start switcher"
-msgstr "Zaženi preklopnik"
+msgstr "Uruchom przełącznik okien"
 
 #: ../data/unity.ui.h:12
 msgid "Super+Tab"
@@ -777,7 +777,7 @@ msgstr "Super+Tab"
 
 #: ../data/unity.ui.h:13
 msgid "Start switcher in reverse"
-msgstr "Zaženi preklopnik v obratnem vrstnem redu"
+msgstr "Uruchom przełącznik okien w odwrotnej kolejności"
 
 #: ../data/unity.ui.h:14
 msgid "Shift+Super+Tab"
@@ -793,7 +793,7 @@ msgstr "Shift+Alt+Tab"
 
 #: ../data/unity.ui.h:17
 msgid "Start switcher for all workspaces"
-msgstr "Zaženi preklopnik za vse delovne površine"
+msgstr "Uruchom przełącznik okien na wszystkich obszarach roboczych"
 
 #: ../data/unity.ui.h:18
 msgid "Ctrl+Super+Alt+Tab"
@@ -801,7 +801,8 @@ msgstr "Ctrl+Super+Alt+Tab"
 
 #: ../data/unity.ui.h:19
 msgid "Start switcher for all workspaces in reverse"
-msgstr "Zaženi preklopnik za vse delovne površine v obratnem vrstnem redu"
+msgstr ""
+"Uruchom przełącznik na wszystkich obszarach roboczych w odwrotnej kolejności"
 
 #: ../data/unity.ui.h:20
 msgid "Shift+Ctrl+Super+Alt+Tab"
@@ -809,411 +810,423 @@ msgstr "Shift+Ctrl+Super+Alt+Tab"
 
 #: ../data/unity.ui.h:21
 msgid "Flip through windows in the switcher"
-msgstr "Listanje med okni v preklopniku"
+msgstr "Przerzuć  okna na przełącznik"
 
 #: ../data/unity.ui.h:23
 msgid "Flip through windows in the switcher backwards"
-msgstr "Listanje med okni v preklopniku v obratnem vrstnem redu"
+msgstr "Przerzuć  okna na przełącznik od tyłu"
 
 #: ../data/unity.ui.h:25
 msgid "Should the launcher be hidden?"
-msgstr "Ali naj bo zaganjalnik skrit?"
+msgstr "Czy przełącznik okien ma być schowany?"
 
 #: ../data/unity.ui.h:26
 msgid "Auto-hide:"
-msgstr "Samodejno skrij:"
+msgstr "Auto-ukrycie:"
 
 #: ../data/unity.ui.h:27
 msgid "Select the auto-hide animation of the launcher."
-msgstr "Izberite animacijo zaganjalnika za samodejno skritje."
+msgstr "Wybierz animacje auto-ukrycia przełącznika okien."
 
 #: ../data/unity.ui.h:28
 msgid "Fade Dash and slide"
-msgstr "Pojemanje Pregledne plošče in drsenje"
+msgstr "Przyciemnij kreskę i przesuń"
 
 #: ../data/unity.ui.h:29
 msgid "Slide only"
-msgstr "Le drsenje"
+msgstr "Tylko przesuń"
 
 #: ../data/unity.ui.h:30
 msgid "Fade only"
-msgstr "Le pojemanje"
+msgstr "Tylko przyciemnij"
 
 #: ../data/unity.ui.h:31
 msgid "Fade and slide"
-msgstr "Pojemanje in drsenje"
+msgstr "Przyciemnij i przesuń"
 
 #: ../data/unity.ui.h:32
 msgid "Auto-hide animation:"
-msgstr "Animacija samodejnega skritja:"
+msgstr "Animacja auto-ukrycia:"
 
 #: ../data/unity.ui.h:33
 msgid ""
 "Select the option to reveal the dash with the mouse, when auto-hide is "
 "enabled."
 msgstr ""
-"Izberite možnost za prikaz pregledne plošče z miško, ko je samodejno skritje "
-"omogočeno."
+"Wybierz jak pokazywać panel główny myszką, gdy auto-ukrywanie jest włączone"
 
 #: ../data/unity.ui.h:34
 msgid "Reveal location:"
-msgstr "Mesto prikaza:"
+msgstr "Położenie obszaru przywoływania:"
 
 #: ../data/unity.ui.h:35
 msgid "Reveal sensitivity:"
-msgstr "Prikaži občutljivost:"
+msgstr "Wrażliwość obszaru przywoływania:"
 
 #: ../data/unity.ui.h:36
 msgid "How much pointer \"pressure\" is required to reveal the launcher."
-msgstr "Koliko \"pritiska\" kazalca je zahtevanega za prikaz zaganjalnika."
+msgstr ""
+"Ile \"ciśnienia\" kursora jest wymagane aby pokazać panel uruchamiania."
 
 #: ../data/unity.ui.h:37
 msgid "Left side"
-msgstr "Leva stran"
+msgstr "Lewa krawędź"
 
 #: ../data/unity.ui.h:38
 msgid ""
 "When in auto-hide mode the left edge of the current workspace triggers the "
 "launcher."
 msgstr ""
-"Ko ste v načinu samodejnega skritja, levi rob trenutne delovne površine "
-"sproži prikaz zaganjalnika."
+"W trybie auto-ukrywania, lewa krawędź ekranu wyzwala panel uruchamiania."
 
 #: ../data/unity.ui.h:39
 msgid "Top left corner"
-msgstr "Zgornji levi kot"
+msgstr "Lewy górny róg"
 
 #: ../data/unity.ui.h:40
 msgid ""
 "When in auto-hide mode the top left corner of the current workspace triggers "
 "the launcher."
 msgstr ""
-"Ko ste v načinu samodejnega skritja, zgornji levi kot trenutne delovne "
-"površine sproži prikaz zaganjalnika."
+"W trybie auto-ukrywania, lewy, górny róg obszaru roboczego wyzwala panel "
+"uruchamiania."
 
 #: ../data/unity.ui.h:42
 msgid "Select the level of the transparency of the launcher"
-msgstr "Izberite raven prozornosti zaganjalnika"
+msgstr "Wybierz poziom przezroczystości panelu uruchamiania"
 
 #: ../data/unity.ui.h:43
 msgid "Transparency level:"
-msgstr "Raven prozornosti:"
+msgstr "Poziom przezroczystości:"
 
 #: ../data/unity.ui.h:44
 msgid "How transparent the launcher will be."
-msgstr "Kako prozoren bo zaganjalnik."
+msgstr "Jak bardzo przezroczysty ma być panel uruchamiania."
 
 #: ../data/unity.ui.h:45
 msgid "Based on wallpaper"
-msgstr "Temelji na ozadju"
+msgstr "Oparte na tapecie"
 
 #: ../data/unity.ui.h:46
 msgid "If selected, the launcher colour is based on the desktop background"
-msgstr "Če je izbrano, bo barva zaganjalnika temeljila na ozadju namizja."
+msgstr ""
+"Jeśli wybrany, kolor panelu uruchamiania będzie oparty na kolorze tapety"
 
 #: ../data/unity.ui.h:47
 msgid "Colour:"
-msgstr "Barva:"
+msgstr "Kolor:"
 
 #: ../data/unity.ui.h:48
 msgid "Visibility:"
-msgstr "Vidljivost:"
+msgstr "Widoczność:"
 
 #: ../data/unity.ui.h:49
 msgid "Custom:"
-msgstr "Po meri:"
+msgstr "Własny:"
 
 #: ../data/unity.ui.h:50
 msgid "If selected, the launcher will be the colour chosen by the user"
-msgstr "Če je izbrano, bo zaganjalnik take barve, kot jo bo izbral uporabnik"
+msgstr ""
+"Jeśli zaznaczone, panel uruchamiania będzie w kolorze wybieranym przez "
+"użytkownika"
 
 #: ../data/unity.ui.h:51
 msgid "All desktops"
-msgstr "Vsa namizja"
+msgstr "Wszystkie pulpity"
 
 #: ../data/unity.ui.h:52
 msgid "If selected, the launcher is visible on all desktops."
-msgstr "Če je izbrano, je zaganjalnik viden na vseh namizjih."
+msgstr ""
+"Jeśli wybrane, panel uruchamiania będzie widoczny na wszystkich pulpitach."
 
 #: ../data/unity.ui.h:53
 msgid "If selected, the launcher is visible on all desktops"
-msgstr "Če je izbrano, je zaganjalnik viden na vseh namizjih"
+msgstr ""
+"Jeśli wybrane, panel uruchamiania będzie widoczny na wszystkich pulpitach"
 
 #: ../data/unity.ui.h:54
 msgid "Primary desktop"
-msgstr "Glavno namizje"
+msgstr "Główny pulpit"
 
 #: ../data/unity.ui.h:55
 msgid "If selected, the launcher is visible on the primary desktop"
-msgstr "Če je izbrano, je zaganjalnik viden na glavnem namizju"
+msgstr ""
+"Jeśli wybrane, panel uruchamiania będzie widoczny tylko na głównym pulpicie"
 
 #: ../data/unity.ui.h:57
 msgid "Icon size:"
-msgstr "Velikost ikone:"
+msgstr "Rozmiar ikony:"
 
 #: ../data/unity.ui.h:58
 msgid "Select the animation used for launching an application."
-msgstr "Izberite animacijo ob zagonu programa."
+msgstr "Wybierz animacje używaną przy uruchomianiu aplikacji."
 
 #: ../data/unity.ui.h:59
 msgid "No animation"
-msgstr "Brez animacije"
+msgstr "Bez animacji"
 
 #: ../data/unity.ui.h:60
 msgid "Pulse"
-msgstr "Utripanje"
+msgstr "Pulsowanie"
 
 #: ../data/unity.ui.h:61
 msgid "Blink"
-msgstr "Utrip"
+msgstr "Migotanie"
 
 #: ../data/unity.ui.h:62
 msgid "Select the animation used for an urgent notification on the launcher"
 msgstr ""
-"Izberite animacijo, ki bo uporabljena za nujna obvestila na zaganjalniku"
+"Wybierz animację używaną dla ważnych powiadomień na panelu uruchamiania"
 
 #: ../data/unity.ui.h:63
 msgid "Wiggle"
-msgstr "Valovito"
+msgstr "Drganie"
 
 #: ../data/unity.ui.h:64
 msgid "Launch animation:"
-msgstr "Animacija zagona:"
+msgstr "Animacja uruchomienia:"
 
 #: ../data/unity.ui.h:65
 msgid "Urgent animation:"
-msgstr "Animacija nujnosti:"
+msgstr "Ważna animacja:"
 
 #: ../data/unity.ui.h:66
 msgid "Select how the icons are coloured on the launcher"
-msgstr "Izberite obarvanost ikon v zaganjalniku"
+msgstr "Wybierz jak aplikacje są kolorowane na panelu uruchamiania"
 
 #: ../data/unity.ui.h:67
 msgid "All applications"
-msgstr "Vsi programi"
+msgstr "Wszystkie aplikacje"
 
 #: ../data/unity.ui.h:68
 msgid "Open applications only"
-msgstr "Samo odprti programi"
+msgstr "Tylko otwarte aplikacje"
 
 #: ../data/unity.ui.h:69
 msgid "No colouring"
-msgstr "Brez obarvanosti"
+msgstr "Bez kolorowania"
 
 #: ../data/unity.ui.h:70
 msgid "Coloured edges"
-msgstr "Obarvani robovi"
+msgstr "Kolorowane krawędzie"
 
 #: ../data/unity.ui.h:71
 msgid "Alternated for each workspace"
-msgstr "Izmenično za vsako delovno površino"
+msgstr "Inne na każdym obszarze roboczym"
 
 #: ../data/unity.ui.h:72
 msgid "Icon backgrounds:"
-msgstr "Ozadja ikon:"
+msgstr "Tło ikon:"
 
 #: ../data/unity.ui.h:73
 msgid "\"Show Desktop\" icon:"
-msgstr "Ikona \"Pokaži namizje\":"
+msgstr "Ikona \"Pulpit\":"
 
 #: ../data/unity.ui.h:74
 msgid "Select the size of the icons on the launcher"
-msgstr "Izberite velikost ikon v zaganjalniku"
+msgstr "Wybierz rozmiar ikon na panelu uruchamiania"
 
 #: ../data/unity.ui.h:76
 msgid "Restore default Unity launcher settings."
-msgstr "Obnovi privzete nastavitve zaganjalnika Unity"
+msgstr "Przywróć domyślne ustawienia panelu uruchamiania Unity"
 
 #: ../data/unity.ui.h:79
 msgid "Background blur:"
-msgstr "Zabrisanost ozadja:"
+msgstr "Rozmycie tła:"
 
 #: ../data/unity.ui.h:80
 msgid "Enable dash blur?"
-msgstr "Ali želite omogočiti zabrisanost pregledne plošče?"
+msgstr "Czy włączyć rozmycie panelu głównego?"
 
 #: ../data/unity.ui.h:81
 msgid "Select the type of blur in the dash"
-msgstr "Izberite vrsto zabrisanosti pregledne plošče"
+msgstr "Wybierz typ rozmycia panelu głównego"
 
 #: ../data/unity.ui.h:82
 msgid "Blur type:"
-msgstr "Vrsta zabrisanosti:"
+msgstr "Typ rozmycia:"
 
 #: ../data/unity.ui.h:83
 msgid "Active"
-msgstr "Dejavno"
+msgstr "Aktywne"
 
 #: ../data/unity.ui.h:84
 msgid "Use a dynamic blur in the dash."
-msgstr "Uporabi dejavno zabrisanost pregledne plošče"
+msgstr "Użyj dynamicznego rozmycia w panelu głównym."
 
 #: ../data/unity.ui.h:85
 msgid "Static"
-msgstr "Statično"
+msgstr "Statyczne"
 
 #: ../data/unity.ui.h:86
 msgid "Use a static blur in the dash, uses less resources."
-msgstr "Uporabi statično zabrisanost pregledne plošče"
+msgstr ""
+"Użyj statycznego rozmycia w panelu głównym, używa mniej zasobów systemowych."
 
 #: ../data/unity.ui.h:87
 msgid "Search online sources"
-msgstr "Išči spletne vire"
+msgstr "Wyszukuje w internetowych źródłach"
 
 #: ../data/unity.ui.h:88
 msgid "If enabled, the dash will get suggestions from online sources."
 msgstr ""
-"Če je omogočeno, bo pregledna plošča prejemala predloge iz spletnih virov."
+"Gdy zaznaczone, panel główny będzie pobierał sugestje ze źródeł internetowych"
 
 #: ../data/unity.ui.h:89
 msgid "Applications"
-msgstr "Programi"
+msgstr "Aplikacje"
 
 #: ../data/unity.ui.h:90
 msgid "Show \"Recently Used\" applications"
-msgstr "Pokaži \"Nedavno uporabljene\" programe"
+msgstr "Pokaż \"Ostatnio Używane\" aplikacje"
 
 #: ../data/unity.ui.h:91
 msgid "If enabled, show recently used applications in the Dash."
-msgstr ""
-"Če je omogočeno, v pregledni plošči pokaži nedavno uporabljene programe."
+msgstr "Gdy zaznaczone, pokazuje ostatnio używane aplikacje w panelu głównym"
 
 #: ../data/unity.ui.h:92
 msgid "Show \"More Suggestions\""
-msgstr "Pokaži \"Več predlogov\""
+msgstr "Pokaż \"Więcej Sugestii\""
 
 #: ../data/unity.ui.h:93
 msgid "If enabled, show applications available for download in the Dash."
 msgstr ""
-"Če je omogočeno, pokaže v pregledni plošči programe, ki so na voljo za "
-"prejem."
+"Gdy zaznaczone, pokazuje aplikacje dostępne do pobrania w panelu głównym."
 
 #: ../data/unity.ui.h:94
 msgid "Files"
-msgstr "Datoteke"
+msgstr "Pliki"
 
 #: ../data/unity.ui.h:95
 msgid "Enable search of your files"
-msgstr "Omogoči iskanje po datotekah"
+msgstr "Włącz szukanie wśród twoich plików"
 
 #: ../data/unity.ui.h:96
 msgid ""
 "If enabled, allow searches to find your files that aren&apos;t logged."
-msgstr "Če je omogočeno, dovoli iskanje Vaših datotek, ki niso zabeležene."
+msgstr ""
+"Gdy włączone, zezwala na szukanie by znajdować twoje pliki które nie są "
+"zapisane."
 
 #: ../data/unity.ui.h:97
 msgid "If enabled, allow searches to find your files that aren't logged."
-msgstr "Če je omogočeno, dovoli iskanje svojih datotek, ki niso zabeležene."
+msgstr ""
+"Gdy włączone, zezwala na szukanie by znajdować twoje pliki które nie są "
+"zapisane."
 
 #: ../data/unity.ui.h:98
 msgid "Run Command"
-msgstr "Zaženi ukaz"
+msgstr "Uruchom"
 
 #: ../data/unity.ui.h:99
 msgid "Clear History"
-msgstr "Počisti zgodovino"
+msgstr "Wyczyść historię"
 
 #: ../data/unity.ui.h:100
 msgid "Clear ALT+F2 command history."
-msgstr "Počisti zgodovino ukazov ALT+F2"
+msgstr "Wyczyść historię komendy ALT+F2."
 
 #: ../data/unity.ui.h:101
 msgid "Restore the default Dash settings."
-msgstr "Obnovi privzete nastavitve pregledne plošče"
+msgstr "Przywróć domyślne ustanienia panelu uruchamiania."
 
 #: ../data/unity.ui.h:103
 msgid "Menu visible for:"
-msgstr "Meni je viden za:"
+msgstr "Menu widoczne dla:"
 
 #: ../data/unity.ui.h:104
 msgid ""
 "Select how long the application menu is visible when an application is first "
 "opened"
-msgstr "Kako dolgo je meni programa viden, ko program prvič odprete"
+msgstr ""
+"Wybierz jak długo menu aplikacji jest widoczne gdy aplikacja jest najpierw "
+"włączona"
 
 #: ../data/unity.ui.h:105
 msgid "seconds"
-msgstr "sekund"
+msgstr "sekundy"
 
 #: ../data/unity.ui.h:106
 msgid "Set the level of transparency for the panel."
-msgstr "Nastavite nivo prozornosti pulta."
+msgstr "Ustaw przeźroczystość panelu."
 
 #: ../data/unity.ui.h:107
 msgid "Opaque panel for maximized windows"
-msgstr "Neprozoren pult za razpeta okna"
+msgstr "Nieprzeźroczysty panel dla zmaksymalizowanych aplikacji"
 
 #: ../data/unity.ui.h:108
 msgid "If selected, the panel will be opaque for maximized windows"
-msgstr "Če je izbrano, bo pult neprozoren za vsa razpeta okna"
+msgstr ""
+"Gdy zaznaczone, panel będzie nieprzeźroczysty dla zmaksymalizowanych "
+"aplikacji"
 
 #: ../data/unity.ui.h:109
 msgid "Indicators"
-msgstr "Kazalniki"
+msgstr "Wskaźniki"
 
 #: ../data/unity.ui.h:110
 msgid "Date & time"
-msgstr "Datum in čas"
+msgstr "Data i godzina"
 
 #: ../data/unity.ui.h:111
 msgid "If enabled, the date &amp; time indicator will be visible."
-msgstr "Če je omogočeno, bo kazalnik datuma in časa viden."
+msgstr "Gdy zaznaczone, wskaźniki daty i godziny będą widoczne."
 
 #: ../data/unity.ui.h:112
 msgid "If enabled, the date & time indicator will be visible."
-msgstr "Če je omogočeno, bo kazalnik datuma in časa viden."
+msgstr "Gdy zaznaczone, wskaźniki daty i godziny będą widoczne."
 
 #: ../data/unity.ui.h:113
 msgid "12-hour time"
-msgstr "12-urni čas"
+msgstr "Tryb 12-godzinny"
 
 #: ../data/unity.ui.h:114
 msgid "Have the clock use 12-hour time."
-msgstr "Ura bo prikazala 12-urni čas."
+msgstr "Czy zegar ma korzystać z trybu 12-godzinnego"
 
 #: ../data/unity.ui.h:115
 msgid "24-hour time"
-msgstr "24-urni čas"
+msgstr "Tryb 24-godzinny"
 
 #: ../data/unity.ui.h:116
 msgid "Have the clock use 24-hour time."
-msgstr "Ura bo prikazala 24-urni čas."
+msgstr "Czy zegar ma korzystać z trybu 24-godzinnego"
 
 #: ../data/unity.ui.h:117
 msgid "Seconds"
-msgstr "Sekunde"
+msgstr "Sekundy"
 
 #: ../data/unity.ui.h:118
 msgid "If enabled, the clock will display seconds."
-msgstr "Če je omogočeno, bo ura prikazovala sekunde."
+msgstr "Gdy zaznaczone, zegar będzie wyświetlał sekundy."
 
 #: ../data/unity.ui.h:119
 msgid "Date"
-msgstr "Datum"
+msgstr "Data"
 
 #: ../data/unity.ui.h:120
 msgid "If enabled, the month and day will be visible in the panel."
-msgstr "Če je omogočeno, bosta mesec in dan vidna na pultu."
+msgstr "Gdy zaznaczone, miesiąc i dzień będą widoczne na panelu."
 
 #: ../data/unity.ui.h:121
 msgid "Weekday"
-msgstr "Dan v tednu"
+msgstr "Dzień tygodnia"
 
 #: ../data/unity.ui.h:122
 msgid "If enabled, the day of the week will be visible in the panel."
-msgstr "Če je omogočeno, bo dan v tednu viden na pultu."
+msgstr "Gdy zaznaczone, dzień tygodnia będzie widoczny na panelu."
 
 #: ../data/unity.ui.h:123
 msgid "Include:"
-msgstr "Vključi:"
+msgstr "Uwzględniaj:"
 
 #: ../data/unity.ui.h:124
 msgid "Calendar"
-msgstr "Koledar"
+msgstr "Kalendarz"
 
 #: ../data/unity.ui.h:125
 msgid "If enabled, the calendar will be visible in the indicator menu."
-msgstr "Če je omogočeno, bo koledar viden v meniju kazalnika."
+msgstr "Gdy zaznaczone, kalendarz będzie widoczny w menu wskaźników."
 
 #: ../data/unity.ui.h:126
 msgid "Bluetooth"
@@ -1221,165 +1234,166 @@ msgstr "Bluetooth"
 
 #: ../data/unity.ui.h:127
 msgid "If enabled, the bluetooth indicator is visible in the panel."
-msgstr "Če je omogočeno, bo kazalnik bluetooth viden na pultu."
+msgstr "Gdy zaznaczone, wskaźnik bluetooth będzie widoczny na panelu."
 
 #: ../data/unity.ui.h:128
 msgid "Power"
-msgstr "Poraba energije"
+msgstr "Zasilanie"
 
 #: ../data/unity.ui.h:129
 msgid "If enabled, show the power menu in the panel."
-msgstr "Če je omogočeno, bo meni porabe energije prikazan na pultu."
+msgstr "Gdy zaznaczone, pokazuj menu baterii na panelu."
 
 #: ../data/unity.ui.h:130
 msgid "Visible when charging or discharging"
-msgstr "Viden ob polnjenju ali praznjenju"
+msgstr "Widoczny gdy ładowany lub rozładowywany"
 
 #: ../data/unity.ui.h:131
 msgid ""
 "Set the power indicator to be visible when charging or discharging power."
-msgstr "Kazalnik porabe energije bo viden le ob polnjenju ali praznjenju."
+msgstr ""
+"Ustaw by wskaźnik ładowania był widoczny gdy komputer jest ładowany lub "
+"rozładowywany."
 
 #: ../data/unity.ui.h:132
 msgid "Always visible"
-msgstr "Vedno viden"
+msgstr "Zawsze widoczny"
 
 #: ../data/unity.ui.h:133
 msgid "Set the power indicator to be always visible."
-msgstr "Kazalnik porabe energije bo vedno viden."
+msgstr "Ustaw by wskaźnik ładowania był widoczny zawsze."
 
 #: ../data/unity.ui.h:134
 msgid "Display remaining battery life"
-msgstr "Prikaz trajanja baterije"
+msgstr "Pokazuj pozostałą objętość baterii"
 
 #: ../data/unity.ui.h:135
 msgid "If enabled, show the remaining battery life in the power indicator."
 msgstr ""
-"Če je omogočeno, bo čas trajanja baterije prikazan v kazalniku porabe "
-"energije."
+"Gdy zaznaczone, pokazuj pozostałą objętość baterii na wskaźniku ładowania"
 
 #: ../data/unity.ui.h:136
 msgid "Volume"
-msgstr "Glasnost"
+msgstr "Głośność"
 
 #: ../data/unity.ui.h:137
 msgid "If enabled, show the sound menu in the panel."
-msgstr "Če je omogočeno, bo na pultu prikazan meni zvoka."
+msgstr "Gdy zaznaczone, pokaż menu dźwięku na panelu"
 
 #: ../data/unity.ui.h:138
 msgid "Default player:"
-msgstr "Privzeti predvajalnik:"
+msgstr "Domyślny odtwarzacz"
 
 #: ../data/unity.ui.h:139
 msgid ""
 "Select which of the installed audio players is default in the sound menu."
 msgstr ""
-"Izberite, kateri od nameščenih predvajalnikov glasbe, bo privzet v meniju "
-"zvoka."
+"Ustal który z zainstalowanych odtwarzaczy muzyki ma być domyślny w menu "
+"dźwięku."
 
 #: ../data/unity.ui.h:140
 msgid "Notifications when scrolling"
-msgstr "Obvestila ob drsenju"
+msgstr "Powiadomienia gdy przewijane"
 
 #: ../data/unity.ui.h:141
 msgid ""
 "When using scrolling to change the volume, show on-screen notifications."
 msgstr ""
-"Ob uporabi drsenja za spremembo glasnosti na zaslonu pokaži obvestila."
+"Gdy do zmieniania głośności używane jest przewijanie pokazuj powiadomienia "
+"na pulpicie."
 
 #: ../data/unity.ui.h:142
 msgid "Show my name"
-msgstr "Pokaži moje ime"
+msgstr "Pokaż moje imię"
 
 #: ../data/unity.ui.h:143
 msgid "If enabled, show the user&apos;s real name in the panel."
-msgstr "Če je omogočeno, pokaže uporabnikovo ime na pultu."
+msgstr "Gdy zaznaczone, pokaż prawdziwe imię użytkownika na panelu."
 
 #: ../data/unity.ui.h:144
 msgid "If enabled, show the user's real name in the panel."
-msgstr "Če je omogočeno, pokaže uporabnikovo ime na pultu."
+msgstr "Gdy zaznaczone, pokaż prawdziwe imię użytkownika na panelu."
 
 #: ../data/unity.ui.h:145
 msgid "Restore the default Unity panel settings."
-msgstr "Obnovi privzete nastavitve pulta Unity."
+msgstr "Przywróć domyślne ustawienia panelu Unity"
 
 #: ../data/unity.ui.h:147
 msgid "Switch between windows on all workspaces"
-msgstr "Preklop med okni na vseh delovnih površinah"
+msgstr "Przełączaj pomiędzy oknami na wszystkich obszarach roboczych"
 
 #: ../data/unity.ui.h:148
 msgid ""
 "If enabled, the window switcher cycles through all windows on all workspaces"
 msgstr ""
-"Če je omogočeno, bo preklopnik oken preklapljal med vsemi okni na vseh "
-"delovnih površinah."
+"Gdy zaznaczone, przełącznik okien przełącza się pomiędzy wszystkimi oknami "
+"na wszystkich obszarach roboczych"
 
 #: ../data/unity.ui.h:149
 msgid "Display \"Show Desktop\" icon"
-msgstr "Prikaži ikono \"Pokaži namizje\""
+msgstr "Pokaż ikonę \"Pokaż Pulpit\""
 
 #: ../data/unity.ui.h:150
 msgid ""
 "If enabled, show the &quot;Show Desktop&quot; option in the window switcher"
 msgstr ""
-"Če je omogočeno, pokaži možnost &quot;Pokaži namizje&quot; v preklopniku oken"
+"Gdy zaznaczone, pokaż przycisk &quot;Pokaż Pulpit&quot; na panelu bocznym"
 
 #: ../data/unity.ui.h:151
 msgid "If enabled, show the \"Show Desktop\" option in the window switcher"
-msgstr ""
-"Če je omogočeno, bo v preklopniku oken prikazana možnost \"Pokaži namizje\""
+msgstr "Gdy zaznaczone, pokaż przycisk \"Pokaż Pulpit\" na panelu bocznym"
 
 #: ../data/unity.ui.h:152
 msgid "Automatically expose windows"
-msgstr "Samodejno izpostavi okna"
+msgstr "Automatycznie ujawnij okna"
 
 #: ../data/unity.ui.h:153
 msgid "If enabled, the window switcher will expose minimized windows"
-msgstr ""
-"Če je omogočeno, bo preklopnik oken samodejno izpostavil skrčena okna"
+msgstr "Gdy zaznaczone, przełącznik okien ujawni zminimalizowane okna"
 
 #: ../data/unity.ui.h:154
 msgid "Switch between minimized windows"
-msgstr "Preklapljanje med skrčenimi okni"
+msgstr "Przełącz pomiędzy zminimalizowanymi oknami"
 
 #: ../data/unity.ui.h:155
 msgid "If enabled, the window switcher will switch through minimized windows"
-msgstr "Če je omogočeno, bo preklopnik oken preklapljal skozi skrčena okna"
+msgstr ""
+"Gdy zaznaczone, przełącznik okien przełączy pomiędzy zminimalizowanymi oknami"
 
 #: ../data/unity.ui.h:156
 msgid "Window switching shortcuts"
-msgstr "Bližnjice preklapljanja oken"
+msgstr "Skróty przełączania okna"
 
 #: ../data/unity.ui.h:157
 msgid "Window switcher shortcuts"
-msgstr "Bližnjice preklopnika oken"
+msgstr "Skróty przełącznika okna"
 
 #: ../data/unity.ui.h:160
 msgid "Launcher switching shortcuts"
-msgstr "Bližnjice preklapljanja zaganjalnika"
+msgstr "Skróty przełączania programu uruchamiającego"
 
 #: ../data/unity.ui.h:161
 msgid "Launcher switcher shortcuts"
-msgstr "Bližnjice preklopnika zaganjalnika"
+msgstr "Skróty przełącznika programu uruchamiającego"
 
 #: ../data/unity.ui.h:162
 msgid "Restore the default window switcher settings."
-msgstr "Obnovi privzete nastavitve preklopnika oken."
+msgstr "Przywróć domyślne ustawienia przełącznika okien"
 
 #: ../data/unity.ui.h:164
 msgid ""
 "Enable prompts for webapp integration when visiting supported websites?"
 msgstr ""
-"Ali se naj omogoči pozive za vključitev spletnih programov, kadar obiščete "
-"podprte spletne strani?"
+"Włącz pokazywanie podpowiedzi wsparcia dla aplikacji internetowych kiedy "
+"odwiedza się wspierane strony."
 
 #: ../data/unity.ui.h:165
 msgid "Integration prompts:"
-msgstr "Pozivi k vključevanju:"
+msgstr "Podpowiedzi wsparcia:"
 
 #: ../data/unity.ui.h:166
 msgid "Preauthorized domains"
-msgstr "Predhodno pooblaščene domene"
+msgstr "Preautoryzowane strony"
 
 #: ../data/unity.ui.h:167
 msgid "Amazon"
@@ -1391,7 +1405,7 @@ msgstr "Ubuntu One"
 
 #: ../data/unity.ui.h:169
 msgid "Restore the default Unity Webapps settings."
-msgstr "Obnovi privzete nastavitve spletnih programov Unity."
+msgstr "Przywróć domyślne ustawienia aplikacji internetowych Unity"
 
 #: ../data/unity.ui.h:171
 msgid "HUD"
@@ -1399,149 +1413,151 @@ msgstr "HUD"
 
 #: ../data/unity.ui.h:172
 msgid "Remember previous commands"
-msgstr "Zapomni si predhodne ukaze"
+msgstr "Pamiętaj wpisywane komendy"
 
 #: ../data/unity.ui.h:173
 msgid ""
 "If enabled, the HUD will remember previously executed entries and sort them "
 "by frequently used."
 msgstr ""
-"Če omogočeno, si bo HUD zapomnil predhodno izvršene vnose in jih bo "
-"razvrstil po pogostosti uporabe."
+"Gdy zaznaczone, HUD będzie pamiętał uprzednio uruchamiane programy i "
+"sortował je według najczęściej używanych."
 
 #: ../data/unity.ui.h:174
 msgid "Keyboard Shortcuts"
-msgstr "Tipkovne bližnjice"
+msgstr "Skróty klawiszowe"
 
 #: ../data/unity.ui.h:175
 msgid "Hold Super for keyboard shortcuts"
-msgstr "Držite tipko Super za tipkovne bližnjice"
+msgstr "Przytrzymaj Super dla skrótów klawiszowych"
 
 #: ../data/unity.ui.h:176
 msgid ""
 "When enabled, pressing the Super key displays an overlay of all Unity "
 "keyboard shortcuts"
 msgstr ""
-"Ko je omogočeno, bo pritisk tipke Super prikazal vse tipkovne bližnjice Unity"
+"Gdy zaznaczone, naciśnięcie przycisku Super pokaże wszystkie skróty "
+"klawiszowe Unity"
 
 #: ../data/unity.ui.h:177
 msgid "List of Unity keyboard shortcuts"
-msgstr "Seznam tipkovnih bližnjic Unity"
+msgstr "Lista skrótów klawiszowych Unity"
 
 #: ../data/unity.ui.h:178
 msgid "Notifications"
-msgstr "Obvestila"
+msgstr "Powiadomienia"
 
 #: ../data/unity.ui.h:179
 msgid "All displays"
-msgstr "Vsi zasloni"
+msgstr "Wszystkie ekrany"
 
 #: ../data/unity.ui.h:180
 msgid "For multiple displays, notifications are visible on all of them."
-msgstr "Za več zaslonov; obvestila bodo vidna na vseh."
+msgstr "Dla wielu monitorów, powiadomienia pokazywane są na wszystkich."
 
 #: ../data/unity.ui.h:181
 msgid "Active display"
-msgstr "Dejavni zaslon"
+msgstr "Główny ekran"
 
 #: ../data/unity.ui.h:182
 msgid ""
 "For multiple displays, notifications are visible on the active display."
-msgstr "Za več zaslonov; obvestila so vidna samo na dejavnem zaslonu."
+msgstr "Dla wielu monitorów, powiadomienia pokazywane są na głównym."
 
 #: ../data/unity.ui.h:183
 msgid "Restore the default Unity keyboard shortcut settings."
-msgstr "Obnovi privzete nastavitve tipkovnih bližnjic Unity."
+msgstr "Przywróć domyślne ustawienia skrótów klawiszowych Unity"
 
 #: ../data/overview.ui.h:10
 msgid ""
 "Workspace\n"
 "Settings"
 msgstr ""
-"Nastavitve\n"
-"delovne površine"
+"Obszar roboczy\n"
+"Ustawienia"
 
 #: ../data/overview.ui.h:12
 msgid ""
 "Window\n"
 "Spread"
 msgstr ""
-"Razporeditev\n"
-"okna"
+"Okno\n"
+"Rozproszenie"
 
 #: ../data/overview.ui.h:14
 msgid ""
 "Window\n"
 "Snapping"
 msgstr ""
-"Pripenjanje\n"
-"okna"
+"Okno\n"
+"Przyciąganie"
 
 #: ../data/overview.ui.h:20
 msgid "Cursors"
-msgstr "Kazalniki"
+msgstr "Kursory"
 
 #: ../data/overview.ui.h:22
 msgid ""
 "Window\n"
 "Controls"
 msgstr ""
-"Nadzorne tipke\n"
-"okna"
+"Okno\n"
+"Sterowanie"
 
 #: ../data/overview.ui.h:25
 msgid ""
 "Desktop\n"
 "Icons"
 msgstr ""
-"Ikone\n"
-"Namizja"
+"Pulpit\n"
+"Ikony"
 
 #: ../data/errordialog.ui.h:1
 msgid "Schemas missing"
-msgstr "Manjkajo sheme"
+msgstr "Zagubione schematy"
 
 #: ../data/errordialog.ui.h:2
 msgid "The following schema is missing"
-msgstr "Naslednja shema manjka"
+msgstr "Ten schemat jest zagubiony"
 
 #: ../UnityTweakTool/utils/unityreset.py:41
 msgid "Initialising Unity reset"
-msgstr "Začenjanje ponastavitve Unitya"
+msgstr "Inicjalizacja ponownego uruchomienia Unity"
 
 #: ../UnityTweakTool/utils/unityreset.py:42
 msgid "Killing Unity and Compiz"
-msgstr "Uničevanje Unitya ter Compiza"
+msgstr "Wyłączanie Unity i Compiza"
 
 #: ../UnityTweakTool/utils/unityreset.py:45
 msgid "Resetting compiz plugins"
-msgstr "Ponastavitev vstavkov compiza"
+msgstr "Resetowanie wtyczek compiza"
 
 #: ../UnityTweakTool/utils/unityreset.py:47
 msgid "Resetting more compiz plugins"
-msgstr "Ponastavljanje drugih vstavkov compiza"
+msgstr "Resetowanie większej ilości wtyczek compiza"
 
 #: ../UnityTweakTool/utils/unityreset.py:49
 msgid "Resetting Unity settings"
-msgstr "Ponastavljanje nastavitev Unity"
+msgstr "Resetowanie ustawień Unity"
 
 #: ../UnityTweakTool/utils/unityreset.py:51
 msgid "Reset complete. Reloading unity"
-msgstr "Ponastavljanje končano. Ponovno nalagam Unity"
+msgstr "Reset zakończony. Przeładowywanie Unity"
 
 #: ../data/about.ui.h:1
 msgid "Copyright © 2013 Freyja Development team"
-msgstr "Pravice pridržane © 2013 Freyja Development team"
+msgstr "Copyright © 2013 Freyja Development team"
 
 #: ../data/about.ui.h:2
 msgid ""
 "Unity Tweak Tool is a settings manager intended to be used with Ubuntu Unity."
 msgstr ""
-"Unity Tweak Tool je upravljalnik nastavitev, namenjen uporabi z Ubuntu Unity."
+"Unity Tweak Tool jest menadżerem ustawień przeznaczonym do używania z Ubuntu "
+"Unity"
 
 #: ../data/about.ui.h:3
 msgid "Unity Tweak Tool on Launchpad"
-msgstr "Unity Tweak Tool na Launchpadu."
+msgstr "Unity Tweak Tool na Launchpadzie"
 
 #: ../data/about.ui.h:4
 msgid "GPL3"
@@ -1549,23 +1565,23 @@ msgstr "GPL3"
 
 #: ../unity-tweak-tool.py:43
 msgid "Start in the Unity tab"
-msgstr "Zaženi v zavihku Unity"
+msgstr "Zacznij w zakładce Unity"
 
 #: ../unity-tweak-tool.py:44
 msgid "Start in the WindowManager tab"
-msgstr "Zaženi v zavihku UpravljalnikOken"
+msgstr "Zacznij w zakładce WindowMenagera"
 
 #: ../unity-tweak-tool.py:45
 msgid "Start in the appearance tab"
-msgstr "Zaženi v zavihku videz"
+msgstr "Zacznij w zakładce wyglądu"
 
 #: ../unity-tweak-tool.py:46
 msgid "Start in the system tab"
-msgstr "Zaženi v zavihku sistem"
+msgstr "Zacznij w zakładce systemu"
 
 #: ../unity-tweak-tool.py:47
 msgid "Reset Unity, wiping all configuration changes."
-msgstr "Ponastavite Unity, izbrišite vse spremenjene nastavitve."
+msgstr "Resetuj Unity, usuwa wszystkie zmiany ustawień"
 
 #: ../unity-tweak-tool.py:61
 msgid ""
@@ -1577,127 +1593,127 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"OPOZORILO: Unity boste ponastavili na privzete nastavitve.\n"
-"    To bo povzročilo izgubo nastavitev.\n"
-"    Povsem običajno je, če vaše namizje med opravilom utripa.\n"
-"    Vnesite da za nadaljevanje in karkoli drugega za končanje.\n"
+"UWAGA: Jesteś na drodze do zresetowania Unity do domyślnych ustawień.\n"
+"    Doprowadzi to do utraty ustawień.\n"
+"    Normalne jest, że pulpit migocze podczas tego procesu.\n"
+"    Wpisz yes by kontynuować, cokolwiek innego by przerwać.\n"
 "    "
 
 #: ../unity-tweak-tool.py:67
 msgid "Do you wish to continue?"
-msgstr "Želite nadaljevati?"
+msgstr "Czy chcesz kontynuować?"
 
 #: ../unity-tweak-tool.py:70
 msgid "Please log out and log back in."
-msgstr "Odjavite se ter ponovno prijavite."
+msgstr "Proszę wyloguj się i zaloguj się ponownie."
 
 #: ../data/appearance.ui.h:1
 msgid "Available themes"
-msgstr "Razpoložljive teme"
+msgstr "Dostępne motywy"
 
 #: ../data/appearance.ui.h:2
 msgid "List of GTK Themes"
-msgstr "Seznam tem GTK"
+msgstr "Lista motywów GTK"
 
 #: ../data/appearance.ui.h:3
 msgid "GTK Theme"
-msgstr "Tema GTK"
+msgstr "Motyw GTK"
 
 #: ../data/appearance.ui.h:4
 msgid "List of Window decoration themes"
-msgstr "Seznam tem za okenske okraske"
+msgstr "Lista motywów dekoracyjnych okien"
 
 #: ../data/appearance.ui.h:5
 msgid "Window decoration theme"
-msgstr "Tema okenskih okraskov"
+msgstr "Motyw dekoracyjny okna"
 
 #: ../data/appearance.ui.h:7
 msgid "Restore system's default theme configurations"
-msgstr "Obnovi privzete nastavitve sistemske teme"
+msgstr "Przywróć domyślne ustawienia motywów"
 
 #: ../data/appearance.ui.h:9
 msgid "List of icon themes"
-msgstr "Seznam tem ikon"
+msgstr "LIsta motywów ikon"
 
 #: ../data/appearance.ui.h:10
 msgid "Icon theme"
-msgstr "Tema ikon"
+msgstr "Motyw ikon"
 
 #: ../data/appearance.ui.h:11
 msgid "Restore system's default icon theme configurations"
-msgstr "Obnovi privzete nastavitve sistemske teme ikon"
+msgstr "Przywróć domyślne ustawienia motywów ikon"
 
 #: ../data/appearance.ui.h:13
 msgid "List of cursor themes"
-msgstr "Seznam tem kazalke"
+msgstr "LIsta motywów kursora"
 
 #: ../data/appearance.ui.h:14
 msgid "Cursor Theme"
-msgstr "Tema kazalke"
+msgstr "Motyw kursorów"
 
 #: ../data/appearance.ui.h:15
 msgid "Preferences"
-msgstr "Možnosti"
+msgstr "Ustawienia"
 
 #: ../data/appearance.ui.h:16
 msgid "Use large cursors"
-msgstr "Uporabi velike kazalke"
+msgstr "Używaj dużego kursora"
 
 #: ../data/appearance.ui.h:17
 msgid "If enabled, the system will use a larger cursor."
-msgstr "Če je omogočeno, bo sistem uporabil večjo kazalko."
+msgstr "Gdy zaznaczone, system będzie używał dużego kursora"
 
 #: ../data/appearance.ui.h:18
 msgid "Restore system's default cursor theme configurations"
-msgstr "Obnovi privzete nastavitve sistemske teme kazalke"
+msgstr "Przywróć domyślne ustawienia motywów kursora"
 
 #: ../data/appearance.ui.h:21
 msgid "Select the default font for all applications."
-msgstr "Izberite privzeto pisavo za vse programe."
+msgstr "Wybierz domyślną czcionkę dla wszystkich aplikacji"
 
 #: ../data/appearance.ui.h:22
 msgid "Default font:"
-msgstr "Privzeta pisava:"
+msgstr "Domyślna czcionka:"
 
 #: ../data/appearance.ui.h:23
 msgid "Select the default font used for reading documents."
-msgstr "Izberite privzeto pisavo, ki bo uporabljena za branje dokumentov."
+msgstr "Wybierz domyślną czcionkę używaną do czytania dokumentów"
 
 #: ../data/appearance.ui.h:24
 msgid "Document font:"
-msgstr "Pisava dokumenta:"
+msgstr "Czcionka dokumentów:"
 
 #: ../data/appearance.ui.h:25
 msgid "Select the default monospace font."
-msgstr "Izberite privzeto pisavo monospace."
+msgstr "Wybierz domyśną czcionkę o stałej szerokości znaków"
 
 #: ../data/appearance.ui.h:26
 msgid "Monospace font:"
-msgstr "Pisava Monospace:"
+msgstr "Czcionka stałej szerokości znaków:"
 
 #: ../data/appearance.ui.h:27
 msgid "Select the default font for the window titlebar."
-msgstr "Izberite privzeto pisavo za nazivno vrstico okna."
+msgstr "Wybierz domyślną czcionkę dla paska tytułu"
 
 #: ../data/appearance.ui.h:28
 msgid "Window title font:"
-msgstr "Pisava naziva okna."
+msgstr "Czcionka paska tytułu:"
 
 #: ../data/appearance.ui.h:30
 msgid "Select the type of antialiasing used to render fonts."
-msgstr "Izberite vrsto glajenja robov za izris pisav."
+msgstr "Wybierz typ wygładzania krawędzi do renderowania czcionki"
 
 #: ../data/appearance.ui.h:31
 msgid "Antialiasing:"
-msgstr "Glajenje robov:"
+msgstr "Wygładzanie krawędzi:"
 
 #: ../data/appearance.ui.h:32
 msgid "None"
-msgstr "Brez"
+msgstr "Brak"
 
 #: ../data/appearance.ui.h:33
 msgid "Grayscale"
-msgstr "Sivinsko"
+msgstr "Odcienie szarości"
 
 #: ../data/appearance.ui.h:34
 msgid "RGBA"
@@ -1705,80 +1721,80 @@ msgstr "RGBA"
 
 #: ../data/appearance.ui.h:35
 msgid "Select the type of hinting to use when rendering fonts"
-msgstr "Izberite vrsto glajenja, ki se bo uporabila za izrisovanje pisav"
+msgstr "Wybierz typ przyciągania krawędzi używany do renderowania czcionek"
 
 #: ../data/appearance.ui.h:36
 msgid "Slight"
-msgstr "Rahlo"
+msgstr "Lekki"
 
 #: ../data/appearance.ui.h:37
 msgid "Medium"
-msgstr "Srednje"
+msgstr "Średni"
 
 #: ../data/appearance.ui.h:38
 msgid "Full"
-msgstr "Polno"
+msgstr "Pełny"
 
 #: ../data/appearance.ui.h:39
 msgid "Hinting:"
-msgstr "Glajenje:"
+msgstr "Przyciąganie do siatki:"
 
 #: ../data/appearance.ui.h:40
 msgid ""
 "Select the factor used to enlarge or reduce text display, without changing "
 "font size."
 msgstr ""
-"Izberite faktor, ki se bo uporabil za povečanje ali pomanjšanje prikaznega "
-"besedila, brez spreminjanja velikosti pisave."
+"Wybierz współczynnik używany, aby powiększyć lub zmniejszyć rozmiar "
+"wyświetlanego tekstu, bez zmiany rozmiaru czcionki."
 
 #: ../data/appearance.ui.h:41
 msgid "Text scaling factor:"
-msgstr "Faktor raztegovanja besedila:"
+msgstr "Współczynnik skalowania tekstu:"
 
 #: ../data/appearance.ui.h:42
 msgid "Restore system's default font configurations"
-msgstr "Obnovi privzete sistemske nastavitve pisave"
+msgstr "Przywróć domyślne ustawienia czcionek"
 
 #: ../data/appearance.ui.h:44
 msgid "Layout"
-msgstr "Razporeditev"
+msgstr "Szablon"
 
 #: ../data/appearance.ui.h:45
 msgid "Left"
-msgstr "Levo"
+msgstr "Lewo"
 
 #: ../data/appearance.ui.h:46
 msgid "Align the window controls to the left side of the window."
-msgstr "Poravna nadzornike na levo stran okna."
+msgstr "Wyrównaj sterowanie okien do lewej strony okna"
 
 #: ../data/appearance.ui.h:47
 msgid "Right"
-msgstr "Desno"
+msgstr "Prawo"
 
 #: ../data/appearance.ui.h:48
 msgid "Align the window controls to the right side of the window."
-msgstr "Poravna nadzornike na desno stran okna."
+msgstr "Wyrównaj sterowanie okien do prawej strony okna"
 
 #: ../data/appearance.ui.h:49
 msgid "Alignment:"
-msgstr "Poravnava:"
+msgstr "Wyrównanie:"
 
 #: ../data/appearance.ui.h:50
 msgid "Show menu button"
-msgstr "Pokaži gumb menija"
+msgstr "Pokaż przycisk menu"
 
 #: ../data/appearance.ui.h:51
 msgid "If enabled, show the window menu in the titlebar."
-msgstr "Če je omogočeno, pokaže gumb menija v nazivni vrstici."
+msgstr "Gdy zaznaczone, pokaż przycisk menu na pasku tytułu"
 
 #: ../data/appearance.ui.h:52
 msgid "Restore Defaults"
-msgstr "Obnovi privzete vrednosti"
+msgstr "Przywróć domyślne"
 
 #: ../data/appearance.ui.h:53
 msgid "Restore default window controls settings."
-msgstr "Obnovi privzete nastavitve nadzornikov okna"
+msgstr "Przywróć domyślne ustawienia sterowania oknem"
 
 #: ../data/appearance.ui.h:54
 msgid "Window Controls"
-msgstr "Nadzornniki okna"
+msgstr "Sterowanie oknem"
