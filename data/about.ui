@@ -8,7 +8,7 @@
     <property name="default_width">70</property>
     <property name="type_hint">dialog</property>
     <property name="program_name">Unity Tweak Tool</property>
-    <property name="version">0.0.6</property>
+    <property name="version">0.0.7</property>
     <property name="copyright" translatable="yes">Copyright © 2013 Freyja Development team</property>
     <property name="comments" translatable="yes">Unity Tweak Tool is a settings manager intended to be used with Ubuntu Unity.</property>
     <property name="website">https://launchpad.net/unity-tweak-tool</property>

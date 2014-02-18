@@ -1,3 +1,11 @@
+unity-tweak-tool (0.0.7) UNRELEASED; urgency=low
+
+  [ J Phani Mahesh]
+  * New upstream release
+    - Update Translations from Launchpad
+
+ -- J Phani Mahesh <phanimahesh@gmail.com>  Tue, 18 Feb 2014 20:21:01 +0530
+
 unity-tweak-tool (0.0.6) saucy; urgency=high
 
   [ Barneedhar Vigneshwar]

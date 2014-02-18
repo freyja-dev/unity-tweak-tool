@@ -185,7 +185,7 @@ data_files.extend(find_mo_files())
 
 DistUtilsExtra.auto.setup(
     name='unity-tweak-tool',
-    version='0.0.6',
+    version='0.0.7',
     license='GPL-3',
     author='Freyja Development Team',
     #author_email='email@ubuntu.com',
