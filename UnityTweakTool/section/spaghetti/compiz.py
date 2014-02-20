@@ -428,8 +428,6 @@ class Compizsettings ():
         else:
             self.ui['check_overlay_emblem'].set_active(False)
 
-        self.ui['check_click_desktop'].set_active(gsettings.scale.get_boolean('show-desktop'))
-
         model = self.ui['list_compiz_windows_spread_accelerators']
 
         initiate_key = gsettings.scale.get_string('initiate-key')
@@ -717,12 +715,6 @@ class Compizsettings ():
             gsettings.scale.set_int('overlay-icon', 1)
         else:
             gsettings.scale.set_int('overlay-icon', 0)
-
-    def on_check_click_desktop_toggled(self, widget):
-        if self.ui['check_click_desktop'].get_active() == True:
-            gsettings.scale.set_boolean('show-desktop', True)
-        else:
-            gsettings.scale.set_boolean('show-desktop', False)
 
     def on_craccel_compiz_windows_spread_accel_edited(self, craccel, path, key, mods, hwcode, model = None):
         accel = Gtk.accelerator_name(key, mods)
