@@ -1,8 +1,15 @@
 unity-tweak-tool (0.0.7) UNRELEASED; urgency=low
 
+  [ Andrew Starr-Bochicchio ]
+  * debian/rules: Some minor style tweaks.
+  * debian/control:
+   - Bump Standards-Version to 3.9.5
+   - Build depend on python3-all to fix FTBFS (LP: #1282274).
   [ J Phani Mahesh]
   * New upstream release
     - Update Translations from Launchpad
+  * UnityTweakTool/section/spaghetti/compiz.py:
+    - Fix crash on start (LP: #1281132).
 
  -- J Phani Mahesh <phanimahesh@gmail.com>  Tue, 18 Feb 2014 20:21:01 +0530
 
