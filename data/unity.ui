@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.16.1 -->
 <interface>
-  <!-- interface-requires gtk+ 3.0 -->
+  <requires lib="gtk+" version="3.0"/>
   <object class="GtkAdjustment" id="adj_launcher_icon_size">
     <property name="lower">32</property>
     <property name="upper">64</property>
@@ -189,8 +190,6 @@
                     <property name="can_focus">False</property>
                     <property name="tooltip_markup" translatable="yes">Select the auto-hide animation of the launcher.</property>
                     <property name="tooltip_text" translatable="yes">Select the auto-hide animation of the launcher.</property>
-                    <property name="entry_text_column">0</property>
-                    <property name="id_column">1</property>
                     <items>
                       <item translatable="yes">Fade Dash and slide</item>
                       <item translatable="yes">Slide only</item>
@@ -358,6 +357,25 @@
               </packing>
             </child>
             <child>
+              <object class="GtkCheckButton" id="check_minimize_window">
+                <property name="label" translatable="yes">Minimize single window applications on click</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <property name="margin_left">16</property>
+                <property name="xalign">0</property>
+                <property name="yalign">0.47999998927116394</property>
+                <property name="draw_indicator">True</property>
+                <signal name="toggled" handler="on_check_minimize_window_toggled" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="padding">6</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+            <child>
               <object class="GtkLabel" id="l_launcher_appearance">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
@@ -371,7 +389,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">3</property>
+                <property name="position">5</property>
               </packing>
             </child>
             <child>
@@ -423,7 +441,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">4</property>
+                <property name="position">6</property>
               </packing>
             </child>
             <child>
@@ -580,7 +598,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">5</property>
+                <property name="position">7</property>
               </packing>
             </child>
             <child>
@@ -597,7 +615,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">6</property>
+                <property name="position">8</property>
               </packing>
             </child>
             <child>
@@ -605,7 +623,7 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="halign">start</property>
-                <property name="row_spacing">6</property>
+                <property name="row_spacing">3</property>
                 <property name="column_spacing">6</property>
                 <child>
                   <object class="GtkLabel" id="l_icon_size">
@@ -631,8 +649,6 @@
                     <property name="has_tooltip">True</property>
                     <property name="tooltip_markup" translatable="yes">Select the animation used for launching an application.</property>
                     <property name="tooltip_text" translatable="yes">Select the animation used for launching an application.</property>
-                    <property name="entry_text_column">0</property>
-                    <property name="id_column">1</property>
                     <items>
                       <item translatable="yes">No animation</item>
                       <item translatable="yes">Pulse</item>
@@ -655,8 +671,6 @@
                     <property name="has_tooltip">True</property>
                     <property name="tooltip_markup" translatable="yes">Select the animation used for an urgent notification on the launcher</property>
                     <property name="tooltip_text" translatable="yes">Select the animation used for an urgent notification on the launcher</property>
-                    <property name="entry_text_column">0</property>
-                    <property name="id_column">1</property>
                     <items>
                       <item translatable="yes">No animation</item>
                       <item translatable="yes">Pulse</item>
@@ -709,8 +723,6 @@
                     <property name="tooltip_markup" translatable="yes">Select how the icons are coloured on the launcher</property>
                     <property name="tooltip_text" translatable="yes">Select how the icons are coloured on the launcher</property>
                     <property name="active">1</property>
-                    <property name="entry_text_column">0</property>
-                    <property name="id_column">1</property>
                     <items>
                       <item translatable="yes">All applications</item>
                       <item translatable="yes">Open applications only</item>
@@ -783,7 +795,6 @@
                     <property name="tooltip_text" translatable="yes">Select the size of the icons on the launcher</property>
                     <property name="halign">start</property>
                     <property name="invisible_char">•</property>
-                    <property name="invisible_char_set">True</property>
                     <property name="adjustment">adj_launcher_icon_size</property>
                     <signal name="value-changed" handler="on_spin_launcher_icon_size_value_changed" swapped="no"/>
                   </object>
@@ -804,7 +815,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">7</property>
+                <property name="position">9</property>
               </packing>
             </child>
             <child>
@@ -824,7 +835,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="position">16</property>
+                <property name="position">17</property>
               </packing>
             </child>
           </object>
@@ -1270,7 +1281,6 @@
                         <property name="margin_left">2</property>
                         <property name="margin_top">8</property>
                         <property name="invisible_char">•</property>
-                        <property name="invisible_char_set">True</property>
                         <property name="adjustment">adj_menu_visible</property>
                         <signal name="value-changed" handler="on_spin_menu_visible_value_changed" swapped="no"/>
                       </object>
@@ -1781,8 +1791,6 @@
                                 <property name="can_focus">False</property>
                                 <property name="tooltip_markup" translatable="yes">Select which of the installed audio players is default in the sound menu.</property>
                                 <property name="tooltip_text" translatable="yes">Select which of the installed audio players is default in the sound menu.</property>
-                                <property name="entry_text_column">0</property>
-                                <property name="id_column">1</property>
                                 <signal name="changed" handler="on_cbox_default_player_changed" swapped="no"/>
                               </object>
                               <packing>

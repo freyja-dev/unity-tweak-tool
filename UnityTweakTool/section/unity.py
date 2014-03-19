@@ -211,6 +211,16 @@ sc_launcher_transparency=Scale({
 
  })
 
+check_minimize_window= CheckBox({
+    'id'        : 'check_minimize_window',
+    'builder'   : Unity.builder,
+    'schema'    : 'org.compiz.unityshell',
+    'path'      : '/org/compiz/profiles/unity/plugins/unityshell/',
+    'key'       : 'launcher-minimize-window',
+    'type'      : 'boolean',
+    'map'       : {True:True,False:False},
+    'dependants': []
+})
 
 
 LauncherIcons=Tab([sw_launcher_hidemode,
@@ -225,7 +235,8 @@ LauncherIcons=Tab([sw_launcher_hidemode,
                    spin_launcher_icon_size,
                    sc_reveal_sensitivity,
                    sc_launcher_transparency,
-                   color_launcher_color_cus])
+                   color_launcher_color_cus,
+                   check_minimize_window])
 
 #=============== DASH ==========================
 
