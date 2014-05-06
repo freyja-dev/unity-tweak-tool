@@ -48,3 +48,7 @@ https://github.com/freyja-dev/unity-tweak-tool
 Bugs are managed via Launchpad and can be reported at:
 
 https://bugs.launchpad.net/unity-tweak-tool
+
+Translations are managed on launchpad. You can edit / contribute new translations using the web interface at:
+
+https://translations.launchpad.net/unity-tweak-tool
