@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: unity-tweak-tool\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2013-10-06 00:16+0530\n"
-"PO-Revision-Date: 2013-10-05 22:15+0000\n"
-"Last-Translator: Barneedhar <barneedhar@gmail.com>\n"
+"PO-Revision-Date: 2014-07-22 16:41+0000\n"
+"Last-Translator: Jean Marc <Unknown>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-01-01 14:04+0000\n"
-"X-Generator: Launchpad (build 16877)\n"
+"X-Launchpad-Export-Date: 2014-07-23 17:52+0000\n"
+"X-Generator: Launchpad (build 17114)\n"
 
 #: ../data/filechooser-theme.ui.h:1
 msgid "Choose a Theme file to install"
@@ -88,7 +88,7 @@ msgstr "Dé-minimiser"
 
 #: ../data/windowmanager.ui.h:16
 msgid "Window Animations:"
-msgstr ""
+msgstr "Animations des fenêtres :"
 
 #: ../data/windowmanager.ui.h:17
 msgid "Keyboard shortcuts"
@@ -115,6 +115,7 @@ msgstr "Général"
 #: ../data/windowmanager.ui.h:22
 msgid "Enable the window manager to draw multiple workspaces"
 msgstr ""
+"Activer le gestionnaire de fenêtres pour générer plusieurs espaces de travail"
 
 #: ../data/windowmanager.ui.h:23
 msgid "Workspace switcher:"
@@ -164,15 +165,15 @@ msgstr "Paramètres de l'espace de travail"
 
 #: ../data/windowmanager.ui.h:34
 msgid "Enable the window spread?"
-msgstr ""
+msgstr "Activer le mode exposé ?"
 
 #: ../data/windowmanager.ui.h:35
 msgid "Window spread:"
-msgstr ""
+msgstr "Mode exposé :"
 
 #: ../data/windowmanager.ui.h:36
 msgid "Select the space between window in the spead overview in pixels"
-msgstr ""
+msgstr "Choisir l'espace en pixels entre les fenêtres en mode exposé"
 
 #: ../data/windowmanager.ui.h:37
 msgid "Spacing:"
@@ -180,13 +181,15 @@ msgstr "Espacement :"
 
 #: ../data/windowmanager.ui.h:38
 msgid "Icons on previews"
-msgstr ""
+msgstr "Icônes sur les aperçus"
 
 #: ../data/windowmanager.ui.h:39
 msgid ""
 "When enabled, show an application's icon on the window preview in the window "
 "spread"
 msgstr ""
+"Activé, affiche l'icône de l’application dans l'aperçu de la fenêtre en mode "
+"exposé"
 
 #: ../data/windowmanager.ui.h:40
 msgid "Click to access desktop"
@@ -208,11 +211,11 @@ msgstr ""
 
 #: ../data/windowmanager.ui.h:44
 msgid "Restore default window spread settings"
-msgstr ""
+msgstr "Restaurer les paramètres par défaut du mode exposé"
 
 #: ../data/windowmanager.ui.h:45
 msgid "Window spread"
-msgstr ""
+msgstr "Mode exposé"
 
 #: ../data/windowmanager.ui.h:46
 msgid "Window snapping:"
@@ -285,7 +288,7 @@ msgstr ""
 
 #: ../data/windowmanager.ui.h:62
 msgid "Auto-raise:"
-msgstr ""
+msgstr "Maximisation automatique :"
 
 #: ../data/windowmanager.ui.h:63
 msgid "Titlebar Actions"
@@ -297,11 +300,11 @@ msgstr "Double-clic :"
 
 #: ../data/windowmanager.ui.h:65
 msgid "Select the titlebar's double click action."
-msgstr ""
+msgstr "Choisir l'action d'un double-clic sur la barre de titre."
 
 #: ../data/windowmanager.ui.h:66
 msgid "Toggle Shade"
-msgstr ""
+msgstr "Activer les ombres"
 
 #: ../data/windowmanager.ui.h:67
 msgid "Maximize"
@@ -309,11 +312,11 @@ msgstr "Maximiser"
 
 #: ../data/windowmanager.ui.h:68
 msgid "Horizontal expand"
-msgstr ""
+msgstr "Élargissement horizontal"
 
 #: ../data/windowmanager.ui.h:69
 msgid "Vertical expand"
-msgstr ""
+msgstr "Élargissement vertical"
 
 #: ../data/windowmanager.ui.h:70
 msgid "Minimize"
@@ -325,7 +328,7 @@ msgstr "Aucune action"
 
 #: ../data/windowmanager.ui.h:72
 msgid "Lower"
-msgstr ""
+msgstr "Abaisser"
 
 #: ../data/windowmanager.ui.h:73
 msgid "Menu"
@@ -341,7 +344,7 @@ msgstr "Choisir l'action d'un clic-milieu sur la barre de titre."
 
 #: ../data/windowmanager.ui.h:76
 msgid "Toggle shade"
-msgstr ""
+msgstr "Activer les ombres"
 
 #: ../data/windowmanager.ui.h:77
 msgid "Right click:"
@@ -438,7 +441,7 @@ msgstr "Afficher les espaces de travail"
 
 #: ../data/windowmanager.ui.h:100
 msgid "Window Spread"
-msgstr ""
+msgstr "Mode exposé"
 
 #: ../data/windowmanager.ui.h:101
 msgid "Spread all Windows"
@@ -486,7 +489,7 @@ msgstr "Coin supérieur droit"
 
 #: ../data/system.ui.h:1
 msgid "Items to display:"
-msgstr "Éléments à afficher:"
+msgstr "Éléments à afficher :"
 
 #: ../data/system.ui.h:2
 msgid "Home Folder"
@@ -502,11 +505,11 @@ msgstr "Corbeille"
 
 #: ../data/system.ui.h:5
 msgid "Trash"
-msgstr ""
+msgstr "Corbeille"
 
 #: ../data/system.ui.h:6
 msgid "Mounted Devices"
-msgstr ""
+msgstr "Périphériques montés"
 
 #: ../data/system.ui.h:7
 msgid "Devices"
@@ -555,6 +558,8 @@ msgstr "Impression"
 #: ../data/system.ui.h:19
 msgid "Prevent user access to the system's printers and print setup."
 msgstr ""
+"Empêche l'accès des utilisateurs aux imprimantes utilisées par le système et "
+"aux paramètres d'impression."
 
 #: ../data/system.ui.h:20
 msgid "Restore the default configurations for Security settings"
@@ -578,7 +583,7 @@ msgstr "Recouvrement "
 
 #: ../data/system.ui.h:25
 msgid "Select the behaviour of the overlay scrollbars."
-msgstr ""
+msgstr "Sélectionner le comportement des barres de défilement couvrantes."
 
 #: ../data/system.ui.h:26
 msgid "Default"
@@ -685,7 +690,7 @@ msgstr "Paramètres de l'espace de travail"
 
 #: ../data/unitytweak.ui.h:13
 msgid "Windows spread"
-msgstr ""
+msgstr "Mode exposé"
 
 #: ../data/unitytweak.ui.h:14
 msgid "Windows snapping"
@@ -1340,6 +1345,7 @@ msgstr ""
 #: ../data/unity.ui.h:151
 msgid "If enabled, show the \"Show Desktop\" option in the window switcher"
 msgstr ""
+"Activé, affiche l'option « Afficher le bureau » dans le sélecteur de fenêtre"
 
 #: ../data/unity.ui.h:152
 msgid "Automatically expose windows"
@@ -1480,6 +1486,8 @@ msgid ""
 "Window\n"
 "Spread"
 msgstr ""
+"Mode\n"
+"exposé"
 
 #: ../data/overview.ui.h:14
 msgid ""
@@ -1489,7 +1497,7 @@ msgstr ""
 
 #: ../data/overview.ui.h:20
 msgid "Cursors"
-msgstr ""
+msgstr "Curseurs"
 
 #: ../data/overview.ui.h:22
 msgid ""
@@ -1504,6 +1512,8 @@ msgid ""
 "Desktop\n"
 "Icons"
 msgstr ""
+"Icônes\n"
+"sur le bureau"
 
 #: ../data/errordialog.ui.h:1
 msgid "Schemas missing"
@@ -1523,7 +1533,7 @@ msgstr ""
 
 #: ../UnityTweakTool/utils/unityreset.py:45
 msgid "Resetting compiz plugins"
-msgstr ""
+msgstr "Réinitialisation des greffons de compiz"
 
 #: ../UnityTweakTool/utils/unityreset.py:47
 msgid "Resetting more compiz plugins"
@@ -1595,11 +1605,11 @@ msgstr ""
 
 #: ../unity-tweak-tool.py:67
 msgid "Do you wish to continue?"
-msgstr ""
+msgstr "Voulez-vous continuer ?"
 
 #: ../unity-tweak-tool.py:70
 msgid "Please log out and log back in."
-msgstr ""
+msgstr "Veuillez vous déconnecter puis vous reconnecter."
 
 #: ../data/appearance.ui.h:1
 msgid "Available themes"
@@ -1754,7 +1764,7 @@ msgstr "Restaure les configurations de la police du système par défaut"
 
 #: ../data/appearance.ui.h:44
 msgid "Layout"
-msgstr ""
+msgstr "Disposition"
 
 #: ../data/appearance.ui.h:45
 msgid "Left"

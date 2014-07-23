@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: mechanig\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2013-10-06 00:16+0530\n"
-"PO-Revision-Date: 2013-12-01 20:44+0000\n"
+"PO-Revision-Date: 2014-02-04 12:05+0000\n"
 "Last-Translator: Atanas Kovachki <Unknown>\n"
 "Language-Team: Bulgarian <bg@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-01-01 14:04+0000\n"
-"X-Generator: Launchpad (build 16877)\n"
+"X-Launchpad-Export-Date: 2014-07-23 17:52+0000\n"
+"X-Generator: Launchpad (build 17114)\n"
 
 #: ../data/filechooser-theme.ui.h:1
 msgid "Choose a Theme file to install"
@@ -23,7 +23,7 @@ msgstr "Изберете файл на темата за инсталиране"
 
 #: ../data/filechooser-theme.ui.h:2
 msgid "Install Theme"
-msgstr "Инсталиране на тема"
+msgstr "Инсталирай темата"
 
 #. FIXME : This is guaranteed to fail.
 #: ../data/windowmanager.ui.h:1
@@ -40,7 +40,7 @@ msgstr "Мащабиране на работният плот:"
 
 #: ../data/windowmanager.ui.h:4
 msgid "List of keyboard shortcuts for zoom"
-msgstr "Кавишни комбинации за увеличване на работния плот"
+msgstr "Кавишни комбинации за мащабиране на работния плот"
 
 #: ../data/windowmanager.ui.h:5 ../data/unity.ui.h:158
 msgid "Title"
@@ -101,11 +101,11 @@ msgstr "Списък на клавишни комбинации за диспе�
 #: ../data/windowmanager.ui.h:19 ../data/system.ui.h:8 ../data/unity.ui.h:75
 #: ../data/appearance.ui.h:6
 msgid "Restore defaults"
-msgstr "Първоначални настройки"
+msgstr "Стандартни настройки"
 
 #: ../data/windowmanager.ui.h:20
 msgid "Restore default window manager settings"
-msgstr "Възстанови първоначалните настройки на диспечера за прозорци."
+msgstr "Възстанови стандартните настройки на диспечера за прозорци."
 
 #: ../data/windowmanager.ui.h:21 ../data/unitytweak.ui.h:11
 #: ../data/unity.ui.h:78 ../data/overview.ui.h:9 ../data/appearance.ui.h:20
@@ -115,51 +115,52 @@ msgstr "Общи"
 #: ../data/windowmanager.ui.h:22
 msgid "Enable the window manager to draw multiple workspaces"
 msgstr ""
-"Задействане на мениджъра за прозорците, за показване на няколко работни места"
+"Задействане на мениджъра за прозорците, за показване на няколко работни "
+"плотове"
 
 #: ../data/windowmanager.ui.h:23
 msgid "Workspace switcher:"
-msgstr "Превключвател на работни плотове"
+msgstr "Превключвател на работни плотове:"
 
 #: ../data/windowmanager.ui.h:24
 msgid "Select the outline colour of the current workspace in the overview"
-msgstr "Изберете цвета на контура за текущото работно място за преглед"
+msgstr "Изберете цвета на контура за текущият работен плот за преглед"
 
 #: ../data/windowmanager.ui.h:25
 msgid "Current workspace colour:"
-msgstr "Цвят за текущото работно място:"
+msgstr "Цвят за текущият работен плот:"
 
 #: ../data/windowmanager.ui.h:26
 msgid "Select the number of vertical workspaces"
-msgstr "Изберете количеството вертикални работни места"
+msgstr "Изберете количеството вертикални работни плота"
 
 #: ../data/windowmanager.ui.h:27
 msgid "Vertical workspaces:"
-msgstr "Вертикални работни места:"
+msgstr "Вертикални работни плота:"
 
 #: ../data/windowmanager.ui.h:28
 msgid "Select the number of horizontal workspaces"
-msgstr "Изберете количеството хоризонтални работни места"
+msgstr "Изберете количеството хоризонтални работни плота"
 
 #: ../data/windowmanager.ui.h:29
 msgid "Horizontal workspaces:"
-msgstr "Хоризонтални работни места:"
+msgstr "Хоризонтални работни плота:"
 
 #: ../data/windowmanager.ui.h:30
 msgid "Workspace shortcuts"
-msgstr "Клавишни комбинации за работното място"
+msgstr "Клавишни комбинации за работният плот"
 
 #: ../data/windowmanager.ui.h:31
 msgid "List of workspace management keyboard shortcuts"
-msgstr "Списък на клавишни комбинации за управление на работните места"
+msgstr "Списък на клавишни комбинации за управление на работните плотове"
 
 #: ../data/windowmanager.ui.h:32
 msgid "Restore default workspace configuration"
-msgstr "Възстанови първоначалните настройки на работните плотове."
+msgstr "Възстанови стандартните настройки на работните плотове."
 
 #: ../data/windowmanager.ui.h:33
 msgid "Workspace Settings"
-msgstr "Работни места"
+msgstr "Работни плотове"
 
 #: ../data/windowmanager.ui.h:34
 msgid "Enable the window spread?"
@@ -180,7 +181,7 @@ msgstr "Отстояние:"
 
 #: ../data/windowmanager.ui.h:38
 msgid "Icons on previews"
-msgstr "Показвай иконите"
+msgstr "Икони за преглед"
 
 #: ../data/windowmanager.ui.h:39
 msgid ""
@@ -850,7 +851,7 @@ msgstr "Само избледняване"
 
 #: ../data/unity.ui.h:31
 msgid "Fade and slide"
-msgstr ""
+msgstr "Избледняване и плъзгане"
 
 #: ../data/unity.ui.h:32
 msgid "Auto-hide animation:"
@@ -1546,7 +1547,7 @@ msgstr ""
 
 #: ../UnityTweakTool/utils/unityreset.py:42
 msgid "Killing Unity and Compiz"
-msgstr ""
+msgstr "Прекрати процесите Unity и Compiz"
 
 #: ../UnityTweakTool/utils/unityreset.py:45
 msgid "Resetting compiz plugins"
@@ -1558,11 +1559,11 @@ msgstr "Възстановяване на допълнителните Compiz п
 
 #: ../UnityTweakTool/utils/unityreset.py:49
 msgid "Resetting Unity settings"
-msgstr ""
+msgstr "Възстановяване на Юнити настройките"
 
 #: ../UnityTweakTool/utils/unityreset.py:51
 msgid "Reset complete. Reloading unity"
-msgstr ""
+msgstr "Възстановяването е готово. Презареждане на Юнити."
 
 #: ../data/about.ui.h:1
 msgid "Copyright © 2013 Freyja Development team"
