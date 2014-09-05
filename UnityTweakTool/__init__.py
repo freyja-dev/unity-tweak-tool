@@ -87,12 +87,12 @@ class Application(dbus.service.Object):
                        \033[00m""".format(pid=old_pid,LOCKFILE=LOCKFILE))
                     self.call_running_instance(pageid)
                     sys.exit(1)
-        except dbus.exceptions.DBusException as e:
-                # Most probably the process doesn't exist. remove and proceed
-                pass
-
-        with open(LOCKFILE, "w") as pidfile:
-            pidfile.write("%s" % os.getpid())
+            
+            with open(LOCKFILE, "w") as pidfile:
+                pidfile.write("%s" % os.getpid())
+        except:
+            # Most probably the process doesn't exist. remove and proceed
+            pass
 
         self.register_dbus_session()
         self.run(pageid)
@@ -191,7 +191,10 @@ class Application(dbus.service.Object):
         self.window.present()
 
     def quit(self,*args):
-        os.remove(LOCKFILE)
+        try:
+            os.remove(LOCKFILE)
+        except:
+            pass
         Gtk.main_quit()
 
 def reset_all():
