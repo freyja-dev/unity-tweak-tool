@@ -87,12 +87,18 @@ class Application(dbus.service.Object):
                        \033[00m""".format(pid=old_pid,LOCKFILE=LOCKFILE))
                     self.call_running_instance(pageid)
                     sys.exit(1)
-            
-            with open(LOCKFILE, "w") as pidfile:
-                pidfile.write("%s" % os.getpid())
         except:
             # Most probably the process doesn't exist. remove and proceed
             pass
+        
+        try:
+            with open(LOCKFILE, "w") as pidfile:
+                pidfile.write("%s" % os.getpid())
+        except:
+            # Not a fatal error to not write the pid.
+            # XXX: Should an error be logged? Dialog shown?
+            pass
+
 
         self.register_dbus_session()
         self.run(pageid)
