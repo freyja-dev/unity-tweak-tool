@@ -39,7 +39,7 @@ import logging
 import dbus, dbus.service
 from gi.repository import Gtk
 from dbus.mainloop.glib import DBusGMainLoop
-from UnityTweakTool.config.logging import LOGFILE,LOGFMT,LOGLVL
+from UnityTweakTool.config.logging import LOGFILE,LOGFMT,LOGLVL,CACHEDIR
 
 DBusGMainLoop(set_as_default=True)
 
@@ -61,7 +61,6 @@ except Exception:
 
 
 ##########################################################################
-CACHEDIR=os.path.expanduser('~/.cache/unity-tweak-tool/')
 LOCKFILE=os.path.join(CACHEDIR,"pid.lockfile")
 
 class Application(dbus.service.Object):

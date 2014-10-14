@@ -38,8 +38,8 @@ import os
 logger=logging.getLogger('UnityTweakTool.config.logging')
 
 # This makes the directory if missing.
-CFGDIR  = xdg.BaseDirectory.save_config_path('unity-tweak-tool')
-LOGFILE = os.path.join(CFGDIR,'debug.log')
+CACHEDIR  = xdg.BaseDirectory.save_cache_path('unity-tweak-tool')
+LOGFILE = os.path.join(CACHEDIR,'debug.log')
 LOGFMT  = '%(asctime)s - %(levelname)-8s :: %(name)s - %(funcName)s - %(message)s'
 LOGLVL  = logging.DEBUG
 
