@@ -107,7 +107,6 @@ datetime = canonical('indicator.datetime')
 hud = canonical('indicator.appmenu.hud')
 power = canonical('indicator.power')
 notifyosd = canonical('notify-osd')
-scrollbars= canonical('desktop.interface')
 session = canonical('indicator.session')
 sound = canonical('indicator.sound')
 
