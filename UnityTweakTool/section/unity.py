@@ -164,7 +164,7 @@ spin_launcher_icon_size=SpinButton({
     'path'   : '/org/compiz/profiles/unity/plugins/unityshell/',
     'key'    : 'icon-size',
     'type'   : 'int',
-    'min'    : 32,
+    'min'    : 8,
     'max'    : 64
 })
 
