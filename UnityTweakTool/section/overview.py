@@ -51,8 +51,7 @@ class Overview(Tab,Section):
             3:{ 0:'b_appearance-theme',
                 1:'b_appearance-icons',
                 2:'b_appearance-cursors',
-                3:'b_appearance-fonts',
-                4:'b_appearance-window-controls'},
+                3:'b_appearance-fonts'},
             4:{ 0:'b_system-desktop-icons',
                 1:'b_system-security',
                 2:'b_system-scrolling'}

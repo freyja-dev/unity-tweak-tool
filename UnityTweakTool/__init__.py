@@ -156,7 +156,6 @@ class Application(dbus.service.Object):
             'theme_icon'        :(3,1),
             'theme_cursor'      :(3,2),
             'theme_fonts'       :(3,3),
-            'window_controls'   :(3,4),
 
             'desktop_icons'     :(4,0),
             'system_security'   :(4,1),
