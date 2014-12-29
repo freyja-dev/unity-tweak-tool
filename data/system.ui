@@ -205,6 +205,7 @@
                     <property name="tooltip_markup" translatable="yes">Mounted Devices</property>
                     <property name="tooltip_text" translatable="yes">Mounted Devices</property>
                     <property name="relief">none</property>
+                    <signal name="toggled" handler="on_tb_devices_toggled" swapped="no"/>
                     <child>
                       <object class="GtkBox" id="box_devices">
                         <property name="visible">True</property>
