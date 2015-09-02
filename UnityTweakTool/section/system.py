@@ -179,7 +179,7 @@ radio_legacy_scrollbars=Radio({
 check_horizontal_scrolling= CheckBox({
     'id'        : 'check_horizontal_scrolling',
     'builder'   : System.builder,
-    'schema'    : 'org.gnome.desktop.peripherals.touchpad',
+    'schema'    : 'org.gnome.settings-daemon.peripherals.touchpad',
     'path'      : None,
     'key'       : 'horiz-scroll-enabled',
     'type'      : 'boolean',
@@ -190,7 +190,7 @@ check_horizontal_scrolling= CheckBox({
 radio_edge=Radio({
     'id'        : 'radio_edge',
     'builder'   : System.builder,
-    'schema'    : 'org.gnome.desktop.peripherals.touchpad',
+    'schema'    : 'org.gnome.settings-daemon.peripherals.touchpad',
     'path'      : None,
     'key'       : 'scroll-method',
     'type'      : 'string',
@@ -202,7 +202,7 @@ radio_edge=Radio({
 radio_two_finger=Radio({
     'id'        : 'radio_two_finger',
     'builder'   : System.builder,
-    'schema'    : 'org.gnome.desktop.peripherals.touchpad',
+    'schema'    : 'org.gnome.settings-daemon.peripherals.touchpad',
     'path'      : None,
     'key'       : 'scroll-method',
     'type'      : 'string',

@@ -11,10 +11,6 @@ unity-tweak-tool (0.0.7) UNRELEASED; urgency=low
   * UnityTweakTool/section/spaghetti/compiz.py:
     - Fix crash on start (LP: #1281132).
 
-  [ Barneedhar Vigneshwar]
-  * UnityTweakTool/section/system.py
-    - Fixed missing schema- org.gnome.settings-daemon.peripherals (LP: #1490154)
-
  -- J Phani Mahesh <phanimahesh@gmail.com>  Tue, 18 Feb 2014 20:21:01 +0530
 
 unity-tweak-tool (0.0.6) saucy; urgency=high

@@ -116,7 +116,7 @@ desktop = gnome('nautilus.desktop')
 interface = gnome('desktop.interface')
 lockdown = gnome('desktop.lockdown')
 wm = gnome('desktop.wm.preferences')
-touch = gnome('desktop.peripherals.touchpad')
+touch = gnome('settings-daemon.peripherals.touchpad')
 
 animation = plugin('animation')
 core = plugin('core')
