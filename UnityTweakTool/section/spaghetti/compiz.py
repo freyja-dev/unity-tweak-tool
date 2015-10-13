@@ -493,9 +493,6 @@ class Compizsettings ():
         self.ui['switch_auto_raise'].set_active(gsettings.wm.get_boolean('auto-raise'))
         self.ui['scale_auto_raise_delay'].set_value(gsettings.wm.get_int('auto-raise-delay'))
 
-        # Raise on click
-        self.ui['switch_raise_on_click'].set_active(gsettings.wm.get_boolean('raise-on-click'))
-
         # Titlebar actions
         self.ui['cbox_double_click'].set_active(gsettings.wm.get_enum('action-double-click-titlebar'))
         self.ui['cbox_middle_click'].set_active(gsettings.wm.get_enum('action-middle-click-titlebar'))
@@ -822,13 +819,6 @@ class Compizsettings ():
             gsettings.wm.set_boolean('auto-raise', True)
         else:
             gsettings.wm.set_boolean('auto-raise', False)
-
-    def on_switch_raise_on_click_active_notify(self, widget, udata = None):
-        if self.ui['switch_raise_on_click'].get_active() == True:
-            gsettings.wm.set_boolean('raise-on-click', True)
-        else:
-            gsettings.wm.set_boolean('raise-on-click', False)
-
 
     def on_cbox_focus_mode_changed(self, widget, udata = None):
         gsettings.wm.set_enum('focus-mode', self.ui['cbox_focus_mode'].get_active())

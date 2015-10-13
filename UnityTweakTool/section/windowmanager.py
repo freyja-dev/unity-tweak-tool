@@ -300,6 +300,7 @@ cbox_right_click=ComboBox({
 
 
 AdditionalIcons=Tab([switch_auto_raise,
+                     switch_raise_on_click,
 					 cbox_focus_mode,
 					 cbox_double_click,
 					 cbox_middle_click,
