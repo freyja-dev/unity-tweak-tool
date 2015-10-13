@@ -120,7 +120,7 @@ cbox_opengl=ComboBox({
 # list_compiz_general_zoom_accelerators
 # cbox_minimize_animation
 # cbox_unminimize_animation
-# list_compiz_general_keys_accelerators 
+# list_compiz_general_keys_accelerators
 
 GeneralIcons=Tab([cbox_opengl]) #,
 				  # cbox_minimize_animation,
@@ -240,6 +240,18 @@ switch_auto_raise= Switch({
    'dependants': []
 })
 
+switch_raise_on_click= Switch({
+   'id'        : 'switch_raise_on_click',
+   'builder'   : WindowManager.builder,
+   'schema'    : 'org.gnome.desktop.wm.preferences',
+   'path'      : None,
+   'key'       : 'raise-on-click',
+   'type'      : 'boolean',
+   'map'       : {True:True,False:False},
+   'dependants': []
+})
+
+
 cbox_focus_mode=ComboBox({
     'id'        : 'cbox_focus_mode',
     'builder'   : WindowManager.builder,
@@ -282,7 +294,7 @@ cbox_right_click=ComboBox({
 
 # TODO:
 
-# scale_auto_raise_delay 
+# scale_auto_raise_delay
 # colorbutton_resize_outline
 # colorbutton_resize_fill
 
