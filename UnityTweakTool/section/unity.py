@@ -222,13 +222,38 @@ check_minimize_window= CheckBox({
     'dependants': []
 })
 
+radio_launcher_position_left=Radio({
+    'id'        : 'radio_launcher_position_left',
+    'builder'   : Unity.builder,
+    'schema'    : 'com.canonical.Unity.Launcher',
+    'path'      : '/com/canonical/unity/launcher/',
+    'key'       : 'launcher-position',
+    'type'      : 'string',
+    'group'     : 'radio_launcher_position_left',
+    'value'     : 'Left',
+    'dependants': []
+})
+
+radio_launcher_position_bottom=Radio({
+    'id'        : 'radio_launcher_position_bottom',
+    'builder'   : Unity.builder,
+    'schema'    : 'com.canonical.Unity.Launcher',
+    'path'      : '/com/canonical/unity/launcher/',
+    'key'       : 'launcher-position',
+    'type'      : 'string',
+    'group'     : 'radio_launcher_position_left',
+    'value'     : 'Bottom',
+    'dependants': []
+})
 
 LauncherIcons=Tab([sw_launcher_hidemode,
                    cbox_autohide_animation,
-                   radio_reveal_left, 
+                   radio_reveal_left,
                    radio_reveal_topleft,
                    radio_launcher_visibility_primary,
                    radio_launcher_visibility_all,
+                   radio_launcher_position_left,
+                   radio_launcher_position_bottom,
                    cbox_urgent_animation,
                    cbox_launch_animation,
                    cbox_launcher_icon_colouring,
@@ -237,6 +262,8 @@ LauncherIcons=Tab([sw_launcher_hidemode,
                    sc_launcher_transparency,
                    color_launcher_color_cus,
                    check_minimize_window])
+
+
 
 #=============== DASH ==========================
 
