@@ -37,3 +37,5 @@ schema_list = Gio.Settings.list_schemas()
 # lets check if we're using an older version and fix it if needed
 if "org.gnome.desktop.peripherals" not in schema_list:
     touchpad_schema = 'settings-daemon'
+else:
+    touchpad_schema = 'desktop'
