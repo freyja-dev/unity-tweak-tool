@@ -32,6 +32,8 @@
 import sys,os
 from gi.repository import Gio,  Gdk,Gtk
 import UnityTweakTool.config.data as data
+import UnityTweakTool.section.dynamic as dynamic
+
 
 def test_schema(schema):
     if schema in Gio.Settings.list_relocatable_schemas():
@@ -116,7 +118,7 @@ desktop = gnome('nautilus.desktop')
 interface = gnome('desktop.interface')
 lockdown = gnome('desktop.lockdown')
 wm = gnome('desktop.wm.preferences')
-touch = gnome('desktop.peripherals.touchpad')
+touch = gnome(dynamic.touchpad_schema + '.peripherals.touchpad')
 
 animation = plugin('animation')
 core = plugin('core')
