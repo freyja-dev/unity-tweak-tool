@@ -1,26 +1,26 @@
-# Burmese translation for unity-tweak-tool
-# Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
+# Uyghur translation for unity-tweak-tool
+# Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
 # This file is distributed under the same license as the unity-tweak-tool package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: unity-tweak-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-24 18:26-0700\n"
-"PO-Revision-Date: 2013-04-18 11:10+0000\n"
-"Last-Translator: Pyae Sone <Unknown>\n"
-"Language-Team: Burmese <my@li.org>\n"
-"Language: my\n"
+"PO-Revision-Date: 2015-10-07 07:40+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Uyghur <ug@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-07-25 06:07+0000\n"
-"X-Generator: Launchpad (build 17114)\n"
+"X-Launchpad-Export-Date: 2015-10-08 05:37+0000\n"
+"X-Generator: Launchpad (build 17802)\n"
 
 #: ../data/about.ui:12
 msgid "Copyright © 2013 Freyja Development team"
-msgstr "မူပိုင်ခွင့် © ၂၀၁၃ Freyja Development အဖွဲ့"
+msgstr ""
 
 #: ../data/about.ui:13
 msgid ""
@@ -29,20 +29,20 @@ msgstr ""
 
 #: ../data/about.ui:15
 msgid "Unity Tweak Tool on Launchpad"
-msgstr "Launchpad ပေါ်မှ Unity Tweak Tool"
+msgstr ""
 
 #: ../data/about.ui:16
 msgid "GPL3"
-msgstr "GPL၃"
+msgstr ""
 
 #: ../data/appearance.ui:32 ../data/appearance.ui:198
 #: ../data/appearance.ui:299
 msgid "Available themes"
-msgstr "ရရှိနိုင်သော Theme"
+msgstr ""
 
 #: ../data/appearance.ui:67 ../data/appearance.ui:68
 msgid "List of GTK Themes"
-msgstr "GTK Themes စာရင်း"
+msgstr ""
 
 #: ../data/appearance.ui:80
 msgid "GTK Theme"
@@ -65,7 +65,7 @@ msgstr ""
 #: ../data/windowmanager.ui:1469 ../data/windowmanager.ui:1793
 #: ../data/windowmanager.ui:2207
 msgid "Restore defaults"
-msgstr "မူလအတိုင်းပြန်ထားမည်"
+msgstr ""
 
 #: ../data/appearance.ui:158 ../data/appearance.ui:159
 msgid "Restore system's default theme configurations"
@@ -73,7 +73,7 @@ msgstr ""
 
 #: ../data/appearance.ui:179 ../data/overview.ui:850 ../data/unitytweak.ui:215
 msgid "Theme"
-msgstr "Theme"
+msgstr ""
 
 #: ../data/appearance.ui:220 ../data/appearance.ui:221
 msgid "List of icon themes"
@@ -90,7 +90,7 @@ msgstr ""
 #: ../data/appearance.ui:279 ../data/overview.ui:901 ../data/unitytweak.ui:224
 #: ../data/unity.ui:621
 msgid "Icons"
-msgstr "Icons"
+msgstr ""
 
 #: ../data/appearance.ui:321 ../data/appearance.ui:322
 msgid "List of cursor themes"
@@ -126,12 +126,12 @@ msgstr ""
 #: ../data/windowmanager.ui:616 ../data/windowmanager.ui:881
 #: ../data/windowmanager.ui:1138 ../data/windowmanager.ui:1514
 msgid "General"
-msgstr "အထွေထွေ"
+msgstr ""
 
 #: ../data/appearance.ui:456 ../data/appearance.ui:457
 #: ../data/appearance.ui:491 ../data/appearance.ui:492
 msgid "Select the default font for all applications."
-msgstr "application အားလုံးအတွက် စကားလုံးပုံစံရွေးမည်"
+msgstr ""
 
 #: ../data/appearance.ui:459
 msgid "Default font:"
@@ -167,7 +167,7 @@ msgstr ""
 #: ../data/appearance.ui:613 ../data/overview.ui:793 ../data/unitytweak.ui:202
 #: ../data/unity.ui:364
 msgid "Appearance"
-msgstr "အသွင်အပြင်"
+msgstr ""
 
 #: ../data/appearance.ui:636 ../data/appearance.ui:637
 #: ../data/appearance.ui:654 ../data/appearance.ui:655
@@ -180,15 +180,15 @@ msgstr ""
 
 #: ../data/appearance.ui:659 ../data/appearance.ui:681
 msgid "None"
-msgstr "ဘာမျှမဟုတ်"
+msgstr ""
 
 #: ../data/appearance.ui:660
 msgid "Grayscale"
-msgstr "မီးခိုးရောင်"
+msgstr ""
 
 #: ../data/appearance.ui:661
 msgid "RGBA"
-msgstr "နီစိမ်းပြာအာဖာ"
+msgstr ""
 
 #: ../data/appearance.ui:676 ../data/appearance.ui:677
 #: ../data/appearance.ui:700 ../data/appearance.ui:701
@@ -197,15 +197,15 @@ msgstr ""
 
 #: ../data/appearance.ui:682
 msgid "Slight"
-msgstr "အနည်းငယ်"
+msgstr ""
 
 #: ../data/appearance.ui:683
 msgid "Medium"
-msgstr "အလယ်အလတ်"
+msgstr ""
 
 #: ../data/appearance.ui:684
 msgid "Full"
-msgstr "အပြည့်"
+msgstr ""
 
 #: ../data/appearance.ui:703
 msgid "Hinting:"
@@ -229,7 +229,7 @@ msgstr ""
 #: ../data/appearance.ui:792 ../data/overview.ui:1003
 #: ../data/unitytweak.ui:242
 msgid "Fonts"
-msgstr "စာလုံးပုံစံများ"
+msgstr ""
 
 #: ../data/errordialog.ui:8
 msgid "Schemas missing"
@@ -241,11 +241,11 @@ msgstr ""
 
 #: ../data/filechooser-theme.ui:17
 msgid "Choose a Theme file to install"
-msgstr "သွင်းရန်အတွက် Theme ဖိုင်တစ်ဖိုင်ကိုရွေးပါ"
+msgstr ""
 
 #: ../data/filechooser-theme.ui:51
 msgid "Install Theme"
-msgstr "Theme ကိုသွင်းမည်"
+msgstr ""
 
 #: ../data/overview.ui:40 ../data/unitytweak.ui:64
 msgid "Unity"
@@ -253,11 +253,11 @@ msgstr ""
 
 #: ../data/overview.ui:99 ../data/unitytweak.ui:77 ../data/unity.ui:838
 msgid "Launcher"
-msgstr "Launcher"
+msgstr ""
 
 #: ../data/overview.ui:152 ../data/unitytweak.ui:86 ../data/unity.ui:1163
 msgid "Search"
-msgstr "ရှာဖွေ"
+msgstr ""
 
 #: ../data/overview.ui:203 ../data/unitytweak.ui:95 ../data/unity.ui:1833
 msgid "Panel"
@@ -275,7 +275,7 @@ msgstr ""
 #: ../data/unitytweak.ui:191 ../data/unity.ui:2533
 #: ../data/windowmanager.ui:2233
 msgid "Additional"
-msgstr "နောက်ထပ်အပို"
+msgstr ""
 
 #: ../data/overview.ui:417 ../data/unitytweak.ui:133
 msgid "Window Manager"
@@ -310,7 +310,7 @@ msgstr ""
 
 #: ../data/overview.ui:1067 ../data/unitytweak.ui:253
 msgid "System"
-msgstr "ကွန်ပြူတာစနစ်ပိုင်းဆိုင်ရာ"
+msgstr ""
 
 #: ../data/overview.ui:1124
 msgid ""
@@ -320,11 +320,11 @@ msgstr ""
 
 #: ../data/overview.ui:1176 ../data/system.ui:434 ../data/unitytweak.ui:275
 msgid "Security"
-msgstr "လုံခြုံရေး"
+msgstr ""
 
 #: ../data/overview.ui:1227 ../data/system.ui:682 ../data/unitytweak.ui:284
 msgid "Scrolling"
-msgstr "ဆွဲရွှေ့နေသည်"
+msgstr ""
 
 #: ../data/system.ui:31
 msgid "Items to display:"
@@ -332,11 +332,11 @@ msgstr ""
 
 #: ../data/system.ui:52 ../data/system.ui:53 ../data/system.ui:80
 msgid "Home Folder"
-msgstr "ပင်မဖိုင်တွဲ"
+msgstr ""
 
 #: ../data/system.ui:103 ../data/system.ui:104 ../data/system.ui:131
 msgid "Network"
-msgstr "ကွန်ယက်"
+msgstr ""
 
 #: ../data/system.ui:154 ../data/system.ui:155
 msgid "Rubbish Bin"
@@ -360,7 +360,7 @@ msgstr ""
 
 #: ../data/system.ui:284 ../data/unitytweak.ui:266
 msgid "Desktop Icons"
-msgstr "Desktop Icons"
+msgstr ""
 
 #: ../data/system.ui:303
 msgid "Enhance system security by disabling:"
@@ -368,7 +368,7 @@ msgstr ""
 
 #: ../data/system.ui:319
 msgid "Desktop lock"
-msgstr "Desktop ပိတ်ထား"
+msgstr ""
 
 #: ../data/system.ui:324 ../data/system.ui:325
 msgid "Disable the desktop lock screen."
@@ -376,7 +376,7 @@ msgstr ""
 
 #: ../data/system.ui:339
 msgid "User log out"
-msgstr "အသုံးပြုသူထွက်ခြင်း"
+msgstr ""
 
 #: ../data/system.ui:344 ../data/system.ui:345
 msgid "Disable session log out."
@@ -384,7 +384,7 @@ msgstr ""
 
 #: ../data/system.ui:359
 msgid "User switching"
-msgstr "အသုံးပြုသူပြောင်းလဲခြင်း"
+msgstr ""
 
 #: ../data/system.ui:364 ../data/system.ui:365
 msgid "Disable fast user switching."
@@ -392,7 +392,7 @@ msgstr ""
 
 #: ../data/system.ui:379
 msgid "Printing"
-msgstr "စာရွက်ထုတ်နေပါသည်"
+msgstr ""
 
 #: ../data/system.ui:384 ../data/system.ui:385
 msgid "Prevent user access to the system's printers and print setup."
@@ -420,7 +420,7 @@ msgstr ""
 
 #: ../data/system.ui:524
 msgid "Default"
-msgstr "မူရင်းအတိုင်း"
+msgstr ""
 
 #: ../data/system.ui:525
 msgid "Overlay with mouse"
@@ -448,7 +448,7 @@ msgstr ""
 
 #: ../data/system.ui:612
 msgid "Two-finger"
-msgstr "လက်ညှိုး ၂ချောင်း"
+msgstr ""
 
 #: ../data/system.ui:616 ../data/system.ui:617
 msgid "If enabled, two-finger scrolling is active on multitouch touchpads."
@@ -464,7 +464,7 @@ msgstr ""
 
 #: ../data/unitytweak.ui:56
 msgid "_File"
-msgstr "_F ဖိုင်"
+msgstr ""
 
 #: ../data/unitytweak.ui:155
 msgid "Workspace settings"
@@ -480,7 +480,7 @@ msgstr ""
 
 #: ../data/unitytweak.ui:317
 msgid "_Help"
-msgstr "_H အကူအညီ"
+msgstr ""
 
 #: ../data/unitytweak.ui:360
 msgid " Overview"
@@ -492,15 +492,15 @@ msgstr ""
 
 #: ../data/unity.ui:43
 msgid "Super+H"
-msgstr "Super+H"
+msgstr ""
 
 #: ../data/unity.ui:46
 msgid "Show the launcher"
-msgstr "launcher ကိုပြမည်"
+msgstr ""
 
 #: ../data/unity.ui:47
 msgid "Super+E"
-msgstr "Super+E"
+msgstr ""
 
 #: ../data/unity.ui:50
 msgid "Execute command"
@@ -508,7 +508,7 @@ msgstr ""
 
 #: ../data/unity.ui:51
 msgid "Super+M"
-msgstr "Super+M"
+msgstr ""
 
 #: ../data/unity.ui:54
 msgid "Put keyboard focus on the launcher"
@@ -516,7 +516,7 @@ msgstr ""
 
 #: ../data/unity.ui:55
 msgid "Super+A"
-msgstr "Super+A"
+msgstr ""
 
 #: ../data/unity.ui:58
 msgid "Open the first panel menu"
@@ -524,15 +524,15 @@ msgstr ""
 
 #: ../data/unity.ui:59
 msgid "Super+N"
-msgstr "Super+N"
+msgstr ""
 
 #: ../data/unity.ui:72 ../data/unity.ui:90
 msgid "Start switcher"
-msgstr "switcher ကိုစမည်"
+msgstr ""
 
 #: ../data/unity.ui:73
 msgid "Super+Tab"
-msgstr "Super+Tab"
+msgstr ""
 
 #: ../data/unity.ui:76 ../data/unity.ui:94
 msgid "Start switcher in reverse"
@@ -540,23 +540,23 @@ msgstr ""
 
 #: ../data/unity.ui:77
 msgid "Shift+Super+Tab"
-msgstr "Shift+Super+Tab"
+msgstr ""
 
 #: ../data/unity.ui:91
 msgid "Alt+Tab"
-msgstr "Alt+Tab"
+msgstr ""
 
 #: ../data/unity.ui:95
 msgid "Shift+Alt+Tab"
-msgstr "Shift+Alt+Tab"
+msgstr ""
 
 #: ../data/unity.ui:98
 msgid "Start switcher for all workspaces"
-msgstr "အလုပ်နေရာများအားလုံးအတွက် Switcher ကိုစတင်မည်"
+msgstr ""
 
 #: ../data/unity.ui:99
 msgid "Ctrl+Super+Alt+Tab"
-msgstr "Ctrl+Super+Alt+Tab"
+msgstr ""
 
 #: ../data/unity.ui:102
 msgid "Start switcher for all workspaces in reverse"
@@ -564,7 +564,7 @@ msgstr ""
 
 #: ../data/unity.ui:103
 msgid "Shift+Ctrl+Super+Alt+Tab"
-msgstr "Shift+Ctrl+Super+Alt+Tab"
+msgstr ""
 
 #: ../data/unity.ui:106
 msgid "Flip through windows in the switcher"
@@ -573,7 +573,7 @@ msgstr ""
 #: ../data/unity.ui:107 ../data/unity.ui:111 ../data/windowmanager.ui:90
 #: ../data/windowmanager.ui:115
 msgid "Disabled"
-msgstr "ပိတ်ထားရန်"
+msgstr ""
 
 #: ../data/unity.ui:110
 msgid "Flip through windows in the switcher backwards"
@@ -586,15 +586,15 @@ msgstr ""
 
 #: ../data/unity.ui:159 ../data/unity.ui:160
 msgid "Should the launcher be hidden?"
-msgstr "launcher ကိုဖွက်ထားမည်လား။"
+msgstr ""
 
 #: ../data/unity.ui:175
 msgid "Auto-hide:"
-msgstr "အလိုအလျောက်ဖျောက်-"
+msgstr ""
 
 #: ../data/unity.ui:187 ../data/unity.ui:188
 msgid "Select the auto-hide animation of the launcher."
-msgstr "launcher ၏ အလိုအလျောက်ဖျောက်သည့် animation ကိုရွေးမည်"
+msgstr ""
 
 #: ../data/unity.ui:190
 msgid "Fade Dash and slide"
@@ -602,7 +602,7 @@ msgstr ""
 
 #: ../data/unity.ui:191
 msgid "Slide only"
-msgstr "Slide သာလျှင်"
+msgstr ""
 
 #: ../data/unity.ui:192
 msgid "Fade only"
@@ -614,7 +614,7 @@ msgstr ""
 
 #: ../data/unity.ui:208
 msgid "Auto-hide animation:"
-msgstr "Animation ကိုအလိုအလျောက်ဖျောက်-"
+msgstr ""
 
 #: ../data/unity.ui:237
 msgid ""
@@ -636,7 +636,7 @@ msgstr ""
 
 #: ../data/unity.ui:287
 msgid "Left side"
-msgstr "ဘယ်ဖက်အခြမ်း"
+msgstr ""
 
 #: ../data/unity.ui:293 ../data/unity.ui:294
 msgid ""
@@ -646,7 +646,7 @@ msgstr ""
 
 #: ../data/unity.ui:308
 msgid "Top left corner"
-msgstr "အပေါ်ဘယ်ဖက်ထောင့်"
+msgstr ""
 
 #: ../data/unity.ui:314 ../data/unity.ui:315
 msgid ""
@@ -672,39 +672,39 @@ msgstr ""
 
 #: ../data/unity.ui:431
 msgid "Based on wallpaper"
-msgstr "Wallpaper တွင်အခြေခံမည်"
+msgstr ""
 
 #: ../data/unity.ui:436 ../data/unity.ui:437
 msgid "If selected, the launcher colour is based on the desktop background"
-msgstr "ရွေးခဲ့ပါက launcher ၏အရောင်သည် Desktop နောက်ခံပေါ်အခြေခံပါလိမ့်မည်"
+msgstr ""
 
 #: ../data/unity.ui:453
 msgid "Colour:"
-msgstr "အရောင်-"
+msgstr ""
 
 #: ../data/unity.ui:467
 msgid "Visibility:"
-msgstr "မြင်နိုင်မှု့-"
+msgstr ""
 
 #: ../data/unity.ui:481
 msgid "Custom:"
-msgstr "စိတ်ကြိုက်-"
+msgstr ""
 
 #: ../data/unity.ui:486 ../data/unity.ui:487
 msgid "If selected, the launcher will be the colour chosen by the user"
-msgstr "ရွေးခဲ့ပါက launcher ၏အရောင်ကို သုံးစွဲသူမှရွေးပါလိမ့်မည်"
+msgstr ""
 
 #: ../data/unity.ui:521
 msgid "All desktops"
-msgstr "Desktop များအားလုံး"
+msgstr ""
 
 #: ../data/unity.ui:526
 msgid "If selected, the launcher is visible on all desktops."
-msgstr "ရွေးခဲ့ပါက launcher ကို desktop များအားလုံးကမြင်နိုင်ပါလိမ့်မည်"
+msgstr ""
 
 #: ../data/unity.ui:527
 msgid "If selected, the launcher is visible on all desktops"
-msgstr "ရွေးခဲ့ပါက launcher ကို desktop များအားလုံးကမြင်နိုင်ပါလိမ့်မည်"
+msgstr ""
 
 #: ../data/unity.ui:541
 msgid "Primary desktop"
@@ -715,25 +715,22 @@ msgid "If selected, the launcher is visible on the primary desktop"
 msgstr ""
 
 #: ../data/unity.ui:559
-#, fuzzy
 msgid "Bottom"
-msgstr "အောက်ပိုင်းတစ်ဝက်"
+msgstr ""
 
 #: ../data/unity.ui:563
-#, fuzzy
 msgid ""
 "When selected, the launcher will be positioned on the bottom of the screen."
-msgstr "ရွေးခဲ့ပါက launcher ၏အရောင်ကို သုံးစွဲသူမှရွေးပါလိမ့်မည်"
+msgstr ""
 
 #: ../data/unity.ui:577
 msgid "Left"
-msgstr "ဘယ်ဖက်"
+msgstr ""
 
 #: ../data/unity.ui:581
-#, fuzzy
 msgid ""
 "When selected, the launcher will be positioned on the left of the screen."
-msgstr "ရွေးခဲ့ပါက launcher ၏အရောင်ကို သုံးစွဲသူမှရွေးပါလိမ့်မည်"
+msgstr ""
 
 #: ../data/unity.ui:597
 msgid "Position:"
@@ -781,15 +778,15 @@ msgstr ""
 
 #: ../data/unity.ui:728
 msgid "All applications"
-msgstr "application များအားလုံး"
+msgstr ""
 
 #: ../data/unity.ui:729
 msgid "Open applications only"
-msgstr "application များသာဖွင့်မည်"
+msgstr ""
 
 #: ../data/unity.ui:730
 msgid "No colouring"
-msgstr "အရောင်မရှိ"
+msgstr ""
 
 #: ../data/unity.ui:731
 msgid "Coloured edges"
@@ -809,7 +806,7 @@ msgstr ""
 
 #: ../data/unity.ui:787 ../data/unity.ui:788
 msgid "Select the size of the icons on the launcher"
-msgstr "launcher ပေါ်တွင်ရှိသော icon များ၏အရွယ်အစားကိုရွေးပါ"
+msgstr ""
 
 #: ../data/unity.ui:818 ../data/unity.ui:819
 msgid "Restore default Unity launcher settings."
@@ -857,15 +854,15 @@ msgstr ""
 
 #: ../data/unity.ui:1002
 msgid "Applications"
-msgstr "Applications"
+msgstr ""
 
 #: ../data/unity.ui:1022
 msgid "Show \"Recently Used\" applications"
-msgstr "မကြာသေးခင်ကသုံးခဲ့သော application များပြမည်"
+msgstr ""
 
 #: ../data/unity.ui:1026 ../data/unity.ui:1027
 msgid "If enabled, show recently used applications in the Dash."
-msgstr "ဖွင့်ထားခဲ့ပါက Dash ထဲတွင် မကြာသေးခင်ကသုံးခဲ့သော application များကိုပြပါလိမ့်မည်"
+msgstr ""
 
 #: ../data/unity.ui:1039
 msgid "Show \"More Suggestions\""
@@ -877,11 +874,11 @@ msgstr ""
 
 #: ../data/unity.ui:1067
 msgid "Files"
-msgstr "ဖိုင်များ"
+msgstr ""
 
 #: ../data/unity.ui:1080
 msgid "Enable search of your files"
-msgstr "သင်၏ဖိုင်များကိုရှာဖွေခွင့်ပြုမည်"
+msgstr ""
 
 #: ../data/unity.ui:1085
 msgid "If enabled, allow searches to find your files that aren&apos;t logged."
@@ -897,7 +894,7 @@ msgstr ""
 
 #: ../data/unity.ui:1117
 msgid "Clear History"
-msgstr "ယခင်သမိုင်းများကိုရှင်းမည်။"
+msgstr ""
 
 #: ../data/unity.ui:1121 ../data/unity.ui:1122
 msgid "Clear ALT+F2 command history."
@@ -919,7 +916,7 @@ msgstr ""
 
 #: ../data/unity.ui:1269
 msgid "seconds"
-msgstr "စက္ကန့်များ"
+msgstr ""
 
 #: ../data/unity.ui:1292 ../data/unity.ui:1293
 msgid "Set the level of transparency for the panel."
@@ -939,7 +936,7 @@ msgstr ""
 
 #: ../data/unity.ui:1381
 msgid "Date & time"
-msgstr "နေ့ရက်နှင့်အချိန်"
+msgstr ""
 
 #: ../data/unity.ui:1386
 msgid "If enabled, the date &amp; time indicator will be visible."
@@ -951,7 +948,7 @@ msgstr ""
 
 #: ../data/unity.ui:1409
 msgid "12-hour time"
-msgstr "၁၂-နာရီအချိန်"
+msgstr ""
 
 #: ../data/unity.ui:1414 ../data/unity.ui:1415
 msgid "Have the clock use 12-hour time."
@@ -959,7 +956,7 @@ msgstr ""
 
 #: ../data/unity.ui:1429
 msgid "24-hour time"
-msgstr "၂၄-နာရီအချိန်"
+msgstr ""
 
 #: ../data/unity.ui:1434 ../data/unity.ui:1435
 msgid "Have the clock use 24-hour time."
@@ -967,15 +964,15 @@ msgstr ""
 
 #: ../data/unity.ui:1447
 msgid "Seconds"
-msgstr "စက္ကန့်"
+msgstr ""
 
 #: ../data/unity.ui:1452 ../data/unity.ui:1453
 msgid "If enabled, the clock will display seconds."
-msgstr "ဖွင့်ထားပါက နာရီသည် စက္ကန့်ဖြင့်ပြပါလိမ့်မည်"
+msgstr ""
 
 #: ../data/unity.ui:1466
 msgid "Date"
-msgstr "ရက်စွဲ"
+msgstr ""
 
 #: ../data/unity.ui:1471 ../data/unity.ui:1472
 msgid "If enabled, the month and day will be visible in the panel."
@@ -991,11 +988,11 @@ msgstr ""
 
 #: ../data/unity.ui:1509
 msgid "Include:"
-msgstr "အပါအဝင်-"
+msgstr ""
 
 #: ../data/unity.ui:1518
 msgid "Calendar"
-msgstr "ပြက္ခဒိန်"
+msgstr ""
 
 #: ../data/unity.ui:1523 ../data/unity.ui:1524
 msgid "If enabled, the calendar will be visible in the indicator menu."
@@ -1011,7 +1008,7 @@ msgstr ""
 
 #: ../data/unity.ui:1591
 msgid "Power"
-msgstr "ပါဝါ"
+msgstr ""
 
 #: ../data/unity.ui:1595 ../data/unity.ui:1596
 msgid "If enabled, show the power menu in the panel."
@@ -1019,7 +1016,7 @@ msgstr ""
 
 #: ../data/unity.ui:1618
 msgid "Visible when charging or discharging"
-msgstr "အားသွင်းစဉ်နှင့် အားမသွင်းစဉ် မြင်နိုင်ခြင်း"
+msgstr ""
 
 #: ../data/unity.ui:1622 ../data/unity.ui:1623
 msgid ""
@@ -1028,7 +1025,7 @@ msgstr ""
 
 #: ../data/unity.ui:1635
 msgid "Always visible"
-msgstr "အမြဲတမ်းမြင်"
+msgstr ""
 
 #: ../data/unity.ui:1639 ../data/unity.ui:1640
 msgid "Set the power indicator to be always visible."
@@ -1036,7 +1033,7 @@ msgstr ""
 
 #: ../data/unity.ui:1653
 msgid "Display remaining battery life"
-msgstr "ကျန်ရှိနေသော ဘတ်ထရီ သက်တမ်းပြမည်"
+msgstr ""
 
 #: ../data/unity.ui:1658 ../data/unity.ui:1659
 msgid "If enabled, show the remaining battery life in the power indicator."
@@ -1044,7 +1041,7 @@ msgstr ""
 
 #: ../data/unity.ui:1689
 msgid "Volume"
-msgstr "အသံအတိုးအကျယ်"
+msgstr ""
 
 #: ../data/unity.ui:1693 ../data/unity.ui:1694
 msgid "If enabled, show the sound menu in the panel."
@@ -1070,7 +1067,7 @@ msgstr ""
 
 #: ../data/unity.ui:1770
 msgid "Show my name"
-msgstr "ကျွန်ုပ်၏အမည်ကိုပြမည်"
+msgstr ""
 
 #: ../data/unity.ui:1775
 msgid "If enabled, show the user&apos;s real name in the panel."
@@ -1134,7 +1131,7 @@ msgstr ""
 #: ../data/windowmanager.ui:266 ../data/windowmanager.ui:536
 #: ../data/windowmanager.ui:796 ../data/windowmanager.ui:1054
 msgid "Title"
-msgstr "ခေါင်းစဉ်"
+msgstr ""
 
 #: ../data/unity.ui:2005 ../data/unity.ui:2081 ../data/unity.ui:2418
 #: ../data/windowmanager.ui:279 ../data/windowmanager.ui:549
@@ -1168,7 +1165,7 @@ msgstr ""
 
 #: ../data/unity.ui:2228
 msgid "Amazon"
-msgstr "အမေဇုံ"
+msgstr ""
 
 #: ../data/unity.ui:2245
 msgid "Ubuntu One"
@@ -1180,11 +1177,11 @@ msgstr ""
 
 #: ../data/unity.ui:2316
 msgid "HUD"
-msgstr "HUD"
+msgstr ""
 
 #: ../data/unity.ui:2329
 msgid "Remember previous commands"
-msgstr "ယခင် command များကိုမှတ်မိစေမည်"
+msgstr ""
 
 #: ../data/unity.ui:2333 ../data/unity.ui:2334
 msgid ""
@@ -1194,7 +1191,7 @@ msgstr ""
 
 #: ../data/unity.ui:2352
 msgid "Keyboard Shortcuts"
-msgstr "ကီးဘုတ် အမြန်ခလုတ်များ"
+msgstr ""
 
 #: ../data/unity.ui:2365
 msgid "Hold Super for keyboard shortcuts"
@@ -1208,11 +1205,11 @@ msgstr ""
 
 #: ../data/unity.ui:2394 ../data/unity.ui:2395
 msgid "List of Unity keyboard shortcuts"
-msgstr "Unity ကီးဘုတ် အမြန်ခလုတ်များ စာရင်း"
+msgstr ""
 
 #: ../data/unity.ui:2446
 msgid "Notifications"
-msgstr "အသိပေးချက်"
+msgstr ""
 
 #: ../data/unity.ui:2465
 msgid "All displays"
@@ -1236,43 +1233,43 @@ msgstr ""
 
 #: ../data/windowmanager.ui:45
 msgid "Close window"
-msgstr "ဝင်းဒိုးပိတ်ပါ"
+msgstr ""
 
 #: ../data/windowmanager.ui:46
 msgid "Alt+F4"
-msgstr "Alt+F4"
+msgstr ""
 
 #: ../data/windowmanager.ui:49
 msgid "Move window"
-msgstr "window ကို ရွှေ့မည်"
+msgstr ""
 
 #: ../data/windowmanager.ui:50
 msgid "Alt+mouse button 1"
-msgstr "Alt+mouse ခလုတ် 1"
+msgstr ""
 
 #: ../data/windowmanager.ui:53
 msgid "Show desktop"
-msgstr "Desktop ကိုပြမည်"
+msgstr ""
 
 #: ../data/windowmanager.ui:54
 msgid "Super+D"
-msgstr "Super+D"
+msgstr ""
 
 #: ../data/windowmanager.ui:67
 msgid "Zoom in"
-msgstr "မြင်ကွင်း ချဲ့ရန်"
+msgstr ""
 
 #: ../data/windowmanager.ui:68
 msgid "Super++"
-msgstr "Super++"
+msgstr ""
 
 #: ../data/windowmanager.ui:71
 msgid "Zoom out"
-msgstr "မြင်ကွင်း ချုံ့ရန်"
+msgstr ""
 
 #: ../data/windowmanager.ui:72
 msgid "Super+-"
-msgstr "Super+-"
+msgstr ""
 
 #: ../data/windowmanager.ui:85
 msgid "Start windows spread"
@@ -1280,7 +1277,7 @@ msgstr ""
 
 #: ../data/windowmanager.ui:86
 msgid "Super+W"
-msgstr "Super+W"
+msgstr ""
 
 #: ../data/windowmanager.ui:89
 msgid "Start windows spread for all windows"
@@ -1292,7 +1289,7 @@ msgstr ""
 
 #: ../data/windowmanager.ui:104
 msgid "Super+S"
-msgstr "Super+S"
+msgstr ""
 
 #: ../data/windowmanager.ui:118
 msgid "Toggle Desktop"
@@ -1300,7 +1297,7 @@ msgstr ""
 
 #: ../data/windowmanager.ui:121
 msgid "Show Workspaces"
-msgstr "အလုပ်နေရာများကိုပြမည်"
+msgstr ""
 
 #: ../data/windowmanager.ui:124
 msgid "Window Spread"
@@ -1312,7 +1309,7 @@ msgstr ""
 
 #: ../data/windowmanager.ui:138
 msgid "Do Nothing"
-msgstr "ဘာမှမလုပ်"
+msgstr ""
 
 #: ../data/windowmanager.ui:141
 msgid "Bottom Left Corner"
@@ -1320,7 +1317,7 @@ msgstr ""
 
 #: ../data/windowmanager.ui:144
 msgid "Bottom Half"
-msgstr "အောက်ပိုင်းတစ်ဝက်"
+msgstr ""
 
 #: ../data/windowmanager.ui:147
 msgid "Bottom Right Corner"
@@ -1328,7 +1325,7 @@ msgstr ""
 
 #: ../data/windowmanager.ui:150
 msgid "Left Half"
-msgstr "ဘယ်ဖက်တစ်ဝက်"
+msgstr ""
 
 #: ../data/windowmanager.ui:153
 msgid "Fill Screen"
@@ -1336,28 +1333,28 @@ msgstr ""
 
 #: ../data/windowmanager.ui:156
 msgid "Right Half"
-msgstr "ညာဖက်တစ်ဝက်"
+msgstr ""
 
 #: ../data/windowmanager.ui:159
 msgid "Top Left Corner"
-msgstr "အပေါ်ဘယ်ဖက်ထောင့်"
+msgstr ""
 
 #: ../data/windowmanager.ui:162
 msgid "Top Half"
-msgstr "အပေါ်တစ်ဝက်"
+msgstr ""
 
 #: ../data/windowmanager.ui:165
 msgid "Top Right Corner"
-msgstr "အပေါ်ညာဖက်ထောင့်"
+msgstr ""
 
 #: ../data/windowmanager.ui:168 ../data/windowmanager.ui:2029
 #: ../data/windowmanager.ui:2064 ../data/windowmanager.ui:2101
 msgid "Maximize"
-msgstr "အကျယ်ချဲ့"
+msgstr ""
 
 #: ../data/windowmanager.ui:192
 msgid "Zoom"
-msgstr "ချုံ့/ချဲ့"
+msgstr ""
 
 #: ../data/windowmanager.ui:214 ../data/windowmanager.ui:215
 msgid "Enable desktop zoom?"
@@ -1365,7 +1362,7 @@ msgstr ""
 
 #: ../data/windowmanager.ui:230
 msgid "Desktop magnification:"
-msgstr "Desktop အကြီးချဲ့ခြင်း-"
+msgstr ""
 
 #: ../data/windowmanager.ui:255 ../data/windowmanager.ui:256
 msgid "List of keyboard shortcuts for zoom"
@@ -1385,15 +1382,15 @@ msgstr ""
 
 #: ../data/windowmanager.ui:347
 msgid "Fast"
-msgstr "မြန်"
+msgstr ""
 
 #: ../data/windowmanager.ui:348
 msgid "Good"
-msgstr "ကောင်းပါသည်။"
+msgstr ""
 
 #: ../data/windowmanager.ui:349
 msgid "Best"
-msgstr "အကောင်းဆုံး"
+msgstr ""
 
 #: ../data/windowmanager.ui:371
 msgid "Animations"
@@ -1401,7 +1398,7 @@ msgstr ""
 
 #: ../data/windowmanager.ui:396
 msgid "Minimize:"
-msgstr "ချုံ့"
+msgstr ""
 
 #: ../data/windowmanager.ui:432
 msgid "Unminimize:"
@@ -1429,7 +1426,7 @@ msgstr ""
 
 #: ../data/windowmanager.ui:655
 msgid "Workspace switcher:"
-msgstr "အလုပ်လုပ်သည့်နေရာပြောင်းခြင်း-"
+msgstr ""
 
 #: ../data/windowmanager.ui:668 ../data/windowmanager.ui:669
 msgid "Select the outline colour of the current workspace in the overview"
@@ -1437,7 +1434,7 @@ msgstr ""
 
 #: ../data/windowmanager.ui:671
 msgid "Current workspace colour:"
-msgstr "ယခုအလုပ်နေရာအရောင်-"
+msgstr ""
 
 #: ../data/windowmanager.ui:696 ../data/windowmanager.ui:697
 msgid "Select the number of vertical workspaces"
@@ -1485,7 +1482,7 @@ msgstr ""
 
 #: ../data/windowmanager.ui:951
 msgid "Spacing:"
-msgstr "ကြားအကွာအဝေး -"
+msgstr ""
 
 #: ../data/windowmanager.ui:974
 msgid "Icons on previews"
@@ -1499,7 +1496,7 @@ msgstr ""
 
 #: ../data/windowmanager.ui:992
 msgid "Click to access desktop"
-msgstr "Desktop သုံးရန်ကလစ်နှိပ်"
+msgstr ""
 
 #: ../data/windowmanager.ui:996 ../data/windowmanager.ui:997
 msgid ""
@@ -1529,11 +1526,11 @@ msgstr ""
 
 #: ../data/windowmanager.ui:1188 ../data/windowmanager.ui:2167
 msgid "Fill colour:"
-msgstr "ဖြည့်မည့်အရောင် -"
+msgstr ""
 
 #: ../data/windowmanager.ui:1201 ../data/windowmanager.ui:2154
 msgid "Outline colour:"
-msgstr "အနားသတ်အရောင်-"
+msgstr ""
 
 #: ../data/windowmanager.ui:1494
 msgid "Window snapping"
@@ -1573,7 +1570,7 @@ msgstr ""
 
 #: ../data/windowmanager.ui:1924
 msgid "Click"
-msgstr "ကလစ်"
+msgstr ""
 
 #: ../data/windowmanager.ui:1925
 msgid "Sloppy"
@@ -1581,16 +1578,15 @@ msgstr ""
 
 #: ../data/windowmanager.ui:1926
 msgid "Mouse"
-msgstr "မောက်(စ်)"
+msgstr ""
 
 #: ../data/windowmanager.ui:1940
 msgid "Auto-raise:"
 msgstr ""
 
 #: ../data/windowmanager.ui:1952
-#, fuzzy
 msgid "Raise on click:"
-msgstr "ညာဖက်ကလစ်-"
+msgstr ""
 
 #: ../data/windowmanager.ui:1963
 msgid "Whether raising should be a side-effect of other user interactions."
@@ -1625,26 +1621,26 @@ msgstr ""
 #: ../data/windowmanager.ui:2032 ../data/windowmanager.ui:2067
 #: ../data/windowmanager.ui:2104
 msgid "Minimize"
-msgstr "ချုံ့ထား"
+msgstr ""
 
 #: ../data/windowmanager.ui:2033 ../data/windowmanager.ui:2068
 #: ../data/windowmanager.ui:2105
 msgid "No action"
-msgstr "လုပ်ဆောင်မှု မရှိဘူး"
+msgstr ""
 
 #: ../data/windowmanager.ui:2034 ../data/windowmanager.ui:2069
 #: ../data/windowmanager.ui:2106
 msgid "Lower"
-msgstr "အနိမ့်ပိုင်း"
+msgstr ""
 
 #: ../data/windowmanager.ui:2035 ../data/windowmanager.ui:2070
 #: ../data/windowmanager.ui:2107
 msgid "Menu"
-msgstr "မီနူး"
+msgstr ""
 
 #: ../data/windowmanager.ui:2049
 msgid "Middle click:"
-msgstr "အလယ်ကလစ်-"
+msgstr ""
 
 #: ../data/windowmanager.ui:2060 ../data/windowmanager.ui:2061
 msgid "Select the titlebar's middle click action."
@@ -1656,7 +1652,7 @@ msgstr ""
 
 #: ../data/windowmanager.ui:2085
 msgid "Right click:"
-msgstr "ညာဖက်ကလစ်-"
+msgstr ""
 
 #: ../data/windowmanager.ui:2097 ../data/windowmanager.ui:2098
 msgid "Select the titlebar's right click action."
@@ -1664,23 +1660,8 @@ msgstr ""
 
 #: ../data/windowmanager.ui:2129
 msgid "Resizing"
-msgstr "အရွယ်ညှိခြင်း"
+msgstr ""
 
 #: ../data/windowmanager.ui:2211 ../data/windowmanager.ui:2212
 msgid "Restore the default settings for the additional options."
 msgstr ""
-
-#~ msgid "Do you wish to continue?"
-#~ msgstr "သင်ဆက်လုပ်ချင်ပါသလား။"
-
-#~ msgid "Please log out and log back in."
-#~ msgstr "ကျေးဇူးပြုပြီး ထွက်ပြီး ပြန်ဝင်ပေးပါ"
-
-#~ msgid "Right"
-#~ msgstr "ညာဖက်"
-
-#~ msgid "Show menu button"
-#~ msgstr "မီနူးခလုတ်ကိုပြမည်"
-
-#~ msgid "Restore Defaults"
-#~ msgstr "မူလအတိုင်းထားမည်"

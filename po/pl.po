@@ -6,259 +6,1624 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: unity-tweak-tool\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2013-10-06 00:16+0530\n"
-"PO-Revision-Date: 2013-12-09 21:18+0000\n"
-"Last-Translator: Stanisław Michalski <9stas.pl4@gmail.com>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-03-24 18:26-0700\n"
+"PO-Revision-Date: 2015-09-22 17:00+0000\n"
+"Last-Translator: Jakub Polok <chusallone1@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-07-23 17:52+0000\n"
-"X-Generator: Launchpad (build 17114)\n"
+"X-Launchpad-Export-Date: 2015-09-23 05:59+0000\n"
+"X-Generator: Launchpad (build 17749)\n"
 
-#: ../data/filechooser-theme.ui.h:1
-msgid "Choose a Theme file to install"
-msgstr "Wybierz pilk motywu do zainstalowania"
+#: ../data/about.ui:12
+msgid "Copyright © 2013 Freyja Development team"
+msgstr "Prawa autorskie © 2013 zespół Freyja Development"
 
-#: ../data/filechooser-theme.ui.h:2
-msgid "Install Theme"
-msgstr "Zainstaluj motyw"
+#: ../data/about.ui:13
+msgid ""
+"Unity Tweak Tool is a settings manager intended to be used with Ubuntu Unity."
+msgstr ""
+"Unity Tweak Tool jest menadżerem ustawień przeznaczonym do używania z Ubuntu "
+"Unity"
 
-#. FIXME : This is guaranteed to fail.
-#: ../data/windowmanager.ui.h:1
-msgid "Zoom"
-msgstr "Powiększenie"
+#: ../data/about.ui:15
+msgid "Unity Tweak Tool on Launchpad"
+msgstr "Unity Tweak Tool na Launchpadzie"
 
-#: ../data/windowmanager.ui.h:2
-msgid "Enable desktop zoom?"
-msgstr "Włączyć powiększenie pulpitu?"
+#: ../data/about.ui:16
+msgid "GPL3"
+msgstr "GPL3"
 
-#: ../data/windowmanager.ui.h:3
-msgid "Desktop magnification:"
-msgstr "Powiększenie pulpitu:"
+#: ../data/appearance.ui:32 ../data/appearance.ui:198
+#: ../data/appearance.ui:299
+msgid "Available themes"
+msgstr "Dostępne motywy"
 
-#: ../data/windowmanager.ui.h:4
-msgid "List of keyboard shortcuts for zoom"
-msgstr "Lista skrótów klawiszowych do powiększania"
+#: ../data/appearance.ui:67 ../data/appearance.ui:68
+msgid "List of GTK Themes"
+msgstr "Lista motywów GTK"
 
-#: ../data/windowmanager.ui.h:5 ../data/unity.ui.h:158
-msgid "Title"
-msgstr "Tytuł"
+#: ../data/appearance.ui:80
+msgid "GTK Theme"
+msgstr "Motyw GTK"
 
-#: ../data/windowmanager.ui.h:6 ../data/unity.ui.h:159
-msgid "Accelerator"
-msgstr "Przyspieszacz"
+#: ../data/appearance.ui:112 ../data/appearance.ui:113
+msgid "List of Window decoration themes"
+msgstr "Lista motywów dekoracyjnych okien"
 
-#: ../data/windowmanager.ui.h:7
-msgid "Hardware acceleration"
-msgstr "Przyspieszanie sprzętowe"
+#: ../data/appearance.ui:123
+msgid "Window decoration theme"
+msgstr "Motyw dekoracyjny okna"
 
-#: ../data/windowmanager.ui.h:8
-msgid "Select the level of texture rendering done by OpenGL"
-msgstr "Wybierz poziom renderowanie tekstur przez OpenGL"
-
-#: ../data/windowmanager.ui.h:9
-msgid "Texture quality: "
-msgstr "Jakość tekstur: "
-
-#: ../data/windowmanager.ui.h:10
-msgid "Fast"
-msgstr "Szybkie"
-
-#: ../data/windowmanager.ui.h:11
-msgid "Good"
-msgstr "Dobre"
-
-#: ../data/windowmanager.ui.h:12
-msgid "Best"
-msgstr "Najlepsze"
-
-#: ../data/windowmanager.ui.h:13
-msgid "Animations"
-msgstr "Animacje"
-
-#: ../data/windowmanager.ui.h:14
-msgid "Minimize:"
-msgstr "Minimalizacja:"
-
-#: ../data/windowmanager.ui.h:15
-msgid "Unminimize:"
-msgstr "Maksymalizacja"
-
-#: ../data/windowmanager.ui.h:16
-msgid "Window Animations:"
-msgstr "Animacja Okien"
-
-#: ../data/windowmanager.ui.h:17
-msgid "Keyboard shortcuts"
-msgstr "Skróty klawiszowe"
-
-#: ../data/windowmanager.ui.h:18
-msgid "List of window manager keyboard shortcuts"
-msgstr "Lista skrótów klawiszowych menedżera okien"
-
-#: ../data/windowmanager.ui.h:19 ../data/system.ui.h:8 ../data/unity.ui.h:75
-#: ../data/appearance.ui.h:6
+#: ../data/appearance.ui:154 ../data/appearance.ui:251
+#: ../data/appearance.ui:386 ../data/appearance.ui:765 ../data/system.ui:259
+#: ../data/system.ui:406 ../data/system.ui:657 ../data/unity.ui:814
+#: ../data/unity.ui:1135 ../data/unity.ui:1805 ../data/unity.ui:2105
+#: ../data/unity.ui:2269 ../data/unity.ui:2507 ../data/windowmanager.ui:573
+#: ../data/windowmanager.ui:833 ../data/windowmanager.ui:1091
+#: ../data/windowmanager.ui:1469 ../data/windowmanager.ui:1793
+#: ../data/windowmanager.ui:2207
 msgid "Restore defaults"
 msgstr "Przywróć domyślne ustawienia"
 
-#: ../data/windowmanager.ui.h:20
-msgid "Restore default window manager settings"
-msgstr "Przywróć domyślne ustawienia menedżera okien"
+#: ../data/appearance.ui:158 ../data/appearance.ui:159
+msgid "Restore system's default theme configurations"
+msgstr "Przywróć domyślne ustawienia motywów"
 
-#: ../data/windowmanager.ui.h:21 ../data/unitytweak.ui.h:11
-#: ../data/unity.ui.h:78 ../data/overview.ui.h:9 ../data/appearance.ui.h:20
+#: ../data/appearance.ui:179 ../data/overview.ui:850 ../data/unitytweak.ui:215
+msgid "Theme"
+msgstr "Styl"
+
+#: ../data/appearance.ui:220 ../data/appearance.ui:221
+msgid "List of icon themes"
+msgstr "LIsta motywów ikon"
+
+#: ../data/appearance.ui:231
+msgid "Icon theme"
+msgstr "Motyw ikon"
+
+#: ../data/appearance.ui:255 ../data/appearance.ui:256
+msgid "Restore system's default icon theme configurations"
+msgstr "Przywróć domyślne ustawienia motywów ikon"
+
+#: ../data/appearance.ui:279 ../data/overview.ui:901 ../data/unitytweak.ui:224
+#: ../data/unity.ui:621
+msgid "Icons"
+msgstr "Ikony"
+
+#: ../data/appearance.ui:321 ../data/appearance.ui:322
+msgid "List of cursor themes"
+msgstr "LIsta motywów kursora"
+
+#: ../data/appearance.ui:330
+msgid "Cursor Theme"
+msgstr "Motyw kursorów"
+
+#: ../data/appearance.ui:354
+msgid "Preferences"
+msgstr "Ustawienia"
+
+#: ../data/appearance.ui:367
+msgid "Use large cursors"
+msgstr "Używaj dużego kursora"
+
+#: ../data/appearance.ui:371 ../data/appearance.ui:372
+msgid "If enabled, the system will use a larger cursor."
+msgstr "Gdy zaznaczone, system będzie używał dużego kursora"
+
+#: ../data/appearance.ui:390 ../data/appearance.ui:391
+msgid "Restore system's default cursor theme configurations"
+msgstr "Przywróć domyślne ustawienia motywów kursora"
+
+#: ../data/appearance.ui:414 ../data/unitytweak.ui:233
+msgid "Cursor"
+msgstr "Kursor"
+
+#: ../data/appearance.ui:434 ../data/overview.ui:474 ../data/unitytweak.ui:146
+#: ../data/unity.ui:857 ../data/unity.ui:1183 ../data/unity.ui:1852
+#: ../data/unity.ui:2150 ../data/windowmanager.ui:597
+#: ../data/windowmanager.ui:616 ../data/windowmanager.ui:881
+#: ../data/windowmanager.ui:1138 ../data/windowmanager.ui:1514
 msgid "General"
 msgstr "Ogólne"
 
-#: ../data/windowmanager.ui.h:22
+#: ../data/appearance.ui:456 ../data/appearance.ui:457
+#: ../data/appearance.ui:491 ../data/appearance.ui:492
+msgid "Select the default font for all applications."
+msgstr "Wybierz domyślną czcionkę dla wszystkich aplikacji"
+
+#: ../data/appearance.ui:459
+msgid "Default font:"
+msgstr "Domyślna czcionka:"
+
+#: ../data/appearance.ui:474 ../data/appearance.ui:475
+#: ../data/appearance.ui:511 ../data/appearance.ui:512
+msgid "Select the default font used for reading documents."
+msgstr "Wybierz domyślną czcionkę używaną do czytania dokumentów"
+
+#: ../data/appearance.ui:477
+msgid "Document font:"
+msgstr "Czcionka dokumentów:"
+
+#: ../data/appearance.ui:530 ../data/appearance.ui:531
+#: ../data/appearance.ui:565 ../data/appearance.ui:566
+msgid "Select the default monospace font."
+msgstr "Wybierz domyśną czcionkę o stałej szerokości znaków"
+
+#: ../data/appearance.ui:533
+msgid "Monospace font:"
+msgstr "Czcionka stałej szerokości znaków:"
+
+#: ../data/appearance.ui:548 ../data/appearance.ui:549
+#: ../data/appearance.ui:585 ../data/appearance.ui:586
+msgid "Select the default font for the window titlebar."
+msgstr "Wybierz domyślną czcionkę dla paska tytułu"
+
+#: ../data/appearance.ui:551
+msgid "Window title font:"
+msgstr "Czcionka paska tytułu:"
+
+#: ../data/appearance.ui:613 ../data/overview.ui:793 ../data/unitytweak.ui:202
+#: ../data/unity.ui:364
+msgid "Appearance"
+msgstr "Wygląd"
+
+#: ../data/appearance.ui:636 ../data/appearance.ui:637
+#: ../data/appearance.ui:654 ../data/appearance.ui:655
+msgid "Select the type of antialiasing used to render fonts."
+msgstr "Wybierz typ wygładzania krawędzi do renderowania czcionki"
+
+#: ../data/appearance.ui:640
+msgid "Antialiasing:"
+msgstr "Wygładzanie krawędzi:"
+
+#: ../data/appearance.ui:659 ../data/appearance.ui:681
+msgid "None"
+msgstr "Brak"
+
+#: ../data/appearance.ui:660
+msgid "Grayscale"
+msgstr "Odcienie szarości"
+
+#: ../data/appearance.ui:661
+msgid "RGBA"
+msgstr "RGBA"
+
+#: ../data/appearance.ui:676 ../data/appearance.ui:677
+#: ../data/appearance.ui:700 ../data/appearance.ui:701
+msgid "Select the type of hinting to use when rendering fonts"
+msgstr "Wybierz typ przyciągania krawędzi używany do renderowania czcionek"
+
+#: ../data/appearance.ui:682
+msgid "Slight"
+msgstr "Lekki"
+
+#: ../data/appearance.ui:683
+msgid "Medium"
+msgstr "Średni"
+
+#: ../data/appearance.ui:684
+msgid "Full"
+msgstr "Pełny"
+
+#: ../data/appearance.ui:703
+msgid "Hinting:"
+msgstr "Przyciąganie do siatki:"
+
+#: ../data/appearance.ui:718 ../data/appearance.ui:719
+#: ../data/appearance.ui:735 ../data/appearance.ui:736
+msgid ""
+"Select the factor used to enlarge or reduce text display, without changing "
+"font size."
+msgstr ""
+"Wybierz współczynnik używany, aby powiększyć lub zmniejszyć rozmiar "
+"wyświetlanego tekstu, bez zmiany rozmiaru czcionki."
+
+#: ../data/appearance.ui:721
+msgid "Text scaling factor:"
+msgstr "Współczynnik skalowania tekstu:"
+
+#: ../data/appearance.ui:769 ../data/appearance.ui:770
+msgid "Restore system's default font configurations"
+msgstr "Przywróć domyślne ustawienia czcionek"
+
+#: ../data/appearance.ui:792 ../data/overview.ui:1003
+#: ../data/unitytweak.ui:242
+msgid "Fonts"
+msgstr "Czcionki"
+
+#: ../data/errordialog.ui:8
+msgid "Schemas missing"
+msgstr "Zagubione schematy"
+
+#: ../data/errordialog.ui:15
+msgid "The following schema is missing"
+msgstr "Ten schemat jest zagubiony"
+
+#: ../data/filechooser-theme.ui:17
+msgid "Choose a Theme file to install"
+msgstr "Wybierz pilk motywu do zainstalowania"
+
+#: ../data/filechooser-theme.ui:51
+msgid "Install Theme"
+msgstr "Zainstaluj motyw"
+
+#: ../data/overview.ui:40 ../data/unitytweak.ui:64
+msgid "Unity"
+msgstr "Unity"
+
+#: ../data/overview.ui:99 ../data/unitytweak.ui:77 ../data/unity.ui:838
+msgid "Launcher"
+msgstr "Panel uruchamiania"
+
+#: ../data/overview.ui:152 ../data/unitytweak.ui:86 ../data/unity.ui:1163
+msgid "Search"
+msgstr "Szukaj"
+
+#: ../data/overview.ui:203 ../data/unitytweak.ui:95 ../data/unity.ui:1833
+msgid "Panel"
+msgstr "Panel"
+
+#: ../data/overview.ui:254 ../data/unitytweak.ui:104 ../data/unity.ui:2131
+msgid "Switcher"
+msgstr "Przełącznik"
+
+#: ../data/overview.ui:305 ../data/unitytweak.ui:113 ../data/unity.ui:2296
+msgid "Web Apps"
+msgstr "Aplikacje internetowe"
+
+#: ../data/overview.ui:356 ../data/overview.ui:732 ../data/unitytweak.ui:122
+#: ../data/unitytweak.ui:191 ../data/unity.ui:2533
+#: ../data/windowmanager.ui:2233
+msgid "Additional"
+msgstr "Dodatkowe"
+
+#: ../data/overview.ui:417 ../data/unitytweak.ui:133
+msgid "Window Manager"
+msgstr "Menedżer okien"
+
+#: ../data/overview.ui:525
+msgid ""
+"Workspace\n"
+"Settings"
+msgstr ""
+"Obszar roboczy\n"
+"Ustawienia"
+
+#: ../data/overview.ui:577
+msgid ""
+"Window\n"
+"Spread"
+msgstr ""
+"Okno\n"
+"Rozproszenie"
+
+#: ../data/overview.ui:629
+msgid ""
+"Window\n"
+"Snapping"
+msgstr ""
+"Okno\n"
+"Przyciąganie"
+
+#: ../data/overview.ui:681 ../data/unitytweak.ui:182
+#: ../data/windowmanager.ui:1818
+msgid "Hotcorners"
+msgstr "Aktywne narożniki"
+
+#: ../data/overview.ui:952
+msgid "Cursors"
+msgstr "Kursory"
+
+#: ../data/overview.ui:1067 ../data/unitytweak.ui:253
+msgid "System"
+msgstr "System"
+
+#: ../data/overview.ui:1124
+msgid ""
+"Desktop\n"
+"Icons"
+msgstr ""
+"Pulpit\n"
+"Ikony"
+
+#: ../data/overview.ui:1176 ../data/system.ui:434 ../data/unitytweak.ui:275
+msgid "Security"
+msgstr "Bezpieczeństwo"
+
+#: ../data/overview.ui:1227 ../data/system.ui:682 ../data/unitytweak.ui:284
+msgid "Scrolling"
+msgstr "Przewijanie"
+
+#: ../data/system.ui:31
+msgid "Items to display:"
+msgstr "Rzeczy do wyświetlenia:"
+
+#: ../data/system.ui:52 ../data/system.ui:53 ../data/system.ui:80
+msgid "Home Folder"
+msgstr "Katalog domowy"
+
+#: ../data/system.ui:103 ../data/system.ui:104 ../data/system.ui:131
+msgid "Network"
+msgstr "Sieć"
+
+#: ../data/system.ui:154 ../data/system.ui:155
+msgid "Rubbish Bin"
+msgstr "Kosz"
+
+#: ../data/system.ui:182
+msgid "Trash"
+msgstr "Kosz"
+
+#: ../data/system.ui:205 ../data/system.ui:206
+msgid "Mounted Devices"
+msgstr "Zamontowane urządzenia"
+
+#: ../data/system.ui:233
+msgid "Devices"
+msgstr "Urządzenia"
+
+#: ../data/system.ui:264 ../data/system.ui:265
+msgid "Restore the default configurations for Desktop icons"
+msgstr "Przywróć domyślne ustawienia konfiguracji dla ikon pulpitu"
+
+#: ../data/system.ui:284 ../data/unitytweak.ui:266
+msgid "Desktop Icons"
+msgstr "Ikony pulpitu"
+
+#: ../data/system.ui:303
+msgid "Enhance system security by disabling:"
+msgstr "Podwyższ bezpieczeństwo systemu przez wyłączenie:"
+
+#: ../data/system.ui:319
+msgid "Desktop lock"
+msgstr "Blokada pulpitu"
+
+#: ../data/system.ui:324 ../data/system.ui:325
+msgid "Disable the desktop lock screen."
+msgstr "Wyłącz ekran blokady pulpitu."
+
+#: ../data/system.ui:339
+msgid "User log out"
+msgstr "Wylogowanie użytkownika"
+
+#: ../data/system.ui:344 ../data/system.ui:345
+msgid "Disable session log out."
+msgstr "Wyłącz wylogowywanie sesji"
+
+#: ../data/system.ui:359
+msgid "User switching"
+msgstr "Przełączanie użytkowników"
+
+#: ../data/system.ui:364 ../data/system.ui:365
+msgid "Disable fast user switching."
+msgstr "Wyłącz szybkie przełączanie użytkowników"
+
+#: ../data/system.ui:379
+msgid "Printing"
+msgstr "Drukowanie"
+
+#: ../data/system.ui:384 ../data/system.ui:385
+msgid "Prevent user access to the system's printers and print setup."
+msgstr "Nie pozwól użytkownikom na dostęp do systemowych ustawień drukowania."
+
+#: ../data/system.ui:411 ../data/system.ui:412
+msgid "Restore the default configurations for Security settings"
+msgstr "Przywróć domyślną konfigurację ustawień bezpieczeństwa"
+
+#: ../data/system.ui:454
+msgid "Scrollbars"
+msgstr "Paski przewijania"
+
+#: ../data/system.ui:472
+msgid "Legacy"
+msgstr "Starsze wersje"
+
+#: ../data/system.ui:491
+msgid "Overlay "
+msgstr "Pokrycie "
+
+#: ../data/system.ui:518 ../data/system.ui:519
+msgid "Select the behaviour of the overlay scrollbars."
+msgstr "Wybierz zachowanie pokrycia pasków przwijania."
+
+#: ../data/system.ui:524
+msgid "Default"
+msgstr "Domyślny"
+
+#: ../data/system.ui:525
+msgid "Overlay with mouse"
+msgstr "Pokrywaj z myszą"
+
+#: ../data/system.ui:526
+msgid "No overlay"
+msgstr "Bez pokrycia"
+
+#: ../data/system.ui:544
+msgid "Behaviour:"
+msgstr "Zachowanie:"
+
+#: ../data/system.ui:574
+msgid "Touch scrolling"
+msgstr "Dotykowe przewijanie"
+
+#: ../data/system.ui:592
+msgid "Edge"
+msgstr "Krawędź"
+
+#: ../data/system.ui:596 ../data/system.ui:597
+msgid "If enabled, edge scrolling is active on touchpads."
+msgstr ""
+"Gdy włączone, krawędziowe przewijane jest aktywne na panelach dotykowych."
+
+#: ../data/system.ui:612
+msgid "Two-finger"
+msgstr "Dwa-palce"
+
+#: ../data/system.ui:616 ../data/system.ui:617
+msgid "If enabled, two-finger scrolling is active on multitouch touchpads."
+msgstr ""
+"Gdy włączone, dwupalcowe przewijanie jest aktywne na panelach dotykowych z "
+"multitouch."
+
+#: ../data/system.ui:632
+msgid "Horizontal scrolling"
+msgstr "Przewijanie poziome"
+
+#: ../data/unitytweak.ui:41
+msgid "Unity Tweak Tool"
+msgstr "Unity Tweak Tool"
+
+#: ../data/unitytweak.ui:56
+msgid "_File"
+msgstr "_Plik"
+
+#: ../data/unitytweak.ui:155
+msgid "Workspace settings"
+msgstr "Ustawienia  obszarów roboczych"
+
+#: ../data/unitytweak.ui:164
+msgid "Windows spread"
+msgstr "Rozproszenie okien"
+
+#: ../data/unitytweak.ui:173
+msgid "Windows snapping"
+msgstr "Przyciąganie okien"
+
+#: ../data/unitytweak.ui:317
+msgid "_Help"
+msgstr "_Pomoc"
+
+#: ../data/unitytweak.ui:360
+msgid " Overview"
+msgstr " Przegląd"
+
+#: ../data/unity.ui:42
+msgid "Invoke HUD"
+msgstr "Włącz HUD"
+
+#: ../data/unity.ui:43
+msgid "Super+H"
+msgstr "Super+H"
+
+#: ../data/unity.ui:46
+msgid "Show the launcher"
+msgstr "Pokaż panel uruchamiania"
+
+#: ../data/unity.ui:47
+msgid "Super+E"
+msgstr "Super+E"
+
+#: ../data/unity.ui:50
+msgid "Execute command"
+msgstr "Wykonaj polecenie"
+
+#: ../data/unity.ui:51
+msgid "Super+M"
+msgstr "Super+M"
+
+#: ../data/unity.ui:54
+msgid "Put keyboard focus on the launcher"
+msgstr "Skup klawiaturę na panelu uruchamiania"
+
+#: ../data/unity.ui:55
+msgid "Super+A"
+msgstr "Super+A"
+
+#: ../data/unity.ui:58
+msgid "Open the first panel menu"
+msgstr "Otwórz pierwsze menu panelu"
+
+#: ../data/unity.ui:59
+msgid "Super+N"
+msgstr "Super+N"
+
+#: ../data/unity.ui:72 ../data/unity.ui:90
+msgid "Start switcher"
+msgstr "Uruchom przełącznik okien"
+
+#: ../data/unity.ui:73
+msgid "Super+Tab"
+msgstr "Super+Tab"
+
+#: ../data/unity.ui:76 ../data/unity.ui:94
+msgid "Start switcher in reverse"
+msgstr "Uruchom przełącznik okien w odwrotnej kolejności"
+
+#: ../data/unity.ui:77
+msgid "Shift+Super+Tab"
+msgstr "Shift+Super+Tab"
+
+#: ../data/unity.ui:91
+msgid "Alt+Tab"
+msgstr "Alt+Tab"
+
+#: ../data/unity.ui:95
+msgid "Shift+Alt+Tab"
+msgstr "Shift+Alt+Tab"
+
+#: ../data/unity.ui:98
+msgid "Start switcher for all workspaces"
+msgstr "Uruchom przełącznik okien na wszystkich obszarach roboczych"
+
+#: ../data/unity.ui:99
+msgid "Ctrl+Super+Alt+Tab"
+msgstr "Ctrl+Super+Alt+Tab"
+
+#: ../data/unity.ui:102
+msgid "Start switcher for all workspaces in reverse"
+msgstr ""
+"Uruchom przełącznik na wszystkich obszarach roboczych w odwrotnej kolejności"
+
+#: ../data/unity.ui:103
+msgid "Shift+Ctrl+Super+Alt+Tab"
+msgstr "Shift+Ctrl+Super+Alt+Tab"
+
+#: ../data/unity.ui:106
+msgid "Flip through windows in the switcher"
+msgstr "Przerzuć  okna na przełącznik"
+
+#: ../data/unity.ui:107 ../data/unity.ui:111 ../data/windowmanager.ui:90
+#: ../data/windowmanager.ui:115
+msgid "Disabled"
+msgstr "Wyłączony"
+
+#: ../data/unity.ui:110
+msgid "Flip through windows in the switcher backwards"
+msgstr "Przerzuć  okna na przełącznik od tyłu"
+
+#: ../data/unity.ui:135 ../data/windowmanager.ui:1247
+#: ../data/windowmanager.ui:1571
+msgid "Behaviour"
+msgstr "Zachowanie"
+
+#: ../data/unity.ui:159 ../data/unity.ui:160
+msgid "Should the launcher be hidden?"
+msgstr "Czy przełącznik okien ma być schowany?"
+
+#: ../data/unity.ui:175
+msgid "Auto-hide:"
+msgstr "Auto-ukrycie:"
+
+#: ../data/unity.ui:187 ../data/unity.ui:188
+msgid "Select the auto-hide animation of the launcher."
+msgstr "Wybierz animacje auto-ukrycia przełącznika okien."
+
+#: ../data/unity.ui:190
+msgid "Fade Dash and slide"
+msgstr "Przyciemnij kreskę i przesuń"
+
+#: ../data/unity.ui:191
+msgid "Slide only"
+msgstr "Tylko przesuń"
+
+#: ../data/unity.ui:192
+msgid "Fade only"
+msgstr "Tylko przyciemnij"
+
+#: ../data/unity.ui:193
+msgid "Fade and slide"
+msgstr "Przyciemnij i przesuń"
+
+#: ../data/unity.ui:208
+msgid "Auto-hide animation:"
+msgstr "Animacja auto-ukrycia:"
+
+#: ../data/unity.ui:237
+msgid ""
+"Select the option to reveal the dash with the mouse, when auto-hide is "
+"enabled."
+msgstr ""
+"Wybierz jak pokazywać panel główny myszką, gdy auto-ukrywanie jest włączone"
+
+#: ../data/unity.ui:238
+msgid "Reveal location:"
+msgstr "Położenie obszaru przywoływania:"
+
+#: ../data/unity.ui:253
+msgid "Reveal sensitivity:"
+msgstr "Wrażliwość obszaru przywoływania:"
+
+#: ../data/unity.ui:268 ../data/unity.ui:269
+msgid "How much pointer \"pressure\" is required to reveal the launcher."
+msgstr ""
+"Ile \"ciśnienia\" kursora jest wymagane aby pokazać panel uruchamiania."
+
+#: ../data/unity.ui:287
+msgid "Left side"
+msgstr "Lewa krawędź"
+
+#: ../data/unity.ui:293 ../data/unity.ui:294
+msgid ""
+"When in auto-hide mode the left edge of the current workspace triggers the "
+"launcher."
+msgstr ""
+"W trybie auto-ukrywania, lewa krawędź ekranu wyzwala panel uruchamiania."
+
+#: ../data/unity.ui:308
+msgid "Top left corner"
+msgstr "Lewy górny róg"
+
+#: ../data/unity.ui:314 ../data/unity.ui:315
+msgid ""
+"When in auto-hide mode the top left corner of the current workspace triggers "
+"the launcher."
+msgstr ""
+"W trybie auto-ukrywania, lewy, górny róg obszaru roboczego wyzwala panel "
+"uruchamiania."
+
+#: ../data/unity.ui:341
+msgid "Minimize single window applications on click"
+msgstr "Minimalizuj okno aplikacji kliknięciem"
+
+#: ../data/unity.ui:387 ../data/unity.ui:388
+msgid "Select the level of the transparency of the launcher"
+msgstr "Wybierz poziom przezroczystości panelu uruchamiania"
+
+#: ../data/unity.ui:389 ../data/unity.ui:1220
+msgid "Transparency level:"
+msgstr "Poziom przezroczystości:"
+
+#: ../data/unity.ui:403 ../data/unity.ui:404
+msgid "How transparent the launcher will be."
+msgstr "Jak bardzo przezroczysty ma być panel uruchamiania."
+
+#: ../data/unity.ui:431
+msgid "Based on wallpaper"
+msgstr "Oparte na tapecie"
+
+#: ../data/unity.ui:436 ../data/unity.ui:437
+msgid "If selected, the launcher colour is based on the desktop background"
+msgstr ""
+"Jeśli wybrany, kolor panelu uruchamiania będzie oparty na kolorze tapety"
+
+#: ../data/unity.ui:453
+msgid "Colour:"
+msgstr "Kolor:"
+
+#: ../data/unity.ui:467
+msgid "Visibility:"
+msgstr "Widoczność:"
+
+#: ../data/unity.ui:481
+msgid "Custom:"
+msgstr "Własny:"
+
+#: ../data/unity.ui:486 ../data/unity.ui:487
+msgid "If selected, the launcher will be the colour chosen by the user"
+msgstr ""
+"Jeśli zaznaczone, panel uruchamiania będzie w kolorze wybieranym przez "
+"użytkownika"
+
+#: ../data/unity.ui:521
+msgid "All desktops"
+msgstr "Wszystkie pulpity"
+
+#: ../data/unity.ui:526
+msgid "If selected, the launcher is visible on all desktops."
+msgstr ""
+"Jeśli wybrane, panel uruchamiania będzie widoczny na wszystkich pulpitach."
+
+#: ../data/unity.ui:527
+msgid "If selected, the launcher is visible on all desktops"
+msgstr ""
+"Jeśli wybrane, panel uruchamiania będzie widoczny na wszystkich pulpitach"
+
+#: ../data/unity.ui:541
+msgid "Primary desktop"
+msgstr "Główny pulpit"
+
+#: ../data/unity.ui:546 ../data/unity.ui:547
+msgid "If selected, the launcher is visible on the primary desktop"
+msgstr ""
+"Jeśli wybrane, panel uruchamiania będzie widoczny tylko na głównym pulpicie"
+
+#: ../data/unity.ui:559
+#, fuzzy
+msgid "Bottom"
+msgstr "Dolna połowa"
+
+#: ../data/unity.ui:563
+#, fuzzy
+msgid ""
+"When selected, the launcher will be positioned on the bottom of the screen."
+msgstr ""
+"Jeśli zaznaczone, panel uruchamiania będzie w kolorze wybieranym przez "
+"użytkownika"
+
+#: ../data/unity.ui:577
+msgid "Left"
+msgstr "Lewo"
+
+#: ../data/unity.ui:581
+#, fuzzy
+msgid ""
+"When selected, the launcher will be positioned on the left of the screen."
+msgstr ""
+"Jeśli zaznaczone, panel uruchamiania będzie w kolorze wybieranym przez "
+"użytkownika"
+
+#: ../data/unity.ui:597
+msgid "Position:"
+msgstr ""
+
+#: ../data/unity.ui:645
+msgid "Icon size:"
+msgstr "Rozmiar ikony:"
+
+#: ../data/unity.ui:659 ../data/unity.ui:660
+msgid "Select the animation used for launching an application."
+msgstr "Wybierz animacje używaną przy uruchomianiu aplikacji."
+
+#: ../data/unity.ui:662 ../data/unity.ui:682
+msgid "No animation"
+msgstr "Bez animacji"
+
+#: ../data/unity.ui:663 ../data/unity.ui:683
+msgid "Pulse"
+msgstr "Pulsowanie"
+
+#: ../data/unity.ui:664
+msgid "Blink"
+msgstr "Migotanie"
+
+#: ../data/unity.ui:679 ../data/unity.ui:680
+msgid "Select the animation used for an urgent notification on the launcher"
+msgstr ""
+"Wybierz animację używaną dla ważnych powiadomień na panelu uruchamiania"
+
+#: ../data/unity.ui:684
+msgid "Wiggle"
+msgstr "Drganie"
+
+#: ../data/unity.ui:699
+msgid "Launch animation:"
+msgstr "Animacja uruchomienia:"
+
+#: ../data/unity.ui:712
+msgid "Urgent animation:"
+msgstr "Ważna animacja:"
+
+#: ../data/unity.ui:724 ../data/unity.ui:725
+msgid "Select how the icons are coloured on the launcher"
+msgstr "Wybierz jak aplikacje są kolorowane na panelu uruchamiania"
+
+#: ../data/unity.ui:728
+msgid "All applications"
+msgstr "Wszystkie aplikacje"
+
+#: ../data/unity.ui:729
+msgid "Open applications only"
+msgstr "Tylko otwarte aplikacje"
+
+#: ../data/unity.ui:730
+msgid "No colouring"
+msgstr "Bez kolorowania"
+
+#: ../data/unity.ui:731
+msgid "Coloured edges"
+msgstr "Kolorowane krawędzie"
+
+#: ../data/unity.ui:732
+msgid "Alternated for each workspace"
+msgstr "Inne na każdym obszarze roboczym"
+
+#: ../data/unity.ui:747
+msgid "Icon backgrounds:"
+msgstr "Tło ikon:"
+
+#: ../data/unity.ui:774
+msgid "\"Show Desktop\" icon:"
+msgstr "Ikona \"Pulpit\":"
+
+#: ../data/unity.ui:787 ../data/unity.ui:788
+msgid "Select the size of the icons on the launcher"
+msgstr "Wybierz rozmiar ikon na panelu uruchamiania"
+
+#: ../data/unity.ui:818 ../data/unity.ui:819
+msgid "Restore default Unity launcher settings."
+msgstr "Przywróć domyślne ustawienia panelu uruchamiania Unity"
+
+#: ../data/unity.ui:882
+msgid "Background blur:"
+msgstr "Rozmycie tła:"
+
+#: ../data/unity.ui:895 ../data/unity.ui:896
+msgid "Enable dash blur?"
+msgstr "Czy włączyć rozmycie panelu głównego?"
+
+#: ../data/unity.ui:910 ../data/unity.ui:911
+msgid "Select the type of blur in the dash"
+msgstr "Wybierz typ rozmycia panelu głównego"
+
+#: ../data/unity.ui:913
+msgid "Blur type:"
+msgstr "Typ rozmycia:"
+
+#: ../data/unity.ui:928
+msgid "Active"
+msgstr "Aktywne"
+
+#: ../data/unity.ui:933 ../data/unity.ui:934
+msgid "Use a dynamic blur in the dash."
+msgstr "Użyj dynamicznego rozmycia w panelu głównym."
+
+#: ../data/unity.ui:947
+msgid "Static"
+msgstr "Statyczne"
+
+#: ../data/unity.ui:952 ../data/unity.ui:953
+msgid "Use a static blur in the dash, uses less resources."
+msgstr ""
+"Użyj statycznego rozmycia w panelu głównym, używa mniej zasobów systemowych."
+
+#: ../data/unity.ui:979
+msgid "Search online sources"
+msgstr "Wyszukuje w internetowych źródłach"
+
+#: ../data/unity.ui:983 ../data/unity.ui:984
+msgid "If enabled, the dash will get suggestions from online sources."
+msgstr ""
+"Gdy zaznaczone, panel główny będzie pobierał sugestje ze źródeł internetowych"
+
+#: ../data/unity.ui:1002
+msgid "Applications"
+msgstr "Aplikacje"
+
+#: ../data/unity.ui:1022
+msgid "Show \"Recently Used\" applications"
+msgstr "Pokaż \"Ostatnio Używane\" aplikacje"
+
+#: ../data/unity.ui:1026 ../data/unity.ui:1027
+msgid "If enabled, show recently used applications in the Dash."
+msgstr "Gdy zaznaczone, pokazuje ostatnio używane aplikacje w panelu głównym"
+
+#: ../data/unity.ui:1039
+msgid "Show \"More Suggestions\""
+msgstr "Pokaż \"Więcej Sugestii\""
+
+#: ../data/unity.ui:1043 ../data/unity.ui:1044
+msgid "If enabled, show applications available for download in the Dash."
+msgstr ""
+"Gdy zaznaczone, pokazuje aplikacje dostępne do pobrania w panelu głównym."
+
+#: ../data/unity.ui:1067
+msgid "Files"
+msgstr "Pliki"
+
+#: ../data/unity.ui:1080
+msgid "Enable search of your files"
+msgstr "Włącz szukanie wśród twoich plików"
+
+#: ../data/unity.ui:1085
+msgid "If enabled, allow searches to find your files that aren&apos;t logged."
+msgstr ""
+"Gdy włączone, zezwala na szukanie by znajdować twoje pliki które nie są "
+"zapisane."
+
+#: ../data/unity.ui:1086
+msgid "If enabled, allow searches to find your files that aren't logged."
+msgstr ""
+"Gdy włączone, zezwala na szukanie by znajdować twoje pliki które nie są "
+"zapisane."
+
+#: ../data/unity.ui:1104
+msgid "Run Command"
+msgstr "Uruchom"
+
+#: ../data/unity.ui:1117
+msgid "Clear History"
+msgstr "Wyczyść historię"
+
+#: ../data/unity.ui:1121 ../data/unity.ui:1122
+msgid "Clear ALT+F2 command history."
+msgstr "Wyczyść historię komendy ALT+F2."
+
+#: ../data/unity.ui:1140 ../data/unity.ui:1141
+msgid "Restore the default Dash settings."
+msgstr "Przywróć domyślne ustanienia panelu uruchamiania."
+
+#: ../data/unity.ui:1205
+msgid "Menu visible for:"
+msgstr "Menu widoczne dla:"
+
+#: ../data/unity.ui:1247 ../data/unity.ui:1248
+msgid ""
+"Select how long the application menu is visible when an application is first "
+"opened"
+msgstr ""
+"Wybierz jak długo menu aplikacji jest widoczne gdy aplikacja jest najpierw "
+"włączona"
+
+#: ../data/unity.ui:1269
+msgid "seconds"
+msgstr "sekundy"
+
+#: ../data/unity.ui:1292 ../data/unity.ui:1293
+msgid "Set the level of transparency for the panel."
+msgstr "Ustaw przeźroczystość panelu."
+
+#: ../data/unity.ui:1308
+msgid "Opaque panel for maximized windows"
+msgstr "Nieprzeźroczysty panel dla zmaksymalizowanych aplikacji"
+
+#: ../data/unity.ui:1313 ../data/unity.ui:1314
+msgid "If selected, the panel will be opaque for maximized windows"
+msgstr ""
+"Gdy zaznaczone, panel będzie nieprzeźroczysty dla zmaksymalizowanych "
+"aplikacji"
+
+#: ../data/unity.ui:1348
+msgid "Indicators"
+msgstr "Wskaźniki"
+
+#: ../data/unity.ui:1381
+msgid "Date & time"
+msgstr "Data i godzina"
+
+#: ../data/unity.ui:1386
+msgid "If enabled, the date &amp; time indicator will be visible."
+msgstr "Gdy zaznaczone, wskaźniki daty i godziny będą widoczne."
+
+#: ../data/unity.ui:1387
+msgid "If enabled, the date & time indicator will be visible."
+msgstr "Gdy zaznaczone, wskaźniki daty i godziny będą widoczne."
+
+#: ../data/unity.ui:1409
+msgid "12-hour time"
+msgstr "Tryb 12-godzinny"
+
+#: ../data/unity.ui:1414 ../data/unity.ui:1415
+msgid "Have the clock use 12-hour time."
+msgstr "Czy zegar ma korzystać z trybu 12-godzinnego"
+
+#: ../data/unity.ui:1429
+msgid "24-hour time"
+msgstr "Tryb 24-godzinny"
+
+#: ../data/unity.ui:1434 ../data/unity.ui:1435
+msgid "Have the clock use 24-hour time."
+msgstr "Czy zegar ma korzystać z trybu 24-godzinnego"
+
+#: ../data/unity.ui:1447
+msgid "Seconds"
+msgstr "Sekundy"
+
+#: ../data/unity.ui:1452 ../data/unity.ui:1453
+msgid "If enabled, the clock will display seconds."
+msgstr "Gdy zaznaczone, zegar będzie wyświetlał sekundy."
+
+#: ../data/unity.ui:1466
+msgid "Date"
+msgstr "Data"
+
+#: ../data/unity.ui:1471 ../data/unity.ui:1472
+msgid "If enabled, the month and day will be visible in the panel."
+msgstr "Gdy zaznaczone, miesiąc i dzień będą widoczne na panelu."
+
+#: ../data/unity.ui:1485
+msgid "Weekday"
+msgstr "Dzień tygodnia"
+
+#: ../data/unity.ui:1490 ../data/unity.ui:1491
+msgid "If enabled, the day of the week will be visible in the panel."
+msgstr "Gdy zaznaczone, dzień tygodnia będzie widoczny na panelu."
+
+#: ../data/unity.ui:1509
+msgid "Include:"
+msgstr "Uwzględniaj:"
+
+#: ../data/unity.ui:1518
+msgid "Calendar"
+msgstr "Kalendarz"
+
+#: ../data/unity.ui:1523 ../data/unity.ui:1524
+msgid "If enabled, the calendar will be visible in the indicator menu."
+msgstr "Gdy zaznaczone, kalendarz będzie widoczny w menu wskaźników."
+
+#: ../data/unity.ui:1551
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: ../data/unity.ui:1556 ../data/unity.ui:1557
+msgid "If enabled, the bluetooth indicator is visible in the panel."
+msgstr "Gdy zaznaczone, wskaźnik bluetooth będzie widoczny na panelu."
+
+#: ../data/unity.ui:1591
+msgid "Power"
+msgstr "Zasilanie"
+
+#: ../data/unity.ui:1595 ../data/unity.ui:1596
+msgid "If enabled, show the power menu in the panel."
+msgstr "Gdy zaznaczone, pokazuj menu baterii na panelu."
+
+#: ../data/unity.ui:1618
+msgid "Visible when charging or discharging"
+msgstr "Widoczny gdy ładowany lub rozładowywany"
+
+#: ../data/unity.ui:1622 ../data/unity.ui:1623
+msgid ""
+"Set the power indicator to be visible when charging or discharging power."
+msgstr ""
+"Ustaw by wskaźnik ładowania był widoczny gdy komputer jest ładowany lub "
+"rozładowywany."
+
+#: ../data/unity.ui:1635
+msgid "Always visible"
+msgstr "Zawsze widoczny"
+
+#: ../data/unity.ui:1639 ../data/unity.ui:1640
+msgid "Set the power indicator to be always visible."
+msgstr "Ustaw by wskaźnik ładowania był widoczny zawsze."
+
+#: ../data/unity.ui:1653
+msgid "Display remaining battery life"
+msgstr "Pokazuj pozostałą objętość baterii"
+
+#: ../data/unity.ui:1658 ../data/unity.ui:1659
+msgid "If enabled, show the remaining battery life in the power indicator."
+msgstr ""
+"Gdy zaznaczone, pokazuj pozostałą objętość baterii na wskaźniku ładowania"
+
+#: ../data/unity.ui:1689
+msgid "Volume"
+msgstr "Głośność"
+
+#: ../data/unity.ui:1693 ../data/unity.ui:1694
+msgid "If enabled, show the sound menu in the panel."
+msgstr "Gdy zaznaczone, pokaż menu dźwięku na panelu"
+
+#: ../data/unity.ui:1717
+msgid "Default player:"
+msgstr "Domyślny odtwarzacz"
+
+#: ../data/unity.ui:1728 ../data/unity.ui:1729
+msgid ""
+"Select which of the installed audio players is default in the sound menu."
+msgstr ""
+"Ustal który z zainstalowanych odtwarzaczy muzyki ma być domyślny w menu "
+"dźwięku."
+
+#: ../data/unity.ui:1745
+msgid "Notifications when scrolling"
+msgstr "Powiadomienia gdy przewijane"
+
+#: ../data/unity.ui:1749 ../data/unity.ui:1750
+msgid ""
+"When using scrolling to change the volume, show on-screen notifications."
+msgstr ""
+"Gdy do zmieniania głośności używane jest przewijanie pokazuj powiadomienia "
+"na pulpicie."
+
+#: ../data/unity.ui:1770
+msgid "Show my name"
+msgstr "Pokaż moje imię"
+
+#: ../data/unity.ui:1775
+msgid "If enabled, show the user&apos;s real name in the panel."
+msgstr "Gdy zaznaczone, pokaż prawdziwe imię użytkownika na panelu."
+
+#: ../data/unity.ui:1776
+msgid "If enabled, show the user's real name in the panel."
+msgstr "Gdy zaznaczone, pokaż prawdziwe imię użytkownika na panelu."
+
+#: ../data/unity.ui:1810 ../data/unity.ui:1811
+msgid "Restore the default Unity panel settings."
+msgstr "Przywróć domyślne ustawienia panelu Unity"
+
+#: ../data/unity.ui:1873
+msgid "Switch between windows on all workspaces"
+msgstr "Przełączaj pomiędzy oknami na wszystkich obszarach roboczych"
+
+#: ../data/unity.ui:1878 ../data/unity.ui:1879
+msgid ""
+"If enabled, the window switcher cycles through all windows on all workspaces"
+msgstr ""
+"Gdy zaznaczone, przełącznik okien przełącza się pomiędzy wszystkimi oknami "
+"na wszystkich obszarach roboczych"
+
+#: ../data/unity.ui:1892
+msgid "Display \"Show Desktop\" icon"
+msgstr "Pokaż ikonę \"Pokaż Pulpit\""
+
+#: ../data/unity.ui:1897
+msgid ""
+"If enabled, show the &quot;Show Desktop&quot; option in the window switcher"
+msgstr ""
+"Gdy zaznaczone, pokaż przycisk &quot;Pokaż Pulpit&quot; na panelu bocznym"
+
+#: ../data/unity.ui:1898
+msgid "If enabled, show the \"Show Desktop\" option in the window switcher"
+msgstr "Gdy zaznaczone, pokaż przycisk \"Pokaż Pulpit\" na panelu bocznym"
+
+#: ../data/unity.ui:1910
+msgid "Automatically expose windows"
+msgstr "Automatycznie ujawnij okna"
+
+#: ../data/unity.ui:1915 ../data/unity.ui:1916
+msgid "If enabled, the window switcher will expose minimized windows"
+msgstr "Gdy zaznaczone, przełącznik okien ujawni zminimalizowane okna"
+
+#: ../data/unity.ui:1928
+msgid "Switch between minimized windows"
+msgstr "Przełącz pomiędzy zminimalizowanymi oknami"
+
+#: ../data/unity.ui:1933 ../data/unity.ui:1934
+msgid "If enabled, the window switcher will switch through minimized windows"
+msgstr ""
+"Gdy zaznaczone, przełącznik okien przełączy pomiędzy zminimalizowanymi oknami"
+
+#: ../data/unity.ui:1957
+msgid "Window switching shortcuts"
+msgstr "Skróty przełączania okna"
+
+#: ../data/unity.ui:1981 ../data/unity.ui:1982
+msgid "Window switcher shortcuts"
+msgstr "Skróty przełącznika okna"
+
+#: ../data/unity.ui:1992 ../data/unity.ui:2068 ../data/unity.ui:2405
+#: ../data/windowmanager.ui:266 ../data/windowmanager.ui:536
+#: ../data/windowmanager.ui:796 ../data/windowmanager.ui:1054
+msgid "Title"
+msgstr "Tytuł"
+
+#: ../data/unity.ui:2005 ../data/unity.ui:2081 ../data/unity.ui:2418
+#: ../data/windowmanager.ui:279 ../data/windowmanager.ui:549
+#: ../data/windowmanager.ui:809 ../data/windowmanager.ui:1067
+msgid "Accelerator"
+msgstr "Przyspieszacz"
+
+#: ../data/unity.ui:2032
+msgid "Launcher switching shortcuts"
+msgstr "Skróty przełączania programu uruchamiającego"
+
+#: ../data/unity.ui:2057 ../data/unity.ui:2058
+msgid "Launcher switcher shortcuts"
+msgstr "Skróty przełącznika programu uruchamiającego"
+
+#: ../data/unity.ui:2109
+msgid "Restore the default window switcher settings."
+msgstr "Przywróć domyślne ustawienia przełącznika okien"
+
+#: ../data/unity.ui:2171 ../data/unity.ui:2172
+msgid "Enable prompts for webapp integration when visiting supported websites?"
+msgstr ""
+"Włącz pokazywanie podpowiedzi wsparcia dla aplikacji internetowych kiedy "
+"odwiedza się wspierane strony."
+
+#: ../data/unity.ui:2187
+msgid "Integration prompts:"
+msgstr "Podpowiedzi wsparcia:"
+
+#: ../data/unity.ui:2209
+msgid "Preauthorized domains"
+msgstr "Preautoryzowane strony"
+
+#: ../data/unity.ui:2228
+msgid "Amazon"
+msgstr "Amazon"
+
+#: ../data/unity.ui:2245
+msgid "Ubuntu One"
+msgstr "Ubuntu One"
+
+#: ../data/unity.ui:2273 ../data/unity.ui:2274
+msgid "Restore the default Unity Webapps settings."
+msgstr "Przywróć domyślne ustawienia aplikacji internetowych Unity"
+
+#: ../data/unity.ui:2316
+msgid "HUD"
+msgstr "HUD"
+
+#: ../data/unity.ui:2329
+msgid "Remember previous commands"
+msgstr "Pamiętaj wpisywane komendy"
+
+#: ../data/unity.ui:2333 ../data/unity.ui:2334
+msgid ""
+"If enabled, the HUD will remember previously executed entries and sort them "
+"by frequently used."
+msgstr ""
+"Gdy zaznaczone, HUD będzie pamiętał uprzednio uruchamiane programy i "
+"sortował je według najczęściej używanych."
+
+#: ../data/unity.ui:2352
+msgid "Keyboard Shortcuts"
+msgstr "Skróty klawiszowe"
+
+#: ../data/unity.ui:2365
+msgid "Hold Super for keyboard shortcuts"
+msgstr "Przytrzymaj Super dla skrótów klawiszowych"
+
+#: ../data/unity.ui:2370 ../data/unity.ui:2371
+msgid ""
+"When enabled, pressing the Super key displays an overlay of all Unity "
+"keyboard shortcuts"
+msgstr ""
+"Gdy zaznaczone, naciśnięcie przycisku Super pokaże wszystkie skróty "
+"klawiszowe Unity"
+
+#: ../data/unity.ui:2394 ../data/unity.ui:2395
+msgid "List of Unity keyboard shortcuts"
+msgstr "Lista skrótów klawiszowych Unity"
+
+#: ../data/unity.ui:2446
+msgid "Notifications"
+msgstr "Powiadomienia"
+
+#: ../data/unity.ui:2465
+msgid "All displays"
+msgstr "Wszystkie ekrany"
+
+#: ../data/unity.ui:2469 ../data/unity.ui:2470
+msgid "For multiple displays, notifications are visible on all of them."
+msgstr "Dla wielu monitorów, powiadomienia pokazywane są na wszystkich."
+
+#: ../data/unity.ui:2483
+msgid "Active display"
+msgstr "Główny ekran"
+
+#: ../data/unity.ui:2487 ../data/unity.ui:2488
+msgid "For multiple displays, notifications are visible on the active display."
+msgstr "Dla wielu monitorów, powiadomienia pokazywane są na głównym."
+
+#: ../data/unity.ui:2511 ../data/unity.ui:2512
+msgid "Restore the default Unity keyboard shortcut settings."
+msgstr "Przywróć domyślne ustawienia skrótów klawiszowych Unity"
+
+#: ../data/windowmanager.ui:45
+msgid "Close window"
+msgstr "Zamknij okno"
+
+#: ../data/windowmanager.ui:46
+msgid "Alt+F4"
+msgstr "Alt+F4"
+
+#: ../data/windowmanager.ui:49
+msgid "Move window"
+msgstr "Przenieś okno"
+
+#: ../data/windowmanager.ui:50
+msgid "Alt+mouse button 1"
+msgstr "Alt+przycisk myszy 1"
+
+#: ../data/windowmanager.ui:53
+msgid "Show desktop"
+msgstr "Pokaż pulpit"
+
+#: ../data/windowmanager.ui:54
+msgid "Super+D"
+msgstr "Super+D"
+
+#: ../data/windowmanager.ui:67
+msgid "Zoom in"
+msgstr "Przybliż"
+
+#: ../data/windowmanager.ui:68
+msgid "Super++"
+msgstr "Super++"
+
+#: ../data/windowmanager.ui:71
+msgid "Zoom out"
+msgstr "Oddal"
+
+#: ../data/windowmanager.ui:72
+msgid "Super+-"
+msgstr "Super+-"
+
+#: ../data/windowmanager.ui:85
+msgid "Start windows spread"
+msgstr "Rozpocznij rozproszenie okien"
+
+#: ../data/windowmanager.ui:86
+msgid "Super+W"
+msgstr "Super+W"
+
+#: ../data/windowmanager.ui:89
+msgid "Start windows spread for all windows"
+msgstr "Rozpocznij rozproszenie okien dla wszystkich okien"
+
+#: ../data/windowmanager.ui:103
+msgid "Start workspace switcher"
+msgstr "Rozpocznij przełącznik obszarów roboczych"
+
+#: ../data/windowmanager.ui:104
+msgid "Super+S"
+msgstr "Super+S"
+
+#: ../data/windowmanager.ui:118
+msgid "Toggle Desktop"
+msgstr "Włącz pulpit"
+
+#: ../data/windowmanager.ui:121
+msgid "Show Workspaces"
+msgstr "Wyświetl obszary robocze"
+
+#: ../data/windowmanager.ui:124
+msgid "Window Spread"
+msgstr "Rozproszenie okien"
+
+#: ../data/windowmanager.ui:127
+msgid "Spread all Windows"
+msgstr "Rozprosz wszystkie okna"
+
+#: ../data/windowmanager.ui:138
+msgid "Do Nothing"
+msgstr "Nic nie rób"
+
+#: ../data/windowmanager.ui:141
+msgid "Bottom Left Corner"
+msgstr "Lewy dolny róg"
+
+#: ../data/windowmanager.ui:144
+msgid "Bottom Half"
+msgstr "Dolna połowa"
+
+#: ../data/windowmanager.ui:147
+msgid "Bottom Right Corner"
+msgstr "Prawy dolny róg"
+
+#: ../data/windowmanager.ui:150
+msgid "Left Half"
+msgstr "Lewa połowa"
+
+#: ../data/windowmanager.ui:153
+msgid "Fill Screen"
+msgstr "Wypełnij ekran"
+
+#: ../data/windowmanager.ui:156
+msgid "Right Half"
+msgstr "Prawa połowa"
+
+#: ../data/windowmanager.ui:159
+msgid "Top Left Corner"
+msgstr "Lewy górny róg"
+
+#: ../data/windowmanager.ui:162
+msgid "Top Half"
+msgstr "Górna połowa"
+
+#: ../data/windowmanager.ui:165
+msgid "Top Right Corner"
+msgstr "Prawy górny róg"
+
+#: ../data/windowmanager.ui:168 ../data/windowmanager.ui:2029
+#: ../data/windowmanager.ui:2064 ../data/windowmanager.ui:2101
+msgid "Maximize"
+msgstr "Maksymalizuj"
+
+#: ../data/windowmanager.ui:192
+msgid "Zoom"
+msgstr "Powiększenie"
+
+#: ../data/windowmanager.ui:214 ../data/windowmanager.ui:215
+msgid "Enable desktop zoom?"
+msgstr "Włączyć powiększenie pulpitu?"
+
+#: ../data/windowmanager.ui:230
+msgid "Desktop magnification:"
+msgstr "Powiększenie pulpitu:"
+
+#: ../data/windowmanager.ui:255 ../data/windowmanager.ui:256
+msgid "List of keyboard shortcuts for zoom"
+msgstr "Lista skrótów klawiszowych do powiększania"
+
+#: ../data/windowmanager.ui:308
+msgid "Hardware acceleration"
+msgstr "Przyspieszanie sprzętowe"
+
+#: ../data/windowmanager.ui:331 ../data/windowmanager.ui:332
+msgid "Select the level of texture rendering done by OpenGL"
+msgstr "Wybierz poziom renderowanie tekstur przez OpenGL"
+
+#: ../data/windowmanager.ui:335
+msgid "Texture quality: "
+msgstr "Jakość tekstur: "
+
+#: ../data/windowmanager.ui:347
+msgid "Fast"
+msgstr "Szybkie"
+
+#: ../data/windowmanager.ui:348
+msgid "Good"
+msgstr "Dobre"
+
+#: ../data/windowmanager.ui:349
+msgid "Best"
+msgstr "Najlepsze"
+
+#: ../data/windowmanager.ui:371
+msgid "Animations"
+msgstr "Animacje"
+
+#: ../data/windowmanager.ui:396
+msgid "Minimize:"
+msgstr "Minimalizacja:"
+
+#: ../data/windowmanager.ui:432
+msgid "Unminimize:"
+msgstr "Maksymalizacja"
+
+#: ../data/windowmanager.ui:469
+msgid "Window Animations:"
+msgstr "Animacja Okien"
+
+#: ../data/windowmanager.ui:502
+msgid "Keyboard shortcuts"
+msgstr "Skróty klawiszowe"
+
+#: ../data/windowmanager.ui:524 ../data/windowmanager.ui:525
+msgid "List of window manager keyboard shortcuts"
+msgstr "Lista skrótów klawiszowych menedżera okien"
+
+#: ../data/windowmanager.ui:577 ../data/windowmanager.ui:578
+msgid "Restore default window manager settings"
+msgstr "Przywróć domyślne ustawienia menedżera okien"
+
+#: ../data/windowmanager.ui:639 ../data/windowmanager.ui:640
 msgid "Enable the window manager to draw multiple workspaces"
 msgstr "Włącz menadżer okien by ustawić wiele obszarów roboczych"
 
-#: ../data/windowmanager.ui.h:23
+#: ../data/windowmanager.ui:655
 msgid "Workspace switcher:"
 msgstr "Przełącznik obszarów roboczych:"
 
-#: ../data/windowmanager.ui.h:24
+#: ../data/windowmanager.ui:668 ../data/windowmanager.ui:669
 msgid "Select the outline colour of the current workspace in the overview"
 msgstr "Wybierz kolor schematu aktualnego obszaru roboczego na podglądzie"
 
-#: ../data/windowmanager.ui.h:25
+#: ../data/windowmanager.ui:671
 msgid "Current workspace colour:"
 msgstr "Kolor obecnego obszaru roboczego:"
 
-#: ../data/windowmanager.ui.h:26
+#: ../data/windowmanager.ui:696 ../data/windowmanager.ui:697
 msgid "Select the number of vertical workspaces"
 msgstr "Wybierz liczbę obszarów roboczych w pionie"
 
-#: ../data/windowmanager.ui.h:27
+#: ../data/windowmanager.ui:699
 msgid "Vertical workspaces:"
 msgstr "Obszary robocze w pionie:"
 
-#: ../data/windowmanager.ui.h:28
+#: ../data/windowmanager.ui:739 ../data/windowmanager.ui:740
 msgid "Select the number of horizontal workspaces"
 msgstr "Wybierz liczbę obszarów roboczych w poziomie"
 
-#: ../data/windowmanager.ui.h:29
+#: ../data/windowmanager.ui:742
 msgid "Horizontal workspaces:"
 msgstr "Obszary robocze w poziomie:"
 
-#: ../data/windowmanager.ui.h:30
+#: ../data/windowmanager.ui:763
 msgid "Workspace shortcuts"
 msgstr "Skróty obszarów roboczych"
 
-#: ../data/windowmanager.ui.h:31
+#: ../data/windowmanager.ui:785 ../data/windowmanager.ui:786
 msgid "List of workspace management keyboard shortcuts"
 msgstr "Lista wszystkich skrótów klawiszowych obszarów roboczych"
 
-#: ../data/windowmanager.ui.h:32
+#: ../data/windowmanager.ui:838 ../data/windowmanager.ui:839
 msgid "Restore default workspace configuration"
 msgstr "Przywróć ustawienia domyśne obszarów roboczych"
 
-#: ../data/windowmanager.ui.h:33
+#: ../data/windowmanager.ui:861
 msgid "Workspace Settings"
 msgstr "Ustawienia Obszarów Roboczych"
 
-#: ../data/windowmanager.ui.h:34
+#: ../data/windowmanager.ui:904 ../data/windowmanager.ui:905
 msgid "Enable the window spread?"
 msgstr "Włączyć rozproszenie okien?"
 
-#: ../data/windowmanager.ui.h:35
+#: ../data/windowmanager.ui:922
 msgid "Window spread:"
 msgstr "Rozproszenie okien"
 
-#: ../data/windowmanager.ui.h:36
+#: ../data/windowmanager.ui:948 ../data/windowmanager.ui:949
 msgid "Select the space between window in the spead overview in pixels"
 msgstr "Określ odstęp pomiędzy oknem w widoku rozproszenia w pixelach"
 
-#: ../data/windowmanager.ui.h:37
+#: ../data/windowmanager.ui:951
 msgid "Spacing:"
 msgstr "Odstęp:"
 
-#: ../data/windowmanager.ui.h:38
+#: ../data/windowmanager.ui:974
 msgid "Icons on previews"
 msgstr "Ikony w podglądzie"
 
-#: ../data/windowmanager.ui.h:39
+#: ../data/windowmanager.ui:978 ../data/windowmanager.ui:979
 msgid ""
 "When enabled, show an application's icon on the window preview in the window "
 "spread"
-msgstr ""
-"Gdy włączone, pokaż ikonę aplikacji na podglądzie okna w rozproszeniu"
+msgstr "Gdy włączone, pokaż ikonę aplikacji na podglądzie okna w rozproszeniu"
 
-#: ../data/windowmanager.ui.h:40
+#: ../data/windowmanager.ui:992
 msgid "Click to access desktop"
 msgstr "Kliknij by uzyskać dostęp do pulpitu"
 
-#: ../data/windowmanager.ui.h:41
+#: ../data/windowmanager.ui:996 ../data/windowmanager.ui:997
 msgid ""
 "When enabled, clicking on the desktop in the window spread will display the "
 "desktop"
 msgstr "Gdy włączone, klikanie na pulpit w rozproszeniu okien pokaże pulpit"
 
-#: ../data/windowmanager.ui.h:42
+#: ../data/windowmanager.ui:1021
 msgid "Window spread shortcuts"
 msgstr "Skrót rozproszenia okien"
 
-#: ../data/windowmanager.ui.h:43
+#: ../data/windowmanager.ui:1043 ../data/windowmanager.ui:1044
 msgid "List of window spread shortcuts"
 msgstr "Lista skrótów rozpraszania okien"
 
-#: ../data/windowmanager.ui.h:44
+#: ../data/windowmanager.ui:1095 ../data/windowmanager.ui:1096
 msgid "Restore default window spread settings"
 msgstr "Przywróć domyślne ustawienia rozpraszania okien"
 
-#: ../data/windowmanager.ui.h:45
+#: ../data/windowmanager.ui:1118
 msgid "Window spread"
 msgstr "Rozproszenie okien"
 
-#: ../data/windowmanager.ui.h:46
+#: ../data/windowmanager.ui:1176
 msgid "Window snapping:"
 msgstr "Przyciąganie okien"
 
-#: ../data/windowmanager.ui.h:47
+#: ../data/windowmanager.ui:1188 ../data/windowmanager.ui:2167
 msgid "Fill colour:"
 msgstr "Wypełnij kolorem"
 
-#: ../data/windowmanager.ui.h:48
+#: ../data/windowmanager.ui:1201 ../data/windowmanager.ui:2154
 msgid "Outline colour:"
 msgstr "Kolor zarysu"
 
-#: ../data/windowmanager.ui.h:49 ../data/unity.ui.h:24
-msgid "Behaviour"
-msgstr "Zachowanie"
-
-#: ../data/windowmanager.ui.h:50
+#: ../data/windowmanager.ui:1494
 msgid "Window snapping"
 msgstr "Przyciąganie okna"
 
-#: ../data/windowmanager.ui.h:51
+#: ../data/windowmanager.ui:1551
 msgid "Hotcorners:"
 msgstr "Aktywne narożniki:"
 
-#: ../data/windowmanager.ui.h:52 ../data/unitytweak.ui.h:15
-#: ../data/overview.ui.h:16
-msgid "Hotcorners"
-msgstr "Aktywne narożniki"
-
-#: ../data/windowmanager.ui.h:53
+#: ../data/windowmanager.ui:1838
 msgid "Focus Behaviour"
 msgstr "Zachownie ogniska"
 
-#: ../data/windowmanager.ui.h:54
+#: ../data/windowmanager.ui:1863
 msgid "Auto-raise delay:"
 msgstr "Automatyczny wzrost opóźnienia:"
 
-#: ../data/windowmanager.ui.h:55
+#: ../data/windowmanager.ui:1875 ../data/windowmanager.ui:1876
 msgid "Set the delay for raising newly focused windows."
 msgstr "Określ opóźnienie dla wzrastania nowo skupionego okna."
 
-#: ../data/windowmanager.ui.h:56
+#: ../data/windowmanager.ui:1891
+msgid "If enabled, windows that take focus will be automatically raised."
+msgstr "Gdy włączone, okna które są skupiane będą automatycznie podnoszone."
+
+#: ../data/windowmanager.ui:1907
 msgid "Focus mode:"
 msgstr "Tryb skupienia:"
 
-#: ../data/windowmanager.ui.h:57
+#: ../data/windowmanager.ui:1920 ../data/windowmanager.ui:1921
 msgid ""
 "Select the window focus mode; \"click\" means windows must be clicked in "
 "order to focus them, \"sloppy\" means windows are focused when the mouse "
@@ -270,1531 +1635,214 @@ msgstr ""
 "myszka wchodzi wewnątrz okna, i \"mysz\" oznacza, że okna są skupione kiedy "
 "myszka wchodzi wewnątrz okna i nieskupione gdy myszka opuszcza okno."
 
-#: ../data/windowmanager.ui.h:58
+#: ../data/windowmanager.ui:1924
 msgid "Click"
 msgstr "Kliknięcie"
 
-#: ../data/windowmanager.ui.h:59
+#: ../data/windowmanager.ui:1925
 msgid "Sloppy"
 msgstr "Rozciągnięcie"
 
-#: ../data/windowmanager.ui.h:60
+#: ../data/windowmanager.ui:1926
 msgid "Mouse"
 msgstr "Mysz"
 
-#: ../data/windowmanager.ui.h:61
-msgid "If enabled, windows that take focus will be automatically raised."
-msgstr "Gdy włączone, okna które są skupiane będą automatycznie podnoszone."
-
-#: ../data/windowmanager.ui.h:62
+#: ../data/windowmanager.ui:1940
 msgid "Auto-raise:"
 msgstr "Automatyczne podnoszenie"
 
-#: ../data/windowmanager.ui.h:63
+#: ../data/windowmanager.ui:1952
+#, fuzzy
+msgid "Raise on click:"
+msgstr "Prawy przycisk"
+
+#: ../data/windowmanager.ui:1963
+msgid "Whether raising should be a side-effect of other user interactions."
+msgstr ""
+
+#: ../data/windowmanager.ui:1987
 msgid "Titlebar Actions"
 msgstr "Akcje paska tytułowego"
 
-#: ../data/windowmanager.ui.h:64
+#: ../data/windowmanager.ui:2013
 msgid "Double click:"
 msgstr "Podwójne kliknięcie:"
 
-#: ../data/windowmanager.ui.h:65
+#: ../data/windowmanager.ui:2025 ../data/windowmanager.ui:2026
 msgid "Select the titlebar's double click action."
 msgstr "Wybierz akcję paska tytułowego w czasie podwójnego kliknięcia"
 
-#: ../data/windowmanager.ui.h:66
+#: ../data/windowmanager.ui:2028
 msgid "Toggle Shade"
 msgstr "Włącz cień"
 
-#: ../data/windowmanager.ui.h:67
-msgid "Maximize"
-msgstr "Maksymalizuj"
-
-#: ../data/windowmanager.ui.h:68
+#: ../data/windowmanager.ui:2030 ../data/windowmanager.ui:2065
+#: ../data/windowmanager.ui:2102
 msgid "Horizontal expand"
 msgstr "Rozciągnij poziomo"
 
-#: ../data/windowmanager.ui.h:69
+#: ../data/windowmanager.ui:2031 ../data/windowmanager.ui:2066
+#: ../data/windowmanager.ui:2103
 msgid "Vertical expand"
 msgstr "Rozciągnij pionowo"
 
-#: ../data/windowmanager.ui.h:70
+#: ../data/windowmanager.ui:2032 ../data/windowmanager.ui:2067
+#: ../data/windowmanager.ui:2104
 msgid "Minimize"
 msgstr "Minimalizuj"
 
-#: ../data/windowmanager.ui.h:71
+#: ../data/windowmanager.ui:2033 ../data/windowmanager.ui:2068
+#: ../data/windowmanager.ui:2105
 msgid "No action"
 msgstr "Nic nie rób"
 
-#: ../data/windowmanager.ui.h:72
+#: ../data/windowmanager.ui:2034 ../data/windowmanager.ui:2069
+#: ../data/windowmanager.ui:2106
 msgid "Lower"
 msgstr "Niżej"
 
-#: ../data/windowmanager.ui.h:73
+#: ../data/windowmanager.ui:2035 ../data/windowmanager.ui:2070
+#: ../data/windowmanager.ui:2107
 msgid "Menu"
 msgstr "Menu"
 
-#: ../data/windowmanager.ui.h:74
+#: ../data/windowmanager.ui:2049
 msgid "Middle click:"
 msgstr "Kliknięcie środkowym przyciskiem"
 
-#: ../data/windowmanager.ui.h:75
+#: ../data/windowmanager.ui:2060 ../data/windowmanager.ui:2061
 msgid "Select the titlebar's middle click action."
 msgstr "Wybierz akcję paska tytułowego środkowym przyciskiem"
 
-#: ../data/windowmanager.ui.h:76
+#: ../data/windowmanager.ui:2063 ../data/windowmanager.ui:2100
 msgid "Toggle shade"
 msgstr "Włącz cień"
 
-#: ../data/windowmanager.ui.h:77
+#: ../data/windowmanager.ui:2085
 msgid "Right click:"
 msgstr "Prawy przycisk"
 
-#: ../data/windowmanager.ui.h:78
+#: ../data/windowmanager.ui:2097 ../data/windowmanager.ui:2098
 msgid "Select the titlebar's right click action."
 msgstr "Wybierz akcję paska tytułowego prawym przyciskiem"
 
-#: ../data/windowmanager.ui.h:79
+#: ../data/windowmanager.ui:2129
 msgid "Resizing"
 msgstr "Zmiana rozmiaru"
 
-#: ../data/windowmanager.ui.h:80
+#: ../data/windowmanager.ui:2211 ../data/windowmanager.ui:2212
 msgid "Restore the default settings for the additional options."
 msgstr "Przywróć domyślne ustawienia dla dodatkowych opcji."
 
-#: ../data/windowmanager.ui.h:81 ../data/unitytweak.ui.h:9
-#: ../data/unity.ui.h:184 ../data/overview.ui.h:7
-msgid "Additional"
-msgstr "Dodatkowe"
+#~ msgid ""
+#~ "Window\n"
+#~ "Controls"
+#~ msgstr ""
+#~ "Okno\n"
+#~ "Sterowanie"
 
-#: ../data/windowmanager.ui.h:82
-msgid "Close window"
-msgstr "Zamknij okno"
+#~ msgid "Reset Unity settings?"
+#~ msgstr "Zresetować ustawienia Unity?"
 
-#: ../data/windowmanager.ui.h:83
-msgid "Alt+F4"
-msgstr "Alt+F4"
+#~ msgid "Cancel"
+#~ msgstr "Anuluj"
 
-#: ../data/windowmanager.ui.h:84
-msgid "Move window"
-msgstr "Przenieś okno"
+#~ msgid "Proceed"
+#~ msgstr "Kontynuuj"
 
-#: ../data/windowmanager.ui.h:85
-msgid "Alt+mouse button 1"
-msgstr "Alt+przycisk myszy 1"
+#~ msgid ""
+#~ "This will reset all your Unity settings.\n"
+#~ "Are you sure you want to proceed?"
+#~ msgstr ""
+#~ "To spowoduje zresetowanie wszystkich ustawień Unity.\n"
+#~ "Czy chcesz kontynuować mimo to?"
 
-#: ../data/windowmanager.ui.h:86
-msgid "Show desktop"
-msgstr "Pokaż pulpit"
+#~ msgid "Configuration frontend for the Unity desktop environment"
+#~ msgstr "Konfiguracja dostosowana do środowiska graficznego Unity"
 
-#: ../data/windowmanager.ui.h:87
-msgid "Super+D"
-msgstr "Super+D"
+#~ msgid "Start in the Unity tab"
+#~ msgstr "Zacznij w zakładce Unity"
 
-#: ../data/windowmanager.ui.h:88
-msgid "Zoom in"
-msgstr "Przybliż"
+#~ msgid "Start in the WindowManager tab"
+#~ msgstr "Zacznij w zakładce WindowMenagera"
 
-#: ../data/windowmanager.ui.h:89
-msgid "Super++"
-msgstr "Super++"
+#~ msgid "Start in the appearance tab"
+#~ msgstr "Zacznij w zakładce wyglądu"
 
-#: ../data/windowmanager.ui.h:90
-msgid "Zoom out"
-msgstr "Oddal"
+#~ msgid "Start in the system tab"
+#~ msgstr "Zacznij w zakładce systemu"
 
-#: ../data/windowmanager.ui.h:91
-msgid "Super+-"
-msgstr "Super+-"
+#~ msgid "Reset Unity, wiping all configuration changes."
+#~ msgstr "Resetuj Unity, usuwa wszystkie zmiany ustawień"
 
-#: ../data/windowmanager.ui.h:92
-msgid "Start windows spread"
-msgstr "Rozpocznij rozproszenie okien"
+#~ msgid ""
+#~ "\n"
+#~ "WARNING: You are about to reset Unity to its default configuration.\n"
+#~ "    This will result in loss of configuration.\n"
+#~ "    It is normal for your desktop to flicker during the process.\n"
+#~ "    Type yes to continue, anything else to exit.\n"
+#~ "    "
+#~ msgstr ""
+#~ "\n"
+#~ "UWAGA: Jesteś na drodze do zresetowania Unity do domyślnych ustawień.\n"
+#~ "    Doprowadzi to do utraty ustawień.\n"
+#~ "    Normalne jest, że pulpit migocze podczas tego procesu.\n"
+#~ "    Wpisz yes by kontynuować, cokolwiek innego by przerwać.\n"
+#~ "    "
 
-#: ../data/windowmanager.ui.h:93
-msgid "Super+W"
-msgstr "Super+W"
+#~ msgid "Do you wish to continue?"
+#~ msgstr "Czy chcesz kontynuować?"
 
-#: ../data/windowmanager.ui.h:94
-msgid "Start windows spread for all windows"
-msgstr "Rozpocznij rozproszenie okien dla wszystkich okien"
+#~ msgid "Please log out and log back in."
+#~ msgstr "Proszę wyloguj się i zaloguj się ponownie."
 
-#: ../data/windowmanager.ui.h:95 ../data/unity.ui.h:22
-msgid "Disabled"
-msgstr "Wyłączony"
+#~ msgid "Layout"
+#~ msgstr "Szablon"
 
-#: ../data/windowmanager.ui.h:96
-msgid "Start workspace switcher"
-msgstr "Rozpocznij przełącznik obszarów roboczych"
+#~ msgid "Align the window controls to the left side of the window."
+#~ msgstr "Wyrównaj sterowanie okien do lewej strony okna"
 
-#: ../data/windowmanager.ui.h:97
-msgid "Super+S"
-msgstr "Super+S"
+#~ msgid "Right"
+#~ msgstr "Prawo"
 
-#: ../data/windowmanager.ui.h:98
-msgid "Toggle Desktop"
-msgstr "Włącz pulpit"
+#~ msgid "Align the window controls to the right side of the window."
+#~ msgstr "Wyrównaj sterowanie okien do prawej strony okna"
 
-#: ../data/windowmanager.ui.h:99
-msgid "Show Workspaces"
-msgstr "Wyświetl obszary robocze"
+#~ msgid "Alignment:"
+#~ msgstr "Wyrównanie:"
 
-#: ../data/windowmanager.ui.h:100
-msgid "Window Spread"
-msgstr "Rozproszenie okien"
+#~ msgid "Show menu button"
+#~ msgstr "Pokaż przycisk menu"
 
-#: ../data/windowmanager.ui.h:101
-msgid "Spread all Windows"
-msgstr "Rozprosz wszystkie okna"
+#~ msgid "If enabled, show the window menu in the titlebar."
+#~ msgstr "Gdy zaznaczone, pokaż przycisk menu na pasku tytułu"
 
-#: ../data/windowmanager.ui.h:102
-msgid "Do Nothing"
-msgstr "Nic nie rób"
+#~ msgid "Restore Defaults"
+#~ msgstr "Przywróć domyślne"
 
-#: ../data/windowmanager.ui.h:103
-msgid "Bottom Left Corner"
-msgstr "Lewy dolny róg"
+#~ msgid "Restore default window controls settings."
+#~ msgstr "Przywróć domyślne ustawienia sterowania oknem"
 
-#: ../data/windowmanager.ui.h:104
-msgid "Bottom Half"
-msgstr "Dolna połowa"
+#~ msgid "Window Controls"
+#~ msgstr "Sterowanie oknem"
 
-#: ../data/windowmanager.ui.h:105
-msgid "Bottom Right Corner"
-msgstr "Prawy dolny róg"
+#~ msgid "Window controls"
+#~ msgstr "Elementy sterujące okna"
 
-#: ../data/windowmanager.ui.h:106
-msgid "Left Half"
-msgstr "Lewa połowa"
+#~ msgid "Initialising Unity reset"
+#~ msgstr "Inicjalizacja ponownego uruchomienia Unity"
 
-#: ../data/windowmanager.ui.h:107
-msgid "Fill Screen"
-msgstr "Wypełnij ekran"
+#~ msgid "Killing Unity and Compiz"
+#~ msgstr "Wyłączanie Unity i Compiza"
 
-#: ../data/windowmanager.ui.h:108
-msgid "Right Half"
-msgstr "Prawa połowa"
+#~ msgid "Resetting compiz plugins"
+#~ msgstr "Resetowanie wtyczek compiza"
 
-#: ../data/windowmanager.ui.h:109
-msgid "Top Left Corner"
-msgstr "Lewy górny róg"
+#~ msgid "Resetting more compiz plugins"
+#~ msgstr "Resetowanie większej ilości wtyczek compiza"
 
-#: ../data/windowmanager.ui.h:110
-msgid "Top Half"
-msgstr "Górna połowa"
+#~ msgid "Resetting Unity settings"
+#~ msgstr "Resetowanie ustawień Unity"
 
-#: ../data/windowmanager.ui.h:111
-msgid "Top Right Corner"
-msgstr "Prawy górny róg"
-
-#: ../data/system.ui.h:1
-msgid "Items to display:"
-msgstr "Rzeczy do wyświetlenia:"
-
-#: ../data/system.ui.h:2
-msgid "Home Folder"
-msgstr "Katalog domowy"
-
-#: ../data/system.ui.h:3
-msgid "Network"
-msgstr "Sieć"
-
-#: ../data/system.ui.h:4
-msgid "Rubbish Bin"
-msgstr "Kosz"
-
-#: ../data/system.ui.h:5
-msgid "Trash"
-msgstr "Kosz"
-
-#: ../data/system.ui.h:6
-msgid "Mounted Devices"
-msgstr "Zamontowane urządzenia"
-
-#: ../data/system.ui.h:7
-msgid "Devices"
-msgstr "Urządzenia"
-
-#: ../data/system.ui.h:9
-msgid "Restore the default configurations for Desktop icons"
-msgstr "Przywróć domyślne ustawienia konfiguracji dla ikon pulpitu"
-
-#: ../data/system.ui.h:10 ../data/unitytweak.ui.h:23
-msgid "Desktop Icons"
-msgstr "Ikony pulpitu"
-
-#: ../data/system.ui.h:11
-msgid "Enhance system security by disabling:"
-msgstr "Podwyższ bezpieczeństwo systemu przez wyłączenie:"
-
-#: ../data/system.ui.h:12
-msgid "Desktop lock"
-msgstr "Blokada pulpitu"
-
-#: ../data/system.ui.h:13
-msgid "Disable the desktop lock screen."
-msgstr "Wyłącz ekran blokady pulpitu."
-
-#: ../data/system.ui.h:14
-msgid "User log out"
-msgstr "Wylogowanie użytkownika"
-
-#: ../data/system.ui.h:15
-msgid "Disable session log out."
-msgstr "Wyłącz wylogowywanie sesji"
-
-#: ../data/system.ui.h:16
-msgid "User switching"
-msgstr "Przełączanie użytkowników"
-
-#: ../data/system.ui.h:17
-msgid "Disable fast user switching."
-msgstr "Wyłącz szybkie przełączanie użytkowników"
-
-#: ../data/system.ui.h:18
-msgid "Printing"
-msgstr "Drukowanie"
-
-#: ../data/system.ui.h:19
-msgid "Prevent user access to the system's printers and print setup."
-msgstr ""
-"Nie pozwól użytkownikom na dostęp do systemowych ustawień drukowania."
-
-#: ../data/system.ui.h:20
-msgid "Restore the default configurations for Security settings"
-msgstr "Przywróć domyślną konfigurację ustawień bezpieczeństwa"
-
-#: ../data/system.ui.h:21 ../data/unitytweak.ui.h:24 ../data/overview.ui.h:27
-msgid "Security"
-msgstr "Bezpieczeństwo"
-
-#: ../data/system.ui.h:22
-msgid "Scrollbars"
-msgstr "Paski przewijania"
-
-#: ../data/system.ui.h:23
-msgid "Legacy"
-msgstr "Starsze wersje"
-
-#: ../data/system.ui.h:24
-msgid "Overlay "
-msgstr "Pokrycie "
-
-#: ../data/system.ui.h:25
-msgid "Select the behaviour of the overlay scrollbars."
-msgstr "Wybierz zachowanie pokrycia pasków przwijania."
-
-#: ../data/system.ui.h:26
-msgid "Default"
-msgstr "Domyślny"
-
-#: ../data/system.ui.h:27
-msgid "Overlay with mouse"
-msgstr "Pokrywaj z myszą"
-
-#: ../data/system.ui.h:28
-msgid "No overlay"
-msgstr "Bez pokrycia"
-
-#: ../data/system.ui.h:29
-msgid "Behaviour:"
-msgstr "Zachowanie:"
-
-#: ../data/system.ui.h:30
-msgid "Touch scrolling"
-msgstr "Dotykowe przewijanie"
-
-#: ../data/system.ui.h:31
-msgid "Edge"
-msgstr "Krawędź"
-
-#: ../data/system.ui.h:32
-msgid "If enabled, edge scrolling is active on touchpads."
-msgstr ""
-"Gdy włączone, krawędziowe przewijane jest aktywne na panelach dotykowych."
-
-#: ../data/system.ui.h:33
-msgid "Two-finger"
-msgstr "Dwa-palce"
-
-#: ../data/system.ui.h:34
-msgid "If enabled, two-finger scrolling is active on multitouch touchpads."
-msgstr ""
-"Gdy włączone, dwupalcowe przewijanie jest aktywne na panelach dotykowych z "
-"multitouch."
-
-#: ../data/system.ui.h:35
-msgid "Horizontal scrolling"
-msgstr "Przewijanie poziome"
-
-#: ../data/system.ui.h:36 ../data/unitytweak.ui.h:25 ../data/overview.ui.h:28
-msgid "Scrolling"
-msgstr "Przewijanie"
-
-#: ../unity-tweak-tool.desktop.in.h:1 ../data/unitytweak.ui.h:1
-msgid "Unity Tweak Tool"
-msgstr "Unity Tweak Tool"
-
-#: ../unity-tweak-tool.desktop.in.h:2
-msgid "Configuration frontend for the Unity desktop environment"
-msgstr "Konfiguracja dostosowana do środowiska graficznego Unity"
-
-#. ! /usr/bin/env python3
-#: ../unity-tweak-tool.desktop.in.h:3 ../data/unitytweak.ui.h:3
-#: ../data/overview.ui.h:1
-msgid "Unity"
-msgstr "Unity"
-
-#: ../unity-tweak-tool.desktop.in.h:4 ../data/unitytweak.ui.h:10
-#: ../data/overview.ui.h:8
-msgid "Window Manager"
-msgstr "Menedżer Okien"
-
-#: ../unity-tweak-tool.desktop.in.h:5 ../data/unitytweak.ui.h:16
-#: ../data/unity.ui.h:41 ../data/overview.ui.h:17 ../data/appearance.ui.h:29
-msgid "Appearance"
-msgstr "Wygląd"
-
-#: ../unity-tweak-tool.desktop.in.h:6 ../data/unitytweak.ui.h:22
-#: ../data/overview.ui.h:24
-msgid "System"
-msgstr "System"
-
-#: ../data/unitytweak.ui.h:2
-msgid "_File"
-msgstr "_Plik"
-
-#: ../data/unitytweak.ui.h:4 ../data/unity.ui.h:77 ../data/overview.ui.h:2
-msgid "Launcher"
-msgstr "Panel uruchamiania"
-
-#: ../data/unitytweak.ui.h:5 ../data/unity.ui.h:102 ../data/overview.ui.h:3
-msgid "Search"
-msgstr "Szukaj"
-
-#: ../data/unitytweak.ui.h:6 ../data/unity.ui.h:146 ../data/overview.ui.h:4
-msgid "Panel"
-msgstr "Panel"
-
-#: ../data/unitytweak.ui.h:7 ../data/unity.ui.h:163 ../data/overview.ui.h:5
-msgid "Switcher"
-msgstr "Przełącznik"
-
-#: ../data/unitytweak.ui.h:8 ../data/unity.ui.h:170 ../data/overview.ui.h:6
-msgid "Web Apps"
-msgstr "Aplikacje internetowe"
-
-#: ../data/unitytweak.ui.h:12
-msgid "Workspace settings"
-msgstr "Ustawienia  obszarów roboczych"
-
-#: ../data/unitytweak.ui.h:13
-msgid "Windows spread"
-msgstr "Rozproszenie okien"
-
-#: ../data/unitytweak.ui.h:14
-msgid "Windows snapping"
-msgstr "Przyciąganie okien"
-
-#: ../data/unitytweak.ui.h:17 ../data/overview.ui.h:18
-#: ../data/appearance.ui.h:8
-msgid "Theme"
-msgstr "Styl"
-
-#: ../data/unitytweak.ui.h:18 ../data/unity.ui.h:56 ../data/overview.ui.h:19
-#: ../data/appearance.ui.h:12
-msgid "Icons"
-msgstr "Ikony"
-
-#: ../data/unitytweak.ui.h:19 ../data/appearance.ui.h:19
-msgid "Cursor"
-msgstr "Kursor"
-
-#: ../data/unitytweak.ui.h:20 ../data/overview.ui.h:21
-#: ../data/appearance.ui.h:43
-msgid "Fonts"
-msgstr "Czcionki"
-
-#: ../data/unitytweak.ui.h:21
-msgid "Window controls"
-msgstr "Elementy sterujące okna"
-
-#: ../data/unitytweak.ui.h:26
-msgid "_Help"
-msgstr "_Pomoc"
-
-#: ../data/unitytweak.ui.h:27
-msgid " Overview"
-msgstr " Przegląd"
-
-#: ../data/unity.ui.h:1
-msgid "Invoke HUD"
-msgstr "Włącz HUD"
-
-#: ../data/unity.ui.h:2
-msgid "Super+H"
-msgstr "Super+H"
-
-#: ../data/unity.ui.h:3
-msgid "Show the launcher"
-msgstr "Pokaż panel uruchamiania"
-
-#: ../data/unity.ui.h:4
-msgid "Super+E"
-msgstr "Super+E"
-
-#: ../data/unity.ui.h:5
-msgid "Execute command"
-msgstr "Wykonaj polecenie"
-
-#: ../data/unity.ui.h:6
-msgid "Super+M"
-msgstr "Super+M"
-
-#: ../data/unity.ui.h:7
-msgid "Put keyboard focus on the launcher"
-msgstr "Skup klawiaturę na panelu uruchamiania"
-
-#: ../data/unity.ui.h:8
-msgid "Super+A"
-msgstr "Super+A"
-
-#: ../data/unity.ui.h:9
-msgid "Open the first panel menu"
-msgstr "Otwórz pierwsze menu panelu"
-
-#: ../data/unity.ui.h:10
-msgid "Super+N"
-msgstr "Super+N"
-
-#: ../data/unity.ui.h:11
-msgid "Start switcher"
-msgstr "Uruchom przełącznik okien"
-
-#: ../data/unity.ui.h:12
-msgid "Super+Tab"
-msgstr "Super+Tab"
-
-#: ../data/unity.ui.h:13
-msgid "Start switcher in reverse"
-msgstr "Uruchom przełącznik okien w odwrotnej kolejności"
-
-#: ../data/unity.ui.h:14
-msgid "Shift+Super+Tab"
-msgstr "Shift+Super+Tab"
-
-#: ../data/unity.ui.h:15
-msgid "Alt+Tab"
-msgstr "Alt+Tab"
-
-#: ../data/unity.ui.h:16
-msgid "Shift+Alt+Tab"
-msgstr "Shift+Alt+Tab"
-
-#: ../data/unity.ui.h:17
-msgid "Start switcher for all workspaces"
-msgstr "Uruchom przełącznik okien na wszystkich obszarach roboczych"
-
-#: ../data/unity.ui.h:18
-msgid "Ctrl+Super+Alt+Tab"
-msgstr "Ctrl+Super+Alt+Tab"
-
-#: ../data/unity.ui.h:19
-msgid "Start switcher for all workspaces in reverse"
-msgstr ""
-"Uruchom przełącznik na wszystkich obszarach roboczych w odwrotnej kolejności"
-
-#: ../data/unity.ui.h:20
-msgid "Shift+Ctrl+Super+Alt+Tab"
-msgstr "Shift+Ctrl+Super+Alt+Tab"
-
-#: ../data/unity.ui.h:21
-msgid "Flip through windows in the switcher"
-msgstr "Przerzuć  okna na przełącznik"
-
-#: ../data/unity.ui.h:23
-msgid "Flip through windows in the switcher backwards"
-msgstr "Przerzuć  okna na przełącznik od tyłu"
-
-#: ../data/unity.ui.h:25
-msgid "Should the launcher be hidden?"
-msgstr "Czy przełącznik okien ma być schowany?"
-
-#: ../data/unity.ui.h:26
-msgid "Auto-hide:"
-msgstr "Auto-ukrycie:"
-
-#: ../data/unity.ui.h:27
-msgid "Select the auto-hide animation of the launcher."
-msgstr "Wybierz animacje auto-ukrycia przełącznika okien."
-
-#: ../data/unity.ui.h:28
-msgid "Fade Dash and slide"
-msgstr "Przyciemnij kreskę i przesuń"
-
-#: ../data/unity.ui.h:29
-msgid "Slide only"
-msgstr "Tylko przesuń"
-
-#: ../data/unity.ui.h:30
-msgid "Fade only"
-msgstr "Tylko przyciemnij"
-
-#: ../data/unity.ui.h:31
-msgid "Fade and slide"
-msgstr "Przyciemnij i przesuń"
-
-#: ../data/unity.ui.h:32
-msgid "Auto-hide animation:"
-msgstr "Animacja auto-ukrycia:"
-
-#: ../data/unity.ui.h:33
-msgid ""
-"Select the option to reveal the dash with the mouse, when auto-hide is "
-"enabled."
-msgstr ""
-"Wybierz jak pokazywać panel główny myszką, gdy auto-ukrywanie jest włączone"
-
-#: ../data/unity.ui.h:34
-msgid "Reveal location:"
-msgstr "Położenie obszaru przywoływania:"
-
-#: ../data/unity.ui.h:35
-msgid "Reveal sensitivity:"
-msgstr "Wrażliwość obszaru przywoływania:"
-
-#: ../data/unity.ui.h:36
-msgid "How much pointer \"pressure\" is required to reveal the launcher."
-msgstr ""
-"Ile \"ciśnienia\" kursora jest wymagane aby pokazać panel uruchamiania."
-
-#: ../data/unity.ui.h:37
-msgid "Left side"
-msgstr "Lewa krawędź"
-
-#: ../data/unity.ui.h:38
-msgid ""
-"When in auto-hide mode the left edge of the current workspace triggers the "
-"launcher."
-msgstr ""
-"W trybie auto-ukrywania, lewa krawędź ekranu wyzwala panel uruchamiania."
-
-#: ../data/unity.ui.h:39
-msgid "Top left corner"
-msgstr "Lewy górny róg"
-
-#: ../data/unity.ui.h:40
-msgid ""
-"When in auto-hide mode the top left corner of the current workspace triggers "
-"the launcher."
-msgstr ""
-"W trybie auto-ukrywania, lewy, górny róg obszaru roboczego wyzwala panel "
-"uruchamiania."
-
-#: ../data/unity.ui.h:42
-msgid "Select the level of the transparency of the launcher"
-msgstr "Wybierz poziom przezroczystości panelu uruchamiania"
-
-#: ../data/unity.ui.h:43
-msgid "Transparency level:"
-msgstr "Poziom przezroczystości:"
-
-#: ../data/unity.ui.h:44
-msgid "How transparent the launcher will be."
-msgstr "Jak bardzo przezroczysty ma być panel uruchamiania."
-
-#: ../data/unity.ui.h:45
-msgid "Based on wallpaper"
-msgstr "Oparte na tapecie"
-
-#: ../data/unity.ui.h:46
-msgid "If selected, the launcher colour is based on the desktop background"
-msgstr ""
-"Jeśli wybrany, kolor panelu uruchamiania będzie oparty na kolorze tapety"
-
-#: ../data/unity.ui.h:47
-msgid "Colour:"
-msgstr "Kolor:"
-
-#: ../data/unity.ui.h:48
-msgid "Visibility:"
-msgstr "Widoczność:"
-
-#: ../data/unity.ui.h:49
-msgid "Custom:"
-msgstr "Własny:"
-
-#: ../data/unity.ui.h:50
-msgid "If selected, the launcher will be the colour chosen by the user"
-msgstr ""
-"Jeśli zaznaczone, panel uruchamiania będzie w kolorze wybieranym przez "
-"użytkownika"
-
-#: ../data/unity.ui.h:51
-msgid "All desktops"
-msgstr "Wszystkie pulpity"
-
-#: ../data/unity.ui.h:52
-msgid "If selected, the launcher is visible on all desktops."
-msgstr ""
-"Jeśli wybrane, panel uruchamiania będzie widoczny na wszystkich pulpitach."
-
-#: ../data/unity.ui.h:53
-msgid "If selected, the launcher is visible on all desktops"
-msgstr ""
-"Jeśli wybrane, panel uruchamiania będzie widoczny na wszystkich pulpitach"
-
-#: ../data/unity.ui.h:54
-msgid "Primary desktop"
-msgstr "Główny pulpit"
-
-#: ../data/unity.ui.h:55
-msgid "If selected, the launcher is visible on the primary desktop"
-msgstr ""
-"Jeśli wybrane, panel uruchamiania będzie widoczny tylko na głównym pulpicie"
-
-#: ../data/unity.ui.h:57
-msgid "Icon size:"
-msgstr "Rozmiar ikony:"
-
-#: ../data/unity.ui.h:58
-msgid "Select the animation used for launching an application."
-msgstr "Wybierz animacje używaną przy uruchomianiu aplikacji."
-
-#: ../data/unity.ui.h:59
-msgid "No animation"
-msgstr "Bez animacji"
-
-#: ../data/unity.ui.h:60
-msgid "Pulse"
-msgstr "Pulsowanie"
-
-#: ../data/unity.ui.h:61
-msgid "Blink"
-msgstr "Migotanie"
-
-#: ../data/unity.ui.h:62
-msgid "Select the animation used for an urgent notification on the launcher"
-msgstr ""
-"Wybierz animację używaną dla ważnych powiadomień na panelu uruchamiania"
-
-#: ../data/unity.ui.h:63
-msgid "Wiggle"
-msgstr "Drganie"
-
-#: ../data/unity.ui.h:64
-msgid "Launch animation:"
-msgstr "Animacja uruchomienia:"
-
-#: ../data/unity.ui.h:65
-msgid "Urgent animation:"
-msgstr "Ważna animacja:"
-
-#: ../data/unity.ui.h:66
-msgid "Select how the icons are coloured on the launcher"
-msgstr "Wybierz jak aplikacje są kolorowane na panelu uruchamiania"
-
-#: ../data/unity.ui.h:67
-msgid "All applications"
-msgstr "Wszystkie aplikacje"
-
-#: ../data/unity.ui.h:68
-msgid "Open applications only"
-msgstr "Tylko otwarte aplikacje"
-
-#: ../data/unity.ui.h:69
-msgid "No colouring"
-msgstr "Bez kolorowania"
-
-#: ../data/unity.ui.h:70
-msgid "Coloured edges"
-msgstr "Kolorowane krawędzie"
-
-#: ../data/unity.ui.h:71
-msgid "Alternated for each workspace"
-msgstr "Inne na każdym obszarze roboczym"
-
-#: ../data/unity.ui.h:72
-msgid "Icon backgrounds:"
-msgstr "Tło ikon:"
-
-#: ../data/unity.ui.h:73
-msgid "\"Show Desktop\" icon:"
-msgstr "Ikona \"Pulpit\":"
-
-#: ../data/unity.ui.h:74
-msgid "Select the size of the icons on the launcher"
-msgstr "Wybierz rozmiar ikon na panelu uruchamiania"
-
-#: ../data/unity.ui.h:76
-msgid "Restore default Unity launcher settings."
-msgstr "Przywróć domyślne ustawienia panelu uruchamiania Unity"
-
-#: ../data/unity.ui.h:79
-msgid "Background blur:"
-msgstr "Rozmycie tła:"
-
-#: ../data/unity.ui.h:80
-msgid "Enable dash blur?"
-msgstr "Czy włączyć rozmycie panelu głównego?"
-
-#: ../data/unity.ui.h:81
-msgid "Select the type of blur in the dash"
-msgstr "Wybierz typ rozmycia panelu głównego"
-
-#: ../data/unity.ui.h:82
-msgid "Blur type:"
-msgstr "Typ rozmycia:"
-
-#: ../data/unity.ui.h:83
-msgid "Active"
-msgstr "Aktywne"
-
-#: ../data/unity.ui.h:84
-msgid "Use a dynamic blur in the dash."
-msgstr "Użyj dynamicznego rozmycia w panelu głównym."
-
-#: ../data/unity.ui.h:85
-msgid "Static"
-msgstr "Statyczne"
-
-#: ../data/unity.ui.h:86
-msgid "Use a static blur in the dash, uses less resources."
-msgstr ""
-"Użyj statycznego rozmycia w panelu głównym, używa mniej zasobów systemowych."
-
-#: ../data/unity.ui.h:87
-msgid "Search online sources"
-msgstr "Wyszukuje w internetowych źródłach"
-
-#: ../data/unity.ui.h:88
-msgid "If enabled, the dash will get suggestions from online sources."
-msgstr ""
-"Gdy zaznaczone, panel główny będzie pobierał sugestje ze źródeł internetowych"
-
-#: ../data/unity.ui.h:89
-msgid "Applications"
-msgstr "Aplikacje"
-
-#: ../data/unity.ui.h:90
-msgid "Show \"Recently Used\" applications"
-msgstr "Pokaż \"Ostatnio Używane\" aplikacje"
-
-#: ../data/unity.ui.h:91
-msgid "If enabled, show recently used applications in the Dash."
-msgstr "Gdy zaznaczone, pokazuje ostatnio używane aplikacje w panelu głównym"
-
-#: ../data/unity.ui.h:92
-msgid "Show \"More Suggestions\""
-msgstr "Pokaż \"Więcej Sugestii\""
-
-#: ../data/unity.ui.h:93
-msgid "If enabled, show applications available for download in the Dash."
-msgstr ""
-"Gdy zaznaczone, pokazuje aplikacje dostępne do pobrania w panelu głównym."
-
-#: ../data/unity.ui.h:94
-msgid "Files"
-msgstr "Pliki"
-
-#: ../data/unity.ui.h:95
-msgid "Enable search of your files"
-msgstr "Włącz szukanie wśród twoich plików"
-
-#: ../data/unity.ui.h:96
-msgid ""
-"If enabled, allow searches to find your files that aren&apos;t logged."
-msgstr ""
-"Gdy włączone, zezwala na szukanie by znajdować twoje pliki które nie są "
-"zapisane."
-
-#: ../data/unity.ui.h:97
-msgid "If enabled, allow searches to find your files that aren't logged."
-msgstr ""
-"Gdy włączone, zezwala na szukanie by znajdować twoje pliki które nie są "
-"zapisane."
-
-#: ../data/unity.ui.h:98
-msgid "Run Command"
-msgstr "Uruchom"
-
-#: ../data/unity.ui.h:99
-msgid "Clear History"
-msgstr "Wyczyść historię"
-
-#: ../data/unity.ui.h:100
-msgid "Clear ALT+F2 command history."
-msgstr "Wyczyść historię komendy ALT+F2."
-
-#: ../data/unity.ui.h:101
-msgid "Restore the default Dash settings."
-msgstr "Przywróć domyślne ustanienia panelu uruchamiania."
-
-#: ../data/unity.ui.h:103
-msgid "Menu visible for:"
-msgstr "Menu widoczne dla:"
-
-#: ../data/unity.ui.h:104
-msgid ""
-"Select how long the application menu is visible when an application is first "
-"opened"
-msgstr ""
-"Wybierz jak długo menu aplikacji jest widoczne gdy aplikacja jest najpierw "
-"włączona"
-
-#: ../data/unity.ui.h:105
-msgid "seconds"
-msgstr "sekundy"
-
-#: ../data/unity.ui.h:106
-msgid "Set the level of transparency for the panel."
-msgstr "Ustaw przeźroczystość panelu."
-
-#: ../data/unity.ui.h:107
-msgid "Opaque panel for maximized windows"
-msgstr "Nieprzeźroczysty panel dla zmaksymalizowanych aplikacji"
-
-#: ../data/unity.ui.h:108
-msgid "If selected, the panel will be opaque for maximized windows"
-msgstr ""
-"Gdy zaznaczone, panel będzie nieprzeźroczysty dla zmaksymalizowanych "
-"aplikacji"
-
-#: ../data/unity.ui.h:109
-msgid "Indicators"
-msgstr "Wskaźniki"
-
-#: ../data/unity.ui.h:110
-msgid "Date & time"
-msgstr "Data i godzina"
-
-#: ../data/unity.ui.h:111
-msgid "If enabled, the date &amp; time indicator will be visible."
-msgstr "Gdy zaznaczone, wskaźniki daty i godziny będą widoczne."
-
-#: ../data/unity.ui.h:112
-msgid "If enabled, the date & time indicator will be visible."
-msgstr "Gdy zaznaczone, wskaźniki daty i godziny będą widoczne."
-
-#: ../data/unity.ui.h:113
-msgid "12-hour time"
-msgstr "Tryb 12-godzinny"
-
-#: ../data/unity.ui.h:114
-msgid "Have the clock use 12-hour time."
-msgstr "Czy zegar ma korzystać z trybu 12-godzinnego"
-
-#: ../data/unity.ui.h:115
-msgid "24-hour time"
-msgstr "Tryb 24-godzinny"
-
-#: ../data/unity.ui.h:116
-msgid "Have the clock use 24-hour time."
-msgstr "Czy zegar ma korzystać z trybu 24-godzinnego"
-
-#: ../data/unity.ui.h:117
-msgid "Seconds"
-msgstr "Sekundy"
-
-#: ../data/unity.ui.h:118
-msgid "If enabled, the clock will display seconds."
-msgstr "Gdy zaznaczone, zegar będzie wyświetlał sekundy."
-
-#: ../data/unity.ui.h:119
-msgid "Date"
-msgstr "Data"
-
-#: ../data/unity.ui.h:120
-msgid "If enabled, the month and day will be visible in the panel."
-msgstr "Gdy zaznaczone, miesiąc i dzień będą widoczne na panelu."
-
-#: ../data/unity.ui.h:121
-msgid "Weekday"
-msgstr "Dzień tygodnia"
-
-#: ../data/unity.ui.h:122
-msgid "If enabled, the day of the week will be visible in the panel."
-msgstr "Gdy zaznaczone, dzień tygodnia będzie widoczny na panelu."
-
-#: ../data/unity.ui.h:123
-msgid "Include:"
-msgstr "Uwzględniaj:"
-
-#: ../data/unity.ui.h:124
-msgid "Calendar"
-msgstr "Kalendarz"
-
-#: ../data/unity.ui.h:125
-msgid "If enabled, the calendar will be visible in the indicator menu."
-msgstr "Gdy zaznaczone, kalendarz będzie widoczny w menu wskaźników."
-
-#: ../data/unity.ui.h:126
-msgid "Bluetooth"
-msgstr "Bluetooth"
-
-#: ../data/unity.ui.h:127
-msgid "If enabled, the bluetooth indicator is visible in the panel."
-msgstr "Gdy zaznaczone, wskaźnik bluetooth będzie widoczny na panelu."
-
-#: ../data/unity.ui.h:128
-msgid "Power"
-msgstr "Zasilanie"
-
-#: ../data/unity.ui.h:129
-msgid "If enabled, show the power menu in the panel."
-msgstr "Gdy zaznaczone, pokazuj menu baterii na panelu."
-
-#: ../data/unity.ui.h:130
-msgid "Visible when charging or discharging"
-msgstr "Widoczny gdy ładowany lub rozładowywany"
-
-#: ../data/unity.ui.h:131
-msgid ""
-"Set the power indicator to be visible when charging or discharging power."
-msgstr ""
-"Ustaw by wskaźnik ładowania był widoczny gdy komputer jest ładowany lub "
-"rozładowywany."
-
-#: ../data/unity.ui.h:132
-msgid "Always visible"
-msgstr "Zawsze widoczny"
-
-#: ../data/unity.ui.h:133
-msgid "Set the power indicator to be always visible."
-msgstr "Ustaw by wskaźnik ładowania był widoczny zawsze."
-
-#: ../data/unity.ui.h:134
-msgid "Display remaining battery life"
-msgstr "Pokazuj pozostałą objętość baterii"
-
-#: ../data/unity.ui.h:135
-msgid "If enabled, show the remaining battery life in the power indicator."
-msgstr ""
-"Gdy zaznaczone, pokazuj pozostałą objętość baterii na wskaźniku ładowania"
-
-#: ../data/unity.ui.h:136
-msgid "Volume"
-msgstr "Głośność"
-
-#: ../data/unity.ui.h:137
-msgid "If enabled, show the sound menu in the panel."
-msgstr "Gdy zaznaczone, pokaż menu dźwięku na panelu"
-
-#: ../data/unity.ui.h:138
-msgid "Default player:"
-msgstr "Domyślny odtwarzacz"
-
-#: ../data/unity.ui.h:139
-msgid ""
-"Select which of the installed audio players is default in the sound menu."
-msgstr ""
-"Ustal który z zainstalowanych odtwarzaczy muzyki ma być domyślny w menu "
-"dźwięku."
-
-#: ../data/unity.ui.h:140
-msgid "Notifications when scrolling"
-msgstr "Powiadomienia gdy przewijane"
-
-#: ../data/unity.ui.h:141
-msgid ""
-"When using scrolling to change the volume, show on-screen notifications."
-msgstr ""
-"Gdy do zmieniania głośności używane jest przewijanie pokazuj powiadomienia "
-"na pulpicie."
-
-#: ../data/unity.ui.h:142
-msgid "Show my name"
-msgstr "Pokaż moje imię"
-
-#: ../data/unity.ui.h:143
-msgid "If enabled, show the user&apos;s real name in the panel."
-msgstr "Gdy zaznaczone, pokaż prawdziwe imię użytkownika na panelu."
-
-#: ../data/unity.ui.h:144
-msgid "If enabled, show the user's real name in the panel."
-msgstr "Gdy zaznaczone, pokaż prawdziwe imię użytkownika na panelu."
-
-#: ../data/unity.ui.h:145
-msgid "Restore the default Unity panel settings."
-msgstr "Przywróć domyślne ustawienia panelu Unity"
-
-#: ../data/unity.ui.h:147
-msgid "Switch between windows on all workspaces"
-msgstr "Przełączaj pomiędzy oknami na wszystkich obszarach roboczych"
-
-#: ../data/unity.ui.h:148
-msgid ""
-"If enabled, the window switcher cycles through all windows on all workspaces"
-msgstr ""
-"Gdy zaznaczone, przełącznik okien przełącza się pomiędzy wszystkimi oknami "
-"na wszystkich obszarach roboczych"
-
-#: ../data/unity.ui.h:149
-msgid "Display \"Show Desktop\" icon"
-msgstr "Pokaż ikonę \"Pokaż Pulpit\""
-
-#: ../data/unity.ui.h:150
-msgid ""
-"If enabled, show the &quot;Show Desktop&quot; option in the window switcher"
-msgstr ""
-"Gdy zaznaczone, pokaż przycisk &quot;Pokaż Pulpit&quot; na panelu bocznym"
-
-#: ../data/unity.ui.h:151
-msgid "If enabled, show the \"Show Desktop\" option in the window switcher"
-msgstr "Gdy zaznaczone, pokaż przycisk \"Pokaż Pulpit\" na panelu bocznym"
-
-#: ../data/unity.ui.h:152
-msgid "Automatically expose windows"
-msgstr "Automatycznie ujawnij okna"
-
-#: ../data/unity.ui.h:153
-msgid "If enabled, the window switcher will expose minimized windows"
-msgstr "Gdy zaznaczone, przełącznik okien ujawni zminimalizowane okna"
-
-#: ../data/unity.ui.h:154
-msgid "Switch between minimized windows"
-msgstr "Przełącz pomiędzy zminimalizowanymi oknami"
-
-#: ../data/unity.ui.h:155
-msgid "If enabled, the window switcher will switch through minimized windows"
-msgstr ""
-"Gdy zaznaczone, przełącznik okien przełączy pomiędzy zminimalizowanymi oknami"
-
-#: ../data/unity.ui.h:156
-msgid "Window switching shortcuts"
-msgstr "Skróty przełączania okna"
-
-#: ../data/unity.ui.h:157
-msgid "Window switcher shortcuts"
-msgstr "Skróty przełącznika okna"
-
-#: ../data/unity.ui.h:160
-msgid "Launcher switching shortcuts"
-msgstr "Skróty przełączania programu uruchamiającego"
-
-#: ../data/unity.ui.h:161
-msgid "Launcher switcher shortcuts"
-msgstr "Skróty przełącznika programu uruchamiającego"
-
-#: ../data/unity.ui.h:162
-msgid "Restore the default window switcher settings."
-msgstr "Przywróć domyślne ustawienia przełącznika okien"
-
-#: ../data/unity.ui.h:164
-msgid ""
-"Enable prompts for webapp integration when visiting supported websites?"
-msgstr ""
-"Włącz pokazywanie podpowiedzi wsparcia dla aplikacji internetowych kiedy "
-"odwiedza się wspierane strony."
-
-#: ../data/unity.ui.h:165
-msgid "Integration prompts:"
-msgstr "Podpowiedzi wsparcia:"
-
-#: ../data/unity.ui.h:166
-msgid "Preauthorized domains"
-msgstr "Preautoryzowane strony"
-
-#: ../data/unity.ui.h:167
-msgid "Amazon"
-msgstr "Amazon"
-
-#: ../data/unity.ui.h:168
-msgid "Ubuntu One"
-msgstr "Ubuntu One"
-
-#: ../data/unity.ui.h:169
-msgid "Restore the default Unity Webapps settings."
-msgstr "Przywróć domyślne ustawienia aplikacji internetowych Unity"
-
-#: ../data/unity.ui.h:171
-msgid "HUD"
-msgstr "HUD"
-
-#: ../data/unity.ui.h:172
-msgid "Remember previous commands"
-msgstr "Pamiętaj wpisywane komendy"
-
-#: ../data/unity.ui.h:173
-msgid ""
-"If enabled, the HUD will remember previously executed entries and sort them "
-"by frequently used."
-msgstr ""
-"Gdy zaznaczone, HUD będzie pamiętał uprzednio uruchamiane programy i "
-"sortował je według najczęściej używanych."
-
-#: ../data/unity.ui.h:174
-msgid "Keyboard Shortcuts"
-msgstr "Skróty klawiszowe"
-
-#: ../data/unity.ui.h:175
-msgid "Hold Super for keyboard shortcuts"
-msgstr "Przytrzymaj Super dla skrótów klawiszowych"
-
-#: ../data/unity.ui.h:176
-msgid ""
-"When enabled, pressing the Super key displays an overlay of all Unity "
-"keyboard shortcuts"
-msgstr ""
-"Gdy zaznaczone, naciśnięcie przycisku Super pokaże wszystkie skróty "
-"klawiszowe Unity"
-
-#: ../data/unity.ui.h:177
-msgid "List of Unity keyboard shortcuts"
-msgstr "Lista skrótów klawiszowych Unity"
-
-#: ../data/unity.ui.h:178
-msgid "Notifications"
-msgstr "Powiadomienia"
-
-#: ../data/unity.ui.h:179
-msgid "All displays"
-msgstr "Wszystkie ekrany"
-
-#: ../data/unity.ui.h:180
-msgid "For multiple displays, notifications are visible on all of them."
-msgstr "Dla wielu monitorów, powiadomienia pokazywane są na wszystkich."
-
-#: ../data/unity.ui.h:181
-msgid "Active display"
-msgstr "Główny ekran"
-
-#: ../data/unity.ui.h:182
-msgid ""
-"For multiple displays, notifications are visible on the active display."
-msgstr "Dla wielu monitorów, powiadomienia pokazywane są na głównym."
-
-#: ../data/unity.ui.h:183
-msgid "Restore the default Unity keyboard shortcut settings."
-msgstr "Przywróć domyślne ustawienia skrótów klawiszowych Unity"
-
-#: ../data/overview.ui.h:10
-msgid ""
-"Workspace\n"
-"Settings"
-msgstr ""
-"Obszar roboczy\n"
-"Ustawienia"
-
-#: ../data/overview.ui.h:12
-msgid ""
-"Window\n"
-"Spread"
-msgstr ""
-"Okno\n"
-"Rozproszenie"
-
-#: ../data/overview.ui.h:14
-msgid ""
-"Window\n"
-"Snapping"
-msgstr ""
-"Okno\n"
-"Przyciąganie"
-
-#: ../data/overview.ui.h:20
-msgid "Cursors"
-msgstr "Kursory"
-
-#: ../data/overview.ui.h:22
-msgid ""
-"Window\n"
-"Controls"
-msgstr ""
-"Okno\n"
-"Sterowanie"
-
-#: ../data/overview.ui.h:25
-msgid ""
-"Desktop\n"
-"Icons"
-msgstr ""
-"Pulpit\n"
-"Ikony"
-
-#: ../data/errordialog.ui.h:1
-msgid "Schemas missing"
-msgstr "Zagubione schematy"
-
-#: ../data/errordialog.ui.h:2
-msgid "The following schema is missing"
-msgstr "Ten schemat jest zagubiony"
-
-#: ../UnityTweakTool/utils/unityreset.py:41
-msgid "Initialising Unity reset"
-msgstr "Inicjalizacja ponownego uruchomienia Unity"
-
-#: ../UnityTweakTool/utils/unityreset.py:42
-msgid "Killing Unity and Compiz"
-msgstr "Wyłączanie Unity i Compiza"
-
-#: ../UnityTweakTool/utils/unityreset.py:45
-msgid "Resetting compiz plugins"
-msgstr "Resetowanie wtyczek compiza"
-
-#: ../UnityTweakTool/utils/unityreset.py:47
-msgid "Resetting more compiz plugins"
-msgstr "Resetowanie większej ilości wtyczek compiza"
-
-#: ../UnityTweakTool/utils/unityreset.py:49
-msgid "Resetting Unity settings"
-msgstr "Resetowanie ustawień Unity"
-
-#: ../UnityTweakTool/utils/unityreset.py:51
-msgid "Reset complete. Reloading unity"
-msgstr "Reset zakończony. Przeładowywanie Unity"
-
-#: ../data/about.ui.h:1
-msgid "Copyright © 2013 Freyja Development team"
-msgstr "Copyright © 2013 Freyja Development team"
-
-#: ../data/about.ui.h:2
-msgid ""
-"Unity Tweak Tool is a settings manager intended to be used with Ubuntu Unity."
-msgstr ""
-"Unity Tweak Tool jest menadżerem ustawień przeznaczonym do używania z Ubuntu "
-"Unity"
-
-#: ../data/about.ui.h:3
-msgid "Unity Tweak Tool on Launchpad"
-msgstr "Unity Tweak Tool na Launchpadzie"
-
-#: ../data/about.ui.h:4
-msgid "GPL3"
-msgstr "GPL3"
-
-#: ../unity-tweak-tool.py:43
-msgid "Start in the Unity tab"
-msgstr "Zacznij w zakładce Unity"
-
-#: ../unity-tweak-tool.py:44
-msgid "Start in the WindowManager tab"
-msgstr "Zacznij w zakładce WindowMenagera"
-
-#: ../unity-tweak-tool.py:45
-msgid "Start in the appearance tab"
-msgstr "Zacznij w zakładce wyglądu"
-
-#: ../unity-tweak-tool.py:46
-msgid "Start in the system tab"
-msgstr "Zacznij w zakładce systemu"
-
-#: ../unity-tweak-tool.py:47
-msgid "Reset Unity, wiping all configuration changes."
-msgstr "Resetuj Unity, usuwa wszystkie zmiany ustawień"
-
-#: ../unity-tweak-tool.py:61
-msgid ""
-"\n"
-"WARNING: You are about to reset Unity to its default configuration.\n"
-"    This will result in loss of configuration.\n"
-"    It is normal for your desktop to flicker during the process.\n"
-"    Type yes to continue, anything else to exit.\n"
-"    "
-msgstr ""
-"\n"
-"UWAGA: Jesteś na drodze do zresetowania Unity do domyślnych ustawień.\n"
-"    Doprowadzi to do utraty ustawień.\n"
-"    Normalne jest, że pulpit migocze podczas tego procesu.\n"
-"    Wpisz yes by kontynuować, cokolwiek innego by przerwać.\n"
-"    "
-
-#: ../unity-tweak-tool.py:67
-msgid "Do you wish to continue?"
-msgstr "Czy chcesz kontynuować?"
-
-#: ../unity-tweak-tool.py:70
-msgid "Please log out and log back in."
-msgstr "Proszę wyloguj się i zaloguj się ponownie."
-
-#: ../data/appearance.ui.h:1
-msgid "Available themes"
-msgstr "Dostępne motywy"
-
-#: ../data/appearance.ui.h:2
-msgid "List of GTK Themes"
-msgstr "Lista motywów GTK"
-
-#: ../data/appearance.ui.h:3
-msgid "GTK Theme"
-msgstr "Motyw GTK"
-
-#: ../data/appearance.ui.h:4
-msgid "List of Window decoration themes"
-msgstr "Lista motywów dekoracyjnych okien"
-
-#: ../data/appearance.ui.h:5
-msgid "Window decoration theme"
-msgstr "Motyw dekoracyjny okna"
-
-#: ../data/appearance.ui.h:7
-msgid "Restore system's default theme configurations"
-msgstr "Przywróć domyślne ustawienia motywów"
-
-#: ../data/appearance.ui.h:9
-msgid "List of icon themes"
-msgstr "LIsta motywów ikon"
-
-#: ../data/appearance.ui.h:10
-msgid "Icon theme"
-msgstr "Motyw ikon"
-
-#: ../data/appearance.ui.h:11
-msgid "Restore system's default icon theme configurations"
-msgstr "Przywróć domyślne ustawienia motywów ikon"
-
-#: ../data/appearance.ui.h:13
-msgid "List of cursor themes"
-msgstr "LIsta motywów kursora"
-
-#: ../data/appearance.ui.h:14
-msgid "Cursor Theme"
-msgstr "Motyw kursorów"
-
-#: ../data/appearance.ui.h:15
-msgid "Preferences"
-msgstr "Ustawienia"
-
-#: ../data/appearance.ui.h:16
-msgid "Use large cursors"
-msgstr "Używaj dużego kursora"
-
-#: ../data/appearance.ui.h:17
-msgid "If enabled, the system will use a larger cursor."
-msgstr "Gdy zaznaczone, system będzie używał dużego kursora"
-
-#: ../data/appearance.ui.h:18
-msgid "Restore system's default cursor theme configurations"
-msgstr "Przywróć domyślne ustawienia motywów kursora"
-
-#: ../data/appearance.ui.h:21
-msgid "Select the default font for all applications."
-msgstr "Wybierz domyślną czcionkę dla wszystkich aplikacji"
-
-#: ../data/appearance.ui.h:22
-msgid "Default font:"
-msgstr "Domyślna czcionka:"
-
-#: ../data/appearance.ui.h:23
-msgid "Select the default font used for reading documents."
-msgstr "Wybierz domyślną czcionkę używaną do czytania dokumentów"
-
-#: ../data/appearance.ui.h:24
-msgid "Document font:"
-msgstr "Czcionka dokumentów:"
-
-#: ../data/appearance.ui.h:25
-msgid "Select the default monospace font."
-msgstr "Wybierz domyśną czcionkę o stałej szerokości znaków"
-
-#: ../data/appearance.ui.h:26
-msgid "Monospace font:"
-msgstr "Czcionka stałej szerokości znaków:"
-
-#: ../data/appearance.ui.h:27
-msgid "Select the default font for the window titlebar."
-msgstr "Wybierz domyślną czcionkę dla paska tytułu"
-
-#: ../data/appearance.ui.h:28
-msgid "Window title font:"
-msgstr "Czcionka paska tytułu:"
-
-#: ../data/appearance.ui.h:30
-msgid "Select the type of antialiasing used to render fonts."
-msgstr "Wybierz typ wygładzania krawędzi do renderowania czcionki"
-
-#: ../data/appearance.ui.h:31
-msgid "Antialiasing:"
-msgstr "Wygładzanie krawędzi:"
-
-#: ../data/appearance.ui.h:32
-msgid "None"
-msgstr "Brak"
-
-#: ../data/appearance.ui.h:33
-msgid "Grayscale"
-msgstr "Odcienie szarości"
-
-#: ../data/appearance.ui.h:34
-msgid "RGBA"
-msgstr "RGBA"
-
-#: ../data/appearance.ui.h:35
-msgid "Select the type of hinting to use when rendering fonts"
-msgstr "Wybierz typ przyciągania krawędzi używany do renderowania czcionek"
-
-#: ../data/appearance.ui.h:36
-msgid "Slight"
-msgstr "Lekki"
-
-#: ../data/appearance.ui.h:37
-msgid "Medium"
-msgstr "Średni"
-
-#: ../data/appearance.ui.h:38
-msgid "Full"
-msgstr "Pełny"
-
-#: ../data/appearance.ui.h:39
-msgid "Hinting:"
-msgstr "Przyciąganie do siatki:"
-
-#: ../data/appearance.ui.h:40
-msgid ""
-"Select the factor used to enlarge or reduce text display, without changing "
-"font size."
-msgstr ""
-"Wybierz współczynnik używany, aby powiększyć lub zmniejszyć rozmiar "
-"wyświetlanego tekstu, bez zmiany rozmiaru czcionki."
-
-#: ../data/appearance.ui.h:41
-msgid "Text scaling factor:"
-msgstr "Współczynnik skalowania tekstu:"
-
-#: ../data/appearance.ui.h:42
-msgid "Restore system's default font configurations"
-msgstr "Przywróć domyślne ustawienia czcionek"
-
-#: ../data/appearance.ui.h:44
-msgid "Layout"
-msgstr "Szablon"
-
-#: ../data/appearance.ui.h:45
-msgid "Left"
-msgstr "Lewo"
-
-#: ../data/appearance.ui.h:46
-msgid "Align the window controls to the left side of the window."
-msgstr "Wyrównaj sterowanie okien do lewej strony okna"
-
-#: ../data/appearance.ui.h:47
-msgid "Right"
-msgstr "Prawo"
-
-#: ../data/appearance.ui.h:48
-msgid "Align the window controls to the right side of the window."
-msgstr "Wyrównaj sterowanie okien do prawej strony okna"
-
-#: ../data/appearance.ui.h:49
-msgid "Alignment:"
-msgstr "Wyrównanie:"
-
-#: ../data/appearance.ui.h:50
-msgid "Show menu button"
-msgstr "Pokaż przycisk menu"
-
-#: ../data/appearance.ui.h:51
-msgid "If enabled, show the window menu in the titlebar."
-msgstr "Gdy zaznaczone, pokaż przycisk menu na pasku tytułu"
-
-#: ../data/appearance.ui.h:52
-msgid "Restore Defaults"
-msgstr "Przywróć domyślne"
-
-#: ../data/appearance.ui.h:53
-msgid "Restore default window controls settings."
-msgstr "Przywróć domyślne ustawienia sterowania oknem"
-
-#: ../data/appearance.ui.h:54
-msgid "Window Controls"
-msgstr "Sterowanie oknem"
+#~ msgid "Reset complete. Reloading unity"
+#~ msgstr "Reset zakończony. Przeładowywanie Unity"

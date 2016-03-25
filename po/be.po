@@ -1,60 +1,62 @@
-# Burmese translation for unity-tweak-tool
-# Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
+# Belarusian translation for unity-tweak-tool
+# Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
 # This file is distributed under the same license as the unity-tweak-tool package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: unity-tweak-tool\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-24 18:26-0700\n"
-"PO-Revision-Date: 2013-04-18 11:10+0000\n"
-"Last-Translator: Pyae Sone <Unknown>\n"
-"Language-Team: Burmese <my@li.org>\n"
-"Language: my\n"
+"PO-Revision-Date: 2015-02-09 18:10+0000\n"
+"Last-Translator: Arsień Šachalevič <semen.shah@gmail.com>\n"
+"Language-Team: Belarusian <be@li.org>\n"
+"Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-07-25 06:07+0000\n"
-"X-Generator: Launchpad (build 17114)\n"
+"X-Launchpad-Export-Date: 2015-02-10 06:46+0000\n"
+"X-Generator: Launchpad (build 17331)\n"
 
 #: ../data/about.ui:12
 msgid "Copyright © 2013 Freyja Development team"
-msgstr "မူပိုင်ခွင့် © ၂၀၁၃ Freyja Development အဖွဲ့"
+msgstr "Аўтарскія правы © 2013 Каманда распрацоўкі Freyja"
 
 #: ../data/about.ui:13
 msgid ""
 "Unity Tweak Tool is a settings manager intended to be used with Ubuntu Unity."
 msgstr ""
+"Мэнэджэр наладак Unity з'яўляецца менеджэрам наладаў, прызначаных для "
+"выкарыстання ў Ubuntu Unity."
 
 #: ../data/about.ui:15
 msgid "Unity Tweak Tool on Launchpad"
-msgstr "Launchpad ပေါ်မှ Unity Tweak Tool"
+msgstr "Мэнэджэр наладак Unity у Launchpad"
 
 #: ../data/about.ui:16
 msgid "GPL3"
-msgstr "GPL၃"
+msgstr "GPL3"
 
 #: ../data/appearance.ui:32 ../data/appearance.ui:198
 #: ../data/appearance.ui:299
 msgid "Available themes"
-msgstr "ရရှိနိုင်သော Theme"
+msgstr "Даступныя тэмы"
 
 #: ../data/appearance.ui:67 ../data/appearance.ui:68
 msgid "List of GTK Themes"
-msgstr "GTK Themes စာရင်း"
+msgstr "Спіс тэмаў GTK"
 
 #: ../data/appearance.ui:80
 msgid "GTK Theme"
-msgstr ""
+msgstr "Тэма GTK"
 
 #: ../data/appearance.ui:112 ../data/appearance.ui:113
 msgid "List of Window decoration themes"
-msgstr ""
+msgstr "Спіс тэмаў афармлення вокнаў"
 
 #: ../data/appearance.ui:123
 msgid "Window decoration theme"
-msgstr ""
+msgstr "Тэма афармлення акна"
 
 #: ../data/appearance.ui:154 ../data/appearance.ui:251
 #: ../data/appearance.ui:386 ../data/appearance.ui:765 ../data/system.ui:259
@@ -65,60 +67,60 @@ msgstr ""
 #: ../data/windowmanager.ui:1469 ../data/windowmanager.ui:1793
 #: ../data/windowmanager.ui:2207
 msgid "Restore defaults"
-msgstr "မူလအတိုင်းပြန်ထားမည်"
+msgstr "Аднавіць прадвызначаныя"
 
 #: ../data/appearance.ui:158 ../data/appearance.ui:159
 msgid "Restore system's default theme configurations"
-msgstr ""
+msgstr "Аднавіць першапачатковыя налады тэмы"
 
 #: ../data/appearance.ui:179 ../data/overview.ui:850 ../data/unitytweak.ui:215
 msgid "Theme"
-msgstr "Theme"
+msgstr "Тэма"
 
 #: ../data/appearance.ui:220 ../data/appearance.ui:221
 msgid "List of icon themes"
-msgstr ""
+msgstr "Спіс тэмаў значак"
 
 #: ../data/appearance.ui:231
 msgid "Icon theme"
-msgstr ""
+msgstr "Тэма значак"
 
 #: ../data/appearance.ui:255 ../data/appearance.ui:256
 msgid "Restore system's default icon theme configurations"
-msgstr ""
+msgstr "Аднавіць першапачатковыя налады тэмы значак"
 
 #: ../data/appearance.ui:279 ../data/overview.ui:901 ../data/unitytweak.ui:224
 #: ../data/unity.ui:621
 msgid "Icons"
-msgstr "Icons"
+msgstr "Значкі"
 
 #: ../data/appearance.ui:321 ../data/appearance.ui:322
 msgid "List of cursor themes"
-msgstr ""
+msgstr "Спіс тэмаў паказальнікаў"
 
 #: ../data/appearance.ui:330
 msgid "Cursor Theme"
-msgstr ""
+msgstr "Тэма паказальнікаў"
 
 #: ../data/appearance.ui:354
 msgid "Preferences"
-msgstr ""
+msgstr "Наладкі"
 
 #: ../data/appearance.ui:367
 msgid "Use large cursors"
-msgstr ""
+msgstr "Выкарыстоўваць буйныя паказальнікі"
 
 #: ../data/appearance.ui:371 ../data/appearance.ui:372
 msgid "If enabled, the system will use a larger cursor."
-msgstr ""
+msgstr "Калі ўключана, сістэма будзе выкарыстоўваць буйныя паказальнікі."
 
 #: ../data/appearance.ui:390 ../data/appearance.ui:391
 msgid "Restore system's default cursor theme configurations"
-msgstr ""
+msgstr "Аднавіць першапачатковыя налады тэмы паказальнікаў"
 
 #: ../data/appearance.ui:414 ../data/unitytweak.ui:233
 msgid "Cursor"
-msgstr ""
+msgstr "Паказальнік"
 
 #: ../data/appearance.ui:434 ../data/overview.ui:474 ../data/unitytweak.ui:146
 #: ../data/unity.ui:857 ../data/unity.ui:1183 ../data/unity.ui:1852
@@ -126,90 +128,93 @@ msgstr ""
 #: ../data/windowmanager.ui:616 ../data/windowmanager.ui:881
 #: ../data/windowmanager.ui:1138 ../data/windowmanager.ui:1514
 msgid "General"
-msgstr "အထွေထွေ"
+msgstr "Агульнае"
 
 #: ../data/appearance.ui:456 ../data/appearance.ui:457
 #: ../data/appearance.ui:491 ../data/appearance.ui:492
 msgid "Select the default font for all applications."
-msgstr "application အားလုံးအတွက် စကားလုံးပုံစံရွေးမည်"
+msgstr "Абраць шрыфт па змаўчанні для ўсіх праграмаў."
 
 #: ../data/appearance.ui:459
 msgid "Default font:"
-msgstr ""
+msgstr "Прадвызначаны шрыфт:"
 
 #: ../data/appearance.ui:474 ../data/appearance.ui:475
 #: ../data/appearance.ui:511 ../data/appearance.ui:512
 msgid "Select the default font used for reading documents."
 msgstr ""
+"Абярыце шрыфт па змаўчанні, які будзе выкарыстоўвацца для чытання дакументаў."
 
 #: ../data/appearance.ui:477
 msgid "Document font:"
-msgstr ""
+msgstr "Шрыфт дакумента:"
 
 #: ../data/appearance.ui:530 ../data/appearance.ui:531
 #: ../data/appearance.ui:565 ../data/appearance.ui:566
 msgid "Select the default monospace font."
-msgstr ""
+msgstr "Абярыце монашырынны шрыфт па змаўчанні:"
 
 #: ../data/appearance.ui:533
 msgid "Monospace font:"
-msgstr ""
+msgstr "Монашырынны шрыфт:"
 
 #: ../data/appearance.ui:548 ../data/appearance.ui:549
 #: ../data/appearance.ui:585 ../data/appearance.ui:586
 msgid "Select the default font for the window titlebar."
-msgstr ""
+msgstr "Абярыце шрыфт па змаўчанні для загалоўка акна."
 
 #: ../data/appearance.ui:551
 msgid "Window title font:"
-msgstr ""
+msgstr "Шрыфт загалоўка акна:"
 
 #: ../data/appearance.ui:613 ../data/overview.ui:793 ../data/unitytweak.ui:202
 #: ../data/unity.ui:364
 msgid "Appearance"
-msgstr "အသွင်အပြင်"
+msgstr "Афармленне"
 
 #: ../data/appearance.ui:636 ../data/appearance.ui:637
 #: ../data/appearance.ui:654 ../data/appearance.ui:655
 msgid "Select the type of antialiasing used to render fonts."
 msgstr ""
+"Выберыце тып згладжвання, які выкарыстоўваецца для адлюстравання шрыфтоў."
 
 #: ../data/appearance.ui:640
 msgid "Antialiasing:"
-msgstr ""
+msgstr "Згладжванне:"
 
 #: ../data/appearance.ui:659 ../data/appearance.ui:681
 msgid "None"
-msgstr "ဘာမျှမဟုတ်"
+msgstr "Няма"
 
 #: ../data/appearance.ui:660
 msgid "Grayscale"
-msgstr "မီးခိုးရောင်"
+msgstr "Градацыі шэрага"
 
 #: ../data/appearance.ui:661
 msgid "RGBA"
-msgstr "နီစိမ်းပြာအာဖာ"
+msgstr "RGBA"
 
 #: ../data/appearance.ui:676 ../data/appearance.ui:677
 #: ../data/appearance.ui:700 ../data/appearance.ui:701
 msgid "Select the type of hinting to use when rendering fonts"
 msgstr ""
+"Абярыце тып ўдакладненні, які выкарыстоўваецца для адлюстравання шрыфтоў"
 
 #: ../data/appearance.ui:682
 msgid "Slight"
-msgstr "အနည်းငယ်"
+msgstr "Лёгкае"
 
 #: ../data/appearance.ui:683
 msgid "Medium"
-msgstr "အလယ်အလတ်"
+msgstr "Сярэдняе"
 
 #: ../data/appearance.ui:684
 msgid "Full"
-msgstr "အပြည့်"
+msgstr "Цалкам"
 
 #: ../data/appearance.ui:703
 msgid "Hinting:"
-msgstr ""
+msgstr "Удакладненне:"
 
 #: ../data/appearance.ui:718 ../data/appearance.ui:719
 #: ../data/appearance.ui:735 ../data/appearance.ui:736
@@ -217,278 +222,291 @@ msgid ""
 "Select the factor used to enlarge or reduce text display, without changing "
 "font size."
 msgstr ""
+"Абярыце каэфіцыент, які выкарыстоўваецца для павелічэння або памяншэння "
+"тэкста, які адлюстроўваецца, без змены памеру шрыфта."
 
 #: ../data/appearance.ui:721
 msgid "Text scaling factor:"
-msgstr ""
+msgstr "Маштабаванне тэксту:"
 
 #: ../data/appearance.ui:769 ../data/appearance.ui:770
 msgid "Restore system's default font configurations"
-msgstr ""
+msgstr "Аднавіць налады сістэмнага шрыфта па змаўчанні"
 
 #: ../data/appearance.ui:792 ../data/overview.ui:1003
 #: ../data/unitytweak.ui:242
 msgid "Fonts"
-msgstr "စာလုံးပုံစံများ"
+msgstr "Шрыфты"
 
 #: ../data/errordialog.ui:8
 msgid "Schemas missing"
-msgstr ""
+msgstr "Схемы адсутнічаюць"
 
 #: ../data/errordialog.ui:15
 msgid "The following schema is missing"
-msgstr ""
+msgstr "Наступная схема адсутнічае"
 
 #: ../data/filechooser-theme.ui:17
 msgid "Choose a Theme file to install"
-msgstr "သွင်းရန်အတွက် Theme ဖိုင်တစ်ဖိုင်ကိုရွေးပါ"
+msgstr "Абярыце файл тэмы для ўстаноўкі"
 
 #: ../data/filechooser-theme.ui:51
 msgid "Install Theme"
-msgstr "Theme ကိုသွင်းမည်"
+msgstr "Усталяваць тэму"
 
 #: ../data/overview.ui:40 ../data/unitytweak.ui:64
 msgid "Unity"
-msgstr ""
+msgstr "Unity"
 
 #: ../data/overview.ui:99 ../data/unitytweak.ui:77 ../data/unity.ui:838
 msgid "Launcher"
-msgstr "Launcher"
+msgstr "Панэль запуску"
 
 #: ../data/overview.ui:152 ../data/unitytweak.ui:86 ../data/unity.ui:1163
 msgid "Search"
-msgstr "ရှာဖွေ"
+msgstr "Пошук"
 
 #: ../data/overview.ui:203 ../data/unitytweak.ui:95 ../data/unity.ui:1833
 msgid "Panel"
-msgstr ""
+msgstr "Панэль"
 
 #: ../data/overview.ui:254 ../data/unitytweak.ui:104 ../data/unity.ui:2131
 msgid "Switcher"
-msgstr ""
+msgstr "Пераключальнік"
 
 #: ../data/overview.ui:305 ../data/unitytweak.ui:113 ../data/unity.ui:2296
 msgid "Web Apps"
-msgstr ""
+msgstr "Вэб Прыкладанні"
 
 #: ../data/overview.ui:356 ../data/overview.ui:732 ../data/unitytweak.ui:122
 #: ../data/unitytweak.ui:191 ../data/unity.ui:2533
 #: ../data/windowmanager.ui:2233
 msgid "Additional"
-msgstr "နောက်ထပ်အပို"
+msgstr "Дадаткова"
 
 #: ../data/overview.ui:417 ../data/unitytweak.ui:133
 msgid "Window Manager"
-msgstr ""
+msgstr "Кіраўнік вокнаў"
 
 #: ../data/overview.ui:525
 msgid ""
 "Workspace\n"
 "Settings"
 msgstr ""
+"Налады\n"
+"Прасторы"
 
 #: ../data/overview.ui:577
 msgid ""
 "Window\n"
 "Spread"
 msgstr ""
+"Агляд\n"
+"Вокнаў"
 
 #: ../data/overview.ui:629
 msgid ""
 "Window\n"
 "Snapping"
 msgstr ""
+"Прыліпанне\n"
+"Вокнаў"
 
 #: ../data/overview.ui:681 ../data/unitytweak.ui:182
 #: ../data/windowmanager.ui:1818
 msgid "Hotcorners"
-msgstr ""
+msgstr "Гарачыя Куты"
 
 #: ../data/overview.ui:952
 msgid "Cursors"
-msgstr ""
+msgstr "Паказальнікі"
 
 #: ../data/overview.ui:1067 ../data/unitytweak.ui:253
 msgid "System"
-msgstr "ကွန်ပြူတာစနစ်ပိုင်းဆိုင်ရာ"
+msgstr "Сістэма"
 
 #: ../data/overview.ui:1124
 msgid ""
 "Desktop\n"
 "Icons"
 msgstr ""
+"Значкі\n"
+"Стальніцы"
 
 #: ../data/overview.ui:1176 ../data/system.ui:434 ../data/unitytweak.ui:275
 msgid "Security"
-msgstr "လုံခြုံရေး"
+msgstr "Бяспека"
 
 #: ../data/overview.ui:1227 ../data/system.ui:682 ../data/unitytweak.ui:284
 msgid "Scrolling"
-msgstr "ဆွဲရွှေ့နေသည်"
+msgstr "Прагортка"
 
 #: ../data/system.ui:31
 msgid "Items to display:"
-msgstr ""
+msgstr "Элементы, якія адлюстроўваюцца:"
 
 #: ../data/system.ui:52 ../data/system.ui:53 ../data/system.ui:80
 msgid "Home Folder"
-msgstr "ပင်မဖိုင်တွဲ"
+msgstr "Хатняя тэчка"
 
 #: ../data/system.ui:103 ../data/system.ui:104 ../data/system.ui:131
 msgid "Network"
-msgstr "ကွန်ယက်"
+msgstr "Сетка"
 
 #: ../data/system.ui:154 ../data/system.ui:155
 msgid "Rubbish Bin"
-msgstr ""
+msgstr "Кош"
 
 #: ../data/system.ui:182
 msgid "Trash"
-msgstr ""
+msgstr "Сметніца"
 
 #: ../data/system.ui:205 ../data/system.ui:206
 msgid "Mounted Devices"
-msgstr ""
+msgstr "Прымацаваныя прылады"
 
 #: ../data/system.ui:233
 msgid "Devices"
-msgstr ""
+msgstr "Прылады"
 
 #: ../data/system.ui:264 ../data/system.ui:265
 msgid "Restore the default configurations for Desktop icons"
-msgstr ""
+msgstr "Аднавіць налады значак стальніцы па змаўчанні"
 
 #: ../data/system.ui:284 ../data/unitytweak.ui:266
 msgid "Desktop Icons"
-msgstr "Desktop Icons"
+msgstr "Значкi стальніцы"
 
 #: ../data/system.ui:303
 msgid "Enhance system security by disabling:"
-msgstr ""
+msgstr "Павышэнне бяспекі сістэмы праз адключэнне:"
 
 #: ../data/system.ui:319
 msgid "Desktop lock"
-msgstr "Desktop ပိတ်ထား"
+msgstr "Блакаванне стальніцы"
 
 #: ../data/system.ui:324 ../data/system.ui:325
 msgid "Disable the desktop lock screen."
-msgstr ""
+msgstr "Адключэнне экрана блакавання стальніцы"
 
 #: ../data/system.ui:339
 msgid "User log out"
-msgstr "အသုံးပြုသူထွက်ခြင်း"
+msgstr "Завяршэнне сеансу карыстача"
 
 #: ../data/system.ui:344 ../data/system.ui:345
 msgid "Disable session log out."
-msgstr ""
+msgstr "Адключыць завяршэнне сеансу сістэмы"
 
 #: ../data/system.ui:359
 msgid "User switching"
-msgstr "အသုံးပြုသူပြောင်းလဲခြင်း"
+msgstr "Пераключэнне карыстачоў"
 
 #: ../data/system.ui:364 ../data/system.ui:365
 msgid "Disable fast user switching."
-msgstr ""
+msgstr "Адключыць хуткае пераключэнне карыстачоў."
 
 #: ../data/system.ui:379
 msgid "Printing"
-msgstr "စာရွက်ထုတ်နေပါသည်"
+msgstr "Друкаванне"
 
 #: ../data/system.ui:384 ../data/system.ui:385
 msgid "Prevent user access to the system's printers and print setup."
-msgstr ""
+msgstr "Прадухіленні доступу карыстачоў да друкарак сістэмы і наладак друку."
 
 #: ../data/system.ui:411 ../data/system.ui:412
 msgid "Restore the default configurations for Security settings"
-msgstr ""
+msgstr "Аднавіць наладкі бяспекі па змаўчанні"
 
 #: ../data/system.ui:454
 msgid "Scrollbars"
-msgstr ""
+msgstr "Палосы пракруткі"
 
 #: ../data/system.ui:472
 msgid "Legacy"
-msgstr ""
+msgstr "Папярэдні варыянт"
 
 #: ../data/system.ui:491
 msgid "Overlay "
-msgstr ""
+msgstr "Накладанне "
 
 #: ../data/system.ui:518 ../data/system.ui:519
 msgid "Select the behaviour of the overlay scrollbars."
-msgstr ""
+msgstr "Абярыце дзеянне накладзеных палосаў прагорткі"
 
 #: ../data/system.ui:524
 msgid "Default"
-msgstr "မူရင်းအတိုင်း"
+msgstr "Па змаўчанні"
 
 #: ../data/system.ui:525
 msgid "Overlay with mouse"
-msgstr ""
+msgstr "Накладанне пры дапамозе мышы"
 
 #: ../data/system.ui:526
 msgid "No overlay"
-msgstr ""
+msgstr "Без накладання"
 
 #: ../data/system.ui:544
 msgid "Behaviour:"
-msgstr ""
+msgstr "Дзеянне:"
 
 #: ../data/system.ui:574
 msgid "Touch scrolling"
-msgstr ""
+msgstr "Сэнсарная прагортка"
 
 #: ../data/system.ui:592
 msgid "Edge"
-msgstr ""
+msgstr "Па краі"
 
 #: ../data/system.ui:596 ../data/system.ui:597
 msgid "If enabled, edge scrolling is active on touchpads."
 msgstr ""
+"Калі ўключана, бакавая прагортка будзе дзейнічаць на сэнсарных панэлях."
 
 #: ../data/system.ui:612
 msgid "Two-finger"
-msgstr "လက်ညှိုး ၂ချောင်း"
+msgstr "Двума пальцамі"
 
 #: ../data/system.ui:616 ../data/system.ui:617
 msgid "If enabled, two-finger scrolling is active on multitouch touchpads."
 msgstr ""
+"Калі ўключана, задзейнічаецца прагортка двума пальцамі на сэнсарных панэлях, "
+"якія падтрымліваюць множныя дотыкі."
 
 #: ../data/system.ui:632
 msgid "Horizontal scrolling"
-msgstr ""
+msgstr "Гарызантальная прагортка"
 
 #: ../data/unitytweak.ui:41
 msgid "Unity Tweak Tool"
-msgstr ""
+msgstr "Кіраўнік наладаў Unity"
 
 #: ../data/unitytweak.ui:56
 msgid "_File"
-msgstr "_F ဖိုင်"
+msgstr "_Файл"
 
 #: ../data/unitytweak.ui:155
 msgid "Workspace settings"
-msgstr ""
+msgstr "Наладкі працоўнай прасторы"
 
 #: ../data/unitytweak.ui:164
 msgid "Windows spread"
-msgstr ""
+msgstr "Аглядны рэжым"
 
 #: ../data/unitytweak.ui:173
 msgid "Windows snapping"
-msgstr ""
+msgstr "Упарадкаванне вокнаў"
 
 #: ../data/unitytweak.ui:317
 msgid "_Help"
-msgstr "_H အကူအညီ"
+msgstr "_Дапамога"
 
 #: ../data/unitytweak.ui:360
 msgid " Overview"
-msgstr ""
+msgstr " Агляд"
 
 #: ../data/unity.ui:42
 msgid "Invoke HUD"
-msgstr ""
+msgstr "Адкрыць дадатковую інтэрфейсную панэль"
 
 #: ../data/unity.ui:43
 msgid "Super+H"
@@ -496,7 +514,7 @@ msgstr "Super+H"
 
 #: ../data/unity.ui:46
 msgid "Show the launcher"
-msgstr "launcher ကိုပြမည်"
+msgstr "Паказаць панэль запуску"
 
 #: ../data/unity.ui:47
 msgid "Super+E"
@@ -504,7 +522,7 @@ msgstr "Super+E"
 
 #: ../data/unity.ui:50
 msgid "Execute command"
-msgstr ""
+msgstr "Выканаць каманду"
 
 #: ../data/unity.ui:51
 msgid "Super+M"
@@ -512,7 +530,7 @@ msgstr "Super+M"
 
 #: ../data/unity.ui:54
 msgid "Put keyboard focus on the launcher"
-msgstr ""
+msgstr "Перамясціць факусоўку з клавіятуры на панэль запуску"
 
 #: ../data/unity.ui:55
 msgid "Super+A"
@@ -520,7 +538,7 @@ msgstr "Super+A"
 
 #: ../data/unity.ui:58
 msgid "Open the first panel menu"
-msgstr ""
+msgstr "Адкрыць меню першай панэлі"
 
 #: ../data/unity.ui:59
 msgid "Super+N"
@@ -528,7 +546,7 @@ msgstr "Super+N"
 
 #: ../data/unity.ui:72 ../data/unity.ui:90
 msgid "Start switcher"
-msgstr "switcher ကိုစမည်"
+msgstr "Адкрыць пераключальнік"
 
 #: ../data/unity.ui:73
 msgid "Super+Tab"
@@ -536,7 +554,7 @@ msgstr "Super+Tab"
 
 #: ../data/unity.ui:76 ../data/unity.ui:94
 msgid "Start switcher in reverse"
-msgstr ""
+msgstr "Адкрыць пераключальнік са зваротным упарадкаваннем"
 
 #: ../data/unity.ui:77
 msgid "Shift+Super+Tab"
@@ -552,7 +570,7 @@ msgstr "Shift+Alt+Tab"
 
 #: ../data/unity.ui:98
 msgid "Start switcher for all workspaces"
-msgstr "အလုပ်နေရာများအားလုံးအတွက် Switcher ကိုစတင်မည်"
+msgstr "Адкрыць пераключальнік для ўсіх працоўных месцаў"
 
 #: ../data/unity.ui:99
 msgid "Ctrl+Super+Alt+Tab"
@@ -561,6 +579,7 @@ msgstr "Ctrl+Super+Alt+Tab"
 #: ../data/unity.ui:102
 msgid "Start switcher for all workspaces in reverse"
 msgstr ""
+"Адкрыць пераключальнік для ўсіх працоўных месцаў са зваротным упарадкаваннем"
 
 #: ../data/unity.ui:103
 msgid "Shift+Ctrl+Super+Alt+Tab"
@@ -568,12 +587,12 @@ msgstr "Shift+Ctrl+Super+Alt+Tab"
 
 #: ../data/unity.ui:106
 msgid "Flip through windows in the switcher"
-msgstr ""
+msgstr "Адлюстраваць пры дапамозе вокнаў ў пераключаніку"
 
 #: ../data/unity.ui:107 ../data/unity.ui:111 ../data/windowmanager.ui:90
 #: ../data/windowmanager.ui:115
 msgid "Disabled"
-msgstr "ပိတ်ထားရန်"
+msgstr "Адключана"
 
 #: ../data/unity.ui:110
 msgid "Flip through windows in the switcher backwards"
@@ -582,158 +601,180 @@ msgstr ""
 #: ../data/unity.ui:135 ../data/windowmanager.ui:1247
 #: ../data/windowmanager.ui:1571
 msgid "Behaviour"
-msgstr ""
+msgstr "Паводзіны"
 
 #: ../data/unity.ui:159 ../data/unity.ui:160
 msgid "Should the launcher be hidden?"
-msgstr "launcher ကိုဖွက်ထားမည်လား။"
+msgstr "Ці неабходна хаваць панэль запуску?"
 
 #: ../data/unity.ui:175
 msgid "Auto-hide:"
-msgstr "အလိုအလျောက်ဖျောက်-"
+msgstr "Хаваць аўтаматычна:"
 
 #: ../data/unity.ui:187 ../data/unity.ui:188
 msgid "Select the auto-hide animation of the launcher."
-msgstr "launcher ၏ အလိုအလျောက်ဖျောက်သည့် animation ကိုရွေးမည်"
+msgstr "Абярыце анімацыю аўтаматычнага ўтойвання панэлі запуску."
 
 #: ../data/unity.ui:190
 msgid "Fade Dash and slide"
-msgstr ""
+msgstr "Згасанне меню і слізганне"
 
 #: ../data/unity.ui:191
 msgid "Slide only"
-msgstr "Slide သာလျှင်"
+msgstr "Толькі слізганне"
 
 #: ../data/unity.ui:192
 msgid "Fade only"
-msgstr ""
+msgstr "Толькі згасанне"
 
 #: ../data/unity.ui:193
 msgid "Fade and slide"
-msgstr ""
+msgstr "Згасанне і слізганне"
 
 #: ../data/unity.ui:208
 msgid "Auto-hide animation:"
-msgstr "Animation ကိုအလိုအလျောက်ဖျောက်-"
+msgstr "Анімацыя пры аўтаматычным ўтойванні:"
 
 #: ../data/unity.ui:237
 msgid ""
 "Select the option to reveal the dash with the mouse, when auto-hide is "
 "enabled."
 msgstr ""
+"Выберыце магчымасць адлюстравання галоўнага меню пры дапамозе мышы, калі "
+"выкарыстоўваецца аўтаматычнае утойванне."
 
 #: ../data/unity.ui:238
 msgid "Reveal location:"
-msgstr ""
+msgstr "Вобласць з'яўлення:"
 
 #: ../data/unity.ui:253
 msgid "Reveal sensitivity:"
-msgstr ""
+msgstr "Адчувальнасць з'яўлення:"
 
 #: ../data/unity.ui:268 ../data/unity.ui:269
 msgid "How much pointer \"pressure\" is required to reveal the launcher."
 msgstr ""
+"Ступень «ціску» пры націску паказальнікам, неабходная для адлюстравання "
+"панэлі запуску."
 
 #: ../data/unity.ui:287
 msgid "Left side"
-msgstr "ဘယ်ဖက်အခြမ်း"
+msgstr "Левы бок"
 
 #: ../data/unity.ui:293 ../data/unity.ui:294
 msgid ""
 "When in auto-hide mode the left edge of the current workspace triggers the "
 "launcher."
 msgstr ""
+"У рэжыме аўтаматычнага ўтойвання, левая мяжа бягучай працоўнае прасторы "
+"актывізуе панэль запуску."
 
 #: ../data/unity.ui:308
 msgid "Top left corner"
-msgstr "အပေါ်ဘယ်ဖက်ထောင့်"
+msgstr "Верхні левы куток"
 
 #: ../data/unity.ui:314 ../data/unity.ui:315
 msgid ""
 "When in auto-hide mode the top left corner of the current workspace triggers "
 "the launcher."
 msgstr ""
+"У рэжыме аўтаматычнага ўтойвання, верхні левы кут бягучай працоўнае прасторы "
+"актывізуе панэль запуску."
 
 #: ../data/unity.ui:341
 msgid "Minimize single window applications on click"
-msgstr ""
+msgstr "Згортваць вокны па пстрычцы"
 
 #: ../data/unity.ui:387 ../data/unity.ui:388
 msgid "Select the level of the transparency of the launcher"
-msgstr ""
+msgstr "Абярыце ступень празрыстасці панэлі запуску"
 
 #: ../data/unity.ui:389 ../data/unity.ui:1220
 msgid "Transparency level:"
-msgstr ""
+msgstr "Ступень празрыстасці:"
 
 #: ../data/unity.ui:403 ../data/unity.ui:404
 msgid "How transparent the launcher will be."
-msgstr ""
+msgstr "Дазваляе выставіць ступень празрыстасці панэлі запуску."
 
 #: ../data/unity.ui:431
 msgid "Based on wallpaper"
-msgstr "Wallpaper တွင်အခြေခံမည်"
+msgstr "На падставе шпалераў стальніцы"
 
 #: ../data/unity.ui:436 ../data/unity.ui:437
 msgid "If selected, the launcher colour is based on the desktop background"
-msgstr "ရွေးခဲ့ပါက launcher ၏အရောင်သည် Desktop နောက်ခံပေါ်အခြေခံပါလိမ့်မည်"
+msgstr ""
+"Калі абраная гэтая магчымасць, колер панэлі запуску будзе адпавядаць фону "
+"стальніцы"
 
 #: ../data/unity.ui:453
 msgid "Colour:"
-msgstr "အရောင်-"
+msgstr "Колер:"
 
 #: ../data/unity.ui:467
 msgid "Visibility:"
-msgstr "မြင်နိုင်မှု့-"
+msgstr "Бачнасць:"
 
 #: ../data/unity.ui:481
 msgid "Custom:"
-msgstr "စိတ်ကြိုက်-"
+msgstr "Іншы:"
 
 #: ../data/unity.ui:486 ../data/unity.ui:487
 msgid "If selected, the launcher will be the colour chosen by the user"
-msgstr "ရွေးခဲ့ပါက launcher ၏အရောင်ကို သုံးစွဲသူမှရွေးပါလိမ့်မည်"
+msgstr ""
+"Калі абраная гэтая магчымасць, панэль запуску будзе мець колер абраны "
+"карыстачом"
 
 #: ../data/unity.ui:521
 msgid "All desktops"
-msgstr "Desktop များအားလုံး"
+msgstr "На ўсіх стальніцах"
 
 #: ../data/unity.ui:526
 msgid "If selected, the launcher is visible on all desktops."
-msgstr "ရွေးခဲ့ပါက launcher ကို desktop များအားလုံးကမြင်နိုင်ပါလိမ့်မည်"
+msgstr ""
+"Калі абраная гэтая магчымасць, панэль запуску адлюстроўваецца на ўсіх "
+"стальніцах."
 
 #: ../data/unity.ui:527
 msgid "If selected, the launcher is visible on all desktops"
-msgstr "ရွေးခဲ့ပါက launcher ကို desktop များအားလုံးကမြင်နိုင်ပါလိမ့်မည်"
+msgstr ""
+"Калі абраная гэтая магчымасць, панэль запуску адлюстроўваецца на ўсіх "
+"стальніцах"
 
 #: ../data/unity.ui:541
 msgid "Primary desktop"
-msgstr ""
+msgstr "На першай стальніцы"
 
 #: ../data/unity.ui:546 ../data/unity.ui:547
 msgid "If selected, the launcher is visible on the primary desktop"
 msgstr ""
+"Калі абраная гэтая магчымасць, панэль запуску адлюстроўваецца на першай "
+"стальніцы"
 
 #: ../data/unity.ui:559
 #, fuzzy
 msgid "Bottom"
-msgstr "အောက်ပိုင်းတစ်ဝက်"
+msgstr "Ніжняя палова"
 
 #: ../data/unity.ui:563
 #, fuzzy
 msgid ""
 "When selected, the launcher will be positioned on the bottom of the screen."
-msgstr "ရွေးခဲ့ပါက launcher ၏အရောင်ကို သုံးစွဲသူမှရွေးပါလိမ့်မည်"
+msgstr ""
+"Калі абраная гэтая магчымасць, панэль запуску будзе мець колер абраны "
+"карыстачом"
 
 #: ../data/unity.ui:577
 msgid "Left"
-msgstr "ဘယ်ဖက်"
+msgstr "Злева"
 
 #: ../data/unity.ui:581
 #, fuzzy
 msgid ""
 "When selected, the launcher will be positioned on the left of the screen."
-msgstr "ရွေးခဲ့ပါက launcher ၏အရောင်ကို သုံးစွဲသူမှရွေးပါလိမ့်မည်"
+msgstr ""
+"Калі абраная гэтая магчымасць, панэль запуску будзе мець колер абраны "
+"карыстачом"
 
 #: ../data/unity.ui:597
 msgid "Position:"
@@ -741,442 +782,470 @@ msgstr ""
 
 #: ../data/unity.ui:645
 msgid "Icon size:"
-msgstr ""
+msgstr "Памер значак:"
 
 #: ../data/unity.ui:659 ../data/unity.ui:660
 msgid "Select the animation used for launching an application."
-msgstr ""
+msgstr "Абярыце анімацыю, якая выкарыстоўваецца падчас запуску прыкладання."
 
 #: ../data/unity.ui:662 ../data/unity.ui:682
 msgid "No animation"
-msgstr ""
+msgstr "Без анімацыі"
 
 #: ../data/unity.ui:663 ../data/unity.ui:683
 msgid "Pulse"
-msgstr ""
+msgstr "Пульсацыя"
 
 #: ../data/unity.ui:664
 msgid "Blink"
-msgstr ""
+msgstr "Мігценне"
 
 #: ../data/unity.ui:679 ../data/unity.ui:680
 msgid "Select the animation used for an urgent notification on the launcher"
 msgstr ""
+"Абярыце анімацыю, якая выкарыстоўваецца для аператыўнага апавяшчэння на "
+"панэлі запуску"
 
 #: ../data/unity.ui:684
 msgid "Wiggle"
-msgstr ""
+msgstr "Патрэсванне"
 
 #: ../data/unity.ui:699
 msgid "Launch animation:"
-msgstr ""
+msgstr "Анімацыя запуску:"
 
 #: ../data/unity.ui:712
 msgid "Urgent animation:"
-msgstr ""
+msgstr "Аператыўная анімацыя:"
 
 #: ../data/unity.ui:724 ../data/unity.ui:725
 msgid "Select how the icons are coloured on the launcher"
-msgstr ""
+msgstr "Абярыце афарбоўку значак панэлі запуску"
 
 #: ../data/unity.ui:728
 msgid "All applications"
-msgstr "application များအားလုံး"
+msgstr "Усе праграмы"
 
 #: ../data/unity.ui:729
 msgid "Open applications only"
-msgstr "application များသာဖွင့်မည်"
+msgstr "Толькі для адкрытых прыкладанняў"
 
 #: ../data/unity.ui:730
 msgid "No colouring"
-msgstr "အရောင်မရှိ"
+msgstr "Не выкарыстоўваць афарбоўку"
 
 #: ../data/unity.ui:731
 msgid "Coloured edges"
-msgstr ""
+msgstr "Падфарбаваныя краі"
 
 #: ../data/unity.ui:732
 msgid "Alternated for each workspace"
-msgstr ""
+msgstr "Чаргаваць для кожнай працоўнай прасторы"
 
 #: ../data/unity.ui:747
 msgid "Icon backgrounds:"
-msgstr ""
+msgstr "Фоны значак:"
 
 #: ../data/unity.ui:774
 msgid "\"Show Desktop\" icon:"
-msgstr ""
+msgstr "Значка «Паказаць стальніцу»:"
 
 #: ../data/unity.ui:787 ../data/unity.ui:788
 msgid "Select the size of the icons on the launcher"
-msgstr "launcher ပေါ်တွင်ရှိသော icon များ၏အရွယ်အစားကိုရွေးပါ"
+msgstr "Аберыце памер значак панэлі запуску"
 
 #: ../data/unity.ui:818 ../data/unity.ui:819
 msgid "Restore default Unity launcher settings."
-msgstr ""
+msgstr "Аднавіць налады панэлі запуску Unity па змаўчанні."
 
 #: ../data/unity.ui:882
 msgid "Background blur:"
-msgstr ""
+msgstr "Фонавае размыццё:"
 
 #: ../data/unity.ui:895 ../data/unity.ui:896
 msgid "Enable dash blur?"
-msgstr ""
+msgstr "Задзейнічаць эфект размыцця ў галоўным меню?"
 
 #: ../data/unity.ui:910 ../data/unity.ui:911
 msgid "Select the type of blur in the dash"
-msgstr ""
+msgstr "Абярыце тып размыцця ў галоўным меню"
 
 #: ../data/unity.ui:913
 msgid "Blur type:"
-msgstr ""
+msgstr "Тып размыцця:"
 
 #: ../data/unity.ui:928
 msgid "Active"
-msgstr ""
+msgstr "Актыўны"
 
 #: ../data/unity.ui:933 ../data/unity.ui:934
 msgid "Use a dynamic blur in the dash."
-msgstr ""
+msgstr "Выкарыстоўваць дынамічнае размыццё ў галоўным меню."
 
 #: ../data/unity.ui:947
 msgid "Static"
-msgstr ""
+msgstr "Статычнае"
 
 #: ../data/unity.ui:952 ../data/unity.ui:953
 msgid "Use a static blur in the dash, uses less resources."
 msgstr ""
+"Выкарыстоўваць статычнае размыццё ў галоўным меню, што дазваляе задзейнічаць "
+"менш рэсурсаў сістэмы."
 
 #: ../data/unity.ui:979
 msgid "Search online sources"
-msgstr ""
+msgstr "Пошук у сеткавых прасторах"
 
 #: ../data/unity.ui:983 ../data/unity.ui:984
 msgid "If enabled, the dash will get suggestions from online sources."
-msgstr ""
+msgstr "Калі ўключана, галоўнае меню будзе прапаноўваць варыянты з інтэрнэту."
 
 #: ../data/unity.ui:1002
 msgid "Applications"
-msgstr "Applications"
+msgstr "Прыкладанні"
 
 #: ../data/unity.ui:1022
 msgid "Show \"Recently Used\" applications"
-msgstr "မကြာသေးခင်ကသုံးခဲ့သော application များပြမည်"
+msgstr "Паказваць прыкладанні,  якія выкарыстоўваліся нядаўна"
 
 #: ../data/unity.ui:1026 ../data/unity.ui:1027
 msgid "If enabled, show recently used applications in the Dash."
-msgstr "ဖွင့်ထားခဲ့ပါက Dash ထဲတွင် မကြာသေးခင်ကသုံးခဲ့သော application များကိုပြပါလိမ့်မည်"
+msgstr ""
+"Калі ўключана, то ў галоўным меню будуць адлюстроўвацца прыкладанні, якія "
+"выкарыстоўваліся нядаўна."
 
 #: ../data/unity.ui:1039
 msgid "Show \"More Suggestions\""
-msgstr ""
+msgstr "Паказваць элемент «Іншыя варыянты»"
 
 #: ../data/unity.ui:1043 ../data/unity.ui:1044
 msgid "If enabled, show applications available for download in the Dash."
 msgstr ""
+"Калі ўключана, то будуць паказаныя прыкладанні, даступныя для загрузкі "
+"непасрэдна з галоўнага меню."
 
 #: ../data/unity.ui:1067
 msgid "Files"
-msgstr "ဖိုင်များ"
+msgstr "Файлы"
 
 #: ../data/unity.ui:1080
 msgid "Enable search of your files"
-msgstr "သင်၏ဖိုင်များကိုရှာဖွေခွင့်ပြုမည်"
+msgstr "Задзейнічаць пошук файлаў карыстача"
 
 #: ../data/unity.ui:1085
 msgid "If enabled, allow searches to find your files that aren&apos;t logged."
 msgstr ""
+"Калі задзейнічана, тады дазволены пошук файлаў, якія не былі індэксаваныя."
 
 #: ../data/unity.ui:1086
 msgid "If enabled, allow searches to find your files that aren't logged."
-msgstr ""
+msgstr "Калі ўключана, дазваляе знайсці незарэгістраваныя файлы"
 
 #: ../data/unity.ui:1104
 msgid "Run Command"
-msgstr ""
+msgstr "Выканаць загад"
 
 #: ../data/unity.ui:1117
 msgid "Clear History"
-msgstr "ယခင်သမိုင်းများကိုရှင်းမည်။"
+msgstr "Ачысціць гісторыю"
 
 #: ../data/unity.ui:1121 ../data/unity.ui:1122
 msgid "Clear ALT+F2 command history."
-msgstr ""
+msgstr "Ачысціць часопіс каманды Alt + F2"
 
 #: ../data/unity.ui:1140 ../data/unity.ui:1141
 msgid "Restore the default Dash settings."
-msgstr ""
+msgstr "Аднавіць налады галоўнага меню па змаўчанні."
 
 #: ../data/unity.ui:1205
 msgid "Menu visible for:"
-msgstr ""
+msgstr "Адлюстроўваць меню:"
 
 #: ../data/unity.ui:1247 ../data/unity.ui:1248
 msgid ""
 "Select how long the application menu is visible when an application is first "
 "opened"
-msgstr ""
+msgstr "Абярыце працягласць адлюстравання меню пры першым адкрыцці прыкладання"
 
 #: ../data/unity.ui:1269
 msgid "seconds"
-msgstr "စက္ကန့်များ"
+msgstr "с."
 
 #: ../data/unity.ui:1292 ../data/unity.ui:1293
 msgid "Set the level of transparency for the panel."
-msgstr ""
+msgstr "Прызначэнне ступені празрыстасці панэлі."
 
 #: ../data/unity.ui:1308
 msgid "Opaque panel for maximized windows"
-msgstr ""
+msgstr "Непразрыстасць панэлі для разгорнутых вокнаў"
 
 #: ../data/unity.ui:1313 ../data/unity.ui:1314
 msgid "If selected, the panel will be opaque for maximized windows"
 msgstr ""
+"Калі абраная гэтая магчымасць, панэль будзе непразрыстая для разгорнутых "
+"вокнаў"
 
 #: ../data/unity.ui:1348
 msgid "Indicators"
-msgstr ""
+msgstr "Індыкатары"
 
 #: ../data/unity.ui:1381
 msgid "Date & time"
-msgstr "နေ့ရက်နှင့်အချိန်"
+msgstr "Дата і час"
 
 #: ../data/unity.ui:1386
 msgid "If enabled, the date &amp; time indicator will be visible."
-msgstr ""
+msgstr "Калі ўключана, будзе адлюстроўвацца індыкатар даты і часу."
 
 #: ../data/unity.ui:1387
 msgid "If enabled, the date & time indicator will be visible."
-msgstr ""
+msgstr "Калі ўключана, будзе адлюстроўвацца індыкатар даты і часу."
 
 #: ../data/unity.ui:1409
 msgid "12-hour time"
-msgstr "၁၂-နာရီအချိန်"
+msgstr "12-гадзінны фармат"
 
 #: ../data/unity.ui:1414 ../data/unity.ui:1415
 msgid "Have the clock use 12-hour time."
-msgstr ""
+msgstr "12-гадзінны фармат часу"
 
 #: ../data/unity.ui:1429
 msgid "24-hour time"
-msgstr "၂၄-နာရီအချိန်"
+msgstr "24-гадзінны фармат"
 
 #: ../data/unity.ui:1434 ../data/unity.ui:1435
 msgid "Have the clock use 24-hour time."
-msgstr ""
+msgstr "24-гадзінны фармат часу"
 
 #: ../data/unity.ui:1447
 msgid "Seconds"
-msgstr "စက္ကန့်"
+msgstr "Сэкунды"
 
 #: ../data/unity.ui:1452 ../data/unity.ui:1453
 msgid "If enabled, the clock will display seconds."
-msgstr "ဖွင့်ထားပါက နာရီသည် စက္ကန့်ဖြင့်ပြပါလိမ့်မည်"
+msgstr "Калі ўключана, гадзіннік будзе адлюстроўваць секунды."
 
 #: ../data/unity.ui:1466
 msgid "Date"
-msgstr "ရက်စွဲ"
+msgstr "Дата"
 
 #: ../data/unity.ui:1471 ../data/unity.ui:1472
 msgid "If enabled, the month and day will be visible in the panel."
-msgstr ""
+msgstr "Калі ўключана, месяц і дзень будуць адлюстроўвацца на панэлі."
 
 #: ../data/unity.ui:1485
 msgid "Weekday"
-msgstr ""
+msgstr "Дзень"
 
 #: ../data/unity.ui:1490 ../data/unity.ui:1491
 msgid "If enabled, the day of the week will be visible in the panel."
-msgstr ""
+msgstr "Калі ўключана, дзень тыдня будзе адлюстроўвацца на панэлі."
 
 #: ../data/unity.ui:1509
 msgid "Include:"
-msgstr "အပါအဝင်-"
+msgstr "Уключыць:"
 
 #: ../data/unity.ui:1518
 msgid "Calendar"
-msgstr "ပြက္ခဒိန်"
+msgstr "Каляндар"
 
 #: ../data/unity.ui:1523 ../data/unity.ui:1524
 msgid "If enabled, the calendar will be visible in the indicator menu."
-msgstr ""
+msgstr "Калі ўключана, будзе адлюстроўвацца каляндар у меню індыкатара."
 
 #: ../data/unity.ui:1551
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetooth"
 
 #: ../data/unity.ui:1556 ../data/unity.ui:1557
 msgid "If enabled, the bluetooth indicator is visible in the panel."
-msgstr ""
+msgstr "Калі ўключана, індыкатар Bluetooth будзе адлюстроўвацца на панэлі"
 
 #: ../data/unity.ui:1591
 msgid "Power"
-msgstr "ပါဝါ"
+msgstr "Сілкаванне"
 
 #: ../data/unity.ui:1595 ../data/unity.ui:1596
 msgid "If enabled, show the power menu in the panel."
 msgstr ""
+"Калі ўключана, то на панэлі будзе адлюстроўвацца меню электрасілкавання."
 
 #: ../data/unity.ui:1618
 msgid "Visible when charging or discharging"
-msgstr "အားသွင်းစဉ်နှင့် အားမသွင်းစဉ် မြင်နိုင်ခြင်း"
+msgstr "Адлюстроўваць падчас зарадкі або аўтаномнай працы"
 
 #: ../data/unity.ui:1622 ../data/unity.ui:1623
 msgid ""
 "Set the power indicator to be visible when charging or discharging power."
-msgstr ""
+msgstr "Адлюстраванне індыкатара падчас зарадкі або аўтаномнай працы"
 
 #: ../data/unity.ui:1635
 msgid "Always visible"
-msgstr "အမြဲတမ်းမြင်"
+msgstr "Заўжды бачны"
 
 #: ../data/unity.ui:1639 ../data/unity.ui:1640
 msgid "Set the power indicator to be always visible."
-msgstr ""
+msgstr "Дазваляе зрабіць індыкатар электрасілкавання ўвесь час бачным."
 
 #: ../data/unity.ui:1653
 msgid "Display remaining battery life"
-msgstr "ကျန်ရှိနေသော ဘတ်ထရီ သက်တမ်းပြမည်"
+msgstr "Паказаць астатні час працы ад акумулятара"
 
 #: ../data/unity.ui:1658 ../data/unity.ui:1659
 msgid "If enabled, show the remaining battery life in the power indicator."
 msgstr ""
+"Калі ўключана, то паказвае астатні час працы ад акумулятара на індыкатары "
+"электрасілкавання."
 
 #: ../data/unity.ui:1689
 msgid "Volume"
-msgstr "အသံအတိုးအကျယ်"
+msgstr "Гучнасць"
 
 #: ../data/unity.ui:1693 ../data/unity.ui:1694
 msgid "If enabled, show the sound menu in the panel."
-msgstr ""
+msgstr "Калі ўключана, то паказвае гукавае меню на панэлі."
 
 #: ../data/unity.ui:1717
 msgid "Default player:"
-msgstr ""
+msgstr "Прайгравальнік па змаўчанні:"
 
 #: ../data/unity.ui:1728 ../data/unity.ui:1729
 msgid ""
 "Select which of the installed audio players is default in the sound menu."
 msgstr ""
+"Абярыце, які з усталяваных музычных прайгравальнікаў будзе выкарыстоўвацца "
+"па змаўчанні ў гукавым меню."
 
 #: ../data/unity.ui:1745
 msgid "Notifications when scrolling"
-msgstr ""
+msgstr "Апавяшчэнні падчас прагорткі"
 
 #: ../data/unity.ui:1749 ../data/unity.ui:1750
 msgid ""
 "When using scrolling to change the volume, show on-screen notifications."
 msgstr ""
+"Падчас налады ўзроўню гучнасці пракруткай, паказваць экранныя паведамленні."
 
 #: ../data/unity.ui:1770
 msgid "Show my name"
-msgstr "ကျွန်ုပ်၏အမည်ကိုပြမည်"
+msgstr "Паказаць імя карыстальніка"
 
 #: ../data/unity.ui:1775
 msgid "If enabled, show the user&apos;s real name in the panel."
 msgstr ""
+"Калі ўключана, то сапраўднае імя карыстальніка адлюстроўваецца на панэлі."
 
 #: ../data/unity.ui:1776
 msgid "If enabled, show the user's real name in the panel."
 msgstr ""
+"Калі ўключана, то сапраўднае імя карыстальніка адлюстроўваецца на панэлі."
 
 #: ../data/unity.ui:1810 ../data/unity.ui:1811
 msgid "Restore the default Unity panel settings."
-msgstr ""
+msgstr "Аднавіць налады панэлі Unity па змаўчанні."
 
 #: ../data/unity.ui:1873
 msgid "Switch between windows on all workspaces"
-msgstr ""
+msgstr "Пераключэнне паміж вокнамі на ўсіх працоўных прасторах"
 
 #: ../data/unity.ui:1878 ../data/unity.ui:1879
 msgid ""
 "If enabled, the window switcher cycles through all windows on all workspaces"
 msgstr ""
+"Калі ўключана, акно пераключальніка дазволіць паслядоўна перамяшчацца сярод "
+"усіх вокнаў на ўсіх працоўных прасторах"
 
 #: ../data/unity.ui:1892
 msgid "Display \"Show Desktop\" icon"
-msgstr ""
+msgstr "Адлюстроўваць значку «Паказаць стальніцу»"
 
 #: ../data/unity.ui:1897
 msgid ""
 "If enabled, show the &quot;Show Desktop&quot; option in the window switcher"
 msgstr ""
+"Калі ўключана, то элемент Паказаць стальніцу будзе адлюстроўвацца ў "
+"пераключальніку вокнаў"
 
 #: ../data/unity.ui:1898
 msgid "If enabled, show the \"Show Desktop\" option in the window switcher"
 msgstr ""
+"Калі ўключана, то элемент Паказаць стальніцу будзе адлюстроўвацца ў "
+"пераключальніку вокнаў"
 
 #: ../data/unity.ui:1910
 msgid "Automatically expose windows"
-msgstr ""
+msgstr "Аўтаматычна раскрыць вокны"
 
 #: ../data/unity.ui:1915 ../data/unity.ui:1916
 msgid "If enabled, the window switcher will expose minimized windows"
-msgstr ""
+msgstr "Калі ўключана, пераключальнік вокнаў раскрые ўсе згорнутыя вокны"
 
 #: ../data/unity.ui:1928
 msgid "Switch between minimized windows"
-msgstr ""
+msgstr "Пераключэнне паміж згорнутымі вокнамі"
 
 #: ../data/unity.ui:1933 ../data/unity.ui:1934
 msgid "If enabled, the window switcher will switch through minimized windows"
 msgstr ""
+"Калі ўключана, пераключальнік вокнаў будзе перамыкаць сярод згорнутых вокнаў."
 
 #: ../data/unity.ui:1957
 msgid "Window switching shortcuts"
-msgstr ""
+msgstr "Спалучэння клавішаў хуткага доступу пераключальніка вокнаў"
 
 #: ../data/unity.ui:1981 ../data/unity.ui:1982
 msgid "Window switcher shortcuts"
-msgstr ""
+msgstr "Спалучэнні клавішаў хуткага доступу пераключальніка вокнаў"
 
 #: ../data/unity.ui:1992 ../data/unity.ui:2068 ../data/unity.ui:2405
 #: ../data/windowmanager.ui:266 ../data/windowmanager.ui:536
 #: ../data/windowmanager.ui:796 ../data/windowmanager.ui:1054
 msgid "Title"
-msgstr "ခေါင်းစဉ်"
+msgstr "Загаловак"
 
 #: ../data/unity.ui:2005 ../data/unity.ui:2081 ../data/unity.ui:2418
 #: ../data/windowmanager.ui:279 ../data/windowmanager.ui:549
 #: ../data/windowmanager.ui:809 ../data/windowmanager.ui:1067
 msgid "Accelerator"
-msgstr ""
+msgstr "Паскаральнік"
 
 #: ../data/unity.ui:2032
 msgid "Launcher switching shortcuts"
-msgstr ""
+msgstr "Спалучэнні клавішаў хуткага доступу для пераключэння на панэлі запуску"
 
 #: ../data/unity.ui:2057 ../data/unity.ui:2058
 msgid "Launcher switcher shortcuts"
-msgstr ""
+msgstr "Спалучэнні клавішаў хуткага доступу для пераключэння на панэлі запуску"
 
 #: ../data/unity.ui:2109
 msgid "Restore the default window switcher settings."
-msgstr ""
+msgstr "Аднавіць наладкі пераключальніка окнаў па змаўчанні."
 
 #: ../data/unity.ui:2171 ../data/unity.ui:2172
 msgid "Enable prompts for webapp integration when visiting supported websites?"
 msgstr ""
+"Задзейнічаць запыты інтэграцыі вэб-прыкладанняў пры наведванні вэб-сайтаў, "
+"якія падтрымліваюцца?"
 
 #: ../data/unity.ui:2187
 msgid "Integration prompts:"
-msgstr ""
+msgstr "Запыты на інтэграцыю вэб-прыкладанняў:"
 
 #: ../data/unity.ui:2209
 msgid "Preauthorized domains"
-msgstr ""
+msgstr "Загадзя аўтарызаваныя дамены"
 
 #: ../data/unity.ui:2228
 msgid "Amazon"
-msgstr "အမေဇုံ"
+msgstr "Amazon"
 
 #: ../data/unity.ui:2245
 msgid "Ubuntu One"
-msgstr ""
+msgstr "Ubuntu One"
 
 #: ../data/unity.ui:2273 ../data/unity.ui:2274
 msgid "Restore the default Unity Webapps settings."
-msgstr ""
+msgstr "Аднавіць налады вэб-прыкладанняў Unity па змаўчанні."
 
 #: ../data/unity.ui:2316
 msgid "HUD"
@@ -1184,59 +1253,69 @@ msgstr "HUD"
 
 #: ../data/unity.ui:2329
 msgid "Remember previous commands"
-msgstr "ယခင် command များကိုမှတ်မိစေမည်"
+msgstr "Запамінаць папярэднія каманды"
 
 #: ../data/unity.ui:2333 ../data/unity.ui:2334
 msgid ""
 "If enabled, the HUD will remember previously executed entries and sort them "
 "by frequently used."
 msgstr ""
+"Калі ўключана, HUD будзе запамінаць раней выкананыя каманды і сартаваць іх "
+"па частаце выкарыстання."
 
 #: ../data/unity.ui:2352
 msgid "Keyboard Shortcuts"
-msgstr "ကီးဘုတ် အမြန်ခလုတ်များ"
+msgstr "Клавіятурныя скароты"
 
 #: ../data/unity.ui:2365
 msgid "Hold Super for keyboard shortcuts"
 msgstr ""
+"Утрымлівайце клавішу Super, каб раскрыць спіс спалучэнняў клавішаў хуткага "
+"доступу"
 
 #: ../data/unity.ui:2370 ../data/unity.ui:2371
 msgid ""
 "When enabled, pressing the Super key displays an overlay of all Unity "
 "keyboard shortcuts"
 msgstr ""
+"Калі ўключана, пры націску клавішы Super будзе адлюстроўвацца экран які "
+"змяшчае спалучэнні клавішаў хуткага доступу Unity."
 
 #: ../data/unity.ui:2394 ../data/unity.ui:2395
 msgid "List of Unity keyboard shortcuts"
-msgstr "Unity ကီးဘုတ် အမြန်ခလုတ်များ စာရင်း"
+msgstr "Спіс спалучэнняў клавішаў хуткага доступу Unity"
 
 #: ../data/unity.ui:2446
 msgid "Notifications"
-msgstr "အသိပေးချက်"
+msgstr "Апавяшчэнні"
 
 #: ../data/unity.ui:2465
 msgid "All displays"
-msgstr ""
+msgstr "На ўсіх дысплэях"
 
 #: ../data/unity.ui:2469 ../data/unity.ui:2470
 msgid "For multiple displays, notifications are visible on all of them."
 msgstr ""
+"У выпадку з некалькімі дысплэямі, паведамленні адлюстроўваюцца на ўсіх."
 
 #: ../data/unity.ui:2483
 msgid "Active display"
-msgstr ""
+msgstr "На актыўным дысплэі"
 
 #: ../data/unity.ui:2487 ../data/unity.ui:2488
 msgid "For multiple displays, notifications are visible on the active display."
 msgstr ""
+"У выпадку з некалькімі дысплэямі, паведамленні адлюстроўваюцца на актыўным "
+"дысплэі."
 
 #: ../data/unity.ui:2511 ../data/unity.ui:2512
 msgid "Restore the default Unity keyboard shortcut settings."
 msgstr ""
+"Аднавіць налады спалучэнняў клавішаў хуткага доступу Unity па змаўчанні."
 
 #: ../data/windowmanager.ui:45
 msgid "Close window"
-msgstr "ဝင်းဒိုးပိတ်ပါ"
+msgstr "Зачыніць акно"
 
 #: ../data/windowmanager.ui:46
 msgid "Alt+F4"
@@ -1244,15 +1323,15 @@ msgstr "Alt+F4"
 
 #: ../data/windowmanager.ui:49
 msgid "Move window"
-msgstr "window ကို ရွှေ့မည်"
+msgstr "Перамясціць акно"
 
 #: ../data/windowmanager.ui:50
 msgid "Alt+mouse button 1"
-msgstr "Alt+mouse ခလုတ် 1"
+msgstr "Alt+mouse button 1"
 
 #: ../data/windowmanager.ui:53
 msgid "Show desktop"
-msgstr "Desktop ကိုပြမည်"
+msgstr "Паказаць стальніцу"
 
 #: ../data/windowmanager.ui:54
 msgid "Super+D"
@@ -1260,7 +1339,7 @@ msgstr "Super+D"
 
 #: ../data/windowmanager.ui:67
 msgid "Zoom in"
-msgstr "မြင်ကွင်း ချဲ့ရန်"
+msgstr "Наблізіць"
 
 #: ../data/windowmanager.ui:68
 msgid "Super++"
@@ -1268,7 +1347,7 @@ msgstr "Super++"
 
 #: ../data/windowmanager.ui:71
 msgid "Zoom out"
-msgstr "မြင်ကွင်း ချုံ့ရန်"
+msgstr "Паменшыць"
 
 #: ../data/windowmanager.ui:72
 msgid "Super+-"
@@ -1276,7 +1355,7 @@ msgstr "Super+-"
 
 #: ../data/windowmanager.ui:85
 msgid "Start windows spread"
-msgstr ""
+msgstr "Запусціць аглядны рэжым"
 
 #: ../data/windowmanager.ui:86
 msgid "Super+W"
@@ -1284,11 +1363,11 @@ msgstr "Super+W"
 
 #: ../data/windowmanager.ui:89
 msgid "Start windows spread for all windows"
-msgstr ""
+msgstr "Запусціць аглядны рэжым для ўсіх вокнаў"
 
 #: ../data/windowmanager.ui:103
 msgid "Start workspace switcher"
-msgstr ""
+msgstr "Адкрыць пераключальнік працоўных прастораў"
 
 #: ../data/windowmanager.ui:104
 msgid "Super+S"
@@ -1296,272 +1375,280 @@ msgstr "Super+S"
 
 #: ../data/windowmanager.ui:118
 msgid "Toggle Desktop"
-msgstr ""
+msgstr "Пераключыць стальніцу"
 
 #: ../data/windowmanager.ui:121
 msgid "Show Workspaces"
-msgstr "အလုပ်နေရာများကိုပြမည်"
+msgstr "Паказаць працоўныя прасторы"
 
 #: ../data/windowmanager.ui:124
 msgid "Window Spread"
-msgstr ""
+msgstr "Агляд вокнаў"
 
 #: ../data/windowmanager.ui:127
 msgid "Spread all Windows"
-msgstr ""
+msgstr "Паказаць усе вокны"
 
 #: ../data/windowmanager.ui:138
 msgid "Do Nothing"
-msgstr "ဘာမှမလုပ်"
+msgstr "Нічога не рабіць"
 
 #: ../data/windowmanager.ui:141
 msgid "Bottom Left Corner"
-msgstr ""
+msgstr "Ніжні левы кут"
 
 #: ../data/windowmanager.ui:144
 msgid "Bottom Half"
-msgstr "အောက်ပိုင်းတစ်ဝက်"
+msgstr "Ніжняя палова"
 
 #: ../data/windowmanager.ui:147
 msgid "Bottom Right Corner"
-msgstr ""
+msgstr "Ніжні правы кут"
 
 #: ../data/windowmanager.ui:150
 msgid "Left Half"
-msgstr "ဘယ်ဖက်တစ်ဝက်"
+msgstr "Левая палова"
 
 #: ../data/windowmanager.ui:153
 msgid "Fill Screen"
-msgstr ""
+msgstr "Запоўніць экран"
 
 #: ../data/windowmanager.ui:156
 msgid "Right Half"
-msgstr "ညာဖက်တစ်ဝက်"
+msgstr "Правая палова"
 
 #: ../data/windowmanager.ui:159
 msgid "Top Left Corner"
-msgstr "အပေါ်ဘယ်ဖက်ထောင့်"
+msgstr "Верхні левы кут"
 
 #: ../data/windowmanager.ui:162
 msgid "Top Half"
-msgstr "အပေါ်တစ်ဝက်"
+msgstr "Верхняя палова"
 
 #: ../data/windowmanager.ui:165
 msgid "Top Right Corner"
-msgstr "အပေါ်ညာဖက်ထောင့်"
+msgstr "Верхні правы кут"
 
 #: ../data/windowmanager.ui:168 ../data/windowmanager.ui:2029
 #: ../data/windowmanager.ui:2064 ../data/windowmanager.ui:2101
 msgid "Maximize"
-msgstr "အကျယ်ချဲ့"
+msgstr "Разгарнуць"
 
 #: ../data/windowmanager.ui:192
 msgid "Zoom"
-msgstr "ချုံ့/ချဲ့"
+msgstr "Маштабаванне"
 
 #: ../data/windowmanager.ui:214 ../data/windowmanager.ui:215
 msgid "Enable desktop zoom?"
-msgstr ""
+msgstr "Задзейнічаць маштабаванне стальніцы?"
 
 #: ../data/windowmanager.ui:230
 msgid "Desktop magnification:"
-msgstr "Desktop အကြီးချဲ့ခြင်း-"
+msgstr "Маштабаванне стальніцы:"
 
 #: ../data/windowmanager.ui:255 ../data/windowmanager.ui:256
 msgid "List of keyboard shortcuts for zoom"
-msgstr ""
+msgstr "Спалучэнні клавішаў для маштабавання"
 
 #: ../data/windowmanager.ui:308
 msgid "Hardware acceleration"
-msgstr ""
+msgstr "Апаратнае паскарэнне"
 
 #: ../data/windowmanager.ui:331 ../data/windowmanager.ui:332
 msgid "Select the level of texture rendering done by OpenGL"
-msgstr ""
+msgstr "Абярыце ступень адлюстравання тэкстураў праз OpenGL"
 
 #: ../data/windowmanager.ui:335
 msgid "Texture quality: "
-msgstr ""
+msgstr "Якасць тэкстуры: "
 
 #: ../data/windowmanager.ui:347
 msgid "Fast"
-msgstr "မြန်"
+msgstr "Хуткая"
 
 #: ../data/windowmanager.ui:348
 msgid "Good"
-msgstr "ကောင်းပါသည်။"
+msgstr "Добрая"
 
 #: ../data/windowmanager.ui:349
 msgid "Best"
-msgstr "အကောင်းဆုံး"
+msgstr "Лепшая"
 
 #: ../data/windowmanager.ui:371
 msgid "Animations"
-msgstr ""
+msgstr "Анімацыі"
 
 #: ../data/windowmanager.ui:396
 msgid "Minimize:"
-msgstr "ချုံ့"
+msgstr "Згортванне:"
 
 #: ../data/windowmanager.ui:432
 msgid "Unminimize:"
-msgstr ""
+msgstr "Аднаўленне:"
 
 #: ../data/windowmanager.ui:469
 msgid "Window Animations:"
-msgstr ""
+msgstr "Анімацыі вокнаў:"
 
 #: ../data/windowmanager.ui:502
 msgid "Keyboard shortcuts"
-msgstr ""
+msgstr "Клавіятурныя скароты"
 
 #: ../data/windowmanager.ui:524 ../data/windowmanager.ui:525
 msgid "List of window manager keyboard shortcuts"
-msgstr ""
+msgstr "Спіс спалучэнняў клавішаў кіраўніка вокнаў"
 
 #: ../data/windowmanager.ui:577 ../data/windowmanager.ui:578
 msgid "Restore default window manager settings"
-msgstr ""
+msgstr "Аднавіць наладкі кіраўніка вокнаў па змаўчанні"
 
 #: ../data/windowmanager.ui:639 ../data/windowmanager.ui:640
 msgid "Enable the window manager to draw multiple workspaces"
 msgstr ""
+"Задзейнічаць кіраўнік вокнаў для адлюстравання некалькіх працоўных прастораў"
 
 #: ../data/windowmanager.ui:655
 msgid "Workspace switcher:"
-msgstr "အလုပ်လုပ်သည့်နေရာပြောင်းခြင်း-"
+msgstr "Пераключальнік працоўных прастораў:"
 
 #: ../data/windowmanager.ui:668 ../data/windowmanager.ui:669
 msgid "Select the outline colour of the current workspace in the overview"
-msgstr ""
+msgstr "Абярыце колер контуру гэтай працоўнай прасторы на аглядным экране"
 
 #: ../data/windowmanager.ui:671
 msgid "Current workspace colour:"
-msgstr "ယခုအလုပ်နေရာအရောင်-"
+msgstr "Колер гэтай працоўнай прасторы:"
 
 #: ../data/windowmanager.ui:696 ../data/windowmanager.ui:697
 msgid "Select the number of vertical workspaces"
-msgstr ""
+msgstr "Абярыце колькасць вертыкальных працоўных прастораў"
 
 #: ../data/windowmanager.ui:699
 msgid "Vertical workspaces:"
-msgstr ""
+msgstr "Вертыкальныя працоўныя прасторы:"
 
 #: ../data/windowmanager.ui:739 ../data/windowmanager.ui:740
 msgid "Select the number of horizontal workspaces"
-msgstr ""
+msgstr "Абярыце колькасць гарызантальных працоўных прастораў"
 
 #: ../data/windowmanager.ui:742
 msgid "Horizontal workspaces:"
-msgstr ""
+msgstr "Гарызантальныя працоўныя прасторы:"
 
 #: ../data/windowmanager.ui:763
 msgid "Workspace shortcuts"
-msgstr ""
+msgstr "Скароты працоўнай прасторы"
 
 #: ../data/windowmanager.ui:785 ../data/windowmanager.ui:786
 msgid "List of workspace management keyboard shortcuts"
-msgstr ""
+msgstr "Клавіятурныя скароты працоўных прастораў"
 
 #: ../data/windowmanager.ui:838 ../data/windowmanager.ui:839
 msgid "Restore default workspace configuration"
-msgstr ""
+msgstr "Аднавіць наладкі працоўнай прасторы па змаўчанні"
 
 #: ../data/windowmanager.ui:861
 msgid "Workspace Settings"
-msgstr ""
+msgstr "Наладкі працоўнай прасторы"
 
 #: ../data/windowmanager.ui:904 ../data/windowmanager.ui:905
 msgid "Enable the window spread?"
-msgstr ""
+msgstr "Задзейнічаць аглядны рэжым?"
 
 #: ../data/windowmanager.ui:922
 msgid "Window spread:"
-msgstr ""
+msgstr "Аглядны рэжым:"
 
 #: ../data/windowmanager.ui:948 ../data/windowmanager.ui:949
 msgid "Select the space between window in the spead overview in pixels"
-msgstr ""
+msgstr "Абярыце адлегласць паміж вокнамі ў аглядным рэжыме (у пікселях)"
 
 #: ../data/windowmanager.ui:951
 msgid "Spacing:"
-msgstr "ကြားအကွာအဝေး -"
+msgstr "Адлегласць:"
 
 #: ../data/windowmanager.ui:974
 msgid "Icons on previews"
-msgstr ""
+msgstr "Значкі прадпрагляду"
 
 #: ../data/windowmanager.ui:978 ../data/windowmanager.ui:979
 msgid ""
 "When enabled, show an application's icon on the window preview in the window "
 "spread"
 msgstr ""
+"Калі ўключана, то паказвае значку прыкладання ў акне папярэдняга прагляду "
+"агляднага рэжыму"
 
 #: ../data/windowmanager.ui:992
 msgid "Click to access desktop"
-msgstr "Desktop သုံးရန်ကလစ်နှိပ်"
+msgstr "Пстрыкніце для доступу да стальніцы"
 
 #: ../data/windowmanager.ui:996 ../data/windowmanager.ui:997
 msgid ""
 "When enabled, clicking on the desktop in the window spread will display the "
 "desktop"
 msgstr ""
+"Калі ўключана, вы можаце пстрыкнуць на стальніцы ў аглядным рэжыме, каб "
+"раскрыць яе"
 
 #: ../data/windowmanager.ui:1021
 msgid "Window spread shortcuts"
-msgstr ""
+msgstr "Спалучэнні клавішаў хуткага доступу ў аглядным рэжыме"
 
 #: ../data/windowmanager.ui:1043 ../data/windowmanager.ui:1044
 msgid "List of window spread shortcuts"
-msgstr ""
+msgstr "Спіс спалучэнняў клавішаў хуткага доступу ў аглядным рэжыме"
 
 #: ../data/windowmanager.ui:1095 ../data/windowmanager.ui:1096
 msgid "Restore default window spread settings"
-msgstr ""
+msgstr "Аднавіць наладкі агляднага рэжыму па змаўчанні"
 
 #: ../data/windowmanager.ui:1118
 msgid "Window spread"
-msgstr ""
+msgstr "Аглядны рэжым"
 
 #: ../data/windowmanager.ui:1176
 msgid "Window snapping:"
-msgstr ""
+msgstr "Упарадкаванне вокнаў:"
 
 #: ../data/windowmanager.ui:1188 ../data/windowmanager.ui:2167
 msgid "Fill colour:"
-msgstr "ဖြည့်မည့်အရောင် -"
+msgstr "Колер запаўнення:"
 
 #: ../data/windowmanager.ui:1201 ../data/windowmanager.ui:2154
 msgid "Outline colour:"
-msgstr "အနားသတ်အရောင်-"
+msgstr "Колер контуру:"
 
 #: ../data/windowmanager.ui:1494
 msgid "Window snapping"
-msgstr ""
+msgstr "Упарадкаванне вокнаў"
 
 #: ../data/windowmanager.ui:1551
 msgid "Hotcorners:"
-msgstr ""
+msgstr "Гарачыя куты"
 
 #: ../data/windowmanager.ui:1838
 msgid "Focus Behaviour"
-msgstr ""
+msgstr "Спосаб факусоўкі"
 
 #: ../data/windowmanager.ui:1863
 msgid "Auto-raise delay:"
-msgstr ""
+msgstr "Затрымка да аўтаматычнага ўздыму на пярэдні план:"
 
 #: ../data/windowmanager.ui:1875 ../data/windowmanager.ui:1876
 msgid "Set the delay for raising newly focused windows."
 msgstr ""
+"Прызначэнне затрымкі для ўзняцця на пярэдні план новых сфакусаваных вокнаў."
 
 #: ../data/windowmanager.ui:1891
 msgid "If enabled, windows that take focus will be automatically raised."
 msgstr ""
+"Калі ўключана, вокны якія трапляюць у фокус будуць аўтаматычна перамешчаныя "
+"на пярэдні план."
 
 #: ../data/windowmanager.ui:1907
 msgid "Focus mode:"
-msgstr ""
+msgstr "Рэжым факусоўкі:"
 
 #: ../data/windowmanager.ui:1920 ../data/windowmanager.ui:1921
 msgid ""
@@ -1570,27 +1657,33 @@ msgid ""
 "enters the window, and \"mouse\" means windows are focused when the mouse "
 "enters the window and unfocused when the mouse leaves the window."
 msgstr ""
+"Абярыце рэжым факусоўкі, «пстрычка» азначае, што для факусоўкі неабходна "
+"выканаць пстрычка па патрабаваным акне, «паказваны» азначае, што для "
+"факусоўкі неабходна перамясціць мыш у вобласць патрабаванага акна і «мыш» "
+"азначае, што для факусоўкі неабходна перамясціць мыш у вобласць акна, але "
+"пасля таго як паказальнік пакіне акно, яно перастане знаходзіцца ў вобласці "
+"факусоўкі."
 
 #: ../data/windowmanager.ui:1924
 msgid "Click"
-msgstr "ကလစ်"
+msgstr "Пстрычка"
 
 #: ../data/windowmanager.ui:1925
 msgid "Sloppy"
-msgstr ""
+msgstr "Паказваны"
 
 #: ../data/windowmanager.ui:1926
 msgid "Mouse"
-msgstr "မောက်(စ်)"
+msgstr "Мыш"
 
 #: ../data/windowmanager.ui:1940
 msgid "Auto-raise:"
-msgstr ""
+msgstr "Аўтаматычнае ўзняцце:"
 
 #: ../data/windowmanager.ui:1952
 #, fuzzy
 msgid "Raise on click:"
-msgstr "ညာဖက်ကလစ်-"
+msgstr "Пстрычка правай кнопкай:"
 
 #: ../data/windowmanager.ui:1963
 msgid "Whether raising should be a side-effect of other user interactions."
@@ -1598,89 +1691,187 @@ msgstr ""
 
 #: ../data/windowmanager.ui:1987
 msgid "Titlebar Actions"
-msgstr ""
+msgstr "Дзеянні панэлі загалоўка"
 
 #: ../data/windowmanager.ui:2013
 msgid "Double click:"
-msgstr ""
+msgstr "Падвойная пстрычка:"
 
 #: ../data/windowmanager.ui:2025 ../data/windowmanager.ui:2026
 msgid "Select the titlebar's double click action."
-msgstr ""
+msgstr "Абярыце дзеянні падвойнай пстрычкі на панэлі загалоўка."
 
 #: ../data/windowmanager.ui:2028
 msgid "Toggle Shade"
-msgstr ""
+msgstr "Пераключыць адценне"
 
 #: ../data/windowmanager.ui:2030 ../data/windowmanager.ui:2065
 #: ../data/windowmanager.ui:2102
 msgid "Horizontal expand"
-msgstr ""
+msgstr "Гарызантальнае пашырэнне"
 
 #: ../data/windowmanager.ui:2031 ../data/windowmanager.ui:2066
 #: ../data/windowmanager.ui:2103
 msgid "Vertical expand"
-msgstr ""
+msgstr "Вертыкальнае пашырэнне"
 
 #: ../data/windowmanager.ui:2032 ../data/windowmanager.ui:2067
 #: ../data/windowmanager.ui:2104
 msgid "Minimize"
-msgstr "ချုံ့ထား"
+msgstr "Згарнуць"
 
 #: ../data/windowmanager.ui:2033 ../data/windowmanager.ui:2068
 #: ../data/windowmanager.ui:2105
 msgid "No action"
-msgstr "လုပ်ဆောင်မှု မရှိဘူး"
+msgstr "Няма дзеяньня"
 
 #: ../data/windowmanager.ui:2034 ../data/windowmanager.ui:2069
 #: ../data/windowmanager.ui:2106
 msgid "Lower"
-msgstr "အနိမ့်ပိုင်း"
+msgstr "Ніжэй"
 
 #: ../data/windowmanager.ui:2035 ../data/windowmanager.ui:2070
 #: ../data/windowmanager.ui:2107
 msgid "Menu"
-msgstr "မီနူး"
+msgstr "Мэню"
 
 #: ../data/windowmanager.ui:2049
 msgid "Middle click:"
-msgstr "အလယ်ကလစ်-"
+msgstr "Пстрычка сярэдняй кнопкай:"
 
 #: ../data/windowmanager.ui:2060 ../data/windowmanager.ui:2061
 msgid "Select the titlebar's middle click action."
-msgstr ""
+msgstr "Абярыце дзеянні пры пстрычцы сярэдняй кнопкай на панэлі загалоўка."
 
 #: ../data/windowmanager.ui:2063 ../data/windowmanager.ui:2100
 msgid "Toggle shade"
-msgstr ""
+msgstr "Пераключыць адценні"
 
 #: ../data/windowmanager.ui:2085
 msgid "Right click:"
-msgstr "ညာဖက်ကလစ်-"
+msgstr "Пстрычка правай кнопкай:"
 
 #: ../data/windowmanager.ui:2097 ../data/windowmanager.ui:2098
 msgid "Select the titlebar's right click action."
-msgstr ""
+msgstr "Абярыце дзеянне пры пстрычцы правай кнопкай на панэлі загалоўка."
 
 #: ../data/windowmanager.ui:2129
 msgid "Resizing"
-msgstr "အရွယ်ညှိခြင်း"
+msgstr "Змяненне памеру"
 
 #: ../data/windowmanager.ui:2211 ../data/windowmanager.ui:2212
 msgid "Restore the default settings for the additional options."
-msgstr ""
+msgstr "Аднавіць налады дадатковых параметраў па змаўчанні."
+
+#~ msgid ""
+#~ "Window\n"
+#~ "Controls"
+#~ msgstr ""
+#~ "Кіраванне\n"
+#~ "Вокнамі"
+
+#~ msgid "Reset Unity settings?"
+#~ msgstr "Скінуць налады Unity?"
+
+#~ msgid "Cancel"
+#~ msgstr "Скасаваць"
+
+#~ msgid "Proceed"
+#~ msgstr "Працягнуць"
+
+#~ msgid ""
+#~ "This will reset all your Unity settings.\n"
+#~ "Are you sure you want to proceed?"
+#~ msgstr ""
+#~ "Гэта скіне ўсе вашыя налады Unity.\n"
+#~ "Ці жадаеце вы працягнуць?"
+
+#~ msgid "Configuration frontend for the Unity desktop environment"
+#~ msgstr "Інтэрфейс налады асяроддзя працоўнага стала Unity"
+
+#~ msgid "Start in the Unity tab"
+#~ msgstr "Запусціць ва ўкладцы Unity"
+
+#~ msgid "Start in the WindowManager tab"
+#~ msgstr "Запусціць ва ўкладцы кіраўніка вокнаў"
+
+#~ msgid "Start in the appearance tab"
+#~ msgstr "Запусціць ва ўкладцы афармлення"
+
+#~ msgid "Start in the system tab"
+#~ msgstr "Запусціць у сістэмнай ўкладцы"
+
+#~ msgid "Reset Unity, wiping all configuration changes."
+#~ msgstr "Скід ўсіх наладак Unity"
+
+#~ msgid ""
+#~ "\n"
+#~ "WARNING: You are about to reset Unity to its default configuration.\n"
+#~ "    This will result in loss of configuration.\n"
+#~ "    It is normal for your desktop to flicker during the process.\n"
+#~ "    Type yes to continue, anything else to exit.\n"
+#~ "    "
+#~ msgstr ""
+#~ "\n"
+#~ "УВАГА: Вы збіраецеся скінуць налады Unity да зыходнага стану.\n"
+#~ "Гэта прывядзе да страты бягучай канфігурацыі.\n"
+#~ "Мігаценне экрана падчас гэтага працэсу з'яўляецца нармальным.\n"
+#~ "Набярыце да каб працягнуць або нешта іншае для выхаду.\n"
+#~ "    "
 
 #~ msgid "Do you wish to continue?"
-#~ msgstr "သင်ဆက်လုပ်ချင်ပါသလား။"
+#~ msgstr "Хочаце працягваць?"
 
 #~ msgid "Please log out and log back in."
-#~ msgstr "ကျေးဇူးပြုပြီး ထွက်ပြီး ပြန်ဝင်ပေးပါ"
+#~ msgstr "Калі ласка, выйдзіце з сістэмы і зноў ўвайдзіце"
+
+#~ msgid "Layout"
+#~ msgstr "Раскладка"
+
+#~ msgid "Align the window controls to the left side of the window."
+#~ msgstr "Элементы кіравання акном з левага боку."
 
 #~ msgid "Right"
-#~ msgstr "ညာဖက်"
+#~ msgstr "Справа"
+
+#~ msgid "Align the window controls to the right side of the window."
+#~ msgstr "Элементы кіравання акном з правага боку."
+
+#~ msgid "Alignment:"
+#~ msgstr "Раўнанне:"
 
 #~ msgid "Show menu button"
-#~ msgstr "မီနူးခလုတ်ကိုပြမည်"
+#~ msgstr "Паказаць кнопку меню"
+
+#~ msgid "If enabled, show the window menu in the titlebar."
+#~ msgstr "Калі ўключана, паказваць меню акна ў загалоўку."
 
 #~ msgid "Restore Defaults"
-#~ msgstr "မူလအတိုင်းထားမည်"
+#~ msgstr "Аднавіць па змаўчанні"
+
+#~ msgid "Restore default window controls settings."
+#~ msgstr "Аднавіць налады элементаў кіравання акном па змаўчанні."
+
+#~ msgid "Window Controls"
+#~ msgstr "Элементы кіравання акном"
+
+#~ msgid "Window controls"
+#~ msgstr "Кіраванне акном"
+
+#~ msgid "Initialising Unity reset"
+#~ msgstr "Ініцыялізацыя аднаўлення Unity"
+
+#~ msgid "Killing Unity and Compiz"
+#~ msgstr "Завяршыць працэсы Unity і Compiz"
+
+#~ msgid "Resetting compiz plugins"
+#~ msgstr "Скід надбудоў Compiz"
+
+#~ msgid "Resetting more compiz plugins"
+#~ msgstr "Аднаўленне дадатковых надбудоў Сompiz"
+
+#~ msgid "Resetting Unity settings"
+#~ msgstr "Аднаўленне параметраў Unity"
+
+#~ msgid "Reset complete. Reloading unity"
+#~ msgstr "Скід выкананы. Перазагрузка Unity."
