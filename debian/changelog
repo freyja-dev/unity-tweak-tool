@@ -1,4 +1,4 @@
-unity-tweak-tool (0.0.7) UNRELEASED; urgency=low
+unity-tweak-tool (0.0.7) xenial; urgency=medium
 
   [ Andrew Starr-Bochicchio ]
   * debian/rules: Some minor style tweaks.
@@ -15,7 +15,14 @@ unity-tweak-tool (0.0.7) UNRELEASED; urgency=low
   * UnityTweakTool/section/system.py
     - Fixed missing schema- org.gnome.settings-daemon.peripherals (LP: #1490154)
 
- -- J Phani Mahesh <phanimahesh@gmail.com>  Tue, 18 Feb 2014 20:21:01 +0530
+  [ Seth Johnson ]
+  * UnityTweakTool/section/unity.py
+    - Added support for moving the launcher to the bottom of the screen
+  * UnityTweakTool/section/windowmanager.py
+    - Add raise on click feature
+  * Rebuilt pot files 
+
+ -- Seth Johnson <sethj0438@gmail.com>  Fri, 25 Mar 2016 08:04:32 -0700
 
 unity-tweak-tool (0.0.6) saucy; urgency=high
 
