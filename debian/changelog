@@ -21,9 +21,11 @@ unity-tweak-tool (0.0.7) xenial; urgency=medium
   * UnityTweakTool/section/windowmanager.py
     - Add raise on click feature
   * Rebuilt pot files
+  * setup.py 
+    - Fix missing header icons (LP: 1467211)
   * New upstream release (closes LP: #1562049) 
 
- -- Seth Johnson <sethj0438@gmail.com>  Fri, 25 Mar 2016 09:24:30 -0700
+ -- Seth Johnson <sethj0438@gmail.com>  Sun, 27 Mar 2016 21:22:06 -0700
 
 unity-tweak-tool (0.0.6) saucy; urgency=high
 
