@@ -165,6 +165,7 @@ class InstallAndUpdateDataDirectory(DistUtilsExtra.auto.install_auto):
 data_files=[
         ('share/dbus-1/services', ['unity-tweak-tool.service']),
         ('share/icons/gnome/scalable/apps/', glob.glob("data/media/scalable/*svg")),
+        ('share/pixmaps/', glob.glob("data/media/scalable/*svg")),
         ('share/icons/hicolor/16x16/apps/', glob.glob("data/media/hicolor/16x16/apps/*.png")),
         ('share/icons/hicolor/24x24/apps/', glob.glob("data/media/hicolor/24x24/apps/*.png")),
         ('share/icons/hicolor/32x32/apps/', glob.glob("data/media/hicolor/32x32/apps/*.png")),
@@ -194,4 +195,3 @@ DistUtilsExtra.auto.setup(
     data_files=data_files,
     cmdclass={'install': InstallAndUpdateDataDirectory}
     )
-
