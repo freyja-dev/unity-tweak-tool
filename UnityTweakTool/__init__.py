@@ -37,7 +37,11 @@ import os
 import sys
 import logging
 import dbus, dbus.service
+
+import gi
+gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
+
 from dbus.mainloop.glib import DBusGMainLoop
 from UnityTweakTool.config.logging import LOGFILE,LOGFMT,LOGLVL,CACHEDIR
 
