@@ -2136,171 +2136,6 @@
           </packing>
         </child>
         <child>
-          <object class="GtkBox" id="box_unity_webapps">
-            <property name="visible">True</property>
-            <property name="can_focus">False</property>
-            <property name="orientation">vertical</property>
-            <property name="spacing">6</property>
-            <child>
-              <object class="GtkLabel" id="l_webapps_general">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="margin_left">12</property>
-                <property name="margin_top">6</property>
-                <property name="label" translatable="yes">General</property>
-                <property name="xalign">0</property>
-                <attributes>
-                  <attribute name="weight" value="bold"/>
-                </attributes>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">0</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkGrid" id="grid_switch_unity_webapps">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="margin_left">12</property>
-                <child>
-                  <object class="GtkSwitch" id="switch_unity_webapps">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="tooltip_markup" translatable="yes">Enable prompts for webapp integration when visiting supported websites?</property>
-                    <property name="tooltip_text" translatable="yes">Enable prompts for webapp integration when visiting supported websites?</property>
-                    <property name="halign">start</property>
-                    <signal name="notify::active" handler="on_switch_unity_webapps_active_notify" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">0</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="l_switch_unity_webapps">
-                    <property name="width_request">130</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="margin_right">6</property>
-                    <property name="label" translatable="yes">Integration prompts:</property>
-                    <property name="xalign">1</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">0</property>
-                  </packing>
-                </child>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">2</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkLabel" id="l_domains_preauthorized">
-                <property name="width_request">150</property>
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="halign">start</property>
-                <property name="margin_left">12</property>
-                <property name="label" translatable="yes">Preauthorized domains</property>
-                <property name="xalign">1</property>
-                <attributes>
-                  <attribute name="weight" value="bold"/>
-                </attributes>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">3</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkBox" id="box_preauthorized">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="orientation">vertical</property>
-                <child>
-                  <object class="GtkCheckButton" id="check_preauthorized_amazon">
-                    <property name="label" translatable="yes">Amazon</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="receives_default">False</property>
-                    <property name="margin_left">18</property>
-                    <property name="xalign">0</property>
-                    <property name="draw_indicator">True</property>
-                    <signal name="toggled" handler="on_check_preauthorized_amazon_toggled" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">0</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkCheckButton" id="check_preauthorized_ubuntuone">
-                    <property name="label" translatable="yes">Ubuntu One</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="receives_default">False</property>
-                    <property name="margin_left">18</property>
-                    <property name="xalign">0</property>
-                    <property name="draw_indicator">True</property>
-                    <signal name="toggled" handler="on_check_preauthorized_ubuntuone_toggled" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">1</property>
-                  </packing>
-                </child>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">4</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkButton" id="b_unity_webapps_reset">
-                <property name="label" translatable="yes">Restore defaults</property>
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="receives_default">True</property>
-                <property name="tooltip_markup" translatable="yes">Restore the default Unity Webapps settings.</property>
-                <property name="tooltip_text" translatable="yes">Restore the default Unity Webapps settings.</property>
-                <property name="halign">start</property>
-                <property name="margin_left">12</property>
-                <property name="margin_top">6</property>
-                <property name="margin_bottom">12</property>
-                <signal name="clicked" handler="on_b_unity_webapps_reset_clicked" swapped="no"/>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">15</property>
-              </packing>
-            </child>
-          </object>
-          <packing>
-            <property name="position">4</property>
-          </packing>
-        </child>
-        <child type="tab">
-          <object class="GtkLabel" id="l_page_webapps">
-            <property name="visible">True</property>
-            <property name="can_focus">False</property>
-            <property name="label" translatable="yes">Web Apps</property>
-          </object>
-          <packing>
-            <property name="position">4</property>
-            <property name="tab_fill">False</property>
-          </packing>
-        </child>
-        <child>
           <object class="GtkBox" id="box_unity_additional">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
@@ -2523,7 +2358,7 @@
             </child>
           </object>
           <packing>
-            <property name="position">5</property>
+            <property name="position">4</property>
           </packing>
         </child>
         <child type="tab">
@@ -2533,7 +2368,7 @@
             <property name="label" translatable="yes">Additional</property>
           </object>
           <packing>
-            <property name="position">5</property>
+            <property name="position">4</property>
             <property name="tab_fill">False</property>
           </packing>
         </child>

@@ -1,3 +1,29 @@
+unity-tweak-tool (0.0.7ubuntu4) artful; urgency=medium
+
+  * Actually remove unity-webapps-common from the deps.
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Thu, 24 Aug 2017 14:15:21 -0700
+
+unity-tweak-tool (0.0.7ubuntu3) artful; urgency=medium
+
+  * Drop unity-webapps-common, which is being removed from artful.
+    LP: #1712874.
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Thu, 24 Aug 2017 11:29:43 -0700
+
+unity-tweak-tool (0.0.7ubuntu2) xenial; urgency=medium
+
+  * po/fi.po: Update to latest from Launchpad as requested by 
+    Jiri Grönroos.
+
+ -- Timo Jyrinki <timo-jyrinki@ubuntu.com>  Tue, 12 Apr 2016 15:52:54 +0300
+
+unity-tweak-tool (0.0.7ubuntu1) xenial; urgency=low
+
+  * Release 0.0.7 to Ubuntu. (LP: #1562049)
+
+ -- Freyja Development <freyja-dev@lists.launchpad.net>  Mon, 28 Mar 2016 04:36:38 +0000
+
 unity-tweak-tool (0.0.7) xenial; urgency=medium
 
   [ Andrew Starr-Bochicchio ]
@@ -26,6 +52,34 @@ unity-tweak-tool (0.0.7) xenial; urgency=medium
   * New upstream release (closes LP: #1562049) 
 
  -- Seth Johnson <sethj0438@gmail.com>  Sun, 27 Mar 2016 21:22:06 -0700
+
+unity-tweak-tool (0.0.6ubuntu3) wily; urgency=medium
+
+  * Fix the schema used for touchpad settings to match the current GNOME
+    as present in Ubuntu 15.10.  LP: #1490154.
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Thu, 17 Sep 2015 14:55:21 -0700
+
+unity-tweak-tool (0.0.6ubuntu2) utopic; urgency=medium
+
+  * Backport upstream commit adding support for minimizing
+    single window applications when clicking their icon on
+    the launcher (LP: #1298487).
+
+ -- Andrew Starr-Bochicchio <a.starr.b@gmail.com>  Thu, 27 Mar 2014 12:39:22 -0400
+
+unity-tweak-tool (0.0.6ubuntu1) trusty; urgency=medium
+
+  * debian/patches/lp1281132.patch: Backport upstream commit
+    that fixes crash (LP: #1281132). This patch is applied
+    directly since this is a native package, but a copy was
+    kept in debian/ to be clear about what has been applied.
+  * debian/rules: Some minor style tweaks.
+  * debian/control:
+   - Bump Standards-Version to 3.9.5
+   - Build depend on python3-all to fix FTBFS (LP: #1282274). 
+
+ -- Andrew Starr-Bochicchio <a.starr.b@gmail.com>  Thu, 20 Feb 2014 23:41:09 -0500
 
 unity-tweak-tool (0.0.6) saucy; urgency=high
 
