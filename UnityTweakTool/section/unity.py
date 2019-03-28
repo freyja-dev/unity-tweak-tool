@@ -661,49 +661,6 @@ SwitcherIcons=Tab([check_switchwindows_all_workspaces,
                     check_minimizedwindows_switch,
                     check_autoexposewindows])
 
-#=============== WEB APPS ==========================
-
-
-switch_unity_webapps= Switch({
-    'id'        : 'switch_unity_webapps',
-    'builder'   : Unity.builder,
-    'schema'    : 'com.canonical.unity.webapps',
-    'path'      : None,
-    'key'       : 'integration-allowed',
-    'type'      : 'boolean',
-    'map'       : {True:True,False:False},
-    'dependants': []
-})
-
-# XXX : functors
-# check_preauthorized_amazon= CheckBox({
-#     'id'        : 'check_preauthorized_amazon',
-#     'builder'   : Unity.builder,
-#     'schema'    : 'com.canonical.unity.webapps',
-#     'path'      : None,
-#     'key'       : 'preauthorized-domains',
-#     'type'      : 'strv',
-#     'map'       : {True:True,False:False},
-#     'dependants': []
-# })
-
-# check_preauthorized_ubuntuone= CheckBox({
-#     'id'        : 'check_preauthorized_ubuntuone',
-#     'builder'   : Unity.builder,
-#     'schema'    : 'com.canonical.unity.webapps',
-#     'path'      : None,
-#     'key'       : 'preauthorized-domains',
-#     'type'      : 'strv',
-#     'map'       : {True:True,False:False},
-#     'dependants': []
-# })
-
-# TODO:
-# check_preauthorized_amazon
-# check_preauthorized_ubuntuone
-
-WebappsIcons=Tab([switch_unity_webapps])
-
 #=============== ADDITIONAL ==========================
 
 check_hud_store_data= CheckBox({
@@ -768,7 +725,6 @@ LauncherIcons.enable_restore('b_unity_launcher_reset')
 DashIcons.enable_restore('b_unity_dash_reset')
 PanelIcons.enable_restore('b_unity_panel_reset')
 SwitcherIcons.enable_restore('b_unity_switcher_reset')
-WebappsIcons.enable_restore('b_unity_webapps_reset')
 AdditionalIcons.enable_restore('b_unity_additional_reset')
 
 # Each page must be added using add_page
@@ -776,7 +732,6 @@ Unity.add_page(LauncherIcons)
 Unity.add_page(DashIcons)
 Unity.add_page(PanelIcons)
 Unity.add_page(SwitcherIcons)
-Unity.add_page(WebappsIcons)
 Unity.add_page(AdditionalIcons)
 
 # XXX : Spaghetti bridge

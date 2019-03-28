@@ -6,21 +6,20 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: unity-tweak-tool\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-03-24 18:26-0700\n"
-"PO-Revision-Date: 2013-02-12 13:57+0000\n"
-"Last-Translator: Aleksi Kinnunen <Unknown>\n"
+"PO-Revision-Date: 2016-04-12 11:44+0000\n"
+"Last-Translator: Timo Jyrinki <timo.jyrinki@canonical.com>\n"
 "Language-Team: Finnish <fi@li.org>\n"
-"Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-07-25 06:07+0000\n"
-"X-Generator: Launchpad (build 17114)\n"
+"X-Launchpad-Export-Date: 2016-04-12 11:48+0000\n"
+"X-Generator: Launchpad (build 17990)\n"
 
 #: ../data/about.ui:12
 msgid "Copyright © 2013 Freyja Development team"
-msgstr ""
+msgstr "Tekijänoikeus © 2013 Freyja-kehitystiimi"
 
 #: ../data/about.ui:13
 msgid ""
@@ -35,28 +34,28 @@ msgstr "Unityn muokkaussovellus Launchpadissa"
 
 #: ../data/about.ui:16
 msgid "GPL3"
-msgstr ""
+msgstr "GPL3"
 
 #: ../data/appearance.ui:32 ../data/appearance.ui:198
 #: ../data/appearance.ui:299
 msgid "Available themes"
-msgstr ""
+msgstr "Saatavilla olevat teemat"
 
 #: ../data/appearance.ui:67 ../data/appearance.ui:68
 msgid "List of GTK Themes"
-msgstr ""
+msgstr "Luettelo GTK-teemoista"
 
 #: ../data/appearance.ui:80
 msgid "GTK Theme"
-msgstr ""
+msgstr "GTK-teema"
 
 #: ../data/appearance.ui:112 ../data/appearance.ui:113
 msgid "List of Window decoration themes"
-msgstr ""
+msgstr "Luettelo ikkunareunusteemoista"
 
 #: ../data/appearance.ui:123
 msgid "Window decoration theme"
-msgstr ""
+msgstr "Ikkunareunuksen teema"
 
 #: ../data/appearance.ui:154 ../data/appearance.ui:251
 #: ../data/appearance.ui:386 ../data/appearance.ui:765 ../data/system.ui:259
@@ -71,23 +70,23 @@ msgstr "Palauta oletukset"
 
 #: ../data/appearance.ui:158 ../data/appearance.ui:159
 msgid "Restore system's default theme configurations"
-msgstr ""
+msgstr "Palauta järjestelmän teeman oletusasetukset"
 
 #: ../data/appearance.ui:179 ../data/overview.ui:850 ../data/unitytweak.ui:215
 msgid "Theme"
-msgstr ""
+msgstr "Teema"
 
 #: ../data/appearance.ui:220 ../data/appearance.ui:221
 msgid "List of icon themes"
-msgstr ""
+msgstr "Luettelo kuvaketeemoista"
 
 #: ../data/appearance.ui:231
 msgid "Icon theme"
-msgstr ""
+msgstr "Kuvaketeema"
 
 #: ../data/appearance.ui:255 ../data/appearance.ui:256
 msgid "Restore system's default icon theme configurations"
-msgstr ""
+msgstr "Palauta järjestelmän kuvaketeeman oletusasetukset"
 
 #: ../data/appearance.ui:279 ../data/overview.ui:901 ../data/unitytweak.ui:224
 #: ../data/unity.ui:621
@@ -96,31 +95,31 @@ msgstr "Kuvakkeet"
 
 #: ../data/appearance.ui:321 ../data/appearance.ui:322
 msgid "List of cursor themes"
-msgstr ""
+msgstr "Luettelo osoitinteemoista"
 
 #: ../data/appearance.ui:330
 msgid "Cursor Theme"
-msgstr ""
+msgstr "Osoitinteema"
 
 #: ../data/appearance.ui:354
 msgid "Preferences"
-msgstr ""
+msgstr "Valinnat"
 
 #: ../data/appearance.ui:367
 msgid "Use large cursors"
-msgstr ""
+msgstr "Käytä suuria osoittimia"
 
 #: ../data/appearance.ui:371 ../data/appearance.ui:372
 msgid "If enabled, the system will use a larger cursor."
-msgstr ""
+msgstr "Jos käytössä, järjestelmä käyttää suurta osoitinta."
 
 #: ../data/appearance.ui:390 ../data/appearance.ui:391
 msgid "Restore system's default cursor theme configurations"
-msgstr ""
+msgstr "Palauta järjestelmän osoitinteeman oletusasetukset"
 
 #: ../data/appearance.ui:414 ../data/unitytweak.ui:233
 msgid "Cursor"
-msgstr ""
+msgstr "Osoitin"
 
 #: ../data/appearance.ui:434 ../data/overview.ui:474 ../data/unitytweak.ui:146
 #: ../data/unity.ui:857 ../data/unity.ui:1183 ../data/unity.ui:1852
@@ -133,38 +132,38 @@ msgstr "Yleiset"
 #: ../data/appearance.ui:456 ../data/appearance.ui:457
 #: ../data/appearance.ui:491 ../data/appearance.ui:492
 msgid "Select the default font for all applications."
-msgstr ""
+msgstr "Valitse kaikkien sovellusten oletusfontti."
 
 #: ../data/appearance.ui:459
 msgid "Default font:"
-msgstr ""
+msgstr "Oletusfontti:"
 
 #: ../data/appearance.ui:474 ../data/appearance.ui:475
 #: ../data/appearance.ui:511 ../data/appearance.ui:512
 msgid "Select the default font used for reading documents."
-msgstr ""
+msgstr "Valitse oletuskirjasin asiakirjojen lukemiseen"
 
 #: ../data/appearance.ui:477
 msgid "Document font:"
-msgstr ""
+msgstr "Asiakirjafontti:"
 
 #: ../data/appearance.ui:530 ../data/appearance.ui:531
 #: ../data/appearance.ui:565 ../data/appearance.ui:566
 msgid "Select the default monospace font."
-msgstr ""
+msgstr "Valitse oletuksena käytettävä tasalevyinen fontti."
 
 #: ../data/appearance.ui:533
 msgid "Monospace font:"
-msgstr ""
+msgstr "Tasalevyinen fontti:"
 
 #: ../data/appearance.ui:548 ../data/appearance.ui:549
 #: ../data/appearance.ui:585 ../data/appearance.ui:586
 msgid "Select the default font for the window titlebar."
-msgstr ""
+msgstr "Valitse ikkunapalkin oletusfontti."
 
 #: ../data/appearance.ui:551
 msgid "Window title font:"
-msgstr ""
+msgstr "Ikkunapalkin fontti:"
 
 #: ../data/appearance.ui:613 ../data/overview.ui:793 ../data/unitytweak.ui:202
 #: ../data/unity.ui:364
@@ -174,44 +173,44 @@ msgstr "Ulkoasu"
 #: ../data/appearance.ui:636 ../data/appearance.ui:637
 #: ../data/appearance.ui:654 ../data/appearance.ui:655
 msgid "Select the type of antialiasing used to render fonts."
-msgstr ""
+msgstr "Valitse fonttien renderöinnissä käytettävä reunapehmennystyyppi."
 
 #: ../data/appearance.ui:640
 msgid "Antialiasing:"
-msgstr ""
+msgstr "Reunanpehmennys:"
 
 #: ../data/appearance.ui:659 ../data/appearance.ui:681
 msgid "None"
-msgstr ""
+msgstr "Ei mitään"
 
 #: ../data/appearance.ui:660
 msgid "Grayscale"
-msgstr ""
+msgstr "Harmaasävy"
 
 #: ../data/appearance.ui:661
 msgid "RGBA"
-msgstr ""
+msgstr "RGBA"
 
 #: ../data/appearance.ui:676 ../data/appearance.ui:677
 #: ../data/appearance.ui:700 ../data/appearance.ui:701
 msgid "Select the type of hinting to use when rendering fonts"
-msgstr ""
+msgstr "Valitse fonttien piirtämiseen käytettävä vihjeistyksen tapa"
 
 #: ../data/appearance.ui:682
 msgid "Slight"
-msgstr ""
+msgstr "Vähäinen"
 
 #: ../data/appearance.ui:683
 msgid "Medium"
-msgstr ""
+msgstr "Keskitaso"
 
 #: ../data/appearance.ui:684
 msgid "Full"
-msgstr ""
+msgstr "Täysi"
 
 #: ../data/appearance.ui:703
 msgid "Hinting:"
-msgstr ""
+msgstr "Vihjeistys:"
 
 #: ../data/appearance.ui:718 ../data/appearance.ui:719
 #: ../data/appearance.ui:735 ../data/appearance.ui:736
@@ -219,19 +218,21 @@ msgid ""
 "Select the factor used to enlarge or reduce text display, without changing "
 "font size."
 msgstr ""
+"Valitse tekstin näyttämisen suurennus- tai pienennyskerroin, muuttamatta "
+"fontin kokoa."
 
 #: ../data/appearance.ui:721
 msgid "Text scaling factor:"
-msgstr ""
+msgstr "Tekstin skaalauskerroin:"
 
 #: ../data/appearance.ui:769 ../data/appearance.ui:770
 msgid "Restore system's default font configurations"
-msgstr ""
+msgstr "Palauta järjestelmän fonttien oletusasetukset"
 
 #: ../data/appearance.ui:792 ../data/overview.ui:1003
 #: ../data/unitytweak.ui:242
 msgid "Fonts"
-msgstr ""
+msgstr "Fontit"
 
 #: ../data/errordialog.ui:8
 msgid "Schemas missing"
@@ -243,15 +244,15 @@ msgstr ""
 
 #: ../data/filechooser-theme.ui:17
 msgid "Choose a Theme file to install"
-msgstr ""
+msgstr "Valitse asennettava teematiedosto"
 
 #: ../data/filechooser-theme.ui:51
 msgid "Install Theme"
-msgstr ""
+msgstr "Asenna teema"
 
 #: ../data/overview.ui:40 ../data/unitytweak.ui:64
 msgid "Unity"
-msgstr ""
+msgstr "Unity"
 
 #: ../data/overview.ui:99 ../data/unitytweak.ui:77 ../data/unity.ui:838
 msgid "Launcher"
@@ -259,158 +260,168 @@ msgstr "Käynnistin"
 
 #: ../data/overview.ui:152 ../data/unitytweak.ui:86 ../data/unity.ui:1163
 msgid "Search"
-msgstr ""
+msgstr "Haku"
 
 #: ../data/overview.ui:203 ../data/unitytweak.ui:95 ../data/unity.ui:1833
 msgid "Panel"
-msgstr ""
+msgstr "Paneeli"
 
 #: ../data/overview.ui:254 ../data/unitytweak.ui:104 ../data/unity.ui:2131
 msgid "Switcher"
-msgstr ""
+msgstr "Vaihdin"
 
 #: ../data/overview.ui:305 ../data/unitytweak.ui:113 ../data/unity.ui:2296
 msgid "Web Apps"
-msgstr ""
+msgstr "Verkkosovellukset"
 
 #: ../data/overview.ui:356 ../data/overview.ui:732 ../data/unitytweak.ui:122
 #: ../data/unitytweak.ui:191 ../data/unity.ui:2533
 #: ../data/windowmanager.ui:2233
 msgid "Additional"
-msgstr ""
+msgstr "Muut"
 
 #: ../data/overview.ui:417 ../data/unitytweak.ui:133
 msgid "Window Manager"
-msgstr ""
+msgstr "Ikkunahallinta"
 
 #: ../data/overview.ui:525
 msgid ""
 "Workspace\n"
 "Settings"
 msgstr ""
+"Työtilan\n"
+"asetukset"
 
 #: ../data/overview.ui:577
 msgid ""
 "Window\n"
 "Spread"
 msgstr ""
+"Ikkunoiden\n"
+"levitys"
 
 #: ../data/overview.ui:629
 msgid ""
 "Window\n"
 "Snapping"
 msgstr ""
+"Ikkunoiden\n"
+"loksahtaminen"
 
 #: ../data/overview.ui:681 ../data/unitytweak.ui:182
 #: ../data/windowmanager.ui:1818
 msgid "Hotcorners"
-msgstr ""
+msgstr "Toimintokulmat"
 
 #: ../data/overview.ui:952
 msgid "Cursors"
-msgstr ""
+msgstr "Osoittimet"
 
 #: ../data/overview.ui:1067 ../data/unitytweak.ui:253
 msgid "System"
-msgstr ""
+msgstr "Järjestelmä"
 
 #: ../data/overview.ui:1124
 msgid ""
 "Desktop\n"
 "Icons"
 msgstr ""
+"Työpöydän\n"
+"kuvakkeet"
 
 #: ../data/overview.ui:1176 ../data/system.ui:434 ../data/unitytweak.ui:275
 msgid "Security"
-msgstr ""
+msgstr "Turvallisuus"
 
 #: ../data/overview.ui:1227 ../data/system.ui:682 ../data/unitytweak.ui:284
 msgid "Scrolling"
-msgstr ""
+msgstr "Vieritys"
 
 #: ../data/system.ui:31
 msgid "Items to display:"
-msgstr ""
+msgstr "Näytettävät kuvakkeet:"
 
 #: ../data/system.ui:52 ../data/system.ui:53 ../data/system.ui:80
 msgid "Home Folder"
-msgstr ""
+msgstr "Kotikansio"
 
 #: ../data/system.ui:103 ../data/system.ui:104 ../data/system.ui:131
 msgid "Network"
-msgstr ""
+msgstr "Verkko"
 
 #: ../data/system.ui:154 ../data/system.ui:155
 msgid "Rubbish Bin"
-msgstr ""
+msgstr "Roskakori"
 
 #: ../data/system.ui:182
 msgid "Trash"
-msgstr ""
+msgstr "Roskakori"
 
 #: ../data/system.ui:205 ../data/system.ui:206
 msgid "Mounted Devices"
-msgstr ""
+msgstr "Liitetyt laitteet"
 
 #: ../data/system.ui:233
 msgid "Devices"
-msgstr ""
+msgstr "Laitteet"
 
 #: ../data/system.ui:264 ../data/system.ui:265
 msgid "Restore the default configurations for Desktop icons"
-msgstr ""
+msgstr "Palauta järjestelmän työpöydän kuvakkeiden oletusasetukset"
 
 #: ../data/system.ui:284 ../data/unitytweak.ui:266
 msgid "Desktop Icons"
-msgstr ""
+msgstr "Työpöydän kuvakkeet"
 
 #: ../data/system.ui:303
 msgid "Enhance system security by disabling:"
-msgstr ""
+msgstr "Paranna turvallisuutta poistamalla käytöstä:"
 
 #: ../data/system.ui:319
 msgid "Desktop lock"
-msgstr ""
+msgstr "Työpöydän lukitus"
 
 #: ../data/system.ui:324 ../data/system.ui:325
 msgid "Disable the desktop lock screen."
-msgstr ""
+msgstr "Ota työpöydän lukitusnäyttö pois käytöstä."
 
 #: ../data/system.ui:339
 msgid "User log out"
-msgstr ""
+msgstr "Käyttäjän uloskirjautuminen"
 
 #: ../data/system.ui:344 ../data/system.ui:345
 msgid "Disable session log out."
-msgstr ""
+msgstr "Ota istunnosta uloskirjautuminen pois käytöstä."
 
 #: ../data/system.ui:359
 msgid "User switching"
-msgstr ""
+msgstr "Käyttäjänvaihto"
 
 #: ../data/system.ui:364 ../data/system.ui:365
 msgid "Disable fast user switching."
-msgstr ""
+msgstr "Ota nopea käyttäjän vaihto pois käytöstä."
 
 #: ../data/system.ui:379
 msgid "Printing"
-msgstr ""
+msgstr "Tulostaminen"
 
 #: ../data/system.ui:384 ../data/system.ui:385
 msgid "Prevent user access to the system's printers and print setup."
 msgstr ""
+"Estä käyttäjiä pääsemästä käsiksi järjestelmän tulostimiin ja "
+"tulostinasetuksiin."
 
 #: ../data/system.ui:411 ../data/system.ui:412
 msgid "Restore the default configurations for Security settings"
-msgstr ""
+msgstr "Palauta turvallisuusasetusten oletusasetukset"
 
 #: ../data/system.ui:454
 msgid "Scrollbars"
-msgstr ""
+msgstr "Vierityspalkit"
 
 #: ../data/system.ui:472
 msgid "Legacy"
-msgstr ""
+msgstr "Perinteinen"
 
 #: ../data/system.ui:491
 msgid "Overlay "
@@ -422,7 +433,7 @@ msgstr ""
 
 #: ../data/system.ui:524
 msgid "Default"
-msgstr ""
+msgstr "Oletus"
 
 #: ../data/system.ui:525
 msgid "Overlay with mouse"
@@ -434,15 +445,15 @@ msgstr ""
 
 #: ../data/system.ui:544
 msgid "Behaviour:"
-msgstr ""
+msgstr "Toiminta:"
 
 #: ../data/system.ui:574
 msgid "Touch scrolling"
-msgstr ""
+msgstr "Kosketusvieritys"
 
 #: ../data/system.ui:592
 msgid "Edge"
-msgstr ""
+msgstr "Reuna"
 
 #: ../data/system.ui:596 ../data/system.ui:597
 msgid "If enabled, edge scrolling is active on touchpads."
@@ -450,7 +461,7 @@ msgstr ""
 
 #: ../data/system.ui:612
 msgid "Two-finger"
-msgstr ""
+msgstr "Kaksi sormea"
 
 #: ../data/system.ui:616 ../data/system.ui:617
 msgid "If enabled, two-finger scrolling is active on multitouch touchpads."
@@ -458,7 +469,7 @@ msgstr ""
 
 #: ../data/system.ui:632
 msgid "Horizontal scrolling"
-msgstr ""
+msgstr "Vaakasuunnan vieritys"
 
 #: ../data/unitytweak.ui:41
 msgid "Unity Tweak Tool"
@@ -466,23 +477,23 @@ msgstr "Unityn muokkaussovellus"
 
 #: ../data/unitytweak.ui:56
 msgid "_File"
-msgstr ""
+msgstr "_Tiedosto"
 
 #: ../data/unitytweak.ui:155
 msgid "Workspace settings"
-msgstr ""
+msgstr "Työtilan asetukset"
 
 #: ../data/unitytweak.ui:164
 msgid "Windows spread"
-msgstr ""
+msgstr "Ikkunoiden levitys"
 
 #: ../data/unitytweak.ui:173
 msgid "Windows snapping"
-msgstr ""
+msgstr "Ikkunoiden loksahtaminen"
 
 #: ../data/unitytweak.ui:317
 msgid "_Help"
-msgstr ""
+msgstr "_Ohje"
 
 #: ../data/unitytweak.ui:360
 msgid " Overview"
@@ -490,7 +501,7 @@ msgstr " Päävalikko"
 
 #: ../data/unity.ui:42
 msgid "Invoke HUD"
-msgstr ""
+msgstr "Tuo HUD esiin"
 
 #: ../data/unity.ui:43
 msgid "Super+H"
@@ -510,11 +521,11 @@ msgstr "Suorita komento"
 
 #: ../data/unity.ui:51
 msgid "Super+M"
-msgstr ""
+msgstr "Super+M"
 
 #: ../data/unity.ui:54
 msgid "Put keyboard focus on the launcher"
-msgstr ""
+msgstr "Aseta näppäimistön kohdistus käynnistimeen"
 
 #: ../data/unity.ui:55
 msgid "Super+A"
@@ -602,7 +613,7 @@ msgstr "Valitse automaattisen käynnistimen piilottamistehoste."
 
 #: ../data/unity.ui:190
 msgid "Fade Dash and slide"
-msgstr ""
+msgstr "Häivytä Unity-valikko ja liu'uta"
 
 #: ../data/unity.ui:191
 msgid "Slide only"
@@ -614,7 +625,7 @@ msgstr "Vain häivytys"
 
 #: ../data/unity.ui:193
 msgid "Fade and slide"
-msgstr ""
+msgstr "Häivytys ja liuku"
 
 #: ../data/unity.ui:208
 msgid "Auto-hide animation:"
@@ -640,7 +651,7 @@ msgstr "\"Paineen määrä\", joka vaaditaan käynnistimen esiin tuomiseen"
 
 #: ../data/unity.ui:287
 msgid "Left side"
-msgstr "Vasenta reunaa"
+msgstr "Vasen reuna"
 
 #: ../data/unity.ui:293 ../data/unity.ui:294
 msgid ""
@@ -664,7 +675,7 @@ msgstr ""
 
 #: ../data/unity.ui:341
 msgid "Minimize single window applications on click"
-msgstr ""
+msgstr "Pienennä yhden ikkunan sovellukset napsauttaessa"
 
 #: ../data/unity.ui:387 ../data/unity.ui:388
 msgid "Select the level of the transparency of the launcher"
@@ -680,7 +691,7 @@ msgstr "Korkeampi määrä tekee käynnistimestä läpinäkyvämmän."
 
 #: ../data/unity.ui:431
 msgid "Based on wallpaper"
-msgstr ""
+msgstr "Pohjautuu taustakuvaan"
 
 #: ../data/unity.ui:436 ../data/unity.ui:437
 msgid "If selected, the launcher colour is based on the desktop background"
@@ -724,27 +735,25 @@ msgstr "Käynnistin on esillä vain ensisijaisella näytöillä"
 
 #: ../data/unity.ui:559
 msgid "Bottom"
-msgstr ""
+msgstr "Alhaalla"
 
 #: ../data/unity.ui:563
-#, fuzzy
 msgid ""
 "When selected, the launcher will be positioned on the bottom of the screen."
-msgstr "Käyttäjän valitsema väri"
+msgstr "Kun valittu, käynnistin sijoitetaan näytön alaosaan."
 
 #: ../data/unity.ui:577
 msgid "Left"
-msgstr ""
+msgstr "Vasemmalla"
 
 #: ../data/unity.ui:581
-#, fuzzy
 msgid ""
 "When selected, the launcher will be positioned on the left of the screen."
-msgstr "Käyttäjän valitsema väri"
+msgstr ""
 
 #: ../data/unity.ui:597
 msgid "Position:"
-msgstr ""
+msgstr "Sijainti:"
 
 #: ../data/unity.ui:645
 msgid "Icon size:"
@@ -893,12 +902,15 @@ msgid "Enable search of your files"
 msgstr "Tiedostohaku"
 
 #: ../data/unity.ui:1085
-msgid "If enabled, allow searches to find your files that aren&apos;t logged."
+msgid ""
+"If enabled, allow searches to find your files that aren&apos;t logged."
 msgstr ""
 
 #: ../data/unity.ui:1086
 msgid "If enabled, allow searches to find your files that aren't logged."
 msgstr ""
+"Jos käytössä, Unity-valikko voi etsiä hakutuloksia tiedostoista joita ei ole "
+"kirjattu lokiin."
 
 #: ../data/unity.ui:1104
 msgid "Run Command"
@@ -918,7 +930,7 @@ msgstr "Palauta Unity-valikon oletusasetukset."
 
 #: ../data/unity.ui:1205
 msgid "Menu visible for:"
-msgstr ""
+msgstr "Näytä valikko:"
 
 #: ../data/unity.ui:1247 ../data/unity.ui:1248
 msgid ""
@@ -928,15 +940,15 @@ msgstr ""
 
 #: ../data/unity.ui:1269
 msgid "seconds"
-msgstr ""
+msgstr "sekuntia"
 
 #: ../data/unity.ui:1292 ../data/unity.ui:1293
 msgid "Set the level of transparency for the panel."
-msgstr ""
+msgstr "Aseta paneelin läpinäkyvyystaso."
 
 #: ../data/unity.ui:1308
 msgid "Opaque panel for maximized windows"
-msgstr ""
+msgstr "Läpinäkymätön paneeli suurennetuille ikkunoille"
 
 #: ../data/unity.ui:1313 ../data/unity.ui:1314
 msgid "If selected, the panel will be opaque for maximized windows"
@@ -944,11 +956,11 @@ msgstr ""
 
 #: ../data/unity.ui:1348
 msgid "Indicators"
-msgstr ""
+msgstr "Ilmaisimet"
 
 #: ../data/unity.ui:1381
 msgid "Date & time"
-msgstr ""
+msgstr "Päivä ja aika"
 
 #: ../data/unity.ui:1386
 msgid "If enabled, the date &amp; time indicator will be visible."
@@ -956,71 +968,71 @@ msgstr ""
 
 #: ../data/unity.ui:1387
 msgid "If enabled, the date & time indicator will be visible."
-msgstr ""
+msgstr "Jos käytössä, päivä ja aika ovat näkyvissä."
 
 #: ../data/unity.ui:1409
 msgid "12-hour time"
-msgstr ""
+msgstr "12 tunnin aikamuoto"
 
 #: ../data/unity.ui:1414 ../data/unity.ui:1415
 msgid "Have the clock use 12-hour time."
-msgstr ""
+msgstr "Käytä 12 tunnin aikamuotoa kellossa."
 
 #: ../data/unity.ui:1429
 msgid "24-hour time"
-msgstr ""
+msgstr "24 tunnin aikamuoto"
 
 #: ../data/unity.ui:1434 ../data/unity.ui:1435
 msgid "Have the clock use 24-hour time."
-msgstr ""
+msgstr "Käytä 24 tunnin aikamuotoa kellossa."
 
 #: ../data/unity.ui:1447
 msgid "Seconds"
-msgstr ""
+msgstr "Sekunnit"
 
 #: ../data/unity.ui:1452 ../data/unity.ui:1453
 msgid "If enabled, the clock will display seconds."
-msgstr ""
+msgstr "Jos käytössä, kello näyttää sekunnit."
 
 #: ../data/unity.ui:1466
 msgid "Date"
-msgstr ""
+msgstr "Päiväys"
 
 #: ../data/unity.ui:1471 ../data/unity.ui:1472
 msgid "If enabled, the month and day will be visible in the panel."
-msgstr ""
+msgstr "Jos käytössä, kuukausi ja päivä näkyvät paneelissa."
 
 #: ../data/unity.ui:1485
 msgid "Weekday"
-msgstr ""
+msgstr "Viikonpäivä"
 
 #: ../data/unity.ui:1490 ../data/unity.ui:1491
 msgid "If enabled, the day of the week will be visible in the panel."
-msgstr ""
+msgstr "Jos käytössä, viikonpäivä näkyy paneelissa."
 
 #: ../data/unity.ui:1509
 msgid "Include:"
-msgstr ""
+msgstr "Sisällytä:"
 
 #: ../data/unity.ui:1518
 msgid "Calendar"
-msgstr ""
+msgstr "Kalenteri"
 
 #: ../data/unity.ui:1523 ../data/unity.ui:1524
 msgid "If enabled, the calendar will be visible in the indicator menu."
-msgstr ""
+msgstr "Jos käytössä, kalenteri näkyy ilmaisinvalikossa."
 
 #: ../data/unity.ui:1551
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetooth"
 
 #: ../data/unity.ui:1556 ../data/unity.ui:1557
 msgid "If enabled, the bluetooth indicator is visible in the panel."
-msgstr ""
+msgstr "Jos käytössä, Bluetooth-ilmaisin näkyy paneelissa."
 
 #: ../data/unity.ui:1591
 msgid "Power"
-msgstr ""
+msgstr "Sammutus"
 
 #: ../data/unity.ui:1595 ../data/unity.ui:1596
 msgid "If enabled, show the power menu in the panel."
@@ -1028,7 +1040,7 @@ msgstr ""
 
 #: ../data/unity.ui:1618
 msgid "Visible when charging or discharging"
-msgstr ""
+msgstr "Näkyvillä akun kuluessa tai latautuessa"
 
 #: ../data/unity.ui:1622 ../data/unity.ui:1623
 msgid ""
@@ -1037,15 +1049,15 @@ msgstr ""
 
 #: ../data/unity.ui:1635
 msgid "Always visible"
-msgstr ""
+msgstr "Aina näkyvissä"
 
 #: ../data/unity.ui:1639 ../data/unity.ui:1640
 msgid "Set the power indicator to be always visible."
-msgstr ""
+msgstr "Aseta sammutusvalikko aina näkyväksi."
 
 #: ../data/unity.ui:1653
 msgid "Display remaining battery life"
-msgstr ""
+msgstr "Näytä akun jäljellä oleva aika"
 
 #: ../data/unity.ui:1658 ../data/unity.ui:1659
 msgid "If enabled, show the remaining battery life in the power indicator."
@@ -1053,15 +1065,15 @@ msgstr ""
 
 #: ../data/unity.ui:1689
 msgid "Volume"
-msgstr ""
+msgstr "Äänenvoimakkuus"
 
 #: ../data/unity.ui:1693 ../data/unity.ui:1694
 msgid "If enabled, show the sound menu in the panel."
-msgstr ""
+msgstr "Jos käytössä, näytä äänivalikko paneelissa."
 
 #: ../data/unity.ui:1717
 msgid "Default player:"
-msgstr ""
+msgstr "Oletussoitin:"
 
 #: ../data/unity.ui:1728 ../data/unity.ui:1729
 msgid ""
@@ -1070,7 +1082,7 @@ msgstr ""
 
 #: ../data/unity.ui:1745
 msgid "Notifications when scrolling"
-msgstr ""
+msgstr "Ilmoitukset vierittäessä"
 
 #: ../data/unity.ui:1749 ../data/unity.ui:1750
 msgid ""
@@ -1079,7 +1091,7 @@ msgstr ""
 
 #: ../data/unity.ui:1770
 msgid "Show my name"
-msgstr ""
+msgstr "Näytä oma nimi"
 
 #: ../data/unity.ui:1775
 msgid "If enabled, show the user&apos;s real name in the panel."
@@ -1087,15 +1099,15 @@ msgstr ""
 
 #: ../data/unity.ui:1776
 msgid "If enabled, show the user's real name in the panel."
-msgstr ""
+msgstr "Jos käytössä, näytä käyttäjän nimi paneelissa."
 
 #: ../data/unity.ui:1810 ../data/unity.ui:1811
 msgid "Restore the default Unity panel settings."
-msgstr ""
+msgstr "Palauta Unityn paneelin oletusasetukset."
 
 #: ../data/unity.ui:1873
 msgid "Switch between windows on all workspaces"
-msgstr ""
+msgstr "Vaihda kaikissa työtiloissa olevien ikkunoiden välillä"
 
 #: ../data/unity.ui:1878 ../data/unity.ui:1879
 msgid ""
@@ -1104,7 +1116,7 @@ msgstr ""
 
 #: ../data/unity.ui:1892
 msgid "Display \"Show Desktop\" icon"
-msgstr ""
+msgstr "Käytä \"Näytä työpöytä\"-kuvaketta"
 
 #: ../data/unity.ui:1897
 msgid ""
@@ -1125,7 +1137,7 @@ msgstr ""
 
 #: ../data/unity.ui:1928
 msgid "Switch between minimized windows"
-msgstr ""
+msgstr "Vaihda pienennettyjen ikkunoiden välillä"
 
 #: ../data/unity.ui:1933 ../data/unity.ui:1934
 msgid "If enabled, the window switcher will switch through minimized windows"
@@ -1133,67 +1145,68 @@ msgstr ""
 
 #: ../data/unity.ui:1957
 msgid "Window switching shortcuts"
-msgstr ""
+msgstr "Ikkunoiden vaihtamisen pikanäppäimet"
 
 #: ../data/unity.ui:1981 ../data/unity.ui:1982
 msgid "Window switcher shortcuts"
-msgstr ""
+msgstr "Ikkunavaihtimen pikanäppäimet"
 
 #: ../data/unity.ui:1992 ../data/unity.ui:2068 ../data/unity.ui:2405
 #: ../data/windowmanager.ui:266 ../data/windowmanager.ui:536
 #: ../data/windowmanager.ui:796 ../data/windowmanager.ui:1054
 msgid "Title"
-msgstr ""
+msgstr "Nimi"
 
 #: ../data/unity.ui:2005 ../data/unity.ui:2081 ../data/unity.ui:2418
 #: ../data/windowmanager.ui:279 ../data/windowmanager.ui:549
 #: ../data/windowmanager.ui:809 ../data/windowmanager.ui:1067
 msgid "Accelerator"
-msgstr ""
+msgstr "Valintanäppäin"
 
 #: ../data/unity.ui:2032
 msgid "Launcher switching shortcuts"
-msgstr ""
+msgstr "Käynnistimen vaihdon pikanäppäimet"
 
 #: ../data/unity.ui:2057 ../data/unity.ui:2058
 msgid "Launcher switcher shortcuts"
-msgstr ""
+msgstr "Käynnistimen vaihdon pikanäppäimet"
 
 #: ../data/unity.ui:2109
 msgid "Restore the default window switcher settings."
-msgstr ""
+msgstr "Palauta oletusikkunanvaihdinasetukset."
 
 #: ../data/unity.ui:2171 ../data/unity.ui:2172
-msgid "Enable prompts for webapp integration when visiting supported websites?"
+msgid ""
+"Enable prompts for webapp integration when visiting supported websites?"
 msgstr ""
 
 #: ../data/unity.ui:2187
 msgid "Integration prompts:"
-msgstr ""
+msgstr "Integraatioviestit:"
 
 #: ../data/unity.ui:2209
 msgid "Preauthorized domains"
-msgstr ""
+msgstr "Esivaltuutetut verkkotunnukset"
 
 #: ../data/unity.ui:2228
 msgid "Amazon"
-msgstr ""
+msgstr "Amazon"
 
 #: ../data/unity.ui:2245
 msgid "Ubuntu One"
-msgstr ""
+msgstr "Ubuntu One"
 
 #: ../data/unity.ui:2273 ../data/unity.ui:2274
 msgid "Restore the default Unity Webapps settings."
-msgstr ""
+msgstr "Palauta Unityn verkkosovellusten oletusasetukset."
 
 #: ../data/unity.ui:2316
 msgid "HUD"
-msgstr ""
+msgstr "HUD"
 
 #: ../data/unity.ui:2329
 msgid "Remember previous commands"
-msgstr ""
+msgstr "Muista aiemmat komennot"
 
 #: ../data/unity.ui:2333 ../data/unity.ui:2334
 msgid ""
@@ -1203,11 +1216,11 @@ msgstr ""
 
 #: ../data/unity.ui:2352
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "Pikanäppäimet"
 
 #: ../data/unity.ui:2365
 msgid "Hold Super for keyboard shortcuts"
-msgstr ""
+msgstr "Pidä Super pohjassa nähdäksesi pikanäppäimet"
 
 #: ../data/unity.ui:2370 ../data/unity.ui:2371
 msgid ""
@@ -1217,164 +1230,166 @@ msgstr ""
 
 #: ../data/unity.ui:2394 ../data/unity.ui:2395
 msgid "List of Unity keyboard shortcuts"
-msgstr ""
+msgstr "Luettelo Unityn pikanäppäimistä"
 
 #: ../data/unity.ui:2446
 msgid "Notifications"
-msgstr ""
+msgstr "Ilmoitukset"
 
 #: ../data/unity.ui:2465
 msgid "All displays"
-msgstr ""
+msgstr "Kaikki näytöt"
 
 #: ../data/unity.ui:2469 ../data/unity.ui:2470
 msgid "For multiple displays, notifications are visible on all of them."
-msgstr ""
+msgstr "Useita näyttöjä käyttäessä ilmoitukset näkyvät kaikilla näytöillä."
 
 #: ../data/unity.ui:2483
 msgid "Active display"
-msgstr ""
+msgstr "Aktiivinen näyttö"
 
 #: ../data/unity.ui:2487 ../data/unity.ui:2488
-msgid "For multiple displays, notifications are visible on the active display."
+msgid ""
+"For multiple displays, notifications are visible on the active display."
 msgstr ""
+"Useita näyttöjä käyttäessä ilmoitukset näkyvät aktiivisella näytöllä."
 
 #: ../data/unity.ui:2511 ../data/unity.ui:2512
 msgid "Restore the default Unity keyboard shortcut settings."
-msgstr ""
+msgstr "Palauta Unityn pikanäppäinten oletusasetukset."
 
 #: ../data/windowmanager.ui:45
 msgid "Close window"
-msgstr ""
+msgstr "Sulje ikkuna"
 
 #: ../data/windowmanager.ui:46
 msgid "Alt+F4"
-msgstr ""
+msgstr "Alt+F4"
 
 #: ../data/windowmanager.ui:49
 msgid "Move window"
-msgstr ""
+msgstr "Siirrä ikkunaa"
 
 #: ../data/windowmanager.ui:50
 msgid "Alt+mouse button 1"
-msgstr ""
+msgstr "Alt+hiiren painike 1"
 
 #: ../data/windowmanager.ui:53
 msgid "Show desktop"
-msgstr ""
+msgstr "Näytä työpöytä"
 
 #: ../data/windowmanager.ui:54
 msgid "Super+D"
-msgstr ""
+msgstr "Super+D"
 
 #: ../data/windowmanager.ui:67
 msgid "Zoom in"
-msgstr ""
+msgstr "Lähennä"
 
 #: ../data/windowmanager.ui:68
 msgid "Super++"
-msgstr ""
+msgstr "Super++"
 
 #: ../data/windowmanager.ui:71
 msgid "Zoom out"
-msgstr ""
+msgstr "Loitonna"
 
 #: ../data/windowmanager.ui:72
 msgid "Super+-"
-msgstr ""
+msgstr "Super+-"
 
 #: ../data/windowmanager.ui:85
 msgid "Start windows spread"
-msgstr ""
+msgstr "Käynnistä ikkunoiden levitys"
 
 #: ../data/windowmanager.ui:86
 msgid "Super+W"
-msgstr ""
+msgstr "Super+W"
 
 #: ../data/windowmanager.ui:89
 msgid "Start windows spread for all windows"
-msgstr ""
+msgstr "Käynnistä ikkunoiden levitys kaikille ikkunoille"
 
 #: ../data/windowmanager.ui:103
 msgid "Start workspace switcher"
-msgstr ""
+msgstr "Käynnistä työtilan vaihdin"
 
 #: ../data/windowmanager.ui:104
 msgid "Super+S"
-msgstr ""
+msgstr "Super+S"
 
 #: ../data/windowmanager.ui:118
 msgid "Toggle Desktop"
-msgstr ""
+msgstr "Vaihda työpöydälle"
 
 #: ../data/windowmanager.ui:121
 msgid "Show Workspaces"
-msgstr ""
+msgstr "Näytä työtilat"
 
 #: ../data/windowmanager.ui:124
 msgid "Window Spread"
-msgstr ""
+msgstr "Ikkunoiden levitys"
 
 #: ../data/windowmanager.ui:127
 msgid "Spread all Windows"
-msgstr ""
+msgstr "Levitä kaikki ikkunat"
 
 #: ../data/windowmanager.ui:138
 msgid "Do Nothing"
-msgstr ""
+msgstr "Älä tee mitään"
 
 #: ../data/windowmanager.ui:141
 msgid "Bottom Left Corner"
-msgstr ""
+msgstr "Vasen alanurkka"
 
 #: ../data/windowmanager.ui:144
 msgid "Bottom Half"
-msgstr ""
+msgstr "Alaosa"
 
 #: ../data/windowmanager.ui:147
 msgid "Bottom Right Corner"
-msgstr ""
+msgstr "Oikea alanurkka"
 
 #: ../data/windowmanager.ui:150
 msgid "Left Half"
-msgstr ""
+msgstr "Vasen puoli"
 
 #: ../data/windowmanager.ui:153
 msgid "Fill Screen"
-msgstr ""
+msgstr "Täytä näyttö"
 
 #: ../data/windowmanager.ui:156
 msgid "Right Half"
-msgstr ""
+msgstr "Oikea puoli"
 
 #: ../data/windowmanager.ui:159
 msgid "Top Left Corner"
-msgstr ""
+msgstr "Vasen ylänurkka"
 
 #: ../data/windowmanager.ui:162
 msgid "Top Half"
-msgstr ""
+msgstr "Yläosa"
 
 #: ../data/windowmanager.ui:165
 msgid "Top Right Corner"
-msgstr ""
+msgstr "Oikea ylänurkka"
 
 #: ../data/windowmanager.ui:168 ../data/windowmanager.ui:2029
 #: ../data/windowmanager.ui:2064 ../data/windowmanager.ui:2101
 msgid "Maximize"
-msgstr ""
+msgstr "Suurenna"
 
 #: ../data/windowmanager.ui:192
 msgid "Zoom"
-msgstr ""
+msgstr "Lähennys ja loitonnus"
 
 #: ../data/windowmanager.ui:214 ../data/windowmanager.ui:215
 msgid "Enable desktop zoom?"
-msgstr ""
+msgstr "Käytetäänkö työpöydän suurennuslasia?"
 
 #: ../data/windowmanager.ui:230
 msgid "Desktop magnification:"
-msgstr ""
+msgstr "Työpöydän suurennuslasi:"
 
 #: ../data/windowmanager.ui:255 ../data/windowmanager.ui:256
 msgid "List of keyboard shortcuts for zoom"
@@ -1382,7 +1397,7 @@ msgstr ""
 
 #: ../data/windowmanager.ui:308
 msgid "Hardware acceleration"
-msgstr ""
+msgstr "Laitteistokiihdytys"
 
 #: ../data/windowmanager.ui:331 ../data/windowmanager.ui:332
 msgid "Select the level of texture rendering done by OpenGL"
@@ -1390,39 +1405,39 @@ msgstr ""
 
 #: ../data/windowmanager.ui:335
 msgid "Texture quality: "
-msgstr ""
+msgstr "Tekstuurilaatu: "
 
 #: ../data/windowmanager.ui:347
 msgid "Fast"
-msgstr ""
+msgstr "Nopea"
 
 #: ../data/windowmanager.ui:348
 msgid "Good"
-msgstr ""
+msgstr "Hyvä"
 
 #: ../data/windowmanager.ui:349
 msgid "Best"
-msgstr ""
+msgstr "Paras"
 
 #: ../data/windowmanager.ui:371
 msgid "Animations"
-msgstr ""
+msgstr "Animaatiot"
 
 #: ../data/windowmanager.ui:396
 msgid "Minimize:"
-msgstr ""
+msgstr "Pienennä:"
 
 #: ../data/windowmanager.ui:432
 msgid "Unminimize:"
-msgstr ""
+msgstr "Palauta:"
 
 #: ../data/windowmanager.ui:469
 msgid "Window Animations:"
-msgstr ""
+msgstr "Ikkuna-animaatiot:"
 
 #: ../data/windowmanager.ui:502
 msgid "Keyboard shortcuts"
-msgstr ""
+msgstr "Pikanäppäimet"
 
 #: ../data/windowmanager.ui:524 ../data/windowmanager.ui:525
 msgid "List of window manager keyboard shortcuts"
@@ -1438,7 +1453,7 @@ msgstr ""
 
 #: ../data/windowmanager.ui:655
 msgid "Workspace switcher:"
-msgstr ""
+msgstr "Työtilan vaihdin:"
 
 #: ../data/windowmanager.ui:668 ../data/windowmanager.ui:669
 msgid "Select the outline colour of the current workspace in the overview"
@@ -1446,7 +1461,7 @@ msgstr ""
 
 #: ../data/windowmanager.ui:671
 msgid "Current workspace colour:"
-msgstr ""
+msgstr "Nykyisen työtilan väri:"
 
 #: ../data/windowmanager.ui:696 ../data/windowmanager.ui:697
 msgid "Select the number of vertical workspaces"
@@ -1454,7 +1469,7 @@ msgstr ""
 
 #: ../data/windowmanager.ui:699
 msgid "Vertical workspaces:"
-msgstr ""
+msgstr "Pystysuunnan työtilat:"
 
 #: ../data/windowmanager.ui:739 ../data/windowmanager.ui:740
 msgid "Select the number of horizontal workspaces"
@@ -1462,11 +1477,11 @@ msgstr ""
 
 #: ../data/windowmanager.ui:742
 msgid "Horizontal workspaces:"
-msgstr ""
+msgstr "Vaakasuunnan työtilat:"
 
 #: ../data/windowmanager.ui:763
 msgid "Workspace shortcuts"
-msgstr ""
+msgstr "Työtilan pikanäppäimet"
 
 #: ../data/windowmanager.ui:785 ../data/windowmanager.ui:786
 msgid "List of workspace management keyboard shortcuts"
@@ -1474,19 +1489,19 @@ msgstr ""
 
 #: ../data/windowmanager.ui:838 ../data/windowmanager.ui:839
 msgid "Restore default workspace configuration"
-msgstr ""
+msgstr "Palauta työtilan oletusasetukset"
 
 #: ../data/windowmanager.ui:861
 msgid "Workspace Settings"
-msgstr ""
+msgstr "Työtilan asetukset"
 
 #: ../data/windowmanager.ui:904 ../data/windowmanager.ui:905
 msgid "Enable the window spread?"
-msgstr ""
+msgstr "Käytetäänkö ikkunoiden levitystä?"
 
 #: ../data/windowmanager.ui:922
 msgid "Window spread:"
-msgstr ""
+msgstr "Ikkunoiden levitys:"
 
 #: ../data/windowmanager.ui:948 ../data/windowmanager.ui:949
 msgid "Select the space between window in the spead overview in pixels"
@@ -1494,11 +1509,11 @@ msgstr ""
 
 #: ../data/windowmanager.ui:951
 msgid "Spacing:"
-msgstr ""
+msgstr "Välistys:"
 
 #: ../data/windowmanager.ui:974
 msgid "Icons on previews"
-msgstr ""
+msgstr "Kuvakkeet esikatseluissa"
 
 #: ../data/windowmanager.ui:978 ../data/windowmanager.ui:979
 msgid ""
@@ -1508,7 +1523,7 @@ msgstr ""
 
 #: ../data/windowmanager.ui:992
 msgid "Click to access desktop"
-msgstr ""
+msgstr "Työpöydän napsautus vie työpöydälle"
 
 #: ../data/windowmanager.ui:996 ../data/windowmanager.ui:997
 msgid ""
@@ -1518,7 +1533,7 @@ msgstr ""
 
 #: ../data/windowmanager.ui:1021
 msgid "Window spread shortcuts"
-msgstr ""
+msgstr "Ikkunoiden levityksen pikanäppäimet"
 
 #: ../data/windowmanager.ui:1043 ../data/windowmanager.ui:1044
 msgid "List of window spread shortcuts"
@@ -1526,39 +1541,39 @@ msgstr ""
 
 #: ../data/windowmanager.ui:1095 ../data/windowmanager.ui:1096
 msgid "Restore default window spread settings"
-msgstr ""
+msgstr "Palauta ikkunoiden levityksen oletusasetukset"
 
 #: ../data/windowmanager.ui:1118
 msgid "Window spread"
-msgstr ""
+msgstr "Ikkunoiden levitys"
 
 #: ../data/windowmanager.ui:1176
 msgid "Window snapping:"
-msgstr ""
+msgstr "Ikkunoiden loksahtaminen:"
 
 #: ../data/windowmanager.ui:1188 ../data/windowmanager.ui:2167
 msgid "Fill colour:"
-msgstr ""
+msgstr "Täyttöväri:"
 
 #: ../data/windowmanager.ui:1201 ../data/windowmanager.ui:2154
 msgid "Outline colour:"
-msgstr ""
+msgstr "Reunaväri:"
 
 #: ../data/windowmanager.ui:1494
 msgid "Window snapping"
-msgstr ""
+msgstr "Ikkunoiden loksahtaminen"
 
 #: ../data/windowmanager.ui:1551
 msgid "Hotcorners:"
-msgstr ""
+msgstr "Toimintokulmat:"
 
 #: ../data/windowmanager.ui:1838
 msgid "Focus Behaviour"
-msgstr ""
+msgstr "Kohdistuksen toiminta"
 
 #: ../data/windowmanager.ui:1863
 msgid "Auto-raise delay:"
-msgstr ""
+msgstr "Automaattisen noston viive:"
 
 #: ../data/windowmanager.ui:1875 ../data/windowmanager.ui:1876
 msgid "Set the delay for raising newly focused windows."
@@ -1570,7 +1585,7 @@ msgstr ""
 
 #: ../data/windowmanager.ui:1907
 msgid "Focus mode:"
-msgstr ""
+msgstr "Kohdistustila:"
 
 #: ../data/windowmanager.ui:1920 ../data/windowmanager.ui:1921
 msgid ""
@@ -1582,23 +1597,23 @@ msgstr ""
 
 #: ../data/windowmanager.ui:1924
 msgid "Click"
-msgstr ""
+msgstr "Napsautus"
 
 #: ../data/windowmanager.ui:1925
 msgid "Sloppy"
-msgstr ""
+msgstr "Hiiren kohdistuessa"
 
 #: ../data/windowmanager.ui:1926
 msgid "Mouse"
-msgstr ""
+msgstr "Vain hiiren ollessa kohdistettuna"
 
 #: ../data/windowmanager.ui:1940
 msgid "Auto-raise:"
-msgstr ""
+msgstr "Automaattinen nosto:"
 
 #: ../data/windowmanager.ui:1952
 msgid "Raise on click:"
-msgstr ""
+msgstr "Nosta napsauttamalla:"
 
 #: ../data/windowmanager.ui:1963
 msgid "Whether raising should be a side-effect of other user interactions."
@@ -1606,11 +1621,11 @@ msgstr ""
 
 #: ../data/windowmanager.ui:1987
 msgid "Titlebar Actions"
-msgstr ""
+msgstr "Otsikkopalkin toiminnot"
 
 #: ../data/windowmanager.ui:2013
 msgid "Double click:"
-msgstr ""
+msgstr "Tuplanapsautus:"
 
 #: ../data/windowmanager.ui:2025 ../data/windowmanager.ui:2026
 msgid "Select the titlebar's double click action."
@@ -1633,26 +1648,26 @@ msgstr ""
 #: ../data/windowmanager.ui:2032 ../data/windowmanager.ui:2067
 #: ../data/windowmanager.ui:2104
 msgid "Minimize"
-msgstr ""
+msgstr "Pienennä"
 
 #: ../data/windowmanager.ui:2033 ../data/windowmanager.ui:2068
 #: ../data/windowmanager.ui:2105
 msgid "No action"
-msgstr ""
+msgstr "Ei toimintoa"
 
 #: ../data/windowmanager.ui:2034 ../data/windowmanager.ui:2069
 #: ../data/windowmanager.ui:2106
 msgid "Lower"
-msgstr ""
+msgstr "Siirrä taakse"
 
 #: ../data/windowmanager.ui:2035 ../data/windowmanager.ui:2070
 #: ../data/windowmanager.ui:2107
 msgid "Menu"
-msgstr ""
+msgstr "Valikko"
 
 #: ../data/windowmanager.ui:2049
 msgid "Middle click:"
-msgstr ""
+msgstr "Keskinapsautus:"
 
 #: ../data/windowmanager.ui:2060 ../data/windowmanager.ui:2061
 msgid "Select the titlebar's middle click action."
@@ -1664,7 +1679,7 @@ msgstr ""
 
 #: ../data/windowmanager.ui:2085
 msgid "Right click:"
-msgstr ""
+msgstr "Oikea napsautus:"
 
 #: ../data/windowmanager.ui:2097 ../data/windowmanager.ui:2098
 msgid "Select the titlebar's right click action."
@@ -1672,7 +1687,7 @@ msgstr ""
 
 #: ../data/windowmanager.ui:2129
 msgid "Resizing"
-msgstr ""
+msgstr "Koon muuttaminen"
 
 #: ../data/windowmanager.ui:2211 ../data/windowmanager.ui:2212
 msgid "Restore the default settings for the additional options."
