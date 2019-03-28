@@ -44,7 +44,7 @@ System=Section(ui='system.ui',id='nb_desktop_settings')
 tb_home_folder= ToggleButton({
     'id'        : 'tb_home_folder',
     'builder'   : System.builder,
-    'schema'    : 'org.gnome.nautilus.desktop',
+    'schema'    : dynamic.desktop_schema,
     'path'      : None,
     'key'       : 'home-icon-visible',
     'type'      : 'boolean',
@@ -55,7 +55,7 @@ tb_home_folder= ToggleButton({
 tb_network= ToggleButton({
     'id'        : 'tb_network',
     'builder'   : System.builder,
-    'schema'    : 'org.gnome.nautilus.desktop',
+    'schema'    : dynamic.desktop_schema,
     'path'      : None,
     'key'       : 'network-icon-visible',
     'type'      : 'boolean',
@@ -66,7 +66,7 @@ tb_network= ToggleButton({
 tb_trash= ToggleButton({
     'id'        : 'tb_trash',
     'builder'   : System.builder,
-    'schema'    : 'org.gnome.nautilus.desktop',
+    'schema'    : dynamic.desktop_schema,
     'path'      : None,
     'key'       : 'trash-icon-visible',
     'type'      : 'boolean',
@@ -77,7 +77,7 @@ tb_trash= ToggleButton({
 tb_devices= ToggleButton({
     'id'        : 'tb_devices',
     'builder'   : System.builder,
-    'schema'    : 'org.gnome.nautilus.desktop',
+    'schema'    : dynamic.desktop_schema,
     'path'      : None,
     'key'       : 'volumes-visible',
     'type'      : 'boolean',

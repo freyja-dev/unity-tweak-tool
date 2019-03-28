@@ -39,3 +39,11 @@ if "org.gnome.desktop.peripherals" not in schema_list:
     touchpad_schema = 'settings-daemon'
 else:
     touchpad_schema = 'desktop'
+
+
+# Desktop feature was removed in nautilus >=3.28. So we use nemo to draw desktop icons.
+#See https://bugs.launchpad.net/ubuntu/+source/unity/+bug/1814506
+if "org.gnome.nautilus.desktop" not in schema_list:
+    desktop_schema = 'org.nemo.desktop'
+else:
+    desktop_schema = 'org.gnome.nautilus.desktop'
