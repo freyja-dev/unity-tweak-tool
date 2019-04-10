@@ -146,8 +146,7 @@ class Application(dbus.service.Object):
             'unity_dash'        :(1,1),
             'unity_panel'       :(1,2),
             'unity_switcher'    :(1,3),
-            'unity_webapps'     :(1,4),
-            'unity_additional'  :(1,5),
+            'unity_additional'  :(1,4),
 
             'compiz_general'    :(2,0),
             'compiz_workspace'  :(2,1),
