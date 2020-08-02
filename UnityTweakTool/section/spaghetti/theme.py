@@ -55,7 +55,7 @@ class Themesettings ():
             userthemes=[]
         allthemes=systemthemes+userthemes
         allthemes.sort()
-        required=['gtk-2.0','gtk-3.0','metacity-1']
+        required=['gtk-2.0','gtk-3.0']
         self.gtkthemes={}
         self.windowthemes={}
         for theme in allthemes:
